@@ -24,12 +24,12 @@ const translations = {
       contact: 'İletişim'
     },
     hero: {
-      title: 'Resmi Google Partner & Dijital Büyüme Ajansı',
-      subtitle: 'Türkiye ve Küresel Pazarlarda Google Ads, Meta Ads ve İhracat Performans Pazarlaması',
-      description: 'Ben Salih Maral. 2008 yılından bu yana Resmi Google Partner olarak Türkiye\'deki markalar, e-ticaret işletmeleri ve Avrupa\'ya açılan ihracatçılar için şeffaf, ölçülebilir ve yüksek performanslı reklam sistemleri kurup yönetiyorum.',
+      title: 'Google Ads, Meta Ads, SEO & TikTok ile İşletmenizi Kârlı Büyütün',
+      subtitle: 'Daha Fazla Satış, Yüksek ROAS ve Ölçülebilir Nitelikli Müşteri Kazanımı',
+      description: 'E-ticaret markaları, KOBİ\'ler ve kurumsal işletmeler için komisyonsuz, şeffaf ve sonuç odaklı reklam yönetimi. 17+ yıllık Resmi Google Partner tecrübesi, Server-Side CAPI veri takibi ve yapay zeka destekli optimizasyonla bütçenizi kâra dönüştürün.',
       cta1: 'Hizmetleri Keşfedin',
-      cta2: 'Ücretsiz Teklif Alın',
-      clients: 'Mutlu Müşteri & Şirket'
+      cta2: 'Ücretsiz Teklif & Hesap Analizi Alın',
+      clients: 'Mutlu Müşteri & Marka'
     },
     stats: {
       experience: 'Yıllık Tecrübe',
@@ -310,11 +310,11 @@ const translations = {
       contact: 'Kontakt'
     },
     hero: {
-      title: 'Google Ads & Digital Marketing Experte',
-      subtitle: 'Google Ads Agentur, Meta Ads & SEO für planbaren ROI',
-      description: 'Ich bin Salih Maral. Als offizieller Google Partner mit 17+ Jahren Erfahrung entwickle und steuere ich hochperformante, transparente Marketing-Systeme für E-Commerce und ambitionierte Unternehmen nach höchsten Qualitätsstandards.',
+      title: 'Skalieren Sie Ihr Unternehmen mit Google Ads, Meta Ads & SEO',
+      subtitle: 'Planbares Wachstum: Mehr Umsatz, hoher ROAS und messbare Neukunden',
+      description: 'Offizieller Google Partner mit 17+ Jahren Erfahrung. Wir entwickeln und steuern hochperformante, transparente Marketing-Systeme und Server-Side Tracking für E-Commerce, KMU und ambitionierte Unternehmen.',
       cta1: 'Leistungen entdecken',
-      cta2: 'Kostenloses Angebot',
+      cta2: 'Kostenloses Angebot & Kontocheck',
       clients: 'Zufriedene Kunden & Firmen'
     },
     stats: {
@@ -410,7 +410,7 @@ const translations = {
           title: '1.104,05 % (11,04x) E-Commerce Rekord-ROAS',
           subtitle: 'Performance & Umsatz-Skalierung',
           stat: '119.000 Conversions / 204K Klicks',
-          desc: 'Google Ads E-Commerce Kampagne mit 1.104 % ROAS. Für jeden eingesetzten Werbeeuro wurden 11,04 Netto-Umsatz erzielt.',
+          desc: 'Google Ads E-Commerce Kampagne mit 1.104 % ROAS. Für jeden eingesetzten Werbebudget-Anteil wurden 11,04x Netto-Umsatz erzielt.',
           image: '/proof/google-ads-roas-1104.png',
           badge: '11.04x ROAS'
         },
@@ -596,11 +596,11 @@ const translations = {
       contact: 'Contact'
     },
     hero: {
-      title: 'Google Ads & Digital Marketing Specialist',
-      subtitle: 'Fixed-Price Google Ads, Meta Ads & SEO Consulting in Germany & Europe',
-      description: 'I am Salih Maral. As an official Google Partner with 17+ years of experience, I build and manage high-performance, transparent advertising systems for businesses in Germany and Europe with proven corporate expertise.',
+      title: 'Scale Your Business with Google Ads, Meta Ads, SEO & TikTok',
+      subtitle: 'Drive High ROAS, Scalable Sales & Measurable Customer Acquisition',
+      description: 'Official Google Partner with 17+ years of experience. We build transparent, data-driven advertising and tracking systems for e-commerce brands, SMEs, and ambitious enterprises worldwide.',
       cta1: 'Explore Services',
-      cta2: 'Get Free Proposal',
+      cta2: 'Get Free Proposal & Account Audit',
       clients: 'Happy Clients & Brands'
     },
     stats: {
@@ -869,7 +869,7 @@ const translations = {
       ]
     },
     footer: {
-      description: 'Predictable customer acquisition in Germany & Europe: Transparent Google Ads, Meta Ads, and SEO consulting on a fixed-fee model.',
+      description: 'Predictable customer acquisition: Transparent Google Ads, Meta Ads, TikTok, and SEO consulting on a fixed-fee model for high-growth brands.',
       rights: 'All rights reserved.',
       about: 'About'
     }
@@ -901,7 +901,7 @@ const getServiceIcon = (iconType) => {
 
 export default function Home({ initialLang = 'tr' }) {
   const [lang, setLang] = useState(initialLang)
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' })
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', company: '', service: 'google-ads', message: '', b_check: '' })
   const [formStatus, setFormStatus] = useState({ type: '', message: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [latestPosts, setLatestPosts] = useState([])
@@ -997,7 +997,7 @@ export default function Home({ initialLang = 'tr' }) {
       if (response.ok) {
         trackLead({ formName: 'homepage_contact', method: 'contact_form' })
         setFormStatus({ type: 'success', message: t.contact.form.success })
-        setFormData({ name: '', email: '', phone: '', message: '' })
+        setFormData({ name: '', email: '', phone: '', company: '', service: 'google-ads', message: '', b_check: '' })
       } else {
         setFormStatus({ type: 'error', message: t.contact.form.error })
       }
@@ -1010,6 +1010,12 @@ export default function Home({ initialLang = 'tr' }) {
 
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const selectServiceAndContact = (serviceSlug) => {
+    setFormData((prev) => ({ ...prev, service: serviceSlug }))
+    const el = document.getElementById('contact')
+    if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -1224,9 +1230,9 @@ export default function Home({ initialLang = 'tr' }) {
                   </div>
                 </div>
               </div>
-              <a href={lang === 'de' ? '/de/standorte' : lang === 'tr' ? '/tr/standorte' : '/en/standorte'} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
-                {lang === 'de' ? 'Standorte' : lang === 'tr' ? 'Şehirler' : 'Locations'}
-              </a>
+              <button onClick={() => scrollToSection('calculator')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer">
+                {lang === 'de' ? 'Budget & ROAS' : lang === 'en' ? 'Budget & ROAS' : 'Bütçe & ROAS'}
+              </button>
               <button onClick={() => scrollToSection('success')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer">{t.nav.success}</button>
               <button onClick={() => scrollToSection('about')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer">{t.nav.about}</button>
               <a href="/blog" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">Blog</a>
@@ -1339,13 +1345,12 @@ export default function Home({ initialLang = 'tr' }) {
                 {lang === 'de' ? 'Seiten & Infos' : lang === 'tr' ? 'Sayfalar & Bilgi' : 'Pages & Info'}
               </div>
               <div className="grid grid-cols-2 gap-2">
-                <a
-                  href={lang === 'de' ? '/de/standorte' : lang === 'tr' ? '/tr/standorte' : '/en/standorte'}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-3 rounded-2xl bg-white/90 text-center font-bold text-xs text-gray-900 border border-slate-200/80 shadow-2xs hover:bg-slate-50 transition-colors"
+                <button
+                  onClick={() => { scrollToSection('calculator'); setIsMobileMenuOpen(false); }}
+                  className="p-3 rounded-2xl bg-white/90 text-center font-bold text-xs text-gray-900 border border-slate-200/80 shadow-2xs hover:bg-slate-50 transition-colors cursor-pointer"
                 >
-                  📍 {lang === 'de' ? '18 Standorte' : lang === 'tr' ? '18 Şehir' : '18 Locations'}
-                </a>
+                  📊 {lang === 'de' ? 'Budget & ROAS' : lang === 'en' ? 'Budget & ROAS' : 'Bütçe & ROAS'}
+                </button>
                 <a
                   href="/blog"
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -1407,11 +1412,11 @@ export default function Home({ initialLang = 'tr' }) {
               {/* Main Title */}
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.08] tracking-tight text-gray-900">
                 {lang === 'de' ? (
-                  <>Skalieren Sie Ihr Unternehmen mit <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO</>
+                  <>Skalieren Sie Ihr Unternehmen mit <span className="text-[#4285F4]">Google Ads</span>, Meta Ads, SEO & TikTok</>
                 ) : lang === 'en' ? (
-                  <>Scale Your Business with <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO</>
+                  <>Scale Your Business with <span className="text-[#4285F4]">Google Ads</span>, Meta Ads, SEO & TikTok</>
                 ) : (
-                  <>İşletmenizi <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO ile Büyütün</>
+                  <>İşletmenizi <span className="text-[#4285F4]">Google Ads</span>, Meta Ads, SEO & TikTok ile Kârlı Büyütün</>
                 )}
               </h1>
 
@@ -1445,6 +1450,37 @@ export default function Home({ initialLang = 'tr' }) {
                 </button>
               </div>
 
+              {/* Quick Service Intent Router Pills */}
+              <div className="pt-2">
+                <p className="text-xs font-black uppercase tracking-wider text-slate-400 mb-2.5">
+                  {lang === 'de' ? 'Welche Leistung möchten Sie anfragen?' : lang === 'en' ? 'Which service do you need?' : 'Hangi Hizmeti Almak İstiyorsunuz?'}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { id: 'google-ads', label: 'Google Ads', icon: TrendingUp, color: 'hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50/50' },
+                    { id: 'meta-ads', label: 'Meta Ads (IG & FB)', icon: Zap, color: 'hover:border-indigo-500 hover:text-indigo-600 hover:bg-indigo-50/50' },
+                    { id: 'seo', label: 'SEO & Yapay Zeka (GEO)', icon: Search, color: 'hover:border-emerald-500 hover:text-emerald-600 hover:bg-emerald-50/50' },
+                    { id: 'tiktok-ads', label: 'TikTok Ads', icon: Sparkles, color: 'hover:border-rose-500 hover:text-rose-600 hover:bg-rose-50/50' },
+                    { id: 'server-side-tracking', label: 'Server-Side CAPI', icon: Layers, color: 'hover:border-teal-500 hover:text-teal-600 hover:bg-teal-50/50' },
+                    { id: 'yorum-yonetimi', label: 'Olumsuz Yorum Temizleme', icon: ShieldCheck, color: 'hover:border-amber-500 hover:text-amber-600 hover:bg-amber-50/50' },
+                  ].map((srv) => {
+                    const SrvIcon = srv.icon
+                    return (
+                      <button
+                        key={srv.id}
+                        type="button"
+                        onClick={() => selectServiceAndContact(srv.id)}
+                        className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200/90 bg-white/90 text-xs font-bold text-slate-700 shadow-2xs transition-all duration-200 cursor-pointer ${srv.color}`}
+                      >
+                        <SrvIcon className="w-3.5 h-3.5" />
+                        <span>{srv.label}</span>
+                        <ChevronRight className="w-3 h-3 text-slate-400" />
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+
               {/* Multilingual Cultural Bridge Badge */}
               {lang === 'de' && (
                 <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50/90 via-white to-emerald-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
@@ -1460,8 +1496,8 @@ export default function Home({ initialLang = 'tr' }) {
               )}
               {lang === 'tr' && (
                 <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50/90 via-white to-blue-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
-                  <span className="text-base">🇹🇷</span>
-                  <span><strong>Resmi Google Partner:</strong> E-ticaret markaları, KOBİ'ler ve kurumsal işletmeler için şeffaf, komisyonsuz ve ölçülebilir büyüme.</span>
+                  <span className="text-base">🎯</span>
+                  <span><strong>Sonuç Odaklı Reklam Yönetimi:</strong> %0 Komisyon, şeffaf sabit yönetim ücreti ve 17+ yıllık Resmi Google Partner tecrübesi.</span>
                 </div>
               )}
 
@@ -1985,19 +2021,24 @@ export default function Home({ initialLang = 'tr' }) {
                       </div>
 
                       {/* Bottom Action Row */}
-                      <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs sm:text-[13px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors relative z-10">
-                        <span>
-                          {lang === 'de' ? 'Leistungsdetails & Strategie' : lang === 'en' ? 'Service Details & Strategy' : 'Hizmet Detayları & Strateji'}
-                        </span>
-                        <div 
-                          className="w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-1 shadow-2xs"
-                          style={{ 
-                            backgroundColor: `${localizedMeta.accent}14`, 
-                            color: localizedMeta.accent 
+                      <div className="pt-4 border-t border-slate-100 flex items-center justify-between gap-2 relative z-10">
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.preventDefault()
+                            e.stopPropagation()
+                            selectServiceAndContact(service.slug)
                           }}
+                          className="px-3.5 py-1.5 rounded-xl text-xs font-bold text-white shadow-xs transition-all duration-200 hover:scale-105 cursor-pointer flex items-center gap-1"
+                          style={{ backgroundColor: localizedMeta.accent }}
                         >
-                          <ChevronRight className="w-4 h-4 stroke-[2.5]" />
-                        </div>
+                          <span>{lang === 'de' ? 'Angebot anfordern' : lang === 'en' ? 'Get Proposal' : 'Teklif Al'}</span>
+                          <ArrowRight className="w-3 h-3" />
+                        </button>
+                        <span className="text-xs font-bold text-slate-600 group-hover:text-blue-600 transition-colors flex items-center gap-1">
+                          <span>{lang === 'de' ? 'Details & Strategie' : lang === 'en' ? 'Details & Strategy' : 'Detayları İncele'}</span>
+                          <ChevronRight className="w-3.5 h-3.5" />
+                        </span>
                       </div>
                     </div>
                   </a>
@@ -2138,7 +2179,7 @@ export default function Home({ initialLang = 'tr' }) {
       </section>
 
       {/* Interactive ROAS & ROI Calculator Lead Magnet */}
-      <section className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+      <section id="calculator" className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
         <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-emerald-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -2409,6 +2450,38 @@ export default function Home({ initialLang = 'tr' }) {
                       autoComplete="off"
                     />
                   </div>
+
+                  {/* Service Selector Pills */}
+                  <div>
+                    <label className="block text-xs font-black uppercase tracking-wider text-slate-500 mb-2">
+                      {lang === 'de' ? 'Gewünschte Leistung' : lang === 'en' ? 'Service of Interest' : 'İlgilendiğiniz Hizmet'}
+                    </label>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                      {[
+                        { id: 'google-ads', label: 'Google Ads' },
+                        { id: 'meta-ads', label: 'Meta Ads (IG & FB)' },
+                        { id: 'seo', label: 'SEO & GEO (AI)' },
+                        { id: 'tiktok-ads', label: 'TikTok Ads' },
+                        { id: 'server-side-tracking', label: 'Server-Side CAPI' },
+                        { id: 'yorum-yonetimi', label: 'Olumsuz Yorum' },
+                        { id: 'all', label: '360° Tüm Kanallar' },
+                      ].map((opt) => (
+                        <button
+                          key={opt.id}
+                          type="button"
+                          onClick={() => setFormData({ ...formData, service: opt.id })}
+                          className={`py-2 px-2.5 rounded-xl text-xs font-bold transition-all text-center border cursor-pointer ${
+                            formData.service === opt.id
+                              ? 'bg-[#4285F4] text-white border-[#4285F4] shadow-xs scale-[1.02]'
+                              : 'bg-slate-50 text-slate-700 border-slate-200/80 hover:bg-slate-100 hover:border-slate-300'
+                          }`}
+                        >
+                          {opt.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Input
@@ -2430,22 +2503,33 @@ export default function Home({ initialLang = 'tr' }) {
                       />
                     </div>
                   </div>
-                  <div>
-                    <Input
-                      type="tel"
-                      placeholder={t.contact.form.phone}
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      required
-                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
-                    />
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <Input
+                        type="tel"
+                        placeholder={t.contact.form.phone}
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        required
+                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <Input
+                        type="text"
+                        placeholder={lang === 'de' ? 'Unternehmen / Website (optional)' : lang === 'en' ? 'Company / Website (optional)' : 'Firma / Web Siteniz (opsiyonel)'}
+                        value={formData.company || ''}
+                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
+                      />
+                    </div>
                   </div>
                   <div>
                     <Textarea
-                      placeholder={t.contact.form.message}
+                      placeholder={lang === 'de' ? 'Beschreiben Sie Ihre Ziele, Werbebudget oder aktuelle Herausforderungen...' : lang === 'en' ? 'Describe your goals, advertising budget, or current challenges...' : 'Hedeflerinizi, aylık tahmini bütçenizi veya mevcut reklam/SEO zorluklarınızı belirtin...'}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      rows={5}
+                      rows={4}
                       required
                       className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
                     />

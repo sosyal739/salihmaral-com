@@ -121,7 +121,7 @@ export async function POST(request) {
     }
 
     const body = await request.json()
-    const { name, email, phone, company, message, language, b_check, _gotcha, website_hp } = body
+    const { name, email, phone, company, service, message, language, b_check, _gotcha, website_hp } = body
 
     // 3. Honeypot Anti-Bot Filter (Silently trap automated spam bots)
     if (b_check || _gotcha || website_hp) {
@@ -177,6 +177,20 @@ export async function POST(request) {
       )
     }
 
+    // Service mapping for clear notification
+    const serviceLabels = {
+      'google-ads': 'Google Ads Yönetimi (Search, Shopping, PMax, YouTube)',
+      'meta-ads': 'Meta Ads (Facebook & Instagram Advantage+)',
+      'seo': 'SEO & Yapay Zeka Arama (Princeton GEO)',
+      'tiktok-ads': 'TikTok Ads (Spark Ads & TikTok Shop)',
+      'server-side-tracking': 'Server-Side Tracking (sGTM & Meta CAPI)',
+      'yorum-yonetimi': 'Olumsuz Yorum Temizleme & İtibar Yönetimi',
+      'x-ads': 'X (Twitter) Ads',
+      'youtube-ads': 'YouTube Ads & Video Pazarlama',
+      'all': '360° Dijital Büyüme (Tüm Kanallar)',
+    }
+    const cleanService = service ? escapeHtml((serviceLabels[service] || service).replace(/[\r\n]/g, ' ').trim()) : 'Genel Teklif / Danışmanlık'
+
     // Sanitize all inputs to prevent HTML/Script injection
     const cleanName = escapeHtml(name.replace(/[\r\n]/g, ' ').trim())
     const cleanEmail = escapeHtml(email.trim())
@@ -191,6 +205,7 @@ export async function POST(request) {
       email: cleanEmail,
       phone: cleanPhone || 'N/A',
       company: cleanCompany || 'N/A',
+      service: cleanService,
       language: cleanLang,
       ip: clientIp,
     })
@@ -211,6 +226,7 @@ export async function POST(request) {
     .field { margin-bottom: 20px; }
     .label { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #64748b; margin-bottom: 6px; }
     .value { font-size: 15px; font-weight: 600; color: #0f172a; background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 4px solid #3b82f6; }
+    .service-badge { font-size: 15px; font-weight: 800; color: #1d4ed8; background: #eff6ff; padding: 12px 16px; border-radius: 8px; border-left: 4px solid #2563eb; }
     .message-box { font-size: 15px; color: #334155; background: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #10b981; white-space: pre-wrap; line-height: 1.7; }
     .footer { background: #f8fafc; padding: 20px; text-align: center; font-size: 12px; color: #94a3b8; border-top: 1px solid #e2e8f0; }
   </style>
@@ -221,6 +237,10 @@ export async function POST(request) {
       <h1>🔔 Yeni Müşteri & Teklif Talebi</h1>
     </div>
     <div class="content">
+      <div class="field">
+        <div class="label">Talep Edilen Hizmet</div>
+        <div class="service-badge">⚡ ${cleanService}</div>
+      </div>
       <div class="field">
         <div class="label">Ad Soyad</div>
         <div class="value">${cleanName}</div>
@@ -265,7 +285,7 @@ export async function POST(request) {
         from: '"Salih Maral Web Sitesi" <info@salihmaral.com>',
         to: contactEmail,
         replyTo: email,
-        subject: `📬 Yeni Teklif Talebi: ${cleanName} (${cleanCompany || 'Bireysel'}) - salihmaral.com`,
+        subject: `📬 Yeni Teklif Talebi [${service || 'Genel'}]: ${cleanName} (${cleanCompany || 'Bireysel'}) - salihmaral.com`,
         html: emailHtml,
       })
       emailId = smtpRes.messageId
