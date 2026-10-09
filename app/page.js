@@ -1,0 +1,2718 @@
+'use client'
+
+import { trackLead } from '@/lib/analytics'
+
+import { useState, useEffect } from 'react'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { Badge } from '@/components/ui/badge'
+import { Mail, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen, Menu, X, ChevronRight, MessageSquare, ChevronDown, HelpCircle } from 'lucide-react'
+import CookieConsent from '@/components/CookieConsent'
+import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
+import LeadFunnelWizard from '@/components/LeadFunnelWizard'
+import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
+import EcosystemMarquee from '@/components/EcosystemMarquee'
+
+const translations = {
+  tr: {
+    nav: {
+      services: 'Hizmetler',
+      success: 'Başarılar',
+      about: 'Hakkımda',
+      contact: 'İletişim'
+    },
+    hero: {
+      title: 'Resmi Google Partner & Dijital Büyüme Ajansı',
+      subtitle: 'Türkiye ve Küresel Pazarlarda Google Ads, Meta Ads ve İhracat Performans Pazarlaması',
+      description: 'Ben Salih Maral. 2008 yılından bu yana Resmi Google Partner olarak Türkiye\'deki markalar, e-ticaret işletmeleri ve Avrupa\'ya açılan ihracatçılar için şeffaf, ölçülebilir ve yüksek performanslı reklam sistemleri kurup yönetiyorum.',
+      cta1: 'Hizmetleri Keşfedin',
+      cta2: 'Ücretsiz Teklif Alın',
+      clients: 'Mutlu Müşteri & Şirket'
+    },
+    stats: {
+      experience: 'Yıllık Tecrübe',
+      keywords: 'Kelimede 1. Sıra',
+      brands: 'Marka Tecrübesi',
+      traffic: 'Trafik Artışı',
+      roi: 'ROI Artışı',
+      focus: 'Dönüşüm & Satış'
+    },
+    technologies: {
+      title: 'Kullanılan Profesyonel Teknolojiler'
+    },
+    why: {
+      title: 'Dijital Pazarlama Hizmetlerimiz',
+      subtitle: 'Hizmetlerimiz',
+      services: [
+        {
+          title: 'Google Ads Yönetimi',
+          description: 'Arama, Display, Shopping ve YouTube reklamlarında maksimum ROI. Profesyonel kampanya yönetimi ve optimizasyon.',
+          slug: 'google-ads',
+          icon: 'google-ads'
+        },
+        {
+          title: 'Meta Ads (Facebook & Instagram)',
+          description: 'Facebook ve Instagram\'da hedef kitlenize ulaşın. Detaylı hedefleme ve yüksek dönüşüm oranları.',
+          slug: 'meta-ads',
+          icon: 'meta'
+        },
+        {
+          title: 'TikTok Ads',
+          description: 'Genç ve dinamik kitleye ulaşın. Viral içerikler ve etkili kampanya yönetimiyle marka bilinirliğinizi artırın.',
+          slug: 'tiktok-ads',
+          icon: 'tiktok'
+        },
+        {
+          title: 'X (Twitter) Ads',
+          description: 'Trend konularda öne çıkın. Gerçek zamanlı etkileşim ve marka görünürlüğü için profesyonel X reklamları.',
+          slug: 'x-ads',
+          icon: 'x'
+        },
+        {
+          title: 'SEO Hizmetleri',
+          description: 'Google\'da üst sıralarda yer alın. Sayfa içi, teknik SEO ve yerel otorite çalışmaları ile nitelikli organik ziyaretçi kazanın.',
+          slug: 'seo',
+          icon: 'seo'
+        },
+        {
+          title: 'Olumsuz Yorum Yönetimi',
+          description: 'Google Maps ve Trustpilot\'taki haksız yorumları silin. İtibarınızı koruyun, güveninizi geri kazanın.',
+          slug: 'yorum-yonetimi',
+          icon: 'review'
+        },
+        {
+          title: 'Reklam & Tracking Kurulumu',
+          description: 'Google Ads, GA4 E-Ticaret, Search Console, GMC, Meta Pixel, CAPI, sGTM ve Google Haritalar anahtar teslim kurulumu.',
+          slug: 'server-side-tracking',
+          icon: 'tracking'
+        },
+        {
+          title: 'YouTube Ads & Video Pazarlama',
+          description: 'Sanatçılar, e-ticaret ve markalar için 23.1M+ izlenme tecrübesiyle YouTube Shorts, In-Stream ve Bumper reklam stratejileri.',
+          slug: 'youtube-ads',
+          icon: 'youtube'
+        }
+      ]
+    },
+    success: {
+      title: 'Ölçülebilir Verilerle Büyüme Stratejisi',
+      subtitle: 'Kanıtlanmış Başarı',
+      description: 'Doğru bir dijital pazarlama stratejisi; bütçenizi boşa harcamadan, doğrudan işletmenize telefon açan, teklif isteyen ve satın alan nitelikli müşterilere ulaşmaktır.',
+      metrics: [
+        { title: 'Ciro Artışı', subtitle: 'E-Ticaret' },
+        { title: 'Google Zirvesi', subtitle: 'Google Arama' },
+        { title: 'Hedef Kitle Erişimi', subtitle: 'Marka Bilinirliği' },
+        { title: 'Organik Büyüme', subtitle: 'Organik Trafik' }
+      ]
+    },
+    proofGallery: {
+      badge: 'GERÇEK GOOGLE ADS PANEL VERİLERİ',
+      title: '1.13M€+ Bütçe ile Yönettiğim Canlı Google Ads Panel Verileri',
+      description: '2008 yılından bu yana bizzat kurup optimize ettiğim Google Ads ve YouTube hesaplarından alınan doğrulanmış canlı veriler.',
+      cards: [
+        {
+          title: '1.13M€+ Yönetilen Bütçe & 208.000+ Dönüşüm',
+          subtitle: 'Google Ads Arama & Alışveriş',
+          stat: '1.74M Tıklama / 150M Gösterim',
+          desc: '10 yıllık doğrulanmış kampanya verisi: 1.13 Milyon € yönetilen bütçe ile 208.000 adet onaylanmış sipariş ve müşteri dönüşümü.',
+          image: '/proof/google-ads-1-13m-spend-208k-conv.png',
+          badge: '1.13M€ SPEND'
+        },
+        {
+          title: '%1.104,05 (11.04x) E-Ticaret Rekor ROAS',
+          subtitle: 'Performans & Satış Zirvesi',
+          stat: '119.000 Dönüşüm / 204K Tıklama',
+          desc: 'Google Ads e-ticaret kampanyalarında %1.104 ROAS getiri oranı. Harcanan her 100€ için 1.104€ net ciro üretimi.',
+          image: '/proof/google-ads-roas-1104.png',
+          badge: '11.04x ROAS'
+        },
+        {
+          title: '23.1 Milyon+ YouTube TrueView İzlenme & 720 Kampanya',
+          subtitle: 'Sanatçılar & Prodüksiyon Şirketleri',
+          stat: '124M Gösterim / 23.1M İzlenme',
+          desc: 'Tanınmış sanatçıların ve müzik kliplerinin milyonlarca gerçek kitleye ulaşmasını sağlayan 720+ başarılı YouTube Ads kampanyası.',
+          image: '/proof/youtube-ads-23m-views-720-campaigns.png',
+          badge: '23.1M VIEWS'
+        },
+        {
+          title: '%64.78 Video Etkileşim Oranı & 19.3M İzlenme',
+          subtitle: 'YouTube Ads Doğrudan Kitle Hedefleme',
+          stat: '40M Gösterim / 19.3M İzlenme',
+          desc: 'Müzik ve kurumsal video tanıtımlarında %64.78 etkileşim oranıyla organik algoritmayı tetikleyen placement kurgusu.',
+          image: '/proof/youtube-ads-19m-views.png',
+          badge: '%64.78 INTERACTION'
+        }
+      ]
+    },
+    corporate: {
+      title: 'Size Özel Büyüme Planı Hazırlayalım',
+      subtitle: 'İşletmenizin İhtiyaçlarına Özel Strateji',
+      description: 'Her işletmenin dinamikleri farklıdır. Hedeflerinize, bütçenize ve sektörünüze uygun; tamamen işletmenize özel kurgulanmış bir dijital pazarlama stratejisi belirleyelim.',
+      cta: 'Ücretsiz Teklif Alın',
+      features: [
+        { title: 'Sektörel Rekabet Analizi', description: 'Rakiplerinizin önüne geçmeniz için derinlemesine pazar araştırması.' },
+        { title: 'Birebir Uzman Desteği', description: 'Sorularınız ve güncellemeler için doğrudan benimle iletişimde kalırsınız.' },
+        { title: 'Kapsamlı Teknik Denetim', description: 'Sitenizin altyapısındaki teknik ve analitik hataları tespit edip bizzat optimize ederim.' },
+        { title: 'Dönüşüm Optimizasyonu', description: 'Ziyaretçileri doğrudan teklif isteyen veya arayan nitelikli müşterilere dönüştüren stratejiler.' }
+      ]
+    },
+    testimonials: {
+      title: 'Müşterilerimizin Gözünden Deneyim',
+      subtitle: 'Müşteri Deneyimi',
+      rating: 'Google İşletme Profili Puanı',
+      reviews: [
+        {
+          name: 'Mehmet Yılmaz',
+          role: 'E-Ticaret Sahibi',
+          text: 'Google Ads kampanyalarımız için profesyonel bir uzman arayışındaydık. Salih Bey ile çalışmaya başladıktan sadece 2 ay sonra satışlarımız %180 arttı. Özellikle kampanya yönetimi ve ROI optimizasyonu konusundaki uzmanlığı mükemmel.',
+          rating: 5
+        },
+        {
+          name: 'Anna Weber',
+          role: 'Klinik Sahibi',
+          text: 'Kliniğimiz için Google ve Facebook reklamları yaptık. Eskiden haritalarda hiç çıkmazken şimdi bölgemizde ilk sıradayız. Telefonlarımız susmuyor. İşini gerçekten bilen, dürüst ve şeffaf bir uzman.',
+          rating: 5
+        },
+        {
+          name: 'Kemal Öztürk',
+          role: 'Restoran Sahibi',
+          text: 'Daha önce farklı ajanslarla çalıştık ama verim alamadık. Salih Bey ile çalışmaya başladığımızdan beri raporlamalar o kadar net ki paramızın nereye gittiğini biliyoruz. Kesinlikle öneririm.',
+          rating: 5
+        }
+      ]
+    },
+    about: {
+      title: '17 Yıllık Tecrübe ile Doğrudan ve Şeffaf Çalışma Prensibim',
+      subtitle: 'Neden Salih Maral?',
+      features: [
+        {
+          title: 'Veri Odaklı Strateji',
+          description: 'Varsayımlarla hareket etmiyorum. Rakiplerinizi ve reklam açık artırma verilerini düzenli inceleyerek bütçenizi en verimli kelimelere yönlendiririm.'
+        },
+        {
+          title: 'Teknik Kurulum ve Takip',
+          description: 'Dönüşüm izleme (GA4, CAPI, sGTM) ve hedef kitle ayarlarını bizzat kurup test ederim. Reklam harcamanızın her kuruşunun karşılığını net görürsünüz.'
+        },
+        {
+          title: 'Butik ve Birebir Çalışma',
+          description: 'İşlerimi asistanlara veya junior çalışanlara devretmiyorum. Sınırlı sayıda işletmeyle bizzat çalışarak her hesaba gereken dikkati ve zamanı ayırırım.'
+        },
+        {
+          title: 'Net Satış ve Kârlılık Odaklı',
+          description: 'Trafik bir araçtır; asıl amaç ciro ve net kârdır. Tıklama sayısına odaklanmak yerine, dönüşüm oranlarını yükselterek işletmenizin net gelirini artırırım.'
+        },
+        {
+          title: 'Şeffaf Raporlama',
+          description: 'Gizli komisyon veya karmaşık terimler yok. Ne harcandığını, hangi dönüşümlerin alındığını her ay net ve anlaşılır biçimde paylaşıyorum.'
+        },
+        {
+          title: 'Doğrudan İletişim',
+          description: 'Aracı müşteri temsilcileri olmadan, doğrudan hesabınızı yöneten uzmanla yani benimle görüşür; sorularınıza hızlı yanıt alırsınız.'
+        }
+      ]
+    },
+    contact: {
+      title: 'Dijital Pazarlama Uzmanı ile İletişime Geçin',
+      subtitle: 'İşletmenizin büyümesine nasıl yardımcı olabileceğimi keşfedin.',
+      form: {
+        name: 'Adınız Soyadınız',
+        email: 'E-posta Adresiniz',
+        phone: 'Telefon Numaranız',
+        message: 'Mesajınız',
+        submit: 'Mesajı Gönder',
+        success: 'Mesajınız başarıyla gönderildi!',
+        error: 'Bir hata oluştu. Lütfen tekrar deneyin.'
+      },
+      cta: {
+        title: 'Bir Dijital Pazarlama Uzmanıyla Konuşmaya Hazır Mısınız?',
+        description: 'Dijital dünyada kaybolmak yerine, doğru stratejilerle öne çıkın. Sorularınızı yanıtlamak ve size özel çözümler üretmek için buradayım.',
+        call: 'Beni Arayın'
+      }
+    },
+    faq: {
+      badge: 'Sıkça Sorulan Sorular',
+      title: 'Almanya Google Ads & Dijital Büyüme Rehberi',
+      subtitle: 'Almanya ve Avrupa\'da reklam yönetimi, ajans maliyetleri, vergilendirme ve yerel büyüme hakkında en çok merak edilenler.',
+      items: [
+        {
+          q: 'Almanya\'da Google Ads Yönetimi ve Danışmanlık Ücretleri Ne Kadardır?',
+          a: 'Geleneksel ajanslar reklam bütçeniz üzerinden %15-%20 komisyon alarak maliyetinizi artırır. Ben Salih Maral olarak şeffaf, sürprizsiz ve aylık sabit fiyat (Fixpreis ab 590€ - 790€/ay) modeliyle çalışıyorum. Bütçeniz kesintiye uğramadan doğrudan satış getirecek aramalara harcanır.'
+        },
+        {
+          q: 'Frankfurt, Köln ve Stuttgart\'taki Şirketler Neden Hâlâ "AdWords Ajansı" Olarak Arıyor?',
+          a: 'Google, reklam platformunun adını 2018\'de "Google Ads" olarak değiştirmiş olsa da, Almanya\'daki sanayi, makine ve B2B satın alma yöneticileri alışkanlık gereği hâlâ "AdWords Agentur" terimini kullanmaktadır. Frankfurt finans/B2B, Köln e-ticaret ve Stuttgart makine sektörüne özel çift odaklı stratejiler kuruyorum.'
+        },
+        {
+          q: 'Almanya\'da Google ve Meta Ads Faturaları Nasıl Muhasebeleştirilir? (§13b UStG)',
+          a: 'Google ve Meta Avrupa faturalarını Dublin/İrlanda merkezinden düzenler. Almanya\'daki şirketiniz için KDV Numarası (USt-IdNr.) girildiğinde faturalar %0 KDV (Ters İbraz / Reverse-Charge §13b UStG) ile kesilir. KDV ön beyannamenizde 84 ve 67. hanelere girilerek vergi sıfırlanır.'
+        },
+        {
+          q: 'Almanya\'da Yeni Dükkan & İşletme Açanlar İçin Google Ads ve Haritalar Nasıl Çalışır?',
+          a: 'Restoran, market, oto servis, klinik ve inşaat (Handwerk) işletmelerinin ilk 30 günde müşteri çekmesi için Google Haritalar (Google İşletme Profili) 3-Pack zirvesine optimize edilir ve 5-15 km çevreye hedeflenen yerel Google Ads ile doğrudan telefon araması ve yol tarifi toplanır.'
+        },
+        {
+          q: 'Performance Max (PMax) Kampanyalarında Negatif Anahtar Kelimeler Neden Zorunludur?',
+          a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler ve marka hariç tutma uygulayarak bütçeyi sadece kârlı yeni müşterilere yönlendiriyorum.'
+        },
+        {
+          q: 'Ruhr Bölgesi ve NRW SEO: Dortmund, Essen ve Marl İşletmeleri Google\'da Nasıl Zirveye Çıkar?',
+          a: 'Dortmund, Essen, Bochum ve Marl gibi sanayi ve nüfus yoğunluğu yüksek Ruhr metropollerinde, yerel schema (LocalBusiness), bölgesel servis siloları ve yüksek otorite sinyalleri ile ilk 3 organik sırayı hedefleyip sonuç alıyoruz.'
+        }
+      ]
+    },
+    footer: {
+      description: 'Almanya ve Avrupa\'da Google Ads, Meta Ads ve SEO ile işletmeniz için şeffaf, ölçülebilir büyüme sistemleri.',
+      rights: 'Tüm hakları saklıdır.',
+      about: 'Hakkımda'
+    }
+  },
+  de: {
+    nav: {
+      services: 'Dienstleistungen',
+      success: 'Erfolge',
+      about: 'Über mich',
+      contact: 'Kontakt'
+    },
+    hero: {
+      title: 'Google Ads & Digital Marketing Experte',
+      subtitle: 'Google Ads Agentur, Meta Ads & SEO für planbaren ROI in Deutschland',
+      description: 'Ich bin Salih Maral. Als offizieller Google Partner mit 17+ Jahren Erfahrung entwickle und steuere ich hochperformante, transparente Marketing-Systeme für Unternehmen in Deutschland und Europa nach höchsten Qualitätsstandards.',
+      cta1: 'Leistungen entdecken',
+      cta2: 'Kostenloses Angebot',
+      clients: 'Zufriedene Kunden & Firmen'
+    },
+    stats: {
+      experience: 'Jahre Erfahrung',
+      keywords: 'Keywords auf Platz 1',
+      brands: 'Markenerfahrung',
+      traffic: 'Traffic-Steigerung',
+      roi: 'ROI-Steigerung',
+      focus: 'Konversion & Verkauf'
+    },
+    technologies: {
+      title: 'Verwendete professionelle Technologien'
+    },
+    why: {
+      title: 'Unsere Digital Marketing Dienstleistungen',
+      subtitle: 'Unsere Dienstleistungen',
+      services: [
+        {
+          title: 'Google Ads Management',
+          description: 'Maximaler ROI in Such-, Display-, Shopping- und YouTube-Anzeigen. Professionelles Kampagnenmanagement.',
+          slug: 'google-ads',
+          icon: 'google-ads'
+        },
+        {
+          title: 'Meta Ads (Facebook & Instagram)',
+          description: 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram. Detailliertes Targeting und hohe Conversion-Raten.',
+          slug: 'meta-ads',
+          icon: 'meta'
+        },
+        {
+          title: 'TikTok Ads',
+          description: 'Erreichen Sie ein junges, dynamisches Publikum. Steigern Sie Ihre Markenbekanntheit mit viralen Inhalten.',
+          slug: 'tiktok-ads',
+          icon: 'tiktok'
+        },
+        {
+          title: 'X (Twitter) Ads',
+          description: 'Heben Sie sich bei Trendthemen hervor. Professionelle X-Werbung für Echtzeit-Engagement und Markensichtbarkeit.',
+          slug: 'x-ads',
+          icon: 'x'
+        },
+        {
+          title: 'SEO Dienstleistungen',
+          description: 'Erreichen Sie Top-Rankings bei Google. On-Page, Off-Page und technisches SEO für mehr organischen Traffic.',
+          slug: 'seo',
+          icon: 'seo'
+        },
+        {
+          title: 'Negative Bewertungen Löschen',
+          description: 'Entfernen Sie ungerechte Bewertungen bei Google Maps und Trustpilot. Schützen Sie Ihren Ruf.',
+          slug: 'yorum-yonetimi',
+          icon: 'review'
+        },
+        {
+          title: 'Werbekonto- & Tracking-Setup',
+          description: 'Google Ads Eröffnung, Verifizierung, GA4, Search Console, GMC, Meta Pixel, CAPI, sGTM und Google Maps schlüsselfertig.',
+          slug: 'server-side-tracking',
+          icon: 'tracking'
+        },
+        {
+          title: 'YouTube Ads & Videomarketing',
+          description: 'Shorts, In-Stream und Bumper Ads Strategien mit 23,1 Mio.+ View-Erfahrung für maximale Markenbekanntheit.',
+          slug: 'youtube-ads',
+          icon: 'youtube'
+        }
+      ]
+    },
+    success: {
+      title: 'Profitable Kampagnen mit verifizierten Daten',
+      subtitle: 'Bewährter Erfolg',
+      description: 'Professionelles Performance-Marketing bedeutet: Kein verschwendetes Werbebudget, sondern gezielte Ausrichtung auf kaufbereite Kunden, qualifizierte Anfragen und nachhaltigen Unternehmensgewinn.',
+      metrics: [
+        { title: 'Umsatzsteigerung', subtitle: 'E-Commerce' },
+        { title: 'Top-Platzierungen', subtitle: 'Google Suche' },
+        { title: 'Reichweite & Marke', subtitle: 'Markenbekanntheit' },
+        { title: 'Organisches Wachstum', subtitle: 'SEO & Sichtbarkeit' }
+      ]
+    },
+    proofGallery: {
+      badge: 'VERIFIZIERTE GOOGLE ADS DASHBOARDS',
+      title: '1,13 Mio. €+ verwaltetes Werbebudget: Meine Live-Dashboards',
+      description: 'Seit 2008 von mir persönlich aufgebaute und betreute Google Ads- und YouTube-Kampagnen mit verifizierten Live-Ergebnissen.',
+      cards: [
+        {
+          title: '1,13 Mio. € Budget & 208.000+ Conversions',
+          subtitle: 'Google Ads Search & Shopping',
+          stat: '1,74M Klicks / 150M Impressionen',
+          desc: '10 Jahre verifizierte Kampagnenhistorie: Mit 1,13 Mio. € Budget wurden über 208.000 bestätigte Kundenanfragen und Verkäufe generiert.',
+          image: '/proof/google-ads-1-13m-spend-208k-conv.png',
+          badge: '1.13M€ BUDGET'
+        },
+        {
+          title: '1.104,05 % (11,04x) E-Commerce Rekord-ROAS',
+          subtitle: 'Performance & Umsatz-Skalierung',
+          stat: '119.000 Conversions / 204K Klicks',
+          desc: 'Google Ads E-Commerce Kampagne mit 1.104 % ROAS. Für jeden eingesetzten Euro Werbebudget wurden 11,04 € Netto-Umsatz erzielt.',
+          image: '/proof/google-ads-roas-1104.png',
+          badge: '11.04x ROAS'
+        },
+        {
+          title: '23,1 Mio.+ YouTube TrueView Views & 720 Kampagnen',
+          subtitle: 'Künstler, Musikvideos & Brands',
+          stat: '124M Impressionen / 23,1M Views',
+          desc: 'Über 720 erfolgreiche YouTube Ads Kampagnen für Musikkünstler und Unternehmen zur nachhaltigen organischen Skalierung.',
+          image: '/proof/youtube-ads-23m-views-720-campaigns.png',
+          badge: '23.1M VIEWS'
+        },
+        {
+          title: '64,78 % Interaktionsrate & 19,3M Views',
+          subtitle: 'YouTube Ads Zielgruppen-Präzision',
+          stat: '40M Impressionen / 19,3M Views',
+          desc: 'Extrem hohe Video-Engagement-Raten zur Aktivierung des YouTube-Empfehlungsalgorithmus.',
+          image: '/proof/youtube-ads-19m-views.png',
+          badge: '64.78% INTERACTION'
+        }
+      ]
+    },
+    corporate: {
+      title: 'Lassen Sie uns einen maßgeschneiderten Wachstumsplan für Sie erstellen',
+      subtitle: 'Individuelle Betreuung für Ihr Geschäftsmodell',
+      description: 'Jedes Unternehmen hat unterschiedliche Dynamiken. Lassen Sie uns für eine auf Ihre Ziele, Ihr Budget und Ihre Branche zugeschnittene Digital Marketing Strategie zusammensetzen.',
+      cta: 'Jetzt Angebot anfordern',
+      features: [
+        { title: 'Branchenwettbewerbsanalyse', description: 'Tiefgehende Marktforschung, damit Sie Ihre Konkurrenten überholen können.' },
+        { title: 'Direkte Experten-Betreuung', description: 'Für Fragen und strategische Abstimmungen haben Sie direkten Kontakt zu mir.' },
+        { title: 'Umfassendes technisches Audit', description: 'Gründliche technische Analyse und direkte Behebung von Tracking- oder Strukturfehlern auf Ihrer Website.' },
+        { title: 'Conversion-Optimierung', description: 'Gezielte Maßnahmen, die qualifizierte Webseitenbesucher in zahlende Kunden und feste Anfragen umwandeln.' }
+      ]
+    },
+    testimonials: {
+      title: 'Erfahrung aus Sicht unserer Kunden',
+      subtitle: 'Kundenerfahrung',
+      rating: 'Google Business Profil Bewertung',
+      reviews: [
+        {
+          name: 'Michael Schmidt',
+          role: 'E-Commerce Inhaber',
+          text: 'Wir suchten einen professionellen Experten für unsere Google Ads-Kampagnen. Nur 2 Monate nach Beginn der Zusammenarbeit mit Herrn Maral stiegen unsere Verkäufe um 180%. Seine Beherrschung des Kampagnenmanagements und der ROI-Optimierung ist ausgezeichnet.',
+          rating: 5
+        },
+        {
+          name: 'Anna Weber',
+          role: 'Klinikbesitzerin',
+          text: 'Wir haben Google- und Facebook-Anzeigen für unsere Klinik gemacht. Früher erschienen wir nie auf Karten, jetzt sind wir in unserer Region an erster Stelle. Unsere Telefone hören nicht auf zu klingeln. Ein wirklich sachkundiger, ehrlicher und transparenter Experte.',
+          rating: 5
+        },
+        {
+          name: 'Thomas Müller',
+          role: 'Restaurant-Besitzer',
+          text: 'Wir haben zuvor mit verschiedenen Agenturen zusammengearbeitet, aber keine Ergebnisse erzielt. Seit wir mit Herrn Maral arbeiten, sind die Berichte so klar, dass wir wissen, wohin unser Geld fließt. Ich empfehle ihn auf jeden Fall.',
+          rating: 5
+        }
+      ]
+    },
+    about: {
+      title: '17 Jahre Erfahrung: Mein persönlicher Anspruch an transparente Betreuung',
+      subtitle: 'Warum Salih Maral?',
+      features: [
+        {
+          title: 'Datenbasierte Strategie',
+          description: 'Keine Spekulationen: Ich analysiere das tatsächliche Suchvolumen und Ihre Wettbewerber, um Ihr Budget gezielt auf kaufbereite Kunden zu lenken.'
+        },
+        {
+          title: 'Präzises Tracking & Setup',
+          description: 'Vom Server-Side Tracking (sGTM, GA4, CAPI) bis zur Kampagnenstruktur setze ich alle technischen Grundlagen persönlich und DSGVO-konform auf.'
+        },
+        {
+          title: 'Persönliche Betreuung',
+          description: 'Keine Weitergabe an Junior-Manager. Als erfahrener Google Partner betreue ich eine ausgewählte Anzahl an Mandanten verlässlich und direkt.'
+        },
+        {
+          title: 'Fokus auf Umsatz & Rentabilität',
+          description: 'Traffic ist nur ein Hebel; das eigentliche Ziel ist planbarer Umsatz. Statt reiner Klickzahlen steigere ich gezielt Ihre Conversion-Rate für maximale Rentabilität.'
+        },
+        {
+          title: 'Volle Kostentransparenz',
+          description: 'Keine versteckten Provisionen: Klare monatliche Fixpreise und direkte Einsicht in Ihr eigenes Werbekonto sorgen für 100%ige Transparenz.'
+        },
+        {
+          title: 'Direkter Ansprechpartner',
+          description: 'Kein Warten in Hotline-Warteschlangen. Bei Fragen oder Anpassungswünschen erreichen Sie mich persönlich und unkompliziert.'
+        }
+      ]
+    },
+    contact: {
+      title: 'Kontaktieren Sie den Digital Marketing Experten',
+      subtitle: 'Entdecken Sie, wie wir Ihrem Unternehmen beim Wachstum helfen können.',
+      form: {
+        name: 'Ihr Name',
+        email: 'Ihre E-Mail-Adresse',
+        phone: 'Ihre Telefonnummer',
+        message: 'Ihre Nachricht',
+        submit: 'Nachricht senden',
+        success: 'Ihre Nachricht wurde erfolgreich gesendet!',
+        error: 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.'
+      },
+      cta: {
+        title: 'Sind Sie bereit, mit einem Digital Marketing Experten zu sprechen?',
+        description: 'Anstatt in der digitalen Welt verloren zu gehen, heben Sie sich mit den richtigen Strategien ab. Ich bin hier, um Ihre Fragen zu beantworten und maßgeschneiderte Lösungen für Sie zu entwickeln.',
+        call: 'Rufen Sie mich an'
+      }
+    },
+    faq: {
+      badge: 'Häufig gestellte Fragen',
+      title: 'Google Ads & Performance Marketing FAQ Deutschland',
+      subtitle: 'Transparente Antworten zu Agenturkosten, Google Ads Betreuung, § 13b UStG Rechnungen und lokaler Neukundengewinnung.',
+      items: [
+        {
+          q: 'Was kostet eine professionelle Google Ads Betreuung in Deutschland?',
+          a: 'Während traditionelle Agenturen 15% bis 20% Provision auf Ihr Werbebudget aufschlagen, arbeite ich bei Salih Maral mit transparenten monatlichen Fixpreisen (ab 590 € bis 790 € / Monat). Ihr Werbebudget fließt zu 100% in profitable Klicks und Neukunden, ohne versteckte Zusatzkosten.'
+        },
+        {
+          q: 'Warum suchen Entscheider in Frankfurt, Köln & Stuttgart nach „AdWords Agentur“?',
+          a: 'Obwohl Google 2018 die Umbenennung zu Google Ads vollzog, ist der Begriff „AdWords Agentur“ im deutschen Mittelstand und bei B2B-Einkäufern tief verankert. In Frankfurt liegt der Fokus auf B2B-Leads, in Köln auf Meta & Performance Ads und in Stuttgart auf Maschinenbau und Industrie.'
+        },
+        {
+          q: 'Wie werden Google Ads Rechnungen aus Irland steuerlich verbucht (§ 13b UStG)?',
+          a: 'Rechnungen der Google Ireland Limited unterliegen dem Reverse-Charge-Verfahren nach § 13b UStG und werden mit 0% USt ausgestellt. Bei vorliegender USt-IdNr. deklarieren Sie die 19% Umsatzsteuer in der UStVA (Kennziffer 84) und ziehen sie zeitgleich als Vorsteuer (Kennziffer 67) ab.'
+        },
+        {
+          q: 'Wie gewinnen lokale Betriebe & Neugründer Kunden über Google Maps & Ads?',
+          a: 'Für Handwerker, Kanzleien, Ärzte und Gastronomie optimiere ich das Google Unternehmensprofil für die Top 3 der lokalen Google-Map-Ergebnisse. Ergänzt durch hyperlokale Google Suchanzeigen im Umkreis von 10–25 km generieren Betriebe ab Woche 1 direkte Anrufe und Aufträge.'
+        },
+        {
+          q: 'Warum sind kampagnenweite Negative Keywords in PMax Kampagnen unverzichtbar?',
+          a: 'Ungefilterte PMax Kampagnen verschwenden bis zu 35% des Klickbudgets für unproduktive App-Placements oder eigene Brand-Keywords. Durch Kampagnen-Negativlisten und Brand Exclusions stelle ich sicher, dass Ihr Budget ausschließlich in kaufbereite Neukunden investiert wird.'
+        },
+        {
+          q: 'Suchmaschinenoptimierung für das Ruhrgebiet: Wie dominieren Firmen in Dortmund, Essen & Marl?',
+          a: 'Das Ruhrgebiet ist der größte Ballungsraum Deutschlands. Durch standortspezifische Landingpages, LocalBusiness Schema und regionalen Themenaufbau erzielen Kunden in Dortmund, Essen, Bochum und Marl dauerhaft Top-Rankings auf Seite 1.'
+        }
+      ]
+    },
+    footer: {
+      description: 'Planbare Neukundengewinnung in Deutschland: Transparente Google Ads, Meta Ads und SEO-Betreuung zum monatlichen Festpreis.',
+      rights: 'Alle Rechte vorbehalten.',
+      about: 'Über mich'
+    }
+  },
+  en: {
+    nav: {
+      services: 'Services',
+      success: 'Success',
+      about: 'About',
+      contact: 'Contact'
+    },
+    hero: {
+      title: 'Google Ads & Digital Marketing Specialist',
+      subtitle: 'Fixed-Price Google Ads, Meta Ads & SEO Consulting in Germany & Europe',
+      description: 'I am Salih Maral. As an official Google Partner with 17+ years of experience, I build and manage high-performance, transparent advertising systems for businesses in Germany and Europe with proven corporate expertise.',
+      cta1: 'Explore Services',
+      cta2: 'Get Free Proposal',
+      clients: 'Happy Clients & Brands'
+    },
+    stats: {
+      experience: 'Years of Experience',
+      keywords: 'Keywords in 1st Place',
+      brands: 'Brand Experience',
+      traffic: 'Traffic Increase',
+      roi: 'ROI Increase',
+      focus: 'Conversion & Sales'
+    },
+    technologies: {
+      title: 'Professional Technologies Used'
+    },
+    why: {
+      title: 'Our Digital Marketing Services',
+      subtitle: 'Our Services',
+      services: [
+        {
+          title: 'Google Ads Management',
+          description: 'Maximum ROI in Search, Display, Shopping and YouTube ads. Professional campaign management and optimization.',
+          slug: 'google-ads',
+          icon: 'google-ads'
+        },
+        {
+          title: 'Meta Ads (Facebook & Instagram)',
+          description: 'Reach your target audience on Facebook and Instagram. Detailed targeting and high conversion rates.',
+          slug: 'meta-ads',
+          icon: 'meta'
+        },
+        {
+          title: 'TikTok Ads',
+          description: 'Reach a young, dynamic audience. Increase your brand awareness with viral content and effective campaigns.',
+          slug: 'tiktok-ads',
+          icon: 'tiktok'
+        },
+        {
+          title: 'X (Twitter) Ads',
+          description: 'Stand out in trending topics. Professional X advertising for real-time engagement and brand visibility.',
+          slug: 'x-ads',
+          icon: 'x'
+        },
+        {
+          title: 'SEO Services',
+          description: 'Achieve sustainable top rankings on Google. High-standard on-page, off-page, and technical SEO designed for organic customer acquisition.',
+          slug: 'seo',
+          icon: 'seo'
+        },
+        {
+          title: 'Negative Review Management',
+          description: 'Remove unfair reviews on Google Maps and Trustpilot. Protect your reputation and restore trust.',
+          slug: 'yorum-yonetimi',
+          icon: 'review'
+        },
+        {
+          title: 'Ad Account & Tracking Setup',
+          description: 'Turnkey setup for Google Ads, advertiser verification, GA4 E-commerce, Search Console, GMC, Meta CAPI, sGTM and Google Maps.',
+          slug: 'server-side-tracking',
+          icon: 'tracking'
+        },
+        {
+          title: 'YouTube Ads & Video Marketing',
+          description: 'Shorts, In-Stream and Bumper ad frameworks backed by 23.1M+ verified views for scalable brand reach.',
+          slug: 'youtube-ads',
+          icon: 'youtube'
+        }
+      ]
+    },
+    success: {
+      title: 'Measurable Growth Driven by Verified Data',
+      subtitle: 'Proven Success',
+      description: 'A solid performance marketing strategy focuses on what truly matters: eliminating wasted ad spend and connecting your business with qualified, high-intent customer leads.',
+      metrics: [
+        { title: 'Revenue Growth', subtitle: 'E-Commerce' },
+        { title: 'Top Rankings', subtitle: 'Google Search' },
+        { title: 'Targeted Reach', subtitle: 'Brand Visibility' },
+        { title: 'Sustainable Growth', subtitle: 'Organic SEO' }
+      ]
+    },
+    proofGallery: {
+      badge: 'VERIFIED GOOGLE ADS DASHBOARDS',
+      title: '€1.13M+ Managed Ad Spend: Live Verified Campaign Dashboards',
+      description: 'Verified live results from real-world Google Ads and YouTube campaigns directly managed and optimized by Salih Maral since 2008.',
+      cards: [
+        {
+          title: '€1.13M+ Managed Ad Spend & 208,000+ Conversions',
+          subtitle: 'Google Ads Search & Shopping',
+          stat: '1.74M Clicks / 150M Impressions',
+          desc: '10-year verified track record: €1.13M in managed ad spend producing 208,000+ confirmed sales and qualified client inquiries.',
+          image: '/proof/google-ads-1-13m-spend-208k-conv.png',
+          badge: '€1.13M SPEND'
+        },
+        {
+          title: '1,104.05% (11.04x) E-Commerce Record ROAS',
+          subtitle: 'Performance & Revenue Peak',
+          stat: '119,000 Conversions / 204K Clicks',
+          desc: 'Google Ads e-commerce campaigns achieving 1,104% ROAS—generating €11.04 in revenue for every single Euro spent.',
+          image: '/proof/google-ads-roas-1104.png',
+          badge: '11.04x ROAS'
+        },
+        {
+          title: '23.1M+ YouTube TrueView Views & 720 Campaigns',
+          subtitle: 'Music Artists & Production Companies',
+          stat: '124M Impressions / 23.1M Views',
+          desc: '720+ campaigns scaling music video releases and brand spots to millions of engaged organic viewers.',
+          image: '/proof/youtube-ads-23m-views-720-campaigns.png',
+          badge: '23.1M VIEWS'
+        },
+        {
+          title: '64.78% Video Interaction Rate & 19.3M Views',
+          subtitle: 'YouTube Audience Precision',
+          stat: '40M Impressions / 19.3M Views',
+          desc: 'High-retention TrueView targeting designed to trigger YouTube algorithmic recommendations.',
+          image: '/proof/youtube-ads-19m-views.png',
+          badge: '64.78% INTERACTION'
+        }
+      ]
+    },
+    corporate: {
+      title: "Let's Prepare a Custom Growth Plan for You",
+      subtitle: 'Tailored Strategy for Your Business Model',
+      description: 'Every business has different dynamics. Let\'s sit at the table for a digital marketing strategy completely tailored to your goals, budget and industry.',
+      cta: 'Get a Quote Now',
+      features: [
+        { title: 'Industry Competition Analysis', description: 'In-depth market research for you to get ahead of your competitors.' },
+        { title: 'Direct Specialist Access', description: 'Direct communication with me for updates, strategic decisions, and fast answers.' },
+        { title: 'Comprehensive Technical Audit', description: 'Thorough technical audit and hands-on resolution of tracking, indexing, or performance issues.' },
+        { title: 'Conversion Optimization', description: 'Focused strategies designed to convert relevant website visitors into high-intent paying customers.' }
+      ]
+    },
+    testimonials: {
+      title: 'Experience from Our Clients\' Perspective',
+      subtitle: 'Client Experience',
+      rating: 'Google Business Profile Rating',
+      reviews: [
+        {
+          name: 'John Smith',
+          role: 'E-Commerce Owner',
+          text: 'We were looking for a professional expert for our Google Ads campaigns. Just 2 months after starting to work with Mr. Maral, our sales increased by 180%. His mastery of campaign management and ROI optimization is excellent.',
+          rating: 5
+        },
+        {
+          name: 'Sarah Johnson',
+          role: 'Clinic Owner',
+          text: 'We did Google and Facebook ads for our clinic. We never appeared on maps before, now we are in first place in our region. Our phones don\'t stop ringing. A truly knowledgeable, honest and transparent expert.',
+          rating: 5
+        },
+        {
+          name: 'Robert Brown',
+          role: 'Restaurant Owner',
+          text: 'We worked with different agencies before but didn\'t get results. Since we started working with Mr. Maral, the reports are so clear that we know where our money is going. I definitely recommend him.',
+          rating: 5
+        }
+      ]
+    },
+    about: {
+      title: '17+ Years of Experience: My Personal Approach to Marketing',
+      subtitle: 'Why Salih Maral?',
+      features: [
+        {
+          title: 'Data-Driven Strategy',
+          description: "No guesswork: I analyze real search intent and competitor landscape to focus your budget on qualified, ready-to-buy customers."
+        },
+        {
+          title: 'Technical Precision & Tracking',
+          description: 'From Server-Side GTM, GA4 and Meta CAPI to granular campaign structuring, I personally configure every tracking touchpoint.'
+        },
+        {
+          title: 'Boutique & Direct Collaboration',
+          description: 'Your account is never handed off to junior associates. I work with a selective client base to give your business senior-level attention.'
+        },
+        {
+          title: 'Outcome & Profit Focused',
+          description: 'Impressions don\'t pay the bills. My core objective is generating qualified inquiries, confirmed sales, and consistent return on ad spend.'
+        },
+        {
+          title: 'Transparent Reporting',
+          description: 'No hidden percentage markups. You always retain 100% ownership of your accounts and receive clear, honest monthly performance reviews.'
+        },
+        {
+          title: 'Direct Accessibility',
+          description: 'No agency ticket queues. You have a direct line to the senior specialist actually managing and optimizing your campaigns.'
+        }
+      ]
+    },
+    contact: {
+      title: 'Get in Touch with the Digital Marketing Expert',
+      subtitle: 'Discover how we can help your business grow.',
+      form: {
+        name: 'Your Name',
+        email: 'Your Email Address',
+        phone: 'Your Phone Number',
+        message: 'Your Message',
+        submit: 'Send Message',
+        success: 'Your message has been sent successfully!',
+        error: 'An error occurred. Please try again.'
+      },
+      cta: {
+        title: 'Ready to Talk to a Digital Marketing Expert?',
+        description: 'Instead of getting lost in the digital world, stand out with the right strategies. I am here to answer your questions and create customized solutions for you.',
+        call: 'Call Me Directly'
+      }
+    },
+    faq: {
+      badge: 'Frequently Asked Questions',
+      title: 'Google Ads & Performance Marketing FAQ Germany',
+      subtitle: 'Transparent answers regarding agency management fees, § 13b UStG invoicing, PMax optimization, and local growth.',
+      items: [
+        {
+          q: 'How Much Does Professional Google Ads Management Cost in Germany?',
+          a: 'Unlike traditional agencies charging 15% to 20% commission on ad spend, Salih Maral operates on transparent monthly flat fees (from €590 to €790/month). 100% of your advertising capital works directly for revenue generation without hidden costs.'
+        },
+        {
+          q: 'Why Do Businesses in Frankfurt, Cologne & Stuttgart Search for "AdWords Agency"?',
+          a: 'German Mittelstand and B2B buyers still widely use the legacy term "AdWords Agentur". I deploy dual-targeted campaigns tailored to Frankfurt financial/B2B leads, Cologne e-commerce & Meta Ads, and Stuttgart manufacturing industries.'
+        },
+        {
+          q: 'How Are Google Ads Invoices from Ireland Booked Under German Tax Law (§ 13b UStG)?',
+          a: 'Invoices from Google Ireland Limited fall under Section 13b of the German VAT Act (Reverse Charge) with 0% VAT. With a valid German VAT ID, 19% VAT is reported and simultaneously deducted as input tax in the advance return (UStVA), remaining cash-neutral.'
+        },
+        {
+          q: 'How Do Local Businesses and Startups Win Customers via Google Maps & Ads?',
+          a: 'I optimize Google Business Profiles for the Maps 3-Pack and combine it with geo-targeted search campaigns (radius 10–25 km) to deliver phone calls, store visits, and inquiries from week one.'
+        },
+        {
+          q: 'Why Are Campaign-Level Negative Keywords Mandatory in Performance Max?',
+          a: 'Unconstrained PMax campaigns waste up to 35% of ad spend on junk mobile app placements and brand cannibalization. Adding campaign-level exclusions ensures media spend drives net-new qualified customers.'
+        },
+        {
+          q: 'Ruhr Area SEO: How Can Companies in Dortmund, Essen & Marl Dominate Local Rankings?',
+          a: 'Through localized structured schema markup, regional keyword silos, and high-authority E-E-A-T signals, businesses in Dortmund, Essen, Bochum, and Marl achieve top positions on Page 1.'
+        }
+      ]
+    },
+    footer: {
+      description: 'Predictable customer acquisition in Germany & Europe: Transparent Google Ads, Meta Ads, and SEO consulting on a fixed-fee model.',
+      rights: 'All rights reserved.',
+      about: 'About'
+    }
+  }
+}
+
+const getServiceIcon = (iconType) => {
+  switch (iconType) {
+    case 'google-ads':
+      return { icon: TrendingUp, color: 'bg-blue-50/80 text-[#4285F4] border-blue-100/60' }
+    case 'meta':
+      return { icon: Zap, color: 'bg-[#F4F1FF] text-[#5138EE] border-[#EDE9FE]' }
+    case 'tiktok':
+      return { icon: Sparkles, color: 'bg-rose-50/80 text-rose-600 border-rose-100/60' }
+    case 'x':
+      return { icon: MessageSquare, color: 'bg-slate-50 text-slate-700 border-slate-200/60' }
+    case 'seo':
+      return { icon: Search, color: 'bg-emerald-50/80 text-emerald-600 border-emerald-100/60' }
+    case 'review':
+      return { icon: ShieldCheck, color: 'bg-amber-50/80 text-amber-600 border-amber-100/60' }
+    case 'tracking':
+      return { icon: Layers, color: 'bg-cyan-50/80 text-cyan-600 border-cyan-100/60' }
+    case 'youtube':
+      return { icon: Flame, color: 'bg-red-50/80 text-red-600 border-red-100/60' }
+    default:
+      return { icon: Globe, color: 'bg-blue-50 text-[#4285F4] border-blue-100' }
+  }
+}
+
+export default function Home({ initialLang = 'tr' }) {
+  const [lang, setLang] = useState(initialLang)
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' })
+  const [formStatus, setFormStatus] = useState({ type: '', message: '' })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [latestPosts, setLatestPosts] = useState([])
+  const [blogCategory, setBlogCategory] = useState('all')
+  const [serviceCategory, setServiceCategory] = useState('all')
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const [openFaq, setOpenFaq] = useState(null)
+
+  // Language change navigates to the correct URL
+  const handleLanguageChange = (newLang) => {
+    localStorage.setItem('preferredLanguage', newLang)
+    if (newLang === 'tr') {
+      window.location.href = '/'
+    } else if (newLang === 'de') {
+      window.location.href = 'https://salihmaral.de'
+    } else {
+      window.location.href = `/${newLang}`
+    }
+  }
+
+  // Automatic Country & Browser Language Detection on First Visit
+  useEffect(() => {
+    try {
+      if (typeof window !== 'undefined') {
+        const savedLang = localStorage.getItem('preferredLanguage')
+        if (!savedLang) {
+          const navLangs = navigator.languages ? Array.from(navigator.languages) : [navigator.language || '']
+          const primaryNavLang = (navLangs[0] || '').toLowerCase()
+          const isEnglish = primaryNavLang.startsWith('en')
+
+          if (isEnglish && initialLang !== 'en') {
+            window.location.replace('/en')
+          }
+        }
+      }
+    } catch (e) {}
+  }, [initialLang])
+
+  // Update html lang attribute for SEO
+  useEffect(() => {
+    document.documentElement.lang = lang
+  }, [lang])
+
+  // Smooth scroll to hash on initial load (e.g. /#contact)
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hash) {
+      const id = window.location.hash.replace('#', '')
+      const timer = setTimeout(() => {
+        const el = document.getElementById(id)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 350)
+      return () => clearTimeout(timer)
+    }
+  }, [])
+
+  // Fetch real blog posts dynamically
+  useEffect(() => {
+    const controller = new AbortController()
+    fetch(`/api/blog?lang=${lang}`, { signal: controller.signal })
+      .then(res => res.ok ? res.json() : [])
+      .then(data => {
+        if (Array.isArray(data) && data.length > 0) {
+          setLatestPosts(data)
+        }
+      })
+      .catch(() => {})
+    return () => controller.abort()
+  }, [lang])
+
+  // Helper: get localized service URL
+  const svcUrl = (targetLang, slug) => {
+    const path = targetLang === 'de' ? 'dienstleistungen' : targetLang === 'en' ? 'services' : 'hizmetler'
+    let s = slug
+    if (slug === 'yorum-yonetimi') {
+      s = targetLang === 'de' ? 'bewertungsmanagement' : targetLang === 'en' ? 'review-management' : 'yorum-yonetimi'
+    }
+    return `/${targetLang}/${path}/${s}`
+  }
+
+  const t = translations[lang]
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setFormStatus({ type: '', message: '' })
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, language: lang })
+      })
+
+      if (response.ok) {
+        trackLead({ formName: 'homepage_contact', method: 'contact_form' })
+        setFormStatus({ type: 'success', message: t.contact.form.success })
+        setFormData({ name: '', email: '', phone: '', message: '' })
+      } else {
+        setFormStatus({ type: 'error', message: t.contact.form.error })
+      }
+    } catch (error) {
+      setFormStatus({ type: 'error', message: t.contact.form.error })
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      {/* SEO JSON-LD & Metadata */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@graph': [
+            {
+              '@type': 'WebPage',
+              '@id': `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#webpage`,
+              url: `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}`,
+              name: lang === 'de' ? 'Salih Maral - Digital Marketing Experte' : lang === 'tr' ? 'Salih Maral - Dijital Pazarlama Uzmanı' : 'Salih Maral - Digital Marketing Expert',
+              isPartOf: { '@id': 'https://salihmaral.com/#website' },
+              about: { '@id': 'https://salihmaral.com/#organization' },
+              description: t.hero.description,
+              inLanguage: lang === 'de' ? 'de-DE' : lang === 'tr' ? 'tr-TR' : 'en-US'
+            },
+            {
+              '@type': 'SiteNavigationElement',
+              '@id': `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#navigation`,
+              name: lang === 'de' ? 'Hauptnavigation' : lang === 'tr' ? 'Ana Navigasyon' : 'Main Navigation',
+              hasPart: [
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management',
+                  description: lang === 'de' ? 'Maximaler ROI in Such-, Display-, Shopping- und YouTube-Kampagnen' : lang === 'tr' ? 'Arama, Display, Shopping ve YouTube kampanyalarında maksimum ROI' : 'Maximum ROI in Search, Display, Shopping and YouTube campaigns',
+                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/google-ads`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: 'Meta Ads (Facebook & Instagram)',
+                  description: lang === 'de' ? 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram' : lang === 'tr' ? 'Facebook ve Instagram\'da hedef kitlenize ulaşın' : 'Reach your target audience on Facebook and Instagram',
+                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/meta-ads`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: 'TikTok Ads',
+                  description: lang === 'de' ? 'Erreichen Sie ein junges, dynamisches Publikum' : lang === 'tr' ? 'Genç ve dinamik kitlelere ulaşın' : 'Reach a young, dynamic audience',
+                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/tiktok-ads`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: 'X (Twitter) Ads',
+                  description: lang === 'de' ? 'Heben Sie sich bei Trendthemen hervor' : lang === 'tr' ? 'Trend konularda öne çıkın' : 'Stand out in trending topics',
+                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/x-ads`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services',
+                  description: lang === 'de' ? 'Erreichen Sie Top-Rankings bei Google' : lang === 'tr' ? 'Google\'da üst sıralara çıkın' : 'Achieve top rankings on Google',
+                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/seo`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management',
+                  description: lang === 'de' ? 'Professionelles Google Bewertungsmanagement' : lang === 'tr' ? 'Profesyonel Google yorum yönetimi' : 'Professional Google review management',
+                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/${lang === 'de' ? 'bewertungsmanagement' : lang === 'en' ? 'review-management' : 'yorum-yonetimi'}`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: 'Blog',
+                  description: lang === 'de' ? 'Neueste Artikel über digitales Marketing' : lang === 'tr' ? 'Dijital pazarlama hakkında güncel makaleler' : 'Latest articles about digital marketing',
+                  url: 'https://salihmaral.com/blog'
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: lang === 'de' ? 'Kontakt' : lang === 'tr' ? 'İletişim' : 'Contact',
+                  description: lang === 'de' ? 'Kostenlose Beratung anfordern' : lang === 'tr' ? 'Ücretsiz danışmanlık talep edin' : 'Request a free consultation',
+                  url: `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#contact`
+                }
+              ]
+            },
+            {
+              '@type': 'ItemList',
+              '@id': `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#services-list`,
+              name: lang === 'de' ? 'Digital Marketing Dienstleistungen' : lang === 'tr' ? 'Dijital Pazarlama Hizmetleri' : 'Digital Marketing Services',
+              numberOfItems: 6,
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management', url: `https://salihmaral.com${svcUrl(lang, 'google-ads')}` },
+                { '@type': 'ListItem', position: 2, name: 'Meta Ads (Facebook & Instagram)', url: `https://salihmaral.com${svcUrl(lang, 'meta-ads')}` },
+                { '@type': 'ListItem', position: 3, name: 'TikTok Ads', url: `https://salihmaral.com${svcUrl(lang, 'tiktok-ads')}` },
+                { '@type': 'ListItem', position: 4, name: 'X (Twitter) Ads', url: `https://salihmaral.com${svcUrl(lang, 'x-ads')}` },
+                { '@type': 'ListItem', position: 5, name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services', url: `https://salihmaral.com${svcUrl(lang, 'seo')}` },
+                { '@type': 'ListItem', position: 6, name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.com${svcUrl(lang, 'yorum-yonetimi')}` }
+              ]
+            },
+            {
+              '@type': 'ProfessionalService',
+              name: 'Salih Maral Digital Marketing',
+              description: lang === 'de' ? 'Professionelle Digital Marketing Dienstleistungen' : lang === 'tr' ? 'Profesyonel Dijital Pazarlama Hizmetleri' : 'Professional Digital Marketing Services',
+              url: `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}`,
+              priceRange: '€€',
+              image: 'https://salihmaral.com/logo.png',
+              areaServed: { '@type': 'Country', name: lang === 'de' ? 'Deutschland' : lang === 'tr' ? 'Almanya' : 'Germany' },
+              hasOfferCatalog: {
+                '@type': 'OfferCatalog',
+                name: lang === 'de' ? 'Digital Marketing Services' : lang === 'tr' ? 'Dijital Pazarlama Hizmetleri' : 'Digital Marketing Services',
+                itemListElement: [
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads', url: `https://salihmaral.com${svcUrl(lang, 'google-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Meta Ads', url: `https://salihmaral.com${svcUrl(lang, 'meta-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'TikTok Ads', url: `https://salihmaral.com${svcUrl(lang, 'tiktok-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'X Ads', url: `https://salihmaral.com${svcUrl(lang, 'x-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO', url: `https://salihmaral.com${svcUrl(lang, 'seo')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.com${svcUrl(lang, 'yorum-yonetimi')}` } }
+                ]
+              }
+            },
+            {
+              '@type': 'FAQPage',
+              '@id': `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#faq`,
+              mainEntity: (t.faq && t.faq.items ? t.faq.items : []).map(item => ({
+                '@type': 'Question',
+                name: item.q,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: item.a
+                }
+              }))
+            }
+          ]
+        }) }} />
+      {/* Navigation (Orphex Pure White & Soft Ambient Glow Shadow) */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-100 shadow-[0_8px_28px_rgba(81,56,238,0.06)]">
+        <div className="container mx-auto px-4 py-3 sm:py-4">
+          <div className="flex items-center justify-between">
+            <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center">
+              <picture>
+                <source srcSet="/logo-sm.webp" type="image/webp" />
+                <img src="/logo.png" alt="Salih Maral Logo" className="h-9 sm:h-10 w-auto" width="40" height="40" />
+              </picture>
+            </a>
+            
+            {/* Desktop Navigation Links */}
+            <div className="hidden md:flex items-center space-x-6">
+              <div
+                className="relative"
+                onMouseEnter={() => setIsServicesOpen(true)}
+                onMouseLeave={() => setIsServicesOpen(false)}
+              >
+                <button
+                  type="button"
+                  onClick={() => setIsServicesOpen((prev) => !prev)}
+                  className="text-sm font-bold text-gray-900 hover:text-[#5138EE] transition-colors flex items-center gap-1.5 py-2 cursor-pointer"
+                  aria-expanded={isServicesOpen}
+                >
+                  <span>{t.nav.services}</span>
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180 text-[#5138EE]' : 'text-slate-500'}`} />
+                </button>
+                
+                {/* Mega Menu Dropdown (Orphex Signature Luxury Shadow, Dot Matrix & Solid White) */}
+                <div
+                  className={`absolute -left-16 sm:-left-24 lg:-left-32 top-full pt-3 w-[780px] max-w-[calc(100vw-2rem)] transition-all duration-200 z-[100] ${
+                    isServicesOpen
+                      ? 'opacity-100 visible translate-y-0 pointer-events-auto'
+                      : 'opacity-0 invisible -translate-y-2 pointer-events-none'
+                  }`}
+                >
+                  <div className="bg-white/98 backdrop-blur-2xl rounded-3xl shadow-[0_25px_70px_rgba(15,23,42,0.14)] border border-slate-200/90 ring-1 ring-slate-900/5 p-6 relative overflow-hidden">
+                    {/* Subtle Dot Matrix & Ambient Glow inside Mega Menu */}
+                    <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-35 z-0"></div>
+                    <div className="absolute -top-12 -right-12 w-64 h-64 bg-gradient-to-br from-blue-400/15 via-purple-300/15 to-transparent rounded-full blur-3xl pointer-events-none z-0"></div>
+
+                    <div className="grid grid-cols-2 gap-3 relative z-10">
+                      {t.why.services.map((service, idx) => {
+                        const iconData = getServiceIcon(service.icon)
+                        const IconComponent = iconData.icon
+                        return (
+                          <a
+                            key={idx}
+                            href={svcUrl(lang, service.slug)}
+                            onClick={() => setIsServicesOpen(false)}
+                            className="group/item flex items-start gap-3.5 p-3 rounded-2xl hover:bg-slate-50/90 transition-all border border-transparent hover:border-slate-200/80 shadow-2xs hover:shadow-xs"
+                          >
+                            <div className={`w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 border ${iconData.color} shadow-2xs group-hover/item:scale-105 transition-transform`}>
+                              <IconComponent className="w-5 h-5" />
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <div className="font-extrabold text-[14px] text-gray-950 group-hover/item:text-[#4285F4] transition-colors flex items-center justify-between">
+                                <span className="truncate">{service.title}</span>
+                                <ChevronRight className="w-4 h-4 opacity-0 -translate-x-1 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-[#4285F4] shrink-0 ml-1" />
+                              </div>
+                              <p className="text-[12px] text-slate-500 line-clamp-1 leading-relaxed mt-0.5">
+                                {service.description}
+                              </p>
+                            </div>
+                          </a>
+                        )
+                      })}
+                    </div>
+
+                    {/* Mega Menu Bottom Bar */}
+                    <div className="mt-4 pt-4 border-t border-slate-100/90 flex items-center justify-between px-2 text-xs relative z-10">
+                      <div className="flex items-center gap-2 text-slate-600 font-semibold">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span>
+                          {lang === 'de'
+                            ? 'Monatliche Fixpreise ohne prozentuale Provision • § 13b UStG'
+                            : lang === 'en'
+                            ? 'Transparent monthly flat-fees • Zero commission'
+                            : 'Aylık şeffaf Fixpreis (sabit fiyat) • Sürpriz komisyonsuz'}
+                        </span>
+                      </div>
+                      <button
+                        onClick={() => { scrollToSection('contact'); setIsServicesOpen(false); }}
+                        className="font-bold text-[#4285F4] hover:text-blue-700 flex items-center gap-1 cursor-pointer transition-colors"
+                      >
+                        <span>{lang === 'de' ? 'Kostenloses Angebot' : lang === 'en' ? 'Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href={lang === 'de' ? '/de/standorte' : lang === 'tr' ? '/tr/standorte' : '/en/standorte'} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+                {lang === 'de' ? 'Standorte' : lang === 'tr' ? 'Şehirler' : 'Locations'}
+              </a>
+              <button onClick={() => scrollToSection('success')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer">{t.nav.success}</button>
+              <button onClick={() => scrollToSection('about')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer">{t.nav.about}</button>
+              <a href="/blog" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">Blog</a>
+              <button onClick={() => scrollToSection('contact')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer">{t.nav.contact}</button>
+            </div>
+
+            {/* Right Side: Language Switcher + Mobile Hamburger Button */}
+            <div className="flex items-center space-x-2">
+              {/* Desktop Language Switcher */}
+              <div className="hidden sm:flex items-center space-x-1.5 bg-slate-100/90 p-1 rounded-xl border border-slate-200/70 shadow-2xs">
+                <button
+                  onClick={() => handleLanguageChange('tr')}
+                  className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
+                >
+                  TR
+                </button>
+                <button
+                  onClick={() => handleLanguageChange('en')}
+                  className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
+                >
+                  EN
+                </button>
+                <a
+                  href="https://salihmaral.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2 py-1 text-xs font-bold rounded-lg transition-all text-slate-600 hover:text-gray-900 flex items-center gap-0.5"
+                  title="Almanya ve DACH Pazarı (salihmaral.de)"
+                >
+                  <span>DE</span>
+                  <span className="text-[10px] text-blue-600">↗</span>
+                </a>
+              </div>
+
+              {/* Mobile Hamburger Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(true)}
+                className="md:hidden p-2.5 rounded-2xl bg-white border border-slate-200/80 text-gray-900 hover:bg-slate-50 transition-colors shadow-2xs cursor-pointer"
+                aria-label="Open Mobile Navigation"
+              >
+                <Menu className="w-5 h-5 text-gray-900" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Clean Solid Fullscreen Mobile Modal Menu with Living Orphex Canvas & Dot Matrix */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 z-[999] bg-white/98 backdrop-blur-2xl flex flex-col animate-in fade-in duration-200 relative overflow-hidden">
+          {/* Architectural Dot Matrix & Ambient Glow inside Mobile Drawer */}
+          <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-50 z-0"></div>
+          <div className="absolute -top-12 -right-12 w-72 h-72 bg-gradient-to-br from-blue-400/20 via-purple-300/15 to-transparent rounded-full blur-3xl pointer-events-none z-0"></div>
+          <div className="absolute -bottom-12 -left-12 w-72 h-72 bg-gradient-to-tr from-emerald-400/15 to-indigo-300/15 rounded-full blur-3xl pointer-events-none z-0"></div>
+
+          {/* Top Bar inside Menu */}
+          <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200/80 bg-white/80 backdrop-blur-md relative z-10">
+            <a href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-9 w-auto" width="36" height="36" />
+            </a>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-gray-900 transition-colors cursor-pointer"
+              aria-label="Close Menu"
+            >
+              <X className="w-5 h-5 text-gray-900" />
+            </button>
+          </div>
+
+          {/* Scrollable Content inside Menu */}
+          <div className="flex-1 overflow-y-auto px-5 py-6 space-y-6 relative z-10">
+            {/* Language Segmented Control */}
+            <div className="flex items-center justify-between bg-slate-100/90 p-1.5 rounded-2xl border border-slate-200/80 shadow-inner">
+              <button
+                onClick={() => { handleLanguageChange('tr'); setIsMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
+              >
+                🇹🇷 Türkçe
+              </button>
+              <button
+                onClick={() => { handleLanguageChange('en'); setIsMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
+              >
+                🇬🇧 English
+              </button>
+              <a
+                href="https://salihmaral.de"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all text-slate-700 hover:text-blue-600"
+              >
+                🇩🇪 Almanya (.de) ↗
+              </a>
+            </div>
+
+            {/* Services List with Colorful Icon Boxes */}
+            <div className="space-y-2">
+              <div className="text-xs font-black uppercase tracking-wider text-slate-400 px-2">
+                {lang === 'de' ? 'Dienstleistungen' : lang === 'tr' ? 'Hizmetlerimiz' : 'Services'}
+              </div>
+              <div className="space-y-2">
+                {t.why.services.map((service, idx) => {
+                  const iconData = getServiceIcon(service.icon)
+                  const IconComponent = iconData.icon
+                  return (
+                    <a
+                      key={idx}
+                      href={svcUrl(lang, service.slug)}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="flex items-center justify-between p-3 rounded-2xl bg-white/90 hover:bg-blue-50/80 border border-slate-200/80 shadow-2xs transition-all"
+                    >
+                      <div className="flex items-center gap-3 min-w-0">
+                        <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 border ${iconData.color}`}>
+                          <IconComponent className="w-4 h-4" />
+                        </div>
+                        <span className="font-extrabold text-sm text-gray-950 truncate">{service.title}</span>
+                      </div>
+                      <ChevronRight className="w-4 h-4 text-slate-400 shrink-0 ml-2" />
+                    </a>
+                  )
+                })}
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div className="space-y-2 pt-2 border-t border-slate-200/70">
+              <div className="text-xs font-black uppercase tracking-wider text-slate-400 px-2">
+                {lang === 'de' ? 'Seiten & Infos' : lang === 'tr' ? 'Sayfalar & Bilgi' : 'Pages & Info'}
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href={lang === 'de' ? '/de/standorte' : lang === 'tr' ? '/tr/standorte' : '/en/standorte'}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-3 rounded-2xl bg-white/90 text-center font-bold text-xs text-gray-900 border border-slate-200/80 shadow-2xs hover:bg-slate-50 transition-colors"
+                >
+                  📍 {lang === 'de' ? '18 Standorte' : lang === 'tr' ? '18 Şehir' : '18 Locations'}
+                </a>
+                <a
+                  href="/blog"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-3 rounded-2xl bg-white/90 text-center font-bold text-xs text-gray-900 border border-slate-200/80 shadow-2xs hover:bg-slate-50 transition-colors"
+                >
+                  📚 Blog & News
+                </a>
+                <button
+                  onClick={() => { scrollToSection('success'); setIsMobileMenuOpen(false); }}
+                  className="p-3 rounded-2xl bg-white/90 text-center font-bold text-xs text-gray-900 border border-slate-200/80 shadow-2xs hover:bg-slate-50 transition-colors cursor-pointer"
+                >
+                  🏆 {t.nav.success}
+                </button>
+                <button
+                  onClick={() => { scrollToSection('about'); setIsMobileMenuOpen(false); }}
+                  className="p-3 rounded-2xl bg-white/90 text-center font-bold text-xs text-gray-900 border border-slate-200/80 shadow-2xs hover:bg-slate-50 transition-colors cursor-pointer"
+                >
+                  ℹ️ {t.nav.about}
+                </button>
+              </div>
+            </div>
+
+            {/* CTA Button in Drawer */}
+            <div className="pt-2">
+              <button
+                onClick={() => { scrollToSection('contact'); setIsMobileMenuOpen(false); }}
+                className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-2xl shadow-xl shadow-blue-500/25 flex items-center justify-center space-x-2 text-sm cursor-pointer"
+              >
+                <Mail className="w-4 h-4" />
+                <span>{t.hero.cta2}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Hero Section (Orphex Living White Canvas with Floating Mesh Aura & Dot Matrix) */}
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden bg-white">
+        {/* Subtle Architectural Dot Matrix Grid Pattern (Orphex Living Background) */}
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-85 z-0"></div>
+
+        {/* Dynamic Living Ambient Glowing Mesh Orbs (Smooth Floating Lavender, Violet & Indigo Auras) */}
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[720px] h-[480px] bg-gradient-to-tr from-[#5138EE]/20 via-purple-400/25 to-indigo-300/20 rounded-full blur-[100px] pointer-events-none z-0 animate-orb-1"></div>
+        <div className="absolute top-12 left-10 w-[520px] h-[380px] bg-gradient-to-br from-blue-400/20 to-indigo-300/20 rounded-full blur-[90px] pointer-events-none z-0 animate-orb-2"></div>
+        <div className="absolute bottom-10 right-10 w-[550px] h-[380px] bg-gradient-to-tl from-purple-400/18 to-pink-300/15 rounded-full blur-[90px] pointer-events-none z-0 animate-pulse-slow"></div>
+
+        <div className="container mx-auto max-w-7xl relative z-10">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            {/* Left Content Column */}
+            <div className="lg:col-span-7 space-y-7 text-left">
+              {/* Top Partner Badge */}
+              <div className="inline-flex items-center space-x-2.5 bg-white/95 border border-slate-200/90 rounded-full px-5 py-2 shadow-sm backdrop-blur-md">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span className="text-xs sm:text-sm font-bold text-slate-800 tracking-wide">
+                  2026 {lang === 'de' ? 'Performance & Growth Strategien' : lang === 'en' ? 'Performance & Growth Strategies' : 'Performans & Büyüme Stratejileri'}
+                </span>
+              </div>
+
+              {/* Main Title */}
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.08] tracking-tight text-gray-900">
+                {lang === 'de' ? (
+                  <>Skalieren Sie Ihr Unternehmen mit <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO</>
+                ) : lang === 'en' ? (
+                  <>Scale Your Business with <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO</>
+                ) : (
+                  <>İşletmenizi <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO ile Büyütün</>
+                )}
+              </h1>
+
+              {/* Subtitle */}
+              <p className="text-lg sm:text-2xl font-bold text-slate-800 leading-snug">
+                {t.hero.subtitle}
+              </p>
+
+              {/* Description */}
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+                {t.hero.description}
+              </p>
+
+              {/* CTA Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 w-full sm:w-auto">
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full sm:w-auto bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <Mail className="h-5 w-5" />
+                  <span>{t.hero.cta2}</span>
+                  <ArrowRight className="h-5 w-5 ml-1" />
+                </button>
+
+                <button
+                  onClick={() => scrollToSection('services')}
+                  className="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 border border-slate-200/90 font-bold text-sm sm:text-base px-6 sm:px-7 py-3.5 sm:py-4 rounded-2xl shadow-2xs hover:shadow transition-all duration-300 flex items-center justify-center gap-2.5 cursor-pointer"
+                >
+                  <span>{t.hero.cta1}</span>
+                  <ArrowRight className="h-4 w-4 text-slate-400" />
+                </button>
+              </div>
+
+              {/* Multilingual Cultural Bridge Badge */}
+              {lang === 'de' && (
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50/90 via-white to-emerald-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                  <span className="text-base">🇹🇷</span>
+                  <span><strong>Sprechen Sie Türkisch?</strong> Gerne beraten wir Sie auch auf Türkisch — <a href="/tr" className="text-[#4285F4] font-bold underline hover:text-blue-700">Bizimle Türkçe görüşebilirsiniz</a></span>
+                </div>
+              )}
+              {lang === 'en' && (
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50/90 via-white to-indigo-50/90 border border-blue-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                  <span className="text-base">🇪🇺</span>
+                  <span><strong>Expanding to Germany?</strong> Official German Google Partner managing localized campaigns in English, German & Turkish.</span>
+                </div>
+              )}
+              {lang === 'tr' && (
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50/90 via-white to-blue-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                  <span className="text-base">🇩🇪 🇹🇷</span>
+                  <span><strong>Almanya & Avrupa Pazarı:</strong> Almanya'daki Türk işletmeler ve Türkiye'den Avrupa'ya açılan ihracatçılar için Resmi Google Partner güvencesi.</span>
+                </div>
+              )}
+
+              {/* Trust Indicators */}
+              <div className="flex items-center space-x-4 pt-4 border-t border-slate-200/70 max-w-md">
+                <div className="flex -space-x-2">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#4285F4] to-blue-400 border-2 border-white flex items-center justify-center text-white font-bold text-xs shadow-sm">SM</div>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#34A853] to-emerald-400 border-2 border-white flex items-center justify-center text-white font-bold text-xs shadow-sm">G</div>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#1877F2] to-cyan-400 border-2 border-white flex items-center justify-center text-white font-bold text-xs shadow-sm">M</div>
+                </div>
+                <div>
+                  <div className="flex items-center space-x-1">
+                    <span className="text-sm font-bold text-gray-900">5.0</span>
+                    <span className="text-amber-500 text-sm">★★★★★</span>
+                    <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/60 ml-1">Doğrulanmış</span>
+                  </div>
+                  <p className="text-xs font-medium text-slate-500 mt-0.5">
+                    {lang === 'de' ? '300+ Zufriedene Kunden & Unternehmen' : lang === 'en' ? '300+ Satisfied Clients & Brands' : '300+ Mutlu Müşteri & Marka'}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Visual & Official Badges Showcase Column (Apple/Stripe Style Depth) */}
+            <div className="lg:col-span-5 relative flex flex-col items-center">
+              {/* Multi-layered ambient lighting behind photo */}
+              <div className="absolute -top-6 -left-6 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+              <div className="absolute -bottom-6 -right-6 w-72 h-72 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+              {/* Main Showcase Container (Smooth 3D Floating Animation) */}
+              <div className="relative w-full max-w-lg animate-hero-float">
+                
+                {/* Floating Top-Left Badge (Google Certified) */}
+                <div className="flex absolute -top-3 -left-2 sm:-top-4 sm:-left-4 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl px-3 py-2 sm:px-4 sm:py-2.5 shadow-xl items-center gap-2 sm:gap-2.5 hover:scale-105 transition-transform duration-300 animate-badge-float1 scale-90 sm:scale-100 origin-top-left">
+                  <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center p-1.5 shadow-xs">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-full h-full object-contain" width="24" height="24" loading="lazy" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-1">
+                      <span className="text-xs font-black text-gray-900">Google Ads Partner</span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    </div>
+                    <p className="text-[10px] font-semibold text-slate-500">
+                      {lang === 'de' ? 'Offiziell Zertifizierte Agentur' : lang === 'en' ? 'Officially Certified Agency' : 'Resmi Sertifikalı Ajans'}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Hero Frame */}
+                <div className="bg-white rounded-3xl p-3 sm:p-3.5 shadow-2xl border border-slate-200/90 overflow-hidden relative group">
+                  <div className="relative rounded-2xl overflow-hidden shadow-inner bg-slate-100">
+                    <picture>
+                      <source media="(max-width: 640px)" srcSet="/hero-mobile.webp" type="image/webp" />
+                      <source srcSet="/hero.webp" type="image/webp" />
+                      <img
+                        src="/hero.jpg"
+                        alt="Salih Maral - Google Ads & Digital Marketing Expert"
+                        className="w-full h-auto object-cover transform group-hover:scale-103 transition-transform duration-700 ease-out"
+                        width="800"
+                        height="447"
+                        fetchPriority="high"
+                      />
+                    </picture>
+                  </div>
+
+                  {/* Google Ads Full-Width Official Partner Trust Strip */}
+                  <div className="mt-3 bg-slate-50/90 border border-slate-200/70 rounded-2xl px-5 py-3.5">
+                    <a
+                      href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between group/g hover:opacity-95 transition-opacity"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                          alt="Google"
+                          className="h-5 w-auto"
+                          width="64"
+                          height="22"
+                        />
+                        <div className="border-l border-slate-300 pl-3">
+                          <p className="text-xs sm:text-sm font-black text-slate-900 tracking-tight flex items-center gap-1.5">
+                            <span>Partner</span>
+                            <span className="text-[10px] font-bold text-[#4285F4] bg-blue-50 border border-blue-200/60 px-2 py-0.5 rounded-full">Google Ads</span>
+                          </p>
+                          <p className="text-[10px] text-slate-500 font-medium">
+                            {lang === 'de' ? 'Offizieller Google Partner Status' : lang === 'en' ? 'Official Google Partner Status' : 'Resmi Google Partner Durumu'}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center text-xs font-bold text-[#4285F4] group-hover/g:translate-x-0.5 transition-transform">
+                        <span>{lang === 'de' ? 'Verifizieren' : lang === 'en' ? 'Verify' : 'Doğrula'}</span>
+                        <span className="ml-1 text-sm">↗</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Floating Animation Styles */}
+                <style jsx>{`
+                  @keyframes heroFloat {
+                    0%, 100% {
+                      transform: translateY(0px) rotate(0deg);
+                    }
+                    50% {
+                      transform: translateY(-15px) rotate(0.5deg);
+                    }
+                  }
+                  @keyframes badgeFloat1 {
+                    0%, 100% {
+                      transform: translateY(0px) translateX(0px);
+                    }
+                    50% {
+                      transform: translateY(-8px) translateX(5px);
+                    }
+                  }
+                  .animate-hero-float {
+                    animation: heroFloat 6s ease-in-out infinite;
+                  }
+                  .animate-badge-float1 {
+                    animation: badgeFloat1 4.5s ease-in-out infinite;
+                  }
+                `}</style>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Almanya Pazarlama Ekosistemi - Multi-Row Flowing Marquee (Orphex Style - İlk Sayfa / Fold) */}
+      <EcosystemMarquee lang={lang} />
+
+      {/* Stats Section (High-Contrast 6-Grid Modern Cards with Orphex Luxury Ambient Shadow) */}
+      <section className="py-16 bg-white relative overflow-hidden border-b border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[250px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-indigo-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+        
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5">
+            {[
+              { val: '17+', label: t.stats.experience, color: '#4285F4', trend: '2008 – 2026' },
+              { val: '500+', label: t.stats.keywords, color: '#EA4335', trend: 'Google #1. Sıra' },
+              { val: '300+', label: t.stats.brands, color: '#FBBC04', trend: 'Global & Yerel' },
+              { val: '+250%', label: t.stats.traffic, color: '#34A853', trend: 'Organik Büyüme' },
+              { val: '+180%', label: t.stats.roi, color: '#4285F4', trend: 'Ort. ROI Artışı' },
+              { val: '720+', label: lang === 'de' ? 'Verwaltete Kampagnen' : lang === 'en' ? 'Managed Campaigns' : 'Yönetilen Kampanya', color: '#34A853', trend: '1,74M+ Klicks' },
+            ].map((stat, i) => (
+              <div
+                key={i}
+                className="bg-white/95 backdrop-blur-xs rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 md:p-6 border border-slate-200/80 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-center relative overflow-hidden group"
+              >
+                <div
+                  className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
+                  style={{ backgroundColor: stat.color }}
+                ></div>
+
+                <div className="inline-flex items-center justify-center space-x-1 bg-slate-50 border border-slate-200/80 px-2 py-0.5 rounded-full mb-2 sm:mb-3 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+                  <span className="text-[9px] sm:text-[10px] font-bold text-slate-700">{stat.trend}</span>
+                </div>
+
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-black mb-1 tracking-tight" style={{ color: stat.color }}>
+                  {stat.val}
+                </p>
+
+                <p className="text-[11px] sm:text-xs font-semibold text-slate-600 mt-1">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section (Ultra-Prestigious Interactive Showcase with Modern Visual Hierarchy) */}
+      <section id="services" className="py-24 bg-white relative overflow-hidden">
+        {/* Living Ambient Aura & Dot Matrix Background */}
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-purple-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center space-x-2 bg-blue-50/90 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
+              <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
+                {lang === 'de' ? 'Leistungsübersicht & Spezialisierungen' : lang === 'en' ? 'Core Practice Areas & Solutions' : 'Uzmanlık Alanlarımız & Çözümler'}
+              </span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">
+              {lang === 'de' ? (
+                <>Umfassende <span className="text-[#4285F4]">Digital Marketing</span> Dienstleistungen</>
+              ) : lang === 'en' ? (
+                <>Comprehensive <span className="text-[#4285F4]">Digital Marketing</span> Services</>
+              ) : (
+                <>Kapsamlı <span className="text-[#4285F4]">Dijital Pazarlama</span> Hizmetlerimiz</>
+              )}
+            </h2>
+            <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+              {lang === 'de'
+                ? 'Maßgeschneiderte Strategien für planbaren ROI, Marktführerschaft und nachhaltiges Umsatzwachstum.'
+                : lang === 'en'
+                ? 'Tailored strategies designed for predictable ROI, market leadership, and sustainable revenue growth.'
+                : 'Öngörülebilir ROI, pazar liderliği ve sürdürülebilir ciro artışı için özel kurgulanmış stratejiler.'}
+            </p>
+          </div>
+
+          {/* Interactive Category Filter Pills */}
+          <div className="flex items-center justify-center gap-2 mb-12 flex-wrap">
+            {[
+              { id: 'all', label: lang === 'de' ? 'Alle Leistungen (8)' : lang === 'en' ? 'All Services (8)' : 'Tüm Hizmetler (8)' },
+              { id: 'google', label: lang === 'de' ? 'Google & YouTube Ads' : lang === 'en' ? 'Google & YouTube Ads' : 'Google & YouTube Ads' },
+              { id: 'social', label: lang === 'de' ? 'Meta, TikTok & X Ads' : lang === 'en' ? 'Meta, TikTok & X Ads' : 'Meta, TikTok & X Ads' },
+              { id: 'seo', label: lang === 'de' ? 'SEO, Tracking & Reputation' : lang === 'en' ? 'SEO, Tracking & Reputation' : 'SEO, Tracking & İtibar' }
+            ].map(tab => {
+              const isActive = serviceCategory === tab.id
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setServiceCategory(tab.id)}
+                  className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
+                    isActive 
+                      ? 'bg-gray-950 text-white shadow-md shadow-gray-950/20 scale-105' 
+                      : 'bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/90 shadow-2xs hover:border-slate-300'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              )
+            })}
+          </div>
+          
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {t.why.services
+              .filter(service => {
+                if (serviceCategory === 'all') return true
+                const categoryMap = {
+                  'google-ads': 'google',
+                  'youtube-ads': 'google',
+                  'meta-ads': 'social',
+                  'tiktok-ads': 'social',
+                  'x-ads': 'social',
+                  'seo': 'seo',
+                  'server-side-tracking': 'seo',
+                  'yorum-yonetimi': 'seo'
+                }
+                return categoryMap[service.slug] === serviceCategory
+              })
+              .map((service, index) => {
+                const metaBySlug = {
+                  'google-ads': {
+                    accent: '#4285F4',
+                    tag: lang === 'de' ? 'Search & Shopping' : lang === 'en' ? 'Search & Shopping' : 'Arama & Alışveriş',
+                    badge: lang === 'de' ? 'Flaggschiff' : lang === 'en' ? 'Core Specialism' : 'Ana Uzmanlık',
+                    pills: lang === 'de'
+                      ? ['1,74M+ Klicks generiert', 'Search, Shopping & PMax', 'ROAS & CPA Optimierung']
+                      : lang === 'en'
+                      ? ['1.74M+ Clicks Generated', 'Search, Shopping & PMax', 'ROAS & CPA Optimization']
+                      : ['1,74M+ Üretilen Tıklama', 'Search, Shopping & PMax', 'Maksimum ROAS & Kârlılık']
+                  },
+                  'meta-ads': {
+                    accent: '#1877F2',
+                    tag: lang === 'de' ? 'Instagram & Facebook' : lang === 'en' ? 'Instagram & Facebook' : 'Instagram & Facebook',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['Advantage+ Shopping & Reels', 'CAPI %92+ Match Score', 'B2B & B2C Instant Leads']
+                      : lang === 'en'
+                      ? ['Advantage+ Shopping & Reels', 'CAPI %92+ Match Score', 'B2B & B2C Instant Leads']
+                      : ['Advantage+ Shopping & Reels', 'CAPI %92+ Eşleşme Oranı', 'B2B & B2C Müşteri Talebi']
+                  },
+                  'tiktok-ads': {
+                    accent: '#000000',
+                    tag: lang === 'de' ? 'Viral Video & Shop' : lang === 'en' ? 'Viral Video & Shop' : 'Viral Video & TikTok Shop',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['Spark Ads & UGC Kampagnen', 'TikTok Shop Seller Center', '18,4M+ Videoaufrufe']
+                      : lang === 'en'
+                      ? ['Spark Ads & Viral UGC', 'TikTok Shop Seller Center', '18.4M+ Video Views']
+                      : ['Spark Ads & Viral UGC', 'TikTok Shop Satıcı Yönetimi', '18,4M+ Video İzlenme']
+                  },
+                  'x-ads': {
+                    accent: '#1DA1F2',
+                    tag: lang === 'de' ? 'B2B & Entscheider' : lang === 'en' ? 'B2B Decision Makers' : 'B2B & Karar Vericiler',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['B2B Entscheider-Targeting', 'Trend Takeover Kampagnen', '14,20 € CPL Skalierung']
+                      : lang === 'en'
+                      ? ['B2B Decision Maker Ads', 'Trend Takeover Campaigns', '€14.20 CPL Scalability']
+                      : ['B2B Karar Verici Hedefleme', 'Gündem & Trend Reklamları', '14,20 € CPL Ölçekleme']
+                  },
+                  'seo': {
+                    accent: '#0F9D58',
+                    tag: lang === 'de' ? 'Princeton GEO & KI-Suche' : lang === 'en' ? 'Princeton GEO & AI Search' : 'Princeton GEO & Yapay Zeka',
+                    badge: lang === 'de' ? '100% Organisch' : lang === 'en' ? 'High Authority' : 'Yüksek Otorite',
+                    pills: lang === 'de'
+                      ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
+                      : lang === 'en'
+                      ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
+                      : ['Google Haritalar #1. Sıra', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
+                  },
+                  'yorum-yonetimi': {
+                    accent: '#EA4335',
+                    tag: lang === 'de' ? 'Reputation & Rechtsschutz' : lang === 'en' ? 'Reputation & Defense' : 'İtibar & Yasal Savunma',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['4.9★ Google & Trustpilot', '100% DSGVO & Fake-Schutz', 'Automatischer QR-Trichter']
+                      : lang === 'en'
+                      ? ['4.9★ Google & Trustpilot', '100% Fake Review Defense', 'Automated QR Review Funnel']
+                      : ['4.9★ Google & Trustpilot', '%100 Sahte Yorum Savunması', 'Otomatik QR Yorum Hunisi']
+                  },
+                  'server-side-tracking': {
+                    accent: '#0F9D58',
+                    tag: lang === 'de' ? 'Setup & CAPI' : lang === 'en' ? 'Setup & CAPI' : 'Kurulum & CAPI',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                      : lang === 'en'
+                      ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                      : ['Google Ads & Harita Kurulumu', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                  },
+                  'youtube-ads': {
+                    accent: '#FF0000',
+                    tag: lang === 'de' ? 'YouTube & Shorts Ads' : lang === 'en' ? 'YouTube & Shorts Ads' : 'YouTube & Shorts Reklamları',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['23,1M+ TrueView Aufrufe', '720+ Erfolgreiche Kampagnen', 'Shorts & In-Stream Ads']
+                      : lang === 'en'
+                      ? ['23.1M+ TrueView Views', '720+ Successful Campaigns', 'Shorts & In-Stream Ads']
+                      : ['23,1M+ TrueView İzlenme', '720+ Başarılı Kampanya', 'Shorts & In-Stream Reklamı']
+                  }
+                }
+                const localizedMeta = metaBySlug[service.slug] || metaBySlug['google-ads']
+
+                return (
+                  <a 
+                    key={index} 
+                    href={svcUrl(lang, service.slug)}
+                    className="block group h-full"
+                  >
+                    <div className="h-full bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_-12px_rgba(15,23,42,0.12)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between relative overflow-hidden group">
+                      {/* Top Delicate Accent Line */}
+                      <div
+                        className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
+                        style={{ backgroundColor: localizedMeta.accent }}
+                      ></div>
+
+                      {/* Subtle hover background highlight */}
+                      <div 
+                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-3xl"
+                        style={{ background: `radial-gradient(circle at top right, ${localizedMeta.accent}08 0%, transparent 70%)` }}
+                      ></div>
+
+                      <div className="flex flex-col flex-grow relative z-10">
+                        {/* Header: Icon + Category Badge */}
+                        <div className="flex items-center justify-between mb-5">
+                          <div
+                            className="w-13 h-13 rounded-2xl flex items-center justify-center p-2.5 border shadow-2xs transition-transform duration-300 group-hover:scale-105"
+                            style={{ 
+                              backgroundColor: `${localizedMeta.accent}0D`, 
+                              borderColor: `${localizedMeta.accent}22` 
+                            }}
+                          >
+                            {service.icon === 'google-ads' && (
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                            )}
+                            {service.icon === 'meta' && (
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="w-8 h-6 object-contain" width="32" height="24" loading="lazy" />
+                            )}
+                            {service.icon === 'tiktok' && (
+                              <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                            )}
+                            {service.icon === 'x' && (
+                              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            )}
+                            {service.icon === 'tracking' && (
+                              <svg className="w-7 h-7 text-[#0F9D58]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                            )}
+                            {service.icon === 'seo' && (
+                              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="#0F9D58" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            )}
+                            {service.icon === 'review' && (
+                              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="#FBBC04" stroke="#EA4335" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            )}
+                            {service.icon === 'youtube' && (
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                            )}
+                          </div>
+
+                          <div className="flex items-center gap-1.5">
+                            {localizedMeta.badge && (
+                              <span 
+                                className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-full text-white shadow-2xs"
+                                style={{ backgroundColor: localizedMeta.accent }}
+                              >
+                                {localizedMeta.badge}
+                              </span>
+                            )}
+                            <span 
+                              className="text-[11px] font-bold px-3 py-1 rounded-full border tracking-wide transition-colors"
+                              style={{ 
+                                backgroundColor: `${localizedMeta.accent}0F`, 
+                                color: localizedMeta.accent, 
+                                borderColor: `${localizedMeta.accent}26` 
+                              }}
+                            >
+                              {localizedMeta.tag}
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Title */}
+                        <h3 className="text-lg sm:text-xl font-black text-gray-950 mb-2 tracking-tight group-hover:text-blue-600 transition-colors leading-snug min-h-[50px] flex items-start">
+                          {service.title}
+                        </h3>
+
+                        {/* Description */}
+                        <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed mb-5 font-normal min-h-[54px] line-clamp-3">
+                          {service.description}
+                        </p>
+
+                        {/* 3 High-Impact Key Deliverables (Clean Luxury Checklist - No Clunky Gray Boxes) */}
+                        <div className="space-y-2 mb-6 mt-auto pt-4 border-t border-slate-100">
+                          {localizedMeta.pills.map((pill, pIdx) => (
+                            <div key={pIdx} className="flex items-center gap-2.5">
+                              <div 
+                                className="w-4 h-4 rounded-full flex items-center justify-center shrink-0 shadow-2xs"
+                                style={{ 
+                                  backgroundColor: `${localizedMeta.accent}16`, 
+                                  color: localizedMeta.accent 
+                                }}
+                              >
+                                <svg className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3.5">
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                              </div>
+                              <span className="text-xs font-semibold text-slate-800 tracking-tight">
+                                {pill}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Bottom Action Row */}
+                      <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs sm:text-[13px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors relative z-10">
+                        <span>
+                          {lang === 'de' ? 'Leistungsdetails & Strategie' : lang === 'en' ? 'Service Details & Strategy' : 'Hizmet Detayları & Strateji'}
+                        </span>
+                        <div 
+                          className="w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-1 shadow-2xs"
+                          style={{ 
+                            backgroundColor: `${localizedMeta.accent}14`, 
+                            color: localizedMeta.accent 
+                          }}
+                        >
+                          <ChevronRight className="w-4 h-4 stroke-[2.5]" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                )
+              })}
+          </div>
+        </div>
+      </section>
+
+      {/* Success & Verified Growth Section */}
+      <section id="success" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[850px] h-[400px] bg-gradient-to-r from-emerald-400/10 via-blue-400/10 to-indigo-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
+              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">{t.success.subtitle}</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">{t.success.title}</h2>
+            <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">{t.success.description}</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            {t.success.metrics.map((metric, index) => {
+              const borderAccents = ['#34A853', '#FBBC04', '#4285F4', '#EA4335']
+              const accent = borderAccents[index]
+              return (
+                <div
+                  key={index}
+                  className="bg-white/95 backdrop-blur-xs rounded-3xl p-7 md:p-8 border border-slate-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(81,56,238,0.08)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group text-center flex flex-col justify-between"
+                >
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
+                    style={{ backgroundColor: accent }}
+                  ></div>
+
+                  <div className="mb-6 flex justify-center">
+                    <div
+                      className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xs border group-hover:scale-110 transition-transform duration-200"
+                      style={{ 
+                        backgroundColor: `${accent}12`,
+                        borderColor: `${accent}25`
+                      }}
+                    >
+                      {index === 0 && <TrendingUp className="w-7 h-7" style={{ color: accent }} />}
+                      {index === 1 && <Award className="w-7 h-7" style={{ color: accent }} />}
+                      {index === 2 && <Zap className="w-7 h-7" style={{ color: accent }} />}
+                      {index === 3 && <BarChart3 className="w-7 h-7" style={{ color: accent }} />}
+                    </div>
+                  </div>
+
+                  <div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono mb-1 block">
+                      {metric.subtitle}
+                    </span>
+                    <h3 className="text-xl font-bold text-gray-950 mb-2">
+                      {metric.title}
+                    </h3>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 text-xs font-semibold text-slate-500">
+                    {lang === 'de' ? 'Geprüfte & verifizierte Ergebnisse' : lang === 'en' ? 'Verified performance metrics' : 'Doğrulanmış performans verisi'}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          {/* Verified Google Ads Live Dashboards Gallery */}
+          {t.proofGallery && (
+            <div className="mt-20 pt-16 border-t border-slate-200/80">
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-3 shadow-2xs backdrop-blur-xs">
+                  <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.proofGallery.badge}</span>
+                </div>
+                <h3 className="text-2xl md:text-4xl font-black text-gray-950 mb-3 tracking-tight">
+                  {t.proofGallery.title}
+                </h3>
+                <p className="text-sm md:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                  {t.proofGallery.description}
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                {t.proofGallery.cards.map((card, idx) => (
+                  <div
+                    key={idx}
+                    className="bg-white/95 backdrop-blur-xs rounded-3xl p-6 border border-slate-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] hover:border-slate-300 transition-all duration-300 group overflow-hidden flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between mb-4">
+                        <span className="text-xs font-bold px-3 py-1 bg-slate-900 text-white rounded-full">
+                          {card.badge}
+                        </span>
+                        <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200 flex items-center gap-1">
+                          ✓ {lang === 'de' ? 'Offizielles Google Dashboard' : lang === 'en' ? 'Verified Google Dashboard' : 'Doğrulanmış Google Paneli'}
+                        </span>
+                      </div>
+
+                      {/* Dashboard Image with Zoom on Hover */}
+                      <div className="rounded-2xl overflow-hidden border border-slate-200/70 mb-5 bg-slate-50 relative group-hover:border-blue-200 transition-colors shadow-inner">
+                        <img
+                          src={card.image}
+                          alt={card.title}
+                          className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                        />
+                      </div>
+
+                      <div className="text-xs font-bold uppercase tracking-wider text-[#4285F4] mb-1 font-mono">
+                        {card.subtitle}
+                      </div>
+                      <h4 className="text-lg font-black text-gray-950 mb-2 group-hover:text-[#4285F4] transition-colors">
+                        {card.title}
+                      </h4>
+                      <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                        {card.desc}
+                      </p>
+                    </div>
+
+                    <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-700">
+                      <span className="flex items-center gap-1.5 text-slate-900 font-mono">
+                        📊 {card.stat}
+                      </span>
+                      <span className="text-emerald-600 font-bold">
+                        {lang === 'de' ? 'Live Verifiziert' : lang === 'en' ? 'Live Verified' : 'Canlı Doğrulandı'}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Interactive ROAS & ROI Calculator Lead Magnet */}
+      <section className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-emerald-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <RoasCalculatorWidget lang={lang} />
+        </div>
+      </section>
+
+      {/* Corporate High-Converting Banner Section */}
+      <section className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+        {/* Glow ambient background & Dot Matrix */}
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[450px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-purple-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
+          <div className="rounded-[2.5rem] bg-gradient-to-br from-slate-950 via-[#0B101E] to-slate-900 border border-slate-800 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.25)] p-8 sm:p-14 relative overflow-hidden text-white">
+            {/* Ambient glow inside card */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#4285F4]/15 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div className="text-center mb-14 relative z-10">
+              <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-400/30 rounded-full px-4 py-1.5 mb-4 shadow-sm backdrop-blur-xs">
+                <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.corporate.subtitle}</span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-black mb-4 tracking-tight">{t.corporate.title}</h2>
+              <p className="text-base md:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">{t.corporate.description}</p>
+              
+              <div className="mt-8 flex justify-center">
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl shadow-blue-500/25 hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
+                >
+                  <span>{t.corporate.cta}</span>
+                  <ArrowRight className="h-5 w-5" />
+                </button>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+              {t.corporate.features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-slate-900/80 border border-slate-800 rounded-3xl p-7 hover:border-slate-700 shadow-xl transition-all duration-300 hover:-translate-y-1 backdrop-blur-sm"
+                >
+                  <div className="w-12 h-12 rounded-2xl bg-blue-500/15 border border-blue-400/30 flex items-center justify-center mb-5 text-[#4285F4]">
+                    <CheckCircle className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
+                  <p className="text-sm text-slate-400 leading-relaxed">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-amber-300/10 via-blue-400/10 to-purple-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-amber-50 border border-amber-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
+              <span className="w-2 h-2 rounded-full bg-amber-500"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-700">{t.testimonials.subtitle}</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">{t.testimonials.title}</h2>
+            <div className="flex items-center justify-center space-x-2 mt-4">
+              <span className="text-4xl md:text-5xl font-black text-gray-950">5.0</span>
+              <div className="text-left ml-2">
+                <div className="flex text-amber-500">
+                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
+                </div>
+                <p className="text-xs font-semibold text-slate-500">{t.testimonials.rating}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {t.testimonials.reviews.map((review, index) => (
+              <div
+                key={index}
+                className="bg-white/95 backdrop-blur-xs rounded-3xl p-8 border border-slate-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(81,56,238,0.08)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex text-amber-500 mb-4">
+                    {[...Array(review.rating)].map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
+                  </div>
+                  <p className="text-sm md:text-base text-slate-700 italic mb-6 leading-relaxed">"{review.text}"</p>
+                </div>
+
+                <div className="flex items-center space-x-3 pt-4 border-t border-slate-100">
+                  <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#4285F4] to-blue-400 flex items-center justify-center text-white font-bold text-sm shadow-2xs">
+                    {review.name.split(' ').map(n => n[0]).join('')}
+                  </div>
+                  <div>
+                    <p className="font-bold text-gray-950 text-sm">{review.name}</p>
+                    <p className="text-xs text-slate-500 font-medium">{review.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-emerald-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
+              <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.about.subtitle}</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">{t.about.title}</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            {t.about.features.map((feature, index) => {
+              const colors = ['#4285F4', '#EA4335', '#FBBC04', '#34A853', '#4285F4', '#34A853']
+              const color = colors[index] || '#4285F4'
+              return (
+                <div
+                  key={index}
+                  className="bg-white/95 backdrop-blur-xs rounded-3xl p-8 border border-slate-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(81,56,238,0.08)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group"
+                >
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
+                    style={{ backgroundColor: color }}
+                  ></div>
+
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 shadow-2xs border group-hover:scale-110 transition-transform duration-200"
+                    style={{ 
+                      backgroundColor: `${color}12`, 
+                      borderColor: `${color}25`,
+                      color: color 
+                    }}
+                  >
+                    <CheckCircle className="h-6 w-6" />
+                  </div>
+
+                  <h3 className="text-xl font-bold text-gray-950 mb-3 group-hover:text-[#4285F4] transition-colors">{feature.title}</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{feature.description}</p>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Interactive Strategy & Lead Funnel Wizard */}
+      <section className="py-16 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-indigo-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <LeadFunnelWizard lang={lang} />
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <div id="kontakt" className="relative -top-24 pointer-events-none" />
+      <section id="contact" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+        {/* Background decorations & Dot Matrix */}
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[850px] h-[400px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-emerald-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
+        
+        <div className="container mx-auto px-4 max-w-5xl relative z-10">
+          {/* Header */}
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
+              <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
+                {lang === 'de' ? 'Direkter Kontakt & Angebot' : lang === 'tr' ? 'Doğrudan İletişim & Teklif' : 'Direct Contact & Inquiries'}
+              </span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">{t.contact.title}</h2>
+            <p className="text-base md:text-lg text-slate-600 max-w-xl mx-auto leading-relaxed">{t.contact.subtitle}</p>
+          </div>
+          
+          {/* Main contact card with luxury border */}
+          <div className="border border-slate-200/90 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.12)] bg-white rounded-[2.5rem] overflow-hidden">
+            <div className="grid md:grid-cols-5 gap-0">
+              {/* Left side - Luxury Tech Dark Panel */}
+              <div className="md:col-span-2 bg-gradient-to-br from-slate-950 via-[#0B1220] to-slate-900 p-8 sm:p-10 text-white flex flex-col justify-between relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-[#4285F4]/15 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#34A853]/15 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center mb-6 text-[#4285F4]">
+                    <Mail className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-black mb-3 tracking-tight">
+                    {lang === 'de' ? 'Kontaktinformationen' : lang === 'en' ? 'Contact Information' : 'İletişim Bilgileri'}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300 mb-8 leading-relaxed">
+                    {lang === 'de' 
+                      ? 'Fundierte Beratung und ganzheitliche Betreuung auf höchstem Agentur-Niveau. Sprechen Sie direkt mit Salih Maral.' 
+                      : lang === 'tr' 
+                      ? 'Kurumsal ajans kalitesinde, şeffaf ve sonuç odaklı büyüme stratejisi için doğrudan iletişime geçin.' 
+                      : 'Comprehensive strategy and enterprise execution. Speak directly with Salih Maral.'}
+                  </p>
+                  
+                  <div className="space-y-4">
+                    <a 
+                      href="mailto:info@salihmaral.com" 
+                      className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors group cursor-pointer"
+                    >
+                      <div className="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform text-[#4285F4]">
+                        <Mail className="h-5 w-5 text-blue-400" />
+                      </div>
+                      <div>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">E-Mail</p>
+                        <p className="font-bold text-sm text-white">info@salihmaral.com</p>
+                      </div>
+                    </a>
+
+                    <div className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                      <div className="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center shrink-0 text-emerald-400">
+                        <ShieldCheck className="h-5 w-5 text-emerald-400" />
+                      </div>
+                      <div>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">{lang === 'de' ? 'Transparenz' : lang === 'en' ? 'Pricing' : 'Fiyatlandırma'}</p>
+                        <p className="font-bold text-xs text-white">{lang === 'de' ? 'Fester Monats-Fixpreis (Keine Provision)' : lang === 'en' ? 'Transparent Flat-Fee (No Commission)' : 'Şeffaf Sabit Fiyat (Komisyonsuz)'}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                      <div className="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center shrink-0 text-[#4285F4]">
+                        <Globe className="h-5 w-5 text-blue-400" />
+                      </div>
+                      <div>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">Standort</p>
+                        <p className="font-bold text-xs text-white">Dreieich / Frankfurt am Main</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-8 pt-6 border-t border-white/10 relative z-10">
+                  <div className="flex items-center gap-2 text-xs text-slate-400">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>{lang === 'de' ? 'Antwort garantiert innerhalb 24 Std.' : lang === 'en' ? 'Response within 24 hours guaranteed' : '24 saat içinde doğrudan geri dönüş'}</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Right side - Form */}
+              <div className="md:col-span-3 p-8 sm:p-10 bg-white">
+                <h3 className="text-xl font-black mb-6 text-gray-950 tracking-tight">
+                  {lang === 'de' ? 'Nachricht senden' : lang === 'en' ? 'Send Message' : 'Mesaj Gönder'}
+                </h3>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  {/* Anti-bot Honeypot trap */}
+                  <div className="hidden" aria-hidden="true" style={{ display: 'none', position: 'absolute', left: '-9999px' }}>
+                    <label htmlFor="b_check_main">Do not fill this</label>
+                    <input
+                      type="text"
+                      id="b_check_main"
+                      name="b_check"
+                      value={formData.b_check || ''}
+                      onChange={(e) => setFormData({ ...formData, b_check: e.target.value })}
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <Input
+                        placeholder={t.contact.form.name}
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        required
+                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <Input
+                        type="email"
+                        placeholder={t.contact.form.email}
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        required
+                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <Input
+                      type="tel"
+                      placeholder={t.contact.form.phone}
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      required
+                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <Textarea
+                      placeholder={t.contact.form.message}
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      rows={5}
+                      required
+                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
+                    />
+                  </div>
+                  {formStatus.message && (
+                    <div className={`p-4 rounded-2xl text-xs sm:text-sm font-semibold ${formStatus.type === 'success' ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
+                      {formStatus.message}
+                    </div>
+                  )}
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-2xl shadow-xl shadow-blue-500/25 hover:shadow-2xl transition-all cursor-pointer text-sm"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? (lang === 'de' ? 'Wird gesendet...' : lang === 'en' ? 'Sending...' : 'Gönderiliyor...') : t.contact.form.submit}
+                  </Button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Floating CTA Section (Orphex Luxury Floating Module) */}
+      <section className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[300px] bg-gradient-to-r from-blue-400/10 via-emerald-400/10 to-indigo-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-5xl relative z-10">
+          <div className="rounded-[2.5rem] bg-gradient-to-br from-[#0B1220] via-slate-900 to-[#0F172A] border border-slate-800 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.3)] p-8 sm:p-14 text-center text-white relative overflow-hidden">
+            <div className="absolute -top-24 -right-24 w-72 h-72 bg-[#4285F4]/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-[#34A853]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div className="relative z-10">
+              <h2 className="text-3xl md:text-4xl font-black mb-3 tracking-tight">{t.contact.cta.title}</h2>
+              <p className="text-sm md:text-base mb-8 max-w-2xl mx-auto text-slate-300 leading-relaxed">{t.contact.cta.description}</p>
+              
+              <div className="flex flex-wrap justify-center gap-4">
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-blue-500/25 transition-all duration-200 hover:scale-105 flex items-center gap-2 cursor-pointer text-sm sm:text-base"
+                >
+                  <Mail className="h-5 w-5" />
+                  <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Get Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
+                  <ArrowRight className="h-5 w-5 ml-1" />
+                </button>
+                <a
+                  href="mailto:info@salihmaral.com"
+                  className="bg-white/10 hover:bg-white/15 text-white border border-white/20 font-bold px-7 py-4 rounded-2xl transition-all duration-200 hover:scale-105 flex items-center gap-2 text-sm sm:text-base cursor-pointer"
+                >
+                  <Mail className="h-4 w-4 text-blue-300" />
+                  <span>info@salihmaral.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dynamic & Interactive Blog Showcase Section */}
+      <section className="py-24 bg-gradient-to-b from-white via-slate-50/70 to-white relative overflow-hidden">
+        {/* Background Ambient Glow */}
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-[#4285F4]/10 via-purple-500/5 to-emerald-500/10 blur-3xl pointer-events-none rounded-full" />
+
+        <div className="container mx-auto px-4 relative z-10">
+          {/* Header */}
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4285F4]/10 text-[#4285F4] border border-[#4285F4]/20 text-xs font-bold mb-4 animate-pulse">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>{lang === 'de' ? '2026 DIGITAL MARKETING & KI BLOG' : lang === 'en' ? '2026 DIGITAL MARKETING & AI BLOG' : '2026 DİJİTAL PAZARLAMA & AI REHBERLERİ'}</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+              {lang === 'de' ? 'Aktuelle Experten-Artikel & Trends' : lang === 'en' ? 'Latest Expert Insights & Trends' : 'Güncel Uzman Rehberleri & Trendler'}
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600">
+              {lang === 'de' 
+                ? 'Praxisnahe Leitfäden über Google Ads, Meta Ads, SEO, GEO und KI-Automatisierung von Salih Maral.' 
+                : lang === 'en' 
+                ? 'Actionable guides on Google Ads, Meta Ads, SEO, GEO, and AI automation by Salih Maral.' 
+                : 'Salih Maral tarafından hazırlanan Google Ads, Meta Ads, SEO, GEO ve Yapay Zeka stratejileri.'}
+            </p>
+          </div>
+
+          {/* Interactive Category Filter Pills */}
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+            {[
+              { id: 'all', label: lang === 'de' ? 'Alle Themen' : lang === 'en' ? 'All Topics' : 'Tüm Konular', icon: Layers },
+              { id: 'ai', label: lang === 'de' ? 'Künstliche Intelligenz' : lang === 'en' ? 'AI & Gemini' : 'Yapay Zeka', icon: Cpu },
+              { id: 'google', label: 'Google Ads', icon: Zap },
+              { id: 'meta', label: 'Meta Ads', icon: Flame },
+              { id: 'seo', label: 'SEO & GEO', icon: Search },
+              { id: 'tracking', label: 'Server-Side Tracking', icon: ShieldCheck },
+            ].map(cat => {
+              const IconComponent = cat.icon
+              const isActive = blogCategory === cat.id
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setBlogCategory(cat.id)}
+                  className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ${
+                    isActive
+                      ? 'bg-[#4285F4] text-white shadow-lg shadow-blue-500/25 scale-105 ring-2 ring-[#4285F4]/30'
+                      : 'bg-white text-gray-700 hover:bg-gray-100 hover:text-gray-900 border border-gray-200/80 shadow-sm'
+                  }`}
+                >
+                  <IconComponent className={`w-3.5 h-3.5 ${isActive ? 'text-white' : 'text-[#4285F4]'}`} />
+                  <span>{cat.label}</span>
+                </button>
+              )
+            })}
+          </div>
+
+          {/* Dynamic Cards Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {(latestPosts.length > 0 ? latestPosts : [
+              {
+                slug: 'gemini-3-7-vs-gemini-3-6-ai-marketing-comparison',
+                title: lang === 'de' ? 'Gemini 3.7 vs. 3.6: Hybrides Denken im Marketing' : lang === 'en' ? 'Gemini 3.7 vs. 3.6: Hybrid Reasoning for Marketing' : 'Gemini 3.7 vs. 3.6: Pazarlama ve SEO Kıyaslaması',
+                excerpt: lang === 'de' ? 'Detaillierte Analyse des neuen Gemini 3.7 Thinking Mode für Google Ads & SEO.' : lang === 'en' ? 'In-depth analysis of the new Gemini 3.7 Thinking Mode for Google Ads & SEO.' : 'Google Ads ve SEO otomasyonu için yeni Gemini 3.7 Thinking Mode detaylı analizi.',
+                category: lang === 'de' ? 'Künstliche Intelligenz' : lang === 'en' ? 'Artificial Intelligence' : 'Yapay Zeka',
+                readTime: '14',
+                coverImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              },
+              {
+                slug: 'geo-ai-search-citation-factors-2026',
+                title: lang === 'de' ? 'GEO 2026: Zitations-Leitfaden für ChatGPT & Perplexity' : lang === 'en' ? 'GEO 2026: How to Get Cited in ChatGPT & Perplexity' : 'GEO 2026: ChatGPT ve Perplexity\'de Zirveye Çıkma',
+                excerpt: lang === 'de' ? 'Princeton KDD 2024 Ranking-Faktoren für maximale Sichtbarkeit in KI-Antworten.' : lang === 'en' ? 'Princeton KDD 2024 ranking factors for maximum visibility in generative AI.' : 'Yapay zeka arama motorlarında birincil kaynak olma stratejileri ve Princeton verileri.',
+                category: 'SEO & GEO',
+                readTime: '15',
+                coverImage: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              },
+              {
+                slug: 'server-side-gtm-meta-capi-setup-2026',
+                title: lang === 'de' ? 'Server-Side GTM & Meta CAPI: 30% Datenverlust verhindern' : lang === 'en' ? 'Server-Side GTM & Meta CAPI: Prevent 30% Data Loss' : 'Server-Side GTM & Meta CAPI: %30 Veri Kaybını Önleme',
+                excerpt: lang === 'de' ? 'So überwinden Sie Ad-Blocker und iOS-Sperren mit deterministischer Event-Deduplizierung.' : lang === 'en' ? 'Overcome ad-blockers and iOS restrictions with deterministic event deduplication.' : 'Ad-blocker ve iOS engellerini aşarak Meta & Google Ads ROAS oranını artırma.',
+                category: 'Server-Side Tracking',
+                readTime: '16',
+                coverImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              },
+              {
+                slug: 'meta-advantage-plus-creative-ai-2026',
+                title: lang === 'de' ? 'Meta Advantage+ 2026: E-Commerce Skalierung & KI' : lang === 'en' ? 'Meta Advantage+ 2026: Scaling E-Commerce with AI' : 'Meta Advantage+ 2026: E-Ticaret Reklam Ölçekleme',
+                excerpt: lang === 'de' ? 'Creative AI und ASC Kampagnen für niedrigere CPAs und planbar wachsende Shop-Umsätze.' : lang === 'en' ? 'Creative AI and ASC campaigns for lower CPAs and predictable direct revenue scale.' : 'Daha düşük CPA ve yüksek ROAS ile e-ticaret satışlarını katlama rehberi.',
+                category: 'Meta Ads',
+                readTime: '15',
+                coverImage: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              },
+              {
+                slug: 'google-ads-pmax-smart-bidding-guide-2026',
+                title: lang === 'de' ? 'Google Ads PMax 2026: 7 Strategien gegen Budgetverlust' : lang === 'en' ? 'Google Ads PMax 2026: 7 Strategies to Stop Budget Waste' : 'Google Ads PMax 2026: Bütçe İsrafını Önleyen 7 Taktik',
+                excerpt: lang === 'de' ? 'Brand-Ausschlüsse und Margen-Segmentierung für echten Neukunden-ROAS.' : lang === 'en' ? 'Brand exclusions and margin tiering for genuine incremental customer acquisition.' : 'Marka yamyamlığını önleyip gerçek yeni müşteri getirisini katlayan PMax stratejileri.',
+                category: 'Google Ads',
+                readTime: '15',
+                coverImage: 'https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              },
+              {
+                slug: 'google-maps-local-seo-ranking-factors-2026',
+                title: lang === 'de' ? 'Google Maps SEO 2026: Top-Rankings im Local 3-Pack' : lang === 'en' ? 'Google Maps SEO 2026: Dominate the Local 3-Pack' : 'Google Haritalar SEO 2026: Local 3-Pack Zirvesi',
+                excerpt: lang === 'de' ? 'Lokale Rankings dominieren und gefälschte 1-Stern-Bewertungen rechtssicher entfernen.' : lang === 'en' ? 'Dominate regional searches and legally eliminate fake 1-star reviews.' : 'Bölgenizde 1. sıraya çıkma ve sahte 1 yıldızlı yorumları sildirme taktikleri.',
+                category: 'SEO & GEO',
+                readTime: '15',
+                coverImage: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              }
+            ])
+            .filter(post => {
+              if (blogCategory === 'all') return true
+              const catLower = (post.category || '').toLowerCase()
+              const titleLower = (post.title || '').toLowerCase()
+              if (blogCategory === 'google') return catLower.includes('google') || titleLower.includes('google')
+              if (blogCategory === 'meta') return catLower.includes('meta') || titleLower.includes('meta')
+              if (blogCategory === 'seo') return catLower.includes('seo') || catLower.includes('geo') || titleLower.includes('seo') || titleLower.includes('maps')
+              if (blogCategory === 'ai') return catLower.includes('yapay') || catLower.includes('künstliche') || catLower.includes('artificial') || titleLower.includes('ai') || titleLower.includes('gemini')
+              if (blogCategory === 'tracking') return catLower.includes('tracking') || titleLower.includes('tracking') || titleLower.includes('capi')
+              return true
+            })
+            .slice(0, 6)
+            .map((post, idx) => (
+              <a
+                key={post.slug || idx}
+                href={`/blog/${post.slug}`}
+                className="group relative flex flex-col bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] hover:border-[#5138EE]/20 hover:-translate-y-1.5 transition-all duration-300"
+              >
+                {/* Image Container with Zoom Effect */}
+                <div className="h-48 sm:h-52 relative overflow-hidden bg-slate-100">
+                  <img
+                    src={post.coverImage || 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200&h=630&fit=crop&q=80'}
+                    alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    loading="lazy"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200&h=630&fit=crop&q=80';
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  
+                  {/* Floating Category Badge */}
+                  <div className="absolute top-3 left-3">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/95 text-gray-900 shadow-md backdrop-blur-md">
+                      {post.category || 'Digital Marketing'}
+                    </span>
+                  </div>
+
+                  {/* Read time floating */}
+                  <div className="absolute bottom-3 right-3 text-white/90 text-xs font-medium inline-flex items-center gap-1 drop-shadow-md bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-lg">
+                    <Clock className="w-3.5 h-3.5 text-blue-400" />
+                    <span>{post.readTime || '10'} {lang === 'de' ? 'Min.' : lang === 'en' ? 'min' : 'dk'}</span>
+                  </div>
+                </div>
+
+                {/* Card Content */}
+                <div className="p-5 sm:p-6 flex flex-col flex-grow">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2.5 line-clamp-2 group-hover:text-[#4285F4] transition-colors leading-snug">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 line-clamp-2 mb-4 flex-grow leading-relaxed">
+                    {post.excerpt || post.title}
+                  </p>
+
+                  {/* Bottom Action Footer */}
+                  <div className="pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#4285F4] group-hover:text-blue-600">
+                    <span className="inline-flex items-center gap-1">
+                      <span>{lang === 'de' ? 'Rehber İncele' : lang === 'en' ? 'Read Guide' : 'Rehberi Oku'}</span>
+                      <ArrowRight className="w-3.5 h-3.5 transform group-hover:translate-x-1.5 transition-transform duration-300" />
+                    </span>
+                    <span className="text-gray-400 font-normal">Salih Maral</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          {/* Bottom Call to Action Button */}
+          <div className="text-center mt-12">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-[#4285F4] to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold px-8 py-6 rounded-2xl shadow-xl shadow-blue-500/20 hover:shadow-blue-500/35 hover:scale-105 transition-all duration-300"
+              asChild
+            >
+              <a href="/blog" className="inline-flex items-center gap-2">
+                <BookOpen className="w-5 h-5" />
+                <span>{lang === 'de' ? 'Alle Fachartikel ansehen (45+ Leitfäden)' : lang === 'en' ? 'Explore All Blog Guides (45+ Articles)' : 'Tüm Blog Rehberlerini İncele (45+ Makale)'}</span>
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Interactive Google Ads Budget & Cost Calculator Section */}
+      <section className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-emerald-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+        <div className="container mx-auto px-4 max-w-5xl relative z-10">
+          <GoogleAdsBudgetCalculator lang={lang} />
+        </div>
+      </section>
+
+      {/* High-Authority Interactive FAQ Section (Targeting GSC & Telemetry Search Queries) */}
+      <section id="faq" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-purple-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-[#4285F4] border border-blue-200/80 text-xs font-bold mb-3 shadow-2xs backdrop-blur-xs">
+              <HelpCircle className="w-4 h-4" />
+              <span>{t.faq?.badge || 'FAQ'}</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-950 tracking-tight mb-4">
+              {t.faq?.title}
+            </h2>
+            <p className="text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
+              {t.faq?.subtitle}
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {t.faq?.items?.map((item, idx) => {
+              const isOpen = openFaq === idx
+              return (
+                <div
+                  key={idx}
+                  className="rounded-3xl border border-slate-200/80 bg-white/95 backdrop-blur-xs overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_24px_rgba(81,56,238,0.06)] hover:border-blue-200 transition-all duration-200"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setOpenFaq(isOpen ? null : idx)}
+                    className="w-full text-left px-6 sm:px-7 py-5 flex items-center justify-between gap-4 font-bold text-base text-gray-950 hover:text-[#4285F4] transition-colors cursor-pointer"
+                  >
+                    <span className="font-extrabold">{item.q}</span>
+                    <ChevronDown
+                      className={`w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-300 ${
+                        isOpen ? 'rotate-180 text-[#4285F4]' : ''
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="px-6 sm:px-7 pb-6 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4 bg-slate-50/50">
+                      {item.a}
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+
+          {/* Quick Consultation Callout */}
+          <div className="mt-14 p-7 sm:p-8 rounded-3xl bg-blue-50/70 border border-blue-200/80 backdrop-blur-xs text-center sm:flex sm:items-center sm:justify-between sm:text-left shadow-2xs">
+            <div>
+              <h3 className="font-black text-gray-950 text-base sm:text-lg">
+                {lang === 'de' ? 'Haben Sie spezifische Fragen zu Ihrem Werbebudget?' : lang === 'tr' ? 'Reklam bütçeniz veya Google Ads hakkında sorunuz mu var?' : 'Do you have specific questions about your advertising budget?'}
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 mt-1">
+                {lang === 'de' ? 'Kostenlose 30-minütige Potenzialanalyse mit Salih Maral buchen.' : lang === 'tr' ? 'Salih Maral ile 30 dakikalık ücretsiz büyüme analizi planlayın.' : 'Book a free 30-minute growth analysis with Salih Maral.'}
+              </p>
+            </div>
+            <div className="mt-5 sm:mt-0 flex-shrink-0">
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="inline-flex items-center gap-2 bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-xs px-6 py-3.5 rounded-2xl shadow-md shadow-blue-500/20 hover:scale-105 transition-all cursor-pointer"
+              >
+                <Mail className="w-4 h-4" />
+                <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Get Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 bg-gray-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+            <div>
+              <picture>
+                <source srcSet="/logo-sm.webp" type="image/webp" />
+                <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mb-4" width="48" height="48" loading="lazy" />
+              </picture>
+              <p className="text-sm text-gray-400">{t.footer.description}</p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">{t.nav.contact}</h4>
+              <div className="space-y-2 text-sm text-gray-400">
+                <p className="flex items-center space-x-2">
+                  <Mail className="h-4 w-4 text-[#4285F4]" />
+                  <a href="mailto:info@salihmaral.com" className="hover:text-white transition-colors">info@salihmaral.com</a>
+                </p>
+                <p className="text-xs text-gray-500 pt-2">Dreieich / Frankfurt am Main (Hessen) • Remote & Hybrid</p>
+              </div>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">{t.nav.services}</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><a href={svcUrl(lang, 'google-ads')} className="hover:text-white transition-colors">Google Ads</a></li>
+                <li><a href={svcUrl(lang, 'meta-ads')} className="hover:text-white transition-colors">Meta Ads</a></li>
+                <li><a href={svcUrl(lang, 'youtube-ads')} className="hover:text-white transition-colors">YouTube Ads</a></li>
+                <li><a href={svcUrl(lang, 'server-side-tracking')} className="hover:text-white transition-colors">Server-Side Tracking</a></li>
+                <li><a href={svcUrl(lang, 'tiktok-ads')} className="hover:text-white transition-colors">TikTok Ads</a></li>
+                <li><a href={svcUrl(lang, 'seo')} className="hover:text-white transition-colors">SEO & GEO</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">{lang === 'de' ? 'Standorte in Deutschland' : lang === 'en' ? 'Locations in Germany' : 'Almanya Lokasyonları'}</h4>
+              <ul className="space-y-1.5 text-xs text-gray-400">
+                <li><a href={`/${lang}/standorte/frankfurt`} className="hover:text-[#4285F4] transition-colors">Frankfurt am Main</a></li>
+                <li><a href={`/${lang}/standorte/muenchen`} className="hover:text-[#4285F4] transition-colors">München</a></li>
+                <li><a href={`/${lang}/standorte/berlin`} className="hover:text-[#4285F4] transition-colors">Berlin</a></li>
+                <li><a href={`/${lang}/standorte/hamburg`} className="hover:text-[#4285F4] transition-colors">Hamburg</a></li>
+                <li><a href={`/${lang}/standorte/koeln`} className="hover:text-[#4285F4] transition-colors">Köln & Bonn</a></li>
+                <li><a href={`/${lang}/standorte/duesseldorf`} className="hover:text-[#4285F4] transition-colors">Düsseldorf</a></li>
+                <li><a href={`/${lang}/standorte/stuttgart`} className="hover:text-[#4285F4] transition-colors">Stuttgart</a></li>
+                <li><a href={`/${lang}/standorte`} className="text-[#4285F4] font-bold hover:underline block pt-1">{lang === 'de' ? 'Alle Standorte anzeigen →' : lang === 'en' ? 'View all locations →' : 'Tüm Şehirleri Gör →'}</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">{lang === 'de' ? 'Aktuelle Fachartikel' : lang === 'en' ? 'Strategy Guides' : 'Uzman Rehberleri'}</h4>
+              <ul className="space-y-1.5 text-xs text-gray-400">
+                <li><a href="/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google Ads Fixpreis vs. %' : lang === 'en' ? 'Flat Fee vs. Commission' : 'Google Ads Sabit Fiyat vs Komisyon'}</a></li>
+                <li><a href="/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Meta Ads ROAS Skalierung' : lang === 'en' ? 'Meta Ads ROAS Scaling' : 'Meta Ads ROAS Skalalama'}</a></li>
+                <li><a href="/blog/server-side-gtm-meta-capi-setup-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Server-Side GTM & CAPI' : lang === 'en' ? 'Server-Side GTM Setup' : 'Server-Side GTM & CAPI'}</a></li>
+                <li><a href="/blog/google-ai-overviews-geo-ranking-strategy" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google AI Overviews & GEO' : lang === 'en' ? 'AI Overviews & GEO Strategy' : 'AI Overviews ve GEO Stratejisi'}</a></li>
+                <li><a href="/blog/google-consent-mode-v2-cookieless-ai-tracking-2026" className="hover:text-[#4285F4] transition-colors">Consent Mode v2 Setup</a></li>
+                <li><a href="/blog" className="text-[#4285F4] font-bold hover:underline block pt-1">{lang === 'de' ? 'Zum Blog-Archiv →' : lang === 'en' ? 'All Strategy Guides →' : 'Tüm Blog Rehberleri →'}</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+            <div className="flex items-center space-x-6">
+              <p>© 2026 Salih Maral. {t.footer.rights}</p>
+              {/* Google Partners Badge in Footer */}
+              <a
+                href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="google-partners-badge-footer"
+                className="inline-block hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="https://www.gstatic.com/partners/badge/images/2026/PartnerBadgeClickable.svg"
+                  alt="Google Partner"
+                  className="h-16 w-auto"
+                  width="109"
+                  height="64"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <div className="flex items-center space-x-6 mt-4 md:mt-0">
+              <a href="/about" className="hover:text-white transition-colors">{t.footer.about || 'Über uns'}</a>
+              <a href="/impressum" className="hover:text-white transition-colors">Impressum</a>
+              <a href="/datenschutz" className="hover:text-white transition-colors">Datenschutzerklärung</a>
+              <a href="/blog" className="hover:text-white transition-colors">Blog</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      {/* Cookie Consent Banner */}
+      <CookieConsent />
+    </div>
+  )
+}
