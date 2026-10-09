@@ -57,5 +57,5 @@ coverImage: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=600&
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Reach Key Decision Makers at Unbeatable Cost</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Scale your B2B sales pipeline with high-converting X Ads. Request your <strong>Free B2B Advertising Strategy Consultation</strong> today.</p>
-  <a href="https://salihmaral.de/en#contact" style="display: inline-block; background: #0284c7; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.6); transition: all 0.3s ease;">Request Free B2B Strategy Audit ➔</a>
+  <a href="https://www.salihmaral.com/en#contact" style="display: inline-block; background: #0284c7; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.6); transition: all 0.3s ease;">Request Free B2B Strategy Audit ➔</a>
 </div>

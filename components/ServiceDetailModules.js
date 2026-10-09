@@ -75,7 +75,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
                 { badge: 'DEMAND GEN', title: 'YouTube Demand Gen Yapay Zeka Video Kampanyaları', desc: 'Shorts, Gmail ve Keşfet alanlarında yapay zeka ile en doğru müşterilere video gösterimi' },
                 { badge: 'YERLEŞİM FİLTRESİ', title: 'Negatif Kanal & Çocuk Kanalı Filtreleme', desc: 'Çocuk kanalları ve kalitesiz siteleri hariç tutarak bütçeyi sadece gerçek izleyicilere harcama' },
                 { badge: 'KANCA KURGUSU', title: 'İlk 5 Saniye Kanca (Hook) Optimizasyonu', desc: 'Atla butonuna basılmasını önleyen, izleyiciyi videoda tutan kreatif senaryo kurgusu' },
-                { badge: 'CPV OPTİMİZASYON', title: '0.01€ Hedefli İzleme Başı Maliyet (CPV) Yönetimi', desc: 'Teklif algoritmalarını optimize ederek minimum bütçe ile maksimum gerçek izlenme üretimi' }
+                { badge: 'CPV OPTİMİZASYON', title: 'Minimum Maliyetli İzleme Başı Maliyet (CPV) Yönetimi', desc: 'Teklif algoritmalarını optimize ederek minimum bütçe ile maksimum gerçek izlenme üretimi' }
               ]
             }
           ]
@@ -94,7 +94,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
               items: [
                 { badge: 'KLİP LANSMANI', title: 'Yeni Şarkı & Müzik Klibi Lansman Kampanyası', desc: 'Klibin ilk 48 saatinde yüksek izlenme ivmesi yaratarak YouTube trendlerine girme desteği' },
                 { badge: 'TÜR HEDEFLEME', title: 'Müzik Türü & Benzer Sanatçı Hedeflemesi', desc: 'Pop, Rap, Rock, Arabesk veya Etnik müzik dinleyicilerini nokta atışı hedefleme' },
-                { badge: 'ÜLKE VE ŞEHİR', title: 'Almanya, Türkiye & Global Bölgesel Yayın', desc: 'Hedeflenen gurbetçi kitleye, Türkiye geneline veya Avrupa metropollerine özel video yayını' },
+                { badge: 'ÜLKE VE ŞEHİR', title: 'Türkiye & Küresel Bölgesel Yayın', desc: 'Türkiye geneline, metropollere veya uluslararası pazarlara özel hedef kitle yayını' },
                 { badge: 'SPOTIFY PUSH', title: 'Spotify & Apple Music Dinlenme Yönlendirmesi', desc: 'YouTube video izleyicilerini dijital müzik platformlarındaki şarkıya yönlendiren CTA kurgusu' },
                 { badge: 'ABONE HUNİSİ', title: 'Kanal Abone Sayısını Organik Katlama', desc: 'Videoyu beğenen ve sonuna kadar izleyen kullanıcıları kanal abonesine dönüştürme' },
                 { badge: 'REMARKETING', title: 'Video İzleyicilerini Web Sitesine Çekme (Remarketing)', desc: 'Videoları izleyen sıcak kitleye web sitenizden ürün veya hizmet satışı yaptırma' },
@@ -125,7 +125,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
                 { badge: 'DEMAND GEN', title: 'YouTube Demand Gen KI-Videokampagnen', desc: 'Automatische KI-Ausspielung über Shorts, Gmail und Discover an kaufbereite Nutzer' },
                 { badge: 'FILTERUNG', title: 'Strikter Ausschluss von Kinder- & Spamkanälen', desc: 'Schutz Ihres Budgets durch gezieltes Sperren irrelevanter Platzierungen' },
                 { badge: 'HOOK-DESIGN', title: 'Erste-5-Sekunden Hook-Optimierung', desc: 'Kreativkonzepte, die den Skip-Button verhindern und Zuschauer fesseln' },
-                { badge: 'CPV OPTIMIERUNG', title: 'Kostengünstige Aufrufe ab 0,01 € CPV', desc: 'Präzise Gebotssteuerung für maximale Reichweite bei minimalem Budgeteinsatz' }
+                { badge: 'CPV OPTIMIERUNG', title: 'Kostengünstige Aufrufe mit minimalem CPV', desc: 'Präzise Gebotssteuerung für maximale Reichweite bei minimalem Budgeteinsatz' }
               ]
             }
           ]
@@ -144,7 +144,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
               items: [
                 { badge: 'SONG-RELEASE', title: 'Musikclip Launch & Trend-Push', desc: 'Initialer Aufruf-Schub in den ersten 48 Stunden zur Unterstützung von Chart-Rankings' },
                 { badge: 'GENRE-TARGETING', title: 'Genre- & Künstler-Affinitäts-Targeting', desc: 'Treffsicheres Ausspielen an Fans ähnlicher Musiker und Stilrichtungen' },
-                { badge: 'GEO-FOKUS', title: 'Gezielte Länder- & Regionenauswahl', desc: 'Ausstrahlung in Deutschland, Österreich, Schweiz, Türkei oder weltweit' },
+                { badge: 'GEO-FOKUS', title: 'Gezielte Länder- & Regionenauswahl', desc: 'Ausstrahlung in der Türkei, Europa oder weltweit' },
                 { badge: 'STREAMING PUSH', title: 'Weiterleitung zu Spotify & Apple Music', desc: 'Interaktive Call-to-Actions leiten YouTube-Zuschauer direkt zu Streaming-Plattformen' },
                 { badge: 'ABONNENTEN', title: 'Nachhaltiges Kanal-Abonnentenwachstum', desc: 'Gezielte Ansprache zur Verwandlung von Einmal-Zuschauern in treue Abonnenten' },
                 { badge: 'REMARKETING', title: 'Video-Viewer Remarketing auf der Website', desc: 'Verkauf von Produkten, Tickets oder Dienstleistungen an bestehende Videozuschauer' },
@@ -175,7 +175,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
                 { badge: 'DEMAND GEN', title: 'YouTube Demand Gen AI Video Campaigns', desc: 'Multi-surface AI optimization spanning Shorts, Gmail, and Discover feeds' },
                 { badge: 'EXCLUSIONS', title: 'Placement Filters & Kids Channel Blocking', desc: 'Strict negative filtering ensuring 100% human, relevant, and brand-safe audiences' },
                 { badge: 'HOOK DESIGN', title: 'First 5-Second Hook Optimization', desc: 'Creative frameworks crafted to stop the skip button and maximize retention' },
-                { badge: 'CPV BIDDING', title: 'Low Cost-Per-View from €0.01 CPV', desc: 'Algorithmic bid management maximizing real audience volume per euro spent' }
+                { badge: 'CPV BIDDING', title: 'Low Cost-Per-View Bidding Optimization', desc: 'Algorithmic bid management maximizing real audience volume per marketing spend' }
               ]
             }
           ]

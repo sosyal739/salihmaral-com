@@ -78,5 +78,5 @@ coverImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&
 <div class="cta-box" style="background: #0f172a; border: 2px solid #0284c7; border-radius: 1.5rem; padding: 2.5rem; margin-top: 2.5rem; text-align: center; color: white;">
   <h3 style="font-size: 1.6rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">Scale Your Medical Practice with High-Value Patients</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.5rem auto;">Partner with a certified Google Partner to establish regional authority and secure booked patient calendars.</p>
-  <a href="https://salihmaral.de/en#contact" style="display: inline-block; background: #0284c7; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.5);">Request Free Clinic Marketing Consultation ➔</a>
+  <a href="https://www.salihmaral.com/en#contact" style="display: inline-block; background: #0284c7; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.5);">Request Free Clinic Marketing Consultation ➔</a>
 </div>

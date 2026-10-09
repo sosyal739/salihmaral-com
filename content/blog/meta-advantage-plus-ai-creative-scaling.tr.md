@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "meta-advantage-plus-ai-creative-scaling"
 lang: "tr"
 title: "Meta Advantage+ ile Yapay Zeka Destekli Kreatif Testleri Nasıl Yapılır?"
@@ -81,17 +81,17 @@ coverImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&
   <tbody>
     <tr>
       <td><strong>Standart Katalog Reklamı</strong></td>
-      <td>€0.85</td>
+      <td>8,50 ₺</td>
       <td>%2.1</td>
     </tr>
     <tr>
       <td><strong>AI Lifestyle Ürün Görseli</strong></td>
-      <td>€0.42</td>
+      <td>4,20 ₺</td>
       <td>%4.8</td>
     </tr>
     <tr>
       <td><strong>Advantage+ AI Video Variyasyonu</strong></td>
-      <td>€0.28</td>
+      <td>2,80 ₺</td>
       <td>%6.2</td>
     </tr>
   </tbody>

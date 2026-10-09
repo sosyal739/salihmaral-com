@@ -56,5 +56,5 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=3
 <div class="cta-box" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 1.5rem; padding: 2.5rem; margin-top: 3rem; text-align: center;">
   <h3 style="font-size: 1.6rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem;">Get a Transparent Fixed-Fee Google Ads Proposal</h3>
   <p style="color: #475569; font-size: 1.05rem; max-width: 650px; margin: 0 auto 1.5rem auto;">Let us audit your current campaigns and calculate a predictable growth forecast for your business.</p>
-  <a href="https://salihmaral.de/en#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.5rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.4);">Request Free Account Audit & Quote ➔</a>
+  <a href="https://www.salihmaral.com/en#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.5rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.4);">Request Free Account Audit & Quote ➔</a>
 </div>

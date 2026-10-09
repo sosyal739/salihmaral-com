@@ -56,6 +56,8 @@ chainlit.md
 .chainlit
 .ipynb_checkpoints/
 .ac
+app_archived/
+content/blog_archived/
 
 # Deployment
 .vercel

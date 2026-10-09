@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "google-ad-grants-islamic-charity-rehberi-2026"
 lang: "tr"
 title: "İslami Kuruluşlar İçin Google Ad Grants (10.000$/Ay)"
@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&
 ---
 
 <div class="lead">
-<p><strong>Vakıf ve STK Yöneticileri İçin Büyük Fırsat:</strong> Google, dünya genelindeki kayıtlı kâr amacı gütmeyen kuruluşlara, vakıflara ve derneklere her ay **10.000 $ (Yılda 120.000 $)** tutarında tamamen ücretsiz arama ağı reklam hibesi (Google Ad Grants) sağlamaktadır. Ancak dünya genelindeki İslami yardım kuruluşlarının %70'inden fazlası ya bu programdan habersizdir ya da başvuru sürecindeki teknik engeller ve katı Google politikaları (%5 CTR kuralı, tek kelimelik anahtar kelime yasağı, dönüşüm takibi zorunluluğu) nedeniyle hesaplarını askıya aldırmaktadır. **Salih Maral (Resmi Google Partner & STK Dijital Büyüme Uzmanı)** olarak; Almanya, İngiltere, ABD ve Türkiye'deki İslami yardım kuruluşlarının Ad Grants hesaplarını sıfırdan onaylatıyor, askıdaki hesapları kurtarıyor ve her ay 10.000 $'lık hibenin son kuruşuna kadar bağışa ve gönüllüye dönüşmesini sağlıyoruz.</p>
+<p><strong>Vakıf ve STK Yöneticileri İçin Büyük Fırsat:</strong> Google, dünya genelindeki kayıtlı kâr amacı gütmeyen kuruluşlara, vakıflara ve derneklere her ay **10.000 $ (Yılda 120.000 $)** tutarında tamamen ücretsiz arama ağı reklam hibesi (Google Ad Grants) sağlamaktadır. Ancak dünya genelindeki İslami yardım kuruluşlarının %70'inden fazlası ya bu programdan habersizdir ya da başvuru sürecindeki teknik engeller ve katı Google politikaları (%5 CTR kuralı, tek kelimelik anahtar kelime yasağı, dönüşüm takibi zorunluluğu) nedeniyle hesaplarını askıya aldırmaktadır. **Salih Maral (Resmi Google Partner & STK Dijital Büyüme Uzmanı)** olarak; Türkiye ve yurt dışındaki İslami yardım kuruluşlarının Ad Grants hesaplarını sıfırdan onaylatıyor, askıdaki hesapları kurtarıyor ve her ay 10.000 $'lık hibenin son kuruşuna kadar bağışa ve gönüllüye dönüşmesini sağlıyoruz.</p>
 </div>
 
 <h2>🕌 Google Ad Grants Nedir ve İslami Yardım Kuruluşlarına Ne Kazandırır?</h2>
@@ -29,7 +29,7 @@ coverImage: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&
 <ol>
   <li><strong>%5 Tıklama Oranı (CTR) Kuralını Kaçırmak:</strong> Google, Ad Grants hesaplarında ortalama CTR'ın %5'in altına düşmesine izin vermez. İki ay üst üste düşerse hesap askıya alınır.</li>
   <li><strong>Geniş ve Alakasız Kelimeler Kullanmak:</strong> <em>"yardım", "haberler", "video"</em> gibi genel kelimeler kalite puanını düşürür; bunun yerine <em>"afrika su kuyusu bağışı", "zekat hesaplama 2026"</em> gibi yüksek niyetli kelimeler kurgulanmalıdır.</li>
-  <li><strong>Dönüşüm Takibinin (Conversion Tracking) Kurulmaması:</strong> Hangi anahtar kelimeden kaç TL/Euro bağış geldiğini Google'a bildirmeyen hesaplar kapatılır.</li>
+  <li><strong>Dönüşüm Takibinin (Conversion Tracking) Kurulmaması:</strong> Hangi anahtar kelimeden kaç TL bağış geldiğini Google'a bildirmeyen hesaplar kapatılır.</li>
   <li><strong>Aylık Hesap Bakımının Yapılmaması:</strong> Ad Grants bir kere kurulup bırakılacak bir sistem değildir; negatif kelimelerin haftalık temizlenmesi şarttır.</li>
 </ol>
 
@@ -73,5 +73,5 @@ coverImage: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Ayda 10.000$ Ücretsiz Reklam Hibesini Kurumunuza Kazandıralım</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Vakfınızın veya derneğinizin Google Ad Grants başvurusunu yapalım, askıdaki hesabınızı kurtaralım ve bağışlarınızı katlayalım. <strong>Ücretsiz STK Danışmanlığı</strong> için hemen iletişime geçin.</p>
-  <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.6); transition: all 0.3s ease;">Ücretsiz Ad Grants Danışmanlığı Alın ➔</a>
+  <a href="https://www.salihmaral.com/#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.6); transition: all 0.3s ease;">Ücretsiz Ad Grants Danışmanlığı Alın ➔</a>
 </div>

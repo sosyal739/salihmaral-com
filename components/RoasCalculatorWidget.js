@@ -3,8 +3,8 @@
 import React, { useState } from 'react'
 import { Calculator, TrendingUp, DollarSign, ArrowRight, CheckCircle2, Sparkles, Send, Loader2 } from 'lucide-react'
 
-export default function RoasCalculatorWidget({ lang = 'de' }) {
-  const [budget, setBudget] = useState(2500)
+export default function RoasCalculatorWidget({ lang = 'tr' }) {
+  const [budget, setBudget] = useState(25000)
   const [currentRoas, setCurrentRoas] = useState(1.8)
   const [targetRoas, setTargetRoas] = useState(4.2)
   const [industry, setIndustry] = useState('ecommerce')
@@ -102,7 +102,7 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          message: `[ROAS Hesaplayıcı] Bütçe: ${budget}€, Mevcut ROAS: ${currentRoas}x, Hedef ROAS: ${targetRoas}x, Ek Ciro: ${additionalRevenue}€, Web: ${formData.website || 'N/A'}`,
+          message: `[ROAS Hesaplayıcı] Bütçe: ${budget.toLocaleString()} ₺, Mevcut ROAS: ${currentRoas}x, Hedef ROAS: ${targetRoas}x, Ek Ciro: ${additionalRevenue.toLocaleString()} ₺, Web: ${formData.website || 'N/A'}`,
           language: lang,
           b_check: formData.b_check || ''
         })
@@ -146,14 +146,14 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
                 {currentT.budgetLabel}
               </label>
               <span className="text-base font-bold text-blue-400">
-                {budget.toLocaleString()} €
+                {budget.toLocaleString()} ₺
               </span>
             </div>
             <input
               type="range"
-              min="500"
-              max="50000"
-              step="500"
+              min="5000"
+              max="500000"
+              step="5000"
               value={budget}
               onChange={(e) => setBudget(Number(e.target.value))}
               className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
@@ -208,18 +208,18 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
         <div className="p-6 rounded-2xl bg-gradient-to-b from-blue-950/40 to-slate-950 border border-blue-500/40 space-y-4 text-center sm:text-left">
           <div>
             <div className="text-xs text-slate-400 mb-1">{currentT.currentRevLabel}</div>
-            <div className="text-lg font-bold text-slate-300">{currentRevenue.toLocaleString()} €</div>
+            <div className="text-lg font-bold text-slate-300">{currentRevenue.toLocaleString()} ₺</div>
           </div>
 
           <div className="pt-2 border-t border-slate-800">
             <div className="text-xs text-slate-400 mb-1">{currentT.projectedRevLabel}</div>
-            <div className="text-xl font-black text-white">{projectedRevenue.toLocaleString()} €</div>
+            <div className="text-xl font-black text-white">{projectedRevenue.toLocaleString()} ₺</div>
           </div>
 
           <div className="pt-3 border-t border-blue-500/30 p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
             <div className="text-xs text-emerald-300 font-medium mb-0.5">{currentT.additionalRevLabel}</div>
             <div className="text-2xl sm:text-3xl font-black text-emerald-400">
-              +{additionalRevenue.toLocaleString()} € <span className="text-xs text-emerald-300/80 font-normal">/ ay</span>
+              +{additionalRevenue.toLocaleString()} ₺ <span className="text-xs text-emerald-300/80 font-normal">/ ay</span>
             </div>
           </div>
 

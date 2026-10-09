@@ -35,10 +35,10 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         { id: 'maps', icon: MapPin, title: 'Google Maps #1 & Bewertungsschutz', desc: 'Lokale Betriebe, Gastronomie & Filialen' },
       ],
       budgets: [
-        { id: 'b1', title: '500 € – 1.500 € / Monat', desc: 'Optimal für lokale Betriebe & Neustart' },
-        { id: 'b2', title: '1.500 € – 5.000 € / Monat', desc: 'Wachstum für KMUs & regionale Marktführer' },
-        { id: 'b3', title: '5.000 € – 15.000 € / Monat', desc: 'Skalierung für E-Commerce & B2B' },
-        { id: 'b4', title: 'Über 15.000 € / Monat', desc: 'Dominanz & Enterprise Performance' },
+        { id: 'b1', title: '15.000 ₺ – 45.000 ₺ / Monat', desc: 'Optimal für KMUs & Neustart' },
+        { id: 'b2', title: '45.000 ₺ – 150.000 ₺ / Monat', desc: 'Wachstum für regionale Marktführer' },
+        { id: 'b3', title: '150.000 ₺ – 500.000 ₺ / Monat', desc: 'Skalierung für E-Commerce & B2B' },
+        { id: 'b4', title: 'Über 500.000 ₺ / Monat', desc: 'Enterprise Performance' },
       ],
       labels: {
         website: 'Ihre Website / Shop-URL',
@@ -68,10 +68,10 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         { id: 'maps', icon: MapPin, title: 'Google Haritalar 1. Sıra & Yorum', desc: 'Yerel İşletmeler, Çoklu Şubeler & Zincirler' },
       ],
       budgets: [
-        { id: 'b1', title: '500 € – 1.500 € / Ay', desc: 'Yerel işletmeler ve başlangıç için ideal' },
-        { id: 'b2', title: '1.500 € – 5.000 € / Ay', desc: 'Bölgesel liderlik ve KOBİ büyümesi' },
-        { id: 'b3', title: '5.000 € – 15.000 € / Ay', desc: 'E-ticaret ve B2B ölçekleme' },
-        { id: 'b4', title: '15.000 €+ / Ay', desc: 'Geniş ölçekli kurumsal büyüme' },
+        { id: 'b1', title: '15.000 ₺ – 45.000 ₺ / Ay', desc: 'Yerel işletmeler ve başlangıç için ideal' },
+        { id: 'b2', title: '45.000 ₺ – 150.000 ₺ / Ay', desc: 'Bölgesel liderlik ve KOBİ büyümesi' },
+        { id: 'b3', title: '150.000 ₺ – 500.000 ₺ / Ay', desc: 'E-ticaret ve B2B ölçekleme' },
+        { id: 'b4', title: '500.000 ₺+ / Ay', desc: 'Geniş ölçekli kurumsal büyüme' },
       ],
       labels: {
         website: 'Web Siteniz / Mağaza URL',
@@ -101,10 +101,10 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         { id: 'maps', icon: MapPin, title: 'Google Maps #1 & Reputation Defense', desc: 'Multi-Location Chains & Local Retail' },
       ],
       budgets: [
-        { id: 'b1', title: '€500 – €1,500 / Month', desc: 'Ideal for local businesses and initial traction' },
-        { id: 'b2', title: '€1,500 – €5,000 / Month', desc: 'Growth for SMBs & regional leaders' },
-        { id: 'b3', title: '€5,000 – €15,000 / Month', desc: 'Scaling for E-Commerce & B2B brands' },
-        { id: 'b4', title: 'Over €15,000 / Month', desc: 'Market leadership & high-volume scale' },
+        { id: 'b1', title: '$1,000 – $3,000 / Month', desc: 'Ideal for local businesses & initial traction' },
+        { id: 'b2', title: '$3,000 – $10,000 / Month', desc: 'Growth for scaling brands' },
+        { id: 'b3', title: '$10,000 – $30,000 / Month', desc: 'Scaling for E-Commerce & B2B brands' },
+        { id: 'b4', title: 'Over $30,000 / Month', desc: 'Market leadership & high-volume scale' },
       ],
       labels: {
         website: 'Website / Store URL',
@@ -122,7 +122,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
     }
   }
 
-  const content = t[lang] || t['de']
+  const content = t[lang] || t['tr']
 
   const handleGoalSelect = (id) => {
     setGoal(id)

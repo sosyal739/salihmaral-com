@@ -76,5 +76,5 @@ coverImage: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Stop Wasting Money on Meta Ads Today</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Let’s audit your ad account together. Request your <strong>Free 15-Minute Meta Ads Audit</strong> to discover exactly how to scale to 3.5x+ ROAS.</p>
-  <a href="https://salihmaral.de/en#contact" style="display: inline-block; background: #6366f1; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.6); transition: all 0.3s ease;">Request Free Meta Ads Strategy Audit ➔</a>
+  <a href="https://www.salihmaral.com/en#contact" style="display: inline-block; background: #6366f1; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.6); transition: all 0.3s ease;">Request Free Meta Ads Strategy Audit ➔</a>
 </div>

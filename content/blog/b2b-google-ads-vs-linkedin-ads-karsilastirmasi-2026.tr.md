@@ -32,14 +32,14 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
     </tr>
     <tr>
       <td><strong>Ortalama Tıklama Başı Maliyet (CPC)</strong></td>
-      <td>1,50 € - 5,00 €</td>
-      <td>6,00 € - 18,00 €</td>
+      <td>45 ₺ - 150 ₺</td>
+      <td>180 ₺ - 540 ₺</td>
       <td>Google Ads daha ekonomik tıklama sağlar.</td>
     </tr>
     <tr>
       <td><strong>Ortalama Lead Maliyeti (CPL)</strong></td>
-      <td>25 € - 60 €</td>
-      <td>80 € - 180 €</td>
+      <td>750 ₺ - 1.800 ₺</td>
+      <td>2.400 ₺ - 5.400 ₺</td>
       <td>Google Ads daha hızlı satışa döner.</td>
     </tr>
     <tr>

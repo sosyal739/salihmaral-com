@@ -95,5 +95,5 @@ coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&
 <div class="cta-box" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 1.5rem; padding: 2rem; margin-top: 2.5rem; text-align: center;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem;">Lassen Sie uns Ihren YouTube-Kanal gemeinsam skalieren</h3>
   <p style="color: #475569; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Bringen Sie Ihre Videos mit offizieller Google Partner Betreuung zu echten Zuschauern in Ihren Zielmärkten.</p>
-  <a href="https://salihmaral.de/de#contact" style="display: inline-block; background: #FF0000; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(255, 0, 0, 0.4);">Kostenlose Video- & Potenzialanalyse anfordern ➔</a>
+  <a href="https://www.salihmaral.com/de#contact" style="display: inline-block; background: #FF0000; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(255, 0, 0, 0.4);">Kostenlose Video- & Potenzialanalyse anfordern ➔</a>
 </div>

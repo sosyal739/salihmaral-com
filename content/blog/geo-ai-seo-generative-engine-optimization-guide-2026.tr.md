@@ -24,5 +24,5 @@ coverImage: "https://images.unsplash.com/photo-1677442136019-21780efad99a?w=600&
 <div class="cta-box" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 1.5rem; padding: 2.5rem; margin-top: 3rem; text-align: center;">
   <h3 style="font-size: 1.6rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem;">Sitenizi Yapay Zeka Aramalarına Hazırlayın</h3>
   <p style="color: #475569; font-size: 1.05rem; max-width: 650px; margin: 0 auto 1.5rem auto;">GEO AI SEO denetimi yaptırarak ChatGPT ve Perplexity'de önerilen marka olun.</p>
-  <a href="https://salihmaral.de/tr/hizmetler/seo" style="display: inline-block; background: #0F9D58; color: white; font-weight: 700; padding: 1rem 2.5rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(15, 157, 88, 0.4);">GEO AI SEO Analizi Alın ➔</a>
+  <a href="https://www.salihmaral.com/tr/hizmetler/seo" style="display: inline-block; background: #0F9D58; color: white; font-weight: 700; padding: 1rem 2.5rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(15, 157, 88, 0.4);">GEO AI SEO Analizi Alın ➔</a>
 </div>

@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "programmatic-seo-ai-content-hubs"
 lang: "tr"
 title: "Programatik SEO ve AI İçerik Merkezleri Yapılandırması ile Organik Trafik Ölçekleme"
@@ -50,8 +50,8 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
     </tr>
     <tr>
       <td><strong>Sayfa Başına İçerik Maliyeti</strong></td>
-      <td>€50 - €150 / Sayfa</td>
-      <td>€0.50 / Sayfa (AI Tabanlı)</td>
+      <td>1.500 ₺ - 4.500 ₺ / Sayfa</td>
+      <td>15 ₺ / Sayfa (AI Tabanlı)</td>
       <td>-%98 Maliyet Avantajı</td>
     </tr>
   </tbody>

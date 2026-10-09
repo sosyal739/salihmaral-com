@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "ai-agentic-workflow-digital-marketing-2026"
 lang: "tr"
 title: "Agentic AI İş Akışları ile Pazarlama Otomasyonu 2026"
@@ -86,8 +86,8 @@ coverImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&
     </tr>
     <tr>
       <td><strong>Müşteri Edinme Maliyeti (CPA)</strong></td>
-      <td>€42.00</td>
-      <td>€24.50</td>
+      <td>420 ₺</td>
+      <td>245 ₺</td>
     </tr>
     <tr>
       <td><strong>Haftalık Ekip Çalışma Süresi</strong></td>

@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "server-side-tracking-first-party-ai-attribution"
 lang: "tr"
 title: "iOS 14+ Sonrası First-Party Veri ile Reklam Algoritmalarını Güçlendirme"
@@ -91,8 +91,8 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     </tr>
     <tr>
       <td><strong>Dönüşüm Başına Maliyet (CPA)</strong></td>
-      <td>€38.50</td>
-      <td>€24.20</td>
+      <td>385 ₺</td>
+      <td>242 ₺</td>
     </tr>
   </tbody>
 </table>

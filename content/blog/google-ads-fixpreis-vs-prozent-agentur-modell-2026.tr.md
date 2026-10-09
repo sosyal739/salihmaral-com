@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "google-ads-fixpreis-vs-prozent-agentur-modell-2026"
 lang: "tr"
 title: "Google Ads Sabit Fiyat mı, Komisyon mu? 2026"
@@ -38,13 +38,13 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=3
       <td>🔴 Düşük (Bütçe büyüdükçe çok pahalı)</td>
     </tr>
     <tr>
-      <td><strong>Saatlik Fatura (120€ - 200€ / Saat)</strong></td>
+      <td><strong>Saatlik Fatura (2.500 ₺ - 5.000 ₺ / Saat)</strong></td>
       <td>Ajans yaptığı her işlem için saat hesabı yapar.</td>
       <td>Ay sonu faturası belirsizdir, sürpriz maliyetler çıkar.</td>
       <td>🟡 Orta (Kontrolü zor)</td>
     </tr>
     <tr>
-      <td><strong>Sabit Fiyat (Fixpreis / Salih Maral Modeli)</strong></td>
+      <td><strong>Sabit Fiyat (Salih Maral Modeli)</strong></td>
       <td>Bütçeniz ne kadar artarsa artsın, her ay net ve sabit bir hizmet bedeli ödersiniz.</td>
       <td><strong>Sıfır sürpriz maliyet, %100 şeffaf bütçe kontrolü.</strong></td>
       <td>🟢 <strong>En Yüksek (Planlanabilir & Maksimum ROAS)</strong></td>
@@ -52,12 +52,12 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=3
   </tbody>
 </table>
 
-<h2>💡 Neden Sabit Fiyatlı (Fixpreis) Google Ads Yönetimi Tercih Edilmelidir?</h2>
+<h2>💡 Neden Sabit Fiyatlı Google Ads Yönetimi Tercih Edilmelidir?</h2>
 
 <ol>
-  <li><strong>Çıkar Çatışması Yoktur:</strong> Yüzdelik komisyon alan ajans, size *"Bütçeyi 5.000 €'dan 15.000 €'ya çıkaralım"* der çünkü kendi cebine girecek para artar. Sabit fiyat modelinde ise uzmanın tek amacı: <em>Mevcut bütçenizle maksimum ciro ve dönüşüm üretmektir.</em></li>
+  <li><strong>Çıkar Çatışması Yoktur:</strong> Yüzdelik komisyon alan ajans, size *"Bütçeyi 50.000 ₺'den 150.000 ₺'ye çıkaralım"* der çünkü kendi cebine girecek para artar. Sabit fiyat modelinde ise uzmanın tek amacı: <em>Mevcut bütçenizle maksimum ciro ve dönüşüm üretmektir.</em></li>
   <li><strong>Tam Bütçe Şeffaflığı:</strong> Her ay ne kadar hizmet bedeli ödeyeceğinizi bilirsiniz. Muhasebeniz ve nakit akışınız asla şaşmaz.</li>
-  <li><strong>Resmi Google Partner Güvencesi:</strong> Faturanız Almanya merkezli kesilir ve 17 yıllık kıdemli uzman doğrudan hesabınızın başında durur.</li>
+  <li><strong>Resmi Google Partner Güvencesi:</strong> Resmi kurumsal faturanız kesilir ve 17 yıllık kıdemli Resmi Google Partneri doğrudan hesabınızın başında durur.</li>
 </ol>
 
 <div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); border: 2px solid #3b82f6; border-radius: 1.5rem; padding: 2.5rem; margin-top: 2.5rem; text-align: center; color: white; box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.4);">
@@ -66,5 +66,5 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=3
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Sürpriz Faturalara ve Komisyonlara Son Verin</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Reklam hesabınızı birlikte inceleyelim. Bütçenizi en kârlı şekilde yönetecek <strong>Sabit Fiyatlı Google Ads Stratejisi</strong> için hemen formu doldurun.</p>
-  <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #3b82f6; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.6); transition: all 0.3s ease;">Sabit Fiyatlı Teklif ve Analiz Alın ➔</a>
+  <a href="https://www.salihmaral.com/#contact" style="display: inline-block; background: #3b82f6; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.6); transition: all 0.3s ease;">Sabit Fiyatlı Teklif ve Analiz Alın ➔</a>
 </div>

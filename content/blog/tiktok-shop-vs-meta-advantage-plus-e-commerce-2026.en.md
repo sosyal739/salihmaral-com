@@ -85,5 +85,5 @@ coverImage: "https://images.unsplash.com/photo-1556742049-0a67e5572293?w=600&h=3
 <div class="cta-box" style="background: #0f172a; border: 2px solid #10b981; border-radius: 1.5rem; padding: 2.5rem; margin-top: 2.5rem; text-align: center; color: white;">
   <h3 style="font-size: 1.6rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">Scale Your E-Commerce Store Profitably</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.5rem auto;">Certified Google & Meta Partner management backed by 17+ years of e-commerce scaling experience.</p>
-  <a href="https://salihmaral.de/en#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.5);">Request Free E-Commerce ROAS Audit ➔</a>
+  <a href="https://www.salihmaral.com/en#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.5);">Request Free E-Commerce ROAS Audit ➔</a>
 </div>

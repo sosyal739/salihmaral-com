@@ -76,5 +76,5 @@ coverImage: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Stoppen Sie die Budgetverschwendung bei Meta Ads</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Lassen Sie uns Ihr Werbekonto gemeinsam analysieren. Sichern Sie sich jetzt Ihr <strong>kostenloses 15-minütiges Meta Ads Audit</strong> und erfahren Sie, wie Sie Ihren ROAS sofort auf 3.5x+ steigern.</p>
-  <a href="https://salihmaral.de/de#contact" style="display: inline-block; background: #6366f1; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.6); transition: all 0.3s ease;">Kostenlose Meta Ads Potenzialanalyse anfordern ➔</a>
+  <a href="https://www.salihmaral.com/de#contact" style="display: inline-block; background: #6366f1; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.6); transition: all 0.3s ease;">Kostenlose Meta Ads Potenzialanalyse anfordern ➔</a>
 </div>

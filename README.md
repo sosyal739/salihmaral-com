@@ -1,69 +1,53 @@
-# Salih Maral — Offizieller Google Partner & Digital Marketing Experte
+# Salih Maral — Dijital Büyüme Ajansı & Resmi Google Partner (Official Google Partner)
 
-[![Website](https://img.shields.io/badge/Website-salihmaral.de-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://salihmaral.de)
-[![Official Google Partner](https://img.shields.io/badge/Google_Partner-Certified_2026-34A853?style=for-the-badge&logo=google&logoColor=white)](https://salihmaral.de/about)
-[![Rating](https://img.shields.io/badge/Google_Reviews-5.0_%E2%98%85_(312+)-FBBC05?style=for-the-badge&logo=google-maps&logoColor=white)](https://salihmaral.de)
+[![Website](https://img.shields.io/badge/Website-salihmaral.com-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.salihmaral.com)
+[![Official Google Partner](https://img.shields.io/badge/Google_Partner-Certified_2026-34A853?style=for-the-badge&logo=google&logoColor=white)](https://www.salihmaral.com/about)
+[![Rating](https://img.shields.io/badge/Google_Reviews-5.0_%E2%98%85_(312+)-FBBC05?style=for-the-badge&logo=google-maps&logoColor=white)](https://www.salihmaral.com)
 
-Offizielle Web-Plattform und Digital-Marketing-Infrastruktur von **Salih Maral** — Senior Performance Marketing Spezialist und zertifizierter Google Partner mit über **17+ Jahren Erfahrung** in Deutschland, der Türkei und Europa.
+**Salih Maral** — Resmi Google Partneri ve 17+ yıllık sektör tecrübesiyle E-Ticaret markaları, KOBİ'ler ve kurumsal işletmeler için şeffaf, komisyonsuz ve ölçülebilir dijital performans pazarlaması.
 
-- 🌐 **Offizielle Website:** [https://salihmaral.de](https://salihmaral.de)
-- 📍 **Standort / Region:** Dreieich / Frankfurt am Main (Hessen, Deutschland) — Bundesweite & Internationale Betreuung (Remote / Hybrid)
-- ✉️ **E-Mail:** [info@salihmaral.de](mailto:info@salihmaral.de)
-- 📝 **Kostenloses Angebot / Kontakt:** [https://salihmaral.de/#contact](https://salihmaral.de/#contact)
-
----
-
-## 🎯 Kernkompetenzen & Dienstleistungen (Services)
-
-Wir betreuen Unternehmen im fairen **monatlichen Festpreis-Modell (Fixpreis-Betreuung)** ohne prozentuale Budget-Provisionen und ohne Interessenkonflikte:
-
-- **[Google Ads Betreuung & Management](https://salihmaral.de/de/dienstleistungen/google-ads)** ([TR](https://salihmaral.de/tr/hizmetler/google-ads) | [EN](https://salihmaral.de/en/services/google-ads)) — Search, Performance Max (PMax), Google Shopping, Remarketing und B2B Lead-Generierung.
-- **[Meta Ads (Facebook & Instagram)](https://salihmaral.de/de/dienstleistungen/meta-ads)** ([TR](https://salihmaral.de/tr/hizmetler/meta-ads) | [EN](https://salihmaral.de/en/services/meta-ads)) — Advantage+ Shopping Kampagnen, Creative-Testing und Retargeting-Funnels.
-- **[YouTube Ads & Video-Wachstum](https://salihmaral.de/de/dienstleistungen/youtube-ads)** ([TR](https://salihmaral.de/tr/hizmetler/youtube-ads) | [EN](https://salihmaral.de/en/services/youtube-ads)) — Über 23,1 Mio.+ echte Aufrufe, Shorts & In-Stream Performance.
-- **[Server-Side Tracking & Meta CAPI](https://salihmaral.de/de/dienstleistungen/server-side-tracking)** ([TR](https://salihmaral.de/tr/hizmetler/server-side-tracking) | [EN](https://salihmaral.de/en/services/server-side-tracking)) — First-Party Tracking via sGTM und Meta Conversions API (92%+ Event Match Quality).
-- **[SEO & Generative Engine Optimization (GEO / AEO)](https://salihmaral.de/de/dienstleistungen/seo)** ([TR](https://salihmaral.de/tr/hizmetler/seo) | [EN](https://salihmaral.de/en/services/seo)) — Top-Rankings in Google, ChatGPT Search, Perplexity AI und Google Gemini.
-- **[Bewertungsmanagement & Lokales SEO](https://salihmaral.de/de/dienstleistungen/bewertungsmanagement)** ([TR](https://salihmaral.de/tr/hizmetler/yorum-yonetimi) | [EN](https://salihmaral.de/en/services/review-management)) — Google Maps 3-Pack Optimierung und Abwehr unberechtigter 1-Stern-Bewertungen.
+- 🌐 **Web Sitesi:** [https://www.salihmaral.com](https://www.salihmaral.com)
+- 📍 **Konum:** İstanbul / Türkiye • Remote & Küresel Danışmanlık
+- ✉️ **E-Posta:** [info@salihmaral.com](mailto:info@salihmaral.com)
+- 📝 **Ücretsiz Teklif & Hesap Denetimi:** [https://www.salihmaral.com/#contact](https://www.salihmaral.com/#contact)
 
 ---
 
-## 📍 Metropolregionen in Deutschland (Standorte)
+## 🎯 Uzmanlık Alanları & Hizmetlerimiz
 
-Wir unterstützen mittelständische Unternehmen, Handwerksbetriebe, Gastronomie und Dienstleister in ganz Deutschland:
+İşletmelerimiz için **şeffaf ve sabit aylık hizmet bedeli** modeliyle çalışıyoruz; yüzde komisyonu veya çıkar çatışması olmadan doğrudan kârlılığı maksimize ediyoruz:
 
-| Region / Metropole | Deutsche Seite | Türkçe Sayfa | English Page |
-|---|---|---|---|
-| **Frankfurt am Main (Hessen)** | [Google Ads Agentur Frankfurt](https://salihmaral.de/de/standorte/frankfurt) | [Frankfurt Google Ads Ajansı](https://salihmaral.de/tr/standorte/frankfurt) | [Google Ads Agency Frankfurt](https://salihmaral.de/en/standorte/frankfurt) |
-| **Köln (Rheinland / NRW)** | [Google Ads Agentur Köln](https://salihmaral.de/de/standorte/koeln) | [Köln Google Ads Ajansı](https://salihmaral.de/tr/standorte/koeln) | [Google Ads Agency Cologne](https://salihmaral.de/en/standorte/koeln) |
-| **München (Bayern)** | [Google Ads Agentur München](https://salihmaral.de/de/standorte/muenchen) | [Münih Google Ads Ajansı](https://salihmaral.de/tr/standorte/muenchen) | [Google Ads Agency Munich](https://salihmaral.de/en/standorte/muenchen) |
-| **Düsseldorf (NRW)** | [Google Ads Agentur Düsseldorf](https://salihmaral.de/de/standorte/duesseldorf) | [Düsseldorf Google Ads Ajansı](https://salihmaral.de/tr/standorte/duesseldorf) | [Google Ads Agency Dusseldorf](https://salihmaral.de/en/standorte/duesseldorf) |
-| **Stuttgart (Baden-Württemberg)** | [Google Ads Agentur Stuttgart](https://salihmaral.de/de/standorte/stuttgart) | [Stuttgart Google Ads Ajansı](https://salihmaral.de/tr/standorte/stuttgart) | [Google Ads Agency Stuttgart](https://salihmaral.de/en/standorte/stuttgart) |
-| **Berlin (Hauptstadt)** | [Google Ads Agentur Berlin](https://salihmaral.de/de/standorte/berlin) | [Berlin Google Ads Ajansı](https://salihmaral.de/tr/standorte/berlin) | [Google Ads Agency Berlin](https://salihmaral.de/en/standorte/berlin) |
-| **Hamburg (Norddeutschland)** | [Google Ads Agentur Hamburg](https://salihmaral.de/de/standorte/hamburg) | [Hamburg Google Ads Ajansı](https://salihmaral.de/tr/standorte/hamburg) | [Google Ads Agency Hamburg](https://salihmaral.de/en/standorte/hamburg) |
-| **Dortmund (Ruhrgebiet)** | [Google Ads Agentur Dortmund](https://salihmaral.de/de/standorte/dortmund) | [Dortmund Google Ads Ajansı](https://salihmaral.de/tr/standorte/dortmund) | [Google Ads Agency Dortmund](https://salihmaral.de/en/standorte/dortmund) |
-
-Alle weiteren Städte finden Sie in unserer [Standorte-Übersicht](https://salihmaral.de/de/standorte).
+- **[Google Ads Yönetimi](https://www.salihmaral.com/tr/hizmetler/google-ads)** ([EN](https://www.salihmaral.com/en/services/google-ads) | [DE](https://www.salihmaral.com/de/dienstleistungen/google-ads)) — Arama Ağı, Performance Max (PMax), Google Shopping, Remarketing ve B2B Lead üretimi.
+- **[Meta Ads (Facebook & Instagram)](https://www.salihmaral.com/tr/hizmetler/meta-ads)** ([EN](https://www.salihmaral.com/en/services/meta-ads) | [DE](https://www.salihmaral.com/de/dienstleistungen/meta-ads)) — Advantage+ Shopping Kampanyaları, kreatif testleri ve sepet tamamlama hunileri.
+- **[YouTube Ads & Video Büyüme](https://www.salihmaral.com/tr/hizmetler/youtube-ads)** ([EN](https://www.salihmaral.com/en/services/youtube-ads) | [DE](https://www.salihmaral.com/de/dienstleistungen/youtube-ads)) — 23.1M+ doğrulanmış izlenme, Shorts ve TrueView reklamları.
+- **[Server-Side Tracking & Meta CAPI](https://www.salihmaral.com/tr/hizmetler/server-side-tracking)** ([EN](https://www.salihmaral.com/en/services/server-side-tracking) | [DE](https://www.salihmaral.com/de/dienstleistungen/server-side-tracking)) — sGTM ve Meta Conversions API (%92+ Event Match Quality, iOS 14+ kayıpsız veri).
+- **[SEO & Generative Engine Optimization (GEO / AEO)](https://www.salihmaral.com/tr/hizmetler/seo)** ([EN](https://www.salihmaral.com/en/services/seo) | [DE](https://www.salihmaral.com/de/dienstleistungen/seo)) — Google, ChatGPT Search, Perplexity AI ve Google Gemini AI Overviews'da birincil kaynak olma.
+- **[Yorum & İtibar Yönetimi](https://www.salihmaral.com/tr/hizmetler/yorum-yonetimi)** ([EN](https://www.salihmaral.com/en/services/review-management) | [DE](https://www.salihmaral.com/de/dienstleistungen/bewertungsmanagement)) — Google Haritalar ilk 3 sıra optimizasyonu ve haksız 1 yıldızlı yorum koruması.
 
 ---
 
-## 📚 Wichtige Leitfäden & Studien (Knowledge Base)
+## 📈 Büyüme & Performans Çözümleri
 
-- [Google Ads Fixpreis vs. Prozent-Modell 2026](https://salihmaral.de/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026)
-- [Google Ads Agentur Kosten & Preise Deutschland 2026](https://salihmaral.de/blog/google-ads-agentur-preise-kosten-deutschland-2026)
-- [Google Ads Rechnung buchen & §13b UStG Reverse Charge](https://salihmaral.de/blog/google-ads-rechnung-buchen-reverse-charge-2026)
-- [Server-Side GTM & Meta CAPI Setup Schritt-für-Schritt](https://salihmaral.de/blog/server-side-gtm-meta-capi-setup-2026)
-- [Princeton GEO Citation Factors 2026 für KI-Suchmaschinen](https://salihmaral.de/blog/geo-ai-search-citation-factors-2026)
-- [Almanya Restoran Google Business Harita Kurulumu](https://salihmaral.de/blog/almanyada-google-business-harita-kurulumu-restoran-2026)
-- [Almanya Festsaal Düğün Salonu Reklam Rehberi](https://salihmaral.de/blog/almanyada-dugun-salonu-restoran-reklam-rehberi-2026)
-- [Almanya Saç Ekimi & Sağlık Turizmi Google Ads Rehberi](https://salihmaral.de/blog/almanyada-sac-ekimi-saglik-turizmi-google-ads-rehberi-2026)
-- [Almanya Türk Süpermarket & Helal Kasap SEO Rehberi](https://salihmaral.de/blog/almanyada-turk-supermarket-helal-kasap-google-harita-rehberi-2026)
+- **E-Ticaret ROAS Büyütme:** Google Shopping, PMax ve Meta Advantage+ ile kârlı ciro ölçekleme.
+- **Server-Side Tracking (CAPI):** iOS engellerini aşan, %90+ Match Quality sağlayan kayıpsız First-Party veri altyapısı.
+- **Yapay Zeka SEO (GEO / AEO):** AI cevap motorlarında markanızı birincil otorite kaynak yapma.
+- **Yerel SEO & Harita Liderliği:** Çoklu şube yönetimi ve Google Haritalar ilk 3 sıra (Local 3-Pack) optimizasyonu.
+- **Olumsuz Yorum ve İtibar Yönetimi:** Haksız ve sahte 1 yıldızlı yorumların profesyonel süreçlerle temizlenmesi.
+- **TikTok & Sosyal Ticaret:** Yeni nesil video kancaları, Spark Ads ve alışveriş hunileri.
 
 ---
 
-## 🤖 KI-Schnittstelle & LLM-Spezifikation
+## 📚 Öne Çıkan Stratejik Rehberler
 
-Dieses Projekt implementiert die neuesten Standards für KI-Suchmaschinen (Princeton KDD GEO-Standard):
-- `/robots.txt` mit Freigaben für moderne AI-Crawler (`OAI-SearchBot`, `GPTBot`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`).
-- `/llms.txt` — Kompaktes Manifest für Large Language Models.
-- `/llms-full.txt` — Vollständiges Verzeichnis aller 88 Fachartikel und 18 Standortseiten.
+- [Google Ads Sabit Fiyat mı, Komisyon mu? 2026](https://www.salihmaral.com/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026)
+- [Google Ads Ajans Ücretleri ve Fiyatları 2026](https://www.salihmaral.com/blog/google-ads-agentur-kosten-preise-2026)
+- [Server-Side GTM ve Meta CAPI Kurulum Rehberi 2026](https://www.salihmaral.com/blog/server-side-gtm-meta-capi-setup-2026)
+- [Princeton GEO Citation Factors 2026: Yapay Zeka Arama Motorlarında 1. Sıra](https://www.salihmaral.com/blog/geo-ai-search-citation-factors-2026)
+- [TikTok Shop mu Meta Advantage+ mı? 2026 E-Ticaret Kıyaslaması](https://www.salihmaral.com/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026)
+- [Meta Advantage+ Alışveriş Kampanyası Optimizasyon Rehberi](https://www.salihmaral.com/blog/meta-advantage-plus-shopping-optimization)
 
-© 2026 [Salih Maral](https://salihmaral.de) — Alle Rechte vorbehalten.
+---
+
+## 📄 Lisans & Telif Hakkı
+
+© 2026 [Salih Maral](https://www.salihmaral.com) — Tüm hakları saklıdır.

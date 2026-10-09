@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "conversion-rate-optimization-ai-personalization"
 lang: "tr"
 title: "Yapay Zeka ile Dönüşüm Oranı Optimizasyonu (CRO)"
@@ -81,17 +81,17 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=3
   <tbody>
     <tr>
       <td><strong>Statik Açılış Sayfası</strong></td>
-      <td>€45.00</td>
+      <td>450 ₺</td>
       <td>2.4x</td>
     </tr>
     <tr>
       <td><strong>A/B Testi Edilmiş CRO Sayfası</strong></td>
-      <td>€28.00</td>
+      <td>280 ₺</td>
       <td>4.1x</td>
     </tr>
     <tr>
       <td><strong>AI Kişiselleştirmeli Dinamik Akış</strong></td>
-      <td>€16.50</td>
+      <td>165 ₺</td>
       <td>6.8x</td>
     </tr>
   </tbody>

@@ -249,8 +249,8 @@ export async function POST(request) {
       </div>
     </div>
     <div class="footer">
-      <p style="margin: 0 0 6px 0;">Bu form <strong>salihmaral.de</strong> üzerinden güvenli SSL doğrulamasıyla iletilmiştir.</p>
-      <p style="margin: 0;">Tarih: ${new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Berlin' })} &bull; Güvenlik: Filtrelendi</p>
+      <p style="margin: 0 0 6px 0;">Bu form <strong>salihmaral.com</strong> üzerinden güvenli SSL doğrulamasıyla iletilmiştir.</p>
+      <p style="margin: 0;">Tarih: ${new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul' })} &bull; Güvenlik: Filtrelendi</p>
     </div>
   </div>
 </body>
@@ -265,7 +265,7 @@ export async function POST(request) {
         from: '"Salih Maral Web Sitesi" <info@salihmaral.com>',
         to: contactEmail,
         replyTo: email,
-        subject: `📬 Yeni Teklif Talebi: ${cleanName} (${cleanCompany || 'Bireysel'}) - salihmaral.de`,
+        subject: `📬 Yeni Teklif Talebi: ${cleanName} (${cleanCompany || 'Bireysel'}) - salihmaral.com`,
         html: emailHtml,
       })
       emailId = smtpRes.messageId

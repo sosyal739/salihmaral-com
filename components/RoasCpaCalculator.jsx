@@ -3,20 +3,20 @@
 import { useState } from 'react'
 import { Calculator, TrendingUp, DollarSign, Target, Award, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react'
 
-export default function RoasCpaCalculator({ currentLang = 'de' }) {
-  const [budget, setBudget] = useState(2500)
-  const [cpc, setCpc] = useState(1.20)
+export default function RoasCpaCalculator({ currentLang = 'tr' }) {
+  const [budget, setBudget] = useState(25000)
+  const [cpc, setCpc] = useState(4.50)
   const [conversionRate, setConversionRate] = useState(2.5)
-  const [orderValue, setOrderValue] = useState(85)
+  const [orderValue, setOrderValue] = useState(650)
 
   const labels = {
     de: {
       title: 'Interaktiver ROAS & CPA Rechner',
       subtitle: 'Berechnen Sie den potenziellen Return on Ad Spend (ROAS) und die Kundenakquisitionskosten (CPA) Ihrer Werbekampagnen.',
-      budgetLabel: 'Monatliches Werbebudget (€)',
-      cpcLabel: 'Durchschn. Klickpreis / CPC (€)',
+      budgetLabel: 'Monatliches Werbebudget ($ / ₺)',
+      cpcLabel: 'Durchschn. Klickpreis / CPC ($ / ₺)',
       crLabel: 'Conversion-Rate (%)',
-      aovLabel: 'Durchschn. Bestellwert / AOV (€)',
+      aovLabel: 'Durchschn. Bestellwert / AOV ($ / ₺)',
       estClicks: 'Geschätzte Klicks',
       estSales: 'Geschätzte Conversions',
       estRevenue: 'Geschätzter Umsatz',
@@ -33,10 +33,10 @@ export default function RoasCpaCalculator({ currentLang = 'de' }) {
     en: {
       title: 'Interactive ROAS & CPA Calculator',
       subtitle: 'Calculate your projected Return on Ad Spend (ROAS) and Cost Per Acquisition (CPA) in real-time.',
-      budgetLabel: 'Monthly Ad Budget ($/€)',
-      cpcLabel: 'Avg. Cost Per Click / CPC ($/€)',
+      budgetLabel: 'Monthly Ad Budget ($ / ₺)',
+      cpcLabel: 'Avg. Cost Per Click / CPC ($ / ₺)',
       crLabel: 'Conversion Rate (%)',
-      aovLabel: 'Avg. Order Value / AOV ($/€)',
+      aovLabel: 'Avg. Order Value / AOV ($ / ₺)',
       estClicks: 'Estimated Clicks',
       estSales: 'Estimated Conversions',
       estRevenue: 'Estimated Revenue',
@@ -53,10 +53,10 @@ export default function RoasCpaCalculator({ currentLang = 'de' }) {
     tr: {
       title: 'Canlı ROAS & CPA Hesaplama Aracı',
       subtitle: 'Reklam harcamalarınızın tahmini getirisini (ROAS) ve Müşteri Edinme Maliyetinizi (CPA) anında hesaplayın.',
-      budgetLabel: 'Aylık Reklam Bütçesi (€ / ₺)',
-      cpcLabel: 'Ort. Tıklama Başı Maliyet / CPC (€ / ₺)',
+      budgetLabel: 'Aylık Reklam Bütçesi (₺)',
+      cpcLabel: 'Ort. Tıklama Başı Maliyet / CPC (₺)',
       crLabel: 'Dönüşüm Oranı (%)',
-      aovLabel: 'Ortalama Sepet Tutarı / AOV (€ / ₺)',
+      aovLabel: 'Ortalama Sepet Tutarı / AOV (₺)',
       estClicks: 'Tahmini Tıklama',
       estSales: 'Tahmini Satış / Dönüşüm',
       estRevenue: 'Tahmini Toplam Ciro',
@@ -72,7 +72,7 @@ export default function RoasCpaCalculator({ currentLang = 'de' }) {
     }
   }
 
-  const l = labels[currentLang] || labels.de
+  const l = labels[currentLang] || labels.tr
 
   // Calculations
   const clicks = cpc > 0 ? Math.floor(budget / cpc) : 0

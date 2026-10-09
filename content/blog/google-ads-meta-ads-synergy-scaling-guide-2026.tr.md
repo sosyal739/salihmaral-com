@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "google-ads-meta-ads-synergy-scaling-guide-2026"
 lang: "tr"
 title: "Google Ads & Meta Ads Sinerjisi: 4X ROAS Rehberi"
@@ -69,7 +69,7 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
 </blockquote>
 
 <h2>📈 Gerçek Vaka Analizi: 60 Günde ROAS'ı 1.8x'ten 4.2x'e Çıkarma</h2>
-<p>Almanya pazarında faaliyet gösteren bir moda ve ev tekstili e-ticaret markamızda uyguladığımız 60 günlük strateji:</p>
+<p>Büyüme odaklı bir moda ve ev tekstili e-ticaret markamızda uyguladığımız 60 günlük strateji:</p>
 
 <ol>
   <li><strong>1-15. Gün:</strong> Meta CAPI ve GA4 First-Party Server-Side kurulumu tamamlandı; veri kaybı sıfırlandı.</li>
@@ -92,6 +92,6 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
 <div class="cta-box" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 1.5rem; padding: 2rem; margin-top: 2.5rem; text-align: center;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem;">Meta Ads & Google Ads ile Satışlarınızı Birlikte Katlayalım</h3>
   <p style="color: #475569; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem auto;">İşletmenizin reklam hesaplarını profesyonelce denetleyelim ve size özel kârlı büyüme planını oluşturalım.</p>
-  <a href="https://salihmaral.de/tr#contact" target="_blank" style="display: inline-block; background: #1877F2; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(24, 119, 242, 0.4);">Ücretsiz Reklam & ROAS Analizi Alın ➔</a>
+  <a href="https://www.salihmaral.com/#contact" target="_blank" style="display: inline-block; background: #1877F2; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(24, 119, 242, 0.4);">Ücretsiz Reklam & ROAS Analizi Alın ➔</a>
 </div>
 

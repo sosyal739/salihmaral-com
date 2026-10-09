@@ -62,5 +62,5 @@ coverImage: "https://images.unsplash.com/photo-1571867424488-4565932edb41?w=600&
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Holen Sie Ihr verbranntes Werbebudget zurück</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Lassen Sie uns Ihr Google Ads Konto gemeinsam auf Herz und Nieren prüfen. Sichern Sie sich Ihr <strong>kostenloses 15-minütiges Live-Audit</strong> und erfahren Sie, wie Sie ab morgen echte Kunden gewinnen.</p>
-  <a href="https://salihmaral.de/de#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.6); transition: all 0.3s ease;">Kostenloses Google Ads Audit anfordern ➔</a>
+  <a href="https://www.salihmaral.com/de#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.6); transition: all 0.3s ease;">Kostenloses Google Ads Audit anfordern ➔</a>
 </div>

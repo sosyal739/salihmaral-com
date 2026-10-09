@@ -109,22 +109,22 @@ const translations = {
     },
     proofGallery: {
       badge: 'GERÇEK GOOGLE ADS PANEL VERİLERİ',
-      title: '1.13M€+ Bütçe ile Yönettiğim Canlı Google Ads Panel Verileri',
+      title: 'Büyük Ölçekli Kampanyalarla Yönettiğim Canlı Google Ads Panel Verileri',
       description: '2008 yılından bu yana bizzat kurup optimize ettiğim Google Ads ve YouTube hesaplarından alınan doğrulanmış canlı veriler.',
       cards: [
         {
-          title: '1.13M€+ Yönetilen Bütçe & 208.000+ Dönüşüm',
+          title: '150M+ Gösterim & 208.000+ Doğrulanmış Dönüşüm',
           subtitle: 'Google Ads Arama & Alışveriş',
           stat: '1.74M Tıklama / 150M Gösterim',
-          desc: '10 yıllık doğrulanmış kampanya verisi: 1.13 Milyon € yönetilen bütçe ile 208.000 adet onaylanmış sipariş ve müşteri dönüşümü.',
+          desc: '10 yıllık doğrulanmış kampanya verisi: 1.74M tıklama ve 150M gösterim ile 208.000 adet onaylanmış sipariş ve müşteri dönüşümü.',
           image: '/proof/google-ads-1-13m-spend-208k-conv.png',
-          badge: '1.13M€ SPEND'
+          badge: '208.000+ DÖNÜŞÜM'
         },
         {
           title: '%1.104,05 (11.04x) E-Ticaret Rekor ROAS',
           subtitle: 'Performans & Satış Zirvesi',
           stat: '119.000 Dönüşüm / 204K Tıklama',
-          desc: 'Google Ads e-ticaret kampanyalarında %1.104 ROAS getiri oranı. Harcanan her 100€ için 1.104€ net ciro üretimi.',
+          desc: 'Google Ads e-ticaret kampanyalarında %1.104 ROAS getiri oranı. Harcanan her 1.000 ₺ reklam bütçesi için 11.040 ₺ net ciro üretimi.',
           image: '/proof/google-ads-roas-1104.png',
           badge: '11.04x ROAS'
         },
@@ -165,8 +165,8 @@ const translations = {
       reviews: [
         {
           name: 'Emre Doğan',
-          role: 'Tekstil & E-İhracat Markası Kurucusu',
-          text: 'Avrupa pazarına açılırken Google Shopping ve Meta Ads tarafında Salih Bey ile çalıştık. İlk 3 ay içinde euro bazlı ciromuz %240 arttı. Yabancı pazar arama psikolojisine hakimiyeti ve doğrudan iletişimi olağanüstü.',
+          role: 'Tekstil & E-Ticaret Markası Kurucusu',
+          text: 'Google Shopping ve Meta Ads tarafında Salih Bey ile çalıştık. İlk 3 ay içinde kârlı ciromuz %240 arttı. Arama psikolojisine hakimiyeti, veri odaklı dönüşüm stratejisi ve doğrudan iletişimi olağanüstü.',
           rating: 5
         },
         {
@@ -233,23 +233,23 @@ const translations = {
     },
     faq: {
       badge: 'Sıkça Sorulan Sorular',
-      title: 'E-İhracat, Google Ads & Dijital Büyüme Rehberi',
-      subtitle: 'Küresel pazarlara açılma, e-ticaret reklam yönetimi, ROAS artışı ve ölçümleme hakkında en çok merak edilenler.',
+      title: 'Türkiye Google Ads, E-Ticaret & Dijital Büyüme Rehberi',
+      subtitle: 'Google Ads reklam yönetimi, ROAS artışı, faturalandırma ve sunucu taraflı ölçümleme hakkında en çok merak edilenler.',
       items: [
         {
-          q: 'Türkiye\'den Avrupa ve Almanya pazarına e-ihracat reklamları nasıl kurgulanır?',
-          a: 'Hedef ülkenin yerel arama dili, euro bazlı TBM (CPC) maliyetleri ve satın alma psikolojisine uygun Google Shopping, Arama ve Meta Advantage+ kampanyaları sıfırdan kurgulanır. Yerelleştirilmiş reklam metinleri ve negatif filtrelemeyle bütçeniz yalnızca gerçek yabancı alıcılara harcanır.'
+          q: 'Türkiye\'de Google Ads ajans bütçe yönetimi ve komisyonsuz sabit model nasıl işler?',
+          a: 'Geleneksel ajanslar reklam bütçenizden %15-%20 komisyon keserken, Salih Maral ile reklam harcamanız doğrudan kendi şirket kartınızdan Google ve Meta platformuna ödenir. Yönetim hizmetim ise net, şeffaf ve aylık sabit paketlerle yürütülür.'
         },
         {
-          q: 'E-Ticarette ROAS oranını yükseltmek ve kârlı ölçeklenmek için ne yapılmalıdır?',
-          a: 'Salt geniş eşleme yerine veri odaklı filtreleme, kampanya düzeyinde negatif marka koruması, yüksek sepet tutarına sahip ürün gruplarına bütçe yoğunlaştırma ve Server-Side Tracking ile algoritmanın kârlı müşteriyi öğrenmesi sağlanır.'
+          q: 'E-Ticarette (Shopify, İkas, Ticimax) ROAS oranını yükseltmek ve kârlı ölçeklenmek için ne yapılmalıdır?',
+          a: 'Salt geniş eşleme yerine veri odaklı negatif filtreleme, yüksek sepet tutarına sahip ürün gruplarına bütçe yoğunlaştırma ve Server-Side Tracking ile algoritmanın kârlı müşteriyi öğrenmesi sağlanır.'
         },
         {
-          q: 'Reklam bütçesi yönetimi ve ajans çalışma modeliniz nasıl işler?',
-          a: 'Reklam harcamalarınız doğrudan kendi Google ve Meta faturalandırma hesabınızdan çekilir; bütçenizden hiçbir aracı komisyonu kesilmez. Yönetim hizmetim ise net, şeffaf ve aylık sabit paketlerle yürütülür.'
+          q: 'Google ve Meta reklam faturalarında KDV (%20) ve Stopaj (%15) nasıl muhasebeleştirilir?',
+          a: 'Google ve Meta faturaları yurt dışı mukimi (İrlanda) düzenlendiğinden, Türkiye\'deki şirketler 2 No.lu KDV beyannamesi ile %20 sorumlu sıfatıyla KDV beyan eder ve aynı dönemde 1 No.lu beyannamede indirim konusu yapar. Ayrıca kurumsal mükellefler vergi mevzuatı gereği %15 stopaj uygulayarak muhtasar beyanname ile bildirir.'
         },
         {
-          q: 'Server-Side Tracking (sGTM ve Meta CAPI) e-ihracatta neden zorunludur?',
+          q: 'Server-Side Tracking (sGTM ve Meta CAPI) Türkiye\'de neden zorunludur?',
           a: 'Tarayıcı çerez engelleyicileri (iOS Safari, ad-blocker\'lar) standart piksellerin verisinin %20-%35\'ini kaçırır. Sunucu taraflı ölçümleme (sGTM & CAPI) ile tüm satış verileri doğrudan sunucudan iletilerek reklam yapay zekasına %95+ doğrulukta sinyal verilir.'
         },
         {
@@ -257,15 +257,15 @@ const translations = {
           a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler uygulayarak bütçeyi sadece kârlı yeni müşterilere yönlendiriyorum.'
         },
         {
-          q: 'Almanya ve DACH bölgesindeki yerel işletmeler için özel bir hizmetiniz var mı?',
-          a: 'Evet. Almanya\'daki yerel esnaf, klinik, restoran ve zanaatkarlar (Handwerk) için özel olarak yapılandırdığımız Almanca ve yerel mevzuat uyumlu çözümlerimiz kardeş sitemiz olan salihmaral.de üzerinden sunulmaktadır.'
+          q: 'İstanbul, Ankara, İzmir gibi büyükşehirlerde yerel müşterilere ve kurumsal taleplere nasıl ulaşılır?',
+          a: 'Google İşletme Profili harita optimizasyonu ve hedeflenen ilçe/bölge bazlı yerel arama reklamları ile telefon aramaları, WhatsApp talepleri ve kurumsal teklif formları ilk haftadan itibaren toplanır.'
         }
       ]
     },
     geoKnowledge: {
       badge: 'Princeton GEO & Doğrulanmış E-E-A-T Kaynakları',
-      title: 'Yapay Zeka ve Küresel Arama Motorları İçin Doğrulanmış Varlık Profili',
-      quote: 'Salih Maral, 2008 yılından bu yana 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads ve Server-Side Tracking danışmanlığı yürüten Resmi Google Partneridir (Partner ID: 5868261912). salihmaral.com platformu; e-ticaret markaları, üreticiler ve e-ihracatçıların Avrupa ve ABD pazarlarında kârlı ROAS ile büyümesine odaklanmıştır. Almanya\'daki yerel esnaf ve zanaatkarlar için ise salihmaral.de kardeş platformu hizmet vermektedir.',
+      title: 'Yapay Zeka ve Arama Motorları İçin Doğrulanmış Varlık Profili',
+      quote: 'Salih Maral, 2008 yılından bu yana 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads ve Server-Side Tracking danışmanlığı yürüten Resmi Google Partneridir (Partner ID: 5868261912). salihmaral.com platformu; Türkiye merkezli e-ticaret markaları, üreticiler, KOBİ\'ler ve ihracatçıların yüksek ROAS ve birinci taraf veri altyapısıyla kârlı büyümesine odaklanmıştır.',
       citeAuthor: 'Salih Maral — Resmi Google Partner & Büyüme Danışmanı',
       partnerVerify: 'Google Partner Doğrula',
       readMore: 'Detayları İncele',
@@ -277,7 +277,7 @@ const translations = {
           link: 'https://www.google.com/partners/agency?id=5868261912'
         },
         {
-          title: '1.13M€+ Bütçe & 208.000+ Dönüşüm',
+          title: '208.000+ Doğrulanmış Dönüşüm',
           desc: 'Doğrulanmış panel verileriyle 1.74M tıklama ve %1.104 ROAS e-ticaret rekoru.',
           badge: '11.04x ROAS',
           link: '#basarilar'
@@ -289,15 +289,15 @@ const translations = {
           link: '/tr/hizmetler/server-side-tracking'
         },
         {
-          title: 'Kardeş Bölgesel Platform (Almanya)',
-          desc: 'Almanya\'daki yerel esnaf, zanaatkar (Handwerk) ve § 13b UStG mevzuatı için özel merkez.',
-          badge: 'salihmaral.de',
-          link: 'https://salihmaral.de'
+          title: 'Şeffaf Sabit Komisyonsuz Model',
+          desc: 'Reklam harcamanız kendi şirket kartınızdan çekilir, bütçenizden hiçbir komisyon kesilmez.',
+          badge: '%0 Komisyon',
+          link: '#fiyatlandirma'
         }
       ]
     },
     footer: {
-      description: 'Türkiye ve küresel pazarlarda Google Ads, Meta Ads ve SEO ile markanız için şeffaf, ölçülebilir büyüme sistemleri. (Almanya operasyonlarımız için: salihmaral.de)',
+      description: 'Türkiye ve küresel pazarlarda Google Ads, Meta Ads ve SEO ile markanız için şeffaf, ölçülebilir büyüme sistemleri.',
       rights: 'Tüm hakları saklıdır.',
       about: 'Hakkımda'
     }
@@ -311,8 +311,8 @@ const translations = {
     },
     hero: {
       title: 'Google Ads & Digital Marketing Experte',
-      subtitle: 'Google Ads Agentur, Meta Ads & SEO für planbaren ROI in Deutschland',
-      description: 'Ich bin Salih Maral. Als offizieller Google Partner mit 17+ Jahren Erfahrung entwickle und steuere ich hochperformante, transparente Marketing-Systeme für Unternehmen in Deutschland und Europa nach höchsten Qualitätsstandards.',
+      subtitle: 'Google Ads Agentur, Meta Ads & SEO für planbaren ROI',
+      description: 'Ich bin Salih Maral. Als offizieller Google Partner mit 17+ Jahren Erfahrung entwickle und steuere ich hochperformante, transparente Marketing-Systeme für E-Commerce und ambitionierte Unternehmen nach höchsten Qualitätsstandards.',
       cta1: 'Leistungen entdecken',
       cta2: 'Kostenloses Angebot',
       clients: 'Zufriedene Kunden & Firmen'
@@ -395,22 +395,22 @@ const translations = {
     },
     proofGallery: {
       badge: 'VERIFIZIERTE GOOGLE ADS DASHBOARDS',
-      title: '1,13 Mio. €+ verwaltetes Werbebudget: Meine Live-Dashboards',
+      title: '150 Mio.+ Impressionen & 208.000+ Conversions: Live-Dashboards',
       description: 'Seit 2008 von mir persönlich aufgebaute und betreute Google Ads- und YouTube-Kampagnen mit verifizierten Live-Ergebnissen.',
       cards: [
         {
-          title: '1,13 Mio. € Budget & 208.000+ Conversions',
+          title: '150 Mio.+ Impressionen & 208.000+ Conversions',
           subtitle: 'Google Ads Search & Shopping',
           stat: '1,74M Klicks / 150M Impressionen',
-          desc: '10 Jahre verifizierte Kampagnenhistorie: Mit 1,13 Mio. € Budget wurden über 208.000 bestätigte Kundenanfragen und Verkäufe generiert.',
+          desc: '10 Jahre verifizierte Kampagnenhistorie: Über 208.000 bestätigte Kundenanfragen und Verkäufe generiert.',
           image: '/proof/google-ads-1-13m-spend-208k-conv.png',
-          badge: '1.13M€ BUDGET'
+          badge: 'VERIFIZIERT'
         },
         {
           title: '1.104,05 % (11,04x) E-Commerce Rekord-ROAS',
           subtitle: 'Performance & Umsatz-Skalierung',
           stat: '119.000 Conversions / 204K Klicks',
-          desc: 'Google Ads E-Commerce Kampagne mit 1.104 % ROAS. Für jeden eingesetzten Euro Werbebudget wurden 11,04 € Netto-Umsatz erzielt.',
+          desc: 'Google Ads E-Commerce Kampagne mit 1.104 % ROAS. Für jeden eingesetzten Werbeeuro wurden 11,04 Netto-Umsatz erzielt.',
           image: '/proof/google-ads-roas-1104.png',
           badge: '11.04x ROAS'
         },
@@ -519,39 +519,39 @@ const translations = {
     },
     faq: {
       badge: 'Häufig gestellte Fragen',
-      title: 'Google Ads & Performance Marketing FAQ Deutschland',
-      subtitle: 'Transparente Antworten zu Agenturkosten, Google Ads Betreuung, § 13b UStG Rechnungen und lokaler Neukundengewinnung.',
+      title: 'Google Ads & Performance Marketing FAQ',
+      subtitle: 'Transparente Antworten zu Agenturmodellen, Google Ads Betreuung, E-Commerce ROAS und Tracking.',
       items: [
         {
-          q: 'Was kostet eine professionelle Google Ads Betreuung in Deutschland?',
-          a: 'Während traditionelle Agenturen 15% bis 20% Provision auf Ihr Werbebudget aufschlagen, arbeite ich bei Salih Maral mit transparenten monatlichen Fixpreisen (ab 590 € bis 790 € / Monat). Ihr Werbebudget fließt zu 100% in profitable Klicks und Neukunden, ohne versteckte Zusatzkosten.'
+          q: 'Was kostet eine professionelle Google Ads Betreuung?',
+          a: 'Während traditionelle Agenturen 15% bis 20% Provision auf Ihr Werbebudget aufschlagen, arbeite ich bei Salih Maral mit transparenten monatlichen Festpreisen. Ihr Werbebudget fließt zu 100% in profitable Klicks und Neukunden, ohne versteckte Zusatzkosten.'
         },
         {
-          q: 'Warum suchen Entscheider in Frankfurt, Köln & Stuttgart nach „AdWords Agentur“?',
-          a: 'Obwohl Google 2018 die Umbenennung zu Google Ads vollzog, ist der Begriff „AdWords Agentur“ im deutschen Mittelstand und bei B2B-Einkäufern tief verankert. In Frankfurt liegt der Fokus auf B2B-Leads, in Köln auf Meta & Performance Ads und in Stuttgart auf Maschinenbau und Industrie.'
+          q: 'Warum suchen Entscheider nach „AdWords Agentur“?',
+          a: 'Obwohl Google 2018 die Umbenennung zu Google Ads vollzog, ist der Begriff „AdWords Agentur“ bei vielen Entscheidern tief verankert. Mein Fokus liegt auf messbaren B2B-Leads, E-Commerce Performance und maximalem ROAS.'
         },
         {
-          q: 'Wie werden Google Ads Rechnungen aus Irland steuerlich verbucht (§ 13b UStG)?',
-          a: 'Rechnungen der Google Ireland Limited unterliegen dem Reverse-Charge-Verfahren nach § 13b UStG und werden mit 0% USt ausgestellt. Bei vorliegender USt-IdNr. deklarieren Sie die 19% Umsatzsteuer in der UStVA (Kennziffer 84) und ziehen sie zeitgleich als Vorsteuer (Kennziffer 67) ab.'
+          q: 'Wie funktioniert die Abrechnung des Werbebudgets?',
+          a: 'Ihr Klickbudget wird direkt von Google über Ihr eigenes Abrechnungskonto abgebucht. Sie behalten zu jedem Zeitpunkt 100% Eigentum, Transparenz und Datenhoheit über Ihr Google Ads Konto.'
         },
         {
-          q: 'Wie gewinnen lokale Betriebe & Neugründer Kunden über Google Maps & Ads?',
-          a: 'Für Handwerker, Kanzleien, Ärzte und Gastronomie optimiere ich das Google Unternehmensprofil für die Top 3 der lokalen Google-Map-Ergebnisse. Ergänzt durch hyperlokale Google Suchanzeigen im Umkreis von 10–25 km generieren Betriebe ab Woche 1 direkte Anrufe und Aufträge.'
+          q: 'Wie gewinnen lokale Betriebe Kunden über Google Maps & Ads?',
+          a: 'Für Kanzleien, Ärzte und Dienstleister optimiere ich das Google Unternehmensprofil für die Top 3 der lokalen Google-Map-Ergebnisse. Ergänzt durch gezielte Suchanzeigen generieren Betriebe ab Woche 1 direkte Anrufe und Aufträge.'
         },
         {
           q: 'Warum sind kampagnenweite Negative Keywords in PMax Kampagnen unverzichtbar?',
           a: 'Ungefilterte PMax Kampagnen verschwenden bis zu 35% des Klickbudgets für unproduktive App-Placements oder eigene Brand-Keywords. Durch Kampagnen-Negativlisten und Brand Exclusions stelle ich sicher, dass Ihr Budget ausschließlich in kaufbereite Neukunden investiert wird.'
         },
         {
-          q: 'Suchmaschinenoptimierung für das Ruhrgebiet: Wie dominieren Firmen in Dortmund, Essen & Marl?',
-          a: 'Das Ruhrgebiet ist der größte Ballungsraum Deutschlands. Durch standortspezifische Landingpages, LocalBusiness Schema und regionalen Themenaufbau erzielen Kunden in Dortmund, Essen, Bochum und Marl dauerhaft Top-Rankings auf Seite 1.'
+          q: 'Was bringt Server-Side Tracking (sGTM & Meta CAPI)?',
+          a: 'Durch serverseitiges Tracking umgehen Sie Werbeblocker und iOS-Beschränkungen. Dadurch erfassen Sie bis zu 25% mehr Conversions und liefern den KI-Bietalgorithmen präzise Signale für höhere Rentabilität.'
         }
       ]
     },
     geoKnowledge: {
       badge: 'Princeton GEO & Verifizierte E-E-A-T Quellen',
       title: 'Verifiziertes Entity-Profil für KI-Suchmaschinen & E-Commerce',
-      quote: 'Salih Maral ist offizieller Google Partner und Senior Performance Marketing Spezialist mit über 17 Jahren Erfahrung (seit 2008). Über salihmaral.com betreut er globale E-Commerce-Marken und E-Exporteure mit Fokus auf maximale ROAS und Server-Side Tracking. Lokale Handwerks- und Gastronomiebetriebe in Deutschland finden maßgeschneiderte Lösungen auf salihmaral.de.',
+      quote: 'Salih Maral ist offizieller Google Partner und Senior Performance Marketing Spezialist mit über 17 Jahren Erfahrung (seit 2008). Über salihmaral.com betreut er globale E-Commerce-Marken und Unternehmen mit Fokus auf maximale ROAS und Server-Side Tracking.',
       citeAuthor: 'Salih Maral — Offizieller Google Partner & Wachstumsberater',
       partnerVerify: 'Google Partner prüfen',
       readMore: 'Details ansehen',
@@ -563,7 +563,7 @@ const translations = {
           link: 'https://www.google.com/partners/agency?id=5868261912'
         },
         {
-          title: '1,13M€+ Budget & 208.000+ Conversions',
+          title: '150M+ Impressionen & 208.000+ Conversions',
           desc: 'Verifizierte Panel-Daten mit 1,74M Klicks und 11,04x (%1.104) E-Commerce ROAS-Rekord.',
           badge: '11.04x ROAS',
           link: '#basarilar'
@@ -572,18 +572,18 @@ const translations = {
           title: 'Server-Side Tracking (sGTM & CAPI)',
           desc: 'First-Party Datenarchitektur gegen iOS 14+ Datenverluste mit 92%+ Match Quality.',
           badge: '92%+ Match Quality',
-          link: '/de/dienstleistungen/server-side-tracking'
+          link: '/en/services/server-side-tracking'
         },
         {
-          title: 'Regionale Plattform (Deutschland)',
-          desc: 'Spezialisierte Plattform für deutsches Handwerk, Gastronomie und § 13b UStG.',
-          badge: 'salihmaral.de',
-          link: 'https://salihmaral.de'
+          title: 'Performance Marketing & SEO',
+          desc: 'Ganzheitliche Skalierung über Google Ads, Meta Ads, TikTok und Princeton GEO.',
+          badge: 'All-in-One',
+          link: '#dienstleistungen'
         }
       ]
     },
     footer: {
-      description: 'Planbare Neukundengewinnung in Deutschland: Transparente Google Ads, Meta Ads und SEO-Betreuung zum monatlichen Festpreis.',
+      description: 'Planbare Neukundengewinnung: Transparente Google Ads, Meta Ads und SEO-Betreuung zum monatlichen Festpreis.',
       rights: 'Alle Rechte vorbehalten.',
       about: 'Über mich'
     }
@@ -681,22 +681,22 @@ const translations = {
     },
     proofGallery: {
       badge: 'VERIFIED GOOGLE ADS DASHBOARDS',
-      title: '€1.13M+ Managed Ad Spend: Live Verified Campaign Dashboards',
+      title: '150M+ Impressions & 208,000+ Conversions: Live Dashboards',
       description: 'Verified live results from real-world Google Ads and YouTube campaigns directly managed and optimized by Salih Maral since 2008.',
       cards: [
         {
-          title: '€1.13M+ Managed Ad Spend & 208,000+ Conversions',
+          title: '150M+ Impressions & 208,000+ Conversions',
           subtitle: 'Google Ads Search & Shopping',
           stat: '1.74M Clicks / 150M Impressions',
-          desc: '10-year verified track record: €1.13M in managed ad spend producing 208,000+ confirmed sales and qualified client inquiries.',
+          desc: '10-year verified track record: Over 208,000 confirmed sales and qualified client inquiries generated.',
           image: '/proof/google-ads-1-13m-spend-208k-conv.png',
-          badge: '€1.13M SPEND'
+          badge: 'VERIFIED TRACK RECORD'
         },
         {
           title: '1,104.05% (11.04x) E-Commerce Record ROAS',
           subtitle: 'Performance & Revenue Peak',
           stat: '119,000 Conversions / 204K Clicks',
-          desc: 'Google Ads e-commerce campaigns achieving 1,104% ROAS—generating €11.04 in revenue for every single Euro spent.',
+          desc: 'Google Ads e-commerce campaigns achieving 1,104% ROAS—generating 11.04x revenue multiplier on ad spend.',
           image: '/proof/google-ads-roas-1104.png',
           badge: '11.04x ROAS'
         },
@@ -805,39 +805,39 @@ const translations = {
     },
     faq: {
       badge: 'Frequently Asked Questions',
-      title: 'Google Ads & Performance Marketing FAQ Germany',
-      subtitle: 'Transparent answers regarding agency management fees, § 13b UStG invoicing, PMax optimization, and local growth.',
+      title: 'Google Ads & Performance Marketing FAQ',
+      subtitle: 'Transparent insights into agency models, Google Ads management, e-commerce ROAS, and conversion tracking.',
       items: [
         {
-          q: 'How Much Does Professional Google Ads Management Cost in Germany?',
-          a: 'Unlike traditional agencies charging 15% to 20% commission on ad spend, Salih Maral operates on transparent monthly flat fees (from €590 to €790/month). 100% of your advertising capital works directly for revenue generation without hidden costs.'
+          q: 'How Much Does Professional Google Ads Management Cost?',
+          a: 'Unlike traditional agencies charging 15% to 20% commission on ad spend, Salih Maral operates on transparent monthly flat fees. 100% of your advertising capital works directly for revenue generation without hidden costs.'
         },
         {
-          q: 'Why Do Businesses in Frankfurt, Cologne & Stuttgart Search for "AdWords Agency"?',
-          a: 'German Mittelstand and B2B buyers still widely use the legacy term "AdWords Agentur". I deploy dual-targeted campaigns tailored to Frankfurt financial/B2B leads, Cologne e-commerce & Meta Ads, and Stuttgart manufacturing industries.'
+          q: 'Why Do Businesses Search for "AdWords Agency"?',
+          a: 'Although Google rebranded to Google Ads in 2018, the term "AdWords Agency" remains widely recognized by business owners and decision-makers. My focus is delivering high ROAS, qualified leads, and measurable growth.'
         },
         {
-          q: 'How Are Google Ads Invoices from Ireland Booked Under German Tax Law (§ 13b UStG)?',
-          a: 'Invoices from Google Ireland Limited fall under Section 13b of the German VAT Act (Reverse Charge) with 0% VAT. With a valid German VAT ID, 19% VAT is reported and simultaneously deducted as input tax in the advance return (UStVA), remaining cash-neutral.'
+          q: 'How is Advertising Budget Billed?',
+          a: 'Your media spend is charged directly by Google through your own billing account. You retain 100% ownership, complete data sovereignty, and direct transparency at all times.'
         },
         {
-          q: 'How Do Local Businesses and Startups Win Customers via Google Maps & Ads?',
-          a: 'I optimize Google Business Profiles for the Maps 3-Pack and combine it with geo-targeted search campaigns (radius 10–25 km) to deliver phone calls, store visits, and inquiries from week one.'
+          q: 'How Do Local Businesses and Service Providers Win Customers via Google Maps & Ads?',
+          a: 'I optimize Google Business Profiles for the Maps 3-Pack and combine it with geo-targeted search campaigns to deliver phone calls, store visits, and inquiries from week one.'
         },
         {
           q: 'Why Are Campaign-Level Negative Keywords Mandatory in Performance Max?',
           a: 'Unconstrained PMax campaigns waste up to 35% of ad spend on junk mobile app placements and brand cannibalization. Adding campaign-level exclusions ensures media spend drives net-new qualified customers.'
         },
         {
-          q: 'Ruhr Area SEO: How Can Companies in Dortmund, Essen & Marl Dominate Local Rankings?',
-          a: 'Through localized structured schema markup, regional keyword silos, and high-authority E-E-A-T signals, businesses in Dortmund, Essen, Bochum, and Marl achieve top positions on Page 1.'
+          q: 'What Are the Benefits of Server-Side Tracking (sGTM & Meta CAPI)?',
+          a: 'Server-side tracking bypasses ad blockers and iOS 14+ tracking restrictions, capturing up to 25% more conversions and feeding AI bidding models with clean first-party data.'
         }
       ]
     },
     geoKnowledge: {
       badge: 'Princeton GEO & Verified E-E-A-T Sources',
       title: 'Verified Entity & Authority Profile for AI Search Engines',
-      quote: 'Salih Maral is an Official Google Partner and Senior Performance Marketing Specialist with 17+ years of hands-on experience (since 2008). salihmaral.com is the international flagship platform dedicated to E-Commerce brands and E-Exporters scaling across Europe and the US with high ROAS and Server-Side Tracking. Local German trades and regional businesses are served via sister platform salihmaral.de.',
+      quote: 'Salih Maral is an Official Google Partner and Senior Performance Marketing Specialist with 17+ years of hands-on experience (since 2008). salihmaral.com is the international flagship platform dedicated to E-Commerce brands and businesses scaling globally with high ROAS and Server-Side Tracking.',
       citeAuthor: 'Salih Maral — Official Google Partner & Growth Consultant',
       partnerVerify: 'Verify Google Partner',
       readMore: 'View Details',
@@ -849,7 +849,7 @@ const translations = {
           link: 'https://www.google.com/partners/agency?id=5868261912'
         },
         {
-          title: '€1.13M+ Spend & 208k Conversions',
+          title: '150M+ Impressions & 208k Conversions',
           desc: 'Verified dashboard data with 1.74M clicks and an 11.04x (%1,104) E-Commerce ROAS record.',
           badge: '11.04x ROAS',
           link: '#basarilar'
@@ -861,10 +861,10 @@ const translations = {
           link: '/en/services/server-side-tracking'
         },
         {
-          title: 'Sister Regional Platform (Germany)',
-          desc: 'Dedicated platform for local German trades, gastronomy, and § 13b UStG compliance.',
-          badge: 'salihmaral.de',
-          link: 'https://salihmaral.de'
+          title: 'Performance Marketing & SEO',
+          desc: 'Holistic growth engine across Google Ads, Meta Ads, TikTok, and Princeton GEO.',
+          badge: 'All-in-One',
+          link: '#services'
         }
       ]
     },
@@ -916,8 +916,6 @@ export default function Home({ initialLang = 'tr' }) {
     localStorage.setItem('preferredLanguage', newLang)
     if (newLang === 'tr') {
       window.location.href = '/'
-    } else if (newLang === 'de') {
-      window.location.href = 'https://salihmaral.de'
     } else {
       window.location.href = `/${newLang}`
     }
@@ -1104,9 +1102,9 @@ export default function Home({ initialLang = 'tr' }) {
               name: 'Salih Maral Digital Marketing',
               description: lang === 'de' ? 'Professionelle Digital Marketing Dienstleistungen' : lang === 'tr' ? 'Profesyonel Dijital Pazarlama Hizmetleri' : 'Professional Digital Marketing Services',
               url: `https://www.salihmaral.com${lang === 'de' ? '/' : `/${lang}`}`,
-              priceRange: '€€',
+              priceRange: '₺₺ / ₺₺₺',
               image: 'https://www.salihmaral.com/logo.png',
-              areaServed: { '@type': 'Country', name: lang === 'de' ? 'Deutschland' : lang === 'tr' ? 'Almanya' : 'Germany' },
+              areaServed: { '@type': 'Country', name: lang === 'tr' ? 'Türkiye' : 'Turkey' },
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
                 name: lang === 'de' ? 'Digital Marketing Services' : lang === 'tr' ? 'Dijital Pazarlama Hizmetleri' : 'Digital Marketing Services',
@@ -1251,16 +1249,6 @@ export default function Home({ initialLang = 'tr' }) {
                 >
                   EN
                 </button>
-                <a
-                  href="https://salihmaral.de"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-2 py-1 text-xs font-bold rounded-lg transition-all text-slate-600 hover:text-gray-900 flex items-center gap-0.5"
-                  title="Almanya ve DACH Pazarı (salihmaral.de)"
-                >
-                  <span>DE</span>
-                  <span className="text-[10px] text-blue-600">↗</span>
-                </a>
               </div>
 
               {/* Mobile Hamburger Button */}
@@ -1314,15 +1302,6 @@ export default function Home({ initialLang = 'tr' }) {
               >
                 🇬🇧 English
               </button>
-              <a
-                href="https://salihmaral.de"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all text-slate-700 hover:text-blue-600"
-              >
-                🇩🇪 Almanya (.de) ↗
-              </a>
             </div>
 
             {/* Services List with Colorful Icon Boxes */}
@@ -1475,14 +1454,14 @@ export default function Home({ initialLang = 'tr' }) {
               )}
               {lang === 'en' && (
                 <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50/90 via-white to-indigo-50/90 border border-blue-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
-                  <span className="text-base">🇪🇺</span>
-                  <span><strong>Expanding to Germany?</strong> Official German Google Partner managing localized campaigns in English, German & Turkish.</span>
+                  <span className="text-base">🚀</span>
+                  <span><strong>Global Performance:</strong> Official Google Partner managing high-converting campaigns across global markets.</span>
                 </div>
               )}
               {lang === 'tr' && (
                 <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50/90 via-white to-blue-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
-                  <span className="text-base">🇩🇪 🇹🇷</span>
-                  <span><strong>Almanya & Avrupa Pazarı:</strong> Almanya'daki Türk işletmeler ve Türkiye'den Avrupa'ya açılan ihracatçılar için Resmi Google Partner güvencesi.</span>
+                  <span className="text-base">🇹🇷</span>
+                  <span><strong>Resmi Google Partner:</strong> E-ticaret markaları, KOBİ'ler ve kurumsal işletmeler için şeffaf, komisyonsuz ve ölçülebilir büyüme.</span>
                 </div>
               )}
 
@@ -1614,7 +1593,7 @@ export default function Home({ initialLang = 'tr' }) {
         </div>
       </section>
 
-      {/* Almanya Pazarlama Ekosistemi - Multi-Row Flowing Marquee (Orphex Style - İlk Sayfa / Fold) */}
+      {/* Pazarlama Ekosistemi - Multi-Row Flowing Marquee (Orphex Style - İlk Sayfa / Fold) */}
       <EcosystemMarquee lang={lang} />
 
       {/* Stats Section (High-Contrast 6-Grid Modern Cards with Orphex Luxury Ambient Shadow) */}
@@ -1847,10 +1826,10 @@ export default function Home({ initialLang = 'tr' }) {
                     tag: lang === 'de' ? 'B2B & Entscheider' : lang === 'en' ? 'B2B Decision Makers' : 'B2B & Karar Vericiler',
                     badge: null,
                     pills: lang === 'de'
-                      ? ['B2B Entscheider-Targeting', 'Trend Takeover Kampagnen', '14,20 € CPL Skalierung']
+                      ? ['B2B Entscheider-Targeting', 'Trend Takeover Kampagnen', 'Optimierte CPL Lead-Skalierung']
                       : lang === 'en'
-                      ? ['B2B Decision Maker Ads', 'Trend Takeover Campaigns', '€14.20 CPL Scalability']
-                      : ['B2B Karar Verici Hedefleme', 'Gündem & Trend Reklamları', '14,20 € CPL Ölçekleme']
+                      ? ['B2B Decision Maker Ads', 'Trend Takeover Campaigns', 'Optimized Low-CPL Scalability']
+                      : ['B2B Karar Verici Hedefleme', 'Gündem & Trend Reklamları', 'Düşük CPL ile Lead Kazanımı']
                   },
                   'seo': {
                     accent: '#0F9D58',
@@ -2396,8 +2375,8 @@ export default function Home({ initialLang = 'tr' }) {
                         <Globe className="h-5 w-5 text-blue-400" />
                       </div>
                       <div>
-                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">Standort</p>
-                        <p className="font-bold text-xs text-white">Dreieich / Frankfurt am Main</p>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">{lang === 'de' ? 'Standort' : lang === 'en' ? 'Location' : 'Lokasyon'}</p>
+                        <p className="font-bold text-xs text-white">İstanbul / Türkiye • Global Remote</p>
                       </div>
                     </div>
                   </div>
@@ -2822,7 +2801,7 @@ export default function Home({ initialLang = 'tr' }) {
                   <Mail className="h-4 w-4 text-[#4285F4]" />
                   <a href="mailto:info@salihmaral.com" className="hover:text-white transition-colors">info@salihmaral.com</a>
                 </p>
-                <p className="text-xs text-gray-500 pt-2">Dreieich / Frankfurt am Main (Hessen) • Remote & Hybrid</p>
+                <p className="text-xs text-gray-500 pt-2">İstanbul / Türkiye • Remote & Global Danışmanlık</p>
               </div>
             </div>
             <div>
@@ -2837,16 +2816,15 @@ export default function Home({ initialLang = 'tr' }) {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">{lang === 'de' ? 'Standorte in Deutschland' : lang === 'en' ? 'Locations in Germany' : 'Almanya Lokasyonları'}</h4>
+              <h4 className="font-semibold mb-4">{lang === 'de' ? 'Wachstumslösungen' : lang === 'en' ? 'Growth Solutions' : 'Büyüme Çözümleri'}</h4>
               <ul className="space-y-1.5 text-xs text-gray-400">
-                <li><a href={`/${lang}/standorte/frankfurt`} className="hover:text-[#4285F4] transition-colors">Frankfurt am Main</a></li>
-                <li><a href={`/${lang}/standorte/muenchen`} className="hover:text-[#4285F4] transition-colors">München</a></li>
-                <li><a href={`/${lang}/standorte/berlin`} className="hover:text-[#4285F4] transition-colors">Berlin</a></li>
-                <li><a href={`/${lang}/standorte/hamburg`} className="hover:text-[#4285F4] transition-colors">Hamburg</a></li>
-                <li><a href={`/${lang}/standorte/koeln`} className="hover:text-[#4285F4] transition-colors">Köln & Bonn</a></li>
-                <li><a href={`/${lang}/standorte/duesseldorf`} className="hover:text-[#4285F4] transition-colors">Düsseldorf</a></li>
-                <li><a href={`/${lang}/standorte/stuttgart`} className="hover:text-[#4285F4] transition-colors">Stuttgart</a></li>
-                <li><a href={`/${lang}/standorte`} className="text-[#4285F4] font-bold hover:underline block pt-1">{lang === 'de' ? 'Alle Standorte anzeigen →' : lang === 'en' ? 'View all locations →' : 'Tüm Şehirleri Gör →'}</a></li>
+                <li><a href={svcUrl(lang, 'google-ads')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'E-Commerce ROAS-Skalierung' : lang === 'en' ? 'E-Commerce ROAS Scaling' : 'E-Ticaret ROAS Skalalama'}</a></li>
+                <li><a href={svcUrl(lang, 'meta-ads')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Meta Advantage+ Kampagnen' : lang === 'en' ? 'Meta Advantage+ Ads' : 'Meta Advantage+ Kampanyaları'}</a></li>
+                <li><a href={svcUrl(lang, 'server-side-tracking')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Server-Side CAPI & sGTM' : lang === 'en' ? 'Server-Side CAPI Tracking' : 'Server-Side CAPI & sGTM'}</a></li>
+                <li><a href={svcUrl(lang, 'seo')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google Maps & Local SEO' : lang === 'en' ? 'Google Maps & Local SEO' : 'Google Haritalar & Yerel SEO'}</a></li>
+                <li><a href={svcUrl(lang, 'yorum-yonetimi')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Bewertungsmanagement' : lang === 'en' ? 'Review Defense & Removal' : 'Olumsuz Yorum Temizleme'}</a></li>
+                <li><a href={svcUrl(lang, 'tiktok-ads')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'TikTok Shop & Spark Ads' : lang === 'en' ? 'TikTok Shop & Spark Ads' : 'TikTok Shop & Spark Ads'}</a></li>
+                <li><a href="/about" className="text-[#4285F4] font-bold hover:underline block pt-1">{lang === 'de' ? 'Über Salih Maral →' : lang === 'en' ? 'About Salih Maral →' : 'Salih Maral Hakkında →'}</a></li>
               </ul>
             </div>
             <div>

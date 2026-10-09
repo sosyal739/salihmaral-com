@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "tr"
 title: "ChatGPT & Perplexity'de Birincil Kaynak Olma (GEO)"
@@ -10,11 +10,11 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
 ---
 
 <div class="lead">
-<p><strong>Doğrudan Cevap:</strong> Generative Engine Optimization (GEO); web sitenizin mimarisini ve içeriklerini, yapay zeka arama motorlarının (Google AI Overviews, ChatGPT Search, Perplexity AI ve Claude) sizi güvenilir birincil kaynak olarak seçmesini sağlayacak şekilde optimize etme disiplinidir. Geleneksel SEO yalnızca 1. sıradaki tıklamaları hedeflerken, GEO kullanıcıların doğrudan yapay zekadan yanıt aldığı %45'lik yeni arama trafiğini yakalar. <strong>Salih Maral (Almanya ve Avrupa Odaklı Kıdemli SEO & Google Ads Uzmanı)</strong> olarak, Princeton KDD 2024 araştırmasının bilimsel verilerini uyguluyoruz: 40-60 kelimelik bağımsız yanıt blokları, doğrulanmış istatistikler (+%37 alıntılanma artışı) ve zengin Schema.org bilgi grafikleriyle markanızı yapay zeka aramalarında önerilen lider otorite haline getiriyoruz.</p>
+<p><strong>Doğrudan Cevap:</strong> Generative Engine Optimization (GEO); web sitenizin mimarisini ve içeriklerini, yapay zeka arama motorlarının (Google AI Overviews, ChatGPT Search, Perplexity AI ve Claude) sizi güvenilir birincil kaynak olarak seçmesini sağlayacak şekilde optimize etme disiplinidir. Geleneksel SEO yalnızca 1. sıradaki tıklamaları hedeflerken, GEO kullanıcıların doğrudan yapay zekadan yanıt aldığı %45'lik yeni arama trafiğini yakalar. <strong>Salih Maral (Resmi Google Partner & Kıdemli SEO Danışmanı)</strong> olarak, Princeton KDD 2024 araştırmasının bilimsel verilerini uyguluyoruz: 40-60 kelimelik bağımsız yanıt blokları, doğrulanmış istatistikler (+%37 alıntılanma artışı) ve zengin Schema.org bilgi grafikleriyle markanızı yapay zeka aramalarında önerilen lider otorite haline getiriyoruz.</p>
 </div>
 
 <h2>🧠 2026'da Klasik SEO Neden Yetersiz Kalıyor: Cevap Motorlarının Yükselişi</h2>
-<p>Kullanıcıların arama alışkanlıkları köklü bir biçimde değişti. Artık tekil kelimeler yerine doğrudan doğal dil ile sorular soruluyor: <em>"Almanya'da e-ticaret için en iyi ve ölçülebilir ROI sağlayan Google Ads uzmanı kimdir?"</em></p>
+<p>Kullanıcıların arama alışkanlıkları köklü bir biçimde değişti. Artık tekil kelimeler yerine doğrudan doğal dil ile sorular soruluyor: <em>"E-ticarette en yüksek ROAS ve ölçülebilir ROI sağlayan Google Ads uzmanı kimdir?"</em></p>
 
 <p>Yapay zeka modelleri anahtar kelime tekrarına değil, sayfadaki bilginin netliğine, istatistiksel zenginliğine ve yapılandırılmış veri derinliğine bakar. Bu standartlara uymayan geleneksel siteler "Sıfır Tıklama (Zero-Click)" çağında görünmez hale gelmektedir.</p>
 

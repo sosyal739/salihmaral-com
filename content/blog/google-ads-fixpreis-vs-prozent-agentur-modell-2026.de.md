@@ -64,5 +64,5 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=3
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Stoppen Sie unübersichtliche Agentur-Rechnungen</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Lassen Sie uns Ihr Google Ads Konto analysieren. Sichern Sie sich jetzt Ihr individuelles <strong>Angebot zum garantierten Festpreis</strong>.</p>
-  <a href="https://salihmaral.de/de#contact" style="display: inline-block; background: #3b82f6; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.6); transition: all 0.3s ease;">Kostenloses Fixpreis-Angebot anfordern ➔</a>
+  <a href="https://www.salihmaral.com/de#contact" style="display: inline-block; background: #3b82f6; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.6); transition: all 0.3s ease;">Kostenloses Fixpreis-Angebot anfordern ➔</a>
 </div>

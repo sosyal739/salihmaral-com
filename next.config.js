@@ -19,6 +19,11 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // 301: Standorte routes redirect to / (salihmaral.com is independent of Germany)
+      { source: '/:lang/standorte/:city*', destination: '/', statusCode: 301 },
+      { source: '/:lang/standorte', destination: '/', statusCode: 301 },
+      { source: '/standorte/:city*', destination: '/', statusCode: 301 },
+      { source: '/standorte', destination: '/', statusCode: 301 },
       // 301: /de → / (Almanca ana sayfa kök dizindir; kopya sayfa ve GSC kanonik uyarısını önler)
       { source: '/de', destination: '/', statusCode: 301 },
       // 301: Eski Türkçe DE URL'ler → Yeni Almanca URL'ler

@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "b2b-lead-generation-linkedin-ai-agents"
 lang: "tr"
 title: "LinkedIn Ads & AI ile B2B Müşteri Kazanımı (ABM)"
@@ -50,8 +50,8 @@ coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=3
     </tr>
     <tr>
       <td><strong>Müşteri Edinme Maliyeti (CPL)</strong></td>
-      <td>€180.00 / Lead</td>
-      <td>€65.00 / Lead (Optimized Lead Gen Forms)</td>
+      <td>5.400 ₺ / Lead</td>
+      <td>1.950 ₺ / Lead (Optimize Edilmiş Formlar)</td>
       <td>-%63 Daha Düşük CPL</td>
     </tr>
   </tbody>

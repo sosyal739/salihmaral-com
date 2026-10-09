@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026"
 lang: "tr"
 title: "Müzik Klibi ve Videolar Nasıl İzletilir? Sanatçılar İçin YouTube Ads Rehberi"
@@ -62,7 +62,7 @@ coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&
 <p>Klibinizi benzer müzik tarzına sahip popüler sanatçıların videolarının ve oynatma listelerinin önüne yerleştiriyoruz. Böylece sizin tarzınızda müzik dinleyen kitle, klibinizi ilk saniyeden itibaren ilgiyle izler.</p>
 
 <h3>2. Ülke ve Şehir Bazlı Dağıtım</h3>
-<p>Müziğinizi sadece Türkiye'de mi, Almanya ve Avrupa'daki gurbetçi dinleyicilere mi, yoksa küresel pazarda mı duyurmak istiyorsunuz? Kampanyalarınızı dinleyici potansiyelinizin en yüksek olduğu ülkelere göre nokta atışı kurguluyoruz.</p>
+<p>Müziğinizi Türkiye genelinde mi yoksa küresel pazarda mı duyurmak istiyorsunuz? Kampanyalarınızı dinleyici potansiyelinizin en yüksek olduğu bölgelere göre nokta atışı kurguluyoruz.</p>
 
 <h3>3. YouTube Shorts & In-Feed Keşif Reklamları</h3>
 <p>Klibinizin en vurucu nakarat kısmını Shorts reklamları olarak öne çıkarıyor, ana klibi ise YouTube Ana Sayfası ve Arama Sonuçlarında kullanıcıların kendi isteğiyle tıklayacağı şekilde yayınlıyoruz.</p>
@@ -87,5 +87,5 @@ coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&
 <div class="cta-box" style="background: #0f172a; border: 2px solid #3b82f6; border-radius: 1.5rem; padding: 2.5rem; margin-top: 2.5rem; text-align: center; color: white;">
   <h3 style="font-size: 1.6rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">Sanatınızı ve Müziğinizi Milyonlara Birlikte Ulaştıralım</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.5rem auto;">Resmi Google Partner güvencesi ve 17+ yıllık sektör tecrübesiyle müzik kliplerinizi doğru dinleyici kitlesiyle buluşturun.</p>
-  <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #3b82f6; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);">Ücretsiz Ön Görüşme ve YouTube Strateji Analizi Alın ➔</a>
+  <a href="https://www.salihmaral.com/#contact" style="display: inline-block; background: #3b82f6; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);">Ücretsiz Ön Görüşme ve YouTube Strateji Analizi Alın ➔</a>
 </div>

@@ -1,10 +1,10 @@
 'use client'
 
-export default function EcosystemMarquee({ lang = 'de' }) {
+export default function EcosystemMarquee({ lang = 'tr' }) {
   const content = {
     tr: {
       badge: 'ENTEGRASYONLAR & TEKNOLOJİLER',
-      title: 'Almanya Pazarlama Ekosisteminizi Tek Merkezde Birleştirin',
+      title: 'Dijital Pazarlama ve Büyüme Ekosisteminizi Tek Merkezde Birleştirin',
       subtitle: 'Google Ads, Analytics, Search Console, Semrush, Meta ve e-ticaret sistemlerinizle %100 entegre altyapı.'
     },
     de: {

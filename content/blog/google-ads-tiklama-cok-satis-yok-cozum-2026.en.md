@@ -62,5 +62,5 @@ coverImage: "https://images.unsplash.com/photo-1571867424488-4565932edb41?w=600&
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Reclaim Your Wasted Google Ad Spend</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Let’s analyze your Google Ads account together. Claim your <strong>Free 15-Minute Account Audit</strong> to discover exactly where budget is leaking and how to start generating real customer inquiries tomorrow.</p>
-  <a href="https://salihmaral.de/en#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.6); transition: all 0.3s ease;">Request Free Google Ads Strategy Audit ➔</a>
+  <a href="https://www.salihmaral.com/en#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.6); transition: all 0.3s ease;">Request Free Google Ads Strategy Audit ➔</a>
 </div>

@@ -120,8 +120,8 @@ coverImage: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=3
   "@type": "Dentist",
   "name": "Salih Maral Dental Klinik",
   "image": "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop&q=80",
-  "@id": "https://salihmaral.de/tr/hizmetler/seo#clinic",
-  "url": "https://salihmaral.de/tr/hizmetler/seo",
+  "@id": "https://www.salihmaral.com/tr/hizmetler/seo#clinic",
+  "url": "https://www.salihmaral.com/tr/hizmetler/seo",
   "telephone": "+902161234567",
   "priceRange": "$$",
   "address": {

@@ -64,7 +64,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
       agencyCostHeader: 'Vergleich der Betreuungskosten:',
       compProvision: 'Prozentuales Modell (15% Provision):',
       compFixpreis: 'Salih Maral (Transparenter Fixpreis):',
-      savingsBadge: `Sie sparen ca. ${monthlySavings} € monatlich an Betreuungsaufwand!`,
+      savingsBadge: `Sie sparen ca. ${monthlySavings} ₺ monatlich an Betreuungsaufwand!`,
       noCommissionBadge: '100% Ihres Klickbudgets fließt direkt in messbare Neukundenanfragen!',
       formCta: 'Kostenloses Angebot & Budget-Analyse anfordern',
       guarantee: 'Offizieller Google Partner • 17+ Jahre Erfahrung • Keine 12-Monats-Knebelverträge'
@@ -81,7 +81,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
       agencyCostHeader: 'Maliyet & Bütçe Yönetim Karşılaştırması:',
       compProvision: 'Geleneksel %15 Bütçe Komisyonu:',
       compFixpreis: 'Salih Maral (Şeffaf Sabit Yönetim Ücreti):',
-      savingsBadge: `Ayda yaklaşık ${monthlySavings} € yönetim maliyeti avantajı sağlarsınız!`,
+      savingsBadge: `Ayda yaklaşık ${monthlySavings} ₺ yönetim maliyeti avantajı sağlarsınız!`,
       noCommissionBadge: 'Reklam bütçenizin tamamı doğrudan nitelikli müşteri dönüşümlerine harcanır!',
       formCta: 'Ücretsiz Teklif & Bütçe Analizi İsteyin',
       guarantee: 'Resmi Google Partneri • 17+ Yıllık Tecrübe • Şeffaf ve Güvenilir Yönetim'
@@ -98,14 +98,14 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
       agencyCostHeader: 'Cost & Management Comparison:',
       compProvision: 'Traditional Percentage Model (15%):',
       compFixpreis: 'Salih Maral (Predictable Flat-Fee):',
-      savingsBadge: `You save approx. ${monthlySavings} €/month in management fees!`,
+      savingsBadge: `You save approx. ${monthlySavings} ₺/month in management fees!`,
       noCommissionBadge: '100% of your advertising budget is focused directly on qualified conversions!',
       formCta: 'Request Free Proposal & Budget Strategy',
       guarantee: 'Official Google Partner • 17+ Years Expertise • No 12-Month Lock-in'
     }
   }
 
-  const currentT = t[lang] || t.de
+  const currentT = t[lang] || t.tr
 
   const handleScrollToForm = () => {
     trackLead({ formName: 'budget_calculator_cta', method: 'scroll_to_form', value: monthlyBudget })
@@ -173,23 +173,23 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
                 {currentT.budgetLabel}
               </label>
               <span className="text-xl sm:text-2xl font-black text-blue-400 tracking-tight">
-                {monthlyBudget.toLocaleString()} € <span className="text-xs text-slate-400 font-normal">{lang === 'tr' ? '/ Ay' : lang === 'en' ? '/ Month' : '/ Monat'}</span>
+                {monthlyBudget.toLocaleString()} ₺ <span className="text-xs text-slate-400 font-normal">{lang === 'tr' ? '/ Ay' : lang === 'en' ? '/ Month' : '/ Monat'}</span>
               </span>
             </div>
             <input
               type="range"
-              min="1000"
-              max="20000"
-              step="500"
+              min="5000"
+              max="250000"
+              step="5000"
               value={monthlyBudget}
               onChange={(e) => setMonthlyBudget(Number(e.target.value))}
               className="w-full h-3 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500 focus:outline-none"
             />
             <div className="flex justify-between text-[10px] sm:text-[11px] text-slate-400 mt-2 font-mono">
-              <span>1.000 € {lang === 'tr' ? '(Başlangıç)' : lang === 'en' ? '(Starter)' : '(Start)'}</span>
-              <span>5.000 € {lang === 'tr' ? '(KOBİ)' : lang === 'en' ? '(Mid-Market)' : '(Mittelstand)'}</span>
-              <span>10.000 €+</span>
-              <span>20.000 €</span>
+              <span>5.000 ₺ {lang === 'tr' ? '(Başlangıç)' : lang === 'en' ? '(Starter)' : '(Start)'}</span>
+              <span>25.000 ₺ {lang === 'tr' ? '(KOBİ)' : lang === 'en' ? '(Mid-Market)' : '(Mittelstand)'}</span>
+              <span>100.000 ₺+</span>
+              <span>250.000 ₺</span>
             </div>
           </div>
 
@@ -203,7 +203,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
                 ~{estClicks.toLocaleString()} <span className="text-xs text-slate-400 font-normal">{lang === 'tr' ? 'Tıklama' : lang === 'en' ? 'Clicks' : 'Klicks'}</span>
               </div>
               <div className="text-[10px] text-slate-400 mt-0.5">
-                Ø CPC: ~{selected.avgCpc.toFixed(2)} €
+                Ø CPC: ~{selected.avgCpc.toFixed(2)} ₺
               </div>
             </div>
 
@@ -232,18 +232,18 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
             <div className="space-y-3">
               <div className="p-3 rounded-xl bg-slate-900 border border-slate-800 flex justify-between items-center text-xs sm:text-sm">
                 <span className="text-slate-400">{currentT.compProvision}</span>
-                <span className="font-bold text-rose-400 line-through">~{agencyCommissionCost} € / Mo.</span>
+                <span className="font-bold text-rose-400 line-through">~{agencyCommissionCost} ₺ / Ay</span>
               </div>
 
               <div className="p-3.5 rounded-xl bg-emerald-950/50 border border-emerald-500/40 flex justify-between items-center text-xs sm:text-sm shadow-sm">
                 <div>
                   <div className="font-bold text-emerald-300 flex items-center gap-1.5">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                    <span>Salih Maral Fixpreis</span>
+                    <span>Salih Maral Sabit Paket</span>
                   </div>
                   <div className="text-[10px] text-slate-400">{lang === 'tr' ? 'Bütçeden komisyon kesintisi yok' : lang === 'en' ? 'Zero ad-spend percentage fee' : 'Keine prozentuale Beteiligung'}</div>
                 </div>
-                <span className="font-black text-base text-emerald-400">{lang === 'tr' ? `${salihMaralFixpreis} € / Ay'dan` : lang === 'en' ? `from ${salihMaralFixpreis} € / Mo.` : `ab ${salihMaralFixpreis} € / Mo.`}</span>
+                <span className="font-black text-base text-emerald-400">{lang === 'tr' ? `${salihMaralFixpreis} ₺ / Ay'dan` : lang === 'en' ? `from ${salihMaralFixpreis} ₺ / Mo.` : `ab ${salihMaralFixpreis} ₺ / Mo.`}</span>
               </div>
             </div>
 

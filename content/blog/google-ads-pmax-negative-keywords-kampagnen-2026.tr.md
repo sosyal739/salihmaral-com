@@ -61,8 +61,8 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
     </tr>
     <tr>
       <td><strong>Müşteri Edinme Maliyeti (CPA)</strong></td>
-      <td>Yüksek (Ortalama 80 €)</td>
-      <td>Düşük (Ortalama 48 €)</td>
+      <td>Yüksek (Ortalama 800 ₺)</td>
+      <td>Düşük (Ortalama 480 ₺)</td>
       <td>Aynı bütçeyle 2 kat daha fazla talep</td>
     </tr>
     <tr>
@@ -76,6 +76,6 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
 
 <h2>💡 Sabit Fiyatlı Profesyonel Google Ads Yönetimi</h2>
 
-<p>Google Ads bütçenizi komisyon alan ajanslara teslim etmek yerine, <strong>şeffaf sabit fiyatlı (Fixpreis ab 590 €/ay)</strong> yönetim modelimizle paranızın her kuruşunun hesabını bilerek büyüyün.</p>
+<p>Google Ads bütçenizi komisyon alan ajanslara teslim etmek yerine, <strong>şeffaf sabit fiyatlı</strong> yönetim modelimizle paranızın her kuruşunun hesabını bilerek büyüyün.</p>
 
-<p>Karlılığınızı test etmek için <a href="/tr/standorte/koeln">Google Ads Bütçe Hesaplayıcımızı</a> çalıştırın veya <a href="/blog/google-ads-b2b-agentur-stuttgart-maschinenbau-2026">Stuttgart B2B Başarı Rehberimizi</a> okuyun.</p>
+<p>Büyüme potansiyelinizi keşfetmek için <a href="/#contact">ücretsiz hesap analizi talebinde bulunun</a> veya <a href="/tr/hizmetler/google-ads">Google Ads Yönetimi</a> sayfamızı inceleyin.</p>

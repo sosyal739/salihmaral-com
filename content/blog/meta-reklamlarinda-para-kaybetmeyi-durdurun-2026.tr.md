@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "meta-reklamlarinda-para-kaybetmeyi-durdurun-2026"
 lang: "tr"
 title: "Meta Reklamlarında Paranızı Neden Kaybediyorsunuz? Satışları 3X Katlama Rehberi"
@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&
 ---
 
 <div class="lead">
-<p><strong>Dürüst Bir Gerçek:</strong> Facebook ve Instagram reklamlarına her gün 50 €, 100 € veya 500 € yatırıyor ama günün sonunda panele baktığınızda ya zarar ediyor ya da ancak başa baş (Break-Even) mı kalıyorsunuz? Yalnız değilsiniz. E-ticaret sahiplerinin ve işletmelerin %85'i Meta reklamlarında aynı tuzağa düşer: Harika bir ürününüz vardır, bütçe ayırırsınız ama gelen tıklamalar siparişe dönüşmez. Sorun ürününüzde değil; <strong>2026 Meta yapay zekasının çalışma mantığını bilmeyen, eski usul hedef kitle seçen ve sunucu taraflı takip (Server-Side CAPI) kurmayan yetersiz reklam yönetimindedir.</strong> <strong>Salih Maral (Resmi Google Partner & 17+ Yıllık Dijital Pazarlama Uzmanı)</strong> olarak, reklamlarınızı bir "masraf kapısı" olmaktan çıkarıp işletmenizin en kârlı satış makinesine dönüştürüyoruz.</p>
+<p><strong>Dürüst Bir Gerçek:</strong> Facebook ve Instagram reklamlarına her gün binlerce lira bütçe yatırıyor ama günün sonunda panele baktığınızda ya zarar ediyor ya da ancak başa baş (Break-Even) mı kalıyorsunuz? Yalnız değilsiniz. E-ticaret sahiplerinin ve işletmelerin %85'i Meta reklamlarında aynı tuzağa düşer: Harika bir ürününüz vardır, bütçe ayırırsınız ama gelen tıklamalar siparişe dönüşmez. Sorun ürününüzde değil; <strong>2026 Meta yapay zekasının çalışma mantığını bilmeyen, eski usul hedef kitle seçen ve sunucu taraflı takip (Server-Side CAPI) kurmayan yetersiz reklam yönetimindedir.</strong> <strong>Salih Maral (Resmi Google Partner & 17+ Yıllık Dijital Pazarlama Uzmanı)</strong> olarak, reklamlarınızı bir "masraf kapısı" olmaktan çıkarıp işletmenizin en kârlı satış makinesine dönüştürüyoruz.</p>
 </div>
 
 <h2>💔 Meta Reklamlarında Bütçenizi Sessizce Yutan 4 Büyük Hata</h2>
@@ -77,5 +77,5 @@ coverImage: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Meta Reklamlarında Paranızı Boşa Harcamayı Bugün Durdurun</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Reklam hesabınızı birlikte inceleyelim. Paranızı nerede kaybettiğinizi ve nasıl 3X ROAS elde edeceğinizi gösteren <strong>Ücretsiz Meta Ads Hesap Denetimi</strong> için hemen formu doldurun.</p>
-  <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #6366f1; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.6); transition: all 0.3s ease;">Ücretsiz Meta Ads Analizi ve Teklif Alın ➔</a>
+  <a href="https://www.salihmaral.com/#contact" style="display: inline-block; background: #6366f1; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.6); transition: all 0.3s ease;">Ücretsiz Meta Ads Analizi ve Teklif Alın ➔</a>
 </div>

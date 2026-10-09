@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowLeft, Globe, Heart, ArrowRight, ShieldCheck, Calendar, Clock, Sparkles, Flame, Cpu, Search, Layers, Zap, Menu, X, ChevronDown, MapPin, ArrowUpRight } from 'lucide-react'
+import { ArrowLeft, Globe, Heart, ArrowRight, ShieldCheck, Calendar, Clock, Sparkles, Flame, Cpu, Search, Layers, Zap, Menu, X, ChevronDown, MapPin, ArrowUpRight, ShoppingBag } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import AiSearchWidget from '@/components/AiSearchWidget'
@@ -161,11 +161,11 @@ export default function BlogPageClient({ initialPosts = [] }) {
       activeShadow: 'shadow-emerald-500/30'
     },
     {
-      id: 'de-business',
-      name: lang === 'tr' ? 'Almanya Türk İşletmeleri' : lang === 'de' ? 'Türkische Unternehmen in DE' : 'Turkish Businesses in DE',
-      icon: Globe,
-      gradient: 'from-red-600 via-rose-600 to-amber-600',
-      activeShadow: 'shadow-red-500/30'
+      id: 'ecommerce',
+      name: lang === 'tr' ? 'E-Ticaret & Büyüme' : lang === 'de' ? 'E-Commerce & Skalierung' : 'E-Commerce & Growth',
+      icon: ShoppingBag,
+      gradient: 'from-blue-600 via-indigo-600 to-cyan-500',
+      activeShadow: 'shadow-blue-500/30'
     },
     {
       id: 'google',
@@ -204,17 +204,18 @@ export default function BlogPageClient({ initialPosts = [] }) {
     },
   ]
 
-  const isDeBusinessPost = (post) => {
+  const isEcommercePost = (post) => {
     const catLower = (post.category || '').toLowerCase()
     const titleLower = (post.title || '').toLowerCase()
     const slugLower = (post.slug || '').toLowerCase()
     return (
-      catLower.includes('türk') ||
-      catLower.includes('almanya') ||
-      catLower.includes('turkish') ||
-      slugLower.includes('almanya') ||
-      titleLower.includes('almanya') ||
-      titleLower.includes('deutschland')
+      catLower.includes('e-ticaret') ||
+      catLower.includes('ecommerce') ||
+      catLower.includes('shopping') ||
+      slugLower.includes('e-ticaret') ||
+      slugLower.includes('shopping') ||
+      titleLower.includes('e-ticaret') ||
+      titleLower.includes('roas')
     )
   }
 
@@ -240,17 +241,17 @@ export default function BlogPageClient({ initialPosts = [] }) {
   }
 
   const filteredPosts = posts.filter(post => {
-    const isDeBiz = isDeBusinessPost(post)
+    const isEcom = isEcommercePost(post)
     const isNgo = isNgoGrantsPost(post)
     
-    // When 'all' is selected, show general marketing guides (exclude niche Germany Turkish and NGO posts)
+    // When 'all' is selected, show general marketing guides (exclude niche NGO posts)
     if (selectedCategory === 'all') {
-      return !isDeBiz && !isNgo
+      return !isNgo
     }
     
-    // Show Germany Turkish posts ONLY when its dedicated category tab is clicked
-    if (selectedCategory === 'de-business') {
-      return isDeBiz
+    // Show E-Commerce posts when its dedicated category tab is clicked
+    if (selectedCategory === 'ecommerce') {
+      return isEcom
     }
 
     // Show NGO & Islamic Charity posts ONLY when its dedicated category tab is clicked
@@ -623,55 +624,49 @@ export default function BlogPageClient({ initialPosts = [] }) {
         </div>
       </section>
 
-      {/* Regional German Metropolises & Standorte Hub Cross-Link */}
+      {/* Performance Solutions Cross-Link */}
       <section className="py-16 px-4 bg-slate-50 border-t border-slate-200/70 mt-16">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-bold text-blue-700 mb-3">
-              <MapPin className="w-3.5 h-3.5" />
-              <span>{lang === 'tr' ? 'Almanya Çapında Hizmet Ağı' : lang === 'en' ? 'Nationwide Coverage Across Germany' : 'Deutschlandweite Betreuung'}</span>
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>{lang === 'tr' ? 'Büyüme & Performans Çözümleri' : lang === 'en' ? 'Growth & Performance Solutions' : 'Wachstums- und Performance-Lösungen'}</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">
               {lang === 'tr'
-                ? "Almanya'nın 18 Metropolünde Performans Pazarlaması"
+                ? "Ölçülebilir & Kârlı Dijital Pazarlama Kanalları"
                 : lang === 'en'
-                ? "Performance Marketing Across Germany's 18 Metropolises"
-                : "Performance Marketing in den Top-Metropolen Deutschlands"}
+                ? "Measurable & Profitable Digital Marketing Channels"
+                : "Planbare & profitable Performance-Marketing Kanäle"}
             </h2>
             <p className="text-sm md:text-base text-gray-600">
               {lang === 'tr'
-                ? 'Dreieich / Frankfurt merkezli ajansımız, Almanya genelindeki işletmelere Google Ads, Meta Ads ve SEO ile ölçülebilir müşteri kazanımı sağlar.'
+                ? 'İşletmenizin ciro ve kârlılığını artırmak için test edilmiş, komisyonsuz ve şeffaf büyüme sistemleri.'
                 : lang === 'en'
-                ? 'Based in Dreieich near Frankfurt, we provide measurable customer acquisition via Google Ads, Meta Ads and SEO for businesses across Germany.'
-                : 'Von unserem Standort bei Frankfurt betreuen wir Unternehmen und Mittelständler in allen deutschen Metropolregionen mit transparenten Performance-Strategien.'}
+                ? 'Battle-tested, commission-free, and transparent growth systems engineered to maximize your ROI.'
+                : 'Erprobte, transparente Marketingsysteme zur Maximierung Ihres ROI ohne versteckte Provisionen.'}
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-8">
             {[
-              { name: 'Frankfurt am Main', slug: 'frankfurt' },
-              { name: 'München', slug: 'muenchen' },
-              { name: 'Düsseldorf', slug: 'duesseldorf' },
-              { name: 'Köln', slug: 'koeln' },
-              { name: 'Berlin', slug: 'berlin' },
-              { name: 'Hamburg', slug: 'hamburg' },
-              { name: 'Stuttgart', slug: 'stuttgart' },
-              { name: 'Nürnberg', slug: 'nuernberg' },
-              { name: 'Dortmund', slug: 'dortmund' },
-              { name: 'Bonn', slug: 'bonn' },
-              { name: 'Hannover', slug: 'hannover' },
-              { name: 'Leipzig', slug: 'leipzig' }
-            ].map((city) => (
+              { name: 'Google Ads', slug: 'google-ads', tag: 'Arama & Shopping' },
+              { name: 'Meta Ads', slug: 'meta-ads', tag: 'Advantage+ & CAPI' },
+              { name: 'Server-Side Tracking', slug: 'server-side-tracking', tag: 'sGTM & First-Party' },
+              { name: 'SEO & GEO', slug: 'seo', tag: 'Yapay Zeka & Harita' },
+              { name: 'TikTok Ads', slug: 'tiktok-ads', tag: 'Spark Ads & UGC' },
+              { name: 'Yorum Yönetimi', slug: 'yorum-yonetimi', tag: 'İtibar & Koruma' }
+            ].map((sol) => (
               <a
-                key={city.slug}
-                href={`/${lang}/standorte/${city.slug}`}
+                key={sol.slug}
+                href={getLocalizedServiceUrl(lang, sol.slug)}
                 className="p-3 bg-white rounded-xl border border-gray-200/80 hover:border-[#4285F4] hover:shadow-md transition-all text-center group"
               >
                 <div className="text-xs font-bold text-gray-900 group-hover:text-[#4285F4] transition-colors">
-                  {city.name}
+                  {sol.name}
                 </div>
                 <div className="text-[10px] text-gray-400 mt-0.5">
-                  {lang === 'tr' ? 'Bölgesel Ajans' : lang === 'en' ? 'Regional Agency' : 'Regionale Betreuung'}
+                  {sol.tag}
                 </div>
               </a>
             ))}
@@ -679,10 +674,10 @@ export default function BlogPageClient({ initialPosts = [] }) {
 
           <div className="text-center">
             <a
-              href={`/${lang}/standorte`}
+              href={lang === 'de' ? '/#contact' : `/${lang}#contact`}
               className="inline-flex items-center gap-2 text-sm font-bold text-[#4285F4] hover:text-blue-700 bg-white border border-blue-200 px-5 py-2.5 rounded-xl shadow-xs hover:shadow transition-all"
             >
-              <span>{lang === 'tr' ? 'Tüm 18 Şehir ve Bölge Rehberini Gör' : lang === 'en' ? 'Explore All 18 German Locations' : 'Alle 18 Standorte in Deutschland entdecken'}</span>
+              <span>{lang === 'tr' ? 'Hemen Ücretsiz Strateji Görüşmesi Planlayın' : lang === 'en' ? 'Schedule a Free Strategy Call' : 'Kostenloses Strategiegespräch vereinbaren'}</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
@@ -702,23 +697,23 @@ export default function BlogPageClient({ initialPosts = [] }) {
               </a>
               <p className="text-xs text-slate-400 leading-relaxed">
                 {lang === 'tr'
-                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Almanya ve Avrupa genelinde Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
+                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
                   : lang === 'en'
-                  ? 'Official Google Partner Salih Maral delivers scalable revenue growth across Germany & Europe through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
-                  : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum in Deutschland und Europa durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}
+                  ? 'Official Google Partner Salih Maral delivers scalable revenue growth across global markets through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
+                  : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}
               </p>
 
-              {/* Turkish Entrepreneur Badge */}
+              {/* Partner Badge */}
               <div className="p-3 rounded-xl bg-blue-950/40 border border-blue-800/50 text-[11px] text-blue-200">
                 <div className="font-bold text-white flex items-center gap-1.5 mb-1">
-                  <span>🇩🇪 🇹🇷</span>
-                  <span>Sprechen Sie Türkisch?</span>
+                  <span>⭐</span>
+                  <span>{lang === 'tr' ? 'Resmi Google Partner Güvencesi' : lang === 'en' ? 'Official Google Partner' : 'Zertifizierter Google Partner'}</span>
                 </div>
-                <div>Bizimle Türkçe görüşebilirsiniz. Almanya'daki Türk işletmelerine ve ihracatçılara ana dilde stratejik danışmanlık sunuyoruz.</div>
+                <div>{lang === 'tr' ? 'E-ticaret ve işletmeler için şeffaf, komisyonsuz ve sabit ücretli büyüme danışmanlığı.' : lang === 'en' ? 'Transparent flat-fee growth consulting for e-commerce and scaling brands.' : 'Transparente Festpreis-Betreuung für E-Commerce und wachsende Unternehmen.'}</div>
               </div>
 
               <div className="text-xs text-slate-400 space-y-1.5 pt-1">
-                <div>Dreieich / Frankfurt am Main &bull; Deutschland</div>
+                <div>İstanbul / Türkiye &bull; Remote &amp; Global</div>
                 <div>
                   <a href="mailto:info@salihmaral.com" className="hover:text-blue-400 transition-colors">
                     ✉️ info@salihmaral.com
@@ -746,29 +741,23 @@ export default function BlogPageClient({ initialPosts = [] }) {
               </ul>
             </div>
 
-            {/* Col 3: German Cities */}
+            {/* Col 3: Strategic Growth Areas */}
             <div>
               <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                {lang === 'tr' ? 'Almanya Şehirleri' : lang === 'en' ? 'Locations in Germany' : 'Standorte Deutschland'}
+                {lang === 'tr' ? 'Büyüme Alanları' : lang === 'en' ? 'Strategic Growth' : 'Strategische Schwerpunkte'}
               </div>
-              <div className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs">
+              <div className="grid grid-cols-1 gap-y-2 text-xs">
                 {[
-                  { name: 'Frankfurt', slug: 'frankfurt' },
-                  { name: 'München', slug: 'muenchen' },
-                  { name: 'Düsseldorf', slug: 'duesseldorf' },
-                  { name: 'Köln', slug: 'koeln' },
-                  { name: 'Berlin', slug: 'berlin' },
-                  { name: 'Hamburg', slug: 'hamburg' },
-                  { name: 'Stuttgart', slug: 'stuttgart' },
-                  { name: 'Nürnberg', slug: 'nuernberg' },
-                  { name: 'Dortmund', slug: 'dortmund' },
-                  { name: 'Bonn', slug: 'bonn' },
-                  { name: 'Hannover', slug: 'hannover' },
-                  { name: 'Leipzig', slug: 'leipzig' }
+                  { name: 'E-Ticaret ROAS Skalalama', slug: 'google-ads' },
+                  { name: 'Meta Advantage+ Reklamları', slug: 'meta-ads' },
+                  { name: 'Server-Side CAPI Tracking', slug: 'server-side-tracking' },
+                  { name: 'Google Haritalar & Yerel SEO', slug: 'seo' },
+                  { name: 'Olumsuz Yorum Temizleme', slug: 'bewertungsmanagement' },
+                  { name: 'TikTok Shop & Spark Ads', slug: 'tiktok-ads' }
                 ].map((c) => (
                   <a
-                    key={c.slug}
-                    href={`/${lang}/standorte/${c.slug}`}
+                    key={c.name}
+                    href={getLocalizedServiceUrl(lang, c.slug)}
                     className="text-slate-400 hover:text-blue-400 transition-colors"
                   >
                     {c.name}
@@ -777,10 +766,10 @@ export default function BlogPageClient({ initialPosts = [] }) {
               </div>
               <div className="mt-4 pt-3 border-t border-slate-800">
                 <a
-                  href={`/${lang}/standorte`}
+                  href={lang === 'de' ? '/#contact' : `/${lang}#contact`}
                   className="text-xs font-bold text-blue-400 hover:text-blue-300"
                 >
-                  {lang === 'tr' ? 'Tüm 18 Şehri İncele ➔' : lang === 'en' ? 'View All 18 Locations ➔' : 'Alle 18 Standorte ansehen ➔'}
+                  {lang === 'tr' ? 'Ücretsiz Analiz Alın ➔' : lang === 'en' ? 'Get Free Analysis ➔' : 'Kostenlose Analyse ➔'}
                 </a>
               </div>
             </div>
@@ -797,7 +786,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
                   </a>
                 </li>
                 <li>
-                  <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="hover:text-white transition-colors">
+                  <a href="/about" className="hover:text-white transition-colors">
                     {lang === 'tr' ? 'Hakkımda & Deneyim' : lang === 'en' ? 'About Salih Maral' : 'Über Salih Maral'}
                   </a>
                 </li>
@@ -807,8 +796,8 @@ export default function BlogPageClient({ initialPosts = [] }) {
                   </a>
                 </li>
                 <li>
-                  <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026" className="hover:text-white transition-colors">
-                    {lang === 'tr' ? 'Google Ads Maliyet & Fiyatlar' : lang === 'en' ? 'Google Ads Pricing 2026' : 'Google Ads Agentur Preise 2026'}
+                  <a href="/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026" className="hover:text-white transition-colors">
+                    {lang === 'tr' ? 'E-Ticaret Dönüşüm Rehberi' : lang === 'en' ? 'E-Commerce Conversion Guide' : 'E-Commerce Leitfaden'}
                   </a>
                 </li>
                 <li>
@@ -839,9 +828,9 @@ export default function BlogPageClient({ initialPosts = [] }) {
               &copy; 2026 Salih Maral &mdash; Offizieller Google Partner. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
             </div>
             <div className="flex items-center gap-4 text-[11px]">
-              <span>Frankfurt am Main &bull; Dreieich &bull; Deutschland</span>
+              <span>İstanbul &bull; Türkiye &bull; Global Remote</span>
               <span>&bull;</span>
-              <span className="text-slate-400">100% DSGVO-konform</span>
+              <span className="text-slate-400">100% DSGVO / KVKK-konform</span>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026"
 lang: "tr"
 title: "Klinikler ve Doktorlar İçin Google Ads Rehberi: 2026'da Hasta Kazanma Yolları"
@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&
 ---
 
 <div class="lead">
-<p><strong>Doğrudan Cevap:</strong> Sağlık sektöründe (özel klinikler, diş hekimliği, estetik cerrahi, göz merkezleri ve sağlık turizmi) hasta kazanmanın temeli <strong>"güven ve anlık arama niyeti"</strong> üzerine kuruludur. Sağlık arayan bir kullanıcı sosyal medyada rastgele gezinirken değil; tam tedaviye ihtiyaç duyduğu anda Google'a *"en iyi diş implantı kliniği"*, *"Almanya'da saç ekimi"* veya *"lazer göz ameliyatı fiyatları"* yazdığında karşısına çıkmak zorundasınız. <strong>Salih Maral (Resmi Google Partner & 17+ Yıllık Dijital Pazarlama Uzmanı)</strong> olarak, sağlık mevzuatlarına ve Google Sağlık Politikalarına (Healthcare and Medicines Policy) %100 uyumlu, yüksek dönüşümlü arama ağı reklamları ve Google Haritalar (Local SEO) optimizasyonları ile kliniklerin hasta randevu kapasitelerini dolduruyoruz.</p>
+<p><strong>Doğrudan Cevap:</strong> Sağlık sektöründe (özel klinikler, diş hekimliği, estetik cerrahi, göz merkezleri ve sağlık turizmi) hasta kazanmanın temeli <strong>"güven ve anlık arama niyeti"</strong> üzerine kuruludur. Sağlık arayan bir kullanıcı sosyal medyada rastgele gezinirken değil; tam tedaviye ihtiyaç duyduğu anda Google'a *"en iyi diş implantı kliniği"*, *"İstanbul saç ekimi"* veya *"lazer göz ameliyatı fiyatları"* yazdığında karşısına çıkmak zorundasınız. <strong>Salih Maral (Resmi Google Partner & 17+ Yıllık Dijital Pazarlama Uzmanı)</strong> olarak, sağlık mevzuatlarına ve Google Sağlık Politikalarına (Healthcare and Medicines Policy) %100 uyumlu, yüksek dönüşümlü arama ağı reklamları ve Google Haritalar (Local SEO) optimizasyonları ile kliniklerin hasta randevu kapasitelerini dolduruyoruz.</p>
 </div>
 
 <h2>🏥 Sağlık Sektöründe Google Ads Neden Diğer Tüm Kanallardan Daha Etkilidir?</h2>
@@ -68,7 +68,7 @@ coverImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&
 <p>Ziyaretçinin güvenini ilk 3 saniyede kazanacak hekim özgeçmişi, sertifikalar, Google 5 yıldızlı hasta yorumları ve anında randevu butonları içeren mobil uyumlu sayfalar.</p>
 
 <h3>4. Sağlık Turizmi ve Yurtdışı Hasta Kampanyaları</h3>
-<p>Avrupa'dan (Almanya, İngiltere, Hollanda) hasta çekmek isteyen klinikler için hedef ülkelerin dillerinde çok dilli arama ve video reklamları.</p>
+<p>Yurt dışından (Avrupa, Körfez ve Orta Doğu) döviz getirici hasta çekmek isteyen klinikler için hedef ülkelerin dillerinde çok dilli arama ve video reklamları.</p>
 
 <h2>❓ Sıkça Sorulan Sorular (FAQ)</h2>
 
@@ -81,5 +81,5 @@ coverImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&
 <div class="cta-box" style="background: #0f172a; border: 2px solid #0284c7; border-radius: 1.5rem; padding: 2.5rem; margin-top: 2.5rem; text-align: center; color: white;">
   <h3 style="font-size: 1.6rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">Kliniğinizin Randevu Kapasitesini Birlikte Dolduralım</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.5rem auto;">Resmi Google Partneri güvencesiyle sağlık merkezinizi bölgenizin en çok tercih edilen kliniği yapın.</p>
-  <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #0284c7; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.5);">Ücretsiz Klinik Google Ads & SEO Analizi Alın ➔</a>
+  <a href="https://www.salihmaral.com/#contact" style="display: inline-block; background: #0284c7; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.5);">Ücretsiz Klinik Google Ads & SEO Analizi Alın ➔</a>
 </div>

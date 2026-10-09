@@ -51,7 +51,6 @@ export const metadata = {
     languages: {
       'tr': 'https://www.salihmaral.com',
       'en': 'https://www.salihmaral.com/en',
-      'de': 'https://salihmaral.de',
       'x-default': 'https://www.salihmaral.com'
     }
   },
@@ -179,7 +178,7 @@ const jsonLd = {
       url: 'https://www.salihmaral.com',
       email: 'info@salihmaral.com',
       image: 'https://www.salihmaral.com/logo.png',
-      priceRange: '₺₺ / €€',
+      priceRange: '₺₺ / ₺₺₺',
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: '5.0',
@@ -189,15 +188,13 @@ const jsonLd = {
       },
       areaServed: [
         { '@type': 'Country', name: 'Turkey' },
-        { '@type': 'Country', name: 'Germany' },
         { '@type': 'Country', name: 'United Kingdom' },
-        { '@type': 'Country', name: 'United States' },
-        { '@type': 'Country', name: 'Europe' }
+        { '@type': 'Country', name: 'United States' }
       ],
       serviceType: [
         'Google Ads Yönetimi',
         'Meta Ads Yönetimi',
-        'E-İhracat ve Küresel Reklam Danışmanlığı',
+        'E-Ticaret ve Büyüme Pazarlaması',
         'SEO Danışmanlığı',
         'Server-Side Tracking (sGTM & CAPI)',
         'Yapay Zeka Destekli Arama Optimizasyonu (GEO)'
@@ -225,10 +222,10 @@ const jsonLd = {
         },
         {
           '@type': 'Question',
-          name: 'Türkiye\'den Avrupa ve Almanya pazarına e-ihracat reklamları nasıl kurgulanır?',
+          name: 'E-ticaret ve işletmeler için reklam ve büyüme stratejisi nasıl kurgulanır?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Hedef ülkenin yerel arama alışkanlıkları, dil incelikleri, euro bazlı CPC maliyetleri ve satın alma psikolojisine uygun Google Shopping, Search ve Meta Ads kampanyaları sıfırdan profesyonelce kurulur.'
+            text: 'Hedef kitlenizin arama alışkanlıkları, sektörel CPC ve dönüşüm maliyetleri ile satın alma psikolojisine uygun Google Alışveriş, Arama Ağı ve Meta Ads kampanyaları veri odaklı kurgulanır.'
           }
         },
         {

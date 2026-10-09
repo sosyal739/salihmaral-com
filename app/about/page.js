@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { ArrowLeft, Award, BarChart3, Globe, Users, Target, TrendingUp, CheckCircle, Mail, Menu, X, ChevronDown, MapPin, ArrowUpRight } from 'lucide-react'
+import { ArrowLeft, Award, BarChart3, Globe, Users, Target, TrendingUp, CheckCircle, Mail, Menu, X, ChevronDown, MapPin, ArrowUpRight, Sparkles } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 
@@ -54,7 +54,7 @@ const translations = {
     badge: 'Google Partner Agentur',
     title: 'Über uns',
     subtitle: 'Ihr Partner für digitales Wachstum',
-    intro: 'Salih Maral ist Digital-Marketing-Spezialist und offizieller Google Partner mit Sitz in Dreieich bei Frankfurt am Main. Seit 2009, also mehr als 17 Jahre, betreut er Google Ads, Meta Ads, YouTube Ads und SEO für Unternehmen in Deutschland, Europa und der Türkei. Der Maßstab ist nicht der Klick, sondern die Anfrage, der Termin oder der Kauf.',
+    intro: 'Salih Maral ist Digital-Marketing-Spezialist und offizieller Google Partner. Seit 2009, also mehr als 17 Jahre, betreut er Google Ads, Meta Ads, YouTube Ads und SEO für E-Commerce und ambitionierte Unternehmen. Der Maßstab ist nicht der Klick, sondern die Anfrage, der Termin oder der messbare Verkauf.',
     mission: {
       title: 'Unsere Mission',
       text: 'Wir helfen Unternehmen jeder Größe, im digitalen Zeitalter erfolgreich zu sein. Unser datengetriebener Ansatz und unsere tiefe Expertise in Google Ads, Meta Ads und SEO ermöglichen es uns, maßgeschneiderte Strategien zu entwickeln, die echte Ergebnisse liefern — nicht nur Klicks, sondern zahlende Kunden.'
@@ -63,9 +63,9 @@ const translations = {
       title: 'Wer wir sind',
       items: [
         { title: 'Zertifizierter Google Partner', desc: 'Offiziell von Google als Partner-Agentur anerkannt. Wir erfüllen die strengen Anforderungen von Google an Kompetenz, Leistung und Kundenzufriedenheit.' },
-        { title: '17+ Jahre Erfahrung', desc: 'Seit 2009 im Performance Marketing. Kampagnen für Mittelstand, Kliniken, E-Commerce, Kanzleien und Künstler, auf Deutsch, Türkisch und Englisch.' },
-        { title: '300+ Marken betreut', desc: 'Mehr als 300 Unternehmen und Marken haben uns ihr digitales Wachstum anvertraut — von lokalen KMUs bis zu internationalen Unternehmen.' },
-        { title: 'Standort Deutschland', desc: 'Mit Sitz in Dreieich bei Frankfurt am Main betreuen wir Kunden in ganz Deutschland, Europa und der Türkei.' }
+        { title: '17+ Jahre Erfahrung', desc: 'Seit 2009 im Performance Marketing. Kampagnen für E-Commerce, Dienstleister, Kliniken und B2B, auf Deutsch, Türkisch und Englisch.' },
+        { title: '300+ Marken betreut', desc: 'Mehr als 300 Unternehmen und Marken haben uns ihr digitales Wachstum anvertraut — von Start-ups bis zu internationalen Unternehmen.' },
+        { title: 'Transparenter Festpreis', desc: 'Feste monatliche Betreuungspauschalen ohne prozentuale Budgetprovisionen — 100% ROI-Fokus.' }
       ]
     },
     services: {
@@ -90,7 +90,7 @@ const translations = {
     process: {
       title: 'So läuft die Zusammenarbeit',
       steps: [
-        { title: 'Konto und Gebiet', desc: 'Wir lesen das bestehende Konto, die Suchbegriffe und das echte Einzugsgebiet. Städte wie Frankfurt, Köln oder Stuttgart werden nicht als ein Radius behandelt.' },
+        { title: 'Konto und Zielgruppen', desc: 'Wir analysieren bestehende Kontodaten, Suchbegriffe und Kaufintentionen präzise nach Branchenanforderungen.' },
         { title: 'Messung', desc: 'Anrufe, Formulare und Käufe werden serverseitig erfasst. Ohne diese Zahlen wird kein Budget erhöht.' },
         { title: 'Festpreis', desc: 'Die Betreuung kostet einen monatlichen Festpreis. Sie steigt nicht, wenn das Werbebudget steigt.' },
         { title: 'Bericht nach 30 Tagen', desc: 'Sie sehen Suchbegriffe, Ausschlüsse, Kosten pro Anfrage und das Gebiet. Was keine Anfrage bringt, wird gestrichen.' }
@@ -117,46 +117,46 @@ const translations = {
     badge: 'Google Partner Ajans',
     title: 'Hakkımızda',
     subtitle: 'Dijital büyümenizde güvenilir partneriniz',
-    intro: 'Salih Maral, Frankfurt am Main yakınındaki Dreieich’te çalışan bir dijital pazarlama uzmanı ve resmi Google Partneridir. 2009’dan beri, yani 17 yılı aşkın süredir, Almanya, Avrupa ve Türkiye’deki işletmeler için Google Ads, Meta Ads, YouTube Ads ve SEO yönetir. Ölçüt tıklama değil; talep, randevu veya satıştır.',
+    intro: 'Salih Maral, dijital pazarlama uzmanı ve resmi Google Partneridir. 2009’dan beri, yani 17 yılı aşkın süredir, e-ticaret markaları, KOBİ\'ler ve kurumsal işletmeler için Google Ads, Meta Ads, YouTube Ads ve SEO yönetir. Ölçüt tıklama değil; gerçek talep, randevu ve kârlı satıştır.',
     mission: {
       title: 'Misyonumuz',
-      text: 'Her büyüklükteki işletmenin dijital çağda başarılı olmasına yardımcı oluyoruz. Veri odaklı yaklaşımımız ve Google Ads, Meta Ads ve SEO\'daki derin uzmanlığımız, gerçek sonuçlar sunan özelleştirilmiş stratejiler geliştirmemizi sağlıyor — sadece tıklama değil, ödeme yapan müşteriler.'
+      text: 'Her büyüklükteki işletmenin dijital çağda kârlı büyümesine yardımcı oluyoruz. Veri odaklı yaklaşımımız ve Google Ads, Meta Ads ve SEO\'daki derin uzmanlığımız, gerçek sonuçlar sunan özelleştirilmiş stratejiler geliştirmemizi sağlıyor — sadece tıklama değil, ödeme yapan sadık müşteriler.'
     },
     identity: {
       title: 'Biz Kimiz',
       items: [
-        { title: 'Sertifikalı Google Partner', desc: 'Google tarafından resmi olarak Partner Ajans olarak tanınmaktayız. Yetkinlik, performans ve müşteri memnuniyeti konusunda Google\'ın katı gereksinimlerini karşılıyoruz.' },
-        { title: '17+ Yıl Deneyim', desc: '2009’dan beri performans pazarlaması. KOBİ, klinik, e-ticaret, hukuk bürosu ve sanatçılar için Almanca, Türkçe ve İngilizce kampanyalar.' },
+        { title: 'Sertifikalı Google Partner', desc: 'Google tarafından resmi olarak Partner Ajans olarak tanınmaktayız. Yetkinlik, performans ve müşteri memnuniyeti konusunda Google\'ın en yüksek gereksinimlerini karşılıyoruz.' },
+        { title: '17+ Yıl Deneyim', desc: '2009’dan beri performans pazarlaması. E-ticaret, sağlık, hukuk büroları, B2B ve ihracat markaları için Türkçe ve İngilizce yüksek performanslı kampanyalar.' },
         { title: '300+ Marka', desc: '300\'den fazla işletme ve marka dijital büyümelerini bize emanet etti — yerel KOBİ\'lerden uluslararası şirketlere kadar.' },
-        { title: 'Almanya Merkezli', desc: 'Frankfurt am Main yakınlarında Dreieich\'te bulunan ofisimizden Almanya, Avrupa ve Türkiye genelinde müşterilere hizmet veriyoruz.' }
+        { title: 'Şeffaf ve Komisyonsuz', desc: 'Reklam harcamanızdan komisyon almayan, sabit aylık paketlerle çalışan ve tamamen kârlılık odaklı modern ajans modeli.' }
       ]
     },
     services: {
       title: 'Ne Yapıyoruz',
       items: [
-        'Google Ads Yönetimi (Arama, Display, Shopping, YouTube)',
+        'Google Ads Yönetimi (Arama, Alışveriş, PMax, YouTube)',
         'Meta Ads Yönetimi (Facebook & Instagram)',
         'TikTok & X (Twitter) Reklamları',
-        'Arama Motoru Optimizasyonu (SEO)',
-        'Google Yorum Yönetimi',
-        'Dönüşüm Optimizasyonu & Web Analizi'
+        'Arama Motoru Optimizasyonu (SEO & GEO)',
+        'Google Yorum Yönetimi & İtibar Savunması',
+        'Server-Side Tracking (sGTM & Meta CAPI)'
       ]
     },
     values: {
       title: 'Değerlerimiz',
       items: [
-        { title: 'Şeffaflık', desc: 'Net, dürüst iletişim ve detaylı raporlar — bütçenizin nereye gittiğini her zaman bilirsiniz.' },
-        { title: 'Sonuç Odaklılık', desc: 'Başarıyı tıklamalarla değil, ciro ve ROI ile ölçüyoruz. Her strateji ölçülebilir iş sonuçlarına yöneliktir.' },
-        { title: 'Ortaklık', desc: 'Müşterilerimizi partner olarak görüyoruz. Başarınız bizim başarımızdır — bu yüzden sınırlı sayıda müşteri kabul ediyoruz.' }
+        { title: 'Şeffaflık', desc: 'Net, dürüst iletişim ve detaylı canlı raporlar — bütçenizin nereye gittiğini her an kendi panelinizden görürsünüz.' },
+        { title: 'Sonuç Odaklılık', desc: 'Başarıyı boş tıklamalarla değil, net kârlılık ve ROAS ile ölçüyoruz. Her strateji ölçülebilir iş sonuçlarına yöneliktir.' },
+        { title: 'Ortaklık', desc: 'Müşterilerimizi iş ortağı olarak görüyoruz. Başarınız bizim başarımızdır — bu yüzden sınırlı sayıda seçkin marka kabul ediyoruz.' }
       ]
     },
     process: {
       title: 'Çalışma nasıl yürür',
       steps: [
-        { title: 'Hesap ve bölge', desc: 'Mevcut hesabı, arama terimlerini ve gerçek hizmet alanını okuruz. Frankfurt, Köln veya Stuttgart tek bir yarıçap olarak ele alınmaz.' },
-        { title: 'Ölçüm', desc: 'Aramalar, formlar ve satışlar sunucu tarafında kaydedilir. Bu sayılar olmadan bütçe artmaz.' },
-        { title: 'Sabit ücret', desc: 'Yönetim aylık sabit ücrettir. Reklam bütçesi arttıkça yükselmez.' },
-        { title: '30 gün sonra rapor', desc: 'Arama terimlerini, kapatılan terimleri, talep başına maliyeti ve bölgeyi görürsünüz. Talep getirmeyen terim silinir.' }
+        { title: 'Hesap ve hedef kitle', desc: 'Mevcut reklam hesabını, arama terimlerini ve gerçek satın alma niyetlerini derinlemesine analiz ederiz.' },
+        { title: 'Ölçüm', desc: 'Aramalar, formlar ve satışlar sunucu tarafında (Server-Side) kaydedilir. Bu sayılar doğrulanmadan bütçe artırılmaz.' },
+        { title: 'Sabit ücret', desc: 'Yönetim aylık sabit ücrettir. Reklam bütçeniz arttıkça ajans komisyonu artmaz.' },
+        { title: '30 gün sonra rapor', desc: 'Arama terimlerini, engellenen gereksiz tıklamaları ve müşteri başına maliyeti şeffafça görürsünüz.' }
       ]
     },
     cta: {
@@ -180,7 +180,7 @@ const translations = {
     badge: 'Google Partner Agency',
     title: 'About Us',
     subtitle: 'Your trusted partner for digital growth',
-    intro: 'Salih Maral is a digital marketing specialist and official Google Partner based in Dreieich, near Frankfurt am Main. Since 2009, more than 17 years, he has run Google Ads, Meta Ads, YouTube Ads and SEO for businesses in Germany, Europe and Turkey. The measure is not the click. It is the enquiry, the appointment or the sale.',
+    intro: 'Salih Maral is a digital marketing specialist and official Google Partner. Since 2009, more than 17 years, he has run Google Ads, Meta Ads, YouTube Ads and SEO for e-commerce brands and growth-oriented businesses. The measure is not the click. It is the enquiry, the qualified appointment, or the profitable sale.',
     mission: {
       title: 'Our Mission',
       text: 'We help businesses of all sizes succeed in the digital age. Our data-driven approach and deep expertise in Google Ads, Meta Ads, and SEO allow us to develop customized strategies that deliver real results — not just clicks, but paying customers.'
@@ -189,9 +189,9 @@ const translations = {
       title: 'Who We Are',
       items: [
         { title: 'Certified Google Partner', desc: 'Officially recognized by Google as a Partner Agency. We meet Google\'s strict requirements for competence, performance, and customer satisfaction.' },
-        { title: '17+ Years Experience', desc: 'In performance marketing since 2009. Campaigns for mid-sized firms, clinics, e-commerce, law practices and artists, in German, Turkish and English.' },
-        { title: '300+ Brands Served', desc: 'More than 300 businesses and brands have entrusted us with their digital growth — from local SMEs to international companies.' },
-        { title: 'Based in Germany', desc: 'Located in Dreieich near Frankfurt am Main, we serve clients across Germany, Europe, and Turkey.' }
+        { title: '17+ Years Experience', desc: 'In performance marketing since 2009. Campaigns for e-commerce, healthcare, B2B, and professional services in Turkish, English, and German.' },
+        { title: '300+ Brands Served', desc: 'More than 300 businesses and brands have entrusted us with their digital growth — from start-ups to international enterprises.' },
+        { title: 'Transparent Flat Fee', desc: 'Monthly flat-fee management with zero commission on ad spend — 100% aligned with your profitability.' }
       ]
     },
     services: {
@@ -200,9 +200,9 @@ const translations = {
         'Google Ads Management (Search, Display, Shopping, YouTube)',
         'Meta Ads Management (Facebook & Instagram)',
         'TikTok & X (Twitter) Advertising',
-        'Search Engine Optimization (SEO)',
-        'Google Review Management',
-        'Conversion Optimization & Web Analytics'
+        'Search Engine Optimization (SEO & GEO)',
+        'Google Review Management & Reputation',
+        'Server-Side Tracking (sGTM & Meta CAPI)'
       ]
     },
     values: {
@@ -216,10 +216,10 @@ const translations = {
     process: {
       title: 'How the work runs',
       steps: [
-        { title: 'Account and area', desc: 'We read the current account, the search terms and the real service area. Cities such as Frankfurt, Cologne or Stuttgart are not treated as one radius.' },
-        { title: 'Measurement', desc: 'Calls, forms and purchases are recorded server-side. The budget does not rise without those numbers.' },
-        { title: 'Flat fee', desc: 'Management is a monthly flat fee. It does not rise when the ad budget rises.' },
-        { title: 'Report after 30 days', desc: 'You see search terms, exclusions, cost per enquiry and the area. Terms that bring no enquiry are removed.' }
+        { title: 'Account and audience', desc: 'We audit your existing ad accounts, search queries, and purchase funnels to identify profit leaks.' },
+        { title: 'Measurement', desc: 'Calls, forms and purchases are recorded server-side. The budget does not rise without verified data.' },
+        { title: 'Flat fee', desc: 'Management is a monthly flat fee. It does not rise when your media budget rises.' },
+        { title: 'Report after 30 days', desc: 'You see search terms, exclusions, cost per enquiry and return on ad spend with full clarity.' }
       ]
     },
     cta: {
@@ -527,9 +527,11 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="text-center mt-8 text-sm text-gray-500">
-            <a href="/de/standorte" className="text-[#4285F4] font-semibold hover:underline">{lang === 'tr' ? 'Almanya şehirleri' : lang === 'en' ? 'Cities in Germany' : 'Städte in Deutschland'}</a>
-            {' · '}
             <a href={lang === 'tr' ? '/tr/hizmetler/google-ads' : lang === 'en' ? '/en/services/google-ads' : '/de/dienstleistungen/google-ads'} className="text-[#4285F4] font-semibold hover:underline">Google Ads</a>
+            {' · '}
+            <a href={lang === 'tr' ? '/tr/hizmetler/meta-ads' : lang === 'en' ? '/en/services/meta-ads' : '/de/dienstleistungen/meta-ads'} className="text-[#4285F4] font-semibold hover:underline">Meta Ads</a>
+            {' · '}
+            <a href={lang === 'tr' ? '/tr/hizmetler/seo' : lang === 'en' ? '/en/services/seo' : '/de/dienstleistungen/seo'} className="text-[#4285F4] font-semibold hover:underline">SEO & GEO</a>
           </p>
         </div>
       </section>
@@ -571,55 +573,49 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Regional German Metropolises & Standorte Hub Cross-Link */}
+      {/* Performance Solutions Cross-Link */}
       <section className="py-16 px-4 bg-slate-50 border-t border-slate-200/70">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-bold text-blue-700 mb-3">
-              <MapPin className="w-3.5 h-3.5" />
-              <span>{lang === 'tr' ? 'Almanya Çapında Hizmet Ağı' : lang === 'en' ? 'Nationwide Coverage Across Germany' : 'Deutschlandweite Betreuung'}</span>
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>{lang === 'tr' ? 'Büyüme & Performans Çözümleri' : lang === 'en' ? 'Growth & Performance Solutions' : 'Wachstums- und Performance-Lösungen'}</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">
               {lang === 'tr'
-                ? "Almanya'nın 18 Metropolünde Performans Pazarlaması"
+                ? "Ölçülebilir & Kârlı Dijital Pazarlama Kanalları"
                 : lang === 'en'
-                ? "Performance Marketing Across Germany's 18 Metropolises"
-                : "Performance Marketing in den Top-Metropolen Deutschlands"}
+                ? "Measurable & Profitable Digital Marketing Channels"
+                : "Planbare & profitable Performance-Marketing Kanäle"}
             </h2>
             <p className="text-sm md:text-base text-gray-600">
               {lang === 'tr'
-                ? 'Dreieich / Frankfurt merkezli ajansımız, Almanya genelindeki işletmelere Google Ads, Meta Ads ve SEO ile ölçülebilir müşteri kazanımı sağlar.'
+                ? 'İşletmenizin ciro ve kârlılığını artırmak için test edilmiş, komisyonsuz ve şeffaf büyüme sistemleri.'
                 : lang === 'en'
-                ? 'Based in Dreieich near Frankfurt, we provide measurable customer acquisition via Google Ads, Meta Ads and SEO for businesses across Germany.'
-                : 'Von unserem Standort bei Frankfurt betreuen wir Unternehmen und Mittelständler in allen deutschen Metropolregionen mit transparenten Performance-Strategien.'}
+                ? 'Battle-tested, commission-free, and transparent growth systems engineered to maximize your ROI.'
+                : 'Erprobte, transparente Marketingsysteme zur Maximierung Ihres ROI ohne versteckte Provisionen.'}
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-8">
             {[
-              { name: 'Frankfurt am Main', slug: 'frankfurt' },
-              { name: 'München', slug: 'muenchen' },
-              { name: 'Düsseldorf', slug: 'duesseldorf' },
-              { name: 'Köln', slug: 'koeln' },
-              { name: 'Berlin', slug: 'berlin' },
-              { name: 'Hamburg', slug: 'hamburg' },
-              { name: 'Stuttgart', slug: 'stuttgart' },
-              { name: 'Nürnberg', slug: 'nuernberg' },
-              { name: 'Dortmund', slug: 'dortmund' },
-              { name: 'Bonn', slug: 'bonn' },
-              { name: 'Hannover', slug: 'hannover' },
-              { name: 'Leipzig', slug: 'leipzig' }
-            ].map((city) => (
+              { name: 'Google Ads', slug: 'google-ads', tag: 'Arama & Shopping' },
+              { name: 'Meta Ads', slug: 'meta-ads', tag: 'Advantage+ & CAPI' },
+              { name: 'Server-Side Tracking', slug: 'server-side-tracking', tag: 'sGTM & First-Party' },
+              { name: 'SEO & GEO', slug: 'seo', tag: 'Yapay Zeka & Harita' },
+              { name: 'TikTok Ads', slug: 'tiktok-ads', tag: 'Spark Ads & UGC' },
+              { name: 'Yorum Yönetimi', slug: 'yorum-yonetimi', tag: 'İtibar & Koruma' }
+            ].map((sol) => (
               <a
-                key={city.slug}
-                href={`/${lang}/standorte/${city.slug}`}
+                key={sol.slug}
+                href={getLocalizedServiceUrl(lang, sol.slug)}
                 className="p-3 bg-white rounded-xl border border-gray-200/80 hover:border-[#4285F4] hover:shadow-md transition-all text-center group"
               >
                 <div className="text-xs font-bold text-gray-900 group-hover:text-[#4285F4] transition-colors">
-                  {city.name}
+                  {sol.name}
                 </div>
                 <div className="text-[10px] text-gray-400 mt-0.5">
-                  {lang === 'tr' ? 'Bölgesel Ajans' : lang === 'en' ? 'Regional Agency' : 'Regionale Betreuung'}
+                  {sol.tag}
                 </div>
               </a>
             ))}
@@ -627,10 +623,10 @@ export default function AboutPage() {
 
           <div className="text-center">
             <a
-              href={`/${lang}/standorte`}
+              href={lang === 'de' ? '/#contact' : `/${lang}#contact`}
               className="inline-flex items-center gap-2 text-sm font-bold text-[#4285F4] hover:text-blue-700 bg-white border border-blue-200 px-5 py-2.5 rounded-xl shadow-xs hover:shadow transition-all"
             >
-              <span>{lang === 'tr' ? 'Tüm 18 Şehir ve Bölge Rehberini Gör' : lang === 'en' ? 'Explore All 18 German Locations' : 'Alle 18 Standorte in Deutschland entdecken'}</span>
+              <span>{lang === 'tr' ? 'Hemen Ücretsiz Strateji Görüşmesi Planlayın' : lang === 'en' ? 'Schedule a Free Strategy Call' : 'Kostenloses Strategiegespräch vereinbaren'}</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
@@ -650,23 +646,23 @@ export default function AboutPage() {
               </a>
               <p className="text-xs text-slate-400 leading-relaxed">
                 {lang === 'tr'
-                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Almanya ve Avrupa genelinde Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
+                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
                   : lang === 'en'
-                  ? 'Official Google Partner Salih Maral delivers scalable revenue growth across Germany & Europe through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
-                  : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum in Deutschland und Europa durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}
+                  ? 'Official Google Partner Salih Maral delivers scalable revenue growth across global markets through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
+                  : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}
               </p>
 
-              {/* Turkish Entrepreneur Badge */}
+              {/* Partner Badge */}
               <div className="p-3 rounded-xl bg-blue-950/40 border border-blue-800/50 text-[11px] text-blue-200">
                 <div className="font-bold text-white flex items-center gap-1.5 mb-1">
-                  <span>🇩🇪 🇹🇷</span>
-                  <span>Sprechen Sie Türkisch?</span>
+                  <span>⭐</span>
+                  <span>{lang === 'tr' ? 'Resmi Google Partner Güvencesi' : lang === 'en' ? 'Official Google Partner' : 'Zertifizierter Google Partner'}</span>
                 </div>
-                <div>Bizimle Türkçe görüşebilirsiniz. Almanya'daki Türk işletmelerine ve ihracatçılara ana dilde stratejik danışmanlık sunuyoruz.</div>
+                <div>{lang === 'tr' ? 'E-ticaret ve işletmeler için şeffaf, komisyonsuz ve sabit ücretli büyüme danışmanlığı.' : lang === 'en' ? 'Transparent flat-fee growth consulting for e-commerce and scaling brands.' : 'Transparente Festpreis-Betreuung für E-Commerce und wachsende Unternehmen.'}</div>
               </div>
 
               <div className="text-xs text-slate-400 space-y-1.5 pt-1">
-                <div>Dreieich / Frankfurt am Main &bull; Deutschland</div>
+                <div>İstanbul / Türkiye &bull; Remote &amp; Global</div>
                 <div>
                   <a href="mailto:info@salihmaral.com" className="hover:text-blue-400 transition-colors">
                     ✉️ info@salihmaral.com
@@ -694,29 +690,23 @@ export default function AboutPage() {
               </ul>
             </div>
 
-            {/* Col 3: German Cities */}
+            {/* Col 3: Strategic Focus Areas */}
             <div>
               <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                {lang === 'tr' ? 'Almanya Şehirleri' : lang === 'en' ? 'Locations in Germany' : 'Standorte Deutschland'}
+                {lang === 'tr' ? 'Büyüme Alanları' : lang === 'en' ? 'Strategic Growth' : 'Strategische Schwerpunkte'}
               </div>
-              <div className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs">
+              <div className="grid grid-cols-1 gap-y-2 text-xs">
                 {[
-                  { name: 'Frankfurt', slug: 'frankfurt' },
-                  { name: 'München', slug: 'muenchen' },
-                  { name: 'Düsseldorf', slug: 'duesseldorf' },
-                  { name: 'Köln', slug: 'koeln' },
-                  { name: 'Berlin', slug: 'berlin' },
-                  { name: 'Hamburg', slug: 'hamburg' },
-                  { name: 'Stuttgart', slug: 'stuttgart' },
-                  { name: 'Nürnberg', slug: 'nuernberg' },
-                  { name: 'Dortmund', slug: 'dortmund' },
-                  { name: 'Bonn', slug: 'bonn' },
-                  { name: 'Hannover', slug: 'hannover' },
-                  { name: 'Leipzig', slug: 'leipzig' }
+                  { name: 'E-Ticaret ROAS Skalalama', slug: 'google-ads' },
+                  { name: 'Meta Advantage+ Reklamları', slug: 'meta-ads' },
+                  { name: 'Server-Side CAPI Tracking', slug: 'server-side-tracking' },
+                  { name: 'Google Haritalar & Yerel SEO', slug: 'seo' },
+                  { name: 'Olumsuz Yorum Temizleme', slug: 'yorum-yonetimi' },
+                  { name: 'TikTok Shop & Spark Ads', slug: 'tiktok-ads' }
                 ].map((c) => (
                   <a
-                    key={c.slug}
-                    href={`/${lang}/standorte/${c.slug}`}
+                    key={c.name}
+                    href={getLocalizedServiceUrl(lang, c.slug)}
                     className="text-slate-400 hover:text-blue-400 transition-colors"
                   >
                     {c.name}
@@ -725,10 +715,10 @@ export default function AboutPage() {
               </div>
               <div className="mt-4 pt-3 border-t border-slate-800">
                 <a
-                  href={`/${lang}/standorte`}
+                  href={lang === 'de' ? '/#contact' : `/${lang}#contact`}
                   className="text-xs font-bold text-blue-400 hover:text-blue-300"
                 >
-                  {lang === 'tr' ? 'Tüm 18 Şehri İncele ➔' : lang === 'en' ? 'View All 18 Locations ➔' : 'Alle 18 Standorte ansehen ➔'}
+                  {lang === 'tr' ? 'Ücretsiz Analiz Alın ➔' : lang === 'en' ? 'Get Free Analysis ➔' : 'Kostenlose Analyse ➔'}
                 </a>
               </div>
             </div>
@@ -755,8 +745,8 @@ export default function AboutPage() {
                   </a>
                 </li>
                 <li>
-                  <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026" className="hover:text-white transition-colors">
-                    {lang === 'tr' ? 'Google Ads Maliyet & Fiyatlar' : lang === 'en' ? 'Google Ads Pricing 2026' : 'Google Ads Agentur Preise 2026'}
+                  <a href="/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026" className="hover:text-white transition-colors">
+                    {lang === 'tr' ? 'E-Ticaret Dönüşüm Rehberi' : lang === 'en' ? 'E-Commerce Conversion Guide' : 'E-Commerce Leitfaden'}
                   </a>
                 </li>
                 <li>
@@ -787,9 +777,9 @@ export default function AboutPage() {
               &copy; 2026 Salih Maral &mdash; Offizieller Google Partner. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
             </div>
             <div className="flex items-center gap-4 text-[11px]">
-              <span>Frankfurt am Main &bull; Dreieich &bull; Deutschland</span>
+              <span>İstanbul &bull; Türkiye &bull; Global Remote</span>
               <span>&bull;</span>
-              <span className="text-slate-400">100% DSGVO-konform</span>
+              <span className="text-slate-400">100% DSGVO / KVKK-konform</span>
             </div>
           </div>
         </div>

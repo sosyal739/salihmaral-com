@@ -466,19 +466,19 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
                 </ul>
               </div>
 
-              {/* Pillar 2: German Metropoles */}
+              {/* Pillar 2: Strategic Growth Solutions */}
               <div className="bg-white p-6 rounded-2xl border border-gray-200/80 shadow-sm">
                 <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-                  <span>{lang === 'de' ? 'Standorte in Deutschland' : lang === 'tr' ? 'Almanya Lokasyonları' : 'Locations in Germany'}</span>
+                  <span>{lang === 'de' ? 'Wachstumslösungen' : lang === 'tr' ? 'Büyüme Stratejileri' : 'Growth Strategies'}</span>
                 </h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li><a href={`/${lang}/standorte/frankfurt`} className="hover:text-[#4285F4] hover:underline">Frankfurt am Main (Hessen)</a></li>
-                  <li><a href={`/${lang}/standorte/muenchen`} className="hover:text-[#4285F4] hover:underline">München (Bayern)</a></li>
-                  <li><a href={`/${lang}/standorte/berlin`} className="hover:text-[#4285F4] hover:underline">Berlin (Hauptstadt)</a></li>
-                  <li><a href={`/${lang}/standorte/koeln`} className="hover:text-[#4285F4] hover:underline">Köln & Bonn (Rheinland)</a></li>
-                  <li><a href={`/${lang}/standorte/duesseldorf`} className="hover:text-[#4285F4] hover:underline">Düsseldorf (NRW)</a></li>
-                  <li><a href={`/${lang}/standorte`} className="text-[#4285F4] font-semibold hover:underline block pt-1">{lang === 'de' ? 'Alle Standorte anzeigen →' : lang === 'tr' ? 'Tüm Şehirleri Gör →' : 'View all locations →'}</a></li>
+                  <li><a href={`/${lang === 'de' ? 'de/dienstleistungen' : lang === 'tr' ? 'tr/hizmetler' : 'en/services'}/google-ads`} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'E-Ticaret ROAS Skalalama' : 'E-Commerce Scaling'}</a></li>
+                  <li><a href={`/${lang === 'de' ? 'de/dienstleistungen' : lang === 'tr' ? 'tr/hizmetler' : 'en/services'}/meta-ads`} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Meta Advantage+ Reklamları' : 'Meta Advantage+ Ads'}</a></li>
+                  <li><a href={`/${lang === 'de' ? 'de/dienstleistungen' : lang === 'tr' ? 'tr/hizmetler' : 'en/services'}/server-side-tracking`} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Server-Side CAPI Takibi' : 'Server-Side CAPI Tracking'}</a></li>
+                  <li><a href={`/${lang === 'de' ? 'de/dienstleistungen' : lang === 'tr' ? 'tr/hizmetler' : 'en/services'}/seo`} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Google Haritalar & Yerel SEO' : 'Local SEO & Maps'}</a></li>
+                  <li><a href={`/${lang === 'de' ? 'de/dienstleistungen' : lang === 'tr' ? 'tr/hizmetler' : 'en/services'}/tiktok-ads`} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'TikTok Shop & Spark Ads' : 'TikTok Shop Ads'}</a></li>
+                  <li><a href="/about" className="text-[#4285F4] font-semibold hover:underline block pt-1">{lang === 'de' ? 'Über Salih Maral →' : lang === 'tr' ? 'Salih Maral Hakkında →' : 'About Salih Maral →'}</a></li>
                 </ul>
               </div>
 
@@ -567,23 +567,23 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
               </a>
               <p className="text-xs text-slate-400 leading-relaxed">
                 {lang === 'tr'
-                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Almanya ve Avrupa genelinde Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
+                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
                   : lang === 'en'
-                  ? 'Official Google Partner Salih Maral delivers scalable revenue growth across Germany & Europe through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
-                  : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum in Deutschland und Europa durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}
+                  ? 'Official Google Partner Salih Maral delivers scalable revenue growth across global markets through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
+                  : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}
               </p>
 
-              {/* Turkish Entrepreneur Badge */}
+              {/* Partner Badge */}
               <div className="p-3 rounded-xl bg-blue-950/40 border border-blue-800/50 text-[11px] text-blue-200">
                 <div className="font-bold text-white flex items-center gap-1.5 mb-1">
-                  <span>🇩🇪 🇹🇷</span>
-                  <span>Sprechen Sie Türkisch?</span>
+                  <span>⭐</span>
+                  <span>{lang === 'tr' ? 'Resmi Google Partner Güvencesi' : lang === 'en' ? 'Official Google Partner' : 'Zertifizierter Google Partner'}</span>
                 </div>
-                <div>Bizimle Türkçe görüşebilirsiniz. Almanya'daki Türk işletmelerine ve ihracatçılara ana dilde stratejik danışmanlık sunuyoruz.</div>
+                <div>{lang === 'tr' ? 'E-ticaret ve işletmeler için şeffaf, komisyonsuz ve sabit ücretli büyüme danışmanlığı.' : lang === 'en' ? 'Transparent flat-fee growth consulting for e-commerce and scaling brands.' : 'Transparente Festpreis-Betreuung für E-Commerce und wachsende Unternehmen.'}</div>
               </div>
 
               <div className="text-xs text-slate-400 space-y-1.5 pt-1">
-                <div>Dreieich / Frankfurt am Main &bull; Deutschland</div>
+                <div>İstanbul / Türkiye &bull; Remote &amp; Global</div>
                 <div>
                   <a href="mailto:info@salihmaral.com" className="hover:text-blue-400 transition-colors">
                     ✉️ info@salihmaral.com
@@ -611,29 +611,23 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
               </ul>
             </div>
 
-            {/* Col 3: German Cities */}
+            {/* Col 3: Strategic Growth Areas */}
             <div>
               <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                {lang === 'tr' ? 'Almanya Şehirleri' : lang === 'en' ? 'Locations in Germany' : 'Standorte Deutschland'}
+                {lang === 'tr' ? 'Büyüme Alanları' : lang === 'en' ? 'Strategic Growth' : 'Strategische Schwerpunkte'}
               </div>
-              <div className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs">
+              <div className="grid grid-cols-1 gap-y-2 text-xs">
                 {[
-                  { name: 'Frankfurt', slug: 'frankfurt' },
-                  { name: 'München', slug: 'muenchen' },
-                  { name: 'Düsseldorf', slug: 'duesseldorf' },
-                  { name: 'Köln', slug: 'koeln' },
-                  { name: 'Berlin', slug: 'berlin' },
-                  { name: 'Hamburg', slug: 'hamburg' },
-                  { name: 'Stuttgart', slug: 'stuttgart' },
-                  { name: 'Nürnberg', slug: 'nuernberg' },
-                  { name: 'Dortmund', slug: 'dortmund' },
-                  { name: 'Bonn', slug: 'bonn' },
-                  { name: 'Hannover', slug: 'hannover' },
-                  { name: 'Leipzig', slug: 'leipzig' }
+                  { name: 'E-Ticaret ROAS Skalalama', slug: 'google-ads' },
+                  { name: 'Meta Advantage+ Reklamları', slug: 'meta-ads' },
+                  { name: 'Server-Side CAPI Tracking', slug: 'server-side-tracking' },
+                  { name: 'Google Haritalar & Yerel SEO', slug: 'seo' },
+                  { name: 'Olumsuz Yorum Temizleme', slug: 'bewertungsmanagement' },
+                  { name: 'TikTok Shop & Spark Ads', slug: 'tiktok-ads' }
                 ].map((c) => (
                   <a
-                    key={c.slug}
-                    href={`/${lang}/standorte/${c.slug}`}
+                    key={c.name}
+                    href={getLocalizedServiceUrl(lang, c.slug)}
                     className="text-slate-400 hover:text-blue-400 transition-colors"
                   >
                     {c.name}
@@ -642,10 +636,10 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
               </div>
               <div className="mt-4 pt-3 border-t border-slate-800">
                 <a
-                  href={`/${lang}/standorte`}
+                  href={lang === 'de' ? '/#contact' : `/${lang}#contact`}
                   className="text-xs font-bold text-blue-400 hover:text-blue-300"
                 >
-                  {lang === 'tr' ? 'Tüm 18 Şehri İncele ➔' : lang === 'en' ? 'View All 18 Locations ➔' : 'Alle 18 Standorte ansehen ➔'}
+                  {lang === 'tr' ? 'Ücretsiz Analiz Alın ➔' : lang === 'en' ? 'Get Free Analysis ➔' : 'Kostenlose Analyse ➔'}
                 </a>
               </div>
             </div>
@@ -662,7 +656,7 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
                   </a>
                 </li>
                 <li>
-                  <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="hover:text-white transition-colors">
+                  <a href="/about" className="hover:text-white transition-colors">
                     {lang === 'tr' ? 'Hakkımda & Deneyim' : lang === 'en' ? 'About Salih Maral' : 'Über Salih Maral'}
                   </a>
                 </li>
@@ -672,8 +666,8 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
                   </a>
                 </li>
                 <li>
-                  <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026" className="hover:text-white transition-colors">
-                    {lang === 'tr' ? 'Google Ads Maliyet & Fiyatlar' : lang === 'en' ? 'Google Ads Pricing 2026' : 'Google Ads Agentur Preise 2026'}
+                  <a href="/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026" className="hover:text-white transition-colors">
+                    {lang === 'tr' ? 'E-Ticaret Dönüşüm Rehberi' : lang === 'en' ? 'E-Commerce Conversion Guide' : 'E-Commerce Leitfaden'}
                   </a>
                 </li>
                 <li>
@@ -704,9 +698,9 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
               &copy; 2026 Salih Maral &mdash; Offizieller Google Partner. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
             </div>
             <div className="flex items-center gap-4 text-[11px]">
-              <span>Frankfurt am Main &bull; Dreieich &bull; Deutschland</span>
+              <span>İstanbul &bull; Türkiye &bull; Global Remote</span>
               <span>&bull;</span>
-              <span className="text-slate-400">100% DSGVO-konform</span>
+              <span className="text-slate-400">100% DSGVO / KVKK-konform</span>
             </div>
           </div>
         </div>

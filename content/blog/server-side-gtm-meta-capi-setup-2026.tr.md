@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "server-side-gtm-meta-capi-setup-2026"
 lang: "tr"
 title: "Server-Side GTM ve Meta CAPI Kurulumu Nasıl Yapılır? (Adım Adım)"
@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
 ---
 
 <div class="lead">
-<p><strong>Doğrudan Cevap:</strong> Server-Side Tracking (Sunucu Taraflı Takip); Google Tag Manager (sGTM) ve Meta Dönüşümler API'si (CAPI) aracılığıyla reklam hesaplarında kaybolan %30'luk dönüşüm verisini geri kazanmanın en gelişmiş teknolojik standardıdır. Tarayıcı kısıtlamaları (Safari ITP, Brave), reklam engelleyiciler (Ad-Blocker) ve çerez onay duvarları nedeniyle klasik tarayıcı pikselleri gerçekleşen her 3 satıştan 1'ini kaydedememektedir. <strong>Salih Maral (Almanya ve Avrupa Odaklı Server-Side Tracking & Performans Pazarlama Uzmanı)</strong> olarak, benzersiz olay kimliği (Event ID) tekilleştirmesi ve Google Consent Mode v2 uyumlu birinci taraf (First-Party) takip altyapıları kuruyoruz. Bu mimariyi uygulayan işletmeler kampanya verimliliğinde %20-35 artış ve müşteri edinme maliyetlerinde (CPA) belirgin düşüş elde etmektedir.</p>
+<p><strong>Doğrudan Cevap:</strong> Server-Side Tracking (Sunucu Taraflı Takip); Google Tag Manager (sGTM) ve Meta Dönüşümler API'si (CAPI) aracılığıyla reklam hesaplarında kaybolan %30'luk dönüşüm verisini geri kazanmanın en gelişmiş teknolojik standardıdır. Tarayıcı kısıtlamaları (Safari ITP, Brave), reklam engelleyiciler (Ad-Blocker) ve çerez onay duvarları nedeniyle klasik tarayıcı pikselleri gerçekleşen her 3 satıştan 1'ini kaydedememektedir. <strong>Salih Maral (Resmi Google Partner & Server-Side Tracking Uzmanı)</strong> olarak, benzersiz olay kimliği (Event ID) tekilleştirmesi ve Google Consent Mode v2 uyumlu birinci taraf (First-Party) takip altyapıları kuruyoruz. Bu mimariyi uygulayan işletmeler kampanya verimliliğinde %20-35 artış ve müşteri edinme maliyetlerinde (CPA) belirgin düşüş elde etmektedir.</p>
 </div>
 
 <h2>📉 Tarayıcı Pikselleri 2026'da Neden Yetersiz Kalıyor: %30'luk Kör Nokta</h2>
@@ -103,8 +103,8 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     </tr>
     <tr>
       <td><strong>Satış Başına Maliyet (CPA)</strong></td>
-      <td>42,50 €</td>
-      <td>29,80 €</td>
+      <td>425 ₺</td>
+      <td>298 ₺</td>
       <td><strong>-%29,8 daha ucuz müşteri kazanımı</strong></td>
     </tr>
     <tr>

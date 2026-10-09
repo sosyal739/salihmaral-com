@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "google-ads-tiklama-cok-satis-yok-cozum-2026"
 lang: "tr"
 title: "Google Ads'te Tıklama Çok Ama Satış Yok mu? Paranızı Kurtarma Kılavuzu"
@@ -17,7 +17,7 @@ coverImage: "https://images.unsplash.com/photo-1571867424488-4565932edb41?w=600&
 
 <ol>
   <li><strong>Negatif Anahtar Kelime Kullanmamak:</strong> Hizmet satarken *"ücretsiz", "nasıl yapılır", "pdf indir", "staj"* gibi satın alma niyeti sıfır olan kelimeler tıklama bütçenizi bitirir.</li>
-  <li><strong>Geniş Eşleme (Broad Match) Tuzağı:</strong> Google'ın otomatik önerilerine uyarak geniş eşleme açtığınızda, alakasız binlerce aramaya tıklama başı 3-10 € ödersiniz.</li>
+  <li><strong>Geniş Eşleme (Broad Match) Tuzağı:</strong> Google'ın otomatik önerilerine uyarak geniş eşleme açtığınızda, alakasız binlerce aramaya tıklama başı onlarca lira boşuna ödersiniz.</li>
   <li><strong>Eksik Dönüşüm Takibi (Conversion Tracking):</strong> Hangi anahtar kelimenin para kazandırdığını, hangisinin bütçe yaktığını bilmeden reklam yönetmek karanlıkta araba kullanmaya benzer.</li>
   <li><strong>Yetersiz Açılış Sayfası (Landing Page):</strong> Ziyaretçi aradığı bilgiye ilk 3 saniyede ulaşamıyorsa veya mobil uyum zayıfsa sitenizi hemen terk eder.</li>
 </ol>
@@ -73,5 +73,5 @@ coverImage: "https://images.unsplash.com/photo-1571867424488-4565932edb41?w=600&
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Google Reklamlarında Boşa Giden Bütçenizi Geri Kazanın</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Reklam bütçenizi kârlı bir satış motoruna dönüştürmek için hemen formu doldurun. <strong>Ücretsiz Google Ads Hesap Denetimi</strong> ile nerede para kaybettiğinizi birlikte görelim.</p>
-  <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.6); transition: all 0.3s ease;">Ücretsiz Google Ads Hesap Analizi Alın ➔</a>
+  <a href="https://www.salihmaral.com/#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.6); transition: all 0.3s ease;">Ücretsiz Google Ads Hesap Analizi Alın ➔</a>
 </div>

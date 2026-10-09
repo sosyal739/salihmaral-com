@@ -89,7 +89,7 @@ mkdir -p .agents/skills/maral-seo</code></pre>
 
 <h3>Step 3: Run a Live Site Audit via Terminal</h3>
 <pre><code># Run a full automated SEO & GEO audit on your live website:
-python .agents/skills/maral-seo/scripts/maral_audit.py https://salihmaral.de</code></pre>
+python .agents/skills/maral-seo/scripts/maral_audit.py https://www.salihmaral.com</code></pre>
 
 <h2>🤖 Princeton GEO Standard: Getting Cited in AI Search Engines</h2>
 <p>According to the landmark Princeton University KDD research, websites must satisfy specific criteria to be selected as primary citations in ChatGPT Search, Perplexity, and Claude:</p>
@@ -114,6 +114,6 @@ python .agents/skills/maral-seo/scripts/maral_audit.py https://salihmaral.de</co
 <div class="cta-box" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 1.5rem; padding: 2rem; margin-top: 2.5rem; text-align: center;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem;">Unlock Your Website's Full SEO & GEO Potential</h3>
   <p style="color: #475569; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Dominate Google rankings and secure top citations across AI search engines. Request your comprehensive expert audit today.</p>
-  <a href="https://salihmaral.de/en#contact" target="_blank" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.4);">Get Free SEO & Growth Consultation ➔</a>
+  <a href="https://www.salihmaral.com/en#contact" target="_blank" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.4);">Get Free SEO & Growth Consultation ➔</a>
 </div>
 

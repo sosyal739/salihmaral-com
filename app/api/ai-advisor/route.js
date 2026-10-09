@@ -74,7 +74,7 @@ export async function POST(request) {
     const geminiKey = process.env.GEMINI_API_KEY
     if (geminiKey) {
       try {
-        const systemInstruction = `You are Salih Maral's AI Marketing Advisor for salihmaral.de (Google Ads, Meta Ads, SEO expert).
+        const systemInstruction = `You are Salih Maral's AI Marketing Advisor for salihmaral.com (Google Ads, Meta Ads, SEO expert).
 Answer the user's question directly in 2 sentences in language '${activeLang}'.
 If user asks about contact, tell them to fill out the Contact Form. If user asks about price, tell them to fill out the Contact Form for a free audit.`
 
