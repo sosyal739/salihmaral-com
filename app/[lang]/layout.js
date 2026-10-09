@@ -5,13 +5,13 @@ const langMeta = {
     canonical: 'https://www.salihmaral.com',
   },
   en: {
-    title: 'Google Ads Agency Germany & PPC Expert | Salih Maral',
-    description: 'Scale your business in Germany with certified flat-fee Google Ads, Meta Ads, TikTok Ads & SEO management by an official 17+ yr Senior Google Partner.',
+    title: 'Google Ads Agency & Performance Marketing Expert | Salih Maral',
+    description: 'Scale your business with certified flat-fee Google Ads, Meta Ads, TikTok Ads & SEO management by an official 17+ yr Senior Google Partner.',
     canonical: 'https://www.salihmaral.com/en',
   },
   tr: {
-    title: 'Almanya Google Ads Ajansı & SEO Uzmanı | Salih Maral',
-    description: 'Almanya ve Avrupa pazarında büyümek isteyen markalar ve gurbetçi işletmeler için Resmi Google Partneri ile sabit fiyatlı Google Ads, Meta Ads & Yerel SEO.',
+    title: 'Google Ads Ajansı, Meta Ads & SEO Danışmanlığı | Salih Maral',
+    description: '17+ yıllık Resmi Google Partneri ile şeffaf sabit fiyatlı Google Ads, Meta Ads ve SEO yönetimi. E-ticaret ve markalar için yüksek ROAS ve kârlı büyüme.',
     canonical: 'https://www.salihmaral.com/tr',
   },
 }

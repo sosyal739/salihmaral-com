@@ -1213,7 +1213,7 @@ export default function Home({ initialLang = 'tr' }) {
                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                         <span>
                           {lang === 'de'
-                            ? 'Monatliche Fixpreise ohne prozentuale Provision • § 13b UStG'
+                            ? 'Monatliche transparente Fixpreise ohne prozentuale Provision'
                             : lang === 'en'
                             ? 'Transparent monthly flat-fees • Zero commission'
                             : 'Aylık şeffaf Fixpreis (sabit fiyat) • Sürpriz komisyonsuz'}
@@ -1481,11 +1481,11 @@ export default function Home({ initialLang = 'tr' }) {
                 </div>
               </div>
 
-              {/* Multilingual Cultural Bridge Badge */}
+              {/* Performance Trust Badge */}
               {lang === 'de' && (
-                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50/90 via-white to-emerald-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
-                  <span className="text-base">🇹🇷</span>
-                  <span><strong>Sprechen Sie Türkisch?</strong> Gerne beraten wir Sie auch auf Türkisch — <a href="/tr" className="text-[#4285F4] font-bold underline hover:text-blue-700">Bizimle Türkçe görüşebilirsiniz</a></span>
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50/90 via-white to-indigo-50/90 border border-blue-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                  <span className="text-base">🎯</span>
+                  <span><strong>Performance Marketing:</strong> 0% Provision, transparente Fixpreise und 17+ Jahre Google Partner Expertise.</span>
                 </div>
               )}
               {lang === 'en' && (

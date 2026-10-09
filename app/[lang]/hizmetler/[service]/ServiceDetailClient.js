@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, ShieldCheck, Cpu, Database, Lock, Code, Activity, Star, ThumbsDown, AlertTriangle, Eye, Award, Flame, Menu, X, ChevronDown, ChevronRight, Mail } from 'lucide-react'
+import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, ShieldCheck, Cpu, Database, Lock, Code, Activity, Star, ThumbsDown, AlertTriangle, Eye, Award, Flame, Menu, X, ChevronDown, ChevronRight, Mail, Sparkles } from 'lucide-react'
 import ServiceDetailModules from '@/components/ServiceDetailModules'
 
 // Translations for navbar
@@ -303,7 +303,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         }
       ],
       process: [
-        { step: '01', title: lang === 'de' ? 'Zielgruppen- & Länderanalyse' : lang === 'en' ? 'Audience & Geo Analysis' : 'Hedef Kitle & Ülke Analizi', desc: lang === 'de' ? 'Wir definieren die exakte Zielgruppe, Musikinteressen, Alter, Demografie und Zielländer (DACH, TR, Global).' : lang === 'en' ? 'We define exact audience personas, music preferences, demographics, and target territories (DACH, TR, Global).' : 'Müzik türü, yaş, ilgi alanı ve yayınlanacak hedef ülkeleri (Almanya, Türkiye, Avrupa veya Dünya) netleştiriyoruz.' },
+        { step: '01', title: lang === 'de' ? 'Zielgruppen- & Länderanalyse' : lang === 'en' ? 'Audience & Geo Analysis' : 'Hedef Kitle & Ülke Analizi', desc: lang === 'de' ? 'Wir definieren die exakte Zielgruppe, Musikinteressen, Alter, Demografie und Zielländer (TR, Global).' : lang === 'en' ? 'We define exact audience personas, music preferences, demographics, and target territories (TR, Global).' : 'Müzik türü, yaş, ilgi alanı ve yayınlanacak hedef ülkeleri (Türkiye, Orta Doğu, Avrupa veya Küresel) netleştiriyoruz.' },
         { step: '02', title: lang === 'de' ? 'Kreativ- & Hook-Optimierung' : lang === 'en' ? 'Creative & Hook Optimization' : 'Kanca (Hook) & Kreatif Kurgusu', desc: lang === 'de' ? 'Wir optimieren Thumbnail, Titel und die ersten 5 Sekunden des Videos für maximale Wiedergabedauer und niedrigen CPV.' : lang === 'en' ? 'We optimize thumbnail, title, and the first 5 seconds of the video for high retention and low CPV.' : 'Kullanıcının videodan çıkmasını önlemek için ilk 5 saniyeyi, küçük resmi (thumbnail) ve başlığı optimize ediyoruz.' },
         { step: '03', title: lang === 'de' ? 'Kampagnen-Setup & Platzierungsfilter' : lang === 'en' ? 'Campaign Setup & Placement Filters' : 'Kampanya Kurulumu & Filtreleme', desc: lang === 'de' ? 'Einrichtung in Google Ads mit präzisen Ausschlüssen (keine Kinder-Kanäle, keine Fake-Traffic-Seiten) für 100% echte Menschen.' : lang === 'en' ? 'Google Ads setup with strict placement exclusions (blocking kids channels and low-quality placements) for 100% human traffic.' : 'Çocuk kanallarını ve kalitesiz içerikleri filtreleyerek bütçenizin sadece gerçek izleyicilere harcanmasını sağlıyoruz.' },
         { step: '04', title: lang === 'de' ? 'Skalierung & Kanalwachstum' : lang === 'en' ? 'Scaling & Channel Growth' : 'Ölçekleme & Abone Büyümesi', desc: lang === 'de' ? 'Kontinuierliche Gebotsoptimierung, Ausbau von Abonnenten und Auswertung der YouTube Analytics Kennzahlen.' : lang === 'en' ? 'Continuous bid optimization, subscriber acquisition growth, and deep YouTube Analytics reporting.' : 'İzleme başı maliyetleri düşürerek abone artışını ve organik keşfete düşme oranını en üst seviyeye çıkarıyoruz.' }
@@ -420,8 +420,8 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
       ],
       faq: [
         {
-          q: lang === 'de' ? 'Was kostet die professionelle Meta Ads Betreuung (Fixpreis vs. prozentuale Provision)?' : lang === 'en' ? 'What are the fees for professional Meta Ads management (Flat fee vs % of spend)?' : 'Almanya\'da profesyonel Meta Ads yönetimi ücreti nedir (Sabit fiyat mı, bütçe komisyonu mu)?',
-          a: lang === 'de' ? 'Bei Salih Maral betreuen wir Ihre Facebook und Instagram Ads zu transparenten monatlichen Fixpreisen ab 590 €/Monat – ohne prozentuale Umsatzbeteiligung an Ihrem Werbebudget (10% - 15% Ad Spend Trap). So stellen wir sicher, dass das primäre Ziel die Senkung Ihres CPA und die Steigerung Ihres Netto-ROAS ist, statt Ihr Werbebudget künstlich in die Höhe zu treiben.' : lang === 'en' ? 'We operate on a transparent monthly flat fee (Fixpreis) starting from €590/month rather than taking percentage cuts from your ad budget (10% - 15%). This ensures our priority is strictly to reduce your CPA and scale profitable net ROAS without artificial budget inflation.' : 'Reklam harcamanızdan %10-15 komisyon kesmek yerine aylık 590 €\'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yükseltmesini engelliyor, doğrudan dönüşüm başı maliyetinizi (CPA) düşürüp kârlılığınızı (ROAS) katlamaya odaklanıyoruz.'
+          q: lang === 'de' ? 'Was kostet die professionelle Meta Ads Betreuung (Fixpreis vs. prozentuale Provision)?' : lang === 'en' ? 'What are the fees for professional Meta Ads management (Flat fee vs % of spend)?' : 'Profesyonel Meta Ads yönetimi ücreti nedir (Sabit fiyat mı, bütçe komisyonu mu)?',
+          a: lang === 'de' ? 'Bei Salih Maral betreuen wir Ihre Facebook und Instagram Ads zu transparenten monatlichen Fixpreisen ab 590 €/Monat – ohne prozentuale Umsatzbeteiligung an Ihrem Werbebudget (10% - 15% Ad Spend Trap). So stellen wir sicher, dass das primäre Ziel die Senkung Ihres CPA und die Steigerung Ihres Netto-ROAS ist, statt Ihr Werbebudget künstlich in die Höhe zu treiben.' : lang === 'en' ? 'We operate on a transparent monthly flat fee (Fixpreis) starting from €590/month rather than taking percentage cuts from your ad budget (10% - 15%). This ensures our priority is strictly to reduce your CPA and scale profitable net ROAS without artificial budget inflation.' : 'Reklam harcamanızdan %10-15 komisyon kesmek yerine şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yükseltmesini engelliyor, doğrudan dönüşüm başı maliyetinizi (CPA) düşürüp kârlılığınızı (ROAS) katlamaya odaklanıyoruz.'
         },
         {
           q: lang === 'de' ? 'Wie bekämpft man Creative Fatigue (Anzeigenmüdigkeit) auf Instagram & Facebook?' : lang === 'en' ? 'How do you prevent Creative Fatigue on Facebook & Instagram Ads?' : 'Facebook ve Instagram reklamlarında Creative Fatigue (Reklam Yorgunluğu) nasıl çözülür?',
@@ -432,8 +432,8 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
           a: lang === 'de' ? 'Advantage+ Shopping Campaigns nutzen maschinelles Lernen, um bis zu 150 Kreativ-Assets automatisch mit kaufbereiten Nutzern zu matchen. Wir begrenzen den Bestandskunden-Anteil (Customer Budget Cap) strategisch auf 5-15%, um echtes Neukundenwachstum zu sichern und Budgetverschwendung an Altkunden zu verhindern.' : lang === 'en' ? 'Advantage+ Shopping Campaigns leverage machine learning to dynamically match up to 150 assets with high-intent buyers. By implementing a strict 5-15% Customer Budget Cap, we prevent algorithm waste on repeat buyers and secure true incremental acquisition.' : 'Meta Advantage+ Shopping, makine öğrenimi ile 150 adede kadar kreatif varyasyonunu satın alma olasılığı en yüksek kullanıcılarla otomatik eşleştirir. Mevcut müşteri bütçe sınırını (Customer Budget Cap) %10-15 seviyesinde tutarak bütçenin eski alıcılarda tükenmesini engelliyor, kârlı yeni müşteri akışı sağlıyoruz.'
         },
         {
-          q: lang === 'de' ? 'Warum ist die Meta Conversions API (CAPI) mit Server-Side GTM in Deutschland Pflicht?' : lang === 'en' ? 'Why is Meta Conversions API (CAPI) with Server-Side GTM mandatory in Germany?' : 'Almanya\'da Meta Conversions API (CAPI) ve sunucu taraflı takip neden zorunludur?',
-          a: lang === 'de' ? 'Durch strenge DSGVO/TTDSG-Cookie-Banner und Safari ITP gehen über 30% der Browser-Pixel-Events verloren. Über Server-Side CAPI stellen wir sicher, dass Kauf- und Lead-Signale datenschutzkonform und verlustfrei an Meta übertragen werden, was den Algorithmus stabilisiert und den CPA nachweislich senkt.' : lang === 'en' ? 'Strict German privacy regulations (TTDSG) and browser cookie restrictions block over 30% of browser pixel events. Server-Side CAPI restores loss-free, compliant event signals to Meta, lowering CPA and improving algorithm precision.' : 'Avrupa Birliği ve Almanya çerez yasaları (TTDSG/GDPR) ile tarayıcı engelleyicileri piksel verilerinin %30\'dan fazlasını siler. Server-Side CAPI ile satın alma ve lead sinyalleri sunucu üzerinden kayıpsız iletilir; yapay zekanın veri körlüğü önlenir ve maliyetler düşer.'
+          q: lang === 'de' ? 'Warum ist die Meta Conversions API (CAPI) mit Server-Side GTM Pflicht?' : lang === 'en' ? 'Why is Meta Conversions API (CAPI) with Server-Side GTM mandatory for modern tracking?' : 'Meta Conversions API (CAPI) ve sunucu taraflı takip neden zorunludur?',
+          a: lang === 'de' ? 'Durch strenge DSGVO/TTDSG-Cookie-Banner und Safari ITP gehen über 30% der Browser-Pixel-Events verloren. Über Server-Side CAPI stellen wir sicher, dass Kauf- und Lead-Signale datenschutzkonform und verlustfrei an Meta übertragen werden, was den Algorithmus stabilisiert und den CPA nachweislich senkt.' : lang === 'en' ? 'Strict privacy regulations, ad-blockers and browser cookie restrictions block over 30% of browser pixel events. Server-Side CAPI restores loss-free, compliant event signals to Meta, lowering CPA and improving algorithm precision.' : 'Tarayıcı çerez kısıtlamaları ve reklam engelleyicileri piksel verilerinin %30\'undan fazlasını siler. Server-Side CAPI ile satın alma ve lead sinyalleri sunucu üzerinden kayıpsız iletilir; yapay zekanın veri körlüğü önlenir ve maliyetler düşer.'
         },
         { 
           q: lang === 'de' ? 'Auf welcher Plattform sollte ich werben - Facebook oder Instagram?' : lang === 'en' ? 'Which platform should I advertise on - Facebook or Instagram?' : 'Hangi platformda reklam vermeliyim - Facebook mu Instagram mı?',
@@ -441,7 +441,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         },
         { 
           q: lang === 'de' ? 'Ist die Erstellung von Inhalten in Ihrem Service enthalten?' : lang === 'en' ? 'Is content creation included in your service?' : 'Kreatif ve içerik üretimi hizmetinize dahil mi?',
-          a: lang === 'de' ? 'Ja. Unser Team entwickelt hochkonvertierende Hook-Konzepte, Video-Skripte für Reels und statische Grafiken speziell für den deutschen Markt. Wir optimieren auch vorhandene Rohaufnahmen für maximale Klick- und Kaufabschlüsse.' : lang === 'en' ? 'Yes. Our creative team develops high-converting hook concepts, Reels video scripts, and static creatives tailored to the German market. We also transform your raw assets into top-performing ads.' : 'Evet. Ekibimiz Almanya pazarına özel yüksek dönüşümlü video senaryoları (Reels), hook varyasyonları ve grafikler hazırlar. Mevcut görsel ve video arşivinizi de satış odaklı reklam formatlarına dönüştürüyoruz.'
+          a: lang === 'de' ? 'Ja. Unser Team entwickelt hochkonvertierende Hook-Konzepte, Video-Skripte für Reels und statische Grafiken für maximale Klick- und Kaufabschlüsse.' : lang === 'en' ? 'Yes. Our creative team develops high-converting hook concepts, Reels video scripts, and static creatives tailored to your audience. We also transform your raw assets into top-performing ads.' : 'Evet. Ekibimiz markanıza ve hedef kitlenize özel yüksek dönüşümlü video senaryoları (Reels), hook varyasyonları ve grafikler hazırlar. Mevcut görsel ve video arşivinizi de satış odaklı reklam formatlarına dönüştürüyoruz.'
         }
       ]
     },
@@ -1493,10 +1493,10 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               </h2>
               <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                 {lang === 'de'
-                  ? 'Warum zahlen Unternehmen 15% Provision auf ihr eigenes Werbebudget? Ein objektiver Vergleich der 3 gängigen Agentur-Vergütungsmodelle in Deutschland.'
+                  ? 'Warum zahlen Unternehmen 15% Provision auf ihr eigenes Werbebudget? Ein objektiver Vergleich der 3 gängigen Agentur-Vergütungsmodelle.'
                   : lang === 'en'
-                  ? 'Why pay a 15% surcharge on your own ad spend? An objective comparison of the 3 primary agency pricing models in Germany.'
-                  : 'Neden kendi reklam bütçeniz üzerinden ajansa %15 komisyon ödeyesiniz? Almanya pazarındaki 3 temel ajans çalışma modelinin karşılaştırması.'}
+                  ? 'Why pay a 15% surcharge on your own ad spend? An objective comparison of the 3 primary agency pricing models.'
+                  : 'Neden kendi reklam bütçeniz üzerinden ajansa %15 komisyon ödeyesiniz? Dijital pazarlamadaki 3 temel ajans çalışma modelinin karşılaştırması.'}
               </p>
             </div>
 
@@ -2835,66 +2835,57 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         </section>
       )}
 
-      {/* Regional German Metropolises & Standorte Hub Cross-Link */}
+      {/* Related Services Cross-Navigation */}
       <section className="py-16 px-4 bg-slate-50 border-t border-slate-200/70">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-bold text-blue-700 mb-3">
-              <MapPin className="w-3.5 h-3.5" />
-              <span>{lang === 'tr' ? 'Almanya Çapında Hizmet Ağı' : lang === 'en' ? 'Nationwide Coverage Across Germany' : 'Deutschlandweite Betreuung'}</span>
+              <Sparkles className="w-3.5 h-3.5 text-[#4285F4]" />
+              <span>{lang === 'tr' ? 'Entegre Büyüme Ekosistemi' : lang === 'en' ? 'Integrated Growth Services' : 'Integrierte Marketing-Lösungen'}</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">
               {lang === 'tr'
-                ? `Almanya'nın 18 Metropolünde ${data.title}`
+                ? 'İşletmenizi Büyütecek Diğer Performans Hizmetlerimiz'
                 : lang === 'en'
-                ? `${data.title} Across Germany's 18 Metropolises`
-                : `${data.title} in den Top-Metropolen Deutschlands`}
+                ? 'Complementary Performance Marketing Services'
+                : 'Weitere Performance Marketing Leistungen'}
             </h2>
             <p className="text-sm md:text-base text-gray-600">
               {lang === 'tr'
-                ? 'Frankfurt merkezli ajansımız, Almanya genelindeki KOBİ ve kurumsal markalara yerel hedeflemeli, yüksek dönüşümlü kampanyalar yönetir.'
+                ? 'Tek bir kanala bağımlı kalmayın. Google Ads, Meta Ads, SEO ve Server-Side Tracking ile 360 derece kârlı müşteri kazanım altyapısı kuruyoruz.'
                 : lang === 'en'
-                ? 'Based near Frankfurt, we manage high-converting local campaigns for SMEs and enterprises across all major German business hubs.'
-                : 'Von unserem Standort bei Frankfurt betreuen wir Unternehmen und Mittelständler in allen deutschen Metropolregionen mit maßgeschneiderten Performance-Strategien.'}
+                ? 'Diversify beyond a single channel. We integrate Google Ads, Meta Ads, SEO and Server-Side Tracking for end-to-end scalable growth.'
+                : 'Vermeiden Sie Abhängigkeiten von einzelnen Werbekanälen mit maßgeschneiderten Multi-Channel-Strategien.'}
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-8">
-            {[
-              { name: 'Frankfurt am Main', slug: 'frankfurt' },
-              { name: 'München', slug: 'muenchen' },
-              { name: 'Düsseldorf', slug: 'duesseldorf' },
-              { name: 'Köln', slug: 'koeln' },
-              { name: 'Berlin', slug: 'berlin' },
-              { name: 'Hamburg', slug: 'hamburg' },
-              { name: 'Stuttgart', slug: 'stuttgart' },
-              { name: 'Nürnberg', slug: 'nuernberg' },
-              { name: 'Dortmund', slug: 'dortmund' },
-              { name: 'Bonn', slug: 'bonn' },
-              { name: 'Hannover', slug: 'hannover' },
-              { name: 'Leipzig', slug: 'leipzig' }
-            ].map((city) => (
-              <a
-                key={city.slug}
-                href={`/${lang}/standorte/${city.slug}`}
-                className="p-3 bg-white rounded-xl border border-gray-200/80 hover:border-[#4285F4] hover:shadow-md transition-all text-center group"
-              >
-                <div className="text-xs font-bold text-gray-900 group-hover:text-[#4285F4] transition-colors">
-                  {city.name}
-                </div>
-                <div className="text-[10px] text-gray-400 mt-0.5">
-                  {lang === 'tr' ? 'Bölgesel Ajans' : lang === 'en' ? 'Regional Agency' : 'Regionale Betreuung'}
-                </div>
-              </a>
-            ))}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-8">
+            {services
+              .filter(s => s.slug !== service)
+              .slice(0, 8)
+              .map((s) => (
+                <a
+                  key={s.slug}
+                  href={getLocalizedServiceUrl(lang, s.slug)}
+                  className="p-4 bg-white rounded-2xl border border-gray-200/80 hover:border-[#4285F4] hover:shadow-md transition-all text-center group flex flex-col items-center justify-center min-h-[100px]"
+                >
+                  <div className="text-xs sm:text-sm font-bold text-gray-900 group-hover:text-[#4285F4] transition-colors mb-1">
+                    {s.title}
+                  </div>
+                  <div className="text-[11px] text-blue-600 font-semibold flex items-center gap-1">
+                    <span>{lang === 'tr' ? 'Detayları Gör' : lang === 'en' ? 'View Details' : 'Details ansehen'}</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </div>
+                </a>
+              ))}
           </div>
 
           <div className="text-center">
             <a
-              href={`/${lang}/standorte`}
+              href={lang === 'de' ? '/#services' : `/${lang}/#services`}
               className="inline-flex items-center gap-2 text-sm font-bold text-[#4285F4] hover:text-blue-700 bg-white border border-blue-200 px-5 py-2.5 rounded-xl shadow-xs hover:shadow transition-all"
             >
-              <span>{lang === 'tr' ? 'Tüm 18 Şehir ve Bölge Rehberini Gör' : lang === 'en' ? 'Explore All 18 German Locations' : 'Alle 18 Standorte in Deutschland entdecken'}</span>
+              <span>{lang === 'tr' ? 'Tüm Hizmet ve Stratejileri İncele' : lang === 'en' ? 'Explore All Growth Services' : 'Alle Leistungen im Überblick'}</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
@@ -2973,23 +2964,29 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               </a>
               <p className="text-xs text-slate-400 leading-relaxed">
                 {lang === 'tr'
-                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Almanya ve Avrupa genelinde Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
+                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
                   : lang === 'en'
-                  ? 'Official Google Partner Salih Maral delivers scalable revenue growth across Germany & Europe through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
-                  : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum in Deutschland und Europa durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}
+                  ? 'Official Google Partner Salih Maral delivers scalable revenue growth across global markets through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
+                  : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum auf globalen Märkten durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}
               </p>
 
-              {/* Turkish Entrepreneur Badge */}
+              {/* Verified Partner Badge */}
               <div className="p-3 rounded-xl bg-blue-950/40 border border-blue-800/50 text-[11px] text-blue-200">
                 <div className="font-bold text-white flex items-center gap-1.5 mb-1">
-                  <span>🇩🇪 🇹🇷</span>
-                  <span>Sprechen Sie Türkisch?</span>
+                  <span>🎯</span>
+                  <span>{lang === 'tr' ? 'Resmi Google Partner Güvencesi' : lang === 'en' ? 'Official Google Partner' : 'Offizieller Google Partner'}</span>
                 </div>
-                <div>Bizimle Türkçe görüşebilirsiniz. Almanya'daki Türk işletmelerine ve ihracatçılara ana dilde stratejik danışmanlık sunuyoruz.</div>
+                <div>
+                  {lang === 'tr'
+                    ? '%0 Komisyon, şeffaf sabit yönetim ücreti ve 17+ yıllık kıdemli partner tecrübesi.'
+                    : lang === 'en'
+                    ? '0% Commission, transparent flat-fee management and 17+ years senior partner experience.'
+                    : '0% Provision, transparente feste Betreuungspauschale und 17+ Jahre Partner-Expertise.'}
+                </div>
               </div>
 
               <div className="text-xs text-slate-400 space-y-1.5 pt-1">
-                <div>Dreieich / Frankfurt am Main &bull; Deutschland</div>
+                <div>İstanbul / Türkiye &bull; Global Remote</div>
                 <div>
                   <a href="mailto:info@salihmaral.com" className="hover:text-blue-400 transition-colors">
                     ✉️ info@salihmaral.com
@@ -3017,41 +3014,25 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               </ul>
             </div>
 
-            {/* Col 3: German Cities */}
+            {/* Col 3: Growth Solutions */}
             <div>
               <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                {lang === 'tr' ? 'Almanya Şehirleri' : lang === 'en' ? 'Locations in Germany' : 'Standorte Deutschland'}
+                {lang === 'tr' ? 'Büyüme Çözümleri' : lang === 'en' ? 'Growth Solutions' : 'Wachstumslösungen'}
               </div>
-              <div className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs">
-                {[
-                  { name: 'Frankfurt', slug: 'frankfurt' },
-                  { name: 'München', slug: 'muenchen' },
-                  { name: 'Düsseldorf', slug: 'duesseldorf' },
-                  { name: 'Köln', slug: 'koeln' },
-                  { name: 'Berlin', slug: 'berlin' },
-                  { name: 'Hamburg', slug: 'hamburg' },
-                  { name: 'Stuttgart', slug: 'stuttgart' },
-                  { name: 'Nürnberg', slug: 'nuernberg' },
-                  { name: 'Dortmund', slug: 'dortmund' },
-                  { name: 'Bonn', slug: 'bonn' },
-                  { name: 'Hannover', slug: 'hannover' },
-                  { name: 'Leipzig', slug: 'leipzig' }
-                ].map((c) => (
-                  <a
-                    key={c.slug}
-                    href={`/${lang}/standorte/${c.slug}`}
-                    className="text-slate-400 hover:text-blue-400 transition-colors"
-                  >
-                    {c.name}
-                  </a>
-                ))}
-              </div>
+              <ul className="space-y-2 text-xs text-slate-400">
+                <li><a href={getLocalizedServiceUrl(lang, 'google-ads')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'Google Arama & Shopping Ads' : lang === 'en' ? 'Google Search & Shopping' : 'Google Search & Shopping'}</a></li>
+                <li><a href={getLocalizedServiceUrl(lang, 'meta-ads')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'Meta Advantage+ Alışveriş' : lang === 'en' ? 'Meta Advantage+ Shopping' : 'Meta Advantage+ Shopping'}</a></li>
+                <li><a href={getLocalizedServiceUrl(lang, 'server-side-tracking')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'Server-Side CAPI & sGTM' : lang === 'en' ? 'Server-Side CAPI & sGTM' : 'Server-Side CAPI & sGTM'}</a></li>
+                <li><a href={getLocalizedServiceUrl(lang, 'tiktok-ads')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'TikTok Spark & Video Ads' : lang === 'en' ? 'TikTok Spark & Video Ads' : 'TikTok Spark & Video Ads'}</a></li>
+                <li><a href={getLocalizedServiceUrl(lang, 'seo')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'Google Maps & Princeton GEO' : lang === 'en' ? 'Google Maps & Princeton GEO' : 'Google Maps & Princeton GEO'}</a></li>
+                <li><a href={getLocalizedServiceUrl(lang, 'yorum-yonetimi')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'Google Olumsuz Yorum Temizleme' : lang === 'en' ? 'Review Defense & Removal' : 'Bewertungsmanagement'}</a></li>
+              </ul>
               <div className="mt-4 pt-3 border-t border-slate-800">
                 <a
-                  href={`/${lang}/standorte`}
+                  href={lang === 'de' ? '/#services' : `/${lang}/#services`}
                   className="text-xs font-bold text-blue-400 hover:text-blue-300"
                 >
-                  {lang === 'tr' ? 'Tüm 18 Şehri İncele ➔' : lang === 'en' ? 'View All 18 Locations ➔' : 'Alle 18 Standorte ansehen ➔'}
+                  {lang === 'tr' ? 'Tüm Hizmetleri İncele ➔' : lang === 'en' ? 'Explore All Services ➔' : 'Alle Leistungen ansehen ➔'}
                 </a>
               </div>
             </div>
@@ -3078,8 +3059,8 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                   </a>
                 </li>
                 <li>
-                  <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026" className="hover:text-white transition-colors">
-                    {lang === 'tr' ? 'Google Ads Maliyet & Fiyatlar' : lang === 'en' ? 'Google Ads Pricing 2026' : 'Google Ads Agentur Preise 2026'}
+                  <a href="/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026" className="hover:text-white transition-colors">
+                    {lang === 'tr' ? 'Google Ads Sabit Fiyat vs Komisyon' : lang === 'en' ? 'Flat Fee vs Commission' : 'Google Ads Fixpreis vs. %'}
                   </a>
                 </li>
                 <li>
@@ -3110,9 +3091,9 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               &copy; 2026 Salih Maral &mdash; Offizieller Google Partner. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
             </div>
             <div className="flex items-center gap-4 text-[11px]">
-              <span>Frankfurt am Main &bull; Dreieich &bull; Deutschland</span>
+              <span>İstanbul / Türkiye &bull; Global Remote & Danışmanlık</span>
               <span>&bull;</span>
-              <span className="text-slate-400">100% DSGVO-konform</span>
+              <span className="text-slate-400">100% DSGVO & KVKK Uyumlu</span>
             </div>
           </div>
         </div>

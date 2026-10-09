@@ -8,26 +8,26 @@ const serviceMeta = {
       description: 'Zertifizierte Google Ads Betreuung zum fairen Fixpreis: 17+ Jahre Senior-Expertise, Performance Max & Search für maximalen ROAS ohne Streuverlust.',
     },
     en: {
-      title: 'Google Ads Agency Germany | Flat Fee PPC | Salih Maral',
-      description: 'Scale in Germany with certified flat-fee Google Ads management. Search, Performance Max & Shopping campaigns optimized for maximum ROAS by a 17+ yr partner.',
+      title: 'Google Ads Agency | Flat Fee PPC Management | Salih Maral',
+      description: 'Scale your business with certified flat-fee Google Ads management. Search, Performance Max & Shopping campaigns optimized for maximum ROAS by a 17+ yr partner.',
     },
     tr: {
-      title: 'Almanya Google Ads Ajansı & Danışmanlığı | Salih Maral',
-      description: 'Almanya ve Avrupa pazarı için Resmi Google Partneri ile sabit fiyatlı Google Ads yönetimi: Arama, PMax ve Alışveriş reklamları ile yüksek kârlılık ve satış.',
+      title: 'Google Ads Ajansı & Danışmanlığı | Salih Maral',
+      description: 'Resmi Google Partneri ile şeffaf sabit fiyatlı Google Ads yönetimi: Arama, PMax ve Alışveriş reklamları ile yüksek kârlılık ve satış.',
     },
   },
   'meta-ads': {
     de: {
-      title: 'Meta Ads Agentur Deutschland (Facebook & Instagram) | Salih Maral',
+      title: 'Meta Ads Agentur (Facebook & Instagram) | Salih Maral',
       description: 'Zertifizierte Meta Ads Betreuung zum Fixpreis: Advantage+ Shopping, Creative AI & CAPI für messbare E-Commerce Skalierung und minimale CPAs.',
     },
     en: {
-      title: 'Meta Ads Agency Germany (Facebook & Instagram) | Salih Maral',
-      description: 'Certified Meta Ads management in Germany: Advantage+ Shopping, Creative AI, and Server-Side CAPI to scale e-commerce and lower CPAs.',
+      title: 'Meta Ads Agency (Facebook & Instagram) | Salih Maral',
+      description: 'Certified Meta Ads management: Advantage+ Shopping, Creative AI, and Server-Side CAPI to scale e-commerce and lower CPAs.',
     },
     tr: {
-      title: 'Almanya Meta Ads Ajansı (Facebook & Instagram) | Salih Maral',
-      description: 'Almanya ve Avrupa pazarı için Meta Ads yönetimi: Advantage+ Alışveriş, CAPI ve yapay zeka kreatifleri ile satışlarınızı ve ROAS\'ınızı katlayın.',
+      title: 'Meta Ads Ajansı (Facebook & Instagram) | Salih Maral',
+      description: 'Profesyonel Meta Ads yönetimi: Advantage+ Alışveriş, CAPI ve yapay zeka kreatifleri ile satışlarınızı ve ROAS\'ınızı katlayın.',
     },
   },
   'youtube-ads': {
@@ -164,14 +164,14 @@ const serviceFaqs = {
         a: 'Advantage+ Shopping Campaigns leverage machine learning to dynamically match up to 150 assets with high-intent buyers. By implementing a strict 5-15% Customer Budget Cap, we prevent algorithm waste on repeat buyers and secure true incremental acquisition.'
       },
       {
-        q: 'Why is Meta Conversions API (CAPI) with Server-Side GTM mandatory in Germany?',
-        a: 'Strict German privacy regulations (TTDSG) and browser cookie restrictions block over 30% of browser pixel events. Server-Side CAPI restores loss-free, compliant event signals to Meta, lowering CPA and improving algorithm precision.'
+        q: 'Why is Meta Conversions API (CAPI) with Server-Side GTM mandatory for modern tracking?',
+        a: 'Strict privacy regulations, ad-blockers and browser cookie restrictions block over 30% of browser pixel events. Server-Side CAPI restores loss-free, compliant event signals to Meta, lowering CPA and improving algorithm precision.'
       }
     ],
     tr: [
       {
-        q: "Almanya'da profesyonel Meta Ads yönetimi ücreti nedir (Sabit fiyat mı, bütçe komisyonu mu)?",
-        a: "Reklam harcamanızdan %10-15 komisyon kesmek yerine aylık 590 €'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yükseltmesini engelliyor, doğrudan dönüşüm başı maliyetinizi (CPA) düşürüp kârlılığınızı (ROAS) katlamaya odaklanıyoruz."
+        q: "Profesyonel Meta Ads yönetimi ücreti nedir (Sabit fiyat mı, bütçe komisyonu mu)?",
+        a: "Reklam harcamanızdan %10-15 komisyon kesmek yerine şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yükseltmesini engelliyor, doğrudan dönüşüm başı maliyetinizi (CPA) düşürüp kârlılığınızı (ROAS) katlamaya odaklanıyoruz."
       },
       {
         q: "Facebook ve Instagram reklamlarında Creative Fatigue (Reklam Yorgunluğu) nasıl çözülür?",
@@ -182,8 +182,8 @@ const serviceFaqs = {
         a: "Meta Advantage+ Shopping, makine öğrenimi ile 150 adede kadar kreatif varyasyonunu satın alma olasılığı en yüksek kullanıcılarla otomatik eşleştirir. Mevcut müşteri bütçe sınırını (Customer Budget Cap) %10-15 seviyesinde tutarak bütçenin eski alıcılarda tükenmesini engelliyor, kârlı yeni müşteri akışı sağlıyoruz."
       },
       {
-        q: "Almanya'da Meta Conversions API (CAPI) ve sunucu taraflı takip neden zorunludur?",
-        a: "Avrupa Birliği ve Almanya çerez yasaları (TTDSG/GDPR) ile tarayıcı engelleyicileri piksel verilerinin %30'undan fazlasını siler. Server-Side CAPI ile satın alma ve lead sinyalleri sunucu üzerinden kayıpsız iletilir; yapay zekanın veri körlüğü önlenir ve maliyetler düşer."
+        q: "Meta Conversions API (CAPI) ve sunucu taraflı takip neden zorunludur?",
+        a: "Tarayıcı çerez kısıtlamaları ve reklam engelleyicileri piksel verilerinin %30'undan fazlasını siler. Server-Side CAPI ile satın alma ve lead sinyalleri sunucu üzerinden kayıpsız iletilir; yapay zekanın veri körlüğü önlenir ve maliyetler düşer."
       }
     ]
   },
@@ -191,21 +191,21 @@ const serviceFaqs = {
     de: [
       {
         q: 'Google Ads Agentur Preise & Kosten: Wie rechnen Sie ab (Fixpreis oder Prozent vom Ad Spend)?',
-        a: 'Wir setzen bewusst auf eine transparente monatliche Betreuungspauschale (Fixpreis ab 590 €/Monat) statt prozentualer Umsatzprovisionen. Unser Ziel ist es nicht, Ihr Werbebudget künstlich in die Höhe zu treiben, sondern Ihre Kosten pro Conversion (CPA) zu senken und Ihren ROAS zu maximieren.'
+        a: 'Wir setzen bewusst auf eine transparente monatliche Betreuungspauschale (Fixpreis) statt prozentualer Umsatzprovisionen. Unser Ziel ist es nicht, Ihr Werbebudget künstlich in die Höhe zu treiben, sondern Ihre Kosten pro Conversion (CPA) zu senken und Ihren ROAS zu maximieren.'
       },
       {
         q: 'Wie schnell stellen sich erste messbare Ergebnisse mit Google Ads ein?',
         a: 'Google Search Kampagnen generieren ab dem ersten Schaltungstag qualifizierte Suchanfragen und Leads. Durch kontinuierliche Suchbegriffsanalyse, negative Keywords und Conversion-Tracking stabilisiert sich der optimale CPA innerhalb von 14 bis 30 Tagen.'
       },
       {
-        q: 'Bieten Sie auch mehrsprachige Betreuung (Deutsch & Türkisch) an?',
-        a: 'Ja. Als offizieller Google Partner mit über 17 Jahren Praxiserfahrung beraten wir Unternehmen in ganz Deutschland fließend auf Deutsch, Türkisch und Englisch.'
+        q: 'Bieten Sie auch mehrsprachige Betreuung (Deutsch, Türkisch & Englisch) an?',
+        a: 'Ja. Als offizieller Google Partner mit über 17 Jahren Praxiserfahrung beraten wir internationale Unternehmen fließend auf Deutsch, Türkisch und Englisch.'
       }
     ],
     en: [
       {
         q: 'Google Ads Agency Costs & Pricing: How do you charge (Flat fee or % of ad spend)?',
-        a: 'We deliberately operate on a transparent monthly flat-fee model (from €590/month) rather than taking a percentage of your ad spend. This aligns our goals strictly with lowering your CPA and boosting your ROAS.'
+        a: 'We deliberately operate on a transparent monthly flat-fee model rather than taking a percentage of your ad spend. This aligns our goals strictly with lowering your CPA and boosting your ROAS.'
       },
       {
         q: 'How fast can we see measurable results with Google Ads?',
@@ -215,7 +215,7 @@ const serviceFaqs = {
     tr: [
       {
         q: 'Google Ads Ajans Ücretleri: Nasıl çalışıyorsunuz (Sabit fiyat mı, bütçe komisyonu mu)?',
-        a: "Yönetilen bütçeden %10 - %15 komisyon kesmek yerine aylık 590 €'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bütçenizi şişirmeden doğrudan maliyetlerinizi düşürmeye ve kârlılığı artırmaya odaklanıyoruz."
+        a: "Yönetilen bütçeden %10 - %15 komisyon kesmek yerine şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bütçenizi şişirmeden doğrudan maliyetlerinizi düşürmeye ve kârlılığı artırmaya odaklanıyoruz."
       },
       {
         q: 'Google Ads reklamları ne kadar sürede sonuç verir?',

@@ -6,21 +6,6 @@ import { ArrowLeft, Shield, Cookie, Mail, Phone, MapPin, Calendar, FileText, Loc
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
-const germanCities = [
-  { slug: 'frankfurt', name: 'Frankfurt am Main' },
-  { slug: 'muenchen', name: 'München' },
-  { slug: 'duesseldorf', name: 'Düsseldorf' },
-  { slug: 'koeln', name: 'Köln' },
-  { slug: 'berlin', name: 'Berlin' },
-  { slug: 'hamburg', name: 'Hamburg' },
-  { slug: 'stuttgart', name: 'Stuttgart' },
-  { slug: 'nuernberg', name: 'Nürnberg' },
-  { slug: 'dortmund', name: 'Dortmund' },
-  { slug: 'bonn', name: 'Bonn' },
-  { slug: 'hannover', name: 'Hannover' },
-  { slug: 'leipzig', name: 'Leipzig' }
-]
-
 const servicesList = [
   { title: 'Google Ads Management', slug: 'google-ads' },
   { title: 'Meta Ads (Facebook & Instagram)', slug: 'meta-ads' },
@@ -616,24 +601,22 @@ export default function DatenschutzPage() {
               </ul>
             </div>
 
-            {/* Col 3: German Cities */}
+            {/* Col 3: Solutions */}
             <div>
               <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                Standorte in Deutschland
+                Wachstumslösungen
               </div>
-              <ul className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs text-slate-400">
-                {germanCities.map((c) => (
-                  <li key={c.slug}>
-                    <a href={`/de/standorte/${c.slug}`} className="hover:text-blue-400 transition-colors flex items-center">
-                      <MapPin className="w-3 h-3 mr-1 text-slate-500" />
-                      {c.name}
-                    </a>
-                  </li>
-                ))}
+              <ul className="space-y-2 text-xs text-slate-400">
+                <li><a href="/tr/hizmetler/google-ads" className="hover:text-blue-400 transition-colors">Google Ads Management</a></li>
+                <li><a href="/tr/hizmetler/meta-ads" className="hover:text-blue-400 transition-colors">Meta Ads (IG & FB)</a></li>
+                <li><a href="/tr/hizmetler/server-side-tracking" className="hover:text-blue-400 transition-colors">Server-Side Tracking & CAPI</a></li>
+                <li><a href="/tr/hizmetler/tiktok-ads" className="hover:text-blue-400 transition-colors">TikTok Spark & Shop Ads</a></li>
+                <li><a href="/tr/hizmetler/seo" className="hover:text-blue-400 transition-colors">SEO & GEO (KI-Suche)</a></li>
+                <li><a href="/tr/hizmetler/yorum-yonetimi" className="hover:text-blue-400 transition-colors">Bewertungsmanagement</a></li>
               </ul>
               <div className="mt-4 pt-3 border-t border-slate-800">
-                <a href="/de/standorte" className="text-xs text-blue-400 hover:text-blue-300 font-semibold inline-flex items-center">
-                  Alle 18 Standorte ansehen ➔
+                <a href="/#services" className="text-xs text-blue-400 hover:text-blue-300 font-semibold inline-flex items-center">
+                  Alle Leistungen ansehen ➔
                 </a>
               </div>
             </div>
@@ -647,7 +630,7 @@ export default function DatenschutzPage() {
                 <li><a href="/" className="hover:text-white transition-colors">Startseite</a></li>
                 <li><a href="/about" className="hover:text-white transition-colors">Über Salih Maral</a></li>
                 <li><a href="/blog" className="hover:text-white transition-colors">Ratgeber & Blog</a></li>
-                <li><a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026" className="hover:text-white transition-colors">Google Ads Agentur Preise 2026</a></li>
+                <li><a href="/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026" className="hover:text-white transition-colors">Google Ads Fixpreis vs. %</a></li>
                 <li><a href="/#contact" className="text-blue-400 hover:underline">Kostenlose Analyse anfordern</a></li>
               </ul>
 
@@ -664,9 +647,9 @@ export default function DatenschutzPage() {
               &copy; 2026 Salih Maral &mdash; Offizieller Google Partner. Alle Rechte vorbehalten.
             </div>
             <div className="flex items-center gap-4 text-[11px]">
-              <span>Frankfurt am Main &bull; Dreieich &bull; Deutschland</span>
+              <span>İstanbul / Türkiye &bull; Global Remote & Danışmanlık</span>
               <span>&bull;</span>
-              <span className="text-slate-400">100% DSGVO-konform</span>
+              <span className="text-slate-400">100% DSGVO & KVKK konform</span>
             </div>
           </div>
         </div>
