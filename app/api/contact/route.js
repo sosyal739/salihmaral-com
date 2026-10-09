@@ -60,7 +60,7 @@ function getClientIp(request) {
 function isAllowedOrigin(request) {
   const origin = request.headers.get('origin') || request.headers.get('referer') || ''
   if (!origin) return true // Allow direct requests without browser headers
-  const allowed = ['salihmaral.de', 'www.salihmaral.de', 'localhost', '127.0.0.1']
+  const allowed = ['salihmaral.com', 'www.salihmaral.com', 'salihmaral.de', 'www.salihmaral.de', 'localhost', '127.0.0.1']
   return allowed.some((host) => origin.includes(host))
 }
 
