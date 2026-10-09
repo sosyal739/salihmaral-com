@@ -244,7 +244,7 @@ export async function generateMetadata({ params }) {
   const serviceSlug = key === 'yorum-yonetimi' 
     ? (currentLang === 'de' ? 'bewertungsmanagement' : currentLang === 'en' ? 'review-management' : 'yorum-yonetimi')
     : key
-  const canonicalUrl = `https://salihmaral.com/${pathPrefix}/${serviceSlug}`
+  const canonicalUrl = `https://www.salihmaral.com/${pathPrefix}/${serviceSlug}`
 
   return {
     title: {
@@ -254,10 +254,10 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        de: `https://salihmaral.com/de/dienstleistungen/${key === 'yorum-yonetimi' ? 'bewertungsmanagement' : key}`,
-        en: `https://salihmaral.com/en/services/${key === 'yorum-yonetimi' ? 'review-management' : key}`,
-        tr: `https://salihmaral.com/tr/hizmetler/${key === 'yorum-yonetimi' ? 'yorum-yonetimi' : key}`,
-        'x-default': `https://salihmaral.com/de/dienstleistungen/${key === 'yorum-yonetimi' ? 'bewertungsmanagement' : key}`,
+        de: `https://www.salihmaral.com/de/dienstleistungen/${key === 'yorum-yonetimi' ? 'bewertungsmanagement' : key}`,
+        en: `https://www.salihmaral.com/en/services/${key === 'yorum-yonetimi' ? 'review-management' : key}`,
+        tr: `https://www.salihmaral.com/tr/hizmetler/${key === 'yorum-yonetimi' ? 'yorum-yonetimi' : key}`,
+        'x-default': `https://www.salihmaral.com/de/dienstleistungen/${key === 'yorum-yonetimi' ? 'bewertungsmanagement' : key}`,
       }
     },
     openGraph: {
@@ -266,7 +266,7 @@ export async function generateMetadata({ params }) {
       url: canonicalUrl,
       images: [
         {
-          url: 'https://salihmaral.com/logo-og.png',
+          url: 'https://www.salihmaral.com/logo-og.png',
           width: 1200,
           height: 630,
           alt: metaData.title,
@@ -277,7 +277,7 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       title: metaData.title,
       description: metaData.description,
-      images: ['https://salihmaral.com/logo.png'],
+      images: ['https://www.salihmaral.com/logo.png'],
       creator: '@salihmaral',
     },
   }
@@ -333,7 +333,7 @@ export default async function ServicePage({ params }) {
   const serviceSlug = key === 'yorum-yonetimi' 
     ? (currentLang === 'de' ? 'bewertungsmanagement' : currentLang === 'en' ? 'review-management' : 'yorum-yonetimi')
     : key
-  const canonicalUrl = `https://salihmaral.com/${pathPrefix}/${serviceSlug}`
+  const canonicalUrl = `https://www.salihmaral.com/${pathPrefix}/${serviceSlug}`
 
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -345,12 +345,12 @@ export default async function ServicePage({ params }) {
         description: metaData.description,
         provider: {
           '@type': 'ProfessionalService',
-          '@id': 'https://salihmaral.com/#organization',
+          '@id': 'https://www.salihmaral.com/#organization',
           name: 'Salih Maral Digital Marketing',
-          url: 'https://salihmaral.com',
+          url: 'https://www.salihmaral.com',
           telephone: '+49 176 8452 7954',
           priceRange: '€€',
-          image: 'https://salihmaral.com/logo.png',
+          image: 'https://www.salihmaral.com/logo.png',
           address: {
             '@type': 'PostalAddress',
             addressCountry: 'DE',
@@ -372,13 +372,13 @@ export default async function ServicePage({ params }) {
             '@type': 'ListItem',
             position: 1,
             name: currentLang === 'de' ? 'Startseite' : currentLang === 'en' ? 'Home' : 'Ana Sayfa',
-            item: currentLang === 'de' ? 'https://salihmaral.com' : `https://salihmaral.com/${currentLang}`,
+            item: currentLang === 'de' ? 'https://www.salihmaral.com' : `https://www.salihmaral.com/${currentLang}`,
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: currentLang === 'de' ? 'Dienstleistungen' : currentLang === 'en' ? 'Services' : 'Hizmetler',
-            item: `https://salihmaral.com/${currentLang === 'de' ? 'de/dienstleistungen' : currentLang === 'en' ? 'en/services' : 'tr/hizmetler'}`,
+            item: `https://www.salihmaral.com/${currentLang === 'de' ? 'de/dienstleistungen' : currentLang === 'en' ? 'en/services' : 'tr/hizmetler'}`,
           },
           {
             '@type': 'ListItem',

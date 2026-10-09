@@ -48,49 +48,49 @@ const translations = {
       services: [
         {
           title: 'Google Ads Yönetimi',
-          description: 'Arama, Display, Shopping ve YouTube reklamlarında maksimum ROI. Profesyonel kampanya yönetimi ve optimizasyon.',
+          description: 'Arama, Shopping, YouTube ve PMax ile küresel pazarlarda döviz kazandıran, yüksek ROAS odaklı profesyonel kampanya yönetimi.',
           slug: 'google-ads',
           icon: 'google-ads'
         },
         {
           title: 'Meta Ads (Facebook & Instagram)',
-          description: 'Facebook ve Instagram\'da hedef kitlenize ulaşın. Detaylı hedefleme ve yüksek dönüşüm oranları.',
+          description: 'Facebook ve Instagram Advantage+ ile e-ticaret markaları ve ihracatçılar için hedef kitleye özel, yüksek dönüşümlü reklam sistemleri.',
           slug: 'meta-ads',
           icon: 'meta'
         },
         {
           title: 'TikTok Ads',
-          description: 'Genç ve dinamik kitleye ulaşın. Viral içerikler ve etkili kampanya yönetimiyle marka bilinirliğinizi artırın.',
+          description: 'Genç ve dinamik küresel kitleye ulaşın. Viral video kurguları ve Spark Ads ile e-ticaret sepet hacminizi büyütün.',
           slug: 'tiktok-ads',
           icon: 'tiktok'
         },
         {
           title: 'X (Twitter) Ads',
-          description: 'Trend konularda öne çıkın. Gerçek zamanlı etkileşim ve marka görünürlüğü için profesyonel X reklamları.',
+          description: 'Global B2B karar vericilerine ve sektör liderlerine ulaşın. Trend konularda kurumsal marka otoritesi ve nitelikli talep kazanımı.',
           slug: 'x-ads',
           icon: 'x'
         },
         {
           title: 'SEO Hizmetleri',
-          description: 'Google\'da üst sıralarda yer alın. Sayfa içi, teknik SEO ve yerel otorite çalışmaları ile nitelikli organik ziyaretçi kazanın.',
+          description: 'Google ve yapay zeka arama motorlarında (GEO / Perplexity / Gemini) zirveye çıkın. Teknik SEO ve küresel içerik otoritesi.',
           slug: 'seo',
           icon: 'seo'
         },
         {
           title: 'Olumsuz Yorum Yönetimi',
-          description: 'Google Maps ve Trustpilot\'taki haksız yorumları silin. İtibarınızı koruyun, güveninizi geri kazanın.',
+          description: 'Google Maps ve Trustpilot\'taki asılsız olumsuz yorumları kaldırarak uluslararası itibarınızı ve müşteri güveninizi koruyun.',
           slug: 'yorum-yonetimi',
           icon: 'review'
         },
         {
           title: 'Reklam & Tracking Kurulumu',
-          description: 'Google Ads, GA4 E-Ticaret, Search Console, GMC, Meta Pixel, CAPI, sGTM ve Google Haritalar anahtar teslim kurulumu.',
+          description: 'iOS 14+ veri kayıplarını sıfırlayan Server-Side GTM, Meta CAPI, GA4 E-Ticaret ve Google Ads gelişmiş dönüşüm kurulumu.',
           slug: 'server-side-tracking',
           icon: 'tracking'
         },
         {
           title: 'YouTube Ads & Video Pazarlama',
-          description: 'Sanatçılar, e-ticaret ve markalar için 23.1M+ izlenme tecrübesiyle YouTube Shorts, In-Stream ve Bumper reklam stratejileri.',
+          description: '23.1M+ doğrulanmış izlenme tecrübesiyle Shorts ve In-Stream video reklamları üzerinden küresel marka bilinirliği ve satış.',
           slug: 'youtube-ads',
           icon: 'youtube'
         }
@@ -164,52 +164,52 @@ const translations = {
       rating: 'Google İşletme Profili Puanı',
       reviews: [
         {
-          name: 'Mehmet Yılmaz',
-          role: 'E-Ticaret Sahibi',
-          text: 'Google Ads kampanyalarımız için profesyonel bir uzman arayışındaydık. Salih Bey ile çalışmaya başladıktan sadece 2 ay sonra satışlarımız %180 arttı. Özellikle kampanya yönetimi ve ROI optimizasyonu konusundaki uzmanlığı mükemmel.',
+          name: 'Emre Doğan',
+          role: 'Tekstil & E-İhracat Markası Kurucusu',
+          text: 'Avrupa pazarına açılırken Google Shopping ve Meta Ads tarafında Salih Bey ile çalıştık. İlk 3 ay içinde euro bazlı ciromuz %240 arttı. Yabancı pazar arama psikolojisine hakimiyeti ve doğrudan iletişimi olağanüstü.',
           rating: 5
         },
         {
-          name: 'Anna Weber',
-          role: 'Klinik Sahibi',
-          text: 'Kliniğimiz için Google ve Facebook reklamları yaptık. Eskiden haritalarda hiç çıkmazken şimdi bölgemizde ilk sıradayız. Telefonlarımız susmuyor. İşini gerçekten bilen, dürüst ve şeffaf bir uzman.',
+          name: 'Zeynep Arslan',
+          role: 'D2C Kozmetik E-Ticaret Direktörü',
+          text: 'Server-Side Tracking kurulumu ve Performance Max kampanyalarındaki negatif marka filtrelemeleri sayesinde reklam israfımız bitti. ROAS oranımız 4.2\'den 7.8 seviyesine çıktı. Gerçek bir Google Partner vizyonu.',
           rating: 5
         },
         {
-          name: 'Kemal Öztürk',
-          role: 'Restoran Sahibi',
-          text: 'Daha önce farklı ajanslarla çalıştık ama verim alamadık. Salih Bey ile çalışmaya başladığımızdan beri raporlamalar o kadar net ki paramızın nereye gittiğini biliyoruz. Kesinlikle öneririm.',
+          name: 'Caner Yıldız',
+          role: 'Endüstriyel B2B Üretici & İhracat',
+          text: 'Avrupa ve Körfez bölgesindeki toptancı ve satın almacılara ulaşmak için Google Arama reklamlarında Salih Bey ile çalışıyoruz. Gelen kurumsal teklif talepleri tam hedef kitlemizden oluşuyor.',
           rating: 5
         }
       ]
     },
     about: {
-      title: '17 Yıllık Tecrübe ile Doğrudan ve Şeffaf Çalışma Prensibim',
+      title: '17 Yıllık Tecrübe ile E-İhracat ve Küresel Büyüme İlkelerim',
       subtitle: 'Neden Salih Maral?',
       features: [
         {
-          title: 'Veri Odaklı Strateji',
-          description: 'Varsayımlarla hareket etmiyorum. Rakiplerinizi ve reklam açık artırma verilerini düzenli inceleyerek bütçenizi en verimli kelimelere yönlendiririm.'
+          title: 'E-İhracat & Küresel Pazar Hakimiyeti',
+          description: 'Varsayımlarla değil; hedef pazarın arama hacmi, yerel dili ve rekabet verileriyle çalışıyorum. Bütçenizi döviz geliri getirecek yabancı alıcılara yönlendiririm.'
         },
         {
-          title: 'Teknik Kurulum ve Takip',
-          description: 'Dönüşüm izleme (GA4, CAPI, sGTM) ve hedef kitle ayarlarını bizzat kurup test ederim. Reklam harcamanızın her kuruşunun karşılığını net görürsünüz.'
+          title: 'Server-Side & Birinci Taraf Veri Altyapısı',
+          description: 'iOS 14+ kısıtlamalarını aşmak için sGTM, GA4 ve Meta CAPI sistemlerini bizzat kurarım. Algoritmaya %95+ doğrulukta veri besleyerek dönüşüm maliyetini düşürürüm.'
         },
         {
-          title: 'Butik ve Birebir Çalışma',
-          description: 'İşlerimi asistanlara veya junior çalışanlara devretmiyorum. Sınırlı sayıda işletmeyle bizzat çalışarak her hesaba gereken dikkati ve zamanı ayırırım.'
+          title: 'Doğrudan Senior Google Partner İletişimi',
+          description: 'Hesabınız ajanslarda junior çalışanlara veya stajyerlere devredilmez. 17 yıllık Resmi Google Partner deneyimimle bizzat benimle çalışırsınız.'
         },
         {
-          title: 'Net Satış ve Kârlılık Odaklı',
-          description: 'Trafik bir araçtır; asıl amaç ciro ve net kârdır. Tıklama sayısına odaklanmak yerine, dönüşüm oranlarını yükselterek işletmenizin net gelirini artırırım.'
+          title: 'Net Ciro ve ROAS Odaklı Büyüme',
+          description: 'Tıklama sayısı ciro getirmez. Temel hedefimiz; ortalama sepet tutarını büyütmek, kârlı ürünleri ölçeklemek ve reklam harcaması getirisini (ROAS) maksimize etmektir.'
         },
         {
-          title: 'Şeffaf Raporlama',
-          description: 'Gizli komisyon veya karmaşık terimler yok. Ne harcandığını, hangi dönüşümlerin alındığını her ay net ve anlaşılır biçimde paylaşıyorum.'
+          title: 'Şeffaf Hesap Mülkiyeti & Sıfır Komisyon',
+          description: 'Reklam harcamanız kendi kurumsal kartınızdan doğrudan platforma ödenir. Bütçenizden gizli yüzde kesintisi yapılmaz; şeffaf ve net çalışma yürütülür.'
         },
         {
-          title: 'Doğrudan İletişim',
-          description: 'Aracı müşteri temsilcileri olmadan, doğrudan hesabınızı yöneten uzmanla yani benimle görüşür; sorularınıza hızlı yanıt alırsınız.'
+          title: 'Yapay Zeka Destekli Arama Görünürlüğü (GEO)',
+          description: 'Sadece geleneksel arama değil; Google AI Overviews, ChatGPT ve Perplexity gibi yapay zeka arama motorlarında markanızı kaynak olarak konumlandırırım.'
         }
       ]
     },
@@ -233,37 +233,37 @@ const translations = {
     },
     faq: {
       badge: 'Sıkça Sorulan Sorular',
-      title: 'Almanya Google Ads & Dijital Büyüme Rehberi',
-      subtitle: 'Almanya ve Avrupa\'da reklam yönetimi, ajans maliyetleri, vergilendirme ve yerel büyüme hakkında en çok merak edilenler.',
+      title: 'E-İhracat, Google Ads & Dijital Büyüme Rehberi',
+      subtitle: 'Küresel pazarlara açılma, e-ticaret reklam yönetimi, ROAS artışı ve ölçümleme hakkında en çok merak edilenler.',
       items: [
         {
-          q: 'Almanya\'da Google Ads Yönetimi ve Danışmanlık Ücretleri Ne Kadardır?',
-          a: 'Geleneksel ajanslar reklam bütçeniz üzerinden %15-%20 komisyon alarak maliyetinizi artırır. Ben Salih Maral olarak şeffaf, sürprizsiz ve aylık sabit fiyat (Fixpreis ab 590€ - 790€/ay) modeliyle çalışıyorum. Bütçeniz kesintiye uğramadan doğrudan satış getirecek aramalara harcanır.'
+          q: 'Türkiye\'den Avrupa ve Almanya pazarına e-ihracat reklamları nasıl kurgulanır?',
+          a: 'Hedef ülkenin yerel arama dili, euro bazlı TBM (CPC) maliyetleri ve satın alma psikolojisine uygun Google Shopping, Arama ve Meta Advantage+ kampanyaları sıfırdan kurgulanır. Yerelleştirilmiş reklam metinleri ve negatif filtrelemeyle bütçeniz yalnızca gerçek yabancı alıcılara harcanır.'
         },
         {
-          q: 'Frankfurt, Köln ve Stuttgart\'taki Şirketler Neden Hâlâ "AdWords Ajansı" Olarak Arıyor?',
-          a: 'Google, reklam platformunun adını 2018\'de "Google Ads" olarak değiştirmiş olsa da, Almanya\'daki sanayi, makine ve B2B satın alma yöneticileri alışkanlık gereği hâlâ "AdWords Agentur" terimini kullanmaktadır. Frankfurt finans/B2B, Köln e-ticaret ve Stuttgart makine sektörüne özel çift odaklı stratejiler kuruyorum.'
+          q: 'E-Ticarette ROAS oranını yükseltmek ve kârlı ölçeklenmek için ne yapılmalıdır?',
+          a: 'Salt geniş eşleme yerine veri odaklı filtreleme, kampanya düzeyinde negatif marka koruması, yüksek sepet tutarına sahip ürün gruplarına bütçe yoğunlaştırma ve Server-Side Tracking ile algoritmanın kârlı müşteriyi öğrenmesi sağlanır.'
         },
         {
-          q: 'Almanya\'da Google ve Meta Ads Faturaları Nasıl Muhasebeleştirilir? (§13b UStG)',
-          a: 'Google ve Meta Avrupa faturalarını Dublin/İrlanda merkezinden düzenler. Almanya\'daki şirketiniz için KDV Numarası (USt-IdNr.) girildiğinde faturalar %0 KDV (Ters İbraz / Reverse-Charge §13b UStG) ile kesilir. KDV ön beyannamenizde 84 ve 67. hanelere girilerek vergi sıfırlanır.'
+          q: 'Reklam bütçesi yönetimi ve ajans çalışma modeliniz nasıl işler?',
+          a: 'Reklam harcamalarınız doğrudan kendi Google ve Meta faturalandırma hesabınızdan çekilir; bütçenizden hiçbir aracı komisyonu kesilmez. Yönetim hizmetim ise net, şeffaf ve aylık sabit paketlerle yürütülür.'
         },
         {
-          q: 'Almanya\'da Yeni Dükkan & İşletme Açanlar İçin Google Ads ve Haritalar Nasıl Çalışır?',
-          a: 'Restoran, market, oto servis, klinik ve inşaat (Handwerk) işletmelerinin ilk 30 günde müşteri çekmesi için Google Haritalar (Google İşletme Profili) 3-Pack zirvesine optimize edilir ve 5-15 km çevreye hedeflenen yerel Google Ads ile doğrudan telefon araması ve yol tarifi toplanır.'
+          q: 'Server-Side Tracking (sGTM ve Meta CAPI) e-ihracatta neden zorunludur?',
+          a: 'Tarayıcı çerez engelleyicileri (iOS Safari, ad-blocker\'lar) standart piksellerin verisinin %20-%35\'ini kaçırır. Sunucu taraflı ölçümleme (sGTM & CAPI) ile tüm satış verileri doğrudan sunucudan iletilerek reklam yapay zekasına %95+ doğrulukta sinyal verilir.'
         },
         {
           q: 'Performance Max (PMax) Kampanyalarında Negatif Anahtar Kelimeler Neden Zorunludur?',
-          a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler ve marka hariç tutma uygulayarak bütçeyi sadece kârlı yeni müşterilere yönlendiriyorum.'
+          a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler uygulayarak bütçeyi sadece kârlı yeni müşterilere yönlendiriyorum.'
         },
         {
-          q: 'Ruhr Bölgesi ve NRW SEO: Dortmund, Essen ve Marl İşletmeleri Google\'da Nasıl Zirveye Çıkar?',
-          a: 'Dortmund, Essen, Bochum ve Marl gibi sanayi ve nüfus yoğunluğu yüksek Ruhr metropollerinde, yerel schema (LocalBusiness), bölgesel servis siloları ve yüksek otorite sinyalleri ile ilk 3 organik sırayı hedefleyip sonuç alıyoruz.'
+          q: 'Almanya ve DACH bölgesindeki yerel işletmeler için özel bir hizmetiniz var mı?',
+          a: 'Evet. Almanya\'daki yerel esnaf, klinik, restoran ve zanaatkarlar (Handwerk) için özel olarak yapılandırdığımız Almanca ve yerel mevzuat uyumlu çözümlerimiz kardeş sitemiz olan salihmaral.de üzerinden sunulmaktadır.'
         }
       ]
     },
     footer: {
-      description: 'Almanya ve Avrupa\'da Google Ads, Meta Ads ve SEO ile işletmeniz için şeffaf, ölçülebilir büyüme sistemleri.',
+      description: 'Türkiye ve küresel pazarlarda Google Ads, Meta Ads ve SEO ile markanız için şeffaf, ölçülebilir büyüme sistemleri. (Almanya operasyonlarımız için: salihmaral.de)',
       rights: 'Tüm hakları saklıdır.',
       about: 'Hakkımda'
     }
@@ -920,107 +920,107 @@ export default function Home({ initialLang = 'tr' }) {
           '@graph': [
             {
               '@type': 'WebPage',
-              '@id': `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#webpage`,
-              url: `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}`,
+              '@id': `https://www.salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#webpage`,
+              url: `https://www.salihmaral.com${lang === 'de' ? '/' : `/${lang}`}`,
               name: lang === 'de' ? 'Salih Maral - Digital Marketing Experte' : lang === 'tr' ? 'Salih Maral - Dijital Pazarlama Uzmanı' : 'Salih Maral - Digital Marketing Expert',
-              isPartOf: { '@id': 'https://salihmaral.com/#website' },
-              about: { '@id': 'https://salihmaral.com/#organization' },
+              isPartOf: { '@id': 'https://www.salihmaral.com/#website' },
+              about: { '@id': 'https://www.salihmaral.com/#organization' },
               description: t.hero.description,
               inLanguage: lang === 'de' ? 'de-DE' : lang === 'tr' ? 'tr-TR' : 'en-US'
             },
             {
               '@type': 'SiteNavigationElement',
-              '@id': `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#navigation`,
+              '@id': `https://www.salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#navigation`,
               name: lang === 'de' ? 'Hauptnavigation' : lang === 'tr' ? 'Ana Navigasyon' : 'Main Navigation',
               hasPart: [
                 {
                   '@type': 'SiteNavigationElement',
                   name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management',
                   description: lang === 'de' ? 'Maximaler ROI in Such-, Display-, Shopping- und YouTube-Kampagnen' : lang === 'tr' ? 'Arama, Display, Shopping ve YouTube kampanyalarında maksimum ROI' : 'Maximum ROI in Search, Display, Shopping and YouTube campaigns',
-                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/google-ads`
+                  url: `https://www.salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/google-ads`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: 'Meta Ads (Facebook & Instagram)',
                   description: lang === 'de' ? 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram' : lang === 'tr' ? 'Facebook ve Instagram\'da hedef kitlenize ulaşın' : 'Reach your target audience on Facebook and Instagram',
-                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/meta-ads`
+                  url: `https://www.salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/meta-ads`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: 'TikTok Ads',
                   description: lang === 'de' ? 'Erreichen Sie ein junges, dynamisches Publikum' : lang === 'tr' ? 'Genç ve dinamik kitlelere ulaşın' : 'Reach a young, dynamic audience',
-                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/tiktok-ads`
+                  url: `https://www.salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/tiktok-ads`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: 'X (Twitter) Ads',
                   description: lang === 'de' ? 'Heben Sie sich bei Trendthemen hervor' : lang === 'tr' ? 'Trend konularda öne çıkın' : 'Stand out in trending topics',
-                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/x-ads`
+                  url: `https://www.salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/x-ads`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services',
                   description: lang === 'de' ? 'Erreichen Sie Top-Rankings bei Google' : lang === 'tr' ? 'Google\'da üst sıralara çıkın' : 'Achieve top rankings on Google',
-                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/seo`
+                  url: `https://www.salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/seo`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management',
                   description: lang === 'de' ? 'Professionelles Google Bewertungsmanagement' : lang === 'tr' ? 'Profesyonel Google yorum yönetimi' : 'Professional Google review management',
-                  url: `https://salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/${lang === 'de' ? 'bewertungsmanagement' : lang === 'en' ? 'review-management' : 'yorum-yonetimi'}`
+                  url: `https://www.salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/${lang === 'de' ? 'bewertungsmanagement' : lang === 'en' ? 'review-management' : 'yorum-yonetimi'}`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: 'Blog',
                   description: lang === 'de' ? 'Neueste Artikel über digitales Marketing' : lang === 'tr' ? 'Dijital pazarlama hakkında güncel makaleler' : 'Latest articles about digital marketing',
-                  url: 'https://salihmaral.com/blog'
+                  url: 'https://www.salihmaral.com/blog'
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: lang === 'de' ? 'Kontakt' : lang === 'tr' ? 'İletişim' : 'Contact',
                   description: lang === 'de' ? 'Kostenlose Beratung anfordern' : lang === 'tr' ? 'Ücretsiz danışmanlık talep edin' : 'Request a free consultation',
-                  url: `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#contact`
+                  url: `https://www.salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#contact`
                 }
               ]
             },
             {
               '@type': 'ItemList',
-              '@id': `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#services-list`,
+              '@id': `https://www.salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#services-list`,
               name: lang === 'de' ? 'Digital Marketing Dienstleistungen' : lang === 'tr' ? 'Dijital Pazarlama Hizmetleri' : 'Digital Marketing Services',
               numberOfItems: 6,
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management', url: `https://salihmaral.com${svcUrl(lang, 'google-ads')}` },
-                { '@type': 'ListItem', position: 2, name: 'Meta Ads (Facebook & Instagram)', url: `https://salihmaral.com${svcUrl(lang, 'meta-ads')}` },
-                { '@type': 'ListItem', position: 3, name: 'TikTok Ads', url: `https://salihmaral.com${svcUrl(lang, 'tiktok-ads')}` },
-                { '@type': 'ListItem', position: 4, name: 'X (Twitter) Ads', url: `https://salihmaral.com${svcUrl(lang, 'x-ads')}` },
-                { '@type': 'ListItem', position: 5, name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services', url: `https://salihmaral.com${svcUrl(lang, 'seo')}` },
-                { '@type': 'ListItem', position: 6, name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.com${svcUrl(lang, 'yorum-yonetimi')}` }
+                { '@type': 'ListItem', position: 1, name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management', url: `https://www.salihmaral.com${svcUrl(lang, 'google-ads')}` },
+                { '@type': 'ListItem', position: 2, name: 'Meta Ads (Facebook & Instagram)', url: `https://www.salihmaral.com${svcUrl(lang, 'meta-ads')}` },
+                { '@type': 'ListItem', position: 3, name: 'TikTok Ads', url: `https://www.salihmaral.com${svcUrl(lang, 'tiktok-ads')}` },
+                { '@type': 'ListItem', position: 4, name: 'X (Twitter) Ads', url: `https://www.salihmaral.com${svcUrl(lang, 'x-ads')}` },
+                { '@type': 'ListItem', position: 5, name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services', url: `https://www.salihmaral.com${svcUrl(lang, 'seo')}` },
+                { '@type': 'ListItem', position: 6, name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://www.salihmaral.com${svcUrl(lang, 'yorum-yonetimi')}` }
               ]
             },
             {
               '@type': 'ProfessionalService',
               name: 'Salih Maral Digital Marketing',
               description: lang === 'de' ? 'Professionelle Digital Marketing Dienstleistungen' : lang === 'tr' ? 'Profesyonel Dijital Pazarlama Hizmetleri' : 'Professional Digital Marketing Services',
-              url: `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}`,
+              url: `https://www.salihmaral.com${lang === 'de' ? '/' : `/${lang}`}`,
               priceRange: '€€',
-              image: 'https://salihmaral.com/logo.png',
+              image: 'https://www.salihmaral.com/logo.png',
               areaServed: { '@type': 'Country', name: lang === 'de' ? 'Deutschland' : lang === 'tr' ? 'Almanya' : 'Germany' },
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
                 name: lang === 'de' ? 'Digital Marketing Services' : lang === 'tr' ? 'Dijital Pazarlama Hizmetleri' : 'Digital Marketing Services',
                 itemListElement: [
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads', url: `https://salihmaral.com${svcUrl(lang, 'google-ads')}` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Meta Ads', url: `https://salihmaral.com${svcUrl(lang, 'meta-ads')}` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'TikTok Ads', url: `https://salihmaral.com${svcUrl(lang, 'tiktok-ads')}` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'X Ads', url: `https://salihmaral.com${svcUrl(lang, 'x-ads')}` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO', url: `https://salihmaral.com${svcUrl(lang, 'seo')}` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.com${svcUrl(lang, 'yorum-yonetimi')}` } }
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads', url: `https://www.salihmaral.com${svcUrl(lang, 'google-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Meta Ads', url: `https://www.salihmaral.com${svcUrl(lang, 'meta-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'TikTok Ads', url: `https://www.salihmaral.com${svcUrl(lang, 'tiktok-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'X Ads', url: `https://www.salihmaral.com${svcUrl(lang, 'x-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO', url: `https://www.salihmaral.com${svcUrl(lang, 'seo')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://www.salihmaral.com${svcUrl(lang, 'yorum-yonetimi')}` } }
                 ]
               }
             },
             {
               '@type': 'FAQPage',
-              '@id': `https://salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#faq`,
+              '@id': `https://www.salihmaral.com${lang === 'de' ? '/' : `/${lang}`}#faq`,
               mainEntity: (t.faq && t.faq.items ? t.faq.items : []).map(item => ({
                 '@type': 'Question',
                 name: item.q,

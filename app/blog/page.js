@@ -7,12 +7,12 @@ export const metadata = {
   },
   description: 'Google Ads, Meta Ads, SEO, E-İhracat ve Server-Side Tracking hakkında güncel uzman rehberleri.',
   alternates: {
-    canonical: 'https://salihmaral.com/blog',
+    canonical: 'https://www.salihmaral.com/blog',
   },
   openGraph: {
     title: 'Dijital Pazarlama & Büyüme Blogu | Salih Maral',
     description: 'Google Ads, Meta Ads, SEO, E-İhracat ve Server-Side Tracking hakkında güncel uzman rehberleri.',
-    url: 'https://salihmaral.com/blog',
+    url: 'https://www.salihmaral.com/blog',
     type: 'website',
   },
 }

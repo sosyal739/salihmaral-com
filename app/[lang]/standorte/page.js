@@ -329,9 +329,9 @@ export default function StandorteHubPage({ params }) {
       '@context': 'https://schema.org',
       '@type': 'ProfessionalService',
       name: 'Salih Maral Google Ads & Performance Marketing - Standorte Deutschland',
-      url: `https://salihmaral.com/${currentLang}/standorte`,
+      url: `https://www.salihmaral.com/${currentLang}/standorte`,
       email: 'info@salihmaral.com',
-      image: 'https://salihmaral.com/logo.png',
+      image: 'https://www.salihmaral.com/logo.png',
       priceRange: '€€',
       founder: {
         '@type': 'Person',
@@ -351,13 +351,13 @@ export default function StandorteHubPage({ params }) {
           '@type': 'ListItem',
           position: 1,
           name: currentLang === 'tr' ? 'Ana Sayfa' : currentLang === 'en' ? 'Home' : 'Startseite',
-          item: currentLang === 'de' ? 'https://salihmaral.com' : `https://salihmaral.com/${currentLang}`
+          item: currentLang === 'de' ? 'https://www.salihmaral.com' : `https://www.salihmaral.com/${currentLang}`
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: currentLang === 'tr' ? 'Şehirler' : currentLang === 'en' ? 'Locations' : 'Standorte',
-          item: `https://salihmaral.com/${currentLang}/standorte`
+          item: `https://www.salihmaral.com/${currentLang}/standorte`
         }
       ]
     }

@@ -973,13 +973,13 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
     "provider": {
       "@type": "Person",
       "name": "Salih Maral",
-      "url": "https://salihmaral.com"
+      "url": "https://www.salihmaral.com"
     },
     "areaServed": {
       "@type": "Country",
       "name": "Germany"
     },
-    "logo": "https://salihmaral.com/logo.png"
+    "logo": "https://www.salihmaral.com/logo.png"
   }
 
   const faqSchema = data.faq && data.faq.length > 0 ? {
@@ -1003,19 +1003,19 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         "@type": "ListItem",
         "position": 1,
         "name": lang === 'de' ? 'Startseite' : lang === 'en' ? 'Home' : 'Ana Sayfa',
-        "item": `https://salihmaral.com${lang === 'de' ? '' : '/' + lang}`
+        "item": `https://www.salihmaral.com${lang === 'de' ? '' : '/' + lang}`
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": lang === 'de' ? 'Dienstleistungen' : lang === 'en' ? 'Services' : 'Hizmetler',
-        "item": `https://salihmaral.com${lang === 'de' ? '/dienstleistungen' : lang === 'en' ? '/en/services' : '/tr/hizmetler'}`
+        "item": `https://www.salihmaral.com${lang === 'de' ? '/dienstleistungen' : lang === 'en' ? '/en/services' : '/tr/hizmetler'}`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": data.title,
-        "item": `https://salihmaral.com${getLocalizedServiceUrl(lang, service)}`
+        "item": `https://www.salihmaral.com${getLocalizedServiceUrl(lang, service)}`
       }
     ]
   }

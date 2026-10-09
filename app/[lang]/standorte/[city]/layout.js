@@ -6,7 +6,7 @@ export async function generateMetadata({ params }) {
   
   const meta = getCityMeta(city, currentLang)
 
-  const canonicalUrl = `https://salihmaral.com/${currentLang}/standorte/${city}`
+  const canonicalUrl = `https://www.salihmaral.com/${currentLang}/standorte/${city}`
 
   return {
     title: {
@@ -16,10 +16,10 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        de: `https://salihmaral.com/de/standorte/${city}`,
-        tr: `https://salihmaral.com/tr/standorte/${city}`,
-        en: `https://salihmaral.com/en/standorte/${city}`,
-        'x-default': `https://salihmaral.com/de/standorte/${city}`
+        de: `https://www.salihmaral.com/de/standorte/${city}`,
+        tr: `https://www.salihmaral.com/tr/standorte/${city}`,
+        en: `https://www.salihmaral.com/en/standorte/${city}`,
+        'x-default': `https://www.salihmaral.com/de/standorte/${city}`
       }
     },
     openGraph: {
@@ -37,7 +37,7 @@ export default async function CityLayout({ children, params }) {
   const meta = getCityMeta(city, currentLang)
   
   const cityName = city.charAt(0).toUpperCase() + city.slice(1)
-  const pageUrl = `https://salihmaral.com/${currentLang}/standorte/${city}`
+  const pageUrl = `https://www.salihmaral.com/${currentLang}/standorte/${city}`
 
   const faqData = currentLang === 'tr' ? [
     {
@@ -94,7 +94,7 @@ export default async function CityLayout({ children, params }) {
         url: pageUrl,
         description: meta.description,
         priceRange: '€€',
-        image: 'https://salihmaral.com/hero.webp',
+        image: 'https://www.salihmaral.com/hero.webp',
         address: {
           '@type': 'PostalAddress',
           addressLocality: cityName,
@@ -114,13 +114,13 @@ export default async function CityLayout({ children, params }) {
             '@type': 'ListItem',
             position: 1,
             name: currentLang === 'tr' ? 'Ana Sayfa' : currentLang === 'en' ? 'Home' : 'Startseite',
-            item: `https://salihmaral.com/${currentLang}`
+            item: `https://www.salihmaral.com/${currentLang}`
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: currentLang === 'tr' ? 'Bölgeler' : currentLang === 'en' ? 'Locations' : 'Standorte',
-            item: `https://salihmaral.com/${currentLang}/standorte`
+            item: `https://www.salihmaral.com/${currentLang}/standorte`
           },
           {
             '@type': 'ListItem',

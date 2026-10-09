@@ -4,7 +4,7 @@ export const metadata = {
   },
   description: 'Salih Maral, 17+ yıllık resmi Google Partner tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads ve SEO danışmanlığı sunmaktadır.',
   alternates: {
-    canonical: 'https://salihmaral.com/about',
+    canonical: 'https://www.salihmaral.com/about',
   },
 }
 

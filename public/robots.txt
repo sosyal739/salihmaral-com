@@ -48,7 +48,7 @@ User-agent: cohere-ai
 Allow: /
 
 # LLM Directives (Princeton GEO Standard)
-# LLMs-Text: https://salihmaral.com/llms.txt
-# LLMs-Full: https://salihmaral.com/llms-full.txt
+# LLMs-Text: https://www.salihmaral.com/llms.txt
+# LLMs-Full: https://www.salihmaral.com/llms-full.txt
 
-Sitemap: https://salihmaral.com/sitemap.xml
+Sitemap: https://www.salihmaral.com/sitemap.xml

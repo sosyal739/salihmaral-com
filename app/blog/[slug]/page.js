@@ -46,7 +46,7 @@ export async function generateMetadata({ params }) {
     if (description.length > 158) {
       description = description.slice(0, 155).replace(/\s+\S*$/, '') + '...'
     }
-    const canonicalUrl = `https://salihmaral.com/blog/${slug}`
+    const canonicalUrl = `https://www.salihmaral.com/blog/${slug}`
 
     return {
       title: {
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
         authors: ['Salih Maral'],
         images: [
           {
-            url: post.coverImage || 'https://salihmaral.com/logo-og.png',
+            url: post.coverImage || 'https://www.salihmaral.com/logo-og.png',
             width: 1200,
             height: 630,
             alt: cleanTitle,
@@ -76,7 +76,7 @@ export async function generateMetadata({ params }) {
         card: 'summary_large_image',
         title: fullTitle,
         description: description,
-        images: [post.coverImage || 'https://salihmaral.com/logo.png'],
+        images: [post.coverImage || 'https://www.salihmaral.com/logo.png'],
         creator: '@salihmaral',
       },
     }
@@ -121,8 +121,8 @@ export default async function BlogDetailPage({ params }) {
   const relatedPosts = [...sameCategory, ...otherPosts].slice(0, 3)
 
   const cleanTitle = post.title.replace(/\s*\|\s*Salih Maral.*$/i, '').trim()
-  const canonicalUrl = `https://salihmaral.com/blog/${slug}`
-  const homeUrl = initialLang === 'de' ? 'https://salihmaral.com' : `https://salihmaral.com/${initialLang}`
+  const canonicalUrl = `https://www.salihmaral.com/blog/${slug}`
+  const homeUrl = initialLang === 'de' ? 'https://www.salihmaral.com' : `https://www.salihmaral.com/${initialLang}`
   const homeName = initialLang === 'de' ? 'Startseite' : initialLang === 'tr' ? 'Ana Sayfa' : 'Home'
   const inLang = initialLang === 'de' ? 'de-DE' : initialLang === 'tr' ? 'tr-TR' : 'en-US'
 
@@ -139,22 +139,22 @@ export default async function BlogDetailPage({ params }) {
         },
         headline: cleanTitle,
         description: post.excerpt || cleanTitle,
-        image: post.coverImage || 'https://salihmaral.com/logo.png',
+        image: post.coverImage || 'https://www.salihmaral.com/logo.png',
         author: {
           '@type': 'Person',
-          '@id': 'https://salihmaral.com/#person',
+          '@id': 'https://www.salihmaral.com/#person',
           name: 'Salih Maral',
           jobTitle: 'Offizieller Google Partner & Senior Digital Marketing Experte',
-          url: 'https://salihmaral.com',
+          url: 'https://www.salihmaral.com',
         },
         publisher: {
           '@type': 'Organization',
-          '@id': 'https://salihmaral.com/#organization',
+          '@id': 'https://www.salihmaral.com/#organization',
           name: 'Salih Maral Digital Marketing',
-          url: 'https://salihmaral.com',
+          url: 'https://www.salihmaral.com',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://salihmaral.com/logo.png',
+            url: 'https://www.salihmaral.com/logo.png',
           },
         },
         datePublished: post.date,
@@ -162,7 +162,7 @@ export default async function BlogDetailPage({ params }) {
         inLanguage: inLang,
         articleSection: post.category || 'Digital Marketing',
         keywords: post.category ? `${post.category}, Digital Marketing, Salih Maral` : 'Digital Marketing, Salih Maral',
-        isPartOf: { '@id': 'https://salihmaral.com/#website' },
+        isPartOf: { '@id': 'https://www.salihmaral.com/#website' },
       },
       {
         '@type': 'BreadcrumbList',
@@ -178,7 +178,7 @@ export default async function BlogDetailPage({ params }) {
             '@type': 'ListItem',
             position: 2,
             name: 'Blog',
-            item: 'https://salihmaral.com/blog',
+            item: 'https://www.salihmaral.com/blog',
           },
           {
             '@type': 'ListItem',

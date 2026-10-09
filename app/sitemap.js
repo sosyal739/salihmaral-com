@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export default async function sitemap() {
-  const baseUrl = 'https://salihmaral.com'
+  const baseUrl = 'https://www.salihmaral.com'
   const currentDate = new Date().toISOString().split('T')[0]
 
   // 1. Static Core Pages (Root / is German; /tr and /en are localized)

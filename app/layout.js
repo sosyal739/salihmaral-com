@@ -11,7 +11,7 @@ const manrope = Manrope({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://salihmaral.com'),
+  metadataBase: new URL('https://www.salihmaral.com'),
   title: {
     template: '%s | Salih Maral',
     default: 'Salih Maral – Resmi Google Partner & Dijital Büyüme Ajansı',
@@ -38,7 +38,7 @@ export const metadata = {
     'GEO Uzmanı',
     'AI SEO'
   ],
-  authors: [{ name: 'Salih Maral', url: 'https://salihmaral.com' }],
+  authors: [{ name: 'Salih Maral', url: 'https://www.salihmaral.com' }],
   creator: 'Salih Maral',
   publisher: 'Salih Maral',
   formatDetection: {
@@ -47,18 +47,18 @@ export const metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: 'https://salihmaral.com',
+    canonical: 'https://www.salihmaral.com',
     languages: {
-      'tr': 'https://salihmaral.com',
-      'en': 'https://salihmaral.com/en',
-      'de': 'https://salihmaral.com',
-      'x-default': 'https://salihmaral.com'
+      'tr': 'https://www.salihmaral.com',
+      'en': 'https://www.salihmaral.com/en',
+      'de': 'https://salihmaral.de',
+      'x-default': 'https://www.salihmaral.com'
     }
   },
   openGraph: {
     title: 'Salih Maral – Resmi Google Partner & Dijital Büyüme Ajansı',
     description: '17+ yıllık resmi Google Partner tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve ihracat odaklı performans pazarlaması danışmanlığı.',
-    url: 'https://salihmaral.com',
+    url: 'https://www.salihmaral.com',
     siteName: 'Salih Maral Dijital Büyüme Ajansı',
     images: [
       {
@@ -108,18 +108,18 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': 'https://salihmaral.com/#organization',
+      '@id': 'https://www.salihmaral.com/#organization',
       name: 'Salih Maral Dijital Büyüme Ajansı',
-      url: 'https://salihmaral.com',
+      url: 'https://www.salihmaral.com',
       logo: {
         '@type': 'ImageObject',
-        '@id': 'https://salihmaral.com/#logo',
-        url: 'https://salihmaral.com/logo.png',
+        '@id': 'https://www.salihmaral.com/#logo',
+        url: 'https://www.salihmaral.com/logo.png',
         width: 800,
         height: 800,
         caption: 'Salih Maral Dijital Büyüme Ajansı'
       },
-      image: { '@id': 'https://salihmaral.com/#logo' },
+      image: { '@id': 'https://www.salihmaral.com/#logo' },
       contactPoint: {
         '@type': 'ContactPoint',
         email: 'info@salihmaral.com',
@@ -128,7 +128,7 @@ const jsonLd = {
         areaServed: ['TR', 'DE', 'GB', 'US', 'EU']
       },
       sameAs: [
-        'https://salihmaral.com',
+        'https://www.salihmaral.com',
         'https://www.linkedin.com/in/salih-maral-78159a22a/',
         'https://x.com/salihmaral',
         'https://www.facebook.com/salihmaral.de',
@@ -138,21 +138,21 @@ const jsonLd = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://salihmaral.com/#website',
-      url: 'https://salihmaral.com',
+      '@id': 'https://www.salihmaral.com/#website',
+      url: 'https://www.salihmaral.com',
       name: 'Salih Maral Dijital Büyüme Ajansı',
-      publisher: { '@id': 'https://salihmaral.com/#organization' },
+      publisher: { '@id': 'https://www.salihmaral.com/#organization' },
       inLanguage: ['tr-TR', 'en-US', 'de-DE']
     },
     {
       '@type': 'Person',
-      '@id': 'https://salihmaral.com/#person',
+      '@id': 'https://www.salihmaral.com/#person',
       name: 'Salih Maral',
       jobTitle: 'Resmi Google Partner & Büyüme Danışmanı',
-      url: 'https://salihmaral.com',
-      image: 'https://salihmaral.com/logo.png',
+      url: 'https://www.salihmaral.com',
+      image: 'https://www.salihmaral.com/logo.png',
       description: '17+ yıllık resmi Google Partner tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, TikTok Ads, SEO, Generative Engine Optimization (GEO) ve Server-Side Tracking uzmanı.',
-      worksFor: { '@id': 'https://salihmaral.com/#organization' },
+      worksFor: { '@id': 'https://www.salihmaral.com/#organization' },
       knowsAbout: [
         'Google Ads Yönetimi',
         'Meta Ads (Facebook & Instagram)',
@@ -166,7 +166,7 @@ const jsonLd = {
       ],
       knowsLanguage: ['tr', 'en', 'de'],
       sameAs: [
-        'https://salihmaral.com',
+        'https://www.salihmaral.com',
         'https://www.linkedin.com/in/salih-maral-78159a22a/',
         'https://x.com/salihmaral',
         'https://github.com/sosyal739'
@@ -174,11 +174,11 @@ const jsonLd = {
     },
     {
       '@type': ['LocalBusiness', 'ProfessionalService'],
-      '@id': 'https://salihmaral.com/#localbusiness',
+      '@id': 'https://www.salihmaral.com/#localbusiness',
       name: 'Salih Maral Dijital Büyüme Ajansı',
-      url: 'https://salihmaral.com',
+      url: 'https://www.salihmaral.com',
       email: 'info@salihmaral.com',
-      image: 'https://salihmaral.com/logo.png',
+      image: 'https://www.salihmaral.com/logo.png',
       priceRange: '₺₺ / €€',
       aggregateRating: {
         '@type': 'AggregateRating',
@@ -202,8 +202,8 @@ const jsonLd = {
         'Server-Side Tracking (sGTM & CAPI)',
         'Yapay Zeka Destekli Arama Optimizasyonu (GEO)'
       ],
-      founder: { '@id': 'https://salihmaral.com/#person' },
-      parentOrganization: { '@id': 'https://salihmaral.com/#organization' },
+      founder: { '@id': 'https://www.salihmaral.com/#person' },
+      parentOrganization: { '@id': 'https://www.salihmaral.com/#organization' },
       openingHoursSpecification: {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -213,7 +213,7 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://salihmaral.com/#faq',
+      '@id': 'https://www.salihmaral.com/#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -243,8 +243,8 @@ const jsonLd = {
     },
     {
       '@type': 'AggregateRating',
-      '@id': 'https://salihmaral.com/#rating',
-      itemReviewed: { '@id': 'https://salihmaral.com/#organization' },
+      '@id': 'https://www.salihmaral.com/#rating',
+      itemReviewed: { '@id': 'https://www.salihmaral.com/#organization' },
       ratingValue: '5',
       bestRating: '5',
       worstRating: '1',

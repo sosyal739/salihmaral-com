@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
   const currentLang = ['de', 'tr', 'en'].includes(lang) ? lang : 'de'
   const meta = standorteMeta[currentLang] || standorteMeta.de
 
-  const canonicalUrl = `https://salihmaral.com/${currentLang}/standorte`
+  const canonicalUrl = `https://www.salihmaral.com/${currentLang}/standorte`
 
   return {
     title: {
@@ -29,10 +29,10 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        de: 'https://salihmaral.com/de/standorte',
-        tr: 'https://salihmaral.com/tr/standorte',
-        en: 'https://salihmaral.com/en/standorte',
-        'x-default': 'https://salihmaral.com/de/standorte',
+        de: 'https://www.salihmaral.com/de/standorte',
+        tr: 'https://www.salihmaral.com/tr/standorte',
+        en: 'https://www.salihmaral.com/en/standorte',
+        'x-default': 'https://www.salihmaral.com/de/standorte',
       },
     },
     openGraph: {
