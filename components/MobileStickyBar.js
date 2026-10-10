@@ -4,16 +4,16 @@ import React, { useState, useEffect } from 'react'
 import { ArrowUpRight, Mail, Sparkles } from 'lucide-react'
 
 export default function MobileStickyBar({ lang: propLang }) {
-  const [lang, setLang] = useState(propLang || 'de')
+  const [lang, setLang] = useState(propLang || 'tr')
   const [contactHref, setContactHref] = useState('#contact')
 
   useEffect(() => {
     let currentLang = propLang
     if (!currentLang && typeof window !== 'undefined') {
       const p = window.location.pathname
-      if (p.startsWith('/tr')) currentLang = 'tr'
+      if (p.startsWith('/de')) currentLang = 'de'
       else if (p.startsWith('/en')) currentLang = 'en'
-      else currentLang = 'de'
+      else currentLang = 'tr'
     }
     if (currentLang) setLang(currentLang)
 
@@ -22,7 +22,7 @@ export default function MobileStickyBar({ lang: propLang }) {
       if (p === '/' || p === '/tr' || p === '/en') {
         setContactHref('#contact')
       } else {
-        setContactHref(currentLang === 'tr' ? '/tr#contact' : currentLang === 'en' ? '/en#contact' : '/#contact')
+        setContactHref(currentLang === 'de' ? '/de#contact' : currentLang === 'en' ? '/en#contact' : '/#contact')
       }
     }
   }, [propLang])
