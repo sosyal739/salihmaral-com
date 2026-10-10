@@ -132,7 +132,7 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
   // Restore preferred language on mount
   useEffect(() => {
     const savedLang = localStorage.getItem('preferredLanguage')
-    if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
+    if (savedLang && ['en', 'tr'].includes(savedLang)) {
       setLang(savedLang)
     }
   }, [])
@@ -245,16 +245,13 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
                   </div>
                 )}
               </div>
-              <a href={`/${lang}/standorte`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
-                {t.nav.standorte}
-              </a>
               <a href="/blog" className="text-sm font-bold text-[#4285F4] transition-colors">
                 Blog
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+              <a href={`${lang === 'en' ? '/en' : ''}/#about`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
                 {t.nav.about}
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+              <a href={`${lang === 'en' ? '/en' : ''}/#contact`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
                 {t.nav.contact}
               </a>
             </div>
@@ -263,22 +260,16 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
             <div className="flex items-center space-x-2">
               <div className="hidden sm:flex items-center space-x-1 bg-gray-100 p-1 rounded-xl">
                 <button
-                  onClick={() => handleLanguageChange('de')}
-                  className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
+                  onClick={() => handleLanguageChange('tr')}
+                  className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
                 >
-                  DE
+                  TR
                 </button>
                 <button
                   onClick={() => handleLanguageChange('en')}
                   className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
                 >
                   EN
-                </button>
-                <button
-                  onClick={() => handleLanguageChange('tr')}
-                  className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
-                >
-                  TR
                 </button>
               </div>
 
@@ -300,22 +291,16 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
             {/* Mobile Language Switcher */}
             <div className="flex items-center justify-between bg-slate-100 p-1.5 rounded-xl border border-slate-200/80">
               <button
-                onClick={() => { handleLanguageChange('de'); setMobileMenuOpen(false); }}
-                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
+                onClick={() => { handleLanguageChange('tr'); setMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
               >
-                🇩🇪 DE
+                🇹🇷 TR
               </button>
               <button
                 onClick={() => { handleLanguageChange('en'); setMobileMenuOpen(false); }}
                 className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
               >
                 🇬🇧 EN
-              </button>
-              <button
-                onClick={() => { handleLanguageChange('tr'); setMobileMenuOpen(false); }}
-                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
-              >
-                🇹🇷 TR
               </button>
             </div>
 
