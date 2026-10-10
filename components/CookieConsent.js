@@ -8,7 +8,7 @@ import { X, Settings, Cookie, Shield, BarChart3, Target, ExternalLink } from 'lu
 const loadGoogleAnalytics = () => {
   if (typeof window !== 'undefined' && !window.gaLoaded) {
     const script = document.createElement('script')
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-QT1CZE5BJK'
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-35H42D2JYL'
     script.async = true
     document.head.appendChild(script)
 
@@ -16,7 +16,7 @@ const loadGoogleAnalytics = () => {
     function gtag() { window.dataLayer.push(arguments) }
     window.gtag = gtag
     gtag('js', new Date())
-    gtag('config', 'G-QT1CZE5BJK', {
+    gtag('config', 'G-35H42D2JYL', {
       anonymize_ip: true,
       cookie_flags: 'SameSite=None;Secure'
     })
@@ -29,9 +29,9 @@ const loadGoogleAnalytics = () => {
 // Function to disable Google Analytics
 const disableGoogleAnalytics = () => {
   if (typeof window !== 'undefined') {
-    window['ga-disable-G-QT1CZE5BJK'] = true
+    window['ga-disable-G-35H42D2JYL'] = true
     document.cookie = '_ga=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'
-    document.cookie = '_ga_QT1CZE5BJK=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'
+    document.cookie = '_ga_35H42D2JYL=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'
   }
 }
 

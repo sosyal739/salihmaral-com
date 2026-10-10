@@ -270,7 +270,7 @@ export default function RootLayout({ children }) {
                 'wait_for_update': 500
               });
               gtag('js', new Date());
-              gtag('config', 'G-QT1CZE5BJK', {
+              gtag('config', 'G-35H42D2JYL', {
                 'anonymize_ip': true,
                 'cookie_flags': 'SameSite=None;Secure',
                 'send_page_view': true
@@ -278,7 +278,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QT1CZE5BJK" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-35H42D2JYL" />
         
         {/* Favicon - Multiple sizes for different devices and Google Search */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />

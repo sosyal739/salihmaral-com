@@ -11,7 +11,7 @@ Salih Maral için modern, üç dilli (Türkçe, Almanca, İngilizce) kişisel po
 - **Deployment**: Vercel
 - **SEO**: JSON-LD Schema, Meta Tags, Sitemap, robots.txt
 - **Legal**: GDPR Cookie Consent Management
-- **Analytics**: Google Analytics (G-QT1CZE5BJK)
+- **Analytics**: Google Analytics (G-35H42D2JYL)
 
 ## Tamamlanan Özellikler
 - [x] Tam çoklu dil desteği (TR/DE/EN) - tüm sayfalarda
