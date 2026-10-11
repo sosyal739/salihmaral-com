@@ -77,6 +77,11 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
   - *URL:* https://www.salihmaral.com/blog/google-ads-fehler-vermeiden
   - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
 
+- **[Doğru Google ve Meta Ads Ajansı Nasıl Seçilir? (2026)](https://www.salihmaral.com/blog/dogru-google-ads-meta-ads-ajansi-nasil-secilir-2026)**
+  - *URL:* https://www.salihmaral.com/blog/dogru-google-ads-meta-ads-ajansi-nasil-secilir-2026
+  - *Summary:* Dijital reklam ajansı seçerken paranızı batırmaktan kurtaracak 9 kritik soru, sözleşme tuzakları, junior çalışan riskleri ve şeffaf hesap yönetimi rehberi.
+  - *Category:* Google Ads & PPC | *Languages:* TR, EN, DE
+
 - **[Google Ads Kosten 2026](https://www.salihmaral.com/blog/google-ads-kosten-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-kosten-2026
   - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
