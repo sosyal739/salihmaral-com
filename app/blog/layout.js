@@ -3,6 +3,11 @@ export const metadata = {
   description: 'Google Ads, Meta Ads, SEO, E-İhracat ve Server-Side Tracking hakkında güncel uzman makaleleri ve sektörel analizler.',
   alternates: {
     canonical: 'https://www.salihmaral.com/blog',
+    languages: {
+      tr: 'https://www.salihmaral.com/blog',
+      en: 'https://www.salihmaral.com/en/blog',
+      'x-default': 'https://www.salihmaral.com/blog',
+    },
   },
   openGraph: {
     title: 'Dijital Pazarlama & Büyüme Blogu | Salih Maral',

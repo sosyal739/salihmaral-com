@@ -120,24 +120,38 @@ const translations = {
   }
 }
 
-export default function BlogDetailClient({ initialPost, initialLang, relatedPosts = [] }) {
+export default function BlogDetailClient({ initialPost, initialLang = 'tr', relatedPosts = [] }) {
   const params = useParams()
+  const router = useRouter()
   const { slug } = params
-  const [lang, setLang] = useState(initialLang || 'de')
+  const [lang, setLang] = useState(initialLang || 'tr')
   const [post, setPost] = useState(initialPost)
   const [loading, setLoading] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
 
-  // Restore preferred language on mount
+  const blogHomeUrl = lang === 'en' ? '/en/blog' : '/blog'
+  const getBlogUrl = (postSlug) => (lang === 'en' ? `/en/blog/${postSlug}` : `/blog/${postSlug}`)
+
+  // Restore preferred language or sync with URL
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (window.location.pathname.startsWith('/en/blog')) {
+        if (lang !== 'en') setLang('en')
+        return
+      }
+      if (window.location.pathname.startsWith('/blog')) {
+        if (lang !== 'tr') setLang('tr')
+        return
+      }
+    }
     const savedLang = localStorage.getItem('preferredLanguage')
     if (savedLang && ['en', 'tr'].includes(savedLang)) {
       setLang(savedLang)
     }
-  }, [])
+  }, [slug])
 
-  // Fetch post from API whenever slug or lang changes (skip if matches initial post loaded on server)
+  // Fetch post from API whenever slug or lang changes (skip if matches post loaded)
   useEffect(() => {
     if (!slug) return
     if (post && post.slug === slug && post.lang === lang) {
@@ -153,7 +167,7 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
         setPost(data)
         setLoading(false)
         if (data) {
-          document.title = `${data.title} | Salih Maral Blog`
+          document.title = `${data.title} | Salih Maral`
           const metaDesc = document.querySelector('meta[name="description"]')
           if (metaDesc) metaDesc.setAttribute('content', (data.excerpt || '').substring(0, 160))
         }
@@ -167,6 +181,11 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
   const handleLanguageChange = (newLang) => {
     setLang(newLang)
     localStorage.setItem('preferredLanguage', newLang)
+    if (newLang === 'en') {
+      router.push(`/en/blog/${slug}`)
+    } else {
+      router.push(`/blog/${slug}`)
+    }
   }
 
   const t = translations[lang]
@@ -188,7 +207,7 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold mb-4 text-gray-900">{t.notFound}</h1>
           <Button asChild className="bg-[#4285F4]">
-            <a href="/blog">{t.backToBlog}</a>
+            <a href={blogHomeUrl}>{t.backToBlog}</a>
           </Button>
         </div>
       </div>
@@ -245,7 +264,7 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
                   </div>
                 )}
               </div>
-              <a href="/blog" className="text-sm font-bold text-[#4285F4] transition-colors">
+              <a href={blogHomeUrl} className="text-sm font-bold text-[#4285F4] transition-colors">
                 Blog
               </a>
               <a href={`${lang === 'en' ? '/en' : ''}/#about`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
@@ -320,16 +339,13 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
               ))}
             </div>
             <div className="pt-2 border-t border-gray-100 flex flex-col space-y-2 text-sm font-semibold">
-              <a href={`/${lang}/standorte`} className="text-[#4285F4] hover:underline py-1" onClick={() => setMobileMenuOpen(false)}>
-                📍 {t.nav.standorte} (18 Metropolen)
+              <a href={blogHomeUrl} className="text-[#4285F4] font-bold py-1" onClick={() => setMobileMenuOpen(false)}>
+                📚 {lang === 'en' ? 'Blog & Strategic Guides' : 'Blog & Uzman Rehberler'}
               </a>
-              <a href="/blog" className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
-                📚 Blog & Ratgeber
-              </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
+              <a href={`${lang === 'en' ? '/en' : ''}/#about`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
                 👤 {t.nav.about}
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
+              <a href={`${lang === 'en' ? '/en' : ''}/#contact`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
                 ✉️ {t.nav.contact}
               </a>
             </div>
@@ -341,11 +357,11 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
       <div className="pt-20 bg-slate-50/80 border-b border-gray-200/60">
         <div className="container mx-auto px-4 py-2.5">
           <nav className="flex items-center space-x-2 text-xs text-gray-500 overflow-x-auto whitespace-nowrap">
-            <a href={lang === 'de' ? '/' : `/${lang}`} className="hover:text-[#4285F4] font-medium transition-colors">
+            <a href={lang === 'en' ? '/en' : '/'} className="hover:text-[#4285F4] font-medium transition-colors">
               {t.nav.home}
             </a>
             <span>/</span>
-            <a href="/blog" className="hover:text-[#4285F4] font-medium transition-colors">
+            <a href={blogHomeUrl} className="hover:text-[#4285F4] font-medium transition-colors">
               Blog
             </a>
             {post.category && (
@@ -471,14 +487,14 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
               <div className="bg-white p-6 rounded-2xl border border-gray-200/80 shadow-sm">
                 <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-amber-500"></span>
-                  <span>{lang === 'de' ? 'Empfohlene Leitfäden' : lang === 'tr' ? 'Popüler Rehberler' : 'Top Strategy Guides'}</span>
+                  <span>{lang === 'tr' ? 'Popüler Rehberler' : 'Top Strategy Guides'}</span>
                 </h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li><a href="/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026" className="hover:text-[#4285F4] hover:underline">Google Ads Fixpreis vs. Provision</a></li>
-                  <li><a href="/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026" className="hover:text-[#4285F4] hover:underline">Meta Ads ROAS Skalierung</a></li>
-                  <li><a href="/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026" className="hover:text-[#4285F4] hover:underline">YouTube Ads Klip Tanıtımı</a></li>
-                  <li><a href="/blog/server-side-gtm-meta-capi-setup-2026" className="hover:text-[#4285F4] hover:underline">Server-Side Tracking Kurulumu</a></li>
-                  <li><a href="/blog" className="text-[#4285F4] font-semibold hover:underline block pt-1">{lang === 'de' ? 'Zum Blog-Archiv →' : lang === 'tr' ? 'Tüm Blog Yazıları →' : 'Explore all articles →'}</a></li>
+                  <li><a href={getBlogUrl('google-ads-fixpreis-vs-prozent-agentur-modell-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Google Ads Sabit Fiyat vs. Komisyon' : 'Google Ads Flat-Fee vs Commission'}</a></li>
+                  <li><a href={getBlogUrl('meta-reklamlarinda-para-kaybetmeyi-durdurun-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Meta Ads ROAS Skalalama' : 'Meta Ads ROAS Scaling'}</a></li>
+                  <li><a href={getBlogUrl('neden-seo-yapmaliyiz-geo-neden-gerekli-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Neden SEO & GEO Gerekli?' : 'Why SEO & GEO in 2026?'}</a></li>
+                  <li><a href={getBlogUrl('server-side-gtm-meta-capi-setup-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Server-Side CAPI Kurulumu' : 'Server-Side CAPI Setup'}</a></li>
+                  <li><a href={blogHomeUrl} className="text-[#4285F4] font-semibold hover:underline block pt-1">{lang === 'tr' ? 'Tüm Blog Yazıları →' : 'Explore all articles →'}</a></li>
                 </ul>
               </div>
             </div>
@@ -493,24 +509,24 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
             <div className="flex items-center justify-between mb-8">
               <div>
                 <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4] block mb-1">
-                  {lang === 'de' ? 'Weiterführende Fachartikel' : lang === 'tr' ? 'İlgili Uzman Rehberleri' : 'Related Strategy Guides'}
+                  {lang === 'tr' ? 'İlgili Uzman Rehberleri' : 'Related Strategy Guides'}
                 </span>
                 <h3 className="text-xl md:text-2xl font-black text-gray-900">
-                  {lang === 'de' ? 'Das könnte Sie auch interessieren' : lang === 'tr' ? 'İlginizi Çekebilecek Diğer Rehberler' : 'Recommended Reading'}
+                  {lang === 'tr' ? 'İlginizi Çekebilecek Diğer Rehberler' : 'Recommended Reading'}
                 </h3>
               </div>
               <a
-                href="/blog"
+                href={blogHomeUrl}
                 className="hidden sm:inline-flex items-center gap-1 text-sm font-bold text-[#4285F4] hover:underline"
               >
-                {lang === 'de' ? 'Alle Artikel ansehen' : lang === 'tr' ? 'Tüm Rehberleri Gör' : 'View All Guides'} →
+                {lang === 'tr' ? 'Tüm Rehberleri Gör' : 'View All Guides'} →
               </a>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map((rel) => (
                 <a
                   key={rel.slug}
-                  href={`/blog/${rel.slug}`}
+                  href={getBlogUrl(rel.slug)}
                   className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-lg hover:border-[#4285F4]/40 hover:-translate-y-1 transition-all flex flex-col justify-between group"
                 >
                   <div>
@@ -646,12 +662,12 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
                   </a>
                 </li>
                 <li>
-                  <a href="/blog" className="text-blue-400 font-semibold">
+                  <a href={blogHomeUrl} className="text-blue-400 font-semibold">
                     {lang === 'tr' ? 'Blog & Stratejik Rehberler' : lang === 'en' ? 'Guides & Articles' : 'Ratgeber & Blog'}
                   </a>
                 </li>
                 <li>
-                  <a href="/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026" className="hover:text-white transition-colors">
+                  <a href={getBlogUrl('e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026')} className="hover:text-white transition-colors">
                     {lang === 'tr' ? 'E-Ticaret Dönüşüm Rehberi' : lang === 'en' ? 'E-Commerce Conversion Guide' : 'E-Commerce Leitfaden'}
                   </a>
                 </li>

@@ -104,16 +104,29 @@ const translations = {
   }
 }
 
-export default function BlogPageClient({ initialPosts = [] }) {
+export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }) {
   const router = useRouter()
-  const [lang, setLang] = useState('tr')
+  const [lang, setLang] = useState(initialLang)
   const [posts, setPosts] = useState(initialPosts || [])
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [loading, setLoading] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
 
+  const blogHomeUrl = lang === 'en' ? '/en/blog' : '/blog'
+  const getBlogUrl = (postSlug) => (lang === 'en' ? `/en/blog/${postSlug}` : `/blog/${postSlug}`)
+
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (window.location.pathname.startsWith('/en/blog')) {
+        if (lang !== 'en') setLang('en')
+        return
+      }
+      if (window.location.pathname === '/blog' || window.location.pathname === '/blog/') {
+        if (lang !== 'tr') setLang('tr')
+        return
+      }
+    }
     const savedLang = localStorage.getItem('preferredLanguage')
     if (savedLang && ['en', 'tr'].includes(savedLang)) {
       setLang(savedLang)
@@ -121,7 +134,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
   }, [])
 
   useEffect(() => {
-    if (lang === 'tr' && initialPosts && initialPosts.length > 0 && posts.length === initialPosts.length) {
+    if (initialPosts && initialPosts.length > 0 && posts.length === initialPosts.length && posts[0]?.lang === lang) {
       return
     }
     setLoading(true)
@@ -141,6 +154,11 @@ export default function BlogPageClient({ initialPosts = [] }) {
   const handleLanguageChange = (newLang) => {
     setLang(newLang)
     localStorage.setItem('preferredLanguage', newLang)
+    if (newLang === 'en') {
+      router.push('/en/blog')
+    } else {
+      router.push('/blog')
+    }
   }
 
   const t = translations[lang]
@@ -362,7 +380,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
                   </div>
                 )}
               </div>
-              <a href="/blog" className="text-sm font-bold text-[#4285F4] transition-colors">
+              <a href={blogHomeUrl} className="text-sm font-bold text-[#4285F4] transition-colors">
                 Blog
               </a>
               <a href={`${lang === 'en' ? '/en' : ''}/#about`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
@@ -438,16 +456,13 @@ export default function BlogPageClient({ initialPosts = [] }) {
               ))}
             </div>
             <div className="pt-2 border-t border-gray-100 flex flex-col space-y-2 text-sm font-semibold">
-              <a href={`/${lang}/standorte`} className="text-[#4285F4] hover:underline py-1" onClick={() => setMobileMenuOpen(false)}>
-                📍 {t.nav.standorte} (18 Metropolen)
+              <a href={blogHomeUrl} className="text-[#4285F4] font-bold py-1" onClick={() => setMobileMenuOpen(false)}>
+                📚 {lang === 'en' ? 'Blog & Strategic Guides' : 'Blog & Uzman Rehberler'}
               </a>
-              <a href="/blog" className="text-[#4285F4] font-bold py-1" onClick={() => setMobileMenuOpen(false)}>
-                📚 Blog & Ratgeber
-              </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
+              <a href={`${lang === 'en' ? '/en' : ''}/#about`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
                 👤 {t.nav.about}
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
+              <a href={`${lang === 'en' ? '/en' : ''}/#contact`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
                 ✉️ {t.nav.contact}
               </a>
             </div>
@@ -544,7 +559,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
                     </div>
 
                     <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 group-hover:text-[#4285F4] transition-colors leading-tight">
-                      <a href={`/blog/${featuredPost.slug}`}>{featuredPost.title}</a>
+                      <a href={getBlogUrl(featuredPost.slug)}>{featuredPost.title}</a>
                     </h2>
                     <p className="text-gray-600 text-sm mt-3 line-clamp-3 leading-relaxed font-normal">
                       {featuredPost.excerpt}
@@ -563,7 +578,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
                       </span>
                     </div>
                     <a
-                      href={`/blog/${featuredPost.slug}`}
+                      href={getBlogUrl(featuredPost.slug)}
                       className="inline-flex items-center gap-1 text-[#4285F4] font-bold text-xs hover:translate-x-1 transition-transform"
                     >
                       {t.readMore} <ArrowRight className="w-4 h-4" />
@@ -587,7 +602,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
                 </div>
               ))
             ) : gridPosts.map((post) => (
-              <a key={post.slug} href={`/blog/${post.slug}`} className="block h-full group">
+              <a key={post.slug} href={getBlogUrl(post.slug)} className="block h-full group">
                 <Card className="h-full border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 overflow-hidden bg-white rounded-3xl flex flex-col justify-between">
                   <div>
                     <div className="h-48 relative overflow-hidden">
@@ -808,12 +823,12 @@ export default function BlogPageClient({ initialPosts = [] }) {
                   </a>
                 </li>
                 <li>
-                  <a href="/blog" className="text-blue-400 font-semibold">
+                  <a href={blogHomeUrl} className="text-blue-400 font-semibold">
                     {lang === 'tr' ? 'Blog & Stratejik Rehberler' : lang === 'en' ? 'Guides & Articles' : 'Ratgeber & Blog'}
                   </a>
                 </li>
                 <li>
-                  <a href="/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026" className="hover:text-white transition-colors">
+                  <a href={getBlogUrl('e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026')} className="hover:text-white transition-colors">
                     {lang === 'tr' ? 'E-Ticaret Dönüşüm Rehberi' : lang === 'en' ? 'E-Commerce Conversion Guide' : 'E-Commerce Leitfaden'}
                   </a>
                 </li>

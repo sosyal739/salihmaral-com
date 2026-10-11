@@ -47,6 +47,7 @@ export async function generateMetadata({ params }) {
       description = description.slice(0, 155).replace(/\s+\S*$/, '') + '...'
     }
     const canonicalUrl = `https://www.salihmaral.com/blog/${slug}`
+    const enUrl = `https://www.salihmaral.com/en/blog/${slug}`
 
     return {
       title: {
@@ -55,6 +56,11 @@ export async function generateMetadata({ params }) {
       description: description,
       alternates: {
         canonical: canonicalUrl,
+        languages: {
+          tr: canonicalUrl,
+          en: enUrl,
+          'x-default': canonicalUrl,
+        },
       },
       openGraph: {
         title: fullTitle,

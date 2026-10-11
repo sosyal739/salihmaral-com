@@ -6,23 +6,92 @@ export default async function sitemap() {
   const currentDate = new Date().toISOString().split('T')[0]
 
   // 1. Static Core Pages (Root / is Turkish primary; /tr and /en localized)
-  const staticRoutes = [
-    '',
-    '/tr',
-    '/en',
-    '/about',
-    '/blog',
+  const staticEntries = [
+    {
+      url: `${baseUrl}`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 1.0,
+      alternates: {
+        languages: {
+          tr: `${baseUrl}`,
+          en: `${baseUrl}/en`,
+          'x-default': `${baseUrl}`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/tr`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 0.9,
+      alternates: {
+        languages: {
+          tr: `${baseUrl}/tr`,
+          en: `${baseUrl}/en`,
+          'x-default': `${baseUrl}`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/en`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+      alternates: {
+        languages: {
+          tr: `${baseUrl}/tr`,
+          en: `${baseUrl}/en`,
+          'x-default': `${baseUrl}`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 0.9,
+      alternates: {
+        languages: {
+          tr: `${baseUrl}/blog`,
+          en: `${baseUrl}/en/blog`,
+          'x-default': `${baseUrl}/blog`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/en/blog`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 0.9,
+      alternates: {
+        languages: {
+          tr: `${baseUrl}/blog`,
+          en: `${baseUrl}/en/blog`,
+          'x-default': `${baseUrl}/blog`,
+        },
+      },
+    },
   ]
 
-  const staticEntries = staticRoutes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: currentDate,
-    changeFrequency: route === '' || route.startsWith('/tr') ? 'daily' : 'weekly',
-    priority: route === '' ? 1.0 : route.startsWith('/tr') ? 0.9 : 0.8,
-  }))
-
   // 2. Service Pages (Turkish & English with x-default pointing to Turkish)
-  const services = ['google-ads', 'meta-ads', 'youtube-ads', 'server-side-tracking', 'tiktok-ads', 'x-ads', 'seo', 'yorum-yonetimi', 'islamic-charity-ngo-marketing']
+  const services = [
+    'google-ads',
+    'meta-ads',
+    'youtube-ads',
+    'server-side-tracking',
+    'tiktok-ads',
+    'x-ads',
+    'seo',
+    'yorum-yonetimi',
+    'islamic-charity-ngo-marketing',
+  ]
   const serviceEntries = []
 
   services.forEach((slug) => {
@@ -53,7 +122,7 @@ export default async function sitemap() {
     })
   })
 
-  // 3. Dynamic Blog Posts (68 high-quality strategy & marketing guides)
+  // 3. Dynamic Blog Posts (82 strategic guides in both Turkish & English = 164 indexed pages)
   const blogEntries = []
   const postsDir = path.join(process.cwd(), 'content', 'blog')
 
@@ -70,11 +139,30 @@ export default async function sitemap() {
     })
 
     uniqueSlugs.forEach((slug) => {
+      const trUrl = `${baseUrl}/blog/${slug}`
+      const enUrl = `${baseUrl}/en/blog/${slug}`
+      const languages = {
+        tr: trUrl,
+        en: enUrl,
+        'x-default': trUrl,
+      }
+
+      // Turkish Blog Post
       blogEntries.push({
-        url: `${baseUrl}/blog/${slug}`,
+        url: trUrl,
         lastModified: currentDate,
         changeFrequency: 'weekly',
         priority: 0.85,
+        alternates: { languages },
+      })
+
+      // English Blog Post
+      blogEntries.push({
+        url: enUrl,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.85,
+        alternates: { languages },
       })
     })
   }
