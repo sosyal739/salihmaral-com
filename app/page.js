@@ -1488,15 +1488,27 @@ export default function Home({ initialLang = 'tr' }) {
                 </div>
               )}
               {lang === 'en' && (
-                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50/90 via-white to-indigo-50/90 border border-blue-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
-                  <span className="text-base">🚀</span>
-                  <span><strong>Global Performance:</strong> Official Google Partner managing high-converting campaigns across global markets.</span>
+                <div className="space-y-2.5">
+                  <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50/90 via-white to-indigo-50/90 border border-blue-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                    <span className="text-base">🚀</span>
+                    <span><strong>Global Performance:</strong> Official Google Partner managing high-converting campaigns across global markets.</span>
+                  </div>
+                  <div className="flex items-start gap-2.5 bg-amber-50/90 border border-amber-200/90 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-amber-950 shadow-2xs max-w-2xl">
+                    <span className="text-base shrink-0 mt-0.5">📌</span>
+                    <span><strong>Client Qualification Criteria:</strong> Consulting services are provided to <strong>B2B businesses</strong> and clients with a <strong>minimum monthly ad spend of 25,000 TL</strong>. Effective ROI cannot be achieved with lower ad budgets.</span>
+                  </div>
                 </div>
               )}
               {lang === 'tr' && (
-                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50/90 via-white to-blue-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
-                  <span className="text-base">🎯</span>
-                  <span><strong>Sonuç Odaklı Reklam Yönetimi:</strong> %0 Komisyon, şeffaf sabit yönetim ücreti ve 17+ yıllık Resmi Google Partner tecrübesi.</span>
+                <div className="space-y-2.5">
+                  <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50/90 via-white to-blue-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                    <span className="text-base">🎯</span>
+                    <span><strong>Sonuç Odaklı Reklam Yönetimi:</strong> %0 Komisyon, şeffaf sabit yönetim ücreti ve 17+ yıllık Resmi Google Partner tecrübesi.</span>
+                  </div>
+                  <div className="flex items-start gap-2.5 bg-amber-50/90 border border-amber-200/90 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-amber-950 shadow-2xs max-w-2xl">
+                    <span className="text-base shrink-0 mt-0.5">📌</span>
+                    <span><strong>Çalışma Kriteri:</strong> Danışmanlık hizmetimiz <strong>B2B işletmelere</strong> ve <strong>aylık minimum 25.000 TL reklam harcaması</strong> olan müşterilere verilmektedir. Daha düşük reklam harcamalarında etkili verim almak mümkün değildir.</span>
+                  </div>
                 </div>
               )}
 
@@ -2432,9 +2444,19 @@ export default function Home({ initialLang = 'tr' }) {
               
               {/* Right side - Form */}
               <div className="md:col-span-3 p-8 sm:p-10 bg-white">
-                <h3 className="text-xl font-black mb-6 text-gray-950 tracking-tight">
+                <h3 className="text-xl font-black mb-4 text-gray-950 tracking-tight">
                   {lang === 'de' ? 'Nachricht senden' : lang === 'en' ? 'Send Message' : 'Mesaj Gönder'}
                 </h3>
+                <div className="mb-5 p-3.5 rounded-2xl bg-amber-50/90 border border-amber-200/90 text-xs sm:text-[13px] text-amber-950 leading-relaxed flex items-start gap-2.5">
+                  <span className="text-base shrink-0 mt-0.5">⚠️</span>
+                  <span>
+                    {lang === 'en' ? (
+                      <><strong>Important Notice:</strong> Our consulting and ad management services are provided exclusively to <strong>B2B businesses</strong> and clients with a <strong>minimum monthly ad spend of 25,000 TL</strong>. It is not possible to achieve effective ROI with lower ad budgets.</>
+                    ) : (
+                      <><strong>Önemli Bilgilendirme:</strong> Danışmanlık hizmetimiz <strong>B2B işletmelere</strong> ve <strong>aylık minimum 25.000 TL reklam harcaması</strong> olan müşterilere verilmektedir. Daha düşük reklam harcamalarında etkili verim almak mümkün değildir.</>
+                    )}
+                  </span>
+                </div>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   {/* Anti-bot Honeypot trap */}
                   <div className="hidden" aria-hidden="true" style={{ display: 'none', position: 'absolute', left: '-9999px' }}>

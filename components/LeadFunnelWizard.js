@@ -68,9 +68,9 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         { id: 'maps', icon: MapPin, title: 'Google Haritalar 1. Sıra & Yorum', desc: 'Yerel İşletmeler, Çoklu Şubeler & Zincirler' },
       ],
       budgets: [
-        { id: 'b1', title: '15.000 ₺ – 45.000 ₺ / Ay', desc: 'Yerel işletmeler ve başlangıç için ideal' },
-        { id: 'b2', title: '45.000 ₺ – 150.000 ₺ / Ay', desc: 'Bölgesel liderlik ve KOBİ büyümesi' },
-        { id: 'b3', title: '150.000 ₺ – 500.000 ₺ / Ay', desc: 'E-ticaret ve B2B ölçekleme' },
+        { id: 'b1', title: '25.000 ₺ – 75.000 ₺ / Ay', desc: 'Minimum başlangıç bütçesi (B2B & Kurumsal)' },
+        { id: 'b2', title: '75.000 ₺ – 200.000 ₺ / Ay', desc: 'Bölgesel liderlik ve KOBİ büyümesi' },
+        { id: 'b3', title: '200.000 ₺ – 500.000 ₺ / Ay', desc: 'E-ticaret ve B2B ölçekleme' },
         { id: 'b4', title: '500.000 ₺+ / Ay', desc: 'Geniş ölçekli kurumsal büyüme' },
       ],
       labels: {
@@ -191,6 +191,13 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         <p className="text-sm sm:text-base text-gray-600 max-w-xl mx-auto mt-2">
           {content.subtitle}
         </p>
+        <div className="max-w-2xl mx-auto mt-4 px-4 py-2.5 rounded-xl bg-amber-50/90 border border-amber-200/90 text-xs sm:text-[13px] text-amber-950 font-medium leading-relaxed">
+          {lang === 'en' ? (
+            <>📌 <strong>Qualification Notice:</strong> Consulting is provided to <strong>B2B businesses</strong> and clients with a <strong>minimum monthly ad spend of 25,000 TL</strong>. Effective ROI cannot be achieved with lower ad budgets.</>
+          ) : (
+            <>📌 <strong>Çalışma Kriteri:</strong> Danışmanlık hizmetimiz <strong>B2B işletmelere</strong> ve <strong>aylık minimum 25.000 TL reklam harcaması</strong> olan müşterilere verilmektedir. Daha düşük reklam harcamalarında etkili verim almak mümkün değildir.</>
+          )}
+        </div>
 
         {!submitted && (
           <div className="flex items-center justify-center space-x-3 mt-6">

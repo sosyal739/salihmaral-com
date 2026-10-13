@@ -3119,7 +3119,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 : (lang === 'de' ? 'Bereit für planbares, profitables Wachstum?' : lang === 'en' ? 'Ready for Predictable, Profitable Growth?' : 'Planlı ve Karlı Büyümeye Hazır mısınız?')}
             </h2>
 
-            <p className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-6 leading-relaxed">
               {service === 'google-ads'
                 ? (lang === 'de'
                     ? 'Wir prüfen Ihre Kampagnen kostenlos und zeigen Ihnen genau, wo Ihr Budget verloren geht — und wie Sie es zurückgewinnen. Kein Fachjargon. Keine Verkaufsgespräche. Nur echte Handlungsempfehlungen.'
@@ -3128,6 +3128,14 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                     : 'Kampanyalarınızı ücretsiz inceliyor ve bütçenizin tam olarak nerede heba olduğunu gösteriyoruz — ve bunu nasıl geri kazanabileceğinizi. Teknik jargon yok. Satış konuşması yok. Yalnızca somut öneriler.')
                 : (lang === 'de' ? 'Wir analysieren Ihre aktuelle Situation und bieten Ihnen maßgeschneiderte Strategieempfehlungen. Keine Kosten, keine Verpflichtungen.' : lang === 'en' ? 'We analyze your current situation and offer you customized strategy recommendations. No costs, no commitments.' : 'Mevcut durumunuzu analiz ediyor, size özel strateji önerileri sunuyoruz. Hiçbir ücret veya taahhüt yok.')}
             </p>
+
+            <div className="max-w-2xl mx-auto mb-8 px-4 py-3 rounded-2xl bg-amber-500/10 border border-amber-400/30 text-xs sm:text-sm text-amber-200 leading-relaxed">
+              {lang === 'en' ? (
+                <>📌 <strong>Qualification Notice:</strong> Consulting services are provided exclusively to <strong>B2B businesses</strong> and clients with a <strong>minimum monthly ad spend of 25,000 TL</strong>. Effective ROI cannot be achieved with lower ad budgets.</>
+              ) : (
+                <>📌 <strong>Çalışma Kriteri:</strong> Danışmanlık hizmetimiz <strong>B2B işletmelere</strong> ve <strong>aylık minimum 25.000 TL reklam harcaması</strong> olan müşterilere verilmektedir. Daha düşük reklam harcamalarında etkili verim almak mümkün değildir.</>
+              )}
+            </div>
 
             <div className="flex flex-wrap justify-center items-center gap-4">
               <button
