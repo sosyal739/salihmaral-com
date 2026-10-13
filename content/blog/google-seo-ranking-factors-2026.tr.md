@@ -1,7 +1,7 @@
 ---
 slug: "google-seo-ranking-factors-2026"
 lang: "tr"
-title: "Google'ın 2026'da En Çok Önem Verdiği 9 Sıralama Kriteri (Canlı Vaka Analizi)"
+title: "Google 2026 SEO Sıralama Faktörleri: 9 Temel Kriter"
 excerpt: "Google algoritmalarındaki son güncellemeler ve E-E-A-T. Salih Maral, arama sonuçlarında otorite kazanmanın ve üst sıralarda yer almanın formülünü açıklıyor."
 category: "SEO"
 date: "2026-07-16"

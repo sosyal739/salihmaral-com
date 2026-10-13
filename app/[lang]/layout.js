@@ -5,12 +5,12 @@ const langMeta = {
     canonical: 'https://www.salihmaral.com',
   },
   en: {
-    title: 'Google Ads Agency & Performance Marketing Expert | Salih Maral',
+    title: 'Google Ads Agency & Performance Marketing | Salih Maral',
     description: 'Scale your business with certified flat-fee Google Ads, Meta Ads, TikTok Ads & SEO management by an official 17+ yr Senior Google Partner.',
     canonical: 'https://www.salihmaral.com/en',
   },
   tr: {
-    title: 'Google Ads Ajansı, Meta Ads & SEO Danışmanlığı | Salih Maral',
+    title: 'Google Ads Ajansı & SEO Danışmanlığı | Salih Maral',
     description: '17+ yıllık Resmi Google Partneri ile şeffaf sabit fiyatlı Google Ads, Meta Ads ve SEO yönetimi. E-ticaret ve markalar için yüksek ROAS ve kârlı büyüme.',
     canonical: 'https://www.salihmaral.com/tr',
   },
@@ -18,8 +18,8 @@ const langMeta = {
 
 export async function generateMetadata({ params }) {
   const { lang } = await params
-  const currentLang = lang || 'de'
-  const meta = langMeta[currentLang] || langMeta.de
+  const currentLang = lang || 'tr'
+  const meta = langMeta[currentLang] || langMeta.tr
 
   return {
     title: {
@@ -29,7 +29,6 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: meta.canonical,
       languages: {
-        de: 'https://www.salihmaral.com',
         en: 'https://www.salihmaral.com/en',
         tr: 'https://www.salihmaral.com/tr',
         'x-default': 'https://www.salihmaral.com',
