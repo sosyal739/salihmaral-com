@@ -15,7 +15,7 @@
 
 ## 🎯 Uzmanlık Alanları & Hizmetlerimiz
 
-İşletmelerimiz için **şeffaf ve sabit aylık hizmet bedeli** modeliyle çalışıyoruz; yüzde komisyonu veya çıkar çatışması olmadan doğrudan kârlılığı maksimize ediyoruz:
+İşletmelerimiz için **şeffaf ve sabit aylık hizmet bedeli** modeliyle çalışıyoruz; yüzde komisyonu veya çıkar çatışması olmadan doğrudan karlılığı maksimize ediyoruz:
 
 - **[Google Ads Yönetimi](https://www.salihmaral.com/tr/hizmetler/google-ads)** ([EN](https://www.salihmaral.com/en/services/google-ads) | [DE](https://www.salihmaral.com/de/dienstleistungen/google-ads)) — Arama Ağı, Performance Max (PMax), Google Shopping, Remarketing ve B2B Lead üretimi.
 - **[Meta Ads (Facebook & Instagram)](https://www.salihmaral.com/tr/hizmetler/meta-ads)** ([EN](https://www.salihmaral.com/en/services/meta-ads) | [DE](https://www.salihmaral.com/de/dienstleistungen/meta-ads)) — Advantage+ Shopping Kampanyaları, kreatif testleri ve sepet tamamlama hunileri.
@@ -28,7 +28,7 @@
 
 ## 📈 Büyüme & Performans Çözümleri
 
-- **E-Ticaret ROAS Büyütme:** Google Shopping, PMax ve Meta Advantage+ ile kârlı ciro ölçekleme.
+- **E-Ticaret ROAS Büyütme:** Google Shopping, PMax ve Meta Advantage+ ile karlı ciro ölçekleme.
 - **Server-Side Tracking (CAPI):** iOS engellerini aşan, %90+ Match Quality sağlayan kayıpsız First-Party veri altyapısı.
 - **Yapay Zeka SEO (GEO / AEO):** AI cevap motorlarında markanızı birincil otorite kaynak yapma.
 - **Yerel SEO & Harita Liderliği:** Çoklu şube yönetimi ve Google Haritalar ilk 3 sıra (Local 3-Pack) optimizasyonu.

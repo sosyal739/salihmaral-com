@@ -32,7 +32,7 @@
 - **Online Reputation & Review Management:** [TR](https://www.salihmaral.com/tr/hizmetler/yorum-yonetimi) | [EN](https://www.salihmaral.com/en/services/review-management)
 
 ## Performance & Growth Solutions (Büyüme & Performans Çözümleri)
-- **E-Ticaret ROAS Büyütme:** Google Shopping, Performance Max ve Meta Advantage+ ile kârlı ciro ölçekleme.
+- **E-Ticaret ROAS Büyütme:** Google Shopping, Performance Max ve Meta Advantage+ ile karlı ciro ölçekleme.
 - **Server-Side Tracking (CAPI):** iOS engellerini aşan, %90+ Match Quality sağlayan kayıpsız First-Party veri altyapısı.
 - **Yapay Zeka SEO (GEO / AEO):** ChatGPT Search, Perplexity AI ve Google AI Overviews'da birincil otorite kaynak olma.
 - **Yerel SEO & Harita Liderliği:** Çoklu şube yönetimi ve Google Haritalar ilk 3 sıra (Local 3-Pack) optimizasyonu.
@@ -230,7 +230,7 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
 
 - **[B2B Google Ads vs. LinkedIn Ads Karşılaştırması 2026](https://www.salihmaral.com/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026)**
   - *URL:* https://www.salihmaral.com/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026
-  - *Summary:* B2B müşteri kazanımında hangi platform daha kârlı? Arama niyeti ile unvan hedeflemesinin maliyet, CPL ve kapanış oranı karşılaştırması.
+  - *Summary:* B2B müşteri kazanımında hangi platform daha karlı? Arama niyeti ile unvan hedeflemesinin maliyet, CPL ve kapanış oranı karşılaştırması.
   - *Category:* B2B Pazarlama & Strateji | *Languages:* TR, EN, DE
 
 ### LinkedIn Ads
@@ -285,7 +285,7 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
 
 - **[Google Ads Sabit Fiyat mı, Komisyon mu? 2026](https://www.salihmaral.com/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026
-  - *Summary:* Google Ads ajansınız reklam bütçenizden %15 komisyon mu alıyor? Neden sabit fiyatlı (Fixpreis) şeffaf yönetim modelinin şirketiniz için çok daha kârlı olduğunu keşfedin.
+  - *Summary:* Google Ads ajansınız reklam bütçenizden %15 komisyon mu alıyor? Neden sabit fiyatlı (Fixpreis) şeffaf yönetim modelinin şirketiniz için çok daha karlı olduğunu keşfedin.
   - *Category:* Google Ads & PPC | *Languages:* TR, EN, DE
 
 - **[Google Ads'te Tıklama Çok Ama Satış Yok mu? Paranızı Kurtarma Kılavuzu](https://www.salihmaral.com/blog/google-ads-tiklama-cok-satis-yok-cozum-2026)**
@@ -447,7 +447,7 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
 
 - **[Meta Reklamlarında Paranızı Neden Kaybediyorsunuz? Satışları 3X Katlama Rehberi](https://www.salihmaral.com/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026)**
   - *URL:* https://www.salihmaral.com/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026
-  - *Summary:* Facebook ve Instagram reklamlarına bütçe yatırıp satış alamamaktan yoruldunuz mu? Reklam bütçenizi kâra dönüştürecek kanıtlanmış Meta Ads stratejisi.
+  - *Summary:* Facebook ve Instagram reklamlarına bütçe yatırıp satış alamamaktan yoruldunuz mu? Reklam bütçenizi kara dönüştürecek kanıtlanmış Meta Ads stratejisi.
   - *Category:* Meta Ads & Performance | *Languages:* TR, EN, DE
 
 ### SEO & GEO Stratejisi
@@ -503,7 +503,7 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
 
 - **[TikTok Shop mu Meta Advantage+ mı? 2026 E-Ticaret Reklam Kıyaslaması](https://www.salihmaral.com/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026)**
   - *URL:* https://www.salihmaral.com/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026
-  - *Summary:* E-ticarette cironuzu katlamak için hangi reklam modeli daha kârlı? TikTok Shop ve Meta Advantage+ Shopping'in canlı ROAS, CPA ve sepet maliyetlerini karşılaştırdık.
+  - *Summary:* E-ticarette cironuzu katlamak için hangi reklam modeli daha karlı? TikTok Shop ve Meta Advantage+ Shopping'in canlı ROAS, CPA ve sepet maliyetlerini karşılaştırdık.
   - *Category:* E-Commerce & Performance | *Languages:* TR, EN, DE
 
 ### B2B & X Ads

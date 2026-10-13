@@ -666,14 +666,14 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
             </div>
             <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">
               {lang === 'tr'
-                ? "Ölçülebilir & Kârlı Dijital Pazarlama Kanalları"
+                ? "Ölçülebilir & Karlı Dijital Pazarlama Kanalları"
                 : lang === 'en'
                 ? "Measurable & Profitable Digital Marketing Channels"
                 : "Planbare & profitable Performance-Marketing Kanäle"}
             </h2>
             <p className="text-sm md:text-base text-gray-600">
               {lang === 'tr'
-                ? 'İşletmenizin ciro ve kârlılığını artırmak için test edilmiş, komisyonsuz ve şeffaf büyüme sistemleri.'
+                ? 'İşletmenizin ciro ve karlılığını artırmak için test edilmiş, komisyonsuz ve şeffaf büyüme sistemleri.'
                 : lang === 'en'
                 ? 'Battle-tested, commission-free, and transparent growth systems engineered to maximize your ROI.'
                 : 'Erprobte, transparente Marketingsysteme zur Maximierung Ihres ROI ohne versteckte Provisionen.'}
@@ -729,7 +729,7 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
               </a>
               <p className="text-xs text-slate-400 leading-relaxed">
                 {lang === 'tr'
-                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
+                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve Server-Side Tracking ile karlı büyüme sağlar.'
                   : lang === 'en'
                   ? 'Official Google Partner Salih Maral delivers scalable revenue growth across global markets through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
                   : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}

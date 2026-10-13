@@ -59,7 +59,7 @@ coverImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200
 <h2>🚀 Klinikler İçin 4 Aşamalı Hasta Kazanma Formülü</h2>
 
 <h3>1. Yüksek Değerli Tedavi Anahtar Kelimeleri</h3>
-<p>Genel terimler yerine doğrudan yüksek kârlılığa sahip tedavilere odaklanıyoruz: İmplant, şeffaf plak (invisalign), rinoplasti, saç ekimi, tüp bebek veya göz lazeri gibi spesifik tedaviler.</p>
+<p>Genel terimler yerine doğrudan yüksek karlılığa sahip tedavilere odaklanıyoruz: İmplant, şeffaf plak (invisalign), rinoplasti, saç ekimi, tüp bebek veya göz lazeri gibi spesifik tedaviler.</p>
 
 <h3>2. Google Haritalar (Local Pack) ve Yerel Arama Hakimiyeti</h3>
 <p>Kliniğinizin Google İşletme Profilini optimize ederek, bölgenizde arama yapan hastaların karşısına haritada ilk 3 sırada (Local 3-Pack) çıkmasını sağlıyoruz.</p>
@@ -85,7 +85,7 @@ coverImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200
 </div>
 
 <div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">
-  <h3 class="text-xl font-bold text-white mb-2">💼 Reklam Bütçenizi Kârlı Bir Ciro Motoruna Dönüştürün</h3>
+  <h3 class="text-xl font-bold text-white mb-2">💼 Reklam Bütçenizi Karlı Bir Ciro Motoruna Dönüştürün</h3>
   <p class="text-slate-300 mb-4">Şeffaf sabit fiyat (Fixpreis) modeli ve 17+ yıllık tecrübeyle sıfır komisyon çatışması. Yüksek ROAS odaklı <a href="/tr/hizmetler/google-ads" class="text-[#4285F4] underline font-semibold">Google Ads Yönetimi</a> ve <a href="/tr/hizmetler/server-side-tracking" class="text-blue-300 underline font-semibold">Server-Side Tracking Altyapısı</a> ile işletmenizi büyütün.</p>
   <a href="/#contact" class="inline-block bg-[#4285F4] hover:bg-blue-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Ücretsiz Büyüme Analizi Alın →</a>
 </div>

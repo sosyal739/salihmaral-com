@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200
 ---
 
 <div class="lead">
-<p><strong>Vakıf ve STK Yöneticileri İçin Büyük Fırsat:</strong> Google, dünya genelindeki kayıtlı kâr amacı gütmeyen kuruluşlara, vakıflara ve derneklere her ay **10.000 $ (Yılda 120.000 $)** tutarında tamamen ücretsiz arama ağı reklam hibesi (Google Ad Grants) sağlamaktadır. Ancak dünya genelindeki İslami yardım kuruluşlarının %70'inden fazlası ya bu programdan habersizdir ya da başvuru sürecindeki teknik engeller ve katı Google politikaları (%5 CTR kuralı, tek kelimelik anahtar kelime yasağı, dönüşüm takibi zorunluluğu) nedeniyle hesaplarını askıya aldırmaktadır. **Salih Maral (Resmi Google Partner & STK Dijital Büyüme Uzmanı)** olarak; Türkiye ve yurt dışındaki İslami yardım kuruluşlarının Ad Grants hesaplarını sıfırdan onaylatıyor, askıdaki hesapları kurtarıyor ve her ay 10.000 $'lık hibenin son kuruşuna kadar bağışa ve gönüllüye dönüşmesini sağlıyoruz.</p>
+<p><strong>Vakıf ve STK Yöneticileri İçin Büyük Fırsat:</strong> Google, dünya genelindeki kayıtlı kar amacı gütmeyen kuruluşlara, vakıflara ve derneklere her ay **10.000 $ (Yılda 120.000 $)** tutarında tamamen ücretsiz arama ağı reklam hibesi (Google Ad Grants) sağlamaktadır. Ancak dünya genelindeki İslami yardım kuruluşlarının %70'inden fazlası ya bu programdan habersizdir ya da başvuru sürecindeki teknik engeller ve katı Google politikaları (%5 CTR kuralı, tek kelimelik anahtar kelime yasağı, dönüşüm takibi zorunluluğu) nedeniyle hesaplarını askıya aldırmaktadır. **Salih Maral (Resmi Google Partner & STK Dijital Büyüme Uzmanı)** olarak; Türkiye ve yurt dışındaki İslami yardım kuruluşlarının Ad Grants hesaplarını sıfırdan onaylatıyor, askıdaki hesapları kurtarıyor ve her ay 10.000 $'lık hibenin son kuruşuna kadar bağışa ve gönüllüye dönüşmesini sağlıyoruz.</p>
 </div>
 
 <h2>🕌 Google Ad Grants Nedir ve İslami Yardım Kuruluşlarına Ne Kazandırır?</h2>
@@ -77,7 +77,7 @@ coverImage: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200
 </div>
 
 <div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">
-  <h3 class="text-xl font-bold text-white mb-2">💼 Reklam Bütçenizi Kârlı Bir Ciro Motoruna Dönüştürün</h3>
+  <h3 class="text-xl font-bold text-white mb-2">💼 Reklam Bütçenizi Karlı Bir Ciro Motoruna Dönüştürün</h3>
   <p class="text-slate-300 mb-4">Şeffaf sabit fiyat (Fixpreis) modeli ve 17+ yıllık tecrübeyle sıfır komisyon çatışması. Yüksek ROAS odaklı <a href="/tr/hizmetler/google-ads" class="text-[#4285F4] underline font-semibold">Google Ads Yönetimi</a> ve <a href="/tr/hizmetler/server-side-tracking" class="text-blue-300 underline font-semibold">Server-Side Tracking Altyapısı</a> ile işletmenizi büyütün.</p>
   <a href="/#contact" class="inline-block bg-[#4285F4] hover:bg-blue-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Ücretsiz Büyüme Analizi Alın →</a>
 </div>

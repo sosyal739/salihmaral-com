@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=
 </blockquote>
 
 <div class="lead">
-<p><strong>Pazarlama Bütçenizi Koruma Kılavuzu:</strong> Her ay binlerce lira reklam bütçesi harcıyor ancak ay sonunda kasanıza giren net kârı bir türlü artıramıyor musunuz? Görüştüğünüz ajanslar size *"milyonlarca gösterim"*, *"harika tıklama oranları"* veya *"garantili 1. sıra"* vaat ediyor ama iş gerçek satış ve ciroya geldiğinde derin bir sessizlik mi oluşuyor? 2026 yılında dijital reklamcılık artık sadece birkaç anahtar kelime seçip bütçeyi yapay zekaya bırakmaktan ibaret değildir. <strong>Salih Maral (Resmi Google Partner & 17+ Yıllık Performans Pazarlaması Uzmanı)</strong> olarak, yüzlerce markanın ajans deneyimini incelediğimizde aynı acı tabloyla karşılaşıyoruz: Bütçenin %30'undan fazlası yanlış ajans modelleri ve çıkar çatışmaları yüzünden buharlaşıyor. Bu rehberde, bir dijital reklam ajansıyla el sıkışmadan önce masaya koymanız gereken 9 kritik soruyu, sözleşme tuzaklarını ve doğru çalışma modelini paylaşıyoruz.</p>
+<p><strong>Pazarlama Bütçenizi Koruma Kılavuzu:</strong> Her ay binlerce lira reklam bütçesi harcıyor ancak ay sonunda kasanıza giren net karı bir türlü artıramıyor musunuz? Görüştüğünüz ajanslar size *"milyonlarca gösterim"*, *"harika tıklama oranları"* veya *"garantili 1. sıra"* vaat ediyor ama iş gerçek satış ve ciroya geldiğinde derin bir sessizlik mi oluşuyor? 2026 yılında dijital reklamcılık artık sadece birkaç anahtar kelime seçip bütçeyi yapay zekaya bırakmaktan ibaret değildir. <strong>Salih Maral (Resmi Google Partner & 17+ Yıllık Performans Pazarlaması Uzmanı)</strong> olarak, yüzlerce markanın ajans deneyimini incelediğimizde aynı acı tabloyla karşılaşıyoruz: Bütçenin %30'undan fazlası yanlış ajans modelleri ve çıkar çatışmaları yüzünden buharlaşıyor. Bu rehberde, bir dijital reklam ajansıyla el sıkışmadan önce masaya koymanız gereken 9 kritik soruyu, sözleşme tuzaklarını ve doğru çalışma modelini paylaşıyoruz.</p>
 </div>
 
 <h2>🚨 Ajans Görüşmelerinde En Tehlikeli 5 Kırmızı Bayrak (Red Flags)</h2>
@@ -25,8 +25,8 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=
   <li><strong>"Garantili Ciro veya Garantili 1. Sıra" Vaadi:</strong> Hiçbir dürüst profesyonel, Google ve Meta gibi açık artırma (auction) usulü çalışan algoritmaların sonucunu %100 garanti edemez. Rakiplerin bütçesi, sezonluk talep ve sitenizin dönüşüm oranı sürekli değişir. Garanti veren ajanslar genellikle marka adınıza reklam verip sanki yeni müşteri bulmuş gibi sahte başarı tablosu çizer.</li>
   <li><strong>Hesabı Kendi Üzerine Açıp Şifreyi Vermemek (Hesap Rehini):</strong> En tehlikeli tuzaktır. Ajans reklam hesabını kendi Business Manager'ında veya Google Ads panelinde açar, faturayı size keser ama paneli göstermez. Ayrılmak istediğinizde yıllardır biriken piksel verisi, dönüşüm geçmişi ve negatif anahtar kelimeler rehin kalır; sıfırdan başlamak zorunda kalırsınız. <em>Kural: Reklam hesabı her zaman sizin şirketinizin mülkiyetinde olmalıdır.</em></li>
   <li><strong>Toplantıyı Kurucunun Yapıp, Hesabı Stajyere Devretmesi (Junior Trap):</strong> Ajans sahibi veya kıdemli yöneticisi müthiş bir sunum yapar, güven verir. Ancak sözleşme imzalandıktan 2 hafta sonra hesabınız henüz 6 aylık stajyerlerin eline bırakılır. Sorun yaşadığınızda karşınızda muhatap bulamazsınız.</li>
-  <li><strong>Bütçeden %15 - %20 Komisyon Kesilmesi (Büyük Çıkar Çatışması):</strong> Ajans harcadığınız para üzerinden komisyon alıyorsa, ajansın tek hedefi sizin kâr etmeniz değil, bütçenizi sürekli artırmanızdır. Sabit fiyat modeli bu çıkar çatışmasını kökten bitirir.</li>
-  <li><strong>Server-Side Tracking (CAPI & sGTM) Bilgisinin Olmaması:</strong> 2026 yılında tarayıcı çerezleri bitti. Size hâlâ sadece tarayıcı pikseli (Browser Pixel) kuran bir ajans, reklam verilerinizin %25'ini çöpe atıyor demektir.</li>
+  <li><strong>Bütçeden %15 - %20 Komisyon Kesilmesi (Büyük Çıkar Çatışması):</strong> Ajans harcadığınız para üzerinden komisyon alıyorsa, ajansın tek hedefi sizin kar etmeniz değil, bütçenizi sürekli artırmanızdır. Sabit fiyat modeli bu çıkar çatışmasını kökten bitirir.</li>
+  <li><strong>Server-Side Tracking (CAPI & sGTM) Bilgisinin Olmaması:</strong> 2026 yılında tarayıcı çerezleri bitti. Size hala sadece tarayıcı pikseli (Browser Pixel) kuran bir ajans, reklam verilerinizin %25'ini çöpe atıyor demektir.</li>
 </ol>
 
 <h2>📊 Geleneksel Ajans Modeli ile Kıdemli Partner Modeli Kıyaslaması</h2>
@@ -91,13 +91,13 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=
   <li><strong>Ayrılmak istersek hesap, pikseller ve kampanya geçmişi bizde kalacak mı?</strong><br />
   Bu madde sözleşmede açıkça "Müşterinin mülkiyetindedir" şeklinde yer almalıdır.</li>
   <li><strong>Raporlamayı hangi metriklerle yapıyorsunuz?</strong><br />
-  Tıklama ve gösterim değil; net harcanan bütçe, elde edilen ciro, dönüşüm maliyeti (CPA) ve kâr oranı (ROAS) raporlanmalıdır.</li>
+  Tıklama ve gösterim değil; net harcanan bütçe, elde edilen ciro, dönüşüm maliyeti (CPA) ve kar oranı (ROAS) raporlanmalıdır.</li>
   <li><strong>Bütçemiz 5 katına çıkarsa hizmet bedeliniz de 5 katına mı çıkacak?</strong><br />
-  Bütçe büyüdükçe komisyon artışı işletmenizin kâr marjını öldürür.</li>
+  Bütçe büyüdükçe komisyon artışı işletmenizin kar marjını öldürür.</li>
   <li><strong>Sektörümüzle ilgili doğrulanmış Google Ads panel veriniz var mı?</strong><br />
   Gerçek panel ekran görüntüleri ve doğrulanmış dönüşüm verisi talep edin.</li>
   <li><strong>Sözleşmede zorunlu kalma süresi (Taahhüt) var mı?</strong><br />
-  İşini iyi yapan bir uzman, müşterisini 12 aylık zincirlerle değil, ürettiği kâr ve sonuçla yanında tutar.</li>
+  İşini iyi yapan bir uzman, müşterisini 12 aylık zincirlerle değil, ürettiği kar ve sonuçla yanında tutar.</li>
 </ol>
 
 <h2>🔄 Mevcut Ajansınızdan Memnun Değilseniz: 4 Adımlı Güvenli Geçiş</h2>
@@ -115,7 +115,7 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=
   <p>Server-Side CAPI ve yeni kampanya mimarisi kurgulanıp test edilir.</p>
   
   <h3>4. Adım: Pürüzsüz Devir Teslim</h3>
-  <p>Eski ajansın yetkileri nazikçe kaldırılır ve yeni yapılandırılmış kampanyalar yayına alınır. Sıfır ciro kaybı ile kârlılık artışı başlar.</p>
+  <p>Eski ajansın yetkileri nazikçe kaldırılır ve yeni yapılandırılmış kampanyalar yayına alınır. Sıfır ciro kaybı ile karlılık artışı başlar.</p>
 </div>
 
 <h2>🎯 Neden Salih Maral ile Çalışmalısınız?</h2>

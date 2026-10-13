@@ -11,7 +11,7 @@ const langMeta = {
   },
   tr: {
     title: 'Google Ads Ajansı & SEO Danışmanlığı | Salih Maral',
-    description: '17+ yıllık Resmi Google Partneri ile şeffaf sabit fiyatlı Google Ads, Meta Ads ve SEO yönetimi. E-ticaret ve markalar için yüksek ROAS ve kârlı büyüme.',
+    description: '17+ yıllık Resmi Google Partneri ile şeffaf sabit fiyatlı Google Ads, Meta Ads ve SEO yönetimi. E-ticaret ve markalar için yüksek ROAS ve karlı büyüme.',
     canonical: 'https://www.salihmaral.com/tr',
   },
 }

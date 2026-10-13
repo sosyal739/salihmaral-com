@@ -117,10 +117,10 @@ const translations = {
     badge: 'Google Partner Ajans',
     title: 'Hakkımızda',
     subtitle: 'Dijital büyümenizde güvenilir partneriniz',
-    intro: 'Salih Maral, dijital pazarlama uzmanı ve resmi Google Partneridir. 2009’dan beri, yani 17 yılı aşkın süredir, e-ticaret markaları, KOBİ\'ler ve kurumsal işletmeler için Google Ads, Meta Ads, YouTube Ads ve SEO yönetir. Ölçüt tıklama değil; gerçek talep, randevu ve kârlı satıştır.',
+    intro: 'Salih Maral, dijital pazarlama uzmanı ve resmi Google Partneridir. 2009’dan beri, yani 17 yılı aşkın süredir, e-ticaret markaları, KOBİ\'ler ve kurumsal işletmeler için Google Ads, Meta Ads, YouTube Ads ve SEO yönetir. Ölçüt tıklama değil; gerçek talep, randevu ve karlı satıştır.',
     mission: {
       title: 'Misyonumuz',
-      text: 'Her büyüklükteki işletmenin dijital çağda kârlı büyümesine yardımcı oluyoruz. Veri odaklı yaklaşımımız ve Google Ads, Meta Ads ve SEO\'daki derin uzmanlığımız, gerçek sonuçlar sunan özelleştirilmiş stratejiler geliştirmemizi sağlıyor — sadece tıklama değil, ödeme yapan sadık müşteriler.'
+      text: 'Her büyüklükteki işletmenin dijital çağda karlı büyümesine yardımcı oluyoruz. Veri odaklı yaklaşımımız ve Google Ads, Meta Ads ve SEO\'daki derin uzmanlığımız, gerçek sonuçlar sunan özelleştirilmiş stratejiler geliştirmemizi sağlıyor — sadece tıklama değil, ödeme yapan sadık müşteriler.'
     },
     identity: {
       title: 'Biz Kimiz',
@@ -128,7 +128,7 @@ const translations = {
         { title: 'Sertifikalı Google Partner', desc: 'Google tarafından resmi olarak Partner Ajans olarak tanınmaktayız. Yetkinlik, performans ve müşteri memnuniyeti konusunda Google\'ın en yüksek gereksinimlerini karşılıyoruz.' },
         { title: '17+ Yıl Deneyim', desc: '2009’dan beri performans pazarlaması. E-ticaret, sağlık, hukuk büroları, B2B ve ihracat markaları için Türkçe ve İngilizce yüksek performanslı kampanyalar.' },
         { title: '300+ Marka', desc: '300\'den fazla işletme ve marka dijital büyümelerini bize emanet etti — yerel KOBİ\'lerden uluslararası şirketlere kadar.' },
-        { title: 'Şeffaf ve Komisyonsuz', desc: 'Reklam harcamanızdan komisyon almayan, sabit aylık paketlerle çalışan ve tamamen kârlılık odaklı modern ajans modeli.' }
+        { title: 'Şeffaf ve Komisyonsuz', desc: 'Reklam harcamanızdan komisyon almayan, sabit aylık paketlerle çalışan ve tamamen karlılık odaklı modern ajans modeli.' }
       ]
     },
     services: {
@@ -146,7 +146,7 @@ const translations = {
       title: 'Değerlerimiz',
       items: [
         { title: 'Şeffaflık', desc: 'Net, dürüst iletişim ve detaylı canlı raporlar — bütçenizin nereye gittiğini her an kendi panelinizden görürsünüz.' },
-        { title: 'Sonuç Odaklılık', desc: 'Başarıyı boş tıklamalarla değil, net kârlılık ve ROAS ile ölçüyoruz. Her strateji ölçülebilir iş sonuçlarına yöneliktir.' },
+        { title: 'Sonuç Odaklılık', desc: 'Başarıyı boş tıklamalarla değil, net karlılık ve ROAS ile ölçüyoruz. Her strateji ölçülebilir iş sonuçlarına yöneliktir.' },
         { title: 'Ortaklık', desc: 'Müşterilerimizi iş ortağı olarak görüyoruz. Başarınız bizim başarımızdır — bu yüzden sınırlı sayıda seçkin marka kabul ediyoruz.' }
       ]
     },
@@ -583,14 +583,14 @@ export default function AboutPage() {
             </div>
             <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">
               {lang === 'tr'
-                ? "Ölçülebilir & Kârlı Dijital Pazarlama Kanalları"
+                ? "Ölçülebilir & Karlı Dijital Pazarlama Kanalları"
                 : lang === 'en'
                 ? "Measurable & Profitable Digital Marketing Channels"
                 : "Planbare & profitable Performance-Marketing Kanäle"}
             </h2>
             <p className="text-sm md:text-base text-gray-600">
               {lang === 'tr'
-                ? 'İşletmenizin ciro ve kârlılığını artırmak için test edilmiş, komisyonsuz ve şeffaf büyüme sistemleri.'
+                ? 'İşletmenizin ciro ve karlılığını artırmak için test edilmiş, komisyonsuz ve şeffaf büyüme sistemleri.'
                 : lang === 'en'
                 ? 'Battle-tested, commission-free, and transparent growth systems engineered to maximize your ROI.'
                 : 'Erprobte, transparente Marketingsysteme zur Maximierung Ihres ROI ohne versteckte Provisionen.'}
@@ -646,7 +646,7 @@ export default function AboutPage() {
               </a>
               <p className="text-xs text-slate-400 leading-relaxed">
                 {lang === 'tr'
-                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
+                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve Server-Side Tracking ile karlı büyüme sağlar.'
                   : lang === 'en'
                   ? 'Official Google Partner Salih Maral delivers scalable revenue growth across global markets through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
                   : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}

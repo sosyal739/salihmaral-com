@@ -66,7 +66,7 @@ coverImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200
         <p>X Live Studio, sadece yeni bir özellik değil, içerik üretici ekonomisinde (Creator Economy) dengeleri değiştirecek devasa bir hamledir. Rekabet henüz azken platformda yerinizi alın.</p>
 
 <div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">
-  <h3 class="text-xl font-bold text-white mb-2">💼 Reklam Bütçenizi Kârlı Bir Ciro Motoruna Dönüştürün</h3>
+  <h3 class="text-xl font-bold text-white mb-2">💼 Reklam Bütçenizi Karlı Bir Ciro Motoruna Dönüştürün</h3>
   <p class="text-slate-300 mb-4">Şeffaf sabit fiyat (Fixpreis) modeli ve 17+ yıllık tecrübeyle sıfır komisyon çatışması. Yüksek ROAS odaklı <a href="/tr/hizmetler/google-ads" class="text-[#4285F4] underline font-semibold">Google Ads Yönetimi</a> ve <a href="/tr/hizmetler/server-side-tracking" class="text-blue-300 underline font-semibold">Server-Side Tracking Altyapısı</a> ile işletmenizi büyütün.</p>
   <a href="/#contact" class="inline-block bg-[#4285F4] hover:bg-blue-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Ücretsiz Büyüme Analizi Alın →</a>
 </div>

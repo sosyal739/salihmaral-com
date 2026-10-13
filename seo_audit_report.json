@@ -1,0 +1,3395 @@
+{
+  "base_url": "https://www.salihmaral.com",
+  "timestamp": "2026-10-14 00:30:47",
+  "health_score": 100,
+  "total_pages": 174,
+  "passed_pages": 174,
+  "total_issues": 0,
+  "total_warnings": 0,
+  "special_files": {
+    "/robots.txt": {
+      "status": 200,
+      "size_bytes": 848,
+      "passed": true
+    },
+    "/llms.txt": {
+      "status": 200,
+      "size_bytes": 7189,
+      "passed": true
+    },
+    "/llms-full.txt": {
+      "status": 200,
+      "size_bytes": 38944,
+      "passed": true
+    },
+    "/site.webmanifest": {
+      "status": 200,
+      "size_bytes": 804,
+      "passed": true
+    },
+    "/favicon.ico": {
+      "status": 200,
+      "size_bytes": 26470,
+      "passed": true
+    }
+  },
+  "results": [
+    {
+      "url": "https://www.salihmaral.com",
+      "status": 200,
+      "duration_ms": 248,
+      "title": "Salih Maral – Resmi Google Partner &amp; Dijital Büyüme Ajansı",
+      "title_len": 62,
+      "meta_desc": "17+ yıllık resmi Google Partner tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve e-ihracat odaklı performans pazarlaması danışmanlığı.",
+      "desc_len": 157,
+      "canonical": "https://www.salihmaral.com",
+      "h1_count": 1,
+      "h1_text": "İşletmenizi Google Ads, Meta Ads, SEO &amp; TikTok ile Karlı Büyütün",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['WebPage', 'SiteNavigationElement', 'ItemList', 'ProfessionalService', 'FAQPage']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/tr",
+      "status": 200,
+      "duration_ms": 746,
+      "title": "Google Ads Ajansı &amp; SEO Danışmanlığı | Salih Maral",
+      "title_len": 54,
+      "meta_desc": "17+ yıllık Resmi Google Partneri ile şeffaf sabit fiyatlı Google Ads, Meta Ads ve SEO yönetimi. E-ticaret ve markalar için yüksek ROAS ve karlı büyüme.",
+      "desc_len": 151,
+      "canonical": "https://www.salihmaral.com/tr",
+      "h1_count": 1,
+      "h1_text": "İşletmenizi Google Ads, Meta Ads, SEO &amp; TikTok ile Karlı Büyütün",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['WebPage', 'SiteNavigationElement', 'ItemList', 'ProfessionalService', 'FAQPage']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en",
+      "status": 200,
+      "duration_ms": 347,
+      "title": "Google Ads Agency &amp; Performance Marketing | Salih Maral",
+      "title_len": 59,
+      "meta_desc": "Scale your business with certified flat-fee Google Ads, Meta Ads, TikTok Ads &amp; SEO management by an official 17+ yr Senior Google Partner.",
+      "desc_len": 142,
+      "canonical": "https://www.salihmaral.com/en",
+      "h1_count": 1,
+      "h1_text": "Scale Your Business with Google Ads, Meta Ads, SEO &amp; TikTok",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['WebPage', 'SiteNavigationElement', 'ItemList', 'ProfessionalService', 'FAQPage']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/about",
+      "status": 200,
+      "duration_ms": 319,
+      "title": "Hakkımda | Salih Maral – Resmi Google Partner",
+      "title_len": 45,
+      "meta_desc": "Salih Maral, 17+ yıllık resmi Google Partner tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads ve SEO danışmanlığı sunmaktadır.",
+      "desc_len": 141,
+      "canonical": "https://www.salihmaral.com/about",
+      "h1_count": 1,
+      "h1_text": "Hakkımızda",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog",
+      "status": 200,
+      "duration_ms": 477,
+      "title": "Dijital Pazarlama &amp; Büyüme Blogu | Salih Maral",
+      "title_len": 50,
+      "meta_desc": "Google Ads, Meta Ads, SEO, E-İhracat ve Server-Side Tracking hakkında güncel uzman rehberleri.",
+      "desc_len": 94,
+      "canonical": "https://www.salihmaral.com/blog",
+      "h1_count": 1,
+      "h1_text": "Dijital Pazarlama &amp; AI Blog",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog",
+      "status": 200,
+      "duration_ms": 314,
+      "title": "Digital Marketing &amp; Growth Blog | Salih Maral",
+      "title_len": 49,
+      "meta_desc": "In-depth strategic guides on Google Ads, Meta Ads, SEO, GEO, and Server-Side Tracking for international brands and e-commerce.",
+      "desc_len": 126,
+      "canonical": "https://www.salihmaral.com/en/blog",
+      "h1_count": 1,
+      "h1_text": "Digital Marketing &amp; AI Blog",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/tr/hizmetler/google-ads",
+      "status": 200,
+      "duration_ms": 69,
+      "title": "Google Ads Ajansı &amp; Danışmanlığı | Salih Maral",
+      "title_len": 50,
+      "meta_desc": "Resmi Google Partneri ile şeffaf sabit fiyatlı Google Ads yönetimi: Arama, PMax ve Alışveriş reklamları ile yüksek karlılık ve satış.",
+      "desc_len": 133,
+      "canonical": "https://www.salihmaral.com/tr/hizmetler/google-ads",
+      "h1_count": 1,
+      "h1_text": "Google Ads Yönetimi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList', 'FAQPage']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/services/google-ads",
+      "status": 200,
+      "duration_ms": 97,
+      "title": "Google Ads Agency | Flat Fee PPC Management | Salih Maral",
+      "title_len": 57,
+      "meta_desc": "Scale your business with certified flat-fee Google Ads management. Search, Performance Max &amp; Shopping campaigns optimized for maximum ROAS by a 17+ yr partner.",
+      "desc_len": 163,
+      "canonical": "https://www.salihmaral.com/en/services/google-ads",
+      "h1_count": 1,
+      "h1_text": "Google Ads Management",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList', 'FAQPage']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/tr/hizmetler/meta-ads",
+      "status": 200,
+      "duration_ms": 368,
+      "title": "Meta Ads Ajansı (Facebook &amp; Instagram) | Salih Maral",
+      "title_len": 56,
+      "meta_desc": "Profesyonel Meta Ads yönetimi: Advantage+ Alışveriş, CAPI ve yapay zeka kreatifleri ile satışlarınızı ve ROAS&#x27;ınızı katlayın.",
+      "desc_len": 130,
+      "canonical": "https://www.salihmaral.com/tr/hizmetler/meta-ads",
+      "h1_count": 1,
+      "h1_text": "Meta Ads Yönetimi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList', 'FAQPage']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/services/meta-ads",
+      "status": 200,
+      "duration_ms": 326,
+      "title": "Meta Ads Agency (Facebook &amp; Instagram) | Salih Maral",
+      "title_len": 56,
+      "meta_desc": "Certified Meta Ads management: Advantage+ Shopping, Creative AI, and Server-Side CAPI to scale e-commerce and lower CPAs.",
+      "desc_len": 121,
+      "canonical": "https://www.salihmaral.com/en/services/meta-ads",
+      "h1_count": 1,
+      "h1_text": "Meta Ads Management",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList', 'FAQPage']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/tr/hizmetler/youtube-ads",
+      "status": 200,
+      "duration_ms": 322,
+      "title": "YouTube Ads ve Video Reklam Yönetimi | Salih Maral",
+      "title_len": 50,
+      "meta_desc": "Videolarınızı doğru insanlara izletin. Ülke hedefli YouTube Ads ve Shorts reklamları ile gerçek izlenme ve kanal büyümesi.",
+      "desc_len": 122,
+      "canonical": "https://www.salihmaral.com/tr/hizmetler/youtube-ads",
+      "h1_count": 1,
+      "h1_text": "YouTube Ads &amp; Video Büyüme",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/services/youtube-ads",
+      "status": 200,
+      "duration_ms": 342,
+      "title": "YouTube Ads &amp; Video Growth Services | Salih Maral",
+      "title_len": 53,
+      "meta_desc": "Reach real viewers and loyal subscribers with targeted In-Feed &amp; Shorts video ads to drive organic YouTube channel growth.",
+      "desc_len": 126,
+      "canonical": "https://www.salihmaral.com/en/services/youtube-ads",
+      "h1_count": 1,
+      "h1_text": "YouTube Ads &amp; Video Growth",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/tr/hizmetler/server-side-tracking",
+      "status": 200,
+      "duration_ms": 470,
+      "title": "Tracking &amp; Reklam Kurulumu (GA4, CAPI) | Salih Maral",
+      "title_len": 56,
+      "meta_desc": "Anahtar teslim reklam ve ölçüm altyapı kurulumu: Google Ads, GA4 E-Ticaret, Search Console, Merchant Center, Meta Pixel, CAPI ve Server-Side GTM.",
+      "desc_len": 145,
+      "canonical": "https://www.salihmaral.com/tr/hizmetler/server-side-tracking",
+      "h1_count": 1,
+      "h1_text": "Reklam &amp; Tracking Kurulum Hizmetleri",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/services/server-side-tracking",
+      "status": 200,
+      "duration_ms": 303,
+      "title": "Ad &amp; Tracking Setup (Google Ads, GA4, CAPI) | Salih Maral",
+      "title_len": 61,
+      "meta_desc": "Full-funnel ad and tracking setup: Google Ads, GA4 E-Commerce, Search Console, Merchant Center, Meta Pixel, Conversions API (CAPI), and Server-Side GTM.",
+      "desc_len": 152,
+      "canonical": "https://www.salihmaral.com/en/services/server-side-tracking",
+      "h1_count": 1,
+      "h1_text": "Ad Account &amp; Tracking Setup",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/tr/hizmetler/tiktok-ads",
+      "status": 200,
+      "duration_ms": 499,
+      "title": "TikTok Ads Reklam Yönetimi | Salih Maral",
+      "title_len": 40,
+      "meta_desc": "Viral kreatif kurguları ve Spark Ads ile genç kitleyi müşteriye dönüştüren doğrudan satış odaklı TikTok reklamları.",
+      "desc_len": 115,
+      "canonical": "https://www.salihmaral.com/tr/hizmetler/tiktok-ads",
+      "h1_count": 1,
+      "h1_text": "TikTok Ads Yönetimi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/services/tiktok-ads",
+      "status": 200,
+      "duration_ms": 434,
+      "title": "TikTok Ads Management Services | Salih Maral",
+      "title_len": 44,
+      "meta_desc": "Viral direct-response campaigns and Spark Ads for rapid e-commerce growth and high conversion rates on TikTok.",
+      "desc_len": 110,
+      "canonical": "https://www.salihmaral.com/en/services/tiktok-ads",
+      "h1_count": 1,
+      "h1_text": "TikTok Ads Management",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/tr/hizmetler/x-ads",
+      "status": 200,
+      "duration_ms": 382,
+      "title": "X (Twitter) Ads Reklam Yönetimi ve B2B Büyüme | Salih Maral",
+      "title_len": 59,
+      "meta_desc": "Karar vericilere ve trend konulara doğrudan ulaşın. B2B müşteri kazanımı ve yüksek etkileşimli X reklamları.",
+      "desc_len": 108,
+      "canonical": "https://www.salihmaral.com/tr/hizmetler/x-ads",
+      "h1_count": 1,
+      "h1_text": "X (Twitter) Ads Yönetimi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/services/x-ads",
+      "status": 200,
+      "duration_ms": 325,
+      "title": "X (Twitter) Ads Management &amp; B2B Leads | Salih Maral",
+      "title_len": 56,
+      "meta_desc": "Position your brand in front of decision-makers. B2B lead generation, app installs, and viral reach on X (Twitter).",
+      "desc_len": 115,
+      "canonical": "https://www.salihmaral.com/en/services/x-ads",
+      "h1_count": 1,
+      "h1_text": "X (Twitter) Ads Management",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/tr/hizmetler/seo",
+      "status": 200,
+      "duration_ms": 339,
+      "title": "SEO ve Generative Engine Optimization (GEO) | Salih Maral",
+      "title_len": 57,
+      "meta_desc": "Google ilk sıra ve yapay zeka arama motorlarında (Perplexity, ChatGPT, Gemini) zirveye çıkın. Teknik SEO ve İçerik Motoru.",
+      "desc_len": 122,
+      "canonical": "https://www.salihmaral.com/tr/hizmetler/seo",
+      "h1_count": 1,
+      "h1_text": "SEO Hizmetleri",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/services/seo",
+      "status": 200,
+      "duration_ms": 333,
+      "title": "SEO &amp; Generative Engine Optimization (GEO) | Salih Maral",
+      "title_len": 60,
+      "meta_desc": "Dominate Google and AI search engines (Perplexity, ChatGPT, Claude). Technical SEO, programmatic content hubs, and Local SEO.",
+      "desc_len": 125,
+      "canonical": "https://www.salihmaral.com/en/services/seo",
+      "h1_count": 1,
+      "h1_text": "SEO Services",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/tr/hizmetler/yorum-yonetimi",
+      "status": 200,
+      "duration_ms": 435,
+      "title": "Olumsuz Yorum ve İtibar Yönetimi | Salih Maral",
+      "title_len": 46,
+      "meta_desc": "Google Haritalar ve Trustpilot üzerindeki haksız, sahte 1 yıldızlı yorumların yasal zeminde hızlıca kaldırılması.",
+      "desc_len": 113,
+      "canonical": "https://www.salihmaral.com/tr/hizmetler/yorum-yonetimi",
+      "h1_count": 1,
+      "h1_text": "Olumsuz Yorum Yönetimi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/services/review-management",
+      "status": 200,
+      "duration_ms": 343,
+      "title": "Review &amp; Online Reputation Management | Salih Maral",
+      "title_len": 55,
+      "meta_desc": "Legally remove unfair 1-star reviews on Google Maps and Trustpilot. Protect your reputation and win customer trust.",
+      "desc_len": 115,
+      "canonical": "https://www.salihmaral.com/en/services/review-management",
+      "h1_count": 1,
+      "h1_text": "Review Management",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/tr/hizmetler/islamic-charity-ngo-marketing",
+      "status": 200,
+      "duration_ms": 300,
+      "title": "STK &amp; Dernekler İçin Dijital Pazarlama | Salih Maral",
+      "title_len": 56,
+      "meta_desc": "Su kuyusu, yetim ve Ramazan/Kurban bağış hunileri. $10.000/aylık ücretsiz Google Ad Grants hibe reklam yönetimi.",
+      "desc_len": 112,
+      "canonical": "https://www.salihmaral.com/tr/hizmetler/islamic-charity-ngo-marketing",
+      "h1_count": 1,
+      "h1_text": "Google Ads Yönetimi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/services/islamic-charity-ngo-marketing",
+      "status": 200,
+      "duration_ms": 471,
+      "title": "Donation Marketing &amp; Google Ad Grants for NGOs | Salih Maral",
+      "title_len": 64,
+      "meta_desc": "Scale donations for water wells, orphan sponsorships, and Ramadan appeals. Up to $10,000/month in free Google Ad Grants.",
+      "desc_len": 120,
+      "canonical": "https://www.salihmaral.com/en/services/islamic-charity-ngo-marketing",
+      "h1_count": 1,
+      "h1_text": "Google Ads Management",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['Service', 'BreadcrumbList']",
+        "Service",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/ai-agentic-workflow-digital-marketing-2026",
+      "status": 200,
+      "duration_ms": 414,
+      "title": "Agentic AI İş Akışları ile Pazarlama Otomasyonu 2026",
+      "title_len": 52,
+      "meta_desc": "Otonom yapay zeka ajanları (Agentic AI) ile Google Ads, Meta Ads ve SEO yönetimini entegre ederek pazarlama operasyonlarını 2026 standartlarında ölçekleyin.",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/ai-agentic-workflow-digital-marketing-2026",
+      "h1_count": 1,
+      "h1_text": "Agentic AI İş Akışları ile Pazarlama Otomasyonu 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/ai-agentic-workflow-digital-marketing-2026",
+      "status": 200,
+      "duration_ms": 343,
+      "title": "Agentic AI Workflows: Autonomous Marketing in 2026",
+      "title_len": 50,
+      "meta_desc": "Scale performance marketing operations in 2026 by integrating autonomous AI agents (Agentic AI) for Google Ads, Meta Ads, and SEO.",
+      "desc_len": 130,
+      "canonical": "https://www.salihmaral.com/en/blog/ai-agentic-workflow-digital-marketing-2026",
+      "h1_count": 1,
+      "h1_text": "Agentic AI Workflows: Autonomous Marketing in 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/ai-content-marketing-scale",
+      "status": 200,
+      "duration_ms": 333,
+      "title": "Yapay Zeka ile İçerik Üretimi: Trafiği Katlayın",
+      "title_len": 47,
+      "meta_desc": "Yapay zeka ile içerik üretirken Google&#x27;da sıralanmayı öğrenin. AI içerik üretme rehberi. Detaylı rehber ve stratejik analiz Salih Maral ile.",
+      "desc_len": 145,
+      "canonical": "https://www.salihmaral.com/blog/ai-content-marketing-scale",
+      "h1_count": 1,
+      "h1_text": "Yapay Zeka ile İçerik Üretimi: Trafiği Katlayın",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/ai-content-marketing-scale",
+      "status": 200,
+      "duration_ms": 301,
+      "title": "AI Content Creation: Scale Traffic Without Quality Loss",
+      "title_len": 55,
+      "meta_desc": "Avoid Google penalties when producing content with AI. The guide to creating humanized AI content compliant with EEAT standards.",
+      "desc_len": 128,
+      "canonical": "https://www.salihmaral.com/en/blog/ai-content-marketing-scale",
+      "h1_count": 1,
+      "h1_text": "AI Content Creation: Scale Traffic Without Quality Loss",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/ai-seo-geoptimierung",
+      "status": 200,
+      "duration_ms": 74,
+      "title": "Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026",
+      "title_len": 54,
+      "meta_desc": "Yapay zeka arama motorları için SEO (GEO) rehberi. İçeriğinizin ChatGPT, Perplexity ve Google AI&#x27;da üst sıralarda çıkacağını öğrenin.",
+      "desc_len": 138,
+      "canonical": "https://www.salihmaral.com/blog/ai-seo-geoptimierung",
+      "h1_count": 1,
+      "h1_text": "Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/ai-seo-geoptimierung",
+      "status": 200,
+      "duration_ms": 333,
+      "title": "SEO for AI Search Engines (GEO) Guide 2026 | Salih Maral",
+      "title_len": 56,
+      "meta_desc": "Learn how to get your brand cited and surfaced in Google AI Overviews, Perplexity, and ChatGPT. In-depth guide and strategic insights by Salih Maral.",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/en/blog/ai-seo-geoptimierung",
+      "h1_count": 1,
+      "h1_text": "SEO for AI Search Engines (GEO) Guide 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-cpl-analizi-2026",
+      "status": 200,
+      "duration_ms": 297,
+      "title": "B2B Google Ads vs LinkedIn Ads Karşılaştırması | Salih Maral",
+      "title_len": 60,
+      "meta_desc": "B2B şirketler için en karlı müşteri kazanma kanalını seçin. Resmi Partner Salih Maral, CPL maliyetleri ve karar verici hedefleme stratejilerini kıyaslıyor.",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-cpl-analizi-2026",
+      "h1_count": 1,
+      "h1_text": "B2B Google Ads vs LinkedIn Ads Karşılaştırması",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-cpl-analizi-2026",
+      "status": 200,
+      "duration_ms": 316,
+      "title": "B2B Google Ads vs LinkedIn Ads Comparison 2026 | Salih Maral",
+      "title_len": 60,
+      "meta_desc": "Choose the highest-ROI lead generation channel for B2B. Official Google Partner Salih Maral compares CPL, CAC, and decision-maker targeting dynamics.",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/en/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-cpl-analizi-2026",
+      "h1_count": 1,
+      "h1_text": "B2B Google Ads vs LinkedIn Ads Comparison 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/b2b-lead-generation-linkedin-ai-agents",
+      "status": 200,
+      "duration_ms": 308,
+      "title": "LinkedIn Ads &amp; AI ile B2B Müşteri Kazanımı (ABM)",
+      "title_len": 52,
+      "meta_desc": "B2B şirketleri için LinkedIn Campaign Manager, Hesap Tabanlı Pazarlama (ABM) ve otonom AI ajanları ile nitelikli müşteri adayı (Lead) toplama rehberi.",
+      "desc_len": 150,
+      "canonical": "https://www.salihmaral.com/blog/b2b-lead-generation-linkedin-ai-agents",
+      "h1_count": 1,
+      "h1_text": "LinkedIn Ads &amp; AI ile B2B Müşteri Kazanımı (ABM)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/b2b-lead-generation-linkedin-ai-agents",
+      "status": 200,
+      "duration_ms": 440,
+      "title": "LinkedIn Ads &amp; AI Agents: B2B Lead Gen &amp; ABM Strategy",
+      "title_len": 61,
+      "meta_desc": "A strategic playbook for B2B enterprises to acquire qualified leads using LinkedIn Campaign Manager, Account-Based Marketing (ABM), and autonomous AI agents.",
+      "desc_len": 157,
+      "canonical": "https://www.salihmaral.com/en/blog/b2b-lead-generation-linkedin-ai-agents",
+      "h1_count": 1,
+      "h1_text": "LinkedIn Ads &amp; AI Agents: B2B Lead Gen &amp; ABM Strategy",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/coklu-sube-google-isletme-profili-haritalar-yonetimi-2026",
+      "status": 200,
+      "duration_ms": 452,
+      "title": "Zincir İşletmeler İçin Çoklu Google Haritalar Yönetimi",
+      "title_len": 54,
+      "meta_desc": "Birden fazla mağazası, restoranı veya şubesi olan markalar için toplu harita doğrulama, yerel SEO ve bölgesel reklam stratejileri.",
+      "desc_len": 130,
+      "canonical": "https://www.salihmaral.com/blog/coklu-sube-google-isletme-profili-haritalar-yonetimi-2026",
+      "h1_count": 1,
+      "h1_text": "Zincir İşletmeler İçin Çoklu Google Haritalar Yönetimi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/coklu-sube-google-isletme-profili-haritalar-yonetimi-2026",
+      "status": 200,
+      "duration_ms": 307,
+      "title": "Multi-Location Google Business Profile (GBP) Guide",
+      "title_len": 50,
+      "meta_desc": "Scale multi-location local SEO, bulk verification, and hyper-local Google Ads extensions across multiple retail branches.",
+      "desc_len": 121,
+      "canonical": "https://www.salihmaral.com/en/blog/coklu-sube-google-isletme-profili-haritalar-yonetimi-2026",
+      "h1_count": 1,
+      "h1_text": "Multi-Location Google Business Profile (GBP) Guide",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/conversion-rate-optimization-ai-personalization",
+      "status": 200,
+      "duration_ms": 316,
+      "title": "Yapay Zeka ile Dönüşüm Oranı Optimizasyonu (CRO)",
+      "title_len": 48,
+      "meta_desc": "Web sitenize gelen trafiği satışa dönüştürmek için yapay zeka destekli kişiselleştirme, dinamik içerik sunumu ve CRO A/B test stratejilerini uygulayın.",
+      "desc_len": 151,
+      "canonical": "https://www.salihmaral.com/blog/conversion-rate-optimization-ai-personalization",
+      "h1_count": 1,
+      "h1_text": "Yapay Zeka ile Dönüşüm Oranı Optimizasyonu (CRO)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/conversion-rate-optimization-ai-personalization",
+      "status": 200,
+      "duration_ms": 332,
+      "title": "CRO &amp; AI Personalization: Turn Traffic into Revenue",
+      "title_len": 55,
+      "meta_desc": "Transform website visitors into paying customers using AI personalization, dynamic content matching, and CRO A/B testing frameworks.",
+      "desc_len": 132,
+      "canonical": "https://www.salihmaral.com/en/blog/conversion-rate-optimization-ai-personalization",
+      "h1_count": 1,
+      "h1_text": "CRO &amp; AI Personalization: Turn Traffic into Revenue",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/deepseek-r1-vs-openai-o3-seo-copywriting",
+      "status": 200,
+      "duration_ms": 332,
+      "title": "DeepSeek-R1 vs OpenAI o3: Akıl Yürütme ve SEO 2026",
+      "title_len": 50,
+      "meta_desc": "DeepSeek-R1 ve OpenAI o3-mini akıl yürütme (reasoning) modellerinin arama motoru optimizasyonu, teknik SEO analizi ve dönüşüm odaklı metin yazarlığındaki...",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/deepseek-r1-vs-openai-o3-seo-copywriting",
+      "h1_count": 1,
+      "h1_text": "DeepSeek-R1 vs OpenAI o3: Akıl Yürütme ve SEO 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/deepseek-r1-vs-openai-o3-seo-copywriting",
+      "status": 200,
+      "duration_ms": 323,
+      "title": "DeepSeek-R1 vs OpenAI o3: Reasoning Models in SEO",
+      "title_len": 49,
+      "meta_desc": "A performance breakdown of reasoning AI models DeepSeek-R1 and OpenAI o3-mini for search engine optimization, technical SEO audits, and conversion...",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/en/blog/deepseek-r1-vs-openai-o3-seo-copywriting",
+      "h1_count": 1,
+      "h1_text": "DeepSeek-R1 vs OpenAI o3: Reasoning Models in SEO",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/dogru-google-ads-meta-ads-ajansi-nasil-secilir-2026",
+      "status": 200,
+      "duration_ms": 329,
+      "title": "Doğru Google ve Meta Ads Ajansı Nasıl Seçilir? (2026)",
+      "title_len": 53,
+      "meta_desc": "Dijital reklam ajansı seçerken paranızı batırmaktan kurtaracak 9 kritik soru, sözleşme tuzakları ve şeffaf hesap yönetimi rehberi.",
+      "desc_len": 130,
+      "canonical": "https://www.salihmaral.com/blog/dogru-google-ads-meta-ads-ajansi-nasil-secilir-2026",
+      "h1_count": 1,
+      "h1_text": "Doğru Google ve Meta Ads Ajansı Nasıl Seçilir? (2026)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/dogru-google-ads-meta-ads-ajansi-nasil-secilir-2026",
+      "status": 200,
+      "duration_ms": 344,
+      "title": "How to Choose the Right Google &amp; Meta Ads Agency (2026)",
+      "title_len": 59,
+      "meta_desc": "A vetting guide for businesses: 9 critical questions, commission traps, red flags, and how to select a performance marketing partner that drives ROI.",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/en/blog/dogru-google-ads-meta-ads-ajansi-nasil-secilir-2026",
+      "h1_count": 1,
+      "h1_text": "How to Choose the Right Google &amp; Meta Ads Agency (2026)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026",
+      "status": 200,
+      "duration_ms": 332,
+      "title": "Tıklama Var Satış Yok: E-Ticaret Dönüşüm Çözümleri",
+      "title_len": 50,
+      "meta_desc": "Google ve Meta reklamlarından trafik gelip satış olmama nedenleri. 8 kritik hata ve ROAS&#x27;ı 4 katına çıkaran optimizasyon adımları.",
+      "desc_len": 135,
+      "canonical": "https://www.salihmaral.com/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026",
+      "h1_count": 1,
+      "h1_text": "Tıklama Var Satış Yok: E-Ticaret Dönüşüm Çözümleri",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026",
+      "status": 200,
+      "duration_ms": 325,
+      "title": "High Clicks But No Sales? Fix E-Commerce Leaks 2026",
+      "title_len": 51,
+      "meta_desc": "Diagnose and fix landing page friction, negative keyword waste, and checkout drop-offs to scale your ad ROAS past 4.0x. In-depth guide and strategic...",
+      "desc_len": 151,
+      "canonical": "https://www.salihmaral.com/en/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026",
+      "h1_count": 1,
+      "h1_text": "High Clicks But No Sales? Fix E-Commerce Leaks 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/e-ticaret-sepeti-terk-edenleri-geri-kazanma-dinamik-yeniden-pazarlama-2026",
+      "status": 200,
+      "duration_ms": 356,
+      "title": "E-Ticarette Sepeti Terk Edenleri Geri Kazanma | Salih Maral",
+      "title_len": 59,
+      "meta_desc": "Terk edilen sepetleri satışa dönüştürerek e-ticaret gelirinizi artırın. Salih Maral, dinamik yeniden pazarlama ve CAPI destekli reklam hunisini açıklıyor.",
+      "desc_len": 154,
+      "canonical": "https://www.salihmaral.com/blog/e-ticaret-sepeti-terk-edenleri-geri-kazanma-dinamik-yeniden-pazarlama-2026",
+      "h1_count": 1,
+      "h1_text": "E-Ticarette Sepeti Terk Edenleri Geri Kazanma",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/e-ticaret-sepeti-terk-edenleri-geri-kazanma-dinamik-yeniden-pazarlama-2026",
+      "status": 200,
+      "duration_ms": 345,
+      "title": "Recovering Abandoned Carts in E-Commerce 2026 | Salih Maral",
+      "title_len": 59,
+      "meta_desc": "Transform abandoned checkout drop-offs into high-margin sales. Salih Maral outlines dynamic remarketing and CAPI-powered multi-stage recovery funnels.",
+      "desc_len": 150,
+      "canonical": "https://www.salihmaral.com/en/blog/e-ticaret-sepeti-terk-edenleri-geri-kazanma-dinamik-yeniden-pazarlama-2026",
+      "h1_count": 1,
+      "h1_text": "Recovering Abandoned Carts in E-Commerce 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/first-party-data-marketing",
+      "status": 200,
+      "duration_ms": 311,
+      "title": "Çerezsiz Reklamcılık &amp; 1st-Party Veri Rehberi 2026",
+      "title_len": 54,
+      "meta_desc": "Üçüncü taraf çerezlerin (3rd-party cookies) sona ermesiyle reklam ROI&#x27;nızın nasıl etkileneceğini ve bunu nasıl önleyeceğinizi keşfedin.",
+      "desc_len": 140,
+      "canonical": "https://www.salihmaral.com/blog/first-party-data-marketing",
+      "h1_count": 1,
+      "h1_text": "Çerezsiz Reklamcılık &amp; 1st-Party Veri Rehberi 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/first-party-data-marketing",
+      "status": 200,
+      "duration_ms": 327,
+      "title": "Cookie-less Advertising: Prepare for the Future with...",
+      "title_len": 55,
+      "meta_desc": "Don&#x27;t let the deprecation of 3rd-party cookies hurt your campaigns. Discover how to prevent data loss with Consent Mode V2 and Server-Side Tracking.",
+      "desc_len": 153,
+      "canonical": "https://www.salihmaral.com/en/blog/first-party-data-marketing",
+      "h1_count": 1,
+      "h1_text": "Cookie-less Advertising: Prepare for the Future with 1st-Party Data",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/ga4-custom-events-funnels",
+      "status": 200,
+      "duration_ms": 320,
+      "title": "GA4&#x27;te Özel Dönüşüm Hunileri (Funnels) Nasıl Kurulur?...",
+      "title_len": 61,
+      "meta_desc": "Google Analytics 4&#x27;te standart dışı kullanıcı hareketlerini izleyin. Salih Maral, gelişmiş huni analiziyle veriyi kazanca dönüştürme yollarını paylaşıyor.",
+      "desc_len": 159,
+      "canonical": "https://www.salihmaral.com/blog/ga4-custom-events-funnels",
+      "h1_count": 1,
+      "h1_text": "GA4&#x27;te Özel Dönüşüm Hunileri (Funnels) Nasıl Kurulur? (Rehber)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/ga4-custom-events-funnels",
+      "status": 200,
+      "duration_ms": 349,
+      "title": "How to Build Custom Conversion Funnels in Google...",
+      "title_len": 51,
+      "meta_desc": "Track non-standard user behavior in Google Analytics 4. Salih Maral shares advanced funnel analytics to drive revenue. In-depth guide and strategic...",
+      "desc_len": 150,
+      "canonical": "https://www.salihmaral.com/en/blog/ga4-custom-events-funnels",
+      "h1_count": 1,
+      "h1_text": "How to Build Custom Conversion Funnels in Google Analytics 4 (GA4)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison",
+      "status": 200,
+      "duration_ms": 339,
+      "title": "Gemini vs Claude vs ChatGPT: En İyi Pazarlama AI",
+      "title_len": 48,
+      "meta_desc": "Google Gemini 3.6, Anthropic Claude 3.7 Sonnet ve OpenAI ChatGPT 4.5 modellerinin performans, SEO, Google Ads otomasyonu ve içerik üretimi kriterlerine...",
+      "desc_len": 154,
+      "canonical": "https://www.salihmaral.com/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison",
+      "h1_count": 1,
+      "h1_text": "Gemini vs Claude vs ChatGPT: En İyi Pazarlama AI",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison",
+      "status": 200,
+      "duration_ms": 330,
+      "title": "Gemini vs Claude vs ChatGPT: Best AI for Marketing",
+      "title_len": 50,
+      "meta_desc": "A comprehensive performance comparison of Google Gemini 3.6, Anthropic Claude 3.7 Sonnet, and OpenAI ChatGPT 4.5 for SEO, Google Ads automation, and...",
+      "desc_len": 151,
+      "canonical": "https://www.salihmaral.com/en/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison",
+      "h1_count": 1,
+      "h1_text": "Gemini vs Claude vs ChatGPT: Best AI for Marketing",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison",
+      "status": 200,
+      "duration_ms": 409,
+      "title": "Gemini 3.7 vs. 3.6: Pazarlama ve SEO Kıyaslaması",
+      "title_len": 48,
+      "meta_desc": "Google&#x27;ın yeni Gemini 3.7 modelinin hibrit muhakeme yetenekleri ile Gemini 3.6 kıyaslaması. Google Ads, GEO optimizasyonu ve pazarlama otomasyonunda...",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison",
+      "h1_count": 1,
+      "h1_text": "Gemini 3.7 vs. 3.6: Pazarlama ve SEO Kıyaslaması",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison",
+      "status": 200,
+      "duration_ms": 304,
+      "title": "Gemini 3.7 vs. 3.6: Hybrid Reasoning for SEO &amp; Marketing",
+      "title_len": 60,
+      "meta_desc": "In-depth analysis of Google&#x27;s new Gemini 3.7 featuring Hybrid Reasoning vs. Gemini 3.6. Discover how digital marketers and e-commerce brands scale Google...",
+      "desc_len": 161,
+      "canonical": "https://www.salihmaral.com/en/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison",
+      "h1_count": 1,
+      "h1_text": "Gemini 3.7 vs. 3.6: Hybrid Reasoning for SEO &amp; Marketing",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/geo-ai-search-citation-factors-2026",
+      "status": 200,
+      "duration_ms": 314,
+      "title": "ChatGPT &amp; Perplexity&#x27;de Birincil Kaynak Olma (GEO)",
+      "title_len": 59,
+      "meta_desc": "Yapay zeka arama motorlarında markanızı birincil kaynak yapma stratejileri. Princeton KDD 2024 araştırma bulguları ve Salih Maral&#x27;ın kanıtlanmış GEO...",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/geo-ai-search-citation-factors-2026",
+      "h1_count": 1,
+      "h1_text": "ChatGPT &amp; Perplexity&#x27;de Birincil Kaynak Olma (GEO)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/geo-ai-search-citation-factors-2026",
+      "status": 200,
+      "duration_ms": 330,
+      "title": "Become the Primary Source in ChatGPT &amp; Perplexity (GEO)",
+      "title_len": 59,
+      "meta_desc": "Master the art of Generative Engine Optimization. Proven Princeton KDD 2024 ranking factors and actionable strategies by Salih Maral to dominate AI search...",
+      "desc_len": 157,
+      "canonical": "https://www.salihmaral.com/en/blog/geo-ai-search-citation-factors-2026",
+      "h1_count": 1,
+      "h1_text": "Become the Primary Source in ChatGPT &amp; Perplexity (GEO)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/geo-ai-seo-generative-engine-optimization-guide-2026",
+      "status": 200,
+      "duration_ms": 312,
+      "title": "GEO AI SEO: ChatGPT &amp; AI Arama Optimizasyonu 2026",
+      "title_len": 53,
+      "meta_desc": "GEO AI SEO nedir? Web sitenizi yapay zeka arama motorlarına nasıl uyarlarsınız? llms.txt, Schema.org ve E-E-A-T rehberi.",
+      "desc_len": 120,
+      "canonical": "https://www.salihmaral.com/blog/geo-ai-seo-generative-engine-optimization-guide-2026",
+      "h1_count": 1,
+      "h1_text": "GEO AI SEO: ChatGPT &amp; AI Arama Optimizasyonu 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/geo-ai-seo-generative-engine-optimization-guide-2026",
+      "status": 200,
+      "duration_ms": 366,
+      "title": "GEO AI SEO: Optimize for ChatGPT &amp; AI Overviews",
+      "title_len": 51,
+      "meta_desc": "What is GEO AI SEO? How to optimize websites for generative AI search engines in 2026. Citation factors, llms.txt, Schema.org, and E-E-A-T guide.",
+      "desc_len": 145,
+      "canonical": "https://www.salihmaral.com/en/blog/geo-ai-seo-generative-engine-optimization-guide-2026",
+      "h1_count": 1,
+      "h1_text": "GEO AI SEO: Optimize for ChatGPT &amp; AI Overviews",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/github-seo-skills-claude-code-guide-2026",
+      "status": 200,
+      "duration_ms": 323,
+      "title": "GitHub SEO Skills ve Claude Code ile 2026 SEO &amp; GEO Rehberi",
+      "title_len": 63,
+      "meta_desc": "Claude Code, Cursor ve AI kodlama asistanları için GitHub SEO Skills kullanımı. Açık kaynak SEO eklentileriyle 100/100 teknik SEO, Schema ve GEO otomasyonu.",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/github-seo-skills-claude-code-guide-2026",
+      "h1_count": 1,
+      "h1_text": "GitHub SEO Skills ve Claude Code ile 2026 SEO &amp; GEO Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/github-seo-skills-claude-code-guide-2026",
+      "status": 200,
+      "duration_ms": 325,
+      "title": "GitHub SEO Skills &amp; Claude Code Guide 2026: Agentic SEO...",
+      "title_len": 62,
+      "meta_desc": "How to use GitHub SEO Skills in Claude Code and AI code editors: Open-source plugins for 100/100 technical SEO audits, automated Schema markup, and GEO.",
+      "desc_len": 152,
+      "canonical": "https://www.salihmaral.com/en/blog/github-seo-skills-claude-code-guide-2026",
+      "h1_count": 1,
+      "h1_text": "GitHub SEO Skills &amp; Claude Code Guide 2026: Agentic SEO &amp; GEO",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ad-grants-islamic-charity-rehberi-2026",
+      "status": 200,
+      "duration_ms": 320,
+      "title": "İslami Kuruluşlar İçin Google Ad Grants (10.000$/Ay)",
+      "title_len": 52,
+      "meta_desc": "Vakfınız veya derneğiniz için Google&#x27;dan ayda 10.000 Dolar ücretsiz reklam hibesi nasıl alınır? Ad Grants başvuru, onay ve sürdürülebilir yönetim rehberi.",
+      "desc_len": 159,
+      "canonical": "https://www.salihmaral.com/blog/google-ad-grants-islamic-charity-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "İslami Kuruluşlar İçin Google Ad Grants (10.000$/Ay)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ad-grants-islamic-charity-rehberi-2026",
+      "status": 200,
+      "duration_ms": 335,
+      "title": "Google Ad Grants for Charities: $10,000/Mo Free Ads",
+      "title_len": 51,
+      "meta_desc": "How Islamic non-profits and charities secure and maximize $10,000 monthly in free Google Search advertising. The complete 2026 compliance &amp; donation...",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ad-grants-islamic-charity-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ad Grants for Charities: $10,000/Mo Free Ads",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-agentur-kosten-preise-2026",
+      "status": 200,
+      "duration_ms": 328,
+      "title": "Google Ads Ajans Ücretleri ve Fiyatları 2026 | Salih Maral",
+      "title_len": 58,
+      "meta_desc": "Google Ads ajansı aylık ne kadar tutar? Sabit fiyat (Fixpreis) vs. bütçe yüzdesi (% Ad Spend) modelleri, minimum bütçe rehberi ve 2026 fiyat tablosu.",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-agentur-kosten-preise-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Ajans Ücretleri ve Fiyatları 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-agentur-kosten-preise-2026",
+      "status": 200,
+      "duration_ms": 338,
+      "title": "Google Ads Agency Pricing &amp; Costs 2026 Guide | Salih Maral",
+      "title_len": 62,
+      "meta_desc": "How much does a Google Ads agency cost per month? Fixed retainer vs. % of ad spend, minimum budget thresholds, and transparent 2026 pricing models.",
+      "desc_len": 147,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-agentur-kosten-preise-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Agency Pricing &amp; Costs 2026 Guide",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-fehler-vermeiden",
+      "status": 200,
+      "duration_ms": 337,
+      "title": "Google Ads&#x27;te Paranızı Çöpe Atan 7 Büyük Hata ve Çözümleri",
+      "title_len": 63,
+      "meta_desc": "Google Ads&#x27;de pahalı hatalardan kaçının. Salih Maral, reklam bütçenizi boşa harcayan en yaygın 10 hatayı ve bunları nasıl anında düzeltebileceğinizi...",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-fehler-vermeiden",
+      "h1_count": 1,
+      "h1_text": "Google Ads&#x27;te Paranızı Çöpe Atan 7 Büyük Hata ve Çözümleri",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-fehler-vermeiden",
+      "status": 200,
+      "duration_ms": 394,
+      "title": "7 Costly Google Ads Mistakes Burning Your Budget",
+      "title_len": 48,
+      "meta_desc": "Avoid expensive mistakes in Google Ads. Salih Maral reveals the 10 most common errors that drain your advertising budget and how to fix them immediately.",
+      "desc_len": 153,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-fehler-vermeiden",
+      "h1_count": 1,
+      "h1_text": "7 Costly Google Ads Mistakes Burning Your Budget",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026",
+      "status": 200,
+      "duration_ms": 331,
+      "title": "Google Ads Sabit Fiyat mı, Komisyon mu? 2026 | Salih Maral",
+      "title_len": 58,
+      "meta_desc": "Google Ads ajansınız reklam bütçenizden %15 komisyon mu alıyor? Neden sabit fiyatlı (Fixpreis) şeffaf yönetim modelinin şirketiniz için çok daha karlı...",
+      "desc_len": 153,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Sabit Fiyat mı, Komisyon mu? 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026",
+      "status": 200,
+      "duration_ms": 323,
+      "title": "Google Ads Flat Fee vs Percentage: Best Model 2026",
+      "title_len": 50,
+      "meta_desc": "Is your agency charging a 15% commission on your ad spend? Discover why a transparent flat-fee management model yields significantly higher ROI in 2026.",
+      "desc_len": 152,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Flat Fee vs Percentage: Best Model 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-kalite-puani-10-10-yapma-tbm-dusurme-formulu-2026",
+      "status": 200,
+      "duration_ms": 325,
+      "title": "Google Ads Kalite Puanı 10/10 Yapma &amp; TBM Düşürme",
+      "title_len": 53,
+      "meta_desc": "Tıklama başı maliyetleri yarı yarıya düşürürken reklam sıralamanızı yükseltin. Resmi Partner Salih Maral, 10/10 Kalite Puanı formülünü adım adım açıklıyor.",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-kalite-puani-10-10-yapma-tbm-dusurme-formulu-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Kalite Puanı 10/10 Yapma &amp; TBM Düşürme",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-kalite-puani-10-10-yapma-tbm-dusurme-formulu-2026",
+      "status": 200,
+      "duration_ms": 401,
+      "title": "Google Ads Quality Score 10/10 &amp; Lower CPC Guide",
+      "title_len": 52,
+      "meta_desc": "Cut your Cost Per Click in half while winning top ad rank. Official Partner Salih Maral reveals the three-component formula to achieve a 10/10 Quality Score.",
+      "desc_len": 157,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-kalite-puani-10-10-yapma-tbm-dusurme-formulu-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Quality Score 10/10 &amp; Lower CPC Guide",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-kosten-2026",
+      "status": 200,
+      "duration_ms": 350,
+      "title": "Google Ads Reklam Ücretleri 2026: Tıklama Başı Maliyet...",
+      "title_len": 57,
+      "meta_desc": "Google Ads&#x27;in 2026&#x27;da ne kadar tuttuğunu öğrenin. Salih Maral, sektör bazında CPC oranlarını, bütçe önerilerini ve reklam maliyetlerinizi nasıl optimize...",
+      "desc_len": 165,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-kosten-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Reklam Ücretleri 2026: Tıklama Başı Maliyet Ne Kadar?",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-kosten-2026",
+      "status": 200,
+      "duration_ms": 315,
+      "title": "Google Ads Costs in 2026: Actual Click Prices Guide",
+      "title_len": 51,
+      "meta_desc": "Find out what Google Ads really costs in 2026. Salih Maral explains CPC by industry, budget recommendations, and how to optimize your advertising costs.",
+      "desc_len": 152,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-kosten-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Costs in 2026: Actual Click Prices Guide",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-meta-ads-synergy-scaling-guide-2026",
+      "status": 200,
+      "duration_ms": 320,
+      "title": "Google Ads &amp; Meta Ads Sinerjisi: 4X ROAS Rehberi",
+      "title_len": 52,
+      "meta_desc": "Meta Ads (Facebook &amp; Instagram) ve Google Ads&#x27;i birlikte kullanarak e-ticarette satışları ölçekleme. Advantage+ Shopping, Meta CAPI ve PMax entegrasyonu.",
+      "desc_len": 162,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-meta-ads-synergy-scaling-guide-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads &amp; Meta Ads Sinerjisi: 4X ROAS Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-meta-ads-synergy-scaling-guide-2026",
+      "status": 200,
+      "duration_ms": 291,
+      "title": "Google &amp; Meta Ads Synergy: 4x ROAS E-Commerce Guide",
+      "title_len": 55,
+      "meta_desc": "How to unite Meta Ads (Facebook &amp; Instagram) and Google Ads: Advantage+ Shopping, Meta CAPI, and Performance Max for predictable revenue scaling.",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-meta-ads-synergy-scaling-guide-2026",
+      "h1_count": 1,
+      "h1_text": "Google &amp; Meta Ads Synergy: 4x ROAS E-Commerce Guide",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-nedir",
+      "status": 200,
+      "duration_ms": 392,
+      "title": "Google Ads Nedir ve Nasıl Çalışır? 2026 Başlangıç Rehberi",
+      "title_len": 57,
+      "meta_desc": "Google Ads, dünyanın en güçlü reklam platformudur. Salih Maral, 7 kampanya türünü, 2026 benchmark verilerini, maliyetleri ve adım adım kampanya oluşturma...",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-nedir",
+      "h1_count": 1,
+      "h1_text": "Google Ads Nedir ve Nasıl Çalışır? 2026 Başlangıç Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-nedir",
+      "status": 200,
+      "duration_ms": 384,
+      "title": "What is Google Ads &amp; How Does it Work? Complete 2026...",
+      "title_len": 59,
+      "meta_desc": "Google Ads is the world&#x27;s most powerful advertising platform. Learn everything about the 7 campaign types, 2026 benchmarks, costs, and step-by-step setup.",
+      "desc_len": 159,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-nedir",
+      "h1_count": 1,
+      "h1_text": "What is Google Ads &amp; How Does it Work? Complete 2026 Beginner&#x27;s Guide",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-pmax-negative-keywords-kampagnen-2026",
+      "status": 200,
+      "duration_ms": 317,
+      "title": "Google Ads PMax Negatif Kelime &amp; Bütçe Rehberi 2026",
+      "title_len": 55,
+      "meta_desc": "Google Ads PMax kampanyalarında kampanya düzeyinde negatif anahtar kelime ekleme, B2B bütçe israfını önleme ve karlı büyüme rehberi. Uzman analizi.",
+      "desc_len": 147,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-pmax-negative-keywords-kampagnen-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads PMax Negatif Kelime &amp; Bütçe Rehberi 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-pmax-negative-keywords-kampagnen-2026",
+      "status": 200,
+      "duration_ms": 313,
+      "title": "Google Ads PMax Campaign Negative Keywords Guide 2026",
+      "title_len": 53,
+      "meta_desc": "How to optimize Google Ads Performance Max with campaign-level negative keywords, eliminate B2B budget waste and scale profitably. 2026 agency guide.",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-pmax-negative-keywords-kampagnen-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads PMax Campaign Negative Keywords Guide 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-pmax-optimization",
+      "status": 200,
+      "duration_ms": 390,
+      "title": "Google Ads Performance Max (PMax) Optimizasyonu 2026",
+      "title_len": 52,
+      "meta_desc": "Google Ads Performance Max (PMax) kampanyalarında bütçe israfını durdurun, negatif kelimeleri yönetin ve dönüşüm oranlarınızı %40 artırın.",
+      "desc_len": 138,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-pmax-optimization",
+      "h1_count": 1,
+      "h1_text": "Google Ads Performance Max (PMax) Optimizasyonu 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-pmax-optimization",
+      "status": 200,
+      "duration_ms": 330,
+      "title": "Google Ads Performance Max (PMax) Optimization 2026",
+      "title_len": 51,
+      "meta_desc": "Learn how to stop wasting budget in your PMax campaigns. Structure asset groups and audience signals with the most effective Google Ads tactics of 2026.",
+      "desc_len": 152,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-pmax-optimization",
+      "h1_count": 1,
+      "h1_text": "Google Ads Performance Max (PMax) Optimization 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-pmax-smart-bidding-guide-2026",
+      "status": 200,
+      "duration_ms": 332,
+      "title": "Google Ads Akıllı Teklif ve PMax ile Satışları Katlama...",
+      "title_len": 57,
+      "meta_desc": "Google Ads Performance Max (PMax) kampanyalarınızda gerçek ROAS değerini artırın. Marka yamyamlığını önleme, ürün segmentasyonu ve akıllı teklif rehberi.",
+      "desc_len": 153,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-pmax-smart-bidding-guide-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Akıllı Teklif ve PMax ile Satışları Katlama Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-pmax-smart-bidding-guide-2026",
+      "status": 200,
+      "duration_ms": 303,
+      "title": "Google Ads Smart Bidding &amp; PMax: How to Maximize...",
+      "title_len": 55,
+      "meta_desc": "Maximize true ROAS in Google Ads Performance Max. Learn how to exclude brand cannibalization, segment margin tiers, and master value-based Smart Bidding.",
+      "desc_len": 153,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-pmax-smart-bidding-guide-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Smart Bidding &amp; PMax: How to Maximize Conversions in 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026",
+      "status": 200,
+      "duration_ms": 383,
+      "title": "Google Ads Reklamveren Doğrulaması 2026 Rehberi",
+      "title_len": 47,
+      "meta_desc": "Google Ads hesabınızın askıya alınmasını önleyin. Şirket evrakları, kimlik doğrulama adımları ve Şeffaflık Rozeti kazanımı rehberi.",
+      "desc_len": 131,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Reklamveren Doğrulaması 2026 Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026",
+      "status": 200,
+      "duration_ms": 386,
+      "title": "Google Ads Advertiser Verification Guide &amp; Fix 2026",
+      "title_len": 55,
+      "meta_desc": "Resolve rejected business operations and identity verification requests in Google Ads. Official Partner Salih Maral provides the step-by-step approval...",
+      "desc_len": 153,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Advertiser Verification Guide &amp; Fix 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-roi-tracking",
+      "status": 200,
+      "duration_ms": 329,
+      "title": "Google Ads&#x27;te Harcadığınız Paranın Geri Dönüşü (ROI)...",
+      "title_len": 60,
+      "meta_desc": "Reklam bütçenizi boşa harcamayın. Doğru dönüşüm takibi kurarak ROI&#x27;nızı nasıl artıracağınızı öğrenin. Detaylı rehber ve stratejik analiz Salih Maral ile.",
+      "desc_len": 158,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-roi-tracking",
+      "h1_count": 1,
+      "h1_text": "Google Ads&#x27;te Harcadığınız Paranın Geri Dönüşü (ROI) Nasıl Hesaplanır?",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-roi-tracking",
+      "status": 200,
+      "duration_ms": 340,
+      "title": "How to Track &amp; Measure Real Google Ads ROI for Your Business",
+      "title_len": 64,
+      "meta_desc": "Don&#x27;t waste your ad budget. Learn how to multiply your ROI and ROAS by setting up correct conversion tracking in Google Ads.",
+      "desc_len": 129,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-roi-tracking",
+      "h1_count": 1,
+      "h1_text": "How to Track &amp; Measure Real Google Ads ROI for Your Business",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-sahte-tiklama-click-fraud-engelleme-rehberi-2026",
+      "status": 200,
+      "duration_ms": 300,
+      "title": "Google Ads Sahte Tıklama Engelleme Rehberi 2026",
+      "title_len": 47,
+      "meta_desc": "Rakiplerin ve botların reklam bütçenizi tüketmesini önleyin. Resmi Google Partner Salih Maral, IP engelleme ve sahte tıklama koruma formüllerini açıklıyor.",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-sahte-tiklama-click-fraud-engelleme-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Sahte Tıklama Engelleme Rehberi 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-sahte-tiklama-click-fraud-engelleme-rehberi-2026",
+      "status": 200,
+      "duration_ms": 306,
+      "title": "Google Ads Click Fraud Prevention Playbook 2026",
+      "title_len": 47,
+      "meta_desc": "Stop competitors and automated bots from draining your Google Ads budget. Official Partner Salih Maral explains IP exclusion and invalid click protection.",
+      "desc_len": 154,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-sahte-tiklama-click-fraud-engelleme-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Click Fraud Prevention Playbook 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-supheli-odeme-hesap-askiya-alinmasi-cozum-rehberi-2026",
+      "status": 200,
+      "duration_ms": 313,
+      "title": "Google Ads Şüpheli Ödeme ve Hesap Askısı Çözümü 2026",
+      "title_len": 52,
+      "meta_desc": "Şüpheli ödeme etkinliği nedeniyle askıya alınan Google Ads hesabınızı kurtarın. Resmi Partner Salih Maral, onaylanan itiraz adımlarını ve çözümleri sunuyor.",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-supheli-odeme-hesap-askiya-alinmasi-cozum-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads Şüpheli Ödeme ve Hesap Askısı Çözümü 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-supheli-odeme-hesap-askiya-alinmasi-cozum-rehberi-2026",
+      "status": 200,
+      "duration_ms": 326,
+      "title": "Fix Google Ads Suspicious Payment &amp; Suspension 2026",
+      "title_len": 55,
+      "meta_desc": "Reinstate your suspended Google Ads account from suspicious payment flags. Official Partner Salih Maral shares the proven appeal framework to get approved.",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-supheli-odeme-hesap-askiya-alinmasi-cozum-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Fix Google Ads Suspicious Payment &amp; Suspension 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ads-tiklama-cok-satis-yok-cozum-2026",
+      "status": 200,
+      "duration_ms": 324,
+      "title": "Google Ads&#x27;te Tıklama Çok Ama Satış Yok mu? Paranızı...",
+      "title_len": 60,
+      "meta_desc": "Google Ads reklamlarına her gün para ödüyor ama telefonlarınız çalmıyor, sipariş gelmiyor mu? Bütçenizi kurtaracak profesyonel Google Partner çözümleri.",
+      "desc_len": 152,
+      "canonical": "https://www.salihmaral.com/blog/google-ads-tiklama-cok-satis-yok-cozum-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads&#x27;te Tıklama Çok Ama Satış Yok mu? Paranızı Kurtarma Kılavuzu",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ads-tiklama-cok-satis-yok-cozum-2026",
+      "status": 200,
+      "duration_ms": 325,
+      "title": "Clicks but No Sales on Google Ads? Stop Budget Waste",
+      "title_len": 52,
+      "meta_desc": "Spending daily on Google Ads but your phone won&#x27;t ring? Discover the 4 hidden budget leaks and how a certified Google Partner restores your ROI.",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ads-tiklama-cok-satis-yok-cozum-2026",
+      "h1_count": 1,
+      "h1_text": "Clicks but No Sales on Google Ads? Stop Budget Waste",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-ai-overviews-geo-ranking-strategy",
+      "status": 200,
+      "duration_ms": 341,
+      "title": "Google AI Overviews: GEO Sıralama Stratejisi 2026",
+      "title_len": 49,
+      "meta_desc": "Google AI Overviews, Perplexity ve ChatGPT arama motorlarında markanızı öne çıkarmak için Princeton GEO (Generative Engine Optimization) tekniklerini...",
+      "desc_len": 152,
+      "canonical": "https://www.salihmaral.com/blog/google-ai-overviews-geo-ranking-strategy",
+      "h1_count": 1,
+      "h1_text": "Google AI Overviews: GEO Sıralama Stratejisi 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-ai-overviews-geo-ranking-strategy",
+      "status": 200,
+      "duration_ms": 309,
+      "title": "How to Rank in Google AI Overviews: The 2026 GEO Ranking...",
+      "title_len": 59,
+      "meta_desc": "Implement Princeton Generative Engine Optimization (GEO) techniques to rank top in Google AI Overviews, Perplexity, and ChatGPT search engines.",
+      "desc_len": 143,
+      "canonical": "https://www.salihmaral.com/en/blog/google-ai-overviews-geo-ranking-strategy",
+      "h1_count": 1,
+      "h1_text": "How to Rank in Google AI Overviews: The 2026 GEO Ranking Playbook",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-consent-mode-v2-cookieless-ai-tracking-2026",
+      "status": 200,
+      "duration_ms": 335,
+      "title": "Google Consent Mode v2 Nedir ve Nasıl Kurulur? (2026...",
+      "title_len": 55,
+      "meta_desc": "Google Consent Mode v2 zorunlu mu? Çerez reddeden kullanıcılardan yapay zeka ile kayıp %40 satış verisini kurtarma rehberi.",
+      "desc_len": 123,
+      "canonical": "https://www.salihmaral.com/blog/google-consent-mode-v2-cookieless-ai-tracking-2026",
+      "h1_count": 1,
+      "h1_text": "Google Consent Mode v2 Nedir ve Nasıl Kurulur? (2026 Zorunlu Rehber)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-consent-mode-v2-cookieless-ai-tracking-2026",
+      "status": 200,
+      "duration_ms": 317,
+      "title": "Google Consent Mode v2 &amp; Cookieless Tracking 2026",
+      "title_len": 53,
+      "meta_desc": "Eliminate conversion loss while maintaining GDPR compliance. Salih Maral breaks down Consent Mode v2 setup, Advanced tagging, and behavioral modeling in 2026.",
+      "desc_len": 158,
+      "canonical": "https://www.salihmaral.com/en/blog/google-consent-mode-v2-cookieless-ai-tracking-2026",
+      "h1_count": 1,
+      "h1_text": "Google Consent Mode v2 &amp; Cookieless Tracking 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-gemini-3-6-seo-ads-automation",
+      "status": 200,
+      "duration_ms": 305,
+      "title": "Google Gemini 3.6 ile Google Ads Kampanya Yönetimi ve...",
+      "title_len": 56,
+      "meta_desc": "Google Gemini 3.6 yapay zeka modelini kullanarak Google Ads kampanya optimizasyonu, otomatik teklif stratejileri ve SEO teknik denetimlerini 10 kat...",
+      "desc_len": 150,
+      "canonical": "https://www.salihmaral.com/blog/google-gemini-3-6-seo-ads-automation",
+      "h1_count": 1,
+      "h1_text": "Google Gemini 3.6 ile Google Ads Kampanya Yönetimi ve SEO Otomasyonu Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-gemini-3-6-seo-ads-automation",
+      "status": 200,
+      "duration_ms": 342,
+      "title": "Google Gemini 3.6 for Google Ads Campaign Management &amp;...",
+      "title_len": 61,
+      "meta_desc": "Leverage the Google Gemini 3.6 AI model to accelerate Google Ads optimization, automated smart bidding, and technical SEO audits tenfold.",
+      "desc_len": 137,
+      "canonical": "https://www.salihmaral.com/en/blog/google-gemini-3-6-seo-ads-automation",
+      "h1_count": 1,
+      "h1_text": "Google Gemini 3.6 for Google Ads Campaign Management &amp; SEO Automation Guide",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-gemini-spark",
+      "status": 200,
+      "duration_ms": 302,
+      "title": "Google Gemini Spark: Arka Planda 7/24 Çalışan Kişisel...",
+      "title_len": 56,
+      "meta_desc": "Arka planda 7/24 çalışan kişisel yapay zeka ajanınız. Görevleri otomatik olarak yürüten bu sistemin özelliklerini keşfedin.",
+      "desc_len": 123,
+      "canonical": "https://www.salihmaral.com/blog/google-gemini-spark",
+      "h1_count": 1,
+      "h1_text": "Google Gemini Spark: Arka Planda 7/24 Çalışan Kişisel Yapay Zeka Ajanınız",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-gemini-spark",
+      "status": 200,
+      "duration_ms": 313,
+      "title": "Google Gemini Spark: Your 24/7 Background Personal AI Agent",
+      "title_len": 59,
+      "meta_desc": "Meet Google&#x27;s new proactive AI agent, Gemini Spark. Discover the features of this system that manages your emails and runs automated tasks even while you...",
+      "desc_len": 161,
+      "canonical": "https://www.salihmaral.com/en/blog/google-gemini-spark",
+      "h1_count": 1,
+      "h1_text": "Google Gemini Spark: Your 24/7 Background Personal AI Agent",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-haritalar-askiya-alinan-isletme-profili-kurtarma-rehberi-2026",
+      "status": 200,
+      "duration_ms": 311,
+      "title": "Google Haritalar Askıya Alınan Profili Açma 2026",
+      "title_len": 48,
+      "meta_desc": "Askıya alınan Google Haritalar işletme profilinizi kurtarın. Resmi Partner Salih Maral, kanıtlanmış appeal ve itiraz süreçleriyle profil açma formülünü...",
+      "desc_len": 154,
+      "canonical": "https://www.salihmaral.com/blog/google-haritalar-askiya-alinan-isletme-profili-kurtarma-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Google Haritalar Askıya Alınan Profili Açma 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-haritalar-askiya-alinan-isletme-profili-kurtarma-rehberi-2026",
+      "status": 200,
+      "duration_ms": 312,
+      "title": "Suspended Google Business Profile Appeal 2026 | Salih Maral",
+      "title_len": 59,
+      "meta_desc": "Reinstate your suspended or disabled Google Business Profile. Official Partner Salih Maral explains the exact video verification and appeal evidence...",
+      "desc_len": 151,
+      "canonical": "https://www.salihmaral.com/en/blog/google-haritalar-askiya-alinan-isletme-profili-kurtarma-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Suspended Google Business Profile Appeal 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-haritalar-yorum-toplama-qr-nfc-rehberi-2026",
+      "status": 200,
+      "duration_ms": 338,
+      "title": "Google Haritalarda Müşterilerden 5 Yıldızlı Yorum...",
+      "title_len": 52,
+      "meta_desc": "Google Haritalarda nasıl 5 yıldız yorum toplanır? NFC yorum kartı, masa QR kodları ve olumsuz yorumları filtreleme taktikleri.",
+      "desc_len": 126,
+      "canonical": "https://www.salihmaral.com/blog/google-haritalar-yorum-toplama-qr-nfc-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Google Haritalarda Müşterilerden 5 Yıldızlı Yorum Toplama Taktikleri (QR &amp; NFC Sistemleri)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-haritalar-yorum-toplama-qr-nfc-rehberi-2026",
+      "status": 200,
+      "duration_ms": 311,
+      "title": "How to Collect 5-Star Google Maps Reviews with QR &amp; NFC...",
+      "title_len": 62,
+      "meta_desc": "Scale your local business reputation to 4.9 stars. Contactless NFC review cards and smart QR funnels for Google Maps. In-depth guide and strategic...",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/en/blog/google-haritalar-yorum-toplama-qr-nfc-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "How to Collect 5-Star Google Maps Reviews with QR &amp; NFC Systems (2026 Guide)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-maps-local-seo-ranking-factors-2026",
+      "status": 200,
+      "duration_ms": 314,
+      "title": "Google Harita Sıralama Faktörleri 2026: Telefonlarınızı...",
+      "title_len": 58,
+      "meta_desc": "Google Haritalar yerel arama sonuçlarını domine edin. İşletme profilinizi optimize etme, sahte 1 yıldızlı yorumları sildirme ve yerel müşteri kazanma rehberi.",
+      "desc_len": 158,
+      "canonical": "https://www.salihmaral.com/blog/google-maps-local-seo-ranking-factors-2026",
+      "h1_count": 1,
+      "h1_text": "Google Harita Sıralama Faktörleri 2026: Telefonlarınızı Susturmayacak Taktikler",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-maps-local-seo-ranking-factors-2026",
+      "status": 200,
+      "duration_ms": 310,
+      "title": "Google Maps Ranking Factors 2026: How to Dominate Local...",
+      "title_len": 58,
+      "meta_desc": "Dominate local Google Maps search results. Learn how to optimize your Business Profile, legally remove unfair 1-star reviews, and win high-ticket local...",
+      "desc_len": 154,
+      "canonical": "https://www.salihmaral.com/en/blog/google-maps-local-seo-ranking-factors-2026",
+      "h1_count": 1,
+      "h1_text": "Google Maps Ranking Factors 2026: How to Dominate Local Search",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-merchant-center-urun-feed-aski-cozum-2026",
+      "status": 200,
+      "duration_ms": 315,
+      "title": "Google Merchant Center Yanıltıcı Beyan...",
+      "title_len": 41,
+      "meta_desc": "Google Alışveriş reklamlarında Merchant Center askıya alındı uyarısı alan e-ticaret siteleri için kesin çözüm rehberi. Detaylı rehber ve stratejik analiz...",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/google-merchant-center-urun-feed-aski-cozum-2026",
+      "h1_count": 1,
+      "h1_text": "Google Merchant Center Yanıltıcı Beyan (Misrepresentation) ve Feed Askı Çözümü",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-merchant-center-urun-feed-aski-cozum-2026",
+      "status": 200,
+      "duration_ms": 321,
+      "title": "How to Fix Google Merchant Center Misrepresentation &amp;...",
+      "title_len": 60,
+      "meta_desc": "Resolve Merchant Center policy violations, fix GTIN errors, and get your Google Shopping product feeds approved fast. In-depth guide and strategic...",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/en/blog/google-merchant-center-urun-feed-aski-cozum-2026",
+      "h1_count": 1,
+      "h1_text": "How to Fix Google Merchant Center Misrepresentation &amp; Suspension (2026 Guide)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-seo-ranking-factors-2026",
+      "status": 200,
+      "duration_ms": 333,
+      "title": "Google 2026 SEO Sıralama Faktörleri: 9 Temel Kriter",
+      "title_len": 51,
+      "meta_desc": "Google algoritmalarındaki son güncellemeler ve E-E-A-T. Salih Maral, arama sonuçlarında otorite kazanmanın ve üst sıralarda yer almanın formülünü açıklıyor.",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/google-seo-ranking-factors-2026",
+      "h1_count": 1,
+      "h1_text": "Google 2026 SEO Sıralama Faktörleri: 9 Temel Kriter",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-seo-ranking-factors-2026",
+      "status": 200,
+      "duration_ms": 305,
+      "title": "The 9 Most Critical Google SEO Ranking Factors in 2026",
+      "title_len": 54,
+      "meta_desc": "Latest Google algorithm updates and E-E-A-T guidelines. Salih Maral explains how to build authority and dominate search results.",
+      "desc_len": 128,
+      "canonical": "https://www.salihmaral.com/en/blog/google-seo-ranking-factors-2026",
+      "h1_count": 1,
+      "h1_text": "The 9 Most Critical Google SEO Ranking Factors in 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/google-sge-search-ads-strategy",
+      "status": 200,
+      "duration_ms": 309,
+      "title": "Google Arama Üretken Deneyimi (SGE) ve Arama Ağı Reklam...",
+      "title_len": 58,
+      "meta_desc": "Yapay zeka odaklı Google aramalarında öne çıkın. Salih Maral, SGE ve AI Overviews entegrasyonuyla yeni reklam stratejilerini anlatıyor.",
+      "desc_len": 135,
+      "canonical": "https://www.salihmaral.com/blog/google-sge-search-ads-strategy",
+      "h1_count": 1,
+      "h1_text": "Google Arama Üretken Deneyimi (SGE) ve Arama Ağı Reklam Stratejileri",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/google-sge-search-ads-strategy",
+      "status": 200,
+      "duration_ms": 305,
+      "title": "Google Search Generative Experience (SGE) and Search Ads...",
+      "title_len": 59,
+      "meta_desc": "Leverage AI-driven search results. Salih Maral reveals new ad strategies for SGE and Google AI Overviews. In-depth guide and strategic insights by Salih...",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/en/blog/google-sge-search-ads-strategy",
+      "h1_count": 1,
+      "h1_text": "Google Search Generative Experience (SGE) and Search Ads Strategy",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/kisitlanan-meta-business-manager-hesap-kurtarma-2026",
+      "status": 200,
+      "duration_ms": 292,
+      "title": "Kısıtlanan Meta Reklam Hesabı ve Business Manager Nasıl...",
+      "title_len": 58,
+      "meta_desc": "Facebook reklam hesabı kısıtlandı uyarısı nasıl kaldırılır? İlkesel ihlal itiraz adımları, 2FA güvenlik ve hesap kurtarma rehberi.",
+      "desc_len": 130,
+      "canonical": "https://www.salihmaral.com/blog/kisitlanan-meta-business-manager-hesap-kurtarma-2026",
+      "h1_count": 1,
+      "h1_text": "Kısıtlanan Meta Reklam Hesabı ve Business Manager Nasıl Açılır? (2026 Kesin Çözüm)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/kisitlanan-meta-business-manager-hesap-kurtarma-2026",
+      "status": 200,
+      "duration_ms": 302,
+      "title": "How to Reclaim a Restricted Meta Ad Account &amp; Business...",
+      "title_len": 61,
+      "meta_desc": "Actionable appeal blueprint to reinstate disabled Facebook &amp; Instagram ad accounts, verify Business Manager, and fix policy flags.",
+      "desc_len": 134,
+      "canonical": "https://www.salihmaral.com/en/blog/kisitlanan-meta-business-manager-hesap-kurtarma-2026",
+      "h1_count": 1,
+      "h1_text": "How to Reclaim a Restricted Meta Ad Account &amp; Business Manager (2026 Guide)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026",
+      "status": 200,
+      "duration_ms": 334,
+      "title": "Klinikler ve Doktorlar İçin Google Ads Rehberi: 2026&#x27;da...",
+      "title_len": 63,
+      "meta_desc": "Özel klinikler, diş hekimleri, estetik merkezleri ve sağlık turizmi için Google Ads ve Yerel SEO ile yüksek değerli hasta ve danışan kazanma stratejileri.",
+      "desc_len": 154,
+      "canonical": "https://www.salihmaral.com/blog/klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026",
+      "h1_count": 1,
+      "h1_text": "Klinikler ve Doktorlar İçin Google Ads Rehberi: 2026&#x27;da Hasta Kazanma Yolları",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026",
+      "status": 200,
+      "duration_ms": 300,
+      "title": "Google Ads for Doctors &amp; Medical Clinics: Patient...",
+      "title_len": 56,
+      "meta_desc": "Private clinics, dental practices, and plastic surgeons: How to acquire high-value private patients and booked appointments via Google Ads and Local SEO.",
+      "desc_len": 153,
+      "canonical": "https://www.salihmaral.com/en/blog/klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads for Doctors &amp; Medical Clinics: Patient Acquisition Playbook 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/linkedin-ads-b2b-abm-strategy",
+      "status": 200,
+      "duration_ms": 320,
+      "title": "LinkedIn Ads ile B2B Hesap Tabanlı Pazarlama (ABM)...",
+      "title_len": 53,
+      "meta_desc": "B2B&#x27;de karar vericileri hedefleyin. Salih Maral, LinkedIn Insight Tag ve ABM kampanya yapılandırmalarını detaylandırıyor.",
+      "desc_len": 126,
+      "canonical": "https://www.salihmaral.com/blog/linkedin-ads-b2b-abm-strategy",
+      "h1_count": 1,
+      "h1_text": "LinkedIn Ads ile B2B Hesap Tabanlı Pazarlama (ABM) Stratejileri",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/linkedin-ads-b2b-abm-strategy",
+      "status": 200,
+      "duration_ms": 310,
+      "title": "B2B Account-Based Marketing (ABM) with LinkedIn Ads",
+      "title_len": 51,
+      "meta_desc": "Target key decision-makers effectively. Salih Maral reveals how to set up LinkedIn Insight Tag and ABM campaign structures.",
+      "desc_len": 123,
+      "canonical": "https://www.salihmaral.com/en/blog/linkedin-ads-b2b-abm-strategy",
+      "h1_count": 1,
+      "h1_text": "B2B Account-Based Marketing (ABM) with LinkedIn Ads",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/meta-ads-retargeting-funnels",
+      "status": 200,
+      "duration_ms": 346,
+      "title": "Sitenizi Terk Eden Müşteriyi Geri Kazanma: Meta Yeniden...",
+      "title_len": 58,
+      "meta_desc": "Yüksek dönüşümlü Meta Ads retargeting stratejileriyle kaybettiğiniz müşterileri geri kazanın. Detaylı rehber ve stratejik analiz Salih Maral ile.",
+      "desc_len": 145,
+      "canonical": "https://www.salihmaral.com/blog/meta-ads-retargeting-funnels",
+      "h1_count": 1,
+      "h1_text": "Sitenizi Terk Eden Müşteriyi Geri Kazanma: Meta Yeniden Pazarlama Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/meta-ads-retargeting-funnels",
+      "status": 200,
+      "duration_ms": 320,
+      "title": "Recover Lost Website Visitors: The Ultimate Meta...",
+      "title_len": 51,
+      "meta_desc": "Win back users who visited your site but did not purchase. High-converting Meta Ads retargeting strategy guide. In-depth guide and strategic insights by...",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/en/blog/meta-ads-retargeting-funnels",
+      "h1_count": 1,
+      "h1_text": "Recover Lost Website Visitors: The Ultimate Meta Retargeting Funnel",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/meta-advantage-plus-creative-ai-2026",
+      "status": 200,
+      "duration_ms": 342,
+      "title": "Meta Ads&#x27;te Kreatif Yorulması Nasıl Engellenir? (2026 AI...",
+      "title_len": 64,
+      "meta_desc": "Meta Advantage+ Alışveriş Kampanyaları (ASC) ile e-ticaret satışlarınızı katlayın. Üretken yapay zeka ile reklam yorgunluğunu aşma ve karlı büyüme...",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/blog/meta-advantage-plus-creative-ai-2026",
+      "h1_count": 1,
+      "h1_text": "Meta Ads&#x27;te Kreatif Yorulması Nasıl Engellenir? (2026 AI Rehberi)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/meta-advantage-plus-creative-ai-2026",
+      "status": 200,
+      "duration_ms": 317,
+      "title": "How to Beat Creative Fatigue in Meta Ads with AI in 2026",
+      "title_len": 56,
+      "meta_desc": "The definitive guide to Meta Advantage+ Shopping Campaigns (ASC). Master generative creative AI, defeat ad fatigue, and scale direct-to-consumer revenue...",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/en/blog/meta-advantage-plus-creative-ai-2026",
+      "h1_count": 1,
+      "h1_text": "How to Beat Creative Fatigue in Meta Ads with AI in 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/meta-advantage-plus-shopping-optimization",
+      "status": 200,
+      "duration_ms": 383,
+      "title": "Meta Advantage+ Shopping Kampanyaları 2026: CPA Düşürme,...",
+      "title_len": 59,
+      "meta_desc": "Meta ASC kampanyalarında bütçe israfını önleyin. Resmi Partner Salih Maral, Creative Fatigue çözümleri ve CAPI ile ROAS katlama yollarını açıklıyor.",
+      "desc_len": 148,
+      "canonical": "https://www.salihmaral.com/blog/meta-advantage-plus-shopping-optimization",
+      "h1_count": 1,
+      "h1_text": "Meta Advantage+ Shopping Kampanyaları 2026: CPA Düşürme, Creative Fatigue ve Satış Katlama Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/meta-advantage-plus-shopping-optimization",
+      "status": 200,
+      "duration_ms": 352,
+      "title": "Meta Advantage+ Shopping Campaigns (ASC): Lower CPA,...",
+      "title_len": 55,
+      "meta_desc": "Eliminate budget waste in Meta ASC campaigns. Official Partner Salih Maral reveals setups to stop Creative Fatigue, integrate CAPI, and maximize net-new...",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/en/blog/meta-advantage-plus-shopping-optimization",
+      "h1_count": 1,
+      "h1_text": "Meta Advantage+ Shopping Campaigns (ASC): Lower CPA, Stop Creative Fatigue &amp; Scale ROAS (2026 Blueprint)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026",
+      "status": 200,
+      "duration_ms": 295,
+      "title": "Meta Reklamlarında Paranızı Neden Kaybediyorsunuz?...",
+      "title_len": 53,
+      "meta_desc": "Facebook ve Instagram reklamlarına bütçe yatırıp satış alamamaktan yoruldunuz mu? Reklam bütçenizi kara dönüştürecek kanıtlanmış Meta Ads stratejisi.",
+      "desc_len": 149,
+      "canonical": "https://www.salihmaral.com/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026",
+      "h1_count": 1,
+      "h1_text": "Meta Reklamlarında Paranızı Neden Kaybediyorsunuz? Satışları 3X Katlama Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026",
+      "status": 200,
+      "duration_ms": 301,
+      "title": "Why Are You Losing Money on Meta Ads? The 2026 Guide to...",
+      "title_len": 58,
+      "meta_desc": "Tired of spending money on Facebook &amp; Instagram ads with zero profit? Stop wasting ad spend and scale your online store with proven Meta Ads management.",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/en/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026",
+      "h1_count": 1,
+      "h1_text": "Why Are You Losing Money on Meta Ads? The 2026 Guide to 3X E-Commerce Sales",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026",
+      "status": 200,
+      "duration_ms": 358,
+      "title": "Neden SEO Yapmalıyız? 2026&#x27;da GEO Neden Şarttır?",
+      "title_len": 53,
+      "meta_desc": "Sürekli artan reklam maliyetlerine bağımlı kalmadan organik büyümenin sırrı. Salih Maral, klasik SEO ile 2026 AI GEO entegrasyonunun farkını açıklıyor.",
+      "desc_len": 151,
+      "canonical": "https://www.salihmaral.com/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026",
+      "h1_count": 1,
+      "h1_text": "Neden SEO Yapmalıyız? 2026&#x27;da GEO Neden Şarttır?",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026",
+      "status": 200,
+      "duration_ms": 348,
+      "title": "Why Invest in SEO? Why GEO Is Mandatory in 2026",
+      "title_len": 47,
+      "meta_desc": "Break free from rising ad costs. Salih Maral explains why traditional SEO is no longer enough without Generative Engine Optimization (GEO) in 2026.",
+      "desc_len": 147,
+      "canonical": "https://www.salihmaral.com/en/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026",
+      "h1_count": 1,
+      "h1_text": "Why Invest in SEO? Why GEO Is Mandatory in 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/olumsuz-yorum-yonetimi",
+      "status": 200,
+      "duration_ms": 584,
+      "title": "Google Haritalar&#x27;da Olumsuz Yorum Silme Rehberi 2026",
+      "title_len": 57,
+      "meta_desc": "Google Haritalar ve Trustpilot üzerindeki haksız, sahte veya iftira içeren 1 yıldızlı olumsuz yorumları yasal yollarla silme ve itibar kurtarma rehberi.",
+      "desc_len": 152,
+      "canonical": "https://www.salihmaral.com/blog/olumsuz-yorum-yonetimi",
+      "h1_count": 1,
+      "h1_text": "Google Haritalar&#x27;da Olumsuz Yorum Silme Rehberi 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/olumsuz-yorum-yonetimi",
+      "status": 200,
+      "duration_ms": 298,
+      "title": "How to Remove Negative Google &amp; Trustpilot Reviews",
+      "title_len": 54,
+      "meta_desc": "Learn how to remove fake, defamatory, and unfair 1-star reviews from Google Maps and Trustpilot legally to protect your business reputation in 2026.",
+      "desc_len": 148,
+      "canonical": "https://www.salihmaral.com/en/blog/olumsuz-yorum-yonetimi",
+      "h1_count": 1,
+      "h1_text": "How to Remove Negative Google &amp; Trustpilot Reviews",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/performance-max-vs-standart-alisveris-e-ticaret-rehberi-2026",
+      "status": 200,
+      "duration_ms": 327,
+      "title": "Performance Max mi Standart Alışveriş mi? 2026 | Salih Maral",
+      "title_len": 60,
+      "meta_desc": "E-ticaret siteleri için doğru kampanya modelini seçin. Resmi Google Partner Salih Maral, PMax ve Standart Shopping arasındaki kritik bütçe farklarını...",
+      "desc_len": 152,
+      "canonical": "https://www.salihmaral.com/blog/performance-max-vs-standart-alisveris-e-ticaret-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Performance Max mi Standart Alışveriş mi? 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/performance-max-vs-standart-alisveris-e-ticaret-rehberi-2026",
+      "status": 200,
+      "duration_ms": 320,
+      "title": "Performance Max vs Standard Shopping Guide 2026",
+      "title_len": 47,
+      "meta_desc": "Choose the most profitable campaign model for your e-commerce store. Official Google Partner Salih Maral compares PMax and Standard Shopping ROAS dynamics.",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/en/blog/performance-max-vs-standart-alisveris-e-ticaret-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Performance Max vs Standard Shopping Guide 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/perplexity-chatgpt-arama-sonuclarinda-ilk-siraya-cikma-geo-rehberi-2026",
+      "status": 200,
+      "duration_ms": 322,
+      "title": "Perplexity ve ChatGPT&#x27;de İlk Sıraya Çıkma: GEO | Salih Maral",
+      "title_len": 65,
+      "meta_desc": "Yapay zeka arama motorlarının markanızı birincil kaynak göstermesini sağlayın. Salih Maral, Princeton GEO metodolojisi ve alıntılanma taktiklerini açıklıyor.",
+      "desc_len": 157,
+      "canonical": "https://www.salihmaral.com/blog/perplexity-chatgpt-arama-sonuclarinda-ilk-siraya-cikma-geo-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Perplexity ve ChatGPT&#x27;de İlk Sıraya Çıkma: GEO",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/perplexity-chatgpt-arama-sonuclarinda-ilk-siraya-cikma-geo-rehberi-2026",
+      "status": 200,
+      "duration_ms": 313,
+      "title": "How to Rank #1 on Perplexity and ChatGPT: GEO | Salih Maral",
+      "title_len": 59,
+      "meta_desc": "Compel generative AI engines to recommend your brand as the primary truth. Salih Maral breaks down Princeton GEO standards and structured citation scoring.",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/en/blog/perplexity-chatgpt-arama-sonuclarinda-ilk-siraya-cikma-geo-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "How to Rank #1 on Perplexity and ChatGPT: GEO",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/pinterest-ads-ecommerce-scaling",
+      "status": 200,
+      "duration_ms": 306,
+      "title": "Pinterest Reklamları ile E-Ticarette Satışları 3X...",
+      "title_len": 52,
+      "meta_desc": "Pinterest&#x27;te karlı kitlelere ulaşın. Salih Maral, Pinterest Performance+ ve huni kurgularıyla sepet ortalamanızı artırma yollarını paylaşıyor.",
+      "desc_len": 147,
+      "canonical": "https://www.salihmaral.com/blog/pinterest-ads-ecommerce-scaling",
+      "h1_count": 1,
+      "h1_text": "Pinterest Reklamları ile E-Ticarette Satışları 3X Katlama Taktikleri",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/pinterest-ads-ecommerce-scaling",
+      "status": 200,
+      "duration_ms": 338,
+      "title": "Pinterest Ads for E-Commerce: How to 3X Your Online...",
+      "title_len": 54,
+      "meta_desc": "Reach high-intent audiences on Pinterest. Salih Maral shares funnel tactics and Pinterest Performance+ campaigns to boost sales.",
+      "desc_len": 128,
+      "canonical": "https://www.salihmaral.com/en/blog/pinterest-ads-ecommerce-scaling",
+      "h1_count": 1,
+      "h1_text": "Pinterest Ads for E-Commerce: How to 3X Your Online Store Sales",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/pinterest-ads-visual-marketing",
+      "status": 200,
+      "duration_ms": 325,
+      "title": "Görsel Pazarlama ile Müşteri Çekme: Pinterest Ads...",
+      "title_len": 52,
+      "meta_desc": "Görsel arama motoru Pinterest&#x27;te karlı kitlelere ulaşın. Uzun ömürlü (evergreen) müşteri kazanımı stratejileri. Detaylı rehber ve stratejik analiz Salih...",
+      "desc_len": 160,
+      "canonical": "https://www.salihmaral.com/blog/pinterest-ads-visual-marketing",
+      "h1_count": 1,
+      "h1_text": "Görsel Pazarlama ile Müşteri Çekme: Pinterest Ads Rehberi 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/pinterest-ads-visual-marketing",
+      "status": 200,
+      "duration_ms": 326,
+      "title": "Visual Marketing with Pinterest Ads: How to Capture...",
+      "title_len": 54,
+      "meta_desc": "Reach profitable audiences on the visual search engine Pinterest. E-commerce catalog integration and evergreen customer acquisition strategies.",
+      "desc_len": 143,
+      "canonical": "https://www.salihmaral.com/en/blog/pinterest-ads-visual-marketing",
+      "h1_count": 1,
+      "h1_text": "Visual Marketing with Pinterest Ads: How to Capture Buying Intent",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/programmatic-seo-ai-content-hubs",
+      "status": 200,
+      "duration_ms": 330,
+      "title": "Programatik SEO ve AI İçerik Merkezleri Yapılandırması...",
+      "title_len": 57,
+      "meta_desc": "Yapay zeka modelleri ve veri odaklı şablonlar kullanarak binlerce hedeflenmiş açılış sayfasını (Landing Page) programatik SEO ile oluşturun ve organik...",
+      "desc_len": 153,
+      "canonical": "https://www.salihmaral.com/blog/programmatic-seo-ai-content-hubs",
+      "h1_count": 1,
+      "h1_text": "Programatik SEO ve AI İçerik Merkezleri Yapılandırması ile Organik Trafik Ölçekleme",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/programmatic-seo-ai-content-hubs",
+      "status": 200,
+      "duration_ms": 293,
+      "title": "Programmatic SEO &amp; AI Content Hubs: Scaling Organic...",
+      "title_len": 58,
+      "meta_desc": "Leverage programmatic SEO and generative AI templates to launch thousands of targeted long-tail keyword landing pages that scale organic traffic.",
+      "desc_len": 145,
+      "canonical": "https://www.salihmaral.com/en/blog/programmatic-seo-ai-content-hubs",
+      "h1_count": 1,
+      "h1_text": "Programmatic SEO &amp; AI Content Hubs: Scaling Organic Search Traffic Exponentially",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/ramazan-kurban-zekat-bagis-reklam-stratejileri-2026",
+      "status": 200,
+      "duration_ms": 309,
+      "title": "Ramazan ve Kurban Döneminde Bağışları 5X Katlama...",
+      "title_len": 51,
+      "meta_desc": "İslami yardım kuruluşları için Ramazan zekat ve Kurban bayramı bağış kampanyalarını Meta, Google ve YouTube Ads ile rekor seviyeye çıkarma stratejisi.",
+      "desc_len": 150,
+      "canonical": "https://www.salihmaral.com/blog/ramazan-kurban-zekat-bagis-reklam-stratejileri-2026",
+      "h1_count": 1,
+      "h1_text": "Ramazan ve Kurban Döneminde Bağışları 5X Katlama Rehberi: Zekat &amp; Qurbani Reklamları",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/ramazan-kurban-zekat-bagis-reklam-stratejileri-2026",
+      "status": 200,
+      "duration_ms": 307,
+      "title": "Scaling Ramadan &amp; Qurbani Donations: High-ROI Strategy...",
+      "title_len": 61,
+      "meta_desc": "How international Islamic NGOs scale Zakat and Qurbani fundraising using Google Ads, Meta CAPI, and YouTube Ads to break donation records in 2026.",
+      "desc_len": 146,
+      "canonical": "https://www.salihmaral.com/en/blog/ramazan-kurban-zekat-bagis-reklam-stratejileri-2026",
+      "h1_count": 1,
+      "h1_text": "Scaling Ramadan &amp; Qurbani Donations: High-ROI Strategy for Islamic Charities",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/saglik-turizmi-klinikler-icin-google-ads-yurt-disi-hasta-kazanma-2026",
+      "status": 200,
+      "duration_ms": 322,
+      "title": "Sağlık Turizmi Google Ads: Yurt Dışı Hasta Kazanma",
+      "title_len": 50,
+      "meta_desc": "Avrupa&#x27;dan kliniğinize yabancı hasta çekin. Resmi Partner Salih Maral, medikal Google reklam politikaları ve yüksek dönüşümlü hasta kazanma hunisini...",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/saglik-turizmi-klinikler-icin-google-ads-yurt-disi-hasta-kazanma-2026",
+      "h1_count": 1,
+      "h1_text": "Sağlık Turizmi Google Ads: Yurt Dışı Hasta Kazanma",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/saglik-turizmi-klinikler-icin-google-ads-yurt-disi-hasta-kazanma-2026",
+      "status": 200,
+      "duration_ms": 308,
+      "title": "Google Ads for Medical Tourism &amp; Private Clinics",
+      "title_len": 52,
+      "meta_desc": "Attract high-value international patients for dental, aesthetic, and surgical clinics. Salih Maral outlines compliant medical Google advertising frameworks.",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/en/blog/saglik-turizmi-klinikler-icin-google-ads-yurt-disi-hasta-kazanma-2026",
+      "h1_count": 1,
+      "h1_text": "Google Ads for Medical Tourism &amp; Private Clinics",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026",
+      "status": 200,
+      "duration_ms": 327,
+      "title": "Müzik Klibi ve Videolar Nasıl İzletilir? Sanatçılar İçin...",
+      "title_len": 59,
+      "meta_desc": "Videonuz kaliteli olabilir ama doğru kitleye ulaşmıyorsa keşfedilmez. Sanatçılar ve prodüksiyon şirketleri için YouTube Ads ile gerçek dinleyici kazanma...",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026",
+      "h1_count": 1,
+      "h1_text": "Müzik Klibi ve Videolar Nasıl İzletilir? Sanatçılar İçin YouTube Ads Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026",
+      "status": 200,
+      "duration_ms": 299,
+      "title": "How to Promote Music Videos: YouTube Ads Guide for...",
+      "title_len": 53,
+      "meta_desc": "Your video may be top quality, but without the right audience it stays undiscovered. Proven YouTube Ads strategies for musicians &amp; music productions.",
+      "desc_len": 153,
+      "canonical": "https://www.salihmaral.com/en/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026",
+      "h1_count": 1,
+      "h1_text": "How to Promote Music Videos: YouTube Ads Guide for Artists &amp; Record Labels",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/server-side-gtm-meta-capi-setup-2026",
+      "status": 200,
+      "duration_ms": 299,
+      "title": "Server-Side GTM ve Meta CAPI Kurulumu Nasıl Yapılır?...",
+      "title_len": 55,
+      "meta_desc": "Sunucu taraflı takip ile kayıp dönüşümleri geri kazanın. iOS engellerini, ad-blocker&#x27;ları aşma, Event ID tekilleştirme ve Meta CAPI ile ROAS artırma rehberi.",
+      "desc_len": 162,
+      "canonical": "https://www.salihmaral.com/blog/server-side-gtm-meta-capi-setup-2026",
+      "h1_count": 1,
+      "h1_text": "Server-Side GTM ve Meta CAPI Kurulumu Nasıl Yapılır? (Adım Adım)",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/server-side-gtm-meta-capi-setup-2026",
+      "status": 200,
+      "duration_ms": 318,
+      "title": "How to Set Up Server-Side GTM &amp; Meta CAPI Step-by-Step...",
+      "title_len": 61,
+      "meta_desc": "Complete practical guide to server-side tracking. Overcome iOS restrictions, ad-blockers, and privacy barriers with deterministic event deduplication.",
+      "desc_len": 150,
+      "canonical": "https://www.salihmaral.com/en/blog/server-side-gtm-meta-capi-setup-2026",
+      "h1_count": 1,
+      "h1_text": "How to Set Up Server-Side GTM &amp; Meta CAPI Step-by-Step in 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/server-side-tracking-capi-guide",
+      "status": 200,
+      "duration_ms": 316,
+      "title": "Meta Pixel Neden Satışları Eksik Sayıyor? Server-Side...",
+      "title_len": 56,
+      "meta_desc": "Çerezsiz 2026 dünyasında veri kaybını durdurun. Salih Maral, GTM Server-Side ve Meta CAPI ile ölçümleme kalitesini artırma yollarını paylaşıyor.",
+      "desc_len": 144,
+      "canonical": "https://www.salihmaral.com/blog/server-side-tracking-capi-guide",
+      "h1_count": 1,
+      "h1_text": "Meta Pixel Neden Satışları Eksik Sayıyor? Server-Side CAPI ile Veri Kaybını Sıfırlayın",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/server-side-tracking-capi-guide",
+      "status": 200,
+      "duration_ms": 320,
+      "title": "Why is Meta Pixel Missing Sales? Fix Tracking Loss with...",
+      "title_len": 58,
+      "meta_desc": "Stop data loss in a cookie-less world. Salih Maral shares how to configure GTM Server-Side and Meta CAPI to improve measurement quality.",
+      "desc_len": 136,
+      "canonical": "https://www.salihmaral.com/en/blog/server-side-tracking-capi-guide",
+      "h1_count": 1,
+      "h1_text": "Why is Meta Pixel Missing Sales? Fix Tracking Loss with Server-Side CAPI",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/server-side-tracking-first-party-ai-attribution",
+      "status": 200,
+      "duration_ms": 320,
+      "title": "iOS 14+ Sonrası First-Party Veri ile Reklam...",
+      "title_len": 46,
+      "meta_desc": "Üçüncü taraf çerezlerin olmadığı 2026 reklam ortamında Server-Side Tracking, Conversions API (CAPI) ve AI tabanlı atıf (attribution) modelleri ile veri...",
+      "desc_len": 154,
+      "canonical": "https://www.salihmaral.com/blog/server-side-tracking-first-party-ai-attribution",
+      "h1_count": 1,
+      "h1_text": "iOS 14+ Sonrası First-Party Veri ile Reklam Algoritmalarını Güçlendirme",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/server-side-tracking-first-party-ai-attribution",
+      "status": 200,
+      "duration_ms": 305,
+      "title": "First-Party Data Tracking: Powering AI Ad Algorithms...",
+      "title_len": 55,
+      "meta_desc": "Eliminate marketing data loss in a cookieless 2026 environment: Master Server-Side Tracking, Conversions API (CAPI), and AI attribution.",
+      "desc_len": 136,
+      "canonical": "https://www.salihmaral.com/en/blog/server-side-tracking-first-party-ai-attribution",
+      "h1_count": 1,
+      "h1_text": "First-Party Data Tracking: Powering AI Ad Algorithms After iOS 14+",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/su-kuyusu-yetim-bagis-hunisi-donation-funnel-2026",
+      "status": 200,
+      "duration_ms": 311,
+      "title": "Yardım Kuruluşları İçin Yüksek Dönüşümlü Bağış Hunisi:...",
+      "title_len": 57,
+      "meta_desc": "Su kuyusu ve yetim sponsorluğu bağışlarını artırmak için kanıtlanmış web tasarım, ödeme akışı ve Server-Side takip (CAPI) mimarisi rehberi.",
+      "desc_len": 139,
+      "canonical": "https://www.salihmaral.com/blog/su-kuyusu-yetim-bagis-hunisi-donation-funnel-2026",
+      "h1_count": 1,
+      "h1_text": "Yardım Kuruluşları İçin Yüksek Dönüşümlü Bağış Hunisi: Su Kuyusu &amp; Yetim Projeleri",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/su-kuyusu-yetim-bagis-hunisi-donation-funnel-2026",
+      "status": 200,
+      "duration_ms": 384,
+      "title": "High-Converting Non-Profit Donation Funnels: Water Wells...",
+      "title_len": 59,
+      "meta_desc": "How international charities build high-converting donation landing pages with friction-free payments (Apple Pay, Stripe, PayPal) and Server-Side tracking.",
+      "desc_len": 154,
+      "canonical": "https://www.salihmaral.com/en/blog/su-kuyusu-yetim-bagis-hunisi-donation-funnel-2026",
+      "h1_count": 1,
+      "h1_text": "High-Converting Non-Profit Donation Funnels: Water Wells &amp; Orphan Sponsorship",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/tiktok-shop-ecommerce-scaling",
+      "status": 200,
+      "duration_ms": 318,
+      "title": "TikTok Shop ile E-Ticarette Viral Satışlar Nasıl Yapılır?",
+      "title_len": 57,
+      "meta_desc": "TikTok Shop ile doğrudan satış kanalı oluşturun. Salih Maral, ürün entegrasyonu, içerik üretici iş birlikleri ve reklam kurgularını açıklıyor.",
+      "desc_len": 142,
+      "canonical": "https://www.salihmaral.com/blog/tiktok-shop-ecommerce-scaling",
+      "h1_count": 1,
+      "h1_text": "TikTok Shop ile E-Ticarette Viral Satışlar Nasıl Yapılır?",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/tiktok-shop-ecommerce-scaling",
+      "status": 200,
+      "duration_ms": 379,
+      "title": "How to Scale E-Commerce Sales with TikTok Shop &amp; Social...",
+      "title_len": 62,
+      "meta_desc": "Build a direct sales channel using TikTok Shop. Salih Maral reveals product integration, creator partnerships, and ad setups.",
+      "desc_len": 125,
+      "canonical": "https://www.salihmaral.com/en/blog/tiktok-shop-ecommerce-scaling",
+      "h1_count": 1,
+      "h1_text": "How to Scale E-Commerce Sales with TikTok Shop &amp; Social Commerce",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/tiktok-shop-social-commerce",
+      "status": 200,
+      "duration_ms": 300,
+      "title": "Sosyal Ticaretin Geleceği: TikTok Shop ile Ürün Satışı...",
+      "title_len": 57,
+      "meta_desc": "TikTok Shop ile sosyal ticaret. Bölgesel satışlarınızı %300 artırın. Detaylı rehber ve stratejik analiz Salih Maral ile.",
+      "desc_len": 120,
+      "canonical": "https://www.salihmaral.com/blog/tiktok-shop-social-commerce",
+      "h1_count": 1,
+      "h1_text": "Sosyal Ticaretin Geleceği: TikTok Shop ile Ürün Satışı Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/tiktok-shop-social-commerce",
+      "status": 200,
+      "duration_ms": 362,
+      "title": "The Future of Social Commerce: Selling Products via...",
+      "title_len": 54,
+      "meta_desc": "Get ahead of your competitors in the social commerce market. TikTok Shopping Ads integration and social checkout optimization tactics that increase...",
+      "desc_len": 150,
+      "canonical": "https://www.salihmaral.com/en/blog/tiktok-shop-social-commerce",
+      "h1_count": 1,
+      "h1_text": "The Future of Social Commerce: Selling Products via TikTok Shop",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026",
+      "status": 200,
+      "duration_ms": 318,
+      "title": "TikTok Shop mu Meta Advantage+ mı? 2026 E-Ticaret Reklam...",
+      "title_len": 59,
+      "meta_desc": "E-ticarette cironuzu katlamak için hangi reklam modeli daha karlı? TikTok Shop ve Meta Advantage+ Shopping&#x27;in canlı ROAS, CPA ve sepet maliyetlerini...",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026",
+      "h1_count": 1,
+      "h1_text": "TikTok Shop mu Meta Advantage+ mı? 2026 E-Ticaret Reklam Kıyaslaması",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026",
+      "status": 200,
+      "duration_ms": 394,
+      "title": "TikTok Shop vs. Meta Advantage+: Which Ad Channel is...",
+      "title_len": 55,
+      "meta_desc": "Scale your e-commerce revenue: TikTok Shop or Meta Advantage+ Shopping? A deep dive comparison into live ROAS, CPA, and AOV benchmarks for 2026.",
+      "desc_len": 144,
+      "canonical": "https://www.salihmaral.com/en/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026",
+      "h1_count": 1,
+      "h1_text": "TikTok Shop vs. Meta Advantage+: Which Ad Channel is More Profitable in 2026?",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/x-live-studio-streaming-rewards",
+      "status": 200,
+      "duration_ms": 323,
+      "title": "X Live Studio ile Canlı Yayında Gelir Elde Etme ve Marka...",
+      "title_len": 59,
+      "meta_desc": "X (Twitter), Twitch ve YouTube&#x27;a rakip olan Live Studio&#x27;yu duyurdu. 1 milyon dolarlık dev nakit havuzundan pay almak için bilmeniz gereken tüm şartlar.",
+      "desc_len": 161,
+      "canonical": "https://www.salihmaral.com/blog/x-live-studio-streaming-rewards",
+      "h1_count": 1,
+      "h1_text": "X Live Studio ile Canlı Yayında Gelir Elde Etme ve Marka Büyütme",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/x-live-studio-streaming-rewards",
+      "status": 200,
+      "duration_ms": 325,
+      "title": "Monetize Live Streaming on X (Twitter): The Complete X...",
+      "title_len": 57,
+      "meta_desc": "X (Twitter) has announced Live Studio, a competitor to Twitch and YouTube. All the conditions you need to know to get a share of the massive...",
+      "desc_len": 143,
+      "canonical": "https://www.salihmaral.com/en/blog/x-live-studio-streaming-rewards",
+      "h1_count": 1,
+      "h1_text": "Monetize Live Streaming on X (Twitter): The Complete X Live Studio Guide",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/x-twitter-ads",
+      "status": 200,
+      "duration_ms": 300,
+      "title": "X (Twitter) Reklamları ile Yüksek Gelirli Karar...",
+      "title_len": 50,
+      "meta_desc": "X reklamlarında nasıl öne çıkilir? X reklamları ile gerçek zamanlı pazarlama stratejilerini öğrenin. Detaylı rehber ve stratejik analiz Salih Maral ile.",
+      "desc_len": 152,
+      "canonical": "https://www.salihmaral.com/blog/x-twitter-ads",
+      "h1_count": 1,
+      "h1_text": "X (Twitter) Reklamları ile Yüksek Gelirli Karar Vericilere Nasıl Ulaşılır?",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/x-twitter-ads",
+      "status": 200,
+      "duration_ms": 339,
+      "title": "How to Reach High-Value Decision Makers with X (Twitter) Ads",
+      "title_len": 60,
+      "meta_desc": "How to stand out in trending topics? Real-time marketing strategies with X Ads. In-depth guide and strategic insights by Salih Maral.",
+      "desc_len": 133,
+      "canonical": "https://www.salihmaral.com/en/blog/x-twitter-ads",
+      "h1_count": 1,
+      "h1_text": "How to Reach High-Value Decision Makers with X (Twitter) Ads",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026",
+      "status": 200,
+      "duration_ms": 310,
+      "title": "B2B Müşterileri Nerede Bulunur? X (Twitter)...",
+      "title_len": 46,
+      "meta_desc": "Kurumsal müşterilere, CEO&#x27;lara ve yatırımcılara ulaşmak LinkedIn&#x27;de çok mu pahalı? X Ads ile 1/4 maliyetle yüksek bütçeli B2B müşteriler kazanın.",
+      "desc_len": 155,
+      "canonical": "https://www.salihmaral.com/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "B2B Müşterileri Nerede Bulunur? X (Twitter) Reklamlarıyla Karar Vericilere Ulaşın",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026",
+      "status": 200,
+      "duration_ms": 347,
+      "title": "Where to Find B2B Clients: Why X (Twitter) Ads Beat...",
+      "title_len": 54,
+      "meta_desc": "Are LinkedIn Ads too expensive for your B2B offer? Discover how to acquire enterprise clients, CEOs, and investors at 1/4 the cost on X.",
+      "desc_len": 136,
+      "canonical": "https://www.salihmaral.com/en/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Where to Find B2B Clients: Why X (Twitter) Ads Beat LinkedIn in 2026",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi",
+      "status": 200,
+      "duration_ms": 356,
+      "title": "YouTube&#x27;dan Radikal 24 Ağustos Kararı: İzlenme Sayıları...",
+      "title_len": 63,
+      "meta_desc": "YouTube 24 Ağustos 2026&#x27;dan itibaren Shorts, uzun video ve canlı yayınlarda oynatıldığı an görüntüleme sayacak. YPP para kazanma, avantajlar ve uzman analizi.",
+      "desc_len": 163,
+      "canonical": "https://www.salihmaral.com/blog/youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi",
+      "h1_count": 1,
+      "h1_text": "YouTube&#x27;dan Radikal 24 Ağustos Kararı: İzlenme Sayıları Uçuyor mu, Para Kazanma Düşüyor mu?",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi",
+      "status": 200,
+      "duration_ms": 293,
+      "title": "YouTube&#x27;s Game-Changing August 24 Update: Views...",
+      "title_len": 55,
+      "meta_desc": "Starting August 24, 2026, YouTube counts views as soon as video playback starts across Shorts, VOD, and Live streams. YPP monetization impact &amp; expert...",
+      "desc_len": 157,
+      "canonical": "https://www.salihmaral.com/en/blog/youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi",
+      "h1_count": 1,
+      "h1_text": "YouTube&#x27;s Game-Changing August 24 Update: Views Skyrocket, But What Happens to Your Payouts?",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/youtube-ads-video-views-channel-growth-2026",
+      "status": 200,
+      "duration_ms": 325,
+      "title": "YouTube&#x27;da Videomu Nasıl İzletirim? Doğru Kitleye Ulaşma...",
+      "title_len": 64,
+      "meta_desc": "YouTube’da video yayınlamak kolay, asıl mesele doğru insanlara izletmek! Bot izlenme tuzaklarına düşmeden YouTube Ads ile kanalınızı büyütün.",
+      "desc_len": 141,
+      "canonical": "https://www.salihmaral.com/blog/youtube-ads-video-views-channel-growth-2026",
+      "h1_count": 1,
+      "h1_text": "YouTube&#x27;da Videomu Nasıl İzletirim? Doğru Kitleye Ulaşma ve Gerçek İzlenme Rehberi",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/youtube-ads-video-views-channel-growth-2026",
+      "status": 200,
+      "duration_ms": 323,
+      "title": "How Do I Get the Right People to Watch My YouTube...",
+      "title_len": 52,
+      "meta_desc": "Uploading a video is easy – getting the right people to watch it is the real challenge. Gain real views, loyal subscribers &amp; trigger organic growth with...",
+      "desc_len": 159,
+      "canonical": "https://www.salihmaral.com/en/blog/youtube-ads-video-views-channel-growth-2026",
+      "h1_count": 1,
+      "h1_text": "How Do I Get the Right People to Watch My YouTube Videos? 2026 Guide",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/youtube-shorts-reklamlari-ile-e-ticaret-satis-katlama-rehberi-2026",
+      "status": 200,
+      "duration_ms": 325,
+      "title": "YouTube Shorts Reklamları ile E-Ticaret Satışları",
+      "title_len": 49,
+      "meta_desc": "Dikey videolarla e-ticaret satışlarını katlayın. Salih Maral, YouTube Shorts reklam formatlarını ve yüksek ROAS getiren video kreatif kurgularını açıklıyor.",
+      "desc_len": 156,
+      "canonical": "https://www.salihmaral.com/blog/youtube-shorts-reklamlari-ile-e-ticaret-satis-katlama-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "YouTube Shorts Reklamları ile E-Ticaret Satışları",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/youtube-shorts-reklamlari-ile-e-ticaret-satis-katlama-rehberi-2026",
+      "status": 200,
+      "duration_ms": 321,
+      "title": "Scaling E-Commerce Sales with YouTube Shorts Ads",
+      "title_len": 48,
+      "meta_desc": "Capture high-intent mobile shoppers with short-form vertical video ads. Salih Maral outlines creative testing frameworks and high-ROAS bidding configurations.",
+      "desc_len": 158,
+      "canonical": "https://www.salihmaral.com/en/blog/youtube-shorts-reklamlari-ile-e-ticaret-satis-katlama-rehberi-2026",
+      "h1_count": 1,
+      "h1_text": "Scaling E-Commerce Sales with YouTube Shorts Ads",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/blog/youtube-shorts-video-ads-conversion",
+      "status": 200,
+      "duration_ms": 321,
+      "title": "YouTube Shorts ve Video Ads ile Performans Odaklı...",
+      "title_len": 52,
+      "meta_desc": "YouTube Shorts ve video reklamlarıyla karlı dönüşümler elde edin. Salih Maral, video kreatif üretimi ve kampanya kurgularını paylaşıyor.",
+      "desc_len": 136,
+      "canonical": "https://www.salihmaral.com/blog/youtube-shorts-video-ads-conversion",
+      "h1_count": 1,
+      "h1_text": "YouTube Shorts ve Video Ads ile Performans Odaklı Dönüşüm Kampanyaları",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "url": "https://www.salihmaral.com/en/blog/youtube-shorts-video-ads-conversion",
+      "status": 200,
+      "duration_ms": 328,
+      "title": "YouTube Shorts and Video Ads: Performance-Driven...",
+      "title_len": 51,
+      "meta_desc": "Drive profitable conversions with YouTube Shorts and video ads. Salih Maral reveals creative strategies and campaign structures.",
+      "desc_len": 128,
+      "canonical": "https://www.salihmaral.com/en/blog/youtube-shorts-video-ads-conversion",
+      "h1_count": 1,
+      "h1_text": "YouTube Shorts and Video Ads: Performance-Driven Conversion Campaigns",
+      "schemas": [
+        "['Organization', 'WebSite', 'Person', ['LocalBusiness', 'ProfessionalService'], 'FAQPage', 'AggregateRating']",
+        "['BlogPosting', 'BreadcrumbList']"
+      ],
+      "issues": [],
+      "warnings": [],
+      "passed": true
+    }
+  ]
+}

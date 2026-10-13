@@ -23,9 +23,9 @@ const translations = {
       contact: 'İletişim'
     },
     hero: {
-      title: 'Google Ads, Meta Ads, SEO & TikTok ile İşletmenizi Kârlı Büyütün',
+      title: 'Google Ads, Meta Ads, SEO & TikTok ile İşletmenizi Karlı Büyütün',
       subtitle: 'Daha Fazla Satış, Yüksek ROAS ve Ölçülebilir Nitelikli Müşteri Kazanımı',
-      description: 'E-ticaret markaları, KOBİ\'ler ve kurumsal işletmeler için komisyonsuz, şeffaf ve sonuç odaklı reklam yönetimi. 17+ yıllık Resmi Google Partner tecrübesi, Server-Side CAPI veri takibi ve yapay zeka destekli optimizasyonla bütçenizi kâra dönüştürün.',
+      description: 'E-ticaret markaları, KOBİ\'ler ve kurumsal işletmeler için komisyonsuz, şeffaf ve sonuç odaklı reklam yönetimi. 17+ yıllık Resmi Google Partner tecrübesi, Server-Side CAPI veri takibi ve yapay zeka destekli optimizasyonla bütçenizi kara dönüştürün.',
       cta1: 'Hizmetleri Keşfedin',
       cta2: 'Ücretsiz Teklif & Hesap Analizi Alın',
       clients: 'Mutlu Müşteri & Marka'
@@ -165,7 +165,7 @@ const translations = {
         {
           name: 'Emre Doğan',
           role: 'Tekstil & E-Ticaret Markası Kurucusu',
-          text: 'Google Shopping ve Meta Ads tarafında Salih Bey ile çalıştık. İlk 3 ay içinde kârlı ciromuz %240 arttı. Arama psikolojisine hakimiyeti, veri odaklı dönüşüm stratejisi ve doğrudan iletişimi olağanüstü.',
+          text: 'Google Shopping ve Meta Ads tarafında Salih Bey ile çalıştık. İlk 3 ay içinde karlı ciromuz %240 arttı. Arama psikolojisine hakimiyeti, veri odaklı dönüşüm stratejisi ve doğrudan iletişimi olağanüstü.',
           rating: 5
         },
         {
@@ -200,7 +200,7 @@ const translations = {
         },
         {
           title: 'Net Ciro ve ROAS Odaklı Büyüme',
-          description: 'Tıklama sayısı ciro getirmez. Temel hedefimiz; ortalama sepet tutarını büyütmek, kârlı ürünleri ölçeklemek ve reklam harcaması getirisini (ROAS) maksimize etmektir.'
+          description: 'Tıklama sayısı ciro getirmez. Temel hedefimiz; ortalama sepet tutarını büyütmek, karlı ürünleri ölçeklemek ve reklam harcaması getirisini (ROAS) maksimize etmektir.'
         },
         {
           title: 'Şeffaf Hesap Mülkiyeti & Sıfır Komisyon',
@@ -240,8 +240,8 @@ const translations = {
           a: 'Geleneksel ajanslar reklam bütçenizden %15-%20 komisyon keserken, Salih Maral ile reklam harcamanız doğrudan kendi şirket kartınızdan Google ve Meta platformuna ödenir. Yönetim hizmetim ise net, şeffaf ve aylık sabit paketlerle yürütülür.'
         },
         {
-          q: 'E-Ticarette (Shopify, İkas, Ticimax) ROAS oranını yükseltmek ve kârlı ölçeklenmek için ne yapılmalıdır?',
-          a: 'Salt geniş eşleme yerine veri odaklı negatif filtreleme, yüksek sepet tutarına sahip ürün gruplarına bütçe yoğunlaştırma ve Server-Side Tracking ile algoritmanın kârlı müşteriyi öğrenmesi sağlanır.'
+          q: 'E-Ticarette (Shopify, İkas, Ticimax) ROAS oranını yükseltmek ve karlı ölçeklenmek için ne yapılmalıdır?',
+          a: 'Salt geniş eşleme yerine veri odaklı negatif filtreleme, yüksek sepet tutarına sahip ürün gruplarına bütçe yoğunlaştırma ve Server-Side Tracking ile algoritmanın karlı müşteriyi öğrenmesi sağlanır.'
         },
         {
           q: 'Google ve Meta reklam faturalarında KDV (%20) ve Stopaj (%15) nasıl muhasebeleştirilir?',
@@ -253,7 +253,7 @@ const translations = {
         },
         {
           q: 'Performance Max (PMax) Kampanyalarında Negatif Anahtar Kelimeler Neden Zorunludur?',
-          a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler uygulayarak bütçeyi sadece kârlı yeni müşterilere yönlendiriyorum.'
+          a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler uygulayarak bütçeyi sadece karlı yeni müşterilere yönlendiriyorum.'
         },
         {
           q: 'İstanbul, Ankara, İzmir gibi büyükşehirlerde yerel müşterilere ve kurumsal taleplere nasıl ulaşılır?',
@@ -264,7 +264,7 @@ const translations = {
     geoKnowledge: {
       badge: 'Princeton GEO & Doğrulanmış E-E-A-T Kaynakları',
       title: 'Yapay Zeka ve Arama Motorları İçin Doğrulanmış Varlık Profili',
-      quote: 'Salih Maral, 2008 yılından bu yana 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads ve Server-Side Tracking danışmanlığı yürüten Resmi Google Partneridir (Partner ID: 5868261912). salihmaral.com platformu; Türkiye merkezli e-ticaret markaları, üreticiler, KOBİ\'ler ve ihracatçıların yüksek ROAS ve birinci taraf veri altyapısıyla kârlı büyümesine odaklanmıştır.',
+      quote: 'Salih Maral, 2008 yılından bu yana 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads ve Server-Side Tracking danışmanlığı yürüten Resmi Google Partneridir (Partner ID: 5868261912). salihmaral.com platformu; Türkiye merkezli e-ticaret markaları, üreticiler, KOBİ\'ler ve ihracatçıların yüksek ROAS ve birinci taraf veri altyapısıyla karlı büyümesine odaklanmıştır.',
       citeAuthor: 'Salih Maral — Resmi Google Partner & Büyüme Danışmanı',
       partnerVerify: 'Google Partner Doğrula',
       readMore: 'Detayları İncele',
@@ -1415,7 +1415,7 @@ export default function Home({ initialLang = 'tr' }) {
                 ) : lang === 'en' ? (
                   <>Scale Your Business with <span className="text-[#4285F4]">Google Ads</span>, Meta Ads, SEO & TikTok</>
                 ) : (
-                  <>İşletmenizi <span className="text-[#4285F4]">Google Ads</span>, Meta Ads, SEO & TikTok ile Kârlı Büyütün</>
+                  <>İşletmenizi <span className="text-[#4285F4]">Google Ads</span>, Meta Ads, SEO & TikTok ile Karlı Büyütün</>
                 )}
               </h1>
 
@@ -1834,7 +1834,7 @@ export default function Home({ initialLang = 'tr' }) {
                       ? ['1,74M+ Klicks generiert', 'Search, Shopping & PMax', 'ROAS & CPA Optimierung']
                       : lang === 'en'
                       ? ['1.74M+ Clicks Generated', 'Search, Shopping & PMax', 'ROAS & CPA Optimization']
-                      : ['1,74M+ Üretilen Tıklama', 'Search, Shopping & PMax', 'Maksimum ROAS & Kârlılık']
+                      : ['1,74M+ Üretilen Tıklama', 'Search, Shopping & PMax', 'Maksimum ROAS & Karlılık']
                   },
                   'meta-ads': {
                     accent: '#1877F2',
