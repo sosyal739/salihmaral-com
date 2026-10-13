@@ -1988,6 +1988,42 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 descAfter: '26,18% (10 Jahre Schnitt)',
                 mult1: { val: '720+', label: lang === 'de' ? 'Kampagnen verwaltet' : lang === 'en' ? 'Campaigns Managed' : 'Yönetilen Kampanya' },
                 mult2: { val: '26,18%', label: 'Ø Interaktionsrate' }
+              },
+              {
+                tag: lang === 'de' ? 'Gesundheitstourismus · Kliniken' : lang === 'en' ? 'Health Tourism & Clinics · Global Leads' : 'Sağlık Turizmi & Klinikler · Global Hasta',
+                title: lang === 'de' ? 'Zahnkliniken & Chirurgen: 4,8x ROAS durch hochqualifizierte Anfragen' : lang === 'en' ? 'Dental & Aesthetic Clinics: 4.8x ROAS via High-Intent Patient Leads' : 'Diş & Estetik Klinikleri: Arama ve Çağrı Reklamlarıyla 4.8x ROAS',
+                panelHeader: 'Google Ads · Health Tourism UK & EU',
+                dateRange: '2024 – 2026',
+                boxes: [
+                  { label: 'Patient Leads', value: '3.420+', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Avg. CPL', value: '€34', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'Conversion', value: '28,4%', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'Target Markets', value: 'UK / DE / US', bg: 'bg-slate-800', text: 'text-white' }
+                ],
+                tagBefore: lang === 'de' ? '● VOR DER BETREUUNG' : lang === 'en' ? '● BEFORE MANAGEMENT' : '● BAŞLANGIÇ DURUMU',
+                descBefore: 'Lead-Kosten: €85+ / CPL',
+                tagAfter: lang === 'de' ? '● NACH SALIH MARAL' : lang === 'en' ? '● AFTER SALIH MARAL' : '● SALIH MARAL İLE',
+                descAfter: 'Lead-Kosten: €34 (-60% CPL)',
+                mult1: { val: '4,8x', label: lang === 'de' ? 'Klinik-ROAS' : lang === 'en' ? 'Clinic ROAS' : 'Klinik ROAS' },
+                mult2: { val: '-60%', label: lang === 'de' ? 'Niedrigere Lead-Kosten' : lang === 'en' ? 'Lower Patient Cost' : 'Düşük Hasta Maliyeti' }
+              },
+              {
+                tag: lang === 'de' ? 'E-Commerce · Rekord-Skalierung' : lang === 'en' ? 'E-Commerce · Record Scaling' : 'E-Ticaret · Rekor Büyüme',
+                title: lang === 'de' ? '11,04x (1.104%) Spitzen-ROAS durch PMax & Server-Side CAPI' : lang === 'en' ? '11.04x (1,104%) Peak ROAS via PMax & Server-Side CAPI' : 'PMax & Server-Side CAPI ile 11.04x (%1.104) Zirve ROAS Rekoru',
+                panelHeader: 'Google Ads · E-Commerce PMax Scaling',
+                dateRange: 'Performance Max',
+                boxes: [
+                  { label: 'Ad Spend', value: '€24.800', bg: 'bg-slate-800', text: 'text-white' },
+                  { label: 'Revenue', value: '€273.800', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'ROAS', value: '11.04x', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'CAPI Match', value: '96%', bg: 'bg-[#4285F4]', text: 'text-white' }
+                ],
+                tagBefore: lang === 'de' ? '● STANDARD PMAX' : lang === 'en' ? '● STANDARD PMAX' : '● KLASİK ALIŞVERİŞ',
+                descBefore: 'ROAS: ~2,4x',
+                tagAfter: lang === 'de' ? '● SALIH MARAL ENGINE' : lang === 'en' ? '● SALIH MARAL ENGINE' : '● SALIH MARAL İLE',
+                descAfter: 'ROAS: 11,04x (Net Rekor)',
+                mult1: { val: '11,04x', label: 'E-Commerce ROAS' },
+                mult2: { val: '+360%', label: lang === 'de' ? 'Umsatzwachstum' : lang === 'en' ? 'Revenue Growth' : 'Net Ciro Artışı' }
               }
             ]
           },
@@ -2564,6 +2600,170 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
           </section>
         )
       })()}
+
+      {/* Sektörel ROAS & Benchmark Karşılaştırma Tablosu (Google Ads Özel Bölümü) */}
+      {service === 'google-ads' && (
+        <section className="py-20 px-4 bg-slate-900 text-white relative overflow-hidden border-t border-slate-800">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-1.5 mb-4">
+                <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-400">
+                  {lang === 'en' ? 'Verified 2026 Industry Benchmarks' : 'Doğrulanmış 2026 Sektörel Benchmark Verileri'}
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight">
+                {lang === 'en' ? (
+                  <>Industry ROAS & <span className="text-[#4285F4]">Performance Benchmarks</span></>
+                ) : (
+                  <>Sektörel ROAS ve <span className="text-[#4285F4]">Büyüme Karşılaştırması</span></>
+                )}
+              </h2>
+              <p className="text-base md:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                {lang === 'en'
+                  ? 'Official Google Partner Salih Maral manages high-performance campaigns with zero conflict of interest. See average industry conversion costs and ROAS targets achieved under our flat-fee model.'
+                  : 'Resmi Google Partneri Salih Maral ile yönetilen kampanyalardan elde edilen canlı sektör ortalamaları, dönüşüm maliyetleri ve kârlılık benchmark tablosu.'}
+              </p>
+            </div>
+
+            {/* Benchmark Table */}
+            <div className="overflow-x-auto rounded-2xl border border-slate-700/80 bg-slate-800/60 shadow-2xl mb-12">
+              <table className="w-full text-left text-sm">
+                <thead className="bg-slate-800 text-slate-300 text-xs uppercase tracking-wider border-b border-slate-700 font-bold">
+                  <tr>
+                    <th className="py-4 px-6">{lang === 'en' ? 'Industry / Vertical' : 'Sektör / İş Kolu'}</th>
+                    <th className="py-4 px-6">{lang === 'en' ? 'Primary Campaign Strategy' : 'Öncelikli Kampanya Mimarisi'}</th>
+                    <th className="py-4 px-6">{lang === 'en' ? 'Target Benchmark ROAS / CPL' : 'Hedef ROAS / Lead Maliyeti'}</th>
+                    <th className="py-4 px-6">{lang === 'en' ? 'Salih Maral Advantage' : 'Salih Maral Rekabet Avantajı'}</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-700/60 text-slate-200">
+                  <tr className="hover:bg-slate-700/30 transition-colors">
+                    <td className="py-4 px-6 font-bold flex items-center gap-3">
+                      <span className="w-8 h-8 rounded-lg bg-blue-500/20 text-[#4285F4] flex items-center justify-center font-bold text-xs">🏥</span>
+                      <div>
+                        <div>{lang === 'en' ? 'Health Tourism & Medical Clinics' : 'Sağlık Turizmi & Klinikler'}</div>
+                        <span className="text-xs text-slate-400 font-normal">{lang === 'en' ? 'Dentistry, Hair Transplant, Aesthetics' : 'Diş Tedavisi, Saç Ekimi, Estetik'}</span>
+                      </div>
+                    </td>
+                    <td className="py-4 px-6 text-slate-300">
+                      {lang === 'en' ? 'High-Intent Search, Call Ads & UK/EU Geo Targeting' : 'Satın Alma Niyetli Arama, Çağrı Reklamları & Yurt Dışı Hedefleme'}
+                    </td>
+                    <td className="py-4 px-6">
+                      <span className="inline-block bg-emerald-500/20 text-emerald-400 font-bold px-2.5 py-1 rounded text-xs">
+                        {lang === 'en' ? '4.8x ROAS · €28 - €55 CPL' : '4.8x ROAS · 28$ - 55$ CPL'}
+                      </span>
+                    </td>
+                    <td className="py-4 px-6 text-xs text-slate-300">
+                      {lang === 'en' ? '100% Medical policy compliance, zero account suspensions' : 'Google Medikal ve Sağlık Reklam politikalarına %100 uyum, sıfır askı'}
+                    </td>
+                  </tr>
+
+                  <tr className="hover:bg-slate-700/30 transition-colors">
+                    <td className="py-4 px-6 font-bold flex items-center gap-3">
+                      <span className="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">🛍️</span>
+                      <div>
+                        <div>{lang === 'en' ? 'E-Commerce & DTC Brands' : 'E-Ticaret & Perakende Markaları'}</div>
+                        <span className="text-xs text-slate-400 font-normal">{lang === 'en' ? 'Fashion, Home Goods, Electronics, Cosmetics' : 'Moda, Ev Yaşam, Kozmetik, Aksesuar'}</span>
+                      </div>
+                    </td>
+                    <td className="py-4 px-6 text-slate-300">
+                      {lang === 'en' ? 'Performance Max (PMax), Dynamic Shopping & Server-Side CAPI' : 'Performance Max (PMax), Alışveriş Feed & Server-Side CAPI'}
+                    </td>
+                    <td className="py-4 px-6">
+                      <span className="inline-block bg-emerald-500/20 text-emerald-400 font-bold px-2.5 py-1 rounded text-xs">
+                        {lang === 'en' ? '5.2x - 11.04x ROAS (+42% AOV)' : '5.2x - 11.04x ROAS (+%42 Sepet Ortalaması)'}
+                      </span>
+                    </td>
+                    <td className="py-4 px-6 text-xs text-slate-300">
+                      {lang === 'en' ? 'Zero Merchant Center feed suspensions & negative keyword shields' : 'Merchant Center sıfır askı garantisi ve dinamik feed optimizasyonu'}
+                    </td>
+                  </tr>
+
+                  <tr className="hover:bg-slate-700/30 transition-colors">
+                    <td className="py-4 px-6 font-bold flex items-center gap-3">
+                      <span className="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">💼</span>
+                      <div>
+                        <div>{lang === 'en' ? 'B2B Corporate, SaaS & Exporters' : 'B2B Kurumsal, SaaS & İhracatçılar'}</div>
+                        <span className="text-xs text-slate-400 font-normal">{lang === 'en' ? 'Machinery, Enterprise Software, Consulting' : 'Makine İmalat, Kurumsal Yazılım, Toptan'}</span>
+                      </div>
+                    </td>
+                    <td className="py-4 px-6 text-slate-300">
+                      {lang === 'en' ? 'Commercial Search Intent & LinkedIn Matched Retargeting' : 'Ticari Arama Ağı & LinkedIn Retargeting Hibrit Huni'}
+                    </td>
+                    <td className="py-4 px-6">
+                      <span className="inline-block bg-emerald-500/20 text-emerald-400 font-bold px-2.5 py-1 rounded text-xs">
+                        {lang === 'en' ? '$45 - $110 CPL · 34% Close Rate' : '45$ - 110$ CPL · %34 Satış Kapanış'}
+                      </span>
+                    </td>
+                    <td className="py-4 px-6 text-xs text-slate-300">
+                      {lang === 'en' ? 'Surgical negative keyword lists prevent wasted consumer clicks' : 'B2C bireysel aramaları filtreleyen gelişmiş negatif kelime kalkanı'}
+                    </td>
+                  </tr>
+
+                  <tr className="hover:bg-slate-700/30 transition-colors">
+                    <td className="py-4 px-6 font-bold flex items-center gap-3">
+                      <span className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-xs">📍</span>
+                      <div>
+                        <div>{lang === 'en' ? 'Local Businesses & Professional Services' : 'Yerel İşletmeler & Zanaat (Handwerk)'}</div>
+                        <span className="text-xs text-slate-400 font-normal">{lang === 'en' ? 'Emergency Services, Law Firms, Clinics, Artisans' : 'Oto Tamir, Tesisat, Hukuk Bürosu, Ustalar'}</span>
+                      </div>
+                    </td>
+                    <td className="py-4 px-6 text-slate-300">
+                      {lang === 'en' ? 'Google Maps 3-Pack, Radius Geo-Targeting & Call Extensions' : 'Google Harita 3-Pack, Konum Yarıçapı & Telefon Çağrı Reklamları'}
+                    </td>
+                    <td className="py-4 px-6">
+                      <span className="inline-block bg-emerald-500/20 text-emerald-400 font-bold px-2.5 py-1 rounded text-xs">
+                        {lang === 'en' ? '€12 - €28 Cost Per Call' : '12$ - 28$ Doğrudan Telefon Araması'}
+                      </span>
+                    </td>
+                    <td className="py-4 px-6 text-xs text-slate-300">
+                      {lang === 'en' ? 'Immediate high-intent phone ringing with click fraud protection' : 'Telefonları çaldıran anlık sıcak aramalar ve sahte tıklama koruması'}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Model Comparison Box */}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-blue-950/60 to-slate-800/80 border border-blue-500/40">
+                <div className="flex items-center space-x-3 mb-3">
+                  <span className="w-7 h-7 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-xs">✓</span>
+                  <h3 className="text-xl font-bold text-white">
+                    {lang === 'en' ? 'Salih Maral Transparent Flat-Fee Retainer' : 'Salih Maral Şeffaf Sabit Fiyat (Fixpreis) Modeli'}
+                  </h3>
+                </div>
+                <p className="text-sm text-slate-300 mb-4">
+                  {lang === 'en'
+                    ? 'Zero percentage-of-ad-spend commission. Your ad spend is paid directly from your corporate card to Google. Our sole incentive is lowering your CPA and boosting your net profit.'
+                    : 'Yönetilen bütçeden %10-15 komisyon alınmaz. Reklam bütçeniz doğrudan şirket kartınızdan Google\'a ödenir. Tek hedefimiz bütçeyi şişirmek değil, CPA\'yı düşürüp kârınızı artırmaktır.'}
+                </p>
+                <div className="text-xs text-blue-300 font-semibold font-mono">
+                  {lang === 'en' ? '100% Predictable Costs · Zero Hidden Fees' : '%100 Bütçe Güvenliği · Sıfır Gizli Maliyet'}
+                </div>
+              </div>
+
+              <div className="p-6 md:p-8 rounded-2xl bg-slate-800/50 border border-red-500/30 opacity-80">
+                <div className="flex items-center space-x-3 mb-3">
+                  <span className="w-7 h-7 rounded-full bg-red-500/30 text-red-400 flex items-center justify-center font-bold text-xs">✕</span>
+                  <h3 className="text-xl font-bold text-slate-200">
+                    {lang === 'en' ? 'Traditional % of Ad Spend Agency Model' : 'Geleneksel Bütçe Yüzdesi (%15) Modeli'}
+                  </h3>
+                </div>
+                <p className="text-sm text-slate-400 mb-4">
+                  {lang === 'en'
+                    ? 'Agencies earn more when you spend more. This creates a severe conflict of interest where agencies inflate bids and broaden keywords to increase their own commissions.'
+                    : 'Siz ne kadar çok para harcarsanız ajans o kadar çok kazanır. Bu durum ajansın bütçeyi gereksiz yere artırmasına ve kalitesiz tıklamalar almasına neden olan ciddi bir çıkar çatışması yaratır.'}
+                </p>
+                <div className="text-xs text-red-400 font-semibold font-mono">
+                  {lang === 'en' ? 'Incentivizes Wasteful Ad Spend' : 'Gereksiz Bütçe Tüketimini Teşvik Eder'}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Comprehensive Service & Module Catalog (Oğuz Erol Style Interactive Accordion) */}
       <ServiceDetailModules 

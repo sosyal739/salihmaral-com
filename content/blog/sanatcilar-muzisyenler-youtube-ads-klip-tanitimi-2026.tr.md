@@ -89,3 +89,9 @@ coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1200
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.5rem auto;">Resmi Google Partner güvencesi ve 17+ yıllık sektör tecrübesiyle müzik kliplerinizi doğru dinleyici kitlesiyle buluşturun.</p>
   <a href="https://www.salihmaral.com/#contact" style="display: inline-block; background: #3b82f6; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);">Ücretsiz Ön Görüşme ve YouTube Strateji Analizi Alın ➔</a>
 </div>
+
+<div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">
+  <h3 class="text-xl font-bold text-white mb-2">💼 Reklam Bütçenizi Kârlı Bir Ciro Motoruna Dönüştürün</h3>
+  <p class="text-slate-300 mb-4">Şeffaf sabit fiyat (Fixpreis) modeli ve 17+ yıllık tecrübeyle sıfır komisyon çatışması. Yüksek ROAS odaklı <a href="/tr/hizmetler/google-ads" class="text-[#4285F4] underline font-semibold">Google Ads Yönetimi</a> ve <a href="/tr/hizmetler/server-side-tracking" class="text-blue-300 underline font-semibold">Server-Side Tracking Altyapısı</a> ile işletmenizi büyütün.</p>
+  <a href="/#contact" class="inline-block bg-[#4285F4] hover:bg-blue-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Ücretsiz Büyüme Analizi Alın →</a>
+</div>

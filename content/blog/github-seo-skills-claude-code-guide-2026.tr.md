@@ -119,3 +119,8 @@ python .agents/skills/maral-seo/scripts/maral_audit.py https://www.salihmaral.co
   <a href="https://www.salihmaral.com/#contact" target="_blank" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.4);">Ücretsiz SEO & Büyüme Analizi Alın ➔</a>
 </div>
 
+<div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-emerald-500/30">
+  <h3 class="text-xl font-bold text-white mb-2">🚀 Arama Sonuçlarında ve Yapay Zekada 1. Sıraya Yükselin</h3>
+  <p class="text-slate-300 mb-4">Google Haritalar, organik sıralamalar ve Perplexity/ChatGPT yapay zeka arama motorlarında markanızı otorite yapın. Resmi partner güvencesiyle <a href="/tr/hizmetler/seo" class="text-emerald-400 underline font-semibold">SEO ve Yapay Zeka Arama Görünürlüğü (GEO)</a> danışmanlığımızı inceleyin veya reklam dönüşümlerinizi <a href="/tr/hizmetler/google-ads" class="text-blue-400 underline font-semibold">Google Ads Danışmanlığı</a> ile katlayın.</p>
+  <a href="/#contact" class="inline-block bg-[#34A853] hover:bg-emerald-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Organik Büyüme Analizi Başlatın →</a>
+</div>

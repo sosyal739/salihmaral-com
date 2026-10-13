@@ -64,4 +64,9 @@ coverImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=1200
 
         <h2>🚀 Sonuç</h2>
         <p>3. taraf verilerin ölümü bir kriz değil, pazarlamayı daha dürüst ve sağlam temellere oturtmak için bir fırsattır. Hemen bir CRM kurun ve kullanıcı verilerinizi (izinli olarak) biriktirmeye başlayın.</p>
-      
+
+<div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">
+  <h3 class="text-xl font-bold text-white mb-2">🎯 Kayıpsız Dönüşüm Takibi & Server-Side Mimari</h3>
+  <p class="text-slate-300 mb-4">iOS kısıtlamalarını ve ad-blocker engellerini aşarak reklam bütçenizi koruyun. 17+ yıllık uzmanlıkla anahtar teslim <a href="/tr/hizmetler/server-side-tracking" class="text-[#4285F4] underline font-semibold">Server-Side Tracking ve Meta CAPI Kurulumu</a> hizmetimizden yararlanın.</p>
+  <a href="/#contact" class="inline-block bg-[#4285F4] hover:bg-blue-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Ücretsiz Ölçümleme Denetimi Alın →</a>
+</div>

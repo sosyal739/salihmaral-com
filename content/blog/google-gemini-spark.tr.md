@@ -64,4 +64,9 @@ coverImage: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=
 
         <h2>🚀 Sonuç</h2>
         <p>Gemini Spark, üretkenlik kavramını yeniden tanımlıyor. Yapay zeka ile sadece sohbet etmeyi bırakın ve onu bir çalışanınız gibi iş süreçlerinize entegre etmeye başlayın.</p>
-      
+
+<div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-emerald-500/30">
+  <h3 class="text-xl font-bold text-white mb-2">🚀 Arama Sonuçlarında ve Yapay Zekada 1. Sıraya Yükselin</h3>
+  <p class="text-slate-300 mb-4">Google Haritalar, organik sıralamalar ve Perplexity/ChatGPT yapay zeka arama motorlarında markanızı otorite yapın. Resmi partner güvencesiyle <a href="/tr/hizmetler/seo" class="text-emerald-400 underline font-semibold">SEO ve Yapay Zeka Arama Görünürlüğü (GEO)</a> danışmanlığımızı inceleyin veya reklam dönüşümlerinizi <a href="/tr/hizmetler/google-ads" class="text-blue-400 underline font-semibold">Google Ads Danışmanlığı</a> ile katlayın.</p>
+  <a href="/#contact" class="inline-block bg-[#34A853] hover:bg-emerald-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Organik Büyüme Analizi Başlatın →</a>
+</div>

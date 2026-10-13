@@ -79,3 +79,9 @@ coverImage: "https://images.unsplash.com/photo-1557838923-2985c318be48?w=1200&h=
 <p>Avoid percentage-of-spend models where agencies profit from higher ad budgets. With Salih Maral's <strong>transparent monthly flat-fee model (Fixpreis from €590/month)</strong>, your interests are completely aligned with performance.</p>
 
 <p>Estimate your potential returns with our interactive <a href="/en/standorte/koeln">Google Ads Budget Calculator</a> or explore our B2B case studies in <a href="/blog/google-ads-b2b-agentur-stuttgart-maschinenbau-2026">Stuttgart & Baden-Württemberg</a>.</p>
+
+<div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">
+  <h3 class="text-xl font-bold text-white mb-2">💼 Turn Your Ad Spend into Predictable Revenue</h3>
+  <p class="text-slate-300 mb-4">Operate with total transparency on a flat-fee retainer with 17+ years of Senior Google Partner expertise. Explore our <a href="/en/services/google-ads" class="text-[#4285F4] underline font-semibold">Google Ads Management Services</a> and deploy <a href="/en/services/server-side-tracking" class="text-blue-300 underline font-semibold">Server-Side Tracking Pipelines</a> to maximize ROAS.</p>
+  <a href="/en/#contact" class="inline-block bg-[#4285F4] hover:bg-blue-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Claim Free Growth Strategy →</a>
+</div>

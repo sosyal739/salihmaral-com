@@ -95,3 +95,8 @@ coverImage: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200
   <a href="https://www.salihmaral.com/en#contact" target="_blank" style="display: inline-block; background: #1877F2; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(24, 119, 242, 0.4);">Request Free Multi-Channel ROAS Audit ➔</a>
 </div>
 
+<div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">
+  <h3 class="text-xl font-bold text-white mb-2">💼 Turn Your Ad Spend into Predictable Revenue</h3>
+  <p class="text-slate-300 mb-4">Operate with total transparency on a flat-fee retainer with 17+ years of Senior Google Partner expertise. Explore our <a href="/en/services/google-ads" class="text-[#4285F4] underline font-semibold">Google Ads Management Services</a> and deploy <a href="/en/services/server-side-tracking" class="text-blue-300 underline font-semibold">Server-Side Tracking Pipelines</a> to maximize ROAS.</p>
+  <a href="/en/#contact" class="inline-block bg-[#4285F4] hover:bg-blue-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Claim Free Growth Strategy →</a>
+</div>

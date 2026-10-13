@@ -111,4 +111,8 @@ coverImage: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1200
   </ul>
 </div>
 
-
+<div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">
+  <h3 class="text-xl font-bold text-white mb-2">🎯 Enterprise Telemetry & Server-Side Architecture</h3>
+  <p class="text-slate-300 mb-4">Overcome iOS privacy degradation and content blockers with deterministic attribution. Explore our certified <a href="/en/services/server-side-tracking" class="text-[#4285F4] underline font-semibold">Server-Side GTM & Meta CAPI Infrastructure</a> to recover up to 40% of lost conversion telemetry.</p>
+  <a href="/en/#contact" class="inline-block bg-[#4285F4] hover:bg-blue-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Request Tracking Audit →</a>
+</div>

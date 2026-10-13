@@ -58,3 +58,9 @@ coverImage: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=1200
   <p style="color: #475569; font-size: 1.05rem; max-width: 650px; margin: 0 auto 1.5rem auto;">Let us audit your current campaigns and calculate a predictable growth forecast for your business.</p>
   <a href="https://www.salihmaral.com/en#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.5rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.4);">Request Free Account Audit & Quote ➔</a>
 </div>
+
+<div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">
+  <h3 class="text-xl font-bold text-white mb-2">💼 Turn Your Ad Spend into Predictable Revenue</h3>
+  <p class="text-slate-300 mb-4">Operate with total transparency on a flat-fee retainer with 17+ years of Senior Google Partner expertise. Explore our <a href="/en/services/google-ads" class="text-[#4285F4] underline font-semibold">Google Ads Management Services</a> and deploy <a href="/en/services/server-side-tracking" class="text-blue-300 underline font-semibold">Server-Side Tracking Pipelines</a> to maximize ROAS.</p>
+  <a href="/en/#contact" class="inline-block bg-[#4285F4] hover:bg-blue-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Claim Free Growth Strategy →</a>
+</div>

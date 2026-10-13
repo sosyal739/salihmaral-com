@@ -111,4 +111,8 @@ coverImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200
   </ul>
 </div>
 
-
+<div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-emerald-500/30">
+  <h3 class="text-xl font-bold text-white mb-2">🚀 Dominate Search & AI Engine Recommendations</h3>
+  <p class="text-slate-300 mb-4">Capture authoritative citations across Google Search, Maps, and AI platforms (Perplexity, ChatGPT, Claude). Learn more about our <a href="/en/services/seo" class="text-emerald-400 underline font-semibold">SEO & Generative Engine Optimization (GEO)</a> or scale transactional inbound with <a href="/en/services/google-ads" class="text-blue-400 underline font-semibold">Google Ads Management</a>.</p>
+  <a href="/en/#contact" class="inline-block bg-[#34A853] hover:bg-emerald-600 text-white font-bold py-2.5 px-6 rounded-xl transition-colors">Start Organic Growth Audit →</a>
+</div>
