@@ -6,7 +6,7 @@ excerpt: "E-ticaret siteleri için doğru kampanya modelini seçin. Resmi Google
 category: "Google Shopping & E-Ticaret"
 date: "2026-10-11"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1556740758-90de374c12ad?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

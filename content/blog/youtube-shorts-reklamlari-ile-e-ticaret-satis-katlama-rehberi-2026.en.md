@@ -6,7 +6,7 @@ excerpt: "Capture high-intent mobile shoppers with short-form vertical video ads
 category: "YouTube Ads & Video"
 date: "2026-10-11"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

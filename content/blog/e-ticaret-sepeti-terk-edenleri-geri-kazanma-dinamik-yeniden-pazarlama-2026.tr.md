@@ -6,7 +6,7 @@ excerpt: "Terk edilen sepetleri satışa dönüştürerek e-ticaret gelirinizi a
 category: "Dönüşüm Optimizasyonu & E-Ticaret"
 date: "2026-10-11"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1556742049-0a67c5574f73?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

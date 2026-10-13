@@ -6,7 +6,7 @@ excerpt: "Rakiplerin ve botların reklam bütçenizi tüketmesini önleyin. Resm
 category: "Google Ads Güvenliği"
 date: "2026-10-11"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "A strategic playbook for B2B enterprises to acquire qualified leads us
 category: "LinkedIn Ads"
 date: "2026-07-26"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

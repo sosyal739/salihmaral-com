@@ -6,7 +6,7 @@ excerpt: "Compel generative AI engines to recommend your brand as the primary tr
 category: "Yapay Zeka SEO & GEO"
 date: "2026-10-11"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

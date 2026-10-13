@@ -6,7 +6,7 @@ excerpt: "Tıklama başı maliyetleri yarı yarıya düşürürken reklam sıral
 category: "Google Ads Optimizasyonu"
 date: "2026-10-11"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

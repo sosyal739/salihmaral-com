@@ -58,7 +58,7 @@ const translations = {
     readMore: 'Devamını Oku',
     readTime: 'dk okuma',
     featured: '🔥 ÖNE ÇIKAN BAŞ MAKALE',
-    verified: 'Salih Maral Tarafından İnceledi & Doğrulandı',
+    verified: 'Salih Maral Tarafından İncelendi & Doğrulandı',
     topicHubs: 'TOPIC HUBS (KONU MERKEZLERİ)',
     footer: '© 2026 Salih Maral. Tüm hakları saklıdır.',
     nav: {
@@ -279,11 +279,11 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
 
     const catLower = (post.category || '').toLowerCase()
     const titleLower = (post.title || '').toLowerCase()
-    if (selectedCategory === 'google') return (catLower.includes('google') || titleLower.includes('google')) && !isNgo && !isDeBiz
-    if (selectedCategory === 'meta') return (catLower.includes('meta') || titleLower.includes('meta')) && !isNgo && !isDeBiz
-    if (selectedCategory === 'seo') return (catLower.includes('seo') || catLower.includes('geo') || titleLower.includes('seo')) && !isNgo && !isDeBiz
-    if (selectedCategory === 'ai') return (catLower.includes('yapay') || catLower.includes('künstliche') || catLower.includes('artificial') || titleLower.includes('ai') || titleLower.includes('gemini')) && !isNgo && !isDeBiz
-    if (selectedCategory === 'tracking') return (catLower.includes('tracking') || titleLower.includes('tracking') || titleLower.includes('capi')) && !isNgo && !isDeBiz
+    if (selectedCategory === 'google') return (catLower.includes('google') || titleLower.includes('google')) && !isNgo
+    if (selectedCategory === 'meta') return (catLower.includes('meta') || titleLower.includes('meta')) && !isNgo
+    if (selectedCategory === 'seo') return (catLower.includes('seo') || catLower.includes('geo') || titleLower.includes('seo')) && !isNgo
+    if (selectedCategory === 'ai') return (catLower.includes('yapay') || catLower.includes('künstliche') || catLower.includes('artificial') || titleLower.includes('ai') || titleLower.includes('gemini')) && !isNgo
+    if (selectedCategory === 'tracking') return (catLower.includes('tracking') || titleLower.includes('tracking') || titleLower.includes('capi')) && !isNgo
     return true
   })
 
@@ -346,7 +346,7 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
               </a>
               <span className="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-200/70 text-[11px] font-semibold text-blue-700">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
-                Offizieller Google Partner
+                {lang === 'en' ? 'Official Google Partner' : 'Resmi Google Partneri'}
               </span>
             </div>
 
@@ -624,7 +624,7 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
                       {/* E-E-A-T Verified Small Badge */}
                       <div className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700 mb-2.5">
                         <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                        <span>Salih Maral Verifiziert</span>
+                        <span>{lang === 'en' ? 'Verified by Salih Maral' : 'Salih Maral Doğrulandı'}</span>
                       </div>
 
                       <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#4285F4] transition-colors line-clamp-2 leading-snug">

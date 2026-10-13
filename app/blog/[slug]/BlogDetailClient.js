@@ -233,7 +233,7 @@ export default function BlogDetailClient({ initialPost, initialLang = 'tr', rela
               </a>
               <span className="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-200/70 text-[11px] font-semibold text-blue-700">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
-                Offizieller Google Partner
+                {lang === 'en' ? 'Official Google Partner' : 'Resmi Google Partneri'}
               </span>
             </div>
             
@@ -386,7 +386,7 @@ export default function BlogDetailClient({ initialPost, initialLang = 'tr', rela
             </Badge>
             <div className="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-semibold">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>{lang === 'tr' ? 'Salih Maral Tarafından İnceledi & Doğrulandı' : lang === 'de' ? 'Von Salih Maral geprüft & verifiziert' : 'Reviewed & Verified by Salih Maral'}</span>
+              <span>{lang === 'tr' ? 'Salih Maral Tarafından İncelendi & Doğrulandı' : 'Reviewed & Verified by Salih Maral'}</span>
             </div>
           </div>
 
@@ -403,7 +403,7 @@ export default function BlogDetailClient({ initialPost, initialLang = 'tr', rela
               />
               <div>
                 <p className="text-xs font-bold text-slate-900">Salih Maral</p>
-                <p className="text-[11px] text-slate-500 font-medium">Google Ads & SEO Experte (17+ Jahre Erfahrung)</p>
+                <p className="text-[11px] text-slate-500 font-medium">{lang === 'en' ? 'Google Ads & SEO Expert (17+ Years Experience)' : 'Google Ads & SEO Uzmanı (17+ Yıl Deneyim)'}</p>
               </div>
             </div>
             <div className="flex items-center gap-5 text-xs text-slate-500">
