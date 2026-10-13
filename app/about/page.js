@@ -15,7 +15,7 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO & GEO Optimierung', slug: 'seo' },
-    { title: 'Bewertungsmanagement', slug: 'bewertungsmanagement' }
+    { title: 'Schlüsselfertige Website & CMS', slug: 'web-sitesi-tasarimi' }
   ],
   tr: [
     { title: 'Google Ads Yönetimi', slug: 'google-ads' },
@@ -25,7 +25,7 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO & GEO Optimizasyonu', slug: 'seo' },
-    { title: 'Yorum Yönetimi', slug: 'yorum-yonetimi' }
+    { title: 'Anahtar Teslim Web Sitesi', slug: 'web-sitesi-tasarimi' }
   ],
   en: [
     { title: 'Google Ads Management', slug: 'google-ads' },
@@ -35,15 +35,15 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO & GEO Services', slug: 'seo' },
-    { title: 'Review Management', slug: 'review-management' }
+    { title: 'Turnkey Web Design & CMS', slug: 'web-sitesi-tasarimi' }
   ]
 }
 
 const getLocalizedServiceUrl = (targetLang, serviceSlug) => {
   const pathSegment = targetLang === 'de' ? 'dienstleistungen' : targetLang === 'en' ? 'services' : 'hizmetler'
   let slug = serviceSlug
-  if (serviceSlug === 'bewertungsmanagement' || serviceSlug === 'yorum-yonetimi' || serviceSlug === 'review-management') {
-    slug = targetLang === 'de' ? 'bewertungsmanagement' : targetLang === 'en' ? 'review-management' : 'yorum-yonetimi'
+  if (serviceSlug === 'bewertungsmanagement' || serviceSlug === 'yorum-yonetimi' || serviceSlug === 'review-management' || serviceSlug === 'web-sitesi-tasarimi' || serviceSlug === 'web-design') {
+    slug = targetLang === 'en' ? 'web-design' : 'web-sitesi-tasarimi'
   }
   return `/${targetLang}/${pathSegment}/${slug}`
 }
@@ -74,9 +74,9 @@ const translations = {
         'Google Ads Management (Search, Display, Shopping, YouTube)',
         'Meta Ads Management (Facebook & Instagram)',
         'TikTok & X (Twitter) Advertising',
-        'Suchmaschinenoptimierung (SEO)',
-        'Google Bewertungsmanagement',
-        'Conversion-Optimierung & Webanalyse'
+        'Suchmaschinenoptimierung (SEO & GEO)',
+        'Schlüsselfertiges Webdesign (Next.js 16 & Admin CMS)',
+        'Conversion-Optimierung & Server-Side Tracking'
       ]
     },
     values: {
@@ -138,7 +138,7 @@ const translations = {
         'Meta Ads Yönetimi (Facebook & Instagram)',
         'TikTok & X (Twitter) Reklamları',
         'Arama Motoru Optimizasyonu (SEO & GEO)',
-        'Google Yorum Yönetimi & İtibar Savunması',
+        'Anahtar Teslim Web Sitesi (Next.js 16, Admin Paneli & Sınırsız Revize)',
         'Server-Side Tracking (sGTM & Meta CAPI)'
       ]
     },
@@ -201,7 +201,7 @@ const translations = {
         'Meta Ads Management (Facebook & Instagram)',
         'TikTok & X (Twitter) Advertising',
         'Search Engine Optimization (SEO & GEO)',
-        'Google Review Management & Reputation',
+        'Turnkey Web Design & Development (Next.js 16, Custom CMS & Unlimited Revisions)',
         'Server-Side Tracking (sGTM & Meta CAPI)'
       ]
     },

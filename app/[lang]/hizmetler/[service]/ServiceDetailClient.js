@@ -24,7 +24,7 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Hizmetleri', slug: 'seo' },
-    { title: 'Olumsuz Yorum Yönetimi', slug: 'yorum-yonetimi' }
+    { title: 'Anahtar Teslim Web Sitesi', slug: 'web-sitesi-tasarimi' }
   ],
   de: [
     { title: 'Google Ads Management', slug: 'google-ads' },
@@ -34,7 +34,7 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Dienstleistungen', slug: 'seo' },
-    { title: 'Bewertungsmanagement', slug: 'yorum-yonetimi' }
+    { title: 'Schlüsselfertiges Webdesign', slug: 'web-sitesi-tasarimi' }
   ],
   en: [
     { title: 'Google Ads Management', slug: 'google-ads' },
@@ -44,7 +44,7 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Services', slug: 'seo' },
-    { title: 'Review Management', slug: 'yorum-yonetimi' }
+    { title: 'Turnkey Web Development', slug: 'web-sitesi-tasarimi' }
   ]
 }
 
@@ -52,21 +52,20 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
   const router = useRouter()
   const params = useParams()
   const rawService = params?.service || initialService
-  const service = (rawService === 'review-management' || rawService === 'bewertungsmanagement')
-    ? 'yorum-yonetimi'
+  const service = (rawService === 'review-management' || rawService === 'bewertungsmanagement' || rawService === 'yorum-yonetimi' || rawService === 'web-design')
+    ? 'web-sitesi-tasarimi'
     : rawService
   const urlLang = params?.lang || initialLang
-  const lang = urlLang && ['de', 'en', 'tr'].includes(urlLang) ? urlLang : 'de'
+  const lang = urlLang && ['de', 'en', 'tr'].includes(urlLang) ? urlLang : 'tr'
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
 
   // Helper: get localized URL path for a given language and service slug
   const getLocalizedServiceUrl = (targetLang, serviceSlug) => {
     const pathSegment = targetLang === 'de' ? 'dienstleistungen' : targetLang === 'en' ? 'services' : 'hizmetler'
-    // Map yorum-yonetimi to localized slug
     let localizedSlug = serviceSlug
-    if (serviceSlug === 'yorum-yonetimi') {
-      localizedSlug = targetLang === 'de' ? 'bewertungsmanagement' : targetLang === 'en' ? 'review-management' : 'yorum-yonetimi'
+    if (serviceSlug === 'web-sitesi-tasarimi' || serviceSlug === 'yorum-yonetimi') {
+      localizedSlug = targetLang === 'en' ? 'web-design' : 'web-sitesi-tasarimi'
     }
     return `/${targetLang}/${pathSegment}/${localizedSlug}`
   }
@@ -856,107 +855,105 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
       ]
     },
 
-    'yorum-yonetimi': {
-      title: lang === 'de' ? 'Bewertungsmanagement' : lang === 'en' ? 'Review Management' : 'Olumsuz Yorum Yönetimi',
-      subtitle: lang === 'de'
-        ? '4.9★ Google Reputation aufbauen — unfaire Bewertungen rechtssicher entfernen.'
-        : lang === 'en'
-        ? 'Build a 4.9★ Google reputation — legally remove unfair reviews.'
-        : '4.9★ Google itibarı oluşturun — haksız olumsuz yorumları yasal güvenceyle kaldırın.',
-      description: lang === 'de'
-        ? 'Wir schützen Ihren guten Ruf: Mit rechtssicherer Entfernung von unfairen Google- und Trustpilot-Bewertungen sowie automatisierten Bewertungskampagnen steigern wir Ihre Durchschnittsbewertung und Ihren Kundenstrom.'
-        : lang === 'en'
-        ? 'Protect and amplify your brand reputation: With legally compliant removal of fake Google/Trustpilot reviews and automated review generation funnels, we elevate your rating and local customer trust.'
-        : 'İtibarınızı koruyor ve güçlendiriyoruz: Google Maps ve Trustpilot üzerindeki haksız/sahte yorumların yasal güvenceyle kaldırılması ve otomatik yorum toplama sistemleriyle puanınızı zirveye taşıyoruz.',
-      badge: lang === 'de' ? 'Reputationsmanagement-Experte' : lang === 'en' ? 'Reputation Management Expert' : 'İtibar Yönetimi Uzmanı',
-      primaryColor: '#EA4335',
-      secondaryColor: '#FBBC04',
+    'web-sitesi-tasarimi': {
+      title: lang === 'en' ? 'Turnkey Web Development & SEO Architecture' : 'Anahtar Teslim Web Sitesi & Kurumsal Tasarım',
+      subtitle: lang === 'en'
+        ? 'State-of-the-art Next.js 16 equipped — 100/100 SEO & GEO ready, custom Admin Panel, and unlimited revisions.'
+        : 'Son model Next.js 16 donanımlı — 100/100 SEO & GEO uyumlu, gelişmiş Admin Panelli ve sınırsız revize garantili.',
+      description: lang === 'en'
+        ? 'Forget slow, vulnerable template websites that waste your ad budget. We engineer custom, high-converting corporate websites with Next.js 16, 100/100 Google Lighthouse performance, an easy-to-use Admin Panel (CMS), full GA4/CAPI tracking, and unlimited design revisions until you are 100% satisfied.'
+        : 'Yavaş açılan, reklam bütçenizi boşa harcayan eski nesil hazır şablonları unutun. İşletmeniz için son model Next.js 16 teknolojisiyle, 100/100 Google hız ve SEO uyumlu, kod bilmeden her yeri yönetebileceğiniz gelişmiş Admin Panelli ve %100 memnun kalana kadar sınırsız revize garantili anahtar teslim web siteleri kuruyoruz.',
+      badge: lang === 'en' ? 'Next.js 16 & 100/100 SEO Architecture' : 'Son Model Donanım & Sınırsız Revize',
+      primaryColor: '#6366F1',
+      secondaryColor: '#4285F4',
       accentColor: '#34A853',
-      gradientFrom: '#EA4335',
-      gradientTo: '#FBBC04',
+      gradientFrom: '#6366F1',
+      gradientTo: '#4285F4',
       icon: (
-        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="#EA4335" strokeWidth="2">
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="2">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+          <line x1="8" y1="21" x2="16" y2="21"/>
+          <line x1="12" y1="17" x2="12" y2="21"/>
         </svg>
       ),
       stats: [
-        { value: '4.9★', label: lang === 'de' ? 'Ziel-Bewertung' : lang === 'en' ? 'Target Rating' : 'Hedef Ortalama Puan', trend: lang === 'de' ? 'Google & Trustpilot' : lang === 'en' ? 'Google & Trustpilot' : 'Google & Trustpilot' },
-        { value: '%95', label: lang === 'de' ? 'Erfolgsquote' : lang === 'en' ? 'Success Rate' : 'Kaldırma Başarısı', trend: lang === 'de' ? 'Unberechtigte Rezensionen' : lang === 'en' ? 'Unjustified reviews' : 'Haksız Yorumlar' },
-        { value: '+320%', label: lang === 'de' ? 'Mehr Kundenanrufe' : lang === 'en' ? 'More Customer Calls' : 'Daha Fazla Müşteri Araması', trend: lang === 'de' ? 'Durch 4.8+ Sterne' : lang === 'en' ? 'Through 4.8+ stars' : '4.8+ Yıldız Etkisi' },
-        { value: '24-72h', label: lang === 'de' ? 'Erste Reaktion' : lang === 'en' ? 'First Response' : 'İlk Müdahale Süresi', trend: lang === 'de' ? 'Express-Bearbeitung' : lang === 'en' ? 'Express processing' : 'Ekspres İşlem' }
+        { value: '100/100', label: lang === 'en' ? 'Google Lighthouse Score' : 'Google Hız & SEO Skoru', trend: lang === 'en' ? '< 0.8s Load Time' : '< 0.8 Sn Açılış Hızı' },
+        { value: lang === 'en' ? 'Unlimited' : 'Sınırsız', label: lang === 'en' ? 'Design Revisions' : 'Revize Garantisi', trend: lang === 'en' ? '100% Satisfaction' : '%100 Memnuniyet Odaklı' },
+        { value: 'Admin Panel', label: lang === 'en' ? 'Easy Content CMS' : 'Kolay Yönetim Paneli', trend: lang === 'en' ? 'No-Code Management' : 'Kod Bilmeden Yönetim' },
+        { value: 'Full Setup', label: lang === 'en' ? 'SEO, GEO & CAPI Ready' : 'SEO, GEO & Reklama Hazır', trend: lang === 'en' ? 'Turnkey Delivery' : 'Anahtar Teslim Kurulum' }
       ],
       features: [
         {
-          title: lang === 'de' ? 'Google Bewertungsentfernung' : lang === 'en' ? 'Google Review Removal' : 'Google Yorum Kaldırma',
-          subtitle: 'Google Maps & Business',
-          desc: lang === 'de' ? 'Wir identifizieren Bewertungen, die gegen Google-Richtlinien verstoßen, und beantragen deren Entfernung.' : lang === 'en' ? 'We identify reviews that violate Google policies and apply for their removal.' : 'Google politikalarına aykırı yorumları tespit edip kaldırma başvurusu yapıyoruz.',
-          icon: MapPin,
-          items: lang === 'de' ? ['Erkennung gefälschter Bewertungen', 'Analyse von Richtlinienverstößen', 'Offizielle Beschwerde', 'Nachverfolgung'] : lang === 'en' ? ['Fake review detection', 'Policy violation analysis', 'Official complaint', 'Follow-up process'] : ['Sahte yorum tespiti', 'Politika ihlali analizi', 'Resmi başvuru', 'Takip süreci']
+          title: lang === 'en' ? 'Advanced Admin Panel (CMS)' : 'Gelişmiş Admin Paneli & Kolay Yönetim',
+          subtitle: lang === 'en' ? '100% Independent Control' : 'Kod Bilmeden Tam Kontrol',
+          desc: lang === 'en' ? 'Update pages, blog posts, services, images, and contact details effortlessly from your phone or computer with a clean custom admin panel.' : 'Yazılımcıya bağımlı kalmadan tüm yazılarınızı, hizmetlerinizi, görsellerinizi ve iletişim bilgilerinizi telefon veya bilgisayardan saniyeler içinde güncelleyin.',
+          icon: Cpu,
+          items: lang === 'en' ? ['User-friendly Turkish/English dashboard', 'One-click blog & service publishing', 'Image & media optimization', 'Role & security protection'] : ['Kullanıcı dostu Türkçe/İngilizce panel', 'Tek tıkla blog ve hizmet ekleme', 'Otomatik görsel sıkıştırma (WebP)', 'Yüksek güvenlikli yönetim ekranı']
         },
         {
-          title: lang === 'de' ? 'Trustpilot Management' : lang === 'en' ? 'Trustpilot Management' : 'Trustpilot Yönetimi',
-          subtitle: lang === 'de' ? 'E-Commerce Reputation' : lang === 'en' ? 'E-Commerce Reputation' : 'E-Ticaret İtibarı',
-          desc: lang === 'de' ? 'Wir entfernen unfaire Bewertungen auf Trustpilot und verwalten Ihre Reputation.' : lang === 'en' ? 'We remove unfair reviews on Trustpilot and manage your reputation.' : 'Trustpilot\'ta haksız yorumları kaldırıyor, itibarınızı yönetiyoruz.',
-          icon: Star,
-          items: lang === 'de' ? ['Bewertungsanalyse', 'Entfernungsantrag', 'Antwortstrategie', 'Bewertungsverbesserung'] : lang === 'en' ? ['Review analysis', 'Removal request', 'Response strategy', 'Rating improvement'] : ['Yorum analizi', 'Kaldırma başvurusu', 'Yanıt stratejisi', 'Puan iyileştirme']
+          title: lang === 'en' ? '100/100 Technical SEO & GEO Equipment' : '100/100 Teknik SEO & Yapay Zeka (GEO) Donanımı',
+          subtitle: 'Google, ChatGPT & Perplexity',
+          desc: lang === 'en' ? 'Built from the ground up to rank #1 on Google and get cited by AI search engines like ChatGPT, Perplexity, and Gemini.' : 'Siteniz sadece güzel görünmekle kalmaz; Google ilk sayfa ve yapay zeka arama motorlarında (ChatGPT, Perplexity, Gemini) çıkacak şekilde tam donanımlı teslim edilir.',
+          icon: Search,
+          items: lang === 'en' ? ['Server-Side Rendering (SSR) metadata', 'Automated XML Sitemap & llms.txt', 'Schema.org JSON-LD rich snippets', '100/100 Core Web Vitals speed'] : ['Sunucu taraflı (SSR) tam SEO mimarisi', 'Otomatik Sitemap.xml ve llms.txt', 'Schema.org zengin sonuç (JSON-LD) kodları', '100/100 Google PageSpeed & Mobil uyum']
         },
         {
-          title: lang === 'de' ? 'Social Media Reputation' : lang === 'en' ? 'Social Media Reputation' : 'Sosyal Medya İtibarı',
-          subtitle: 'Facebook, Instagram',
-          desc: lang === 'de' ? 'Wir verwalten negative Inhalte und Kommentare auf Social-Media-Plattformen.' : lang === 'en' ? 'We manage negative content and comments on social media platforms.' : 'Sosyal medya platformlarındaki olumsuz içerik ve yorumları yönetiyoruz.',
-          icon: Users,
-          items: lang === 'de' ? ['Kommentarmoderation', 'Krisenmanagement', 'Community Management', 'Markenfürsprache'] : lang === 'en' ? ['Comment moderation', 'Crisis management', 'Community management', 'Brand advocacy'] : ['Yorum moderasyonu', 'Kriz yönetimi', 'Topluluk yönetimi', 'Marka savunuculuğu']
+          title: lang === 'en' ? 'Unlimited Revisions Guarantee' : 'Sınırsız Revize & Memnuniyet Garantisi',
+          subtitle: lang === 'en' ? 'Tailored to Your Brand' : 'İstediğiniz Mükemmelliğe Kadar',
+          desc: lang === 'en' ? 'We do not limit your feedback. We refine the layout, colors, typography, and modules until the website matches your exact vision.' : 'Kalıplaşmış sınırlamalar yok; tasarım, renkler, yerleşim ve modüller tam olarak sizin içinize sinene ve onayınızı alana kadar sınırsız revize hakkı sunuyoruz.',
+          icon: Sparkles,
+          items: lang === 'en' ? ['Custom UI/UX design for your industry', 'Unlimited layout & visual revisions', 'Mobile-first responsive perfection', 'Interactive conversion widgets'] : ['Sektörünüze özel prestijli tasarım', 'Tasarım sürecinde sınırsız revize hakkı', 'Kusursuz mobil ve tablet görünümü', 'Modern animasyonlar ve dönüşüm araçları']
         },
         {
-          title: lang === 'de' ? 'Wettbewerber-Sabotage-Erkennung' : lang === 'en' ? 'Competitor Sabotage Detection' : 'Rakip Sabotajı Tespiti',
-          subtitle: lang === 'de' ? 'Analyse gefälschter Bewertungen' : lang === 'en' ? 'Fake Review Analysis' : 'Sahte Yorum Analizi',
-          desc: lang === 'de' ? 'Wir erkennen und dokumentieren organisierte Angriffe Ihrer Wettbewerber.' : lang === 'en' ? 'We detect and document organized attacks from your competitors.' : 'Rakiplerinizin organize saldırılarını tespit edip kanıtlıyoruz.',
-          icon: AlertTriangle,
-          items: lang === 'de' ? ['Musteranalyse', 'IP-Erkennung', 'Beweissammlung', 'Rechtliche Unterstützung'] : lang === 'en' ? ['Pattern analysis', 'IP detection', 'Evidence collection', 'Legal support'] : ['Pattern analizi', 'IP tespiti', 'Kanıt toplama', 'Hukuki destek']
+          title: lang === 'en' ? 'Next.js 16 Ultra-Fast Architecture' : 'Son Model Next.js 16 & Ultra Hızlı Altyapı',
+          subtitle: lang === 'en' ? 'Zero WordPress Bloat' : 'Hantal Şablonlara Son',
+          desc: lang === 'en' ? 'Unlike slow and hack-prone WordPress templates, Next.js 16 delivers instant page loads (<0.8s) and enterprise-grade security.' : 'Yavaş açılan ve sürekli eklenti hatası veren klasik WordPress siteleri yerine; dünyanın en gelişmiş web teknolojisi Next.js 16 ile <0.8 saniyede açılan siteler kuruyoruz.',
+          icon: Zap,
+          items: lang === 'en' ? ['Sub-second page transitions', 'Unhackable modern cloud architecture', 'Free SSL & Global Edge CDN', 'Zero plugin maintenance costs'] : ['Saniyenin altında sayfa geçiş hızı', 'Siber saldırılara kapalı modern mimari', 'Ücretsiz SSL ve Küresel CDN hızlandırma', 'Sıfır eklenti çökmesi ve bakım maliyeti']
         },
         {
-          title: lang === 'de' ? 'Positive Bewertungsstrategie' : lang === 'en' ? 'Positive Review Strategy' : 'Olumlu Yorum Stratejisi',
-          subtitle: 'Reputation Building',
-          desc: lang === 'de' ? 'Wir helfen Ihnen, organische positive Bewertungen von zufriedenen Kunden zu erhalten.' : lang === 'en' ? 'We help you get organic positive reviews from satisfied customers.' : 'Memnun müşterilerinizden organik olumlu yorumlar almanızı sağlıyoruz.',
-          icon: ThumbsDown,
-          items: lang === 'de' ? ['Bewertungskampagnen', 'QR-Code-Systeme', 'E-Mail-Automatisierung', 'Kundenbetreuung'] : lang === 'en' ? ['Review campaigns', 'QR code systems', 'Email automation', 'Customer follow-up'] : ['Review kampanyaları', 'QR kod sistemleri', 'E-posta otomasyonu', 'Müşteri takibi']
+          title: lang === 'en' ? 'Built for Google Ads & High Conversion' : 'Reklam & Satış Odaklı Dönüşüm Mimarisi',
+          subtitle: 'Google Ads Quality Score 10/10',
+          desc: lang === 'en' ? 'Engineered by an Official Google Partner so every paid click turns into a qualified phone call, WhatsApp chat, or lead form.' : 'Resmi Google Partneri gözüyle tasarlandığı için Google Ads Kalite Puanınızı 10/10 yapar, tıklama maliyetlerinizi düşürür ve ziyaretçiyi doğrudan müşteriye dönüştürür.',
+          icon: Target,
+          items: lang === 'en' ? ['Interactive 3-step Lead Funnel Wizard', 'Sticky mobile WhatsApp & Call bar', 'Pre-installed GA4, GTM & Meta CAPI', 'High-converting landing page layouts'] : ['Akıllı 3 adımlı müşteri teklif sihirbazı', 'Tek tıkla WhatsApp ve telefon butonları', 'GA4, Google Ads ve Meta CAPI hazır kurulum', 'Yüksek dönüşümlü Landing Page kurgusu']
         },
         {
-          title: lang === 'de' ? 'Krisenkommunikation' : lang === 'en' ? 'Crisis Communication' : 'Kriz İletişimi',
-          subtitle: 'Damage Control',
-          desc: lang === 'de' ? 'Professionelles Krisenmanagement bei viralen negativen Inhalten.' : lang === 'en' ? 'Professional crisis management for viral negative content.' : 'Viral olumsuz içerik durumlarında profesyonel kriz yönetimi.',
-          icon: Shield,
-          items: lang === 'de' ? ['Schnelle Reaktion', 'Pressemitteilung', 'SEO Suppress', 'Image-Reparatur'] : lang === 'en' ? ['Quick response', 'Press release', 'SEO suppress', 'Image repair'] : ['Hızlı müdahale', 'Basın açıklaması', 'SEO suppress', 'İmaj onarımı']
+          title: lang === 'en' ? 'Multilingual (TR / EN / DE) & Global Ready' : 'Çok Dilli (TR / EN / DE) & İhracat Uyumlu',
+          subtitle: lang === 'en' ? 'International Expansion' : 'Yurt Dışı Müşteri Kazanımı',
+          desc: lang === 'en' ? 'Expand globally with native multilingual routing, automatic hreflang tags, and GDPR/KVKK compliant privacy modules.' : 'Sağlık turizmi, e-ihracat ve küresel B2B firmalar için Türkçe, İngilizce ve Almanca dil seçenekleri, otomatik hreflang etiketleri ve KVKK/GDPR uyumu.',
+          icon: Globe,
+          items: lang === 'en' ? ['Native multi-language URL structure', 'Automated Google hreflang SEO tags', 'GDPR / Consent Mode v2 integrated', '24/7 AI Assistant & Search widget'] : ['Çok dilli SEO uyumlu URL yapısı', 'Uluslararası Google hreflang entegrasyonu', 'Google Consent Mode v2 & KVKK uyumu', 'Site içi akıllı arama ve AI asistan modülü']
         }
       ],
       process: [
-        { step: '01', title: lang === 'de' ? 'Analyse' : lang === 'en' ? 'Analysis' : 'Analiz', desc: lang === 'de' ? 'Wir analysieren Ihre Bewertungen auf allen Plattformen detailliert.' : lang === 'en' ? 'We analyze your reviews on all platforms in detail.' : 'Tüm platformlardaki yorumlarınızı detaylı analiz ediyoruz.' },
-        { step: '02', title: lang === 'de' ? 'Strategie' : lang === 'en' ? 'Strategy' : 'Strateji', desc: lang === 'de' ? 'Wir erstellen einen geeigneten Aktionsplan für jede Bewertung.' : lang === 'en' ? 'We create an appropriate action plan for each review.' : 'Her yorum için uygun aksiyon planı oluşturuyoruz.' },
-        { step: '03', title: lang === 'de' ? 'Umsetzung' : lang === 'en' ? 'Implementation' : 'Uygulama', desc: lang === 'de' ? 'Wir verwalten Entfernungsanträge und Einspruchsprozesse.' : lang === 'en' ? 'We manage removal applications and appeal processes.' : 'Kaldırma başvuruları ve itiraz süreçlerini yönetiyoruz.' },
-        { step: '04', title: lang === 'de' ? 'Überwachung' : lang === 'en' ? 'Monitoring' : 'İzleme', desc: lang === 'de' ? 'Wir verfolgen neue Bewertungen durch kontinuierliches Monitoring.' : lang === 'en' ? 'We track new reviews through continuous monitoring.' : 'Sürekli monitoring ile yeni yorumları takip ediyoruz.' }
+        { step: '01', title: lang === 'en' ? 'Strategy & SEO Blueprint' : 'Analiz & SEO Mimarisi', desc: lang === 'en' ? 'We analyze your industry, competitors, and target keywords to map out a high-converting site architecture.' : 'Sektörünüzü, rakiplerinizi ve müşterilerinizin Google\'da aradığı kelimeleri analiz ederek en karlı site haritasını çıkarıyoruz.' },
+        { step: '02', title: lang === 'en' ? 'Custom Design & Unlimited Revisions' : 'Özel Tasarım & Sınırsız Revize', desc: lang === 'en' ? 'We craft a modern, bespoke interface and apply unlimited revisions until every detail meets your approval.' : 'Markanıza özel son model arayüzü tasarlıyor, her detayı tam istediğiniz gibi olana dek sınırsız revize uyguluyoruz.' },
+        { step: '03', title: lang === 'en' ? 'Admin Panel, SEO & Tracking Setup' : 'Admin Panel, SEO & Reklam Donanımı', desc: lang === 'en' ? 'We integrate your easy-to-use Admin Panel, 100/100 technical SEO, Schema markup, and GA4/CAPI tracking.' : 'Kolay yönetim panelinizi, 100/100 teknik SEO & GEO kodlarını, Schema yapısını ve reklam takip piksellerini kuruyoruz.' },
+        { step: '04', title: lang === 'en' ? 'Turnkey Launch & Google Indexing' : 'Anahtar Teslim Yayın & Dizin Kaydı', desc: lang === 'en' ? 'We deploy your site on global CDN servers, submit it to Google Search Console, and hand over full control.' : 'Sitenizi ultra hızlı sunucularda yayına alıyor, Google Search Console dizin kaydını yapıyor ve paneli size teslim ediyoruz.' }
       ],
       benefits: [
-        { title: lang === 'de' ? 'Schnelle Ergebnisse' : lang === 'en' ? 'Fast Results' : 'Hızlı Sonuç', desc: lang === 'de' ? 'Erste Aktionen innerhalb von 24-72 Stunden' : lang === 'en' ? 'First actions within 24-72 hours' : '24-72 saat içinde ilk aksiyonlar' },
-        { title: lang === 'de' ? 'Rechtlicher Prozess' : lang === 'en' ? 'Legal Process' : 'Yasal Süreç', desc: lang === 'de' ? 'Rechtliche Unterstützung bei Bedarf' : lang === 'en' ? 'Legal support when needed' : 'Gerektiğinde hukuki destek' },
-        { title: lang === 'de' ? 'Vertraulichkeit' : lang === 'en' ? 'Confidentiality' : 'Gizlilik', desc: lang === 'de' ? 'Alle Prozesse werden vertraulich durchgeführt' : lang === 'en' ? 'All processes are conducted confidentially' : 'Tüm süreçler gizli yürütülür' },
-        { title: lang === 'de' ? 'Garantie' : lang === 'en' ? 'Guarantee' : 'Garanti', desc: lang === 'de' ? 'Rückerstattung bei Misserfolg' : lang === 'en' ? 'Refund if unsuccessful' : 'Sonuç alınamazsa ücret iadesi' }
+        { title: lang === 'en' ? '100/100 Speed & SEO' : '100/100 Hız & SEO', desc: lang === 'en' ? 'Sub-second load times and full Google & AI search optimization' : '0.8 saniye altı açılış hızı ve tam Google/GEO uyumu' },
+        { title: lang === 'en' ? 'Unlimited Revisions' : 'Sınırsız Revize', desc: lang === 'en' ? 'We revise until you are 100% thrilled with the design' : 'Tasarım tam istediğiniz gibi olana kadar sınırsız revize' },
+        { title: lang === 'en' ? 'Easy Admin Panel' : 'Kolay Admin Paneli', desc: lang === 'en' ? 'Manage all content, blogs, and images without coding' : 'Kod bilmeden tüm içerik, blog ve görselleri kolayca yönetin' },
+        { title: lang === 'en' ? 'Ad-Ready Infrastructure' : 'Reklama %100 Hazır', desc: lang === 'en' ? 'GA4, GTM, and Conversion tracking pre-installed for maximum ROAS' : 'Google Ads ve Meta reklamlarından maksimum dönüşüm alan altyapı' }
       ],
       faq: [
         { 
-          q: lang === 'de' ? 'Können Sie alle negativen Bewertungen entfernen?' : lang === 'en' ? 'Can you remove all negative reviews?' : 'Tüm olumsuz yorumları kaldırabilir misiniz?',
-          a: lang === 'de' ? 'Wir können nur Bewertungen entfernen, die gegen die Plattformrichtlinien verstoßen (gefälschte Bewertungen, Spam, Beleidigungen usw.). Echte, faktenbasierte negative Bewertungen können nicht entfernt werden, aber wir helfen Ihnen, darauf professionell zu reagieren.' : lang === 'en' ? 'We can only remove reviews that violate platform policies (fake reviews, spam, insults, etc.). Genuine, fact-based negative reviews cannot be removed, but we help you respond to them professionally.' : 'Sadece platform politikalarını ihlal eden yorumları kaldırabiliriz (sahte yorumlar, spam, hakaret vb.). Gerçek, olgulara dayalı olumsuz yorumlar kaldırılamaz ancak profesyonel yanıt vermenize yardımcı oluyoruz.'
+          q: lang === 'en' ? 'What is included in the Turnkey Website package?' : 'Anahtar teslim web sitesi paketine neler dahildir?',
+          a: lang === 'en' ? 'Everything your business needs: Custom Next.js 16 design, easy-to-use Admin Panel (CMS), 100/100 Technical SEO & GEO setup (sitemap, Schema, llms.txt), mobile optimization, WhatsApp & Lead Funnel integration, GA4/GTM tracking, and unlimited design revisions.' : 'İşletmenizin ihtiyacı olan her şey dahildir: Son model özel tasarım, kolay kullanımlı Admin Paneli, 100/100 Teknik SEO ve Yapay Zeka (GEO) altyapısı, mobil uyum, akıllı teklif formları, WhatsApp entegrasyonu, GA4/Reklam izleme kurulumu ve sınırsız revize hakkı.'
         },
         { 
-          q: lang === 'de' ? 'Wie lange dauert der Entfernungsprozess?' : lang === 'en' ? 'How long does the removal process take?' : 'Kaldırma süreci ne kadar sürer?',
-          a: lang === 'de' ? 'Der Prozess variiert je nach Plattform. Bei Google dauert es normalerweise 3-14 Tage. Bei Trustpilot kann es bis zu 30 Tage dauern. Wir halten Sie während des gesamten Prozesses auf dem Laufenden.' : lang === 'en' ? 'The process varies by platform. For Google, it typically takes 3-14 days. For Trustpilot, it can take up to 30 days. We keep you informed throughout the entire process.' : 'Süreç platforma göre değişir. Google için genellikle 3-14 gün sürer. Trustpilot için 30 güne kadar sürebilir. Süreç boyunca sizi bilgilendiriyoruz.'
+          q: lang === 'en' ? 'Can I update texts, blog posts, and images myself via the Admin Panel?' : 'Admin panelinden yazıları, blogları ve görselleri kendim güncelleyebilir miyim?',
+          a: lang === 'en' ? 'Yes! The custom Admin Panel is designed so anyone can add new blog posts, edit service pages, change images, and manage inquiries from a phone or computer without touching a single line of code.' : 'Evet! Kurduğumuz gelişmiş yönetim paneli sayesinde hiçbir teknik veya kod bilgisine ihtiyaç duymadan bilgisayarınızdan ya da telefonunuzdan yeni blog yazıları ekleyebilir, hizmet ve fiyatlarınızı güncelleyebilir, görselleri değiştirebilirsiniz.'
         },
         { 
-          q: lang === 'de' ? 'Was passiert, wenn die Bewertung nicht entfernt wird?' : lang === 'en' ? 'What happens if the review is not removed?' : 'Yorum kaldırılmazsa ne olur?',
-          a: lang === 'de' ? 'Wenn wir die Bewertung nicht entfernen können, helfen wir Ihnen mit alternativen Strategien: professionelle Antwort schreiben, positive Bewertungen fördern oder rechtliche Schritte einleiten. Bei Misserfolg bieten wir je nach Vereinbarung eine Rückerstattung an.' : lang === 'en' ? 'If we can\'t remove the review, we help you with alternative strategies: writing a professional response, encouraging positive reviews, or initiating legal action. In case of failure, we offer a refund depending on the agreement.' : 'Yorumu kaldıramazsak alternatif stratejilerle yardımcı oluyoruz: profesyonel yanıt yazma, olumlu yorum teşviki veya hukuki süreç başlatma. Başarısızlık durumunda anlaşmaya göre ücret iadesi sunuyoruz.'
+          q: lang === 'en' ? 'How does Unlimited Revisions work?' : 'Sınırsız revize garantisi nasıl işliyor?',
+          a: lang === 'en' ? 'During the design and development phase, you can request as many changes to colors, layouts, sections, and content placement as needed until you are 100% satisfied before final launch.' : 'Tasarım ve geliştirme aşamasında renkler, yazı tipleri, bölümlerin yerleşimi ve fonksiyonlar konusunda hiçbir sayı sınırı olmaksızın revize talep edebilirsiniz. Siteniz ancak siz %100 onay verdiğinizde tamamlanır.'
         },
         { 
-          q: lang === 'de' ? 'Ist der Service vertraulich?' : lang === 'en' ? 'Is the service confidential?' : 'Hizmet gizli mi?',
-          a: lang === 'de' ? 'Absolut. Alle unsere Prozesse werden vertraulich durchgeführt. Wir geben niemals Informationen über unsere Kunden oder unsere Arbeit an Dritte weiter. Vertraulichkeit ist unser Grundprinzip.' : lang === 'en' ? 'Absolutely. All our processes are conducted confidentially. We never share information about our clients or our work with third parties. Confidentiality is our core principle.' : 'Kesinlikle. Tüm süreçlerimiz gizli yürütülür. Müşterilerimiz veya çalışmalarımız hakkında üçüncü taraflarla asla bilgi paylaşmıyoruz. Gizlilik temel ilkemizdir.'
+          q: lang === 'en' ? 'How long does it take to deliver a turnkey website?' : 'Anahtar teslim web sitesi kaç günde tamamlanır?',
+          a: lang === 'en' ? 'Depending on scope and multilingual requirements, a complete turnkey corporate website is typically delivered ready for launch within 7 to 14 business days.' : 'Projenin kapsamına ve dil sayısına bağlı olarak anahtar teslim kurumsal web sitenizi ortalama 7 ila 14 iş günü içerisinde tüm SEO ve admin panel donanımlarıyla birlikte yayına hazır teslim ediyoruz.'
         }
       ]
     }
@@ -2406,85 +2403,49 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
             ]
           },
 
-          'yorum-yonetimi': {
-            badge: 'Google Business & Trustpilot Reputation Management',
-            title: lang === 'de' ? <>Verifizierte Ergebnisse aus <span className="text-[#EA4335]">Bewertungs-</span> Projekten</> : lang === 'en' ? <>Verified Results from <span className="text-[#EA4335]">Review Management</span> Cases</> : <>Doğrulanmış <span className="text-[#EA4335]">İtibar & Yorum</span> Başarıları</>,
-            desc: lang === 'de' ? 'Rechtssichere Löschung unberechtigter 1-Stern-Bewertungen und automatisierte Generierung von 5-Sterne-Kundenstimmen.' : lang === 'en' ? 'Legally compliant removal of fake 1-star reviews and automated generation of verified 5-star customer feedback.' : 'Haksız 1 yıldızlı yorumların yasal olarak kaldırılması ve gerçek 5 yıldızlı müşteri yorumlarının artırılması.',
-            accentColor: '#EA4335',
-            ctaTitle: lang === 'de' ? 'Möchten Sie Ihren Google-Schnitt auf 4.9★ anheben?' : lang === 'en' ? 'Want to elevate your Google rating to 4.9★?' : 'Google puanınızı 4.9★ seviyesine yükseltmek ister misiniz?',
-            ctaDesc: lang === 'de' ? 'Wir prüfen Ihre negativen Bewertungen kostenlos auf Richtlinienverstöße und Erfolgsaussichten.' : lang === 'en' ? 'We audit your negative reviews for policy violations and removal feasibility for free.' : 'Olumsuz yorumlarınızı platform kuralları ve kaldırılabilirlik açısından ücretsiz inceliyoruz.',
+          'web-sitesi-tasarimi': {
+            badge: 'Next.js 16 & 100/100 Google Lighthouse',
+            title: lang === 'en' ? <>Verified Results from <span className="text-[#6366F1]">Turnkey Website</span> Projects</> : <>Doğrulanmış <span className="text-[#6366F1]">Anahtar Teslim Web Sitesi</span> Başarıları</>,
+            desc: lang === 'en' ? 'Sub-second Next.js 16 speed, 100/100 SEO & GEO architecture, easy Admin Panel, and 10/10 Google Ads Quality Score.' : 'Saniyenin altında açılan Next.js 16 hızı, 100/100 SEO & GEO mimarisi, kolay Admin Paneli ve 10/10 Google Ads Kalite Puanı.',
+            accentColor: '#6366F1',
+            ctaTitle: lang === 'en' ? 'Ready for a state-of-the-art website with unlimited revisions?' : 'Sınırsız revizeli, son model ve SEO uyumlu web siteniz hazır olsun mu?',
+            ctaDesc: lang === 'en' ? 'We design and deliver your turnkey corporate website with full Admin Panel and SEO setup.' : 'Admin panelli, 100/100 SEO uyumlu ve reklama hazır web sitenizi anahtar teslim kuruyoruz.',
             cards: [
               {
-                tag: lang === 'de' ? 'Reputations-Turnaround' : lang === 'en' ? 'Reputation Turnaround' : 'İtibar Dönüşümü',
-                title: lang === 'de' ? 'Von 3.4★ auf 4.9★ Gesamtwertung in 60 Tagen — 18 unfaire Rezensionen entfernt' : lang === 'en' ? 'From 3.4★ to 4.9★ overall rating in 60 days — 18 fake reviews deleted' : '60 günde 3.4★\'tan 4.9★ puana yükseliş — 18 haksız yorum kaldırıldı',
-                panelHeader: 'Google Maps · Rating Turnaround Case',
-                dateRange: '60 Tage Prozess',
+                tag: lang === 'en' ? 'WordPress to Next.js 16 Migration' : 'Hantal Şablondan Next.js 16\'ya Geçiş',
+                title: lang === 'en' ? '100/100 Lighthouse Speed (<0.6s Load) & +240% Ad Conversion Rate' : '100/100 Google Hız Skoru (0.6 sn Açılış) ve Reklam Dönüşümlerinde +%240 Artış',
+                panelHeader: 'Google Lighthouse · Core Web Vitals 100/100',
+                dateRange: 'Turnkey Web Architecture',
                 boxes: [
-                  { label: 'Rating Heute', value: '4.9 ★', bg: 'bg-[#34A853]', text: 'text-white' },
-                  { label: 'Gelöschte Fake-Reviews', value: '18', bg: 'bg-[#EA4335]', text: 'text-white' },
-                  { label: 'Neue 5-Sterne Reviews', value: '+64', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
-                  { label: 'Customer Trust', value: '98%', bg: 'bg-[#4285F4]', text: 'text-white' }
+                  { label: 'PageSpeed Score', value: '100 / 100', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Load Time (LCP)', value: '0.6 sec', bg: 'bg-[#6366F1]', text: 'text-white' },
+                  { label: 'Conversion Lift', value: '+240%', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'Revisions', value: 'Unlimited', bg: 'bg-[#FBBC04]', text: 'text-gray-900' }
                 ],
-                tagBefore: '● KRISENSTATUS (TAG 1)',
-                descBefore: '3.4 Sterne · 18 Fake-Bewertungen',
-                tagAfter: '● REPUTATION WIEDERHERGESTELLT',
-                descAfter: '4.9 Sterne · 100% Bereinigt',
-                mult1: { val: '4.9 ★', label: 'Neuer Google Schnitt' },
-                mult2: { val: '-18', label: 'Fake-Rezensionen gelöscht' }
+                tagBefore: lang === 'en' ? '● OLD WORDPRESS SITE' : '● ESKİ HAZIR ŞABLON SİTE',
+                descBefore: lang === 'en' ? '4.8s Load · 42/100 Speed' : '4.8 sn Açılış · %60 Müşteri Kaybı',
+                tagAfter: lang === 'en' ? '● TURNKEY NEXT.JS 16' : '● ANAHTAR TESLİM NEXT.JS 16',
+                descAfter: lang === 'en' ? '0.6s Load · 100/100 SEO' : '0.6 sn Açılış · 100/100 Tam Skor',
+                mult1: { val: '100/100', label: 'Google Lighthouse' },
+                mult2: { val: '+240%', label: lang === 'en' ? 'More Leads' : 'Daha Fazla Müşteri' }
               },
               {
-                tag: lang === 'de' ? 'Wettbewerber-Angriff Abwehr' : lang === 'en' ? 'Competitor Attack Defense' : 'Rakip Saldırısı Engelleme',
-                title: lang === 'de' ? 'Organisierter 1-Stern-Angriff (32 Fake-Profile) innerhalb von 7 Tagen neutralisiert' : lang === 'en' ? 'Organized 1-star spam attack (32 fake profiles) neutralized within 7 days' : 'Organize sahte 1 yıldız saldırısı (32 sahte profil) 7 günde tamamen temizlendi',
-                panelHeader: 'Google Anti-Spam · Legal Removal Request',
-                dateRange: 'Express-Intervention (7 Tage)',
+                tag: lang === 'en' ? 'SEO & GEO Organic Engine' : 'SEO & Yapay Zeka (GEO) Donanımı',
+                title: lang === 'en' ? '140+ Page-1 Google Rankings & ChatGPT Citations within 90 Days of Launch' : 'Yayına Alındıktan Sonra 90 Günde 140+ Kelimede Google 1. Sayfa ve AI Önerisi',
+                panelHeader: 'Google Search Console · Organic Growth',
+                dateRange: '90 Days Post-Launch',
                 boxes: [
-                  { label: 'Attack Size', value: '32 Reviews', bg: 'bg-[#EA4335]', text: 'text-white' },
-                  { label: 'Löschquote', value: '100%', bg: 'bg-[#34A853]', text: 'text-white' },
-                  { label: 'Bearbeitungszeit', value: '6 Tage', bg: 'bg-[#4285F4]', text: 'text-white' },
-                  { label: 'Geschützte Umsätze', value: '~45.000 €', bg: 'bg-slate-800', text: 'text-white' }
+                  { label: 'SEO Score', value: '100 / 100', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Top 10 Keywords', value: '140+', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'Schema & GEO', value: 'Full Setup', bg: 'bg-[#6366F1]', text: 'text-white' },
+                  { label: 'Admin CMS', value: 'Included', bg: 'bg-slate-800', text: 'text-white' }
                 ],
-                tagBefore: '● SPAM-ATTACKE',
-                descBefore: '32 Fake 1-Stern-Bewertungen',
-                tagAfter: '● RICHTLINIEN-LÖSCHUNG',
-                descAfter: '32 von 32 restlos entfernt',
-                mult1: { val: '100%', label: 'Erfolgsquote (Spam)' },
-                mult2: { val: '6 Tage', label: 'Löschdauer' }
-              },
-              {
-                tag: lang === 'de' ? 'Automatisierter Review-Funnel' : lang === 'en' ? 'Automated Review Funnel' : 'Otomatik Yorum Toplama Hunisi',
-                title: lang === 'de' ? 'QR & SMS Funnel: Monatlich +35 echte 5-Sterne-Bewertungen von zufriedenen Kunden' : lang === 'en' ? 'QR & SMS Funnel: Monthly +35 verified 5-star reviews from real clients' : 'QR & SMS sistemi ile her ay memnun müşterilerden +35 gerçek 5 yıldızlı yorum',
-                panelHeader: 'Review Automation · QR Funnel Dashboard',
-                dateRange: 'Monatlicher Zuwachs',
-                boxes: [
-                  { label: 'Monthly 5★ Reviews', value: '+35 / Mo', bg: 'bg-[#34A853]', text: 'text-white' },
-                  { label: 'Scan to Review Rate', value: '68%', bg: 'bg-[#4285F4]', text: 'text-white' },
-                  { label: 'Customer Retention', value: '92%', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
-                  { label: 'Trustpilot Rank', value: '#1 Branche', bg: 'bg-[#EA4335]', text: 'text-white' }
-                ],
-                tagBefore: '● MANUELLES FRAGEN',
-                descBefore: '+2 Bewertungen / Monat',
-                tagAfter: '● AUTOMATISIERTER QR-FUNNEL',
-                descAfter: '+35 echte 5★ Bewertungen / Mo',
-                mult1: { val: '+35', label: 'Echte 5★ Reviews / Monat' },
-                mult2: { val: '68%', label: 'Feedback Conversion Rate' }
-              },
-              {
-                tag: lang === 'de' ? 'Umsatzhebel durch Vertrauen' : lang === 'en' ? 'Revenue Lift via Trust' : 'Güven Sayesinde Ciro Artışı',
-                title: lang === 'de' ? '+320% mehr Anrufe und Buchungen nach Erreichen der 4.9★ Marke' : lang === 'en' ? '+320% more customer calls and bookings after reaching 4.9★' : '4.9★ puanına ulaştıktan sonra müşteri aramalarında +%320 artış',
-                panelHeader: 'Local Business · Conversion Correlation',
-                dateRange: 'Vorher/Nachher Vergleich',
-                boxes: [
-                  { label: 'Customer Inquiries', value: '+320%', bg: 'bg-[#34A853]', text: 'text-white' },
-                  { label: 'Average Ticket', value: '+24%', bg: 'bg-[#4285F4]', text: 'text-white' },
-                  { label: 'Local Search Clicks', value: '4.800 / Mo', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
-                  { label: 'Recommendation Rate', value: '96%', bg: 'bg-[#EA4335]', text: 'text-white' }
-                ],
-                tagBefore: '● 3.4 STERNE ZEITRAUM',
-                descBefore: 'Anfragen: ~15 / Monat',
-                tagAfter: '● 4.9 STERNE REPUTATION',
-                descAfter: 'Anfragen: 63 / Monat (+320%)',
-                mult1: { val: '+320%', label: 'Mehr Kundenanfragen' },
-                mult2: { val: '4.9★', label: 'Dauerhafter Trust-Score' }
+                tagBefore: lang === 'en' ? '● ZERO ORGANIC VISIBILITY' : '● ORGANİK TRAFİK YOK',
+                descBefore: lang === 'en' ? 'Missing SSR & Schema' : 'SEO Uyumsuz Eski Altyapı',
+                tagAfter: lang === 'en' ? '● FULL SEO & GEO ARCHITECTURE' : '● TAM DONANIMLI SEO & GEO MİMARİSİ',
+                descAfter: lang === 'en' ? '140+ Page 1 Keywords' : '140+ Kelimede İlk Sayfa',
+                mult1: { val: '140+', label: lang === 'en' ? 'Page-1 Keywords' : 'İlk Sayfa Kelime' },
+                mult2: { val: '%100', label: lang === 'en' ? 'SSR & Schema Ready' : 'Teknik SEO Uyumu' }
               }
             ]
           }
@@ -3233,7 +3194,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 <li><a href={getLocalizedServiceUrl(lang, 'server-side-tracking')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'Server-Side CAPI & sGTM' : lang === 'en' ? 'Server-Side CAPI & sGTM' : 'Server-Side CAPI & sGTM'}</a></li>
                 <li><a href={getLocalizedServiceUrl(lang, 'tiktok-ads')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'TikTok Spark & Video Ads' : lang === 'en' ? 'TikTok Spark & Video Ads' : 'TikTok Spark & Video Ads'}</a></li>
                 <li><a href={getLocalizedServiceUrl(lang, 'seo')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'Google Maps & Princeton GEO' : lang === 'en' ? 'Google Maps & Princeton GEO' : 'Google Maps & Princeton GEO'}</a></li>
-                <li><a href={getLocalizedServiceUrl(lang, 'yorum-yonetimi')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'Google Olumsuz Yorum Temizleme' : lang === 'en' ? 'Review Defense & Removal' : 'Bewertungsmanagement'}</a></li>
+                <li><a href={getLocalizedServiceUrl(lang, 'web-sitesi-tasarimi')} className="hover:text-blue-400 transition-colors">{lang === 'tr' ? 'Anahtar Teslim Web Sitesi & CMS' : lang === 'en' ? 'Turnkey Web Design & CMS' : 'Schlüsselfertiges Webdesign'}</a></li>
               </ul>
               <div className="mt-4 pt-3 border-t border-slate-800">
                 <a

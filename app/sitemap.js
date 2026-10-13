@@ -89,13 +89,13 @@ export default async function sitemap() {
     'tiktok-ads',
     'x-ads',
     'seo',
-    'yorum-yonetimi',
+    'web-sitesi-tasarimi',
     'islamic-charity-ngo-marketing',
   ]
   const serviceEntries = []
 
   services.forEach((slug) => {
-    const enSlug = slug === 'yorum-yonetimi' ? 'review-management' : slug
+    const enSlug = slug === 'web-sitesi-tasarimi' ? 'web-design' : slug
     const trSlug = slug
 
     const languages = {

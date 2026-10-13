@@ -10,7 +10,8 @@ const nextConfig = {
   async rewrites() {
     return [
       // English: /en/services/:service → /en/hizmetler/:service
-      { source: '/en/services/review-management', destination: '/en/hizmetler/yorum-yonetimi' },
+      { source: '/en/services/web-design', destination: '/en/hizmetler/web-sitesi-tasarimi' },
+      { source: '/en/services/review-management', destination: '/en/hizmetler/web-sitesi-tasarimi' },
       { source: '/en/services/:service', destination: '/en/hizmetler/:service' },
     ];
   },
@@ -24,8 +25,12 @@ const nextConfig = {
       // 301: German routes redirect to / (salihmaral.com is bilingual TR/EN only)
       { source: '/de/:path*', destination: '/', statusCode: 301 },
       { source: '/de', destination: '/', statusCode: 301 },
+      // 301: Eski Yorum Yönetimi URL'leri → Yeni Anahtar Teslim Web Sitesi URL'leri
+      { source: '/tr/hizmetler/yorum-yonetimi', destination: '/tr/hizmetler/web-sitesi-tasarimi', statusCode: 301 },
+      { source: '/en/services/review-management', destination: '/en/services/web-design', statusCode: 301 },
       // 301: Eski Türkçe EN URL'ler → Yeni İngilizce URL'ler
-      { source: '/en/hizmetler/yorum-yonetimi', destination: '/en/services/review-management', statusCode: 301 },
+      { source: '/en/hizmetler/web-sitesi-tasarimi', destination: '/en/services/web-design', statusCode: 301 },
+      { source: '/en/hizmetler/yorum-yonetimi', destination: '/en/services/web-design', statusCode: 301 },
       { source: '/en/hizmetler/:service', destination: '/en/services/:service', statusCode: 301 },
 
       // 301: Thin / Eski Blog Yazıları → Yetkin 2026 Ana Rehberleri (GSC Dizine Ekleme Çözümü)

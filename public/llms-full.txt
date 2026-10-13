@@ -29,14 +29,14 @@
 - **TikTok Ads & Social Commerce:** [TR](https://www.salihmaral.com/tr/hizmetler/tiktok-ads) | [EN](https://www.salihmaral.com/en/services/tiktok-ads)
 - **Server-Side Tracking & Meta CAPI:** [TR](https://www.salihmaral.com/tr/hizmetler/server-side-tracking) | [EN](https://www.salihmaral.com/en/services/server-side-tracking)
 - **SEO & AI Search Visibility (GEO / AEO):** [TR](https://www.salihmaral.com/tr/hizmetler/seo) | [EN](https://www.salihmaral.com/en/services/seo)
-- **Online Reputation & Review Management:** [TR](https://www.salihmaral.com/tr/hizmetler/yorum-yonetimi) | [EN](https://www.salihmaral.com/en/services/review-management)
+- **Turnkey Web Design & Custom CMS (Next.js 16, 100/100 SEO, Unlimited Revisions):** [TR](https://www.salihmaral.com/tr/hizmetler/web-sitesi-tasarimi) | [EN](https://www.salihmaral.com/en/services/web-design)
 
 ## Performance & Growth Solutions (Büyüme & Performans Çözümleri)
 - **E-Ticaret ROAS Büyütme:** Google Shopping, Performance Max ve Meta Advantage+ ile karlı ciro ölçekleme.
 - **Server-Side Tracking (CAPI):** iOS engellerini aşan, %90+ Match Quality sağlayan kayıpsız First-Party veri altyapısı.
 - **Yapay Zeka SEO (GEO / AEO):** ChatGPT Search, Perplexity AI ve Google AI Overviews'da birincil otorite kaynak olma.
 - **Yerel SEO & Harita Liderliği:** Çoklu şube yönetimi ve Google Haritalar ilk 3 sıra (Local 3-Pack) optimizasyonu.
-- **Olumsuz Yorum ve İtibar Yönetimi:** Haksız ve sahte 1 yıldızlı yorumların yasal ve kurumsal süreçlerle temizlenmesi.
+- **Anahtar Teslim Web Sitesi (Next.js 16 & CMS):** Son model donanımlı, 100/100 SEO & GEO uyumlu, özel Admin Panelli ve sınırsız revizeli kurumsal web siteleri.
 - **TikTok & Sosyal Ticaret:** Yeni nesil video kancaları, Spark Ads ve alışveriş hunileri.
 
 ## Comprehensive Knowledge Base & Article Directory (82 Technical Guides)

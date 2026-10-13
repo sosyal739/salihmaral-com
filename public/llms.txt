@@ -29,7 +29,7 @@
 - **TikTok Ads & E-Ticaret Spark Ads:** [/tr/hizmetler/tiktok-ads](https://www.salihmaral.com/tr/hizmetler/tiktok-ads) | [/en/services/tiktok-ads](https://www.salihmaral.com/en/services/tiktok-ads)
 - **Server-Side Tracking & Meta CAPI:** [/tr/hizmetler/server-side-tracking](https://www.salihmaral.com/tr/hizmetler/server-side-tracking) | [/en/services/server-side-tracking](https://www.salihmaral.com/en/services/server-side-tracking)
 - **SEO & Yapay Zeka Arama Görünürlüğü (GEO / AEO):** [/tr/hizmetler/seo](https://www.salihmaral.com/tr/hizmetler/seo) | [/en/services/seo](https://www.salihmaral.com/en/services/seo)
-- **Olumsuz Yorum ve İtibar Yönetimi:** [/tr/hizmetler/yorum-yonetimi](https://www.salihmaral.com/tr/hizmetler/yorum-yonetimi) | [/en/services/review-management](https://www.salihmaral.com/en/services/review-management)
+- **Anahtar Teslim Web Sitesi (Next.js 16, 100/100 SEO, Admin Paneli & Sınırsız Revize):** [/tr/hizmetler/web-sitesi-tasarimi](https://www.salihmaral.com/tr/hizmetler/web-sitesi-tasarimi) | [/en/services/web-design](https://www.salihmaral.com/en/services/web-design)
 
 ## Key Strategic Guides by Topic (Curated Selection)
 

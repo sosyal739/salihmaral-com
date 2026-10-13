@@ -32,7 +32,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         { id: 'leads', icon: Phone, title: 'Mehr Kundenanrufe & Termine', desc: 'Dienstleister, Praxen, Kanzleien & Handwerk' },
         { id: 'ecommerce', icon: ShoppingCart, title: 'E-Commerce Verkäufe & ROAS steigern', desc: 'Online-Shops, D2C Brands & Amazon' },
         { id: 'b2b', icon: Target, title: 'B2B Neukunden & Projektanfragen', desc: 'Industrie, IT, Software & Beratung' },
-        { id: 'maps', icon: MapPin, title: 'Google Maps #1 & Bewertungsschutz', desc: 'Lokale Betriebe, Gastronomie & Filialen' },
+        { id: 'maps', icon: MapPin, title: 'Schlüsselfertige Website & SEO', desc: 'Next.js 16, 100/100 SEO, Admin-Panel & Unbegrenzte Revisionen' },
       ],
       budgets: [
         { id: 'b1', title: '15.000 ₺ – 45.000 ₺ / Monat', desc: 'Optimal für KMUs & Neustart' },
@@ -65,7 +65,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         { id: 'leads', icon: Phone, title: 'Daha Çok Telefon & Randevu', desc: 'Klinik, Hizmet, Hukuk, Usta & Restoran' },
         { id: 'ecommerce', icon: ShoppingCart, title: 'E-Ticaret Satışlarını & ROAS Artırma', desc: 'Online Mağazalar & D2C Markalar' },
         { id: 'b2b', icon: Target, title: 'B2B Müşteri & Proje Talepleri', desc: 'Sanayi, İhracat, Yazılım & Kurumsal' },
-        { id: 'maps', icon: MapPin, title: 'Google Haritalar 1. Sıra & Yorum', desc: 'Yerel İşletmeler, Çoklu Şubeler & Zincirler' },
+        { id: 'maps', icon: MapPin, title: 'Anahtar Teslim Web Sitesi & SEO', desc: 'Next.js 16, 100/100 SEO, Admin Paneli & Sınırsız Revize' },
       ],
       budgets: [
         { id: 'b1', title: '25.000 ₺ – 75.000 ₺ / Ay', desc: 'Minimum başlangıç bütçesi (B2B & Kurumsal)' },
@@ -98,7 +98,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         { id: 'leads', icon: Phone, title: 'More Calls, Inquiries & Appointments', desc: 'Clinics, Legal, Contractors & Services' },
         { id: 'ecommerce', icon: ShoppingCart, title: 'Scale E-Commerce Sales & ROAS', desc: 'Online Stores, D2C Brands & Retail' },
         { id: 'b2b', icon: Target, title: 'B2B Client Leads & Enterprise Deals', desc: 'Tech, SaaS, Manufacturing & Consulting' },
-        { id: 'maps', icon: MapPin, title: 'Google Maps #1 & Reputation Defense', desc: 'Multi-Location Chains & Local Retail' },
+        { id: 'maps', icon: MapPin, title: 'Turnkey Web Design & SEO', desc: 'Next.js 16, 100/100 SEO, Custom CMS & Unlimited Revisions' },
       ],
       budgets: [
         { id: 'b1', title: '$1,000 – $3,000 / Month', desc: 'Ideal for local businesses & initial traction' },

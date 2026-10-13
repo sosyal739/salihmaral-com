@@ -76,10 +76,10 @@ const translations = {
           icon: 'seo'
         },
         {
-          title: 'Olumsuz Yorum Yönetimi',
-          description: 'Google Maps ve Trustpilot\'taki asılsız olumsuz yorumları kaldırarak uluslararası itibarınızı ve müşteri güveninizi koruyun.',
-          slug: 'yorum-yonetimi',
-          icon: 'review'
+          title: 'Anahtar Teslim Web Sitesi',
+          description: 'Next.js 16 mimarisi, 100/100 SEO & GEO uyumu, özel Admin Paneli (CMS) ve sınırsız revize garantisiyle son model kurumsal web sitesi.',
+          slug: 'web-sitesi-tasarimi',
+          icon: 'web-design'
         },
         {
           title: 'Reklam & Tracking Kurulumu',
@@ -362,10 +362,10 @@ const translations = {
           icon: 'seo'
         },
         {
-          title: 'Negative Bewertungen Löschen',
-          description: 'Entfernen Sie ungerechte Bewertungen bei Google Maps und Trustpilot. Schützen Sie Ihren Ruf.',
-          slug: 'yorum-yonetimi',
-          icon: 'review'
+          title: 'Schlüsselfertige Website & CMS',
+          description: 'Next.js 16 Architektur, 100/100 SEO & GEO, eigenes Admin-Panel (CMS) und unbegrenzte Korrekturschleifen inklusive.',
+          slug: 'web-sitesi-tasarimi',
+          icon: 'web-design'
         },
         {
           title: 'Werbekonto- & Tracking-Setup',
@@ -648,10 +648,10 @@ const translations = {
           icon: 'seo'
         },
         {
-          title: 'Negative Review Management',
-          description: 'Remove unfair reviews on Google Maps and Trustpilot. Protect your reputation and restore trust.',
-          slug: 'yorum-yonetimi',
-          icon: 'review'
+          title: 'Turnkey Web Design & CMS',
+          description: 'Next.js 16 architecture, 100/100 SEO & GEO compliance, custom Admin Panel (CMS), and unlimited design revisions included.',
+          slug: 'web-sitesi-tasarimi',
+          icon: 'web-design'
         },
         {
           title: 'Ad Account & Tracking Setup',
@@ -888,7 +888,8 @@ const getServiceIcon = (iconType) => {
     case 'seo':
       return { icon: Search, color: 'bg-emerald-50/80 text-emerald-600 border-emerald-100/60' }
     case 'review':
-      return { icon: ShieldCheck, color: 'bg-amber-50/80 text-amber-600 border-amber-100/60' }
+    case 'web-design':
+      return { icon: Globe, color: 'bg-violet-50/80 text-violet-600 border-violet-100/60' }
     case 'tracking':
       return { icon: Layers, color: 'bg-cyan-50/80 text-cyan-600 border-cyan-100/60' }
     case 'youtube':
@@ -973,8 +974,8 @@ export default function Home({ initialLang = 'tr' }) {
   const svcUrl = (targetLang, slug) => {
     const path = targetLang === 'de' ? 'dienstleistungen' : targetLang === 'en' ? 'services' : 'hizmetler'
     let s = slug
-    if (slug === 'yorum-yonetimi') {
-      s = targetLang === 'de' ? 'bewertungsmanagement' : targetLang === 'en' ? 'review-management' : 'yorum-yonetimi'
+    if (slug === 'web-sitesi-tasarimi' || slug === 'yorum-yonetimi') {
+      s = targetLang === 'en' ? 'web-design' : 'web-sitesi-tasarimi'
     }
     return `/${targetLang}/${path}/${s}`
   }
@@ -1070,9 +1071,9 @@ export default function Home({ initialLang = 'tr' }) {
                 },
                 {
                   '@type': 'SiteNavigationElement',
-                  name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management',
-                  description: lang === 'de' ? 'Professionelles Google Bewertungsmanagement' : lang === 'tr' ? 'Profesyonel Google yorum yönetimi' : 'Professional Google review management',
-                  url: `https://www.salihmaral.com/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/${lang === 'de' ? 'bewertungsmanagement' : lang === 'en' ? 'review-management' : 'yorum-yonetimi'}`
+                  name: lang === 'de' ? 'Schlüsselfertiges Webdesign' : lang === 'tr' ? 'Anahtar Teslim Web Sitesi' : 'Turnkey Web Design & CMS',
+                  description: lang === 'de' ? 'Next.js 16, 100/100 SEO & eigenes Admin-Panel' : lang === 'tr' ? 'Next.js 16, 100/100 SEO, Admin Paneli ve sınırsız revize' : 'Next.js 16, 100/100 SEO, Custom Admin Panel & unlimited revisions',
+                  url: `https://www.salihmaral.com${svcUrl(lang, 'web-sitesi-tasarimi')}`
                 },
                 {
                   '@type': 'SiteNavigationElement',
@@ -1099,7 +1100,7 @@ export default function Home({ initialLang = 'tr' }) {
                 { '@type': 'ListItem', position: 3, name: 'TikTok Ads', url: `https://www.salihmaral.com${svcUrl(lang, 'tiktok-ads')}` },
                 { '@type': 'ListItem', position: 4, name: 'X (Twitter) Ads', url: `https://www.salihmaral.com${svcUrl(lang, 'x-ads')}` },
                 { '@type': 'ListItem', position: 5, name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services', url: `https://www.salihmaral.com${svcUrl(lang, 'seo')}` },
-                { '@type': 'ListItem', position: 6, name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://www.salihmaral.com${svcUrl(lang, 'yorum-yonetimi')}` }
+                { '@type': 'ListItem', position: 6, name: lang === 'de' ? 'Schlüsselfertiges Webdesign' : lang === 'tr' ? 'Anahtar Teslim Web Sitesi' : 'Turnkey Web Design & CMS', url: `https://www.salihmaral.com${svcUrl(lang, 'web-sitesi-tasarimi')}` }
               ]
             },
             {
@@ -1119,7 +1120,7 @@ export default function Home({ initialLang = 'tr' }) {
                   { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'TikTok Ads', url: `https://www.salihmaral.com${svcUrl(lang, 'tiktok-ads')}` } },
                   { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'X Ads', url: `https://www.salihmaral.com${svcUrl(lang, 'x-ads')}` } },
                   { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO', url: `https://www.salihmaral.com${svcUrl(lang, 'seo')}` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://www.salihmaral.com${svcUrl(lang, 'yorum-yonetimi')}` } }
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: lang === 'de' ? 'Schlüsselfertiges Webdesign' : lang === 'tr' ? 'Anahtar Teslim Web Sitesi' : 'Turnkey Web Design & CMS', url: `https://www.salihmaral.com${svcUrl(lang, 'web-sitesi-tasarimi')}` } }
                 ]
               }
             },
@@ -1461,7 +1462,7 @@ export default function Home({ initialLang = 'tr' }) {
                     { id: 'seo', label: 'SEO & Yapay Zeka (GEO)', icon: Search, color: 'hover:border-emerald-500 hover:text-emerald-600 hover:bg-emerald-50/50' },
                     { id: 'tiktok-ads', label: 'TikTok Ads', icon: Sparkles, color: 'hover:border-rose-500 hover:text-rose-600 hover:bg-rose-50/50' },
                     { id: 'server-side-tracking', label: 'Server-Side CAPI', icon: Layers, color: 'hover:border-teal-500 hover:text-teal-600 hover:bg-teal-50/50' },
-                    { id: 'yorum-yonetimi', label: 'Olumsuz Yorum Temizleme', icon: ShieldCheck, color: 'hover:border-amber-500 hover:text-amber-600 hover:bg-amber-50/50' },
+                    { id: 'web-sitesi-tasarimi', label: lang === 'en' ? 'Turnkey Web Design & CMS' : 'Anahtar Teslim Web Sitesi', icon: Globe, color: 'hover:border-violet-500 hover:text-violet-600 hover:bg-violet-50/50' },
                   ].map((srv) => {
                     const SrvIcon = srv.icon
                     return (
@@ -1832,7 +1833,7 @@ export default function Home({ initialLang = 'tr' }) {
                   'x-ads': 'social',
                   'seo': 'seo',
                   'server-side-tracking': 'seo',
-                  'yorum-yonetimi': 'seo'
+                  'web-sitesi-tasarimi': 'seo'
                 }
                 return categoryMap[service.slug] === serviceCategory
               })
@@ -1888,15 +1889,15 @@ export default function Home({ initialLang = 'tr' }) {
                       ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
                       : ['Google Haritalar #1. Sıra', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
                   },
-                  'yorum-yonetimi': {
-                    accent: '#EA4335',
-                    tag: lang === 'de' ? 'Reputation & Rechtsschutz' : lang === 'en' ? 'Reputation & Defense' : 'İtibar & Yasal Savunma',
-                    badge: null,
+                  'web-sitesi-tasarimi': {
+                    accent: '#7C3AED',
+                    tag: lang === 'de' ? 'Next.js 16 & Admin CMS' : lang === 'en' ? 'Next.js 16 & Custom CMS' : 'Next.js 16 & Admin Paneli',
+                    badge: lang === 'de' ? '100/100 SEO' : lang === 'en' ? '100/100 SEO' : 'Sınırsız Revize',
                     pills: lang === 'de'
-                      ? ['4.9★ Google & Trustpilot', '100% DSGVO & Fake-Schutz', 'Automatischer QR-Trichter']
+                      ? ['Next.js 16 & <0.6s Ladezeit', '100/100 SEO & GEO Ready', 'Admin-Panel & Unbegrenzte Revision']
                       : lang === 'en'
-                      ? ['4.9★ Google & Trustpilot', '100% Fake Review Defense', 'Automated QR Review Funnel']
-                      : ['4.9★ Google & Trustpilot', '%100 Sahte Yorum Savunması', 'Otomatik QR Yorum Hunisi']
+                      ? ['Next.js 16 & <0.6s Load Speed', '100/100 SEO & GEO Ready', 'Custom Admin Panel & Unlimited Revs']
+                      : ['Next.js 16 & <0.6s Ultra Hız', '100/100 SEO & GEO Altyapısı', 'Özel Admin Paneli & Sınırsız Revize']
                   },
                   'server-side-tracking': {
                     accent: '#0F9D58',
@@ -1968,8 +1969,8 @@ export default function Home({ initialLang = 'tr' }) {
                             {service.icon === 'seo' && (
                               <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="#0F9D58" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                             )}
-                            {service.icon === 'review' && (
-                              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="#FBBC04" stroke="#EA4335" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            {(service.icon === 'review' || service.icon === 'web-design') && (
+                              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="m9 8-3 2 3 2"/><path d="m15 8 3 2-3 2"/></svg>
                             )}
                             {service.icon === 'youtube' && (
                               <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
@@ -2484,7 +2485,7 @@ export default function Home({ initialLang = 'tr' }) {
                         { id: 'seo', label: 'SEO & GEO (AI)' },
                         { id: 'tiktok-ads', label: 'TikTok Ads' },
                         { id: 'server-side-tracking', label: 'Server-Side CAPI' },
-                        { id: 'yorum-yonetimi', label: 'Olumsuz Yorum' },
+                        { id: 'web-sitesi-tasarimi', label: lang === 'en' ? 'Turnkey Website' : 'Anahtar Teslim Web' },
                         { id: 'all', label: '360° Tüm Kanallar' },
                       ].map((opt) => (
                         <button
@@ -2927,7 +2928,7 @@ export default function Home({ initialLang = 'tr' }) {
                 <li><a href={svcUrl(lang, 'meta-ads')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Meta Advantage+ Kampagnen' : lang === 'en' ? 'Meta Advantage+ Ads' : 'Meta Advantage+ Kampanyaları'}</a></li>
                 <li><a href={svcUrl(lang, 'server-side-tracking')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Server-Side CAPI & sGTM' : lang === 'en' ? 'Server-Side CAPI Tracking' : 'Server-Side CAPI & sGTM'}</a></li>
                 <li><a href={svcUrl(lang, 'seo')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google Maps & Local SEO' : lang === 'en' ? 'Google Maps & Local SEO' : 'Google Haritalar & Yerel SEO'}</a></li>
-                <li><a href={svcUrl(lang, 'yorum-yonetimi')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Bewertungsmanagement' : lang === 'en' ? 'Review Defense & Removal' : 'Olumsuz Yorum Temizleme'}</a></li>
+                <li><a href={svcUrl(lang, 'web-sitesi-tasarimi')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Schlüsselfertiges Webdesign' : lang === 'en' ? 'Turnkey Web Design & CMS' : 'Anahtar Teslim Web Sitesi & CMS'}</a></li>
                 <li><a href={svcUrl(lang, 'tiktok-ads')} className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'TikTok Shop & Spark Ads' : lang === 'en' ? 'TikTok Shop & Spark Ads' : 'TikTok Shop & Spark Ads'}</a></li>
                 <li><a href="/about" className="text-[#4285F4] font-bold hover:underline block pt-1">{lang === 'de' ? 'Über Salih Maral →' : lang === 'en' ? 'About Salih Maral →' : 'Salih Maral Hakkında →'}</a></li>
               </ul>

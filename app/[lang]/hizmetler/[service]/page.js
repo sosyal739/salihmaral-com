@@ -114,23 +114,45 @@ const serviceMeta = {
       description: 'Su kuyusu, yetim ve Ramazan/Kurban bağış hunileri. $10.000/aylık ücretsiz Google Ad Grants hibe reklam yönetimi.',
     },
   },
-  'yorum-yonetimi': {
+  'web-sitesi-tasarimi': {
     de: {
-      title: 'Bewertungsmanagement & Google Maps SEO | Salih Maral',
-      description: 'Löschung unberechtigter 1-Stern-Bewertungen auf Google Maps und Trustpilot. Schützen Sie Ihre digitale Unternehmensreputation.',
+      title: 'Schlüsselfertiges Webdesign & Next.js SEO | Salih Maral',
+      description: 'Hochmoderne, SEO-optimierte Unternehmenswebsites mit Next.js, Admin-Panel und unbegrenzten Revisionen.',
     },
     en: {
-      title: 'Review & Online Reputation Management | Salih Maral',
-      description: 'Legally remove unfair 1-star reviews on Google Maps and Trustpilot. Protect your reputation and win customer trust.',
+      title: 'Turnkey Web Design & SEO Website Development | Salih Maral',
+      description: 'State-of-the-art Next.js 16 corporate websites: 100/100 SEO & GEO ready, easy-to-use admin panel, and unlimited revisions included.',
     },
     tr: {
-      title: 'Olumsuz Yorum ve İtibar Yönetimi | Salih Maral',
-      description: 'Google Haritalar ve Trustpilot üzerindeki haksız, sahte 1 yıldızlı yorumların yasal zeminde hızlıca kaldırılması.',
+      title: 'Anahtar Teslim Web Sitesi & Kurumsal Tasarım | Salih Maral',
+      description: 'Son model Next.js 16 donanımlı, 100/100 SEO & GEO uyumlu, gelişmiş admin panelli ve sınırsız revize garantili anahtar teslim web sitesi.',
     },
   },
 }
 
 const serviceFaqs = {
+  'web-sitesi-tasarimi': {
+    en: [
+      {
+        q: 'What is included in the Turnkey Website package (Admin Panel, SEO & Revisions)?',
+        a: 'Every website is built from scratch with Next.js 16 architecture, equipped with a user-friendly Admin Panel (CMS), 100/100 Google Lighthouse SEO & GEO optimization, GA4/CAPI tracking, and unlimited design revisions until you are 100% satisfied.'
+      },
+      {
+        q: 'Why do you use Next.js instead of traditional WordPress templates?',
+        a: 'Ready-made WordPress themes suffer from slow loading speeds, plugin vulnerabilities, and wasted ad clicks. Our Next.js server-side rendered (SSR) websites load in under 0.8 seconds, boost Google Ads Quality Score to 10/10, and rank effortlessly on Google.'
+      }
+    ],
+    tr: [
+      {
+        q: 'Anahtar teslim web sitesi paketinde neler var (Admin Paneli, SEO ve Sınırsız Revize)?',
+        a: 'Siteniz son model Next.js 16 mimarisiyle sıfırdan kurulur; kod bilmeden her yeri yönetebileceğiniz gelişmiş Türkçe/İngilizce Admin Paneli, 100/100 Google SEO & GEO uyumu, GA4/CAPI reklam takip kurulumu ve memnun kalana kadar sınırsız revize garantisi dahildir.'
+      },
+      {
+        q: 'Neden klasik WordPress şablonları yerine son model özel yazılım kullanıyorsunuz?',
+        a: 'Hazır WordPress temaları yavaş açılır, güvenlik açığı barındırır ve reklam tıklamalarınızı boşa harcar. Kurduğumuz Next.js tabanlı siteler 0.8 saniyenin altında açılır, Google Ads Kalite Puanınızı 10/10 yapar ve SEO sıralamalarında doğrudan üstünlük sağlar.'
+      }
+    ]
+  },
   'meta-ads': {
     de: [
       {
@@ -228,21 +250,21 @@ const serviceFaqs = {
 export async function generateMetadata({ params }) {
   const resolvedParams = params && typeof params.then === 'function' ? await params : params
   const { lang, service } = resolvedParams || {}
-  const currentLang = lang || 'de'
+  const currentLang = lang || 'tr'
   
   let key = service || ''
-  if (service === 'bewertungsmanagement' || service === 'review-management') {
-    key = 'yorum-yonetimi'
+  if (service === 'bewertungsmanagement' || service === 'review-management' || service === 'yorum-yonetimi' || service === 'web-design') {
+    key = 'web-sitesi-tasarimi'
   }
 
   const metaData = serviceMeta[key]?.[currentLang] || {
-    title: `${service || 'Dienstleistungen'} | Salih Maral`,
-    description: 'Professionelle Digital Marketing Dienstleistungen von Salih Maral.',
+    title: `${service || 'Hizmetler'} | Salih Maral`,
+    description: 'Salih Maral profesyonel dijital pazarlama ve büyüme hizmetleri.',
   }
 
-  const pathPrefix = currentLang === 'de' ? 'de/dienstleistungen' : currentLang === 'en' ? 'en/services' : 'tr/hizmetler'
-  const serviceSlug = key === 'yorum-yonetimi' 
-    ? (currentLang === 'de' ? 'bewertungsmanagement' : currentLang === 'en' ? 'review-management' : 'yorum-yonetimi')
+  const pathPrefix = currentLang === 'en' ? 'en/services' : 'tr/hizmetler'
+  const serviceSlug = key === 'web-sitesi-tasarimi' 
+    ? (currentLang === 'en' ? 'web-design' : 'web-sitesi-tasarimi')
     : key
   const canonicalUrl = `https://www.salihmaral.com/${pathPrefix}/${serviceSlug}`
 
@@ -254,10 +276,9 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        de: `https://www.salihmaral.com/de/dienstleistungen/${key === 'yorum-yonetimi' ? 'bewertungsmanagement' : key}`,
-        en: `https://www.salihmaral.com/en/services/${key === 'yorum-yonetimi' ? 'review-management' : key}`,
-        tr: `https://www.salihmaral.com/tr/hizmetler/${key === 'yorum-yonetimi' ? 'yorum-yonetimi' : key}`,
-        'x-default': `https://www.salihmaral.com/de/dienstleistungen/${key === 'yorum-yonetimi' ? 'bewertungsmanagement' : key}`,
+        en: `https://www.salihmaral.com/en/services/${key === 'web-sitesi-tasarimi' ? 'web-design' : key}`,
+        tr: `https://www.salihmaral.com/tr/hizmetler/${key === 'web-sitesi-tasarimi' ? 'web-sitesi-tasarimi' : key}`,
+        'x-default': `https://www.salihmaral.com/tr/hizmetler/${key === 'web-sitesi-tasarimi' ? 'web-sitesi-tasarimi' : key}`,
       }
     },
     openGraph: {
@@ -284,7 +305,7 @@ export async function generateMetadata({ params }) {
 }
 
 export async function generateStaticParams() {
-  const baseServices = ['google-ads', 'meta-ads', 'youtube-ads', 'server-side-tracking', 'tiktok-ads', 'x-ads', 'seo', 'islamic-charity-ngo-marketing']
+  const baseServices = ['google-ads', 'meta-ads', 'youtube-ads', 'server-side-tracking', 'tiktok-ads', 'x-ads', 'seo', 'islamic-charity-ngo-marketing', 'web-sitesi-tasarimi']
   const params = []
 
   // German
@@ -298,6 +319,7 @@ export async function generateStaticParams() {
   baseServices.forEach(service => {
     params.push({ lang: 'en', service })
   })
+  params.push({ lang: 'en', service: 'web-design' })
   params.push({ lang: 'en', service: 'review-management' })
   params.push({ lang: 'en', service: 'yorum-yonetimi' })
 
@@ -318,20 +340,20 @@ export default async function ServicePage({ params }) {
     notFound()
   }
 
-  const currentLang = lang || 'de'
+  const currentLang = lang || 'tr'
   let key = service || ''
-  if (service === 'bewertungsmanagement' || service === 'review-management') {
-    key = 'yorum-yonetimi'
+  if (service === 'bewertungsmanagement' || service === 'review-management' || service === 'yorum-yonetimi' || service === 'web-design') {
+    key = 'web-sitesi-tasarimi'
   }
 
   const metaData = serviceMeta[key]?.[currentLang] || {
-    title: `${service || 'Dienstleistungen'} | Salih Maral`,
-    description: 'Professionelle Digital Marketing Dienstleistungen von Salih Maral.',
+    title: `${service || 'Hizmetler'} | Salih Maral`,
+    description: 'Salih Maral profesyonel dijital pazarlama ve büyüme hizmetleri.',
   }
 
-  const pathPrefix = currentLang === 'de' ? 'de/dienstleistungen' : currentLang === 'en' ? 'en/services' : 'tr/hizmetler'
-  const serviceSlug = key === 'yorum-yonetimi' 
-    ? (currentLang === 'de' ? 'bewertungsmanagement' : currentLang === 'en' ? 'review-management' : 'yorum-yonetimi')
+  const pathPrefix = currentLang === 'en' ? 'en/services' : 'tr/hizmetler'
+  const serviceSlug = key === 'web-sitesi-tasarimi' 
+    ? (currentLang === 'en' ? 'web-design' : 'web-sitesi-tasarimi')
     : key
   const canonicalUrl = `https://www.salihmaral.com/${pathPrefix}/${serviceSlug}`
 

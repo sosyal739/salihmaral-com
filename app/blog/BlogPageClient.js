@@ -17,7 +17,7 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO & GEO Optimierung', slug: 'seo' },
-    { title: 'Bewertungsmanagement', slug: 'bewertungsmanagement' }
+    { title: 'Schlüsselfertige Website & CMS', slug: 'web-sitesi-tasarimi' }
   ],
   tr: [
     { title: 'Google Ads Yönetimi', slug: 'google-ads' },
@@ -27,7 +27,7 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO & GEO Optimizasyonu', slug: 'seo' },
-    { title: 'Yorum Yönetimi', slug: 'yorum-yonetimi' }
+    { title: 'Anahtar Teslim Web Sitesi', slug: 'web-sitesi-tasarimi' }
   ],
   en: [
     { title: 'Google Ads Management', slug: 'google-ads' },
@@ -37,15 +37,15 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO & GEO Services', slug: 'seo' },
-    { title: 'Review Management', slug: 'review-management' }
+    { title: 'Turnkey Web Design & CMS', slug: 'web-sitesi-tasarimi' }
   ]
 }
 
 const getLocalizedServiceUrl = (targetLang, serviceSlug) => {
   const pathSegment = targetLang === 'de' ? 'dienstleistungen' : targetLang === 'en' ? 'services' : 'hizmetler'
   let slug = serviceSlug
-  if (serviceSlug === 'bewertungsmanagement' || serviceSlug === 'yorum-yonetimi' || serviceSlug === 'review-management') {
-    slug = targetLang === 'de' ? 'bewertungsmanagement' : targetLang === 'en' ? 'review-management' : 'yorum-yonetimi'
+  if (serviceSlug === 'bewertungsmanagement' || serviceSlug === 'yorum-yonetimi' || serviceSlug === 'review-management' || serviceSlug === 'web-sitesi-tasarimi' || serviceSlug === 'web-design') {
+    slug = targetLang === 'en' ? 'web-design' : 'web-sitesi-tasarimi'
   }
   return `/${targetLang}/${pathSegment}/${slug}`
 }
@@ -687,7 +687,7 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
               { name: 'Server-Side Tracking', slug: 'server-side-tracking', tag: 'sGTM & First-Party' },
               { name: 'SEO & GEO', slug: 'seo', tag: 'Yapay Zeka & Harita' },
               { name: 'TikTok Ads', slug: 'tiktok-ads', tag: 'Spark Ads & UGC' },
-              { name: 'Yorum Yönetimi', slug: 'yorum-yonetimi', tag: 'İtibar & Koruma' }
+              { name: lang === 'en' ? 'Turnkey Website' : 'Anahtar Teslim Web', slug: 'web-sitesi-tasarimi', tag: 'Next.js 16 & Admin CMS' }
             ].map((sol) => (
               <a
                 key={sol.slug}
