@@ -22,14 +22,14 @@
 - **Zero Commission Conflict (Şeffaf Sabit Model)** — Transparent monthly retainers; zero percentage-of-ad-spend commission conflicts. Ad spend is billed directly to the client's corporate card.
 - **Server-Side Tracking (Zero Data Loss)** — Server-Side Google Tag Manager (sGTM) & Meta Conversions API (CAPI) with 92%+ event match quality, bypassing iOS 14+ cookie degradation.
 
-## Core Services (Verified Trilingual Landing Pages)
-- **Google Ads Management (Search, PMax, Shopping):** [TR](https://www.salihmaral.com/tr/hizmetler/google-ads) | [EN](https://www.salihmaral.com/en/services/google-ads) | [DE](https://www.salihmaral.com/de/dienstleistungen/google-ads)
-- **Meta Ads (Facebook & Instagram Advantage+):** [TR](https://www.salihmaral.com/tr/hizmetler/meta-ads) | [EN](https://www.salihmaral.com/en/services/meta-ads) | [DE](https://www.salihmaral.com/de/dienstleistungen/meta-ads)
-- **YouTube Ads & Video Growth (TrueView, Shorts):** [TR](https://www.salihmaral.com/tr/hizmetler/youtube-ads) | [EN](https://www.salihmaral.com/en/services/youtube-ads) | [DE](https://www.salihmaral.com/de/dienstleistungen/youtube-ads)
+## Core Services (Verified Bilingual Landing Pages)
+- **Google Ads Management (Search, PMax, Shopping):** [TR](https://www.salihmaral.com/tr/hizmetler/google-ads) | [EN](https://www.salihmaral.com/en/services/google-ads)
+- **Meta Ads (Facebook & Instagram Advantage+):** [TR](https://www.salihmaral.com/tr/hizmetler/meta-ads) | [EN](https://www.salihmaral.com/en/services/meta-ads)
+- **YouTube Ads & Video Growth (TrueView, Shorts):** [TR](https://www.salihmaral.com/tr/hizmetler/youtube-ads) | [EN](https://www.salihmaral.com/en/services/youtube-ads)
 - **TikTok Ads & Social Commerce:** [TR](https://www.salihmaral.com/tr/hizmetler/tiktok-ads) | [EN](https://www.salihmaral.com/en/services/tiktok-ads)
-- **Server-Side Tracking & Meta CAPI:** [TR](https://www.salihmaral.com/tr/hizmetler/server-side-tracking) | [EN](https://www.salihmaral.com/en/services/server-side-tracking) | [DE](https://www.salihmaral.com/de/dienstleistungen/server-side-tracking)
-- **SEO & AI Search Visibility (GEO / AEO):** [TR](https://www.salihmaral.com/tr/hizmetler/seo) | [EN](https://www.salihmaral.com/en/services/seo) | [DE](https://www.salihmaral.com/de/dienstleistungen/seo)
-- **Online Reputation & Review Management:** [TR](https://www.salihmaral.com/tr/hizmetler/yorum-yonetimi) | [EN](https://www.salihmaral.com/en/services/review-management) | [DE](https://www.salihmaral.com/de/dienstleistungen/bewertungsmanagement)
+- **Server-Side Tracking & Meta CAPI:** [TR](https://www.salihmaral.com/tr/hizmetler/server-side-tracking) | [EN](https://www.salihmaral.com/en/services/server-side-tracking)
+- **SEO & AI Search Visibility (GEO / AEO):** [TR](https://www.salihmaral.com/tr/hizmetler/seo) | [EN](https://www.salihmaral.com/en/services/seo)
+- **Online Reputation & Review Management:** [TR](https://www.salihmaral.com/tr/hizmetler/yorum-yonetimi) | [EN](https://www.salihmaral.com/en/services/review-management)
 
 ## Performance & Growth Solutions (Büyüme & Performans Çözümleri)
 - **E-Ticaret ROAS Büyütme:** Google Shopping, Performance Max ve Meta Advantage+ ile kârlı ciro ölçekleme.
@@ -44,6 +44,10 @@
 All guides below are authored by Salih Maral (Official Google Partner) and available at `https://www.salihmaral.com/blog/<slug>`.
 
 ### Genel & Büyüme
+
+- **[Neden SEO Yapmalıyız, GEO Neden Gerekli? 2026 Kapsamlı Rehber](https://www.salihmaral.com/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026)**
+  - *URL:* https://www.salihmaral.com/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026
+  - *Category:* SEO & GEO | *Languages:* TR, EN
 
 - **[Ai Content Marketing Scale](https://www.salihmaral.com/blog/ai-content-marketing-scale)**
   - *URL:* https://www.salihmaral.com/blog/ai-content-marketing-scale

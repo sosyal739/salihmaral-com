@@ -29,4 +29,54 @@ coverImage: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200
 <h3>3. "ad_user_data ve ad_personalization parametreleri nasıl eklenir?"</h3>
 <p>Consent Mode v2 ile gelen bu iki yeni parametre, kullanıcının verilerinin Google reklam paneline aktarılmasına ve kişiselleştirilmiş reklam gösterimine izin verip vermediğini belirler. Google Sertifikalı bir CMP (Cookiebot, Usercentrics vb.) veya Google Tag Manager (GTM) şablonu üzerinden tetiklenmelidir.</p>
 
+<h2>📊 Consent Mode v2: Basic (Temel) vs. Advanced (Gelişmiş) Kurulum</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Özellik / Parametre</th>
+      <th>Consent Mode v2 Basic (Temel)</th>
+      <th>Consent Mode v2 Advanced (Gelişmiş)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Etiket Tetikleme</strong></td>
+      <td>Yalnızca izin verildiğinde tetiklenir</td>
+      <td>Her zaman tetiklenir, izne göre davranış değiştirir</td>
+    </tr>
+    <tr>
+      <td><strong>Çerez Reddedildiğinde</strong></td>
+      <td>Hiçbir veri gitmez (Sıfır sinyal)</td>
+      <td>Çerezsiz anonim pingleme (cookieless ping) gönderir</td>
+    </tr>
+    <tr>
+      <td><strong>Dönüşüm Modellemesi</strong></td>
+      <td>Yapay zeka modellemesi çalışmaz</td>
+      <td>Google AI kayıp dönüşümleri %90+ doğrulukla modeller</td>
+    </tr>
+    <tr>
+      <td><strong>GDPR / KVKK Uyumu</strong></td>
+      <td>%100 Uyumlu</td>
+      <td>%100 Uyumlu (Kişisel veri depolanmaz)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>🛠️ GTM ile Consent Mode v2 Kurulum Adımları</h2>
+<ol>
+  <li><strong>CMP (Çerez Yönetim Platformu) Entegrasyonu:</strong> Google Onaylı bir CMP (Cookiebot, Usercentrics, vb.) kurun veya özel çerez panelinizi GTM'e bağlayın.</li>
+  <li><strong>Varsayılan Durum (Default Consent):</strong> Tüm etiketler tetiklenmeden önce `analytics_storage`, `ad_storage`, `ad_user_data` ve `ad_personalization` parametrelerini `denied` olarak başlatın.</li>
+  <li><strong>Kullanıcı Onayı Güncellemesi:</strong> Ziyaretçi "Kabul Et" butonuna bastığında `gtag('consent', 'update', ...)` ile izinleri `granted` konumuna geçirin.</li>
+</ol>
+
 <p>Kusursuz Consent Mode v2 ve Server-Side GTM kurulumu için <a href="/tr/hizmetler/server-side-tracking">Server-Side Tracking Kurulumu</a> sayfamızdan destek alın.</p>
+
+<h2>💡 Sıkça Sorulan Sorular (SSS)</h2>
+<h3>Consent Mode v2 kişisel verileri ihlal eder mi?</h3>
+<p>Hayır. Çerezsiz pingleme sırasında IP adresi maskelenir ve kullanıcının cihazına hiçbir tanımlayıcı çerez yazılmaz; yalnızca sayfa ziyareti ve genel işlem sinyali iletilir.</p>
+
+<div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl">
+  <h3 class="text-xl font-bold text-white mb-2">Ölçümleme Hatalarınızı Sıfırlayın</h3>
+  <p class="text-slate-300 mb-4">Consent Mode v2 ve Server-Side mimarisi ile kayıp reklam bütçenizi geri kazanın.</p>
+  <a href="/#contact" class="inline-block bg-[#4285F4] hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-xl transition-colors">Ölçümleme Denetimi Alın →</a>
+</div>

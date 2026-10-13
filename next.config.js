@@ -9,9 +9,6 @@ const nextConfig = {
   },
   async rewrites() {
     return [
-      // German: /de/dienstleistungen/:service → /de/hizmetler/:service
-      { source: '/de/dienstleistungen/bewertungsmanagement', destination: '/de/hizmetler/yorum-yonetimi' },
-      { source: '/de/dienstleistungen/:service', destination: '/de/hizmetler/:service' },
       // English: /en/services/:service → /en/hizmetler/:service
       { source: '/en/services/review-management', destination: '/en/hizmetler/yorum-yonetimi' },
       { source: '/en/services/:service', destination: '/en/hizmetler/:service' },
@@ -24,20 +21,52 @@ const nextConfig = {
       { source: '/:lang/standorte', destination: '/', statusCode: 301 },
       { source: '/standorte/:city*', destination: '/', statusCode: 301 },
       { source: '/standorte', destination: '/', statusCode: 301 },
-      // 301: /de → / (Almanca ana sayfa kök dizindir; kopya sayfa ve GSC kanonik uyarısını önler)
+      // 301: German routes redirect to / (salihmaral.com is bilingual TR/EN only)
+      { source: '/de/:path*', destination: '/', statusCode: 301 },
       { source: '/de', destination: '/', statusCode: 301 },
-      // 301: Eski Türkçe DE URL'ler → Yeni Almanca URL'ler
-      { source: '/de/hizmetler/yorum-yonetimi', destination: '/de/dienstleistungen/bewertungsmanagement', statusCode: 301 },
-      { source: '/de/hizmetler/:service', destination: '/de/dienstleistungen/:service', statusCode: 301 },
       // 301: Eski Türkçe EN URL'ler → Yeni İngilizce URL'ler
       { source: '/en/hizmetler/yorum-yonetimi', destination: '/en/services/review-management', statusCode: 301 },
       { source: '/en/hizmetler/:service', destination: '/en/services/:service', statusCode: 301 },
+
       // 301: Thin / Eski Blog Yazıları → Yetkin 2026 Ana Rehberleri (GSC Dizine Ekleme Çözümü)
       { source: '/blog/meta-ads-basari', destination: '/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026', statusCode: 301 },
       { source: '/blog/seo-stratejileri-2026', destination: '/blog/google-seo-ranking-factors-2026', statusCode: 301 },
       { source: '/blog/tiktok-ads-rehber', destination: '/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
       { source: '/tr/blog/seo-stratejileri-2026', destination: '/blog/google-seo-ranking-factors-2026', statusCode: 301 },
       { source: '/en/blog/meta-ads-basari', destination: '/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026', statusCode: 301 },
+
+      // 301: Kelime Yamyamlığı (Cannibalization) Konsolidasyonu & Otorite Birleştirme
+      // 1. Consent Mode v2
+      { source: '/blog/google-consent-mode-v2-cerezsiz-takip-veri-kaybi-onleme-2026', destination: '/blog/google-consent-mode-v2-cookieless-ai-tracking-2026', statusCode: 301 },
+      { source: '/en/blog/google-consent-mode-v2-cerezsiz-takip-veri-kaybi-onleme-2026', destination: '/en/blog/google-consent-mode-v2-cookieless-ai-tracking-2026', statusCode: 301 },
+      { source: '/tr/blog/google-consent-mode-v2-cerezsiz-takip-veri-kaybi-onleme-2026', destination: '/blog/google-consent-mode-v2-cookieless-ai-tracking-2026', statusCode: 301 },
+      // 2. TikTok Shop vs Meta Advantage+
+      { source: '/blog/tiktok-shop-ads-vs-meta-advantage-plus-sosyal-ticaret-karsilastirmasi-2026', destination: '/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
+      { source: '/en/blog/tiktok-shop-ads-vs-meta-advantage-plus-sosyal-ticaret-karsilastirmasi-2026', destination: '/en/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
+      { source: '/tr/blog/tiktok-shop-ads-vs-meta-advantage-plus-sosyal-ticaret-karsilastirmasi-2026', destination: '/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
+      // 3. Server-Side GTM & Meta CAPI
+      { source: '/blog/meta-capi-google-cloud-server-side-gtm-kurulum-rehberi-2026', destination: '/blog/server-side-gtm-meta-capi-setup-2026', statusCode: 301 },
+      { source: '/en/blog/meta-capi-google-cloud-server-side-gtm-kurulum-rehberi-2026', destination: '/en/blog/server-side-gtm-meta-capi-setup-2026', statusCode: 301 },
+      { source: '/tr/blog/meta-capi-google-cloud-server-side-gtm-kurulum-rehberi-2026', destination: '/blog/server-side-gtm-meta-capi-setup-2026', statusCode: 301 },
+      // 4. Google Haritalar Local SEO (3 kopya → 1 Flagship)
+      { source: '/blog/google-maps-local-seo-guide', destination: '/blog/google-maps-local-seo-ranking-factors-2026', statusCode: 301 },
+      { source: '/en/blog/google-maps-local-seo-guide', destination: '/en/blog/google-maps-local-seo-ranking-factors-2026', statusCode: 301 },
+      { source: '/tr/blog/google-maps-local-seo-guide', destination: '/blog/google-maps-local-seo-ranking-factors-2026', statusCode: 301 },
+      { source: '/blog/local-seo-google-maps', destination: '/blog/google-maps-local-seo-ranking-factors-2026', statusCode: 301 },
+      { source: '/en/blog/local-seo-google-maps', destination: '/en/blog/google-maps-local-seo-ranking-factors-2026', statusCode: 301 },
+      { source: '/tr/blog/local-seo-google-maps', destination: '/blog/google-maps-local-seo-ranking-factors-2026', statusCode: 301 },
+      // 5. B2B Google Ads vs LinkedIn Ads
+      { source: '/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026', destination: '/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-cpl-analizi-2026', statusCode: 301 },
+      { source: '/en/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026', destination: '/en/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-cpl-analizi-2026', statusCode: 301 },
+      { source: '/tr/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026', destination: '/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-cpl-analizi-2026', statusCode: 301 },
+      // 6. Reklamveren Doğrulaması
+      { source: '/blog/google-ads-reklamveren-dogrulamasi-takilma-cozumleri-2026', destination: '/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026', statusCode: 301 },
+      { source: '/en/blog/google-ads-reklamveren-dogrulamasi-takilma-cozumleri-2026', destination: '/en/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026', statusCode: 301 },
+      { source: '/tr/blog/google-ads-reklamveren-dogrulamasi-takilma-cozumleri-2026', destination: '/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026', statusCode: 301 },
+      // 7. Meta Advantage+ AI Creative
+      { source: '/blog/meta-advantage-plus-ai-creative-scaling', destination: '/blog/meta-advantage-plus-creative-ai-2026', statusCode: 301 },
+      { source: '/en/blog/meta-advantage-plus-ai-creative-scaling', destination: '/en/blog/meta-advantage-plus-creative-ai-2026', statusCode: 301 },
+      { source: '/tr/blog/meta-advantage-plus-ai-creative-scaling', destination: '/blog/meta-advantage-plus-creative-ai-2026', statusCode: 301 },
     ];
   },
   async headers() {

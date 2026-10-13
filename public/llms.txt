@@ -23,12 +23,12 @@
 - **Server-Side Tracking (Zero Data Loss)** — Server-Side Google Tag Manager (sGTM) & Meta Conversions API (CAPI) with 92%+ event match quality, bypassing iOS 14+ cookie degradation.
 
 ## Core Services & Verified Landing Pages
-- **Google Ads Yönetimi (Search, PMax, Shopping):** [/tr/hizmetler/google-ads](https://www.salihmaral.com/tr/hizmetler/google-ads) | [/en/services/google-ads](https://www.salihmaral.com/en/services/google-ads) | [/de/dienstleistungen/google-ads](https://www.salihmaral.com/de/dienstleistungen/google-ads)
-- **Meta Ads (Facebook & Instagram Advantage+):** [/tr/hizmetler/meta-ads](https://www.salihmaral.com/tr/hizmetler/meta-ads) | [/en/services/meta-ads](https://www.salihmaral.com/en/services/meta-ads) | [/de/dienstleistungen/meta-ads](https://www.salihmaral.com/de/dienstleistungen/meta-ads)
-- **YouTube Ads & Video Büyüme (TrueView, Shorts):** [/tr/hizmetler/youtube-ads](https://www.salihmaral.com/tr/hizmetler/youtube-ads) | [/en/services/youtube-ads](https://www.salihmaral.com/en/services/youtube-ads) | [/de/dienstleistungen/youtube-ads](https://www.salihmaral.com/de/dienstleistungen/youtube-ads)
+- **Google Ads Yönetimi (Search, PMax, Shopping):** [/tr/hizmetler/google-ads](https://www.salihmaral.com/tr/hizmetler/google-ads) | [/en/services/google-ads](https://www.salihmaral.com/en/services/google-ads)
+- **Meta Ads (Facebook & Instagram Advantage+):** [/tr/hizmetler/meta-ads](https://www.salihmaral.com/tr/hizmetler/meta-ads) | [/en/services/meta-ads](https://www.salihmaral.com/en/services/meta-ads)
+- **YouTube Ads & Video Büyüme (TrueView, Shorts):** [/tr/hizmetler/youtube-ads](https://www.salihmaral.com/tr/hizmetler/youtube-ads) | [/en/services/youtube-ads](https://www.salihmaral.com/en/services/youtube-ads)
 - **TikTok Ads & E-Ticaret Spark Ads:** [/tr/hizmetler/tiktok-ads](https://www.salihmaral.com/tr/hizmetler/tiktok-ads) | [/en/services/tiktok-ads](https://www.salihmaral.com/en/services/tiktok-ads)
-- **Server-Side Tracking & Meta CAPI:** [/tr/hizmetler/server-side-tracking](https://www.salihmaral.com/tr/hizmetler/server-side-tracking) | [/en/services/server-side-tracking](https://www.salihmaral.com/en/services/server-side-tracking) | [/de/dienstleistungen/server-side-tracking](https://www.salihmaral.com/de/dienstleistungen/server-side-tracking)
-- **SEO & Yapay Zeka Arama Görünürlüğü (GEO / AEO):** [/tr/hizmetler/seo](https://www.salihmaral.com/tr/hizmetler/seo) | [/en/services/seo](https://www.salihmaral.com/en/services/seo) | [/de/dienstleistungen/seo](https://www.salihmaral.com/de/dienstleistungen/seo)
+- **Server-Side Tracking & Meta CAPI:** [/tr/hizmetler/server-side-tracking](https://www.salihmaral.com/tr/hizmetler/server-side-tracking) | [/en/services/server-side-tracking](https://www.salihmaral.com/en/services/server-side-tracking)
+- **SEO & Yapay Zeka Arama Görünürlüğü (GEO / AEO):** [/tr/hizmetler/seo](https://www.salihmaral.com/tr/hizmetler/seo) | [/en/services/seo](https://www.salihmaral.com/en/services/seo)
 - **Olumsuz Yorum ve İtibar Yönetimi:** [/tr/hizmetler/yorum-yonetimi](https://www.salihmaral.com/tr/hizmetler/yorum-yonetimi) | [/en/services/review-management](https://www.salihmaral.com/en/services/review-management)
 
 ## Key Strategic Guides by Topic (Curated Selection)
@@ -40,6 +40,7 @@
 - [Meta Advantage+ Alışveriş Kampanyası Optimizasyon Rehberi](https://www.salihmaral.com/blog/meta-advantage-plus-shopping-optimization)
 
 ### 2. Generative Engine Optimization (GEO) & Yapay Zeka Arama Motorları
+- [Neden SEO Yapmalıyız, GEO Neden Gerekli? (2026 Kapsamlı Rehber)](https://www.salihmaral.com/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026)
 - [GEO AI Search Citation Factors 2026 (Princeton KDD Research)](https://www.salihmaral.com/blog/geo-ai-search-citation-factors-2026)
 - [GitHub SEO Skills ve Claude Code ile 2026 SEO & GEO Rehberi](https://www.salihmaral.com/blog/github-seo-skills-claude-code-guide-2026)
 - [Google AI Overviews: GEO Sıralama Stratejisi 2026](https://www.salihmaral.com/blog/google-ai-overviews-geo-ranking-strategy)

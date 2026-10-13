@@ -122,7 +122,7 @@ export default async function sitemap() {
     })
   })
 
-  // 3. Dynamic Blog Posts (82 strategic guides in both Turkish & English = 164 indexed pages)
+  // 3. Dynamic Blog Posts (75 strategic pillar guides in both Turkish & English = 150 indexed pages)
   const blogEntries = []
   const postsDir = path.join(process.cwd(), 'content', 'blog')
 
