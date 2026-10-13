@@ -248,7 +248,7 @@ export default function AboutPage() {
 
   useEffect(() => {
     const saved = localStorage.getItem('preferredLanguage')
-    if (saved && ['de', 'tr', 'en'].includes(saved)) setLang(saved)
+    if (saved && ['tr', 'en'].includes(saved)) setLang(saved)
   }, [])
 
   const t = translations[lang]
@@ -274,7 +274,7 @@ export default function AboutPage() {
           <div className="flex items-center justify-between">
             {/* Logo & Partner Badge */}
             <div className="flex items-center gap-3">
-              <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center gap-2 group">
+              <a href={lang === 'tr' ? '/' : `/${lang}`} className="flex items-center gap-2 group">
                 <picture>
                   <source srcSet="/logo-sm.webp" type="image/webp" />
                   <img src="/logo.png" alt="Salih Maral Logo" className="h-9 w-auto" width="36" height="36" />
@@ -285,7 +285,7 @@ export default function AboutPage() {
               </a>
               <span className="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-200/70 text-[11px] font-semibold text-blue-700">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
-                Offizieller Google Partner
+                {lang === 'en' ? 'Official Google Partner' : 'Resmi Google Partneri'}
               </span>
             </div>
             
@@ -316,16 +316,13 @@ export default function AboutPage() {
                   </div>
                 )}
               </div>
-              <a href={`/${lang}/standorte`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
-                {t.nav.standorte}
-              </a>
               <a href="/blog" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
                 Blog
               </a>
               <a href="/about" className="text-sm font-bold text-[#4285F4] transition-colors">
                 {t.nav.about}
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+              <a href={`${lang === 'tr' ? '' : `/${lang}`}/#contact`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
                 {t.nav.contact}
               </a>
             </div>
@@ -334,12 +331,12 @@ export default function AboutPage() {
             <div className="flex items-center space-x-2">
               <div className="hidden sm:flex items-center space-x-1 bg-slate-100 p-1 rounded-xl">
                 <Button
-                  variant={lang === 'de' ? 'default' : 'outline'}
+                  variant={lang === 'tr' ? 'default' : 'outline'}
                   size="sm"
-                  onClick={() => setLang('de')}
-                  className={lang === 'de' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
+                  onClick={() => setLang('tr')}
+                  className={lang === 'tr' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
                 >
-                  DE
+                  TR
                 </Button>
                 <Button
                   variant={lang === 'en' ? 'default' : 'outline'}
@@ -348,14 +345,6 @@ export default function AboutPage() {
                   className={lang === 'en' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
                 >
                   EN
-                </Button>
-                <Button
-                  variant={lang === 'tr' ? 'default' : 'outline'}
-                  size="sm"
-                  onClick={() => setLang('tr')}
-                  className={lang === 'tr' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
-                >
-                  TR
                 </Button>
               </div>
 
@@ -377,22 +366,16 @@ export default function AboutPage() {
             {/* Mobile Language Switcher */}
             <div className="flex items-center justify-between bg-slate-100 p-1.5 rounded-xl border border-slate-200/80">
               <button
-                onClick={() => { setLang('de'); setMobileMenuOpen(false); }}
-                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
+                onClick={() => { setLang('tr'); setMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
               >
-                🇩🇪 DE
+                🇹🇷 TR
               </button>
               <button
                 onClick={() => { setLang('en'); setMobileMenuOpen(false); }}
                 className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
               >
                 🇬🇧 EN
-              </button>
-              <button
-                onClick={() => { setLang('tr'); setMobileMenuOpen(false); }}
-                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
-              >
-                🇹🇷 TR
               </button>
             </div>
 
@@ -412,16 +395,13 @@ export default function AboutPage() {
               ))}
             </div>
             <div className="pt-2 border-t border-gray-100 flex flex-col space-y-2 text-sm font-semibold">
-              <a href={`/${lang}/standorte`} className="text-[#4285F4] hover:underline py-1" onClick={() => setMobileMenuOpen(false)}>
-                📍 {t.nav.standorte} (18 Metropolen)
-              </a>
               <a href="/blog" className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
-                📚 Blog & Ratgeber
+                📚 {lang === 'en' ? 'Blog & Guides' : 'Blog & Uzman Rehberler'}
               </a>
               <a href="/about" className="text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
                 👤 {t.nav.about}
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
+              <a href={`${lang === 'tr' ? '' : `/${lang}`}/#contact`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
                 ✉️ {t.nav.contact}
               </a>
             </div>
@@ -604,7 +584,7 @@ export default function AboutPage() {
               { name: 'Server-Side Tracking', slug: 'server-side-tracking', tag: 'sGTM & First-Party' },
               { name: 'SEO & GEO', slug: 'seo', tag: 'Yapay Zeka & Harita' },
               { name: 'TikTok Ads', slug: 'tiktok-ads', tag: 'Spark Ads & UGC' },
-              { name: 'Yorum Yönetimi', slug: 'yorum-yonetimi', tag: 'İtibar & Koruma' }
+              { name: 'Anahtar Teslim Web Sitesi', slug: 'web-sitesi-tasarimi', tag: 'Next.js 16 & Özel CMS' }
             ].map((sol) => (
               <a
                 key={sol.slug}
@@ -623,10 +603,10 @@ export default function AboutPage() {
 
           <div className="text-center">
             <a
-              href={lang === 'de' ? '/#contact' : `/${lang}#contact`}
+              href={lang === 'tr' ? '/#contact' : `/${lang}#contact`}
               className="inline-flex items-center gap-2 text-sm font-bold text-[#4285F4] hover:text-blue-700 bg-white border border-blue-200 px-5 py-2.5 rounded-xl shadow-xs hover:shadow transition-all"
             >
-              <span>{lang === 'tr' ? 'Hemen Ücretsiz Strateji Görüşmesi Planlayın' : lang === 'en' ? 'Schedule a Free Strategy Call' : 'Kostenloses Strategiegespräch vereinbaren'}</span>
+              <span>{lang === 'en' ? 'Schedule a Free Strategy Call' : 'Hemen Ücretsiz Strateji Görüşmesi Planlayın'}</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
@@ -639,26 +619,24 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
             {/* Col 1: Brand & E-E-A-T */}
             <div className="space-y-4">
-              <a href={lang === 'de' ? '/' : `/${lang}`} className="inline-block group">
+              <a href={lang === 'tr' ? '/' : `/${lang}`} className="inline-block group">
                 <span className="text-2xl font-black tracking-tight text-white group-hover:text-blue-400 transition-colors">
                   Salih Maral<span className="text-blue-500">.</span>
                 </span>
               </a>
               <p className="text-xs text-slate-400 leading-relaxed">
-                {lang === 'tr'
-                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve Server-Side Tracking ile karlı büyüme sağlar.'
-                  : lang === 'en'
+                {lang === 'en'
                   ? 'Official Google Partner Salih Maral delivers scalable revenue growth across global markets through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
-                  : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}
+                  : 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve Server-Side Tracking ile karlı büyüme sağlar.'}
               </p>
 
               {/* Partner Badge */}
               <div className="p-3 rounded-xl bg-blue-950/40 border border-blue-800/50 text-[11px] text-blue-200">
                 <div className="font-bold text-white flex items-center gap-1.5 mb-1">
                   <span>⭐</span>
-                  <span>{lang === 'tr' ? 'Resmi Google Partner Güvencesi' : lang === 'en' ? 'Official Google Partner' : 'Zertifizierter Google Partner'}</span>
+                  <span>{lang === 'en' ? 'Official Google Partner' : 'Resmi Google Partner Güvencesi'}</span>
                 </div>
-                <div>{lang === 'tr' ? 'E-ticaret ve işletmeler için şeffaf, komisyonsuz ve sabit ücretli büyüme danışmanlığı.' : lang === 'en' ? 'Transparent flat-fee growth consulting for e-commerce and scaling brands.' : 'Transparente Festpreis-Betreuung für E-Commerce und wachsende Unternehmen.'}</div>
+                <div>{lang === 'en' ? 'Transparent flat-fee growth consulting for e-commerce and scaling brands.' : 'E-ticaret ve işletmeler için şeffaf, komisyonsuz ve sabit ücretli büyüme danışmanlığı.'}</div>
               </div>
 
               <div className="text-xs text-slate-400 space-y-1.5 pt-1">
@@ -674,7 +652,7 @@ export default function AboutPage() {
             {/* Col 2: Services */}
             <div>
               <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                {lang === 'tr' ? 'Hizmetlerimiz' : lang === 'en' ? 'Core Services' : 'Dienstleistungen'}
+                {lang === 'en' ? 'Core Services' : 'Hizmetlerimiz'}
               </div>
               <ul className="space-y-2 text-xs">
                 {servicesList[lang].map((srv, idx) => (
@@ -693,7 +671,7 @@ export default function AboutPage() {
             {/* Col 3: Strategic Focus Areas */}
             <div>
               <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                {lang === 'tr' ? 'Büyüme Alanları' : lang === 'en' ? 'Strategic Growth' : 'Strategische Schwerpunkte'}
+                {lang === 'en' ? 'Strategic Growth' : 'Büyüme Alanları'}
               </div>
               <div className="grid grid-cols-1 gap-y-2 text-xs">
                 {[
@@ -701,7 +679,7 @@ export default function AboutPage() {
                   { name: 'Meta Advantage+ Reklamları', slug: 'meta-ads' },
                   { name: 'Server-Side CAPI Tracking', slug: 'server-side-tracking' },
                   { name: 'Google Haritalar & Yerel SEO', slug: 'seo' },
-                  { name: 'Olumsuz Yorum Temizleme', slug: 'yorum-yonetimi' },
+                  { name: 'Anahtar Teslim Web Sitesi', slug: 'web-sitesi-tasarimi' },
                   { name: 'TikTok Shop & Spark Ads', slug: 'tiktok-ads' }
                 ].map((c) => (
                   <a
@@ -715,10 +693,10 @@ export default function AboutPage() {
               </div>
               <div className="mt-4 pt-3 border-t border-slate-800">
                 <a
-                  href={lang === 'de' ? '/#contact' : `/${lang}#contact`}
+                  href={lang === 'tr' ? '/#contact' : `/${lang}#contact`}
                   className="text-xs font-bold text-blue-400 hover:text-blue-300"
                 >
-                  {lang === 'tr' ? 'Ücretsiz Analiz Alın ➔' : lang === 'en' ? 'Get Free Analysis ➔' : 'Kostenlose Analyse ➔'}
+                  {lang === 'en' ? 'Get Free Analysis ➔' : 'Ücretsiz Analiz Alın ➔'}
                 </a>
               </div>
             </div>
@@ -726,32 +704,32 @@ export default function AboutPage() {
             {/* Col 4: Quick Links & Legal */}
             <div>
               <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                {lang === 'tr' ? 'Rehber & Şirket' : lang === 'en' ? 'Guides & Company' : 'Ratgeber & Unternehmen'}
+                {lang === 'en' ? 'Guides & Company' : 'Rehber & Şirket'}
               </div>
               <ul className="space-y-2.5 text-xs mb-6 text-slate-400">
                 <li>
-                  <a href={lang === 'de' ? '/' : `/${lang}`} className="hover:text-white transition-colors">
-                    {lang === 'tr' ? 'Ana Sayfa' : lang === 'en' ? 'Home' : 'Startseite'}
+                  <a href={lang === 'tr' ? '/' : `/${lang}`} className="hover:text-white transition-colors">
+                    {lang === 'en' ? 'Home' : 'Ana Sayfa'}
                   </a>
                 </li>
                 <li>
                   <a href="/about" className="text-blue-400 font-semibold">
-                    {lang === 'tr' ? 'Hakkımda & Deneyim' : lang === 'en' ? 'About Salih Maral' : 'Über Salih Maral'}
+                    {lang === 'en' ? 'About Salih Maral' : 'Hakkımda & Deneyim'}
                   </a>
                 </li>
                 <li>
                   <a href="/blog" className="hover:text-white transition-colors">
-                    {lang === 'tr' ? 'Blog & Stratejik Rehberler' : lang === 'en' ? 'Guides & Articles' : 'Ratgeber & Blog'}
+                    {lang === 'en' ? 'Guides & Articles' : 'Blog & Stratejik Rehberler'}
                   </a>
                 </li>
                 <li>
                   <a href="/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026" className="hover:text-white transition-colors">
-                    {lang === 'tr' ? 'E-Ticaret Dönüşüm Rehberi' : lang === 'en' ? 'E-Commerce Conversion Guide' : 'E-Commerce Leitfaden'}
+                    {lang === 'en' ? 'E-Commerce Conversion Guide' : 'E-Ticaret Dönüşüm Rehberi'}
                   </a>
                 </li>
                 <li>
-                  <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-blue-400 hover:underline">
-                    {lang === 'tr' ? 'Ücretsiz Analiz Talebi' : lang === 'en' ? 'Request Free Analysis' : 'Kostenlose Analyse anfordern'}
+                  <a href={`${lang === 'tr' ? '' : `/${lang}`}/#contact`} className="text-blue-400 hover:underline">
+                    {lang === 'en' ? 'Request Free Analysis' : 'Ücretsiz Analiz Talebi'}
                   </a>
                 </li>
               </ul>
@@ -759,12 +737,12 @@ export default function AboutPage() {
               <div className="pt-4 border-t border-slate-800 space-y-2 text-xs">
                 <div>
                   <a href="/impressum" className="text-slate-400 hover:text-white transition-colors">
-                    Impressum
+                    {lang === 'en' ? 'Legal Notice & Imprint' : 'Yasal Künye'}
                   </a>
                 </div>
                 <div>
                   <a href="/datenschutz" className="text-slate-400 hover:text-white transition-colors">
-                    Datenschutz
+                    {lang === 'en' ? 'Privacy Policy & KVKK' : 'Gizlilik Politikası & KVKK'}
                   </a>
                 </div>
               </div>
@@ -774,12 +752,12 @@ export default function AboutPage() {
           {/* Bottom Copyright Bar */}
           <div className="pt-8 border-t border-slate-800 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              &copy; 2026 Salih Maral &mdash; Offizieller Google Partner. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
+              &copy; 2026 Salih Maral &mdash; {lang === 'en' ? 'Official Google Partner.' : 'Resmi Google Partneri.'} {lang === 'en' ? 'All rights reserved.' : 'Tüm hakları saklıdır.'}
             </div>
             <div className="flex items-center gap-4 text-[11px]">
               <span>İstanbul &bull; Türkiye &bull; Global Remote</span>
               <span>&bull;</span>
-              <span className="text-slate-400">100% DSGVO / KVKK-konform</span>
+              <span className="text-slate-400">{lang === 'en' ? '100% GDPR & KVKK Compliant' : '%100 KVKK & GDPR Uyumlu'}</span>
             </div>
           </div>
         </div>

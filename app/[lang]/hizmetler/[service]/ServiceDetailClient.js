@@ -1051,7 +1051,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               </a>
               <span className="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-200/70 text-[11px] font-semibold text-blue-700">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
-                Offizieller Google Partner
+                {lang === 'en' ? 'Official Google Partner' : 'Resmi Google Partneri'}
               </span>
             </div>
             
@@ -1084,16 +1084,13 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                   </div>
                 )}
               </div>
-              <a href={`/${lang}/standorte`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
-                {navT.standorte}
-              </a>
               <a href="/blog" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
                 Blog
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+              <a href={`${lang === 'tr' ? '' : `/${lang}`}/#about`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
                 {navT.about}
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+              <a href={`${lang === 'tr' ? '' : `/${lang}`}/#contact`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
                 {navT.contact}
               </a>
             </div>
@@ -1102,12 +1099,12 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
             <div className="flex items-center space-x-2">
               <div className="hidden sm:flex items-center space-x-1 bg-slate-100 p-1 rounded-xl">
                 <Button
-                  variant={lang === 'de' ? 'default' : 'outline'}
+                  variant={lang === 'tr' ? 'default' : 'outline'}
                   size="sm"
-                  onClick={() => handleLanguageChange('de')}
-                  className={lang === 'de' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
+                  onClick={() => handleLanguageChange('tr')}
+                  className={lang === 'tr' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
                 >
-                  DE
+                  TR
                 </Button>
                 <Button
                   variant={lang === 'en' ? 'default' : 'outline'}
@@ -1116,14 +1113,6 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                   className={lang === 'en' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
                 >
                   EN
-                </Button>
-                <Button
-                  variant={lang === 'tr' ? 'default' : 'outline'}
-                  size="sm"
-                  onClick={() => handleLanguageChange('tr')}
-                  className={lang === 'tr' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
-                >
-                  TR
                 </Button>
               </div>
 
@@ -1149,22 +1138,16 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
             {/* Mobile Language Switcher */}
             <div className="flex items-center justify-between bg-slate-100 p-1.5 rounded-xl border border-slate-200/80">
               <button
-                onClick={() => { handleLanguageChange('de'); setMobileMenuOpen(false); }}
-                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
+                onClick={() => { handleLanguageChange('tr'); setMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
               >
-                🇩🇪 DE
+                🇹🇷 TR
               </button>
               <button
                 onClick={() => { handleLanguageChange('en'); setMobileMenuOpen(false); }}
                 className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
               >
                 🇬🇧 EN
-              </button>
-              <button
-                onClick={() => { handleLanguageChange('tr'); setMobileMenuOpen(false); }}
-                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
-              >
-                🇹🇷 TR
               </button>
             </div>
 
@@ -1184,16 +1167,13 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               ))}
             </div>
             <div className="pt-2 border-t border-gray-100 flex flex-col space-y-2 text-sm font-semibold">
-              <a href={`/${lang}/standorte`} className="text-[#4285F4] hover:underline" onClick={() => setMobileMenuOpen(false)}>
-                📍 {navT.standorte} (18 Metropolen)
-              </a>
               <a href="/blog" className="text-gray-800 hover:text-[#4285F4]" onClick={() => setMobileMenuOpen(false)}>
-                📚 Blog & Ratgeber
+                📚 {lang === 'en' ? 'Blog & Guides' : 'Blog & Uzman Rehberler'}
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-gray-800 hover:text-[#4285F4]" onClick={() => setMobileMenuOpen(false)}>
+              <a href={`${lang === 'tr' ? '' : `/${lang}`}/#about`} className="text-gray-800 hover:text-[#4285F4]" onClick={() => setMobileMenuOpen(false)}>
                 👤 {navT.about}
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-gray-800 hover:text-[#4285F4]" onClick={() => setMobileMenuOpen(false)}>
+              <a href={`${lang === 'tr' ? '' : `/${lang}`}/#contact`} className="text-gray-800 hover:text-[#4285F4]" onClick={() => setMobileMenuOpen(false)}>
                 ✉️ {navT.contact}
               </a>
             </div>
@@ -1205,12 +1185,12 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
       <div className="pt-20 bg-slate-50/80 border-b border-gray-200/60">
         <div className="container mx-auto px-4 py-2.5">
           <nav className="flex items-center space-x-2 text-xs text-gray-500 overflow-x-auto whitespace-nowrap">
-            <a href={lang === 'de' ? '/' : `/${lang}`} className="hover:text-[#4285F4] font-medium transition-colors">
-              {lang === 'de' ? 'Startseite' : lang === 'en' ? 'Home' : 'Ana Sayfa'}
+            <a href={lang === 'tr' ? '/' : `/${lang}`} className="hover:text-[#4285F4] font-medium transition-colors">
+              {lang === 'en' ? 'Home' : 'Ana Sayfa'}
             </a>
             <span>/</span>
-            <a href={`/${lang}/standorte`} className="hover:text-[#4285F4] font-medium transition-colors">
-              {lang === 'de' ? 'Standorte & Regionen' : lang === 'en' ? 'Locations & Regions' : 'Şehirler & Bölgeler'}
+            <a href={lang === 'en' ? '/en/#services' : '/#services'} className="hover:text-[#4285F4] font-medium transition-colors">
+              {lang === 'en' ? 'Services' : 'Hizmetler'}
             </a>
             <span>/</span>
             <span className="text-gray-900 font-semibold">{data.title}</span>
@@ -1530,7 +1510,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                     <tr className="bg-blue-50/40 hover:bg-blue-50/70 transition-colors">
                       <td className="p-4 md:p-5 font-bold text-gray-900 flex items-center gap-2">
                         <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-                        <strong>{lang === 'de' ? 'Salih Maral Fixpreis' : lang === 'en' ? 'Salih Maral Flat Fee' : 'Salih Maral Sabit Fiyat (Fixpreis)'}</strong>
+                        <strong>{lang === 'en' ? 'Salih Maral Flat Fee' : 'Salih Maral Sabit Fiyat'}</strong>
                       </td>
                       <td className="p-4 md:p-5 text-emerald-700 font-semibold">
                         {lang === 'de' ? '🟢 100% Planbar, feste Monatspauschale' : lang === 'en' ? '🟢 100% Predictable, flat monthly retainer' : '🟢 %100 Güvenli, sabit aylık hizmet bedeli'}
@@ -2692,7 +2672,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 <div className="flex items-center space-x-3 mb-3">
                   <span className="w-7 h-7 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-xs">✓</span>
                   <h3 className="text-xl font-bold text-white">
-                    {lang === 'en' ? 'Salih Maral Transparent Flat-Fee Retainer' : 'Salih Maral Şeffaf Sabit Fiyat (Fixpreis) Modeli'}
+                    {lang === 'en' ? 'Salih Maral Transparent Flat-Fee Retainer' : 'Salih Maral Şeffaf Sabit Fiyat Modeli'}
                   </h3>
                 </div>
                 <p className="text-sm text-slate-300 mb-4">
@@ -3242,12 +3222,12 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               <div className="pt-4 border-t border-slate-800 space-y-2 text-xs">
                 <div>
                   <a href="/impressum" className="text-slate-400 hover:text-white transition-colors">
-                    Impressum
+                    {lang === 'en' ? 'Legal Notice & Imprint' : 'Yasal Künye'}
                   </a>
                 </div>
                 <div>
                   <a href="/datenschutz" className="text-slate-400 hover:text-white transition-colors">
-                    Datenschutz
+                    {lang === 'en' ? 'Privacy Policy & KVKK' : 'Gizlilik Politikası & KVKK'}
                   </a>
                 </div>
               </div>
@@ -3257,12 +3237,12 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
           {/* Bottom Copyright Bar */}
           <div className="pt-8 border-t border-slate-800 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              &copy; 2026 Salih Maral &mdash; Offizieller Google Partner. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
+              &copy; 2026 Salih Maral &mdash; {lang === 'en' ? 'Official Google Partner.' : 'Resmi Google Partneri.'} {lang === 'en' ? 'All rights reserved.' : 'Tüm hakları saklıdır.'}
             </div>
             <div className="flex items-center gap-4 text-[11px]">
               <span>İstanbul / Türkiye &bull; Global Remote & Danışmanlık</span>
               <span>&bull;</span>
-              <span className="text-slate-400">100% DSGVO & KVKK Uyumlu</span>
+              <span className="text-slate-400">{lang === 'en' ? '100% GDPR & KVKK Compliant' : '%100 KVKK & GDPR Uyumlu'}</span>
             </div>
           </div>
         </div>

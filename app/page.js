@@ -11,7 +11,6 @@ import { Badge } from '@/components/ui/badge'
 import { Mail, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen, Menu, X, ChevronRight, MessageSquare, ChevronDown, HelpCircle } from 'lucide-react'
 import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
 import LeadFunnelWizard from '@/components/LeadFunnelWizard'
-import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
 import EcosystemMarquee from '@/components/EcosystemMarquee'
 
 const translations = {
@@ -1216,7 +1215,7 @@ export default function Home({ initialLang = 'tr' }) {
                             ? 'Monatliche transparente Fixpreise ohne prozentuale Provision'
                             : lang === 'en'
                             ? 'Transparent monthly flat-fees • Zero commission'
-                            : 'Aylık şeffaf Fixpreis (sabit fiyat) • Sürpriz komisyonsuz'}
+                            : 'Aylık şeffaf sabit fiyat • Sürpriz komisyonsuz'}
                         </span>
                       </div>
                       <button
@@ -1657,7 +1656,7 @@ export default function Home({ initialLang = 'tr' }) {
               { val: '300+', label: t.stats.brands, color: '#FBBC04', trend: 'Global & Yerel' },
               { val: '+250%', label: t.stats.traffic, color: '#34A853', trend: 'Organik Büyüme' },
               { val: '+180%', label: t.stats.roi, color: '#4285F4', trend: 'Ort. ROI Artışı' },
-              { val: '720+', label: lang === 'de' ? 'Verwaltete Kampagnen' : lang === 'en' ? 'Managed Campaigns' : 'Yönetilen Kampanya', color: '#34A853', trend: '1,74M+ Klicks' },
+              { val: '720+', label: lang === 'de' ? 'Verwaltete Kampagnen' : lang === 'en' ? 'Managed Campaigns' : 'Yönetilen Kampanya', color: '#34A853', trend: lang === 'en' ? '1.74M+ Clicks' : '1,74M+ Tıklama' },
             ].map((stat, i) => (
               <div
                 key={i}
@@ -1685,79 +1684,154 @@ export default function Home({ initialLang = 'tr' }) {
         </div>
       </section>
 
-      {/* Princeton GEO & AI Search Knowledge Entity Section (Citation & Authority Grounding) */}
+      {/* Princeton GEO & AI Search Knowledge Entity Section (Ultra-Prestigious Executive Showcase) */}
       {t.geoKnowledge && (
-        <section aria-label="Princeton GEO Knowledge Card" className="py-12 bg-slate-50/70 border-b border-slate-200/80 relative overflow-hidden">
+        <section aria-label="Princeton GEO Knowledge Card" className="py-16 bg-slate-50/70 border-b border-slate-200/80 relative overflow-hidden">
           <div className="container mx-auto px-4 max-w-7xl relative z-10">
-            <div className="bg-white rounded-3xl p-6 sm:p-8 md:p-10 border border-slate-200/90 shadow-[0_8px_30px_rgba(81,56,238,0.04)] relative overflow-hidden">
-              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-100">
-                <div className="space-y-2">
-                  <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-3.5 py-1 text-xs font-bold text-[#4285F4]">
-                    <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
-                    <span>{t.geoKnowledge.badge}</span>
+            <div className="relative rounded-[2rem] bg-gradient-to-br from-slate-950 via-[#0B1120] to-indigo-950 p-6 sm:p-10 md:p-12 border border-slate-800/90 shadow-[0_24px_60px_rgba(15,23,42,0.35)] overflow-hidden text-white">
+              {/* Top Multi-Color Google Spectrum Glow Bar */}
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#4285F4] via-[#EA4335] via-[#FBBC04] to-[#34A853]"></div>
+
+              {/* Ambient Luxury Aura Orbs */}
+              <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+              <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-purple-500/15 rounded-full blur-[100px] pointer-events-none"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[250px] bg-emerald-500/10 rounded-full blur-[110px] pointer-events-none"></div>
+
+              {/* Header Row */}
+              <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 border-b border-white/10">
+                <div className="space-y-3 max-w-3xl">
+                  <div className="flex flex-wrap items-center gap-2.5">
+                    <div className="inline-flex items-center space-x-2 bg-blue-500/15 border border-blue-400/30 rounded-full px-4 py-1.5 text-xs font-extrabold text-blue-300 shadow-inner">
+                      <ShieldCheck className="w-4 h-4 text-[#4285F4]" />
+                      <span>{t.geoKnowledge.badge}</span>
+                    </div>
+                    <div className="inline-flex items-center space-x-1.5 bg-emerald-500/15 border border-emerald-400/30 rounded-full px-3 py-1 text-[11px] font-bold text-emerald-300">
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                      <span>{lang === 'en' ? 'Verified Knowledge Graph Entity' : 'Doğrulanmış Bilgi Grafiği Varlığı'}</span>
+                    </div>
                   </div>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-gray-950 tracking-tight">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-white leading-tight">
                     {t.geoKnowledge.title}
                   </h2>
+                  {/* AI Engine Citation Badges */}
+                  <div className="flex flex-wrap items-center gap-2 pt-1">
+                    <span className="text-[11px] font-semibold text-slate-400 mr-1">
+                      {lang === 'en' ? 'AI Citation Engines:' : 'AI Kaynak Motorları:'}
+                    </span>
+                    {[
+                      { name: 'Google AI Overviews', dot: 'bg-[#4285F4]' },
+                      { name: 'ChatGPT Search', dot: 'bg-emerald-400' },
+                      { name: 'Perplexity AI', dot: 'bg-cyan-400' },
+                      { name: 'Claude AI', dot: 'bg-amber-400' },
+                      { name: 'Google Gemini', dot: 'bg-purple-400' }
+                    ].map((engine, i) => (
+                      <span
+                        key={i}
+                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/[0.06] border border-white/10 text-[11px] font-semibold text-slate-200"
+                      >
+                        <span className={`w-1.5 h-1.5 rounded-full ${engine.dot}`}></span>
+                        {engine.name}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <div className="flex items-center gap-3">
+
+                {/* Action / Verification Buttons */}
+                <div className="flex flex-wrap items-center gap-3 shrink-0">
                   <a
                     href="https://www.google.com/partners/agency?id=5868261912"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-xs font-bold text-slate-800 transition-colors"
+                    className="inline-flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-gradient-to-r from-[#4285F4] to-blue-600 hover:from-blue-500 hover:to-indigo-600 text-xs sm:text-sm font-extrabold text-white shadow-[0_10px_25px_rgba(66,133,244,0.35)] hover:shadow-[0_15px_30px_rgba(66,133,244,0.5)] transition-all hover:-translate-y-0.5"
                   >
+                    <Award className="w-4 h-4 text-amber-300" />
                     <span>{t.geoKnowledge.partnerVerify || 'Google Partner Doğrula'}</span>
-                    <span className="text-[#4285F4]">↗</span>
+                    <span className="text-blue-100">↗</span>
                   </a>
                   <a
                     href="/llms.txt"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl border border-slate-200 hover:border-slate-300 text-xs font-semibold text-slate-600 transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-3 rounded-2xl bg-white/[0.07] hover:bg-white/[0.14] border border-white/15 hover:border-white/30 text-xs sm:text-sm font-bold text-slate-200 transition-all"
                     title="LLM Directives (llms.txt)"
                   >
+                    <Cpu className="w-4 h-4 text-emerald-400" />
                     <span>llms.txt</span>
                   </a>
                 </div>
               </div>
 
               {/* Blockquote with Princeton Citation Sourcing */}
-              <div className="my-6 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-blue-50/60 via-purple-50/40 to-slate-50 border-l-4 border-[#4285F4]">
-                <blockquote className="text-slate-800 text-sm sm:text-base md:text-lg leading-relaxed font-medium italic">
-                  "{t.geoKnowledge.quote}"
-                </blockquote>
-                <cite className="block text-xs sm:text-sm font-bold text-slate-600 not-italic mt-3">
-                  — {t.geoKnowledge.citeAuthor}
-                </cite>
+              <div className="relative z-10 my-8 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-blue-500/15 via-indigo-500/10 to-white/[0.03] border border-white/15 border-l-4 border-l-[#4285F4] backdrop-blur-md shadow-inner">
+                <div className="flex items-start gap-4">
+                  <div className="hidden sm:flex w-12 h-12 rounded-2xl bg-[#4285F4]/20 border border-[#4285F4]/40 items-center justify-center shrink-0 text-[#4285F4]">
+                    <Sparkles className="w-6 h-6" />
+                  </div>
+                  <div className="space-y-3">
+                    <blockquote className="text-slate-100 text-sm sm:text-base md:text-lg leading-relaxed font-medium">
+                      "{t.geoKnowledge.quote}"
+                    </blockquote>
+                    <div className="flex flex-wrap items-center gap-3 pt-1">
+                      <cite className="text-xs sm:text-sm font-extrabold text-blue-300 not-italic">
+                        — {t.geoKnowledge.citeAuthor}
+                      </cite>
+                      <span className="hidden sm:inline-block text-slate-600">•</span>
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-300 bg-emerald-500/10 border border-emerald-400/20 px-2.5 py-0.5 rounded-full">
+                        <CheckCircle className="w-3 h-3" />
+                        {lang === 'en' ? '100% First-Party Verified Data' : '%100 Doğrulanmış Birincil Veri'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* 4 Quantitative & Factual Pillars */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
-                {t.geoKnowledge.facts.map((fact, idx) => (
-                  <div key={idx} className="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-white hover:border-blue-200 transition-all flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center justify-between gap-2 mb-2">
-                        <span className="text-[10px] font-black uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-100">
-                          {fact.badge}
-                        </span>
+              <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 pt-2">
+                {t.geoKnowledge.facts.map((fact, idx) => {
+                  const accentColors = [
+                    { bar: 'from-[#4285F4] to-blue-400', badgeBg: 'bg-blue-500/20 text-blue-300 border-blue-400/30', icon: Award, iconColor: 'text-blue-400' },
+                    { bar: 'from-[#34A853] to-emerald-400', badgeBg: 'bg-emerald-500/20 text-emerald-300 border-emerald-400/30', icon: TrendingUp, iconColor: 'text-emerald-400' },
+                    { bar: 'from-[#FBBC04] to-amber-400', badgeBg: 'bg-amber-500/20 text-amber-300 border-amber-400/30', icon: Cpu, iconColor: 'text-amber-400' },
+                    { bar: 'from-[#EA4335] to-rose-400', badgeBg: 'bg-rose-500/20 text-rose-300 border-rose-400/30', icon: Globe, iconColor: 'text-rose-400' },
+                  ]
+                  const theme = accentColors[idx % accentColors.length]
+                  const FactIcon = theme.icon
+                  return (
+                    <div
+                      key={idx}
+                      className="group relative p-5 sm:p-6 rounded-2xl bg-white/[0.05] hover:bg-white/[0.09] border border-white/10 hover:border-white/25 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
+                    >
+                      <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${theme.bar}`}></div>
+                      <div>
+                        <div className="flex items-center justify-between gap-2 mb-3.5">
+                          <span className={`text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-lg border ${theme.badgeBg}`}>
+                            {fact.badge}
+                          </span>
+                          <div className={`w-8 h-8 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center ${theme.iconColor}`}>
+                            <FactIcon className="w-4 h-4" />
+                          </div>
+                        </div>
+                        <h3 className="font-black text-base text-white mb-2 group-hover:text-blue-200 transition-colors">
+                          {fact.title}
+                        </h3>
+                        <p className="text-xs text-slate-300 leading-relaxed">
+                          {fact.desc}
+                        </p>
                       </div>
-                      <h3 className="font-extrabold text-sm text-gray-950 mb-1.5">{fact.title}</h3>
-                      <p className="text-xs text-slate-600 leading-relaxed">{fact.desc}</p>
+                      {fact.link && (
+                        <a
+                          href={fact.link}
+                          target={fact.link.startsWith('http') ? '_blank' : '_self'}
+                          rel={fact.link.startsWith('http') ? 'noopener noreferrer' : ''}
+                          className="inline-flex items-center gap-1.5 text-xs font-extrabold text-blue-300 hover:text-white mt-4 pt-3 border-t border-white/10 group-hover:translate-x-0.5 transition-all"
+                        >
+                          <span>{t.geoKnowledge.readMore || 'Detayları İncele'}</span>
+                          <ChevronRight className="w-3.5 h-3.5" />
+                        </a>
+                      )}
                     </div>
-                    {fact.link && (
-                      <a
-                        href={fact.link}
-                        target={fact.link.startsWith('http') ? '_blank' : '_self'}
-                        rel={fact.link.startsWith('http') ? 'noopener noreferrer' : ''}
-                        className="inline-flex items-center gap-1 text-[11px] font-bold text-[#4285F4] hover:underline mt-3"
-                      >
-                        <span>{t.geoKnowledge.readMore || 'Detayları İncele'}</span>
-                        <ChevronRight className="w-3 h-3" />
-                      </a>
-                    )}
-                  </div>
-                ))}
+                  )
+                })}
               </div>
             </div>
           </div>
@@ -2805,15 +2879,6 @@ export default function Home({ initialLang = 'tr' }) {
               </a>
             </Button>
           </div>
-        </div>
-      </section>
-
-      {/* Interactive Google Ads Budget & Cost Calculator Section */}
-      <section className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
-        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-emerald-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
-        <div className="container mx-auto px-4 max-w-5xl relative z-10">
-          <GoogleAdsBudgetCalculator lang={lang} />
         </div>
       </section>
 

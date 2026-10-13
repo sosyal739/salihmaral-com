@@ -335,7 +335,7 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
           <div className="flex items-center justify-between">
             {/* Logo & Partner Badge */}
             <div className="flex items-center gap-3">
-              <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center gap-2 group">
+              <a href={lang === 'en' ? '/en' : '/'} className="flex items-center gap-2 group">
                 <picture>
                   <source srcSet="/logo-sm.webp" type="image/webp" />
                   <img src="/logo.png" alt="Salih Maral Logo" className="h-9 w-auto" width="36" height="36" />
@@ -352,7 +352,7 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
 
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-6">
-              <a href={lang === 'de' ? '/' : `/${lang}`} className="text-sm font-bold text-gray-700 hover:text-[#4285F4] transition-colors">
+              <a href={lang === 'en' ? '/en' : '/'} className="text-sm font-bold text-gray-700 hover:text-[#4285F4] transition-colors">
                 {t.home}
               </a>
               <div 
@@ -776,7 +776,7 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
             {/* Col 3: Strategic Growth Areas */}
             <div>
               <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                {lang === 'tr' ? 'Büyüme Alanları' : lang === 'en' ? 'Strategic Growth' : 'Strategische Schwerpunkte'}
+                {lang === 'en' ? 'Strategic Growth' : 'Büyüme Alanları'}
               </div>
               <div className="grid grid-cols-1 gap-y-2 text-xs">
                 {[
@@ -784,7 +784,7 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
                   { name: 'Meta Advantage+ Reklamları', slug: 'meta-ads' },
                   { name: 'Server-Side CAPI Tracking', slug: 'server-side-tracking' },
                   { name: 'Google Haritalar & Yerel SEO', slug: 'seo' },
-                  { name: 'Olumsuz Yorum Temizleme', slug: 'bewertungsmanagement' },
+                  { name: 'Anahtar Teslim Web Sitesi', slug: 'web-sitesi-tasarimi' },
                   { name: 'TikTok Shop & Spark Ads', slug: 'tiktok-ads' }
                 ].map((c) => (
                   <a
@@ -798,10 +798,10 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
               </div>
               <div className="mt-4 pt-3 border-t border-slate-800">
                 <a
-                  href={lang === 'de' ? '/#contact' : `/${lang}#contact`}
+                  href={lang === 'tr' ? '/#contact' : `/${lang}#contact`}
                   className="text-xs font-bold text-blue-400 hover:text-blue-300"
                 >
-                  {lang === 'tr' ? 'Ücretsiz Analiz Alın ➔' : lang === 'en' ? 'Get Free Analysis ➔' : 'Kostenlose Analyse ➔'}
+                  {lang === 'en' ? 'Get Free Analysis ➔' : 'Ücretsiz Analiz Alın ➔'}
                 </a>
               </div>
             </div>
@@ -809,32 +809,32 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
             {/* Col 4: Quick Links & Legal */}
             <div>
               <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                {lang === 'tr' ? 'Rehber & Şirket' : lang === 'en' ? 'Guides & Company' : 'Ratgeber & Unternehmen'}
+                {lang === 'en' ? 'Guides & Company' : 'Rehber & Şirket'}
               </div>
               <ul className="space-y-2.5 text-xs mb-6 text-slate-400">
                 <li>
-                  <a href={lang === 'de' ? '/' : `/${lang}`} className="hover:text-white transition-colors">
-                    {lang === 'tr' ? 'Ana Sayfa' : lang === 'en' ? 'Home' : 'Startseite'}
+                  <a href={lang === 'tr' ? '/' : `/${lang}`} className="hover:text-white transition-colors">
+                    {lang === 'en' ? 'Home' : 'Ana Sayfa'}
                   </a>
                 </li>
                 <li>
                   <a href="/about" className="hover:text-white transition-colors">
-                    {lang === 'tr' ? 'Hakkımda & Deneyim' : lang === 'en' ? 'About Salih Maral' : 'Über Salih Maral'}
+                    {lang === 'en' ? 'About Salih Maral' : 'Hakkımda & Deneyim'}
                   </a>
                 </li>
                 <li>
                   <a href={blogHomeUrl} className="text-blue-400 font-semibold">
-                    {lang === 'tr' ? 'Blog & Stratejik Rehberler' : lang === 'en' ? 'Guides & Articles' : 'Ratgeber & Blog'}
+                    {lang === 'en' ? 'Guides & Articles' : 'Blog & Stratejik Rehberler'}
                   </a>
                 </li>
                 <li>
                   <a href={getBlogUrl('e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026')} className="hover:text-white transition-colors">
-                    {lang === 'tr' ? 'E-Ticaret Dönüşüm Rehberi' : lang === 'en' ? 'E-Commerce Conversion Guide' : 'E-Commerce Leitfaden'}
+                    {lang === 'en' ? 'E-Commerce Conversion Guide' : 'E-Ticaret Dönüşüm Rehberi'}
                   </a>
                 </li>
                 <li>
-                  <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-blue-400 hover:underline">
-                    {lang === 'tr' ? 'Ücretsiz Analiz Talebi' : lang === 'en' ? 'Request Free Analysis' : 'Kostenlose Analyse anfordern'}
+                  <a href={`${lang === 'tr' ? '' : `/${lang}`}/#contact`} className="text-blue-400 hover:underline">
+                    {lang === 'en' ? 'Request Free Analysis' : 'Ücretsiz Analiz Talebi'}
                   </a>
                 </li>
               </ul>
@@ -842,12 +842,12 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
               <div className="pt-4 border-t border-slate-800 space-y-2 text-xs">
                 <div>
                   <a href="/impressum" className="text-slate-400 hover:text-white transition-colors">
-                    Impressum
+                    {lang === 'en' ? 'Legal Notice & Imprint' : 'Yasal Künye'}
                   </a>
                 </div>
                 <div>
                   <a href="/datenschutz" className="text-slate-400 hover:text-white transition-colors">
-                    Datenschutz
+                    {lang === 'en' ? 'Privacy Policy & KVKK' : 'Gizlilik Politikası & KVKK'}
                   </a>
                 </div>
               </div>
@@ -857,12 +857,12 @@ export default function BlogPageClient({ initialPosts = [], initialLang = 'tr' }
           {/* Bottom Copyright Bar */}
           <div className="pt-8 border-t border-slate-800 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              &copy; 2026 Salih Maral &mdash; Offizieller Google Partner. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
+              &copy; 2026 Salih Maral &mdash; {lang === 'en' ? 'Official Google Partner.' : 'Resmi Google Partneri.'} {lang === 'en' ? 'All rights reserved.' : 'Tüm hakları saklıdır.'}
             </div>
             <div className="flex items-center gap-4 text-[11px]">
               <span>İstanbul &bull; Türkiye &bull; Global Remote</span>
               <span>&bull;</span>
-              <span className="text-slate-400">100% DSGVO / KVKK-konform</span>
+              <span className="text-slate-400">{lang === 'en' ? '100% GDPR & KVKK Compliant' : '%100 KVKK & GDPR Uyumlu'}</span>
             </div>
           </div>
         </div>
