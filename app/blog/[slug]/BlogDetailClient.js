@@ -129,9 +129,22 @@ export default function BlogDetailClient({ initialPost, initialLang = 'tr', rela
   const [loading, setLoading] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
+  const [showStickyBar, setShowStickyBar] = useState(false)
+  const [isStickyDismissed, setIsStickyDismissed] = useState(false)
 
   const blogHomeUrl = lang === 'en' ? '/en/blog' : '/blog'
   const getBlogUrl = (postSlug) => (lang === 'en' ? `/en/blog/${postSlug}` : `/blog/${postSlug}`)
+
+  // Scroll listener for sticky quick-conversion bar
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== 'undefined') {
+        setShowStickyBar(window.scrollY > 400)
+      }
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   // Restore preferred language or sync with URL
   useEffect(() => {
@@ -487,14 +500,17 @@ export default function BlogDetailClient({ initialPost, initialLang = 'tr', rela
               <div className="bg-white p-6 rounded-2xl border border-gray-200/80 shadow-sm">
                 <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-amber-500"></span>
-                  <span>{lang === 'tr' ? 'Popüler Rehberler' : 'Top Strategy Guides'}</span>
+                  <span>{lang === 'tr' ? 'Stratejik Büyüme Rehberleri' : 'Top Strategy Guides'}</span>
                 </h4>
-                <ul className="space-y-2 text-gray-600">
-                  <li><a href={getBlogUrl('google-ads-fixpreis-vs-prozent-agentur-modell-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Google Ads Sabit Fiyat vs. Komisyon' : 'Google Ads Flat-Fee vs Commission'}</a></li>
+                <ul className="space-y-2 text-gray-600 text-xs">
+                  <li><a href={getBlogUrl('b2b-google-ads-kurumsal-lead-ve-musteri-kazanma-rehberi-2026')} className="hover:text-[#4285F4] hover:underline font-semibold text-slate-800">{lang === 'tr' ? 'B2B Google Ads & Kurumsal Lead' : 'B2B Google Ads & Enterprise Leads'}</a></li>
+                  <li><a href={getBlogUrl('e-ticaret-roas-artirma-ve-reklam-butcesi-olcekleme-2026')} className="hover:text-[#4285F4] hover:underline font-semibold text-slate-800">{lang === 'tr' ? 'E-Ticaret ROAS & Bütçe Ölçekleme' : 'E-Commerce ROAS & Budget Scaling'}</a></li>
+                  <li><a href={getBlogUrl('google-ads-fixpreis-vs-prozent-agentur-modell-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Google Ads Sabit Fiyat vs. Komisyon' : 'Flat-Fee vs Commission'}</a></li>
                   <li><a href={getBlogUrl('meta-reklamlarinda-para-kaybetmeyi-durdurun-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Meta Ads ROAS Skalalama' : 'Meta Ads ROAS Scaling'}</a></li>
                   <li><a href={getBlogUrl('neden-seo-yapmaliyiz-geo-neden-gerekli-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Neden SEO & GEO Gerekli?' : 'Why SEO & GEO in 2026?'}</a></li>
-                  <li><a href={getBlogUrl('server-side-gtm-meta-capi-setup-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Server-Side CAPI Kurulumu' : 'Server-Side CAPI Setup'}</a></li>
-                  <li><a href={blogHomeUrl} className="text-[#4285F4] font-semibold hover:underline block pt-1">{lang === 'tr' ? 'Tüm Blog Yazıları →' : 'Explore all articles →'}</a></li>
+                  <li><a href={getBlogUrl('google-haritalar-yorum-toplama-qr-nfc-rehberi-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Haritalar & QR/NFC Yorum Rehberi' : 'Google Maps QR/NFC Review Guide'}</a></li>
+                  <li><a href={getBlogUrl('klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026')} className="hover:text-[#4285F4] hover:underline">{lang === 'tr' ? 'Klinikler & Doktorlar Google Ads' : 'Doctors & Clinics Google Ads'}</a></li>
+                  <li><a href={blogHomeUrl} className="text-[#4285F4] font-semibold hover:underline block pt-1">{lang === 'tr' ? 'Tüm Blog Yazıları (45+ Rehber) →' : 'Explore all articles →'}</a></li>
                 </ul>
               </div>
             </div>
@@ -706,6 +722,46 @@ export default function BlogDetailClient({ initialPost, initialLang = 'tr', rela
           </div>
         </div>
       </footer>
+
+      {/* Floating Sticky Conversion Bar for High-Engagement Readers */}
+      {showStickyBar && !isStickyDismissed && (
+        <div className="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:max-w-md z-50 animate-in fade-in slide-in-from-bottom-5 duration-300">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-950/95 text-white backdrop-blur-md border border-slate-700/80 shadow-[0_12px_40px_rgba(0,0,0,0.4)] flex items-center justify-between gap-3 relative">
+            <button
+              onClick={() => setIsStickyDismissed(true)}
+              className="absolute -top-2.5 -right-2.5 w-6 h-6 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center text-xs shadow-md cursor-pointer border border-slate-600 transition-colors"
+              aria-label="Kapat"
+            >
+              ✕
+            </button>
+            <div className="flex items-center gap-3 min-w-0">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#4285F4] to-indigo-600 flex items-center justify-center shrink-0 text-white font-black text-xs shadow-md">
+                SM
+              </div>
+              <div className="space-y-0.5 min-w-0">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span className="text-[10px] font-extrabold uppercase tracking-wide text-emerald-300 truncate">
+                    {lang === 'en' ? 'Official Google Partner' : 'Resmi Google Partneri'}
+                  </span>
+                </div>
+                <p className="text-xs font-bold text-slate-100 truncate">
+                  {lang === 'en' ? 'Free B2B & E-Commerce Audit' : 'B2B & E-Ticaret Büyüme Analizi'}
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 shrink-0">
+              <a
+                href={lang === 'en' ? '/en/#contact' : '/#contact'}
+                className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-[#4285F4] to-blue-600 hover:from-blue-500 hover:to-indigo-600 text-xs font-black text-white shadow-md hover:shadow-blue-500/30 transition-all cursor-pointer whitespace-nowrap inline-flex items-center gap-1"
+              >
+                <span>{lang === 'en' ? 'Free Audit' : 'Ücretsiz Analiz'}</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Custom styles for blog content */}
       <style jsx global>{`
