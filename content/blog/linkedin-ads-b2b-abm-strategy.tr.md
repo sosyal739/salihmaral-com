@@ -1,16 +1,16 @@
 ---
 slug: "linkedin-ads-b2b-abm-strategy"
 lang: "tr"
-title: "LinkedIn Ads ile B2B Hesap Tabanlı Pazarlama (ABM) Stratejileri"
-excerpt: "B2B'de karar vericileri hedefleyin. Salih Maral, LinkedIn Insight Tag ve ABM kampanya yapılandırmalarını detaylandırıyor."
+title: "LinkedIn ABM Ads: B2B Hesap Tabanlı Reklam Rehberi"
+excerpt: "LinkedIn ABM Ads ile B2B karar vericileri hedefleyin. Şirket listesi (TAL) eşleştirme, LinkedIn CAPI ve çok katmanlı B2B huni kurulumu rehberi."
 category: "LinkedIn Ads"
-date: "2026-07-16"
-readTime: "10"
+date: "2026-10-15"
+readTime: "11"
 coverImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&h=630&fit=crop&q=80"
 ---
 
           <div class="lead">
-            <p>Performans pazarlama uzmanı <strong>Salih Maral</strong>, B2B işletmelerin yüksek değerli hedef hesaplara doğrudan ulaşarak satış döngülerini kısaltmalarını sağlayan LinkedIn Ads Hesap Tabanlı Pazarlama (ABM - Account-Based Marketing) stratejilerini ve teknik kurulum süreçlerini paylaşıyor. LinkedIn Ads üzerinde başarılı bir ABM stratejisi uygulamak; doğru bir hedef şirket listesinin (CSV olarak) platforma yüklenmesi, LinkedIn Insight Tag ve Conversions API entegrasyonuyla karar vericilerin davranışlarının izlenmesi, karar verici unvanlarına göre (C-level, Direktör vb.) mikro-hedefler tanımlanması ve her aşamaya uygun özel kreatiflerin sunulmasından oluşur. Doğru eşleşme oranları elde etmek için e-posta, telefon ve LinkedIn profil verileriyle beslenen kitle listeleri, reklam bütçenizin sadece dönüşüm ihtimali yüksek büyük hesaplara harcanmasını garanti altına alır. Bu rehberde, LinkedIn Ads panelinde B2B dönüşüm oranlarını artıracak sıfırdan ileri düzeye ABM kampanya kurulum adımlarını ve veri eşleştirme formüllerini bulacaksınız.</p>
+            <p><strong>LinkedIn ABM Ads (Hesap Tabanlı Pazarlama Reklamları)</strong>, B2B şirketlerin rastgele kitleler yerine yalnızca satın alma potansiyeli en yüksek hedef şirket listelerini (Target Account List - TAL) ve bu şirketlerdeki karar verici komiteleri (CEO, CFO, CTO, Satın Alma Direktörleri) doğrudan hedeflemesini sağlayan stratejidir. Resmi Google Partner ve B2B performans pazarlama uzmanı <strong>Salih Maral</strong> (17+ yıl deneyim), LinkedIn Matched Audiences CSV/CRM eşleştirmesi, LinkedIn Insight Tag + Conversions API (CAPI) kurulumu ve 3 aşamalı B2B ABM reklam hunisiyle kurumsal satış döngülerini nasıl kısaltacağınızı adım adım anlatıyor.</p>
           </div>
 
           <h2>🏢 B2B Pazarlamada Paradigma Değişimi: Neden Hesap Tabanlı Pazarlama (ABM)?</h2>
@@ -228,12 +228,11 @@ coverImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200
           <div class="highlight-box">
             <h4>📚 Devamını Okuyun</h4>
             <ul>
-              <li><a href="/blog/first-party-data-marketing">Çerezsiz Reklamcılık: Birinci Taraf Veri (1st-Party Data) ile Geleceğe Hazırlanın</a></li>
+              <li><a href="/blog/b2b-google-ads-kurumsal-lead-ve-musteri-kazanma-rehberi-2026">B2B Google Ads Stratejisi: Kurumsal Lead ve Müşteri Kazanma Rehberi 2026</a></li>
+              <li><a href="/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-cpl-analizi-2026">B2B'de Google Ads mi LinkedIn Ads mi? CPL ve ROI Karşılaştırması</a></li>
+              <li><a href="/blog/server-side-gtm-meta-capi-setup-2026">Server-Side GTM ve Conversions API (CAPI) Kurulum Rehberi 2026</a></li>
+              <li><a href="/blog/ga4-custom-events-funnels">Google Tag Manager (GTM) & GA4 Funnel Kurulumu 2026</a></li>
               <li><a href="/tr/hizmetler/google-ads">Salih Maral Google Ads Reklam Yönetimi Hizmeti</a></li>
-              <li><a href="/blog/server-side-tracking-capi-guide">Sunucu Tarafı İzleme (Server-Side Tracking) ve Conversions API (CAPI) Rehberi</a></li>
-              <li><a href="/blog/meta-ads-retargeting-funnels">Meta Ads Yeniden Hedefleme Hunileri ve Kitle Stratejileri</a></li>
-              <li><a href="/blog/google-seo-ranking-factors-2026">Google SEO Sıralama Faktörleri 2026</a></li>
               <li><a href="/tr/hizmetler/seo">Salih Maral Profesyonel SEO ve GEO Hizmetleri</a></li>
             </ul>
           </div>
-

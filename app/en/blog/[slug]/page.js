@@ -114,69 +114,109 @@ export default async function EnBlogDetailPage({ params }) {
   const canonicalUrl = `https://www.salihmaral.com/en/blog/${slug}`
   const trUrl = `https://www.salihmaral.com/blog/${slug}`
 
+  const faqItems = []
+  const rawHtml = post.content || ''
+  const pStrongRegex = /<p>\s*<strong>([^<]*\?)<\/strong>\s*<br\s*\/?>\s*([\s\S]*?)<\/p>/gi
+  let match
+  while ((match = pStrongRegex.exec(rawHtml)) !== null) {
+    const q = match[1].replace(/<[^>]+>/g, '').trim()
+    const a = match[2].replace(/<[^>]+>/g, '').trim()
+    if (q && a) {
+      faqItems.push({
+        '@type': 'Question',
+        name: q,
+        acceptedAnswer: { '@type': 'Answer', text: a },
+      })
+    }
+  }
+  if (faqItems.length === 0) {
+    const h3Regex = /<h3[^>]*>([^<]*\?)<\/h3>\s*<p>([\s\S]*?)<\/p>/gi
+    while ((match = h3Regex.exec(rawHtml)) !== null) {
+      const q = match[1].replace(/<[^>]+>/g, '').trim()
+      const a = match[2].replace(/<[^>]+>/g, '').trim()
+      if (q && a) {
+        faqItems.push({
+          '@type': 'Question',
+          name: q,
+          acceptedAnswer: { '@type': 'Answer', text: a },
+        })
+      }
+    }
+  }
+
+  const graphNodes = [
+    {
+      '@type': 'BlogPosting',
+      '@id': `${canonicalUrl}#article`,
+      url: canonicalUrl,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': canonicalUrl,
+      },
+      headline: cleanTitle,
+      description: post.excerpt || cleanTitle,
+      image: post.coverImage || 'https://www.salihmaral.com/logo.png',
+      author: {
+        '@type': 'Person',
+        '@id': 'https://www.salihmaral.com/#person',
+        name: 'Salih Maral',
+        jobTitle: 'Official Google Partner & Senior Performance Marketing Consultant',
+        url: 'https://www.salihmaral.com/en',
+      },
+      publisher: {
+        '@type': 'Organization',
+        '@id': 'https://www.salihmaral.com/#organization',
+        name: 'Salih Maral Digital Growth Agency',
+        url: 'https://www.salihmaral.com/en',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://www.salihmaral.com/logo.png',
+        },
+      },
+      datePublished: post.date,
+      dateModified: post.date,
+      inLanguage: 'en-US',
+      articleSection: post.category || 'Digital Marketing',
+      keywords: post.category ? `${post.category}, Digital Marketing, Salih Maral` : 'Digital Marketing, Salih Maral',
+      isPartOf: { '@id': 'https://www.salihmaral.com/#website' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${canonicalUrl}#breadcrumb`,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://www.salihmaral.com/en',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Blog',
+          item: 'https://www.salihmaral.com/en/blog',
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: cleanTitle,
+          item: canonicalUrl,
+        },
+      ],
+    },
+  ]
+
+  if (faqItems.length > 0) {
+    graphNodes.push({
+      '@type': 'FAQPage',
+      '@id': `${canonicalUrl}#faq`,
+      mainEntity: faqItems,
+    })
+  }
+
   const blogPostingSchema = {
     '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'BlogPosting',
-        '@id': `${canonicalUrl}#article`,
-        url: canonicalUrl,
-        mainEntityOfPage: {
-          '@type': 'WebPage',
-          '@id': canonicalUrl,
-        },
-        headline: cleanTitle,
-        description: post.excerpt || cleanTitle,
-        image: post.coverImage || 'https://www.salihmaral.com/logo.png',
-        author: {
-          '@type': 'Person',
-          '@id': 'https://www.salihmaral.com/#person',
-          name: 'Salih Maral',
-          jobTitle: 'Official Google Partner & Senior Performance Marketing Consultant',
-          url: 'https://www.salihmaral.com/en',
-        },
-        publisher: {
-          '@type': 'Organization',
-          '@id': 'https://www.salihmaral.com/#organization',
-          name: 'Salih Maral Digital Growth Agency',
-          url: 'https://www.salihmaral.com/en',
-          logo: {
-            '@type': 'ImageObject',
-            url: 'https://www.salihmaral.com/logo.png',
-          },
-        },
-        datePublished: post.date,
-        dateModified: post.date,
-        inLanguage: 'en-US',
-        articleSection: post.category || 'Digital Marketing',
-        keywords: post.category ? `${post.category}, Digital Marketing, Salih Maral` : 'Digital Marketing, Salih Maral',
-        isPartOf: { '@id': 'https://www.salihmaral.com/#website' },
-      },
-      {
-        '@type': 'BreadcrumbList',
-        '@id': `${canonicalUrl}#breadcrumb`,
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Home',
-            item: 'https://www.salihmaral.com/en',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Blog',
-            item: 'https://www.salihmaral.com/en/blog',
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: cleanTitle,
-            item: canonicalUrl,
-          },
-        ],
-      },
-    ],
+    '@graph': graphNodes,
   }
 
   return (

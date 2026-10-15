@@ -1,16 +1,16 @@
-﻿---
+---
 slug: "ga4-custom-events-funnels"
 lang: "tr"
-title: "GA4'te Özel Dönüşüm Hunileri (Funnels) Nasıl Kurulur? (Rehber)"
-excerpt: "Google Analytics 4'te standart dışı kullanıcı hareketlerini izleyin. Salih Maral, gelişmiş huni analiziyle veriyi kazanca dönüştürme yollarını paylaşıyor."
+title: "Google Tag Manager (GTM) & GA4 Funnel Kurulumu 2026"
+excerpt: "Google Tag Manager (GTM) ve GA4 ile özel dönüşüm hunisi (funnel) nasıl kurulur? DataLayer, custom event ve drop-off analiziyle dönüşüm oranlarınızı artırın."
 category: "Tracking"
-date: "2026-07-16"
-readTime: "10"
+date: "2026-10-15"
+readTime: "12"
 coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&q=80"
 ---
 
           <div class="lead">
-            <p>Performans pazarlama uzmanı <strong>Salih Maral</strong>, dijital dünyada veri odaklı kararlar alabilmeniz için Google Analytics 4 (GA4) üzerinde özel etkinlikler (custom events) ve gelişmiş dönüşüm hunileri (funnel exploration) oluşturarak kullanıcı davranışlarını ölçümleme ve optimize etme yöntemlerini anlatıyor. İnternet sitenizdeki kullanıcıların sadece satın almalarını değil; dinamik form adımlarını, sayfa kaydırma derinliklerini ve sepete ekleme gibi ara adımları izlemek pazarlama performansınızı artırmanın anahtarıdır. GA4'te özel etkinlikler kurgulayarak standart ölçümlemenin göremediği kullanıcı hareketlerini yakalayabilir, bu verilerle gelişmiş dönüşüm hunileri oluşturarak ziyaretçilerin sitenizi nerede terk ettiğini (drop-off) net bir şekilde tespit edebilirsiniz. Bu sayede, reklam bütçenizi en doğru adımlara yönlendirerek dönüşüm oranlarınızı (CRO) sistematik olarak artırabilirsiniz.</p>
+            <p><strong>Google Tag Manager (GTM) funnel kurulumu</strong>, web sitenizdeki çok adımlı form geçişlerini, sepet adımlarını ve mikro etkileşimleri <code>dataLayer.push</code> tetikleyicileriyle yakalayıp Google Analytics 4 (GA4) Keşifler (Funnel Exploration) raporuna aktarma sürecidir. Resmi Google Partner ve performans pazarlama uzmanı <strong>Salih Maral</strong> (17+ yıl deneyim), standart sayfa görüntüleme ölçümlemesinin göremediği kullanıcı kayıp noktalarını (drop-off) tespit etmek için GTM özel etkinliklerinin (custom events) ve GA4 özel boyutlarının (custom dimensions) nasıl adım adım yapılandırılacağını bu kapsamlı rehberde paylaşıyor.</p>
           </div>
 
           <h2>🔍 GA4'te Etkinlik Yapısı: Standart ve Özel Etkinliklerin Gücü</h2>
@@ -231,18 +231,32 @@ window.dataLayer.push({
             <li><strong>Kullanıcı Çerez İzinlerini (Consent Mode V2) İhmal Etmek:</strong> Avrupa Birliği ülkelerinden veya KVKK kapsamındaki kullanıcılardan veri toplarken çerez izinlerini dikkate almalısınız. Kullanıcı çerez izni vermediyse, GA4'ün veri modelleme (modeled data) özelliklerini kullanarak hunileri tahmini verilerle tamamlamasını sağlamak için Consent Mode V2 entegrasyonunu eksiksiz yapmalısınız.</li>
           </ol>
 
+          <h2>❓ Sıkça Sorulan Sorular (Google Tag Manager Funnel & GA4)</h2>
+          <p>Google Tag Manager (GTM) ve GA4 üzerinde dönüşüm hunisi (funnel) kurulumu hakkında en sık sorulan teknik soruları ve yanıtlarını aşağıda bulabilirsiniz:</p>
+
+          <p><strong>Google Tag Manager (GTM) ile funnel (dönüşüm hunisi) nasıl takip edilir?</strong><br>
+          GTM üzerinden her huni adımı için (örneğin form 1. adım, 2. adım, sepet, ödeme) ayrı bir Custom Event tetikleyicisi veya History Change / Element Visibility tetikleyicisi oluşturulur. Bu tetikleyiciler GA4 Event etiketiyle Google Analytics 4'e gönderilir ve GA4 Keşifler (Explore > Funnel Exploration) modülünde sıralı adımlar olarak tanımlanır.</p>
+
+          <p><strong>GTM'den gönderilen event parametreleri GA4 funnel raporunda neden görünmüyor?</strong><br>
+          GTM ile gönderdiğiniz özel parametrelerin (örneğin <code>form_step</code> veya <code>step_name</code>) GA4 huni raporlarında kullanılabilmesi için GA4 Admin > Custom Definitions (Özel Tanımlamalar) bölümünde Event-scoped Custom Dimension (Özel Boyut) olarak kaydedilmesi zorunludur. Tanımlama yapıldıktan sonra veriler 24 saat içinde raporlara yansır.</p>
+
+          <p><strong>Açık huni (Open Funnel) ile kapalı huni (Closed Funnel) arasındaki fark nedir?</strong><br>
+          Kapalı hunide kullanıcıların huniye yalnızca 1. adımdan girmesi şarttır; ara adımdan girenler rapora dahil edilmez. Açık hunide ise kullanıcılar huninin herhangi bir adımından giriş yapabilir ve o adımdan sonraki dönüşüm oranları ölçülür.</p>
+
+          <p><strong>Tarayıcı engelleri (AdBlocker / ITP) huni verilerini bozar mı?</strong><br>
+          Evet, yalnızca tarayıcı tabanlı (client-side) çalışan GTM kurulumlarında kullanıcıların %20 ila %30'u çerez kısıtlamaları nedeniyle hunide kayıp (sahte drop-off) olarak görünebilir. Bunu önlemek için Server-Side GTM (sGTM) ve birinci taraf (first-party) veri altyapısı kullanılmalıdır.</p>
+
           <h2>🚀 Sonuç: Veriyi Kazanca Dönüştürün</h2>
-          <p>Google Analytics 4, sadece sitenizin kaç tekil ziyaretçi aldığını gösteren bir sayaç değildir. Doğru yapılandırılmış özel etkinlikler ve profesyonel dönüşüm hunileri ile GA4, pazarlama bütçenizi yöneten bir karar merkezine dönüşür. Sitenizin neresinde müşteri kaybettiğinizi bilmek, size nokta atışı iyileştirmeler yapma ve reklam ROI'nizi katlama gücü verir. Bu teknik altyapıları kurmak karmaşık ve hata kabul etmeyen bir süreçtir. Ölçümleme altyapınızı sıfırdan kurmak veya mevcut GA4 kurulumunuzu optimize etmek isterseniz, uzman ekibimizle iletişime geçebilirsiniz.</p>
+          <p>Google Tag Manager ve Google Analytics 4, doğru yapılandırılmış özel etkinlikler ve profesyonel dönüşüm hunileri ile pazarlama bütçenizi yöneten bir karar merkezine dönüşür. Sitenizin neresinde müşteri kaybettiğinizi bilmek, size nokta atışı iyileştirmeler yapma ve reklam ROI'nizi katlama gücü verir. Ölçümleme altyapınızı sıfırdan kurmak veya mevcut GTM/GA4 kurulumunuzu optimize etmek için <a href="/#contact">online iletişim formumuzdan</a> veya <a href="mailto:info@salihmaral.com">info@salihmaral.com</a> adresinden bize ulaşabilirsiniz — <strong>24 saat içinde garantili geri dönüş</strong> sağlıyoruz.</p>
 
           <div class="highlight-box">
             <h4>📚 Devamını Okuyun</h4>
             <ul>
-              <li><a href="/blog/server-side-tracking-capi-guide">Sunucu Tarafı İzleme (Server-Side Tracking) ve Conversions API (CAPI) Rehberi</a></li>
+              <li><a href="/blog/server-side-gtm-meta-capi-setup-2026">Server-Side GTM ve Meta Conversions API (CAPI) Kurulum Rehberi 2026</a></li>
+              <li><a href="/blog/b2b-google-ads-kurumsal-lead-ve-musteri-kazanma-rehberi-2026">B2B Google Ads Stratejisi: Kurumsal Lead ve Müşteri Kazanma Rehberi</a></li>
+              <li><a href="/blog/e-ticaret-roas-artirma-ve-reklam-butcesi-olcekleme-2026">E-Ticarette ROAS Artırma ve Reklam Bütçesi Ölçekleme Rehberi</a></li>
+              <li><a href="/blog/google-ads-roi-tracking">Google Reklam ROI & ROAS Hesaplama ve Dönüşüm Takibi</a></li>
+              <li><a href="/tr/hizmetler/server-side-tracking">Salih Maral Server-Side Tracking & GTM Danışmanlığı</a></li>
               <li><a href="/tr/hizmetler/google-ads">Salih Maral Google Ads Yönetimi Hizmetleri</a></li>
-              <li><a href="/blog/google-ads-roi-tracking">Google Ads Dönüşüm Takibi ve ROI Optimizasyonu</a></li>
-              <li><a href="/blog/meta-ads-retargeting-funnels">Meta Ads Yeniden Hedefleme ve Dönüşüm Hunisi Stratejileri</a></li>
-              <li><a href="/tr/hizmetler/seo">Salih Maral Arama Motoru Optimizasyonu (SEO) Hizmetleri</a></li>
             </ul>
           </div>
-
-
