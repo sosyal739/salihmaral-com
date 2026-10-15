@@ -123,16 +123,15 @@ const jsonLd = {
       contactPoint: {
         '@type': 'ContactPoint',
         email: 'info@salihmaral.com',
+        url: 'https://www.salihmaral.com/#contact',
         contactType: 'customer service',
-        availableLanguage: ['Turkish', 'English', 'German'],
-        areaServed: ['TR', 'DE', 'GB', 'US', 'EU']
+        availableLanguage: ['Turkish', 'English'],
+        areaServed: ['TR', 'GB', 'US', 'EU']
       },
       sameAs: [
         'https://www.salihmaral.com',
         'https://www.linkedin.com/in/salih-maral-78159a22a/',
         'https://x.com/salihmaral',
-        'https://www.facebook.com/salihmaral.de',
-        'https://www.instagram.com/salihmaral.de',
         'https://github.com/sosyal739'
       ]
     },
@@ -142,7 +141,7 @@ const jsonLd = {
       url: 'https://www.salihmaral.com',
       name: 'Salih Maral Dijital Büyüme Ajansı',
       publisher: { '@id': 'https://www.salihmaral.com/#organization' },
-      inLanguage: ['tr-TR', 'en-US', 'de-DE']
+      inLanguage: ['tr-TR', 'en-US']
     },
     {
       '@type': 'Person',
@@ -164,7 +163,7 @@ const jsonLd = {
         'Dönüşüm Oranı Optimizasyonu (CRO)',
         'Performans Pazarlaması'
       ],
-      knowsLanguage: ['tr', 'en', 'de'],
+      knowsLanguage: ['tr', 'en'],
       sameAs: [
         'https://www.salihmaral.com',
         'https://www.linkedin.com/in/salih-maral-78159a22a/',

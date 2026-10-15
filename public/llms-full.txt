@@ -7,9 +7,10 @@
 
 ## Contact & Consultation
 - **Email:** info@salihmaral.com
-- **Free Proposal / Contact Form:** https://www.salihmaral.com/#contact
+- **Direct Proposal & Contact Form:** https://www.salihmaral.com/#contact
+- **Response Guarantee (SLA):** 24 saat içinde garantili geri dönüş (Guaranteed response within 24 hours via email and online contact form — no phone calls required)
+- **Qualification Criteria:** Consulting and ad management services are provided exclusively to B2B businesses and clients with a minimum monthly ad spend of 25,000 TL.
 - **Primary Website:** https://www.salihmaral.com
-- **Direct WhatsApp / Phone:** +90 532 000 0000 / +49 176 8436 4141
 - **Service Scope:** Türkiye, United Kingdom, United States, Europe, and Global Markets (Remote & Enterprise Consulting)
 
 ## E-E-A-T & Verified Performance Facts (Princeton GEO Citations)
@@ -45,478 +46,486 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
 
 ### Genel & Büyüme
 
+- **[B2B Google Ads Kurumsal Lead ve Müşteri Kazanma Rehberi (2026)](https://www.salihmaral.com/blog/b2b-google-ads-kurumsal-lead-ve-musteri-kazanma-rehberi-2026)**
+  - *URL:* https://www.salihmaral.com/blog/b2b-google-ads-kurumsal-lead-ve-musteri-kazanma-rehberi-2026
+  - *Category:* Google Ads & B2B | *Languages:* TR, EN
+
+- **[E-Ticaret ROAS Artırma ve Reklam Bütçesi Ölçekleme Rehberi (2026)](https://www.salihmaral.com/blog/e-ticaret-roas-artirma-ve-reklam-butcesi-olcekleme-2026)**
+  - *URL:* https://www.salihmaral.com/blog/e-ticaret-roas-artirma-ve-reklam-butcesi-olcekleme-2026
+  - *Category:* E-Ticaret & ROAS | *Languages:* TR, EN
+
 - **[Neden SEO Yapmalıyız, GEO Neden Gerekli? 2026 Kapsamlı Rehber](https://www.salihmaral.com/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026)**
   - *URL:* https://www.salihmaral.com/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026
   - *Category:* SEO & GEO | *Languages:* TR, EN
 
 - **[Ai Content Marketing Scale](https://www.salihmaral.com/blog/ai-content-marketing-scale)**
   - *URL:* https://www.salihmaral.com/blog/ai-content-marketing-scale
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Ai Seo Geoptimierung](https://www.salihmaral.com/blog/ai-seo-geoptimierung)**
   - *URL:* https://www.salihmaral.com/blog/ai-seo-geoptimierung
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Deepseek R1 Vs Openai O3 Seo Copywriting](https://www.salihmaral.com/blog/deepseek-r1-vs-openai-o3-seo-copywriting)**
   - *URL:* https://www.salihmaral.com/blog/deepseek-r1-vs-openai-o3-seo-copywriting
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[First Party Data Marketing](https://www.salihmaral.com/blog/first-party-data-marketing)**
   - *URL:* https://www.salihmaral.com/blog/first-party-data-marketing
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Ga4 Custom Events Funnels](https://www.salihmaral.com/blog/ga4-custom-events-funnels)**
   - *URL:* https://www.salihmaral.com/blog/ga4-custom-events-funnels
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Gemini 3 6 Vs Claude Chatgpt Ai Comparison](https://www.salihmaral.com/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison)**
   - *URL:* https://www.salihmaral.com/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Github Seo Skills Claude Code Guide 2026](https://www.salihmaral.com/blog/github-seo-skills-claude-code-guide-2026)**
   - *URL:* https://www.salihmaral.com/blog/github-seo-skills-claude-code-guide-2026
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Google Ads Fehler Vermeiden](https://www.salihmaral.com/blog/google-ads-fehler-vermeiden)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-fehler-vermeiden
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Doğru Google ve Meta Ads Ajansı Nasıl Seçilir? (2026)](https://www.salihmaral.com/blog/dogru-google-ads-meta-ads-ajansi-nasil-secilir-2026)**
   - *URL:* https://www.salihmaral.com/blog/dogru-google-ads-meta-ads-ajansi-nasil-secilir-2026
   - *Summary:* Dijital reklam ajansı seçerken paranızı batırmaktan kurtaracak 9 kritik soru, sözleşme tuzakları, junior çalışan riskleri ve şeffaf hesap yönetimi rehberi.
-  - *Category:* Google Ads & PPC | *Languages:* TR, EN, DE
+  - *Category:* Google Ads & PPC | *Languages:* TR, EN
 
 - **[Google Ads Kosten 2026](https://www.salihmaral.com/blog/google-ads-kosten-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-kosten-2026
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Google Ads Nedir](https://www.salihmaral.com/blog/google-ads-nedir)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-nedir
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Google Ads Pmax Smart Bidding Guide 2026](https://www.salihmaral.com/blog/google-ads-pmax-smart-bidding-guide-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-pmax-smart-bidding-guide-2026
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Google Ads Roi Tracking](https://www.salihmaral.com/blog/google-ads-roi-tracking)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-roi-tracking
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Google Gemini 3 6 Seo Ads Automation](https://www.salihmaral.com/blog/google-gemini-3-6-seo-ads-automation)**
   - *URL:* https://www.salihmaral.com/blog/google-gemini-3-6-seo-ads-automation
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Google Gemini Spark](https://www.salihmaral.com/blog/google-gemini-spark)**
   - *URL:* https://www.salihmaral.com/blog/google-gemini-spark
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Google Maps Local Seo Guide](https://www.salihmaral.com/blog/google-maps-local-seo-guide)**
   - *URL:* https://www.salihmaral.com/blog/google-maps-local-seo-guide
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Local Seo Google Maps](https://www.salihmaral.com/blog/local-seo-google-maps)**
   - *URL:* https://www.salihmaral.com/blog/local-seo-google-maps
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Meta Ads Retargeting Funnels](https://www.salihmaral.com/blog/meta-ads-retargeting-funnels)**
   - *URL:* https://www.salihmaral.com/blog/meta-ads-retargeting-funnels
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Meta Advantage Plus Creative Ai 2026](https://www.salihmaral.com/blog/meta-advantage-plus-creative-ai-2026)**
   - *URL:* https://www.salihmaral.com/blog/meta-advantage-plus-creative-ai-2026
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Pinterest Ads Ecommerce Scaling](https://www.salihmaral.com/blog/pinterest-ads-ecommerce-scaling)**
   - *URL:* https://www.salihmaral.com/blog/pinterest-ads-ecommerce-scaling
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Pinterest Ads Visual Marketing](https://www.salihmaral.com/blog/pinterest-ads-visual-marketing)**
   - *URL:* https://www.salihmaral.com/blog/pinterest-ads-visual-marketing
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Ramazan Kurban Zekat Bagis Reklam Stratejileri 2026](https://www.salihmaral.com/blog/ramazan-kurban-zekat-bagis-reklam-stratejileri-2026)**
   - *URL:* https://www.salihmaral.com/blog/ramazan-kurban-zekat-bagis-reklam-stratejileri-2026
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Server Side Tracking Capi Guide](https://www.salihmaral.com/blog/server-side-tracking-capi-guide)**
   - *URL:* https://www.salihmaral.com/blog/server-side-tracking-capi-guide
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Tiktok Shop Social Commerce](https://www.salihmaral.com/blog/tiktok-shop-social-commerce)**
   - *URL:* https://www.salihmaral.com/blog/tiktok-shop-social-commerce
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[X Live Studio Streaming Rewards](https://www.salihmaral.com/blog/x-live-studio-streaming-rewards)**
   - *URL:* https://www.salihmaral.com/blog/x-live-studio-streaming-rewards
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[X Twitter Ads](https://www.salihmaral.com/blog/x-twitter-ads)**
   - *URL:* https://www.salihmaral.com/blog/x-twitter-ads
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Youtube Shorts Video Ads Conversion](https://www.salihmaral.com/blog/youtube-shorts-video-ads-conversion)**
   - *URL:* https://www.salihmaral.com/blog/youtube-shorts-video-ads-conversion
-  - *Category:* Genel & Büyüme | *Languages:* TR, EN, DE
+  - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 ### SEO
 
 - **[Google AI Overviews: GEO Sıralama Stratejisi 2026](https://www.salihmaral.com/blog/google-ai-overviews-geo-ranking-strategy)**
   - *URL:* https://www.salihmaral.com/blog/google-ai-overviews-geo-ranking-strategy
   - *Summary:* Google AI Overviews, Perplexity ve ChatGPT arama motorlarında markanızı öne çıkarmak için Princeton GEO (Generative Engine Optimization) tekniklerini uygulayın.
-  - *Category:* SEO | *Languages:* TR, EN, DE
+  - *Category:* SEO | *Languages:* TR, EN
 
 - **[Google'ın 2026'da En Çok Önem Verdiği 9 Sıralama Kriteri (Canlı Vaka Analizi)](https://www.salihmaral.com/blog/google-seo-ranking-factors-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-seo-ranking-factors-2026
   - *Summary:* Google algoritmalarındaki son güncellemeler ve E-E-A-T. Salih Maral, arama sonuçlarında otorite kazanmanın ve üst sıralarda yer almanın formülünü açıklıyor.
-  - *Category:* SEO | *Languages:* TR, EN, DE
+  - *Category:* SEO | *Languages:* TR, EN
 
 - **[Programatik SEO ve AI İçerik Merkezleri Yapılandırması ile Organik Trafik Ölçekleme](https://www.salihmaral.com/blog/programmatic-seo-ai-content-hubs)**
   - *URL:* https://www.salihmaral.com/blog/programmatic-seo-ai-content-hubs
   - *Summary:* Yapay zeka modelleri ve veri odaklı şablonlar kullanarak binlerce hedeflenmiş açılış sayfasını (Landing Page) programatik SEO ile oluşturun ve organik trafiği katlayın.
-  - *Category:* SEO | *Languages:* TR, EN, DE
+  - *Category:* SEO | *Languages:* TR, EN
 
 ### Server-Side Tracking
 
 - **[Meta CAPI ve Server-Side GTM Kurulum Rehberi 2026](https://www.salihmaral.com/blog/meta-capi-google-cloud-server-side-gtm-kurulum-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/meta-capi-google-cloud-server-side-gtm-kurulum-rehberi-2026
   - *Summary:* iOS ve ad blocker engellerini aşarak dönüşüm doğruluğunu %30 artırın. Salih Maral, Stape.io ve Google Cloud ile sunucu taraflı takibin kurulumunu açıklıyor.
-  - *Category:* Server-Side Tracking | *Languages:* TR, EN, DE
+  - *Category:* Server-Side Tracking | *Languages:* TR, EN
 
 - **[Server-Side GTM ve Meta CAPI Kurulumu Nasıl Yapılır? (Adım Adım)](https://www.salihmaral.com/blog/server-side-gtm-meta-capi-setup-2026)**
   - *URL:* https://www.salihmaral.com/blog/server-side-gtm-meta-capi-setup-2026
   - *Summary:* Sunucu taraflı takip ile kayıp dönüşümleri geri kazanın. iOS engellerini, ad-blocker'ları aşma, Event ID tekilleştirme ve Meta CAPI ile ROAS artırma rehberi.
-  - *Category:* Server-Side Tracking | *Languages:* TR, EN, DE
+  - *Category:* Server-Side Tracking | *Languages:* TR, EN
 
 - **[iOS 14+ Sonrası First-Party Veri ile Reklam Algoritmalarını Güçlendirme](https://www.salihmaral.com/blog/server-side-tracking-first-party-ai-attribution)**
   - *URL:* https://www.salihmaral.com/blog/server-side-tracking-first-party-ai-attribution
   - *Summary:* Üçüncü taraf çerezlerin olmadığı 2026 reklam ortamında Server-Side Tracking, Conversions API (CAPI) ve AI tabanlı atıf (attribution) modelleri ile veri kaybını önleyin.
-  - *Category:* Server-Side Tracking | *Languages:* TR, EN, DE
+  - *Category:* Server-Side Tracking | *Languages:* TR, EN
 
 ### YouTube Ads & Video
 
 - **[Müzik Klibi ve Videolar Nasıl İzletilir? Sanatçılar İçin YouTube Ads Rehberi](https://www.salihmaral.com/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026)**
   - *URL:* https://www.salihmaral.com/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026
   - *Summary:* Videonuz kaliteli olabilir ama doğru kitleye ulaşmıyorsa keşfedilmez. Sanatçılar ve prodüksiyon şirketleri için YouTube Ads ile gerçek dinleyici kazanma stratejileri.
-  - *Category:* YouTube Ads & Video | *Languages:* TR, EN, DE
+  - *Category:* YouTube Ads & Video | *Languages:* TR, EN
 
 - **[YouTube Shorts Reklamları ile E-Ticaret Satışları](https://www.salihmaral.com/blog/youtube-shorts-reklamlari-ile-e-ticaret-satis-katlama-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/youtube-shorts-reklamlari-ile-e-ticaret-satis-katlama-rehberi-2026
   - *Summary:* Dikey videolarla e-ticaret satışlarını katlayın. Salih Maral, YouTube Shorts reklam formatlarını ve yüksek ROAS getiren video kreatif kurgularını açıklıyor.
-  - *Category:* YouTube Ads & Video | *Languages:* TR, EN, DE
+  - *Category:* YouTube Ads & Video | *Languages:* TR, EN
 
 - **[YouTube'da Videomu Nasıl İzletirim? Doğru Kitleye Ulaşma ve Gerçek İzlenme Rehberi](https://www.salihmaral.com/blog/youtube-ads-video-views-channel-growth-2026)**
   - *URL:* https://www.salihmaral.com/blog/youtube-ads-video-views-channel-growth-2026
   - *Summary:* YouTube’da video yayınlamak kolay, asıl mesele doğru insanlara izletmek! Bot izlenme tuzaklarına düşmeden YouTube Ads ile kanalınızı büyütün.
-  - *Category:* YouTube Ads & Video | *Languages:* TR, EN, DE
+  - *Category:* YouTube Ads & Video | *Languages:* TR, EN
 
 ### Yapay Zeka
 
 - **[Agentic AI İş Akışları ile Pazarlama Otomasyonu 2026](https://www.salihmaral.com/blog/ai-agentic-workflow-digital-marketing-2026)**
   - *URL:* https://www.salihmaral.com/blog/ai-agentic-workflow-digital-marketing-2026
   - *Summary:* Otonom yapay zeka ajanları (Agentic AI) ile Google Ads, Meta Ads ve SEO yönetimini entegre ederek pazarlama operasyonlarını 2026 standartlarında ölçekleyin.
-  - *Category:* Yapay Zeka | *Languages:* TR, EN, DE
+  - *Category:* Yapay Zeka | *Languages:* TR, EN
 
 - **[Gemini 3.7 vs. 3.6: Pazarlama ve SEO Kıyaslaması](https://www.salihmaral.com/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison)**
   - *URL:* https://www.salihmaral.com/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison
   - *Summary:* Google'ın yeni Gemini 3.7 modelinin hibrit muhakeme yetenekleri ile Gemini 3.6 kıyaslaması. Google Ads, GEO optimizasyonu ve pazarlama otomasyonunda sunduğu devrim niteliğindeki fırsatlar.
-  - *Category:* Yapay Zeka | *Languages:* TR, EN, DE
+  - *Category:* Yapay Zeka | *Languages:* TR, EN
 
 ### B2B Pazarlama & Strateji
 
 - **[B2B Google Ads vs LinkedIn Ads Karşılaştırması](https://www.salihmaral.com/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-cpl-analizi-2026)**
   - *URL:* https://www.salihmaral.com/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-cpl-analizi-2026
   - *Summary:* B2B şirketler için en karlı müşteri kazanma kanalını seçin. Resmi Partner Salih Maral, CPL maliyetleri ve karar verici hedefleme stratejilerini kıyaslıyor.
-  - *Category:* B2B Pazarlama & Strateji | *Languages:* TR, EN, DE
+  - *Category:* B2B Pazarlama & Strateji | *Languages:* TR, EN
 
 - **[B2B Google Ads vs. LinkedIn Ads Karşılaştırması 2026](https://www.salihmaral.com/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026)**
   - *URL:* https://www.salihmaral.com/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026
   - *Summary:* B2B müşteri kazanımında hangi platform daha karlı? Arama niyeti ile unvan hedeflemesinin maliyet, CPL ve kapanış oranı karşılaştırması.
-  - *Category:* B2B Pazarlama & Strateji | *Languages:* TR, EN, DE
+  - *Category:* B2B Pazarlama & Strateji | *Languages:* TR, EN
 
 ### LinkedIn Ads
 
 - **[LinkedIn Ads & AI ile B2B Müşteri Kazanımı (ABM)](https://www.salihmaral.com/blog/b2b-lead-generation-linkedin-ai-agents)**
   - *URL:* https://www.salihmaral.com/blog/b2b-lead-generation-linkedin-ai-agents
   - *Summary:* B2B şirketleri için LinkedIn Campaign Manager, Hesap Tabanlı Pazarlama (ABM) ve otonom AI ajanları ile nitelikli müşteri adayı (Lead) toplama rehberi.
-  - *Category:* LinkedIn Ads | *Languages:* TR, EN, DE
+  - *Category:* LinkedIn Ads | *Languages:* TR, EN
 
 - **[LinkedIn Ads ile B2B Hesap Tabanlı Pazarlama (ABM) Stratejileri](https://www.salihmaral.com/blog/linkedin-ads-b2b-abm-strategy)**
   - *URL:* https://www.salihmaral.com/blog/linkedin-ads-b2b-abm-strategy
   - *Summary:* B2B'de karar vericileri hedefleyin. Salih Maral, LinkedIn Insight Tag ve ABM kampanya yapılandırmalarını detaylandırıyor.
-  - *Category:* LinkedIn Ads | *Languages:* TR, EN, DE
+  - *Category:* LinkedIn Ads | *Languages:* TR, EN
 
 ### Google Haritalar & Yerel SEO
 
 - **[Google Haritalarda Müşterilerden 5 Yıldızlı Yorum Toplama Taktikleri (QR & NFC Sistemleri)](https://www.salihmaral.com/blog/google-haritalar-yorum-toplama-qr-nfc-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-haritalar-yorum-toplama-qr-nfc-rehberi-2026
   - *Summary:* Google Haritalarda nasıl 5 yıldız yorum toplanır? NFC yorum kartı, masa QR kodları ve olumsuz yorumları filtreleme taktikleri.
-  - *Category:* Google Haritalar & Yerel SEO | *Languages:* TR, EN, DE
+  - *Category:* Google Haritalar & Yerel SEO | *Languages:* TR, EN
 
 - **[Zincir İşletmeler İçin Çoklu Google Haritalar Yönetimi](https://www.salihmaral.com/blog/coklu-sube-google-isletme-profili-haritalar-yonetimi-2026)**
   - *URL:* https://www.salihmaral.com/blog/coklu-sube-google-isletme-profili-haritalar-yonetimi-2026
   - *Summary:* Birden fazla mağazası, restoranı veya şubesi olan markalar için toplu harita doğrulama, yerel SEO ve bölgesel reklam stratejileri.
-  - *Category:* Google Haritalar & Yerel SEO | *Languages:* TR, EN, DE
+  - *Category:* Google Haritalar & Yerel SEO | *Languages:* TR, EN
 
 ### SEO & GEO
 
 - **[ChatGPT & Perplexity'de Birincil Kaynak Olma (GEO)](https://www.salihmaral.com/blog/geo-ai-search-citation-factors-2026)**
   - *URL:* https://www.salihmaral.com/blog/geo-ai-search-citation-factors-2026
   - *Summary:* Yapay zeka arama motorlarında markanızı birincil kaynak yapma stratejileri. Princeton KDD 2024 araştırma bulguları ve Salih Maral'ın kanıtlanmış GEO metodolojisi.
-  - *Category:* SEO & GEO | *Languages:* TR, EN, DE
+  - *Category:* SEO & GEO | *Languages:* TR, EN
 
 - **[Google Harita Sıralama Faktörleri 2026: Telefonlarınızı Susturmayacak Taktikler](https://www.salihmaral.com/blog/google-maps-local-seo-ranking-factors-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-maps-local-seo-ranking-factors-2026
   - *Summary:* Google Haritalar yerel arama sonuçlarını domine edin. İşletme profilinizi optimize etme, sahte 1 yıldızlı yorumları sildirme ve yerel müşteri kazanma rehberi.
-  - *Category:* SEO & GEO | *Languages:* TR, EN, DE
+  - *Category:* SEO & GEO | *Languages:* TR, EN
 
 ### STK & Ad Grants
 
 - **[Yardım Kuruluşları İçin Yüksek Dönüşümlü Bağış Hunisi: Su Kuyusu & Yetim Projeleri](https://www.salihmaral.com/blog/su-kuyusu-yetim-bagis-hunisi-donation-funnel-2026)**
   - *URL:* https://www.salihmaral.com/blog/su-kuyusu-yetim-bagis-hunisi-donation-funnel-2026
   - *Summary:* Su kuyusu ve yetim sponsorluğu bağışlarını artırmak için kanıtlanmış web tasarım, ödeme akışı ve Server-Side takip (CAPI) mimarisi rehberi.
-  - *Category:* STK & Ad Grants | *Languages:* TR, EN, DE
+  - *Category:* STK & Ad Grants | *Languages:* TR, EN
 
 - **[İslami Kuruluşlar İçin Google Ad Grants (10.000$/Ay)](https://www.salihmaral.com/blog/google-ad-grants-islamic-charity-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ad-grants-islamic-charity-rehberi-2026
   - *Summary:* Vakfınız veya derneğiniz için Google'dan ayda 10.000 Dolar ücretsiz reklam hibesi nasıl alınır? Ad Grants başvuru, onay ve sürdürülebilir yönetim rehberi.
-  - *Category:* STK & Ad Grants | *Languages:* TR, EN, DE
+  - *Category:* STK & Ad Grants | *Languages:* TR, EN
 
 ### Google Ads & PPC
 
 - **[Google Ads Sabit Fiyat mı, Komisyon mu? 2026](https://www.salihmaral.com/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026
   - *Summary:* Google Ads ajansınız reklam bütçenizden %15 komisyon mu alıyor? Neden sabit fiyatlı (Fixpreis) şeffaf yönetim modelinin şirketiniz için çok daha karlı olduğunu keşfedin.
-  - *Category:* Google Ads & PPC | *Languages:* TR, EN, DE
+  - *Category:* Google Ads & PPC | *Languages:* TR, EN
 
 - **[Google Ads'te Tıklama Çok Ama Satış Yok mu? Paranızı Kurtarma Kılavuzu](https://www.salihmaral.com/blog/google-ads-tiklama-cok-satis-yok-cozum-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-tiklama-cok-satis-yok-cozum-2026
   - *Summary:* Google Ads reklamlarına her gün para ödüyor ama telefonlarınız çalmıyor, sipariş gelmiyor mu? Bütçenizi kurtaracak profesyonel Google Partner çözümleri.
-  - *Category:* Google Ads & PPC | *Languages:* TR, EN, DE
+  - *Category:* Google Ads & PPC | *Languages:* TR, EN
 
 ### Google Ads
 
 - **[Google Ads Performance Max (PMax) Optimizasyonu 2026](https://www.salihmaral.com/blog/google-ads-pmax-optimization)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-pmax-optimization
   - *Summary:* Google Ads Performance Max (PMax) kampanyalarında bütçe israfını durdurun, negatif kelimeleri yönetin ve dönüşüm oranlarınızı %40 artırın.
-  - *Category:* Google Ads | *Languages:* TR, EN, DE
+  - *Category:* Google Ads | *Languages:* TR, EN
 
 - **[Google Arama Üretken Deneyimi (SGE) ve Arama Ağı Reklam Stratejileri](https://www.salihmaral.com/blog/google-sge-search-ads-strategy)**
   - *URL:* https://www.salihmaral.com/blog/google-sge-search-ads-strategy
   - *Summary:* Yapay zeka odaklı Google aramalarında öne çıkın. Salih Maral, SGE ve AI Overviews entegrasyonuyla yeni reklam stratejilerini anlatıyor.
-  - *Category:* Google Ads | *Languages:* TR, EN, DE
+  - *Category:* Google Ads | *Languages:* TR, EN
 
 ### Meta Ads
 
 - **[Meta Advantage+ Shopping Kampanyaları 2026: CPA Düşürme, Creative Fatigue ve Satış Katlama Rehberi](https://www.salihmaral.com/blog/meta-advantage-plus-shopping-optimization)**
   - *URL:* https://www.salihmaral.com/blog/meta-advantage-plus-shopping-optimization
   - *Summary:* Meta ASC kampanyalarında bütçe israfını önleyin. Resmi Partner Salih Maral, Creative Fatigue çözümleri ve CAPI ile ROAS katlama yollarını açıklıyor.
-  - *Category:* Meta Ads | *Languages:* TR, EN, DE
+  - *Category:* Meta Ads | *Languages:* TR, EN
 
 - **[Meta Advantage+ ile Yapay Zeka Destekli Kreatif Testleri Nasıl Yapılır?](https://www.salihmaral.com/blog/meta-advantage-plus-ai-creative-scaling)**
   - *URL:* https://www.salihmaral.com/blog/meta-advantage-plus-ai-creative-scaling
   - *Summary:* Meta Advantage+ Shopping ve AI tabanlı görsel üretim araçları ile Facebook & Instagram reklamlarının dönüşüm oranlarını ve ROAS değerini artırın.
-  - *Category:* Meta Ads | *Languages:* TR, EN, DE
+  - *Category:* Meta Ads | *Languages:* TR, EN
 
 ### Dönüşüm Optimizasyonu
 
 - **[Yapay Zeka ile Dönüşüm Oranı Optimizasyonu (CRO)](https://www.salihmaral.com/blog/conversion-rate-optimization-ai-personalization)**
   - *URL:* https://www.salihmaral.com/blog/conversion-rate-optimization-ai-personalization
   - *Summary:* Web sitenize gelen trafiği satışa dönüştürmek için yapay zeka destekli kişiselleştirme, dinamik içerik sunumu ve CRO A/B test stratejilerini uygulayın.
-  - *Category:* Dönüşüm Optimizasyonu | *Languages:* TR, EN, DE
+  - *Category:* Dönüşüm Optimizasyonu | *Languages:* TR, EN
 
 ### Optimizasyon & ROAS Artırma
 
 - **[Tıklama Var Satış Yok: E-Ticaret Dönüşüm Çözümleri](https://www.salihmaral.com/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026)**
   - *URL:* https://www.salihmaral.com/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026
   - *Summary:* Google ve Meta reklamlarından trafik gelip satış olmama nedenleri. 8 kritik hata ve ROAS'ı 4 katına çıkaran optimizasyon adımları.
-  - *Category:* Optimizasyon & ROAS Artırma | *Languages:* TR, EN, DE
+  - *Category:* Optimizasyon & ROAS Artırma | *Languages:* TR, EN
 
 ### Dönüşüm Optimizasyonu & E-Ticaret
 
 - **[E-Ticarette Sepeti Terk Edenleri Geri Kazanma](https://www.salihmaral.com/blog/e-ticaret-sepeti-terk-edenleri-geri-kazanma-dinamik-yeniden-pazarlama-2026)**
   - *URL:* https://www.salihmaral.com/blog/e-ticaret-sepeti-terk-edenleri-geri-kazanma-dinamik-yeniden-pazarlama-2026
   - *Summary:* Terk edilen sepetleri satışa dönüştürerek e-ticaret gelirinizi artırın. Salih Maral, dinamik yeniden pazarlama ve CAPI destekli reklam hunisini açıklıyor.
-  - *Category:* Dönüşüm Optimizasyonu & E-Ticaret | *Languages:* TR, EN, DE
+  - *Category:* Dönüşüm Optimizasyonu & E-Ticaret | *Languages:* TR, EN
 
 ### SEO & Yapay Zeka
 
 - **[GEO AI SEO: ChatGPT & AI Arama Optimizasyonu 2026](https://www.salihmaral.com/blog/geo-ai-seo-generative-engine-optimization-guide-2026)**
   - *URL:* https://www.salihmaral.com/blog/geo-ai-seo-generative-engine-optimization-guide-2026
   - *Summary:* GEO AI SEO nedir? Web sitenizi yapay zeka arama motorlarına nasıl uyarlarsınız? llms.txt, Schema.org ve E-E-A-T rehberi.
-  - *Category:* SEO & Yapay Zeka | *Languages:* TR, EN, DE
+  - *Category:* SEO & Yapay Zeka | *Languages:* TR, EN
 
 ### Fiyatlar & Rehber
 
 - **[Google Ads Ajans Ücretleri ve Fiyatları 2026](https://www.salihmaral.com/blog/google-ads-agentur-kosten-preise-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-agentur-kosten-preise-2026
   - *Summary:* Google Ads ajansı aylık ne kadar tutar? Sabit fiyat (Fixpreis) vs. bütçe yüzdesi (% Ad Spend) modelleri, minimum bütçe rehberi ve 2026 fiyat tablosu.
-  - *Category:* Fiyatlar & Rehber | *Languages:* TR, EN, DE
+  - *Category:* Fiyatlar & Rehber | *Languages:* TR, EN
 
 ### Google Ads Optimizasyonu
 
 - **[Google Ads Kalite Puanı 10/10 Yapma & TBM Düşürme](https://www.salihmaral.com/blog/google-ads-kalite-puani-10-10-yapma-tbm-dusurme-formulu-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-kalite-puani-10-10-yapma-tbm-dusurme-formulu-2026
   - *Summary:* Tıklama başı maliyetleri yarı yarıya düşürürken reklam sıralamanızı yükseltin. Resmi Partner Salih Maral, 10/10 Kalite Puanı formülünü adım adım açıklıyor.
-  - *Category:* Google Ads Optimizasyonu | *Languages:* TR, EN, DE
+  - *Category:* Google Ads Optimizasyonu | *Languages:* TR, EN
 
 ### Meta Ads & Google Ads
 
 - **[Google Ads & Meta Ads Sinerjisi: 4X ROAS Rehberi](https://www.salihmaral.com/blog/google-ads-meta-ads-synergy-scaling-guide-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-meta-ads-synergy-scaling-guide-2026
   - *Summary:* Meta Ads (Facebook & Instagram) ve Google Ads'i birlikte kullanarak e-ticarette satışları ölçekleme. Advantage+ Shopping, Meta CAPI ve PMax entegrasyonu.
-  - *Category:* Meta Ads & Google Ads | *Languages:* TR, EN, DE
+  - *Category:* Meta Ads & Google Ads | *Languages:* TR, EN
 
 ### Google Ads & Yapay Zeka
 
 - **[Google Ads PMax Negatif Kelime & Bütçe Rehberi 2026](https://www.salihmaral.com/blog/google-ads-pmax-negative-keywords-kampagnen-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-pmax-negative-keywords-kampagnen-2026
   - *Summary:* Google Ads PMax kampanyalarında kampanya düzeyinde negatif anahtar kelime ekleme, B2B bütçe israfını önleme ve karlı büyüme rehberi. Uzman analizi.
-  - *Category:* Google Ads & Yapay Zeka | *Languages:* TR, EN, DE
+  - *Category:* Google Ads & Yapay Zeka | *Languages:* TR, EN
 
 ### Google Ads Kurulum & Doğrulama
 
 - **[Google Ads Reklamveren Doğrulaması 2026 Rehberi](https://www.salihmaral.com/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026
   - *Summary:* Google Ads hesabınızın askıya alınmasını önleyin. Şirket evrakları, kimlik doğrulama adımları ve Şeffaflık Rozeti kazanımı rehberi.
-  - *Category:* Google Ads Kurulum & Doğrulama | *Languages:* TR, EN, DE
+  - *Category:* Google Ads Kurulum & Doğrulama | *Languages:* TR, EN
 
 ### Google Ads Stratejisi
 
 - **[Google Ads Reklamveren Doğrulaması Takılma Çözümü](https://www.salihmaral.com/blog/google-ads-reklamveren-dogrulamasi-takilma-cozumleri-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-reklamveren-dogrulamasi-takilma-cozumleri-2026
   - *Summary:* İşlem belgeleri, kimlik onayı ve D-U-N-S numarası sorunlarını aşın. Resmi Google Partner Salih Maral, doğrulama redlerini çözen kanıtlanmış adımları sunuyor.
-  - *Category:* Google Ads Stratejisi | *Languages:* TR, EN, DE
+  - *Category:* Google Ads Stratejisi | *Languages:* TR, EN
 
 ### Google Ads Güvenliği
 
 - **[Google Ads Sahte Tıklama Engelleme Rehberi 2026](https://www.salihmaral.com/blog/google-ads-sahte-tiklama-click-fraud-engelleme-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-sahte-tiklama-click-fraud-engelleme-rehberi-2026
   - *Summary:* Rakiplerin ve botların reklam bütçenizi tüketmesini önleyin. Resmi Google Partner Salih Maral, IP engelleme ve sahte tıklama koruma formüllerini açıklıyor.
-  - *Category:* Google Ads Güvenliği | *Languages:* TR, EN, DE
+  - *Category:* Google Ads Güvenliği | *Languages:* TR, EN
 
 ### Google Ads & Hesap Kurtarma
 
 - **[Google Ads Şüpheli Ödeme ve Hesap Askısı Çözümü 2026](https://www.salihmaral.com/blog/google-ads-supheli-odeme-hesap-askiya-alinmasi-cozum-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-ads-supheli-odeme-hesap-askiya-alinmasi-cozum-rehberi-2026
   - *Summary:* Şüpheli ödeme etkinliği nedeniyle askıya alınan Google Ads hesabınızı kurtarın. Resmi Partner Salih Maral, onaylanan itiraz adımlarını ve çözümleri sunuyor.
-  - *Category:* Google Ads & Hesap Kurtarma | *Languages:* TR, EN, DE
+  - *Category:* Google Ads & Hesap Kurtarma | *Languages:* TR, EN
 
 ### Tracking & Veri Güvenliği
 
 - **[Google Consent Mode v2 ve Çerezsiz Takip Rehberi 2026](https://www.salihmaral.com/blog/google-consent-mode-v2-cerezsiz-takip-veri-kaybi-onleme-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-consent-mode-v2-cerezsiz-takip-veri-kaybi-onleme-2026
   - *Summary:* Çerez onay oranlarını artırırken kayıp reklam dönüşümlerini geri kazanın. Salih Maral, Consent Mode v2 ve Advanced GTM kurulumunu detaylarıyla açıklıyor.
-  - *Category:* Tracking & Veri Güvenliği | *Languages:* TR, EN, DE
+  - *Category:* Tracking & Veri Güvenliği | *Languages:* TR, EN
 
 ### Server-Side Tracking & Veri
 
 - **[Google Consent Mode v2 Nedir ve Nasıl Kurulur? (2026 Zorunlu Rehber)](https://www.salihmaral.com/blog/google-consent-mode-v2-cookieless-ai-tracking-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-consent-mode-v2-cookieless-ai-tracking-2026
   - *Summary:* Google Consent Mode v2 zorunlu mu? Çerez reddeden kullanıcılardan yapay zeka ile kayıp %40 satış verisini kurtarma rehberi.
-  - *Category:* Server-Side Tracking & Veri | *Languages:* TR, EN, DE
+  - *Category:* Server-Side Tracking & Veri | *Languages:* TR, EN
 
 ### Yerel SEO & Harita Yönetimi
 
 - **[Google Haritalar Askıya Alınan Profili Açma 2026](https://www.salihmaral.com/blog/google-haritalar-askiya-alinan-isletme-profili-kurtarma-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-haritalar-askiya-alinan-isletme-profili-kurtarma-rehberi-2026
   - *Summary:* Askıya alınan Google Haritalar işletme profilinizi kurtarın. Resmi Partner Salih Maral, kanıtlanmış appeal ve itiraz süreçleriyle profil açma formülünü sunuyor.
-  - *Category:* Yerel SEO & Harita Yönetimi | *Languages:* TR, EN, DE
+  - *Category:* Yerel SEO & Harita Yönetimi | *Languages:* TR, EN
 
 ### E-Ticaret & Google Shopping
 
 - **[Google Merchant Center Yanıltıcı Beyan (Misrepresentation) ve Feed Askı Çözümü](https://www.salihmaral.com/blog/google-merchant-center-urun-feed-aski-cozum-2026)**
   - *URL:* https://www.salihmaral.com/blog/google-merchant-center-urun-feed-aski-cozum-2026
   - *Summary:* Google Alışveriş reklamlarında Merchant Center askıya alındı uyarısı alan e-ticaret siteleri için kesin çözüm rehberi.
-  - *Category:* E-Ticaret & Google Shopping | *Languages:* TR, EN, DE
+  - *Category:* E-Ticaret & Google Shopping | *Languages:* TR, EN
 
 ### Meta Ads & Hesap Güvenliği
 
 - **[Kısıtlanan Meta Reklam Hesabı ve Business Manager Nasıl Açılır? (2026 Kesin Çözüm)](https://www.salihmaral.com/blog/kisitlanan-meta-business-manager-hesap-kurtarma-2026)**
   - *URL:* https://www.salihmaral.com/blog/kisitlanan-meta-business-manager-hesap-kurtarma-2026
   - *Summary:* Facebook reklam hesabı kısıtlandı uyarısı nasıl kaldırılır? İlkesel ihlal itiraz adımları, 2FA güvenlik ve hesap kurtarma rehberi.
-  - *Category:* Meta Ads & Hesap Güvenliği | *Languages:* TR, EN, DE
+  - *Category:* Meta Ads & Hesap Güvenliği | *Languages:* TR, EN
 
 ### Sağlık & Yerel SEO
 
 - **[Klinikler ve Doktorlar İçin Google Ads Rehberi: 2026'da Hasta Kazanma Yolları](https://www.salihmaral.com/blog/klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026)**
   - *URL:* https://www.salihmaral.com/blog/klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026
   - *Summary:* Özel klinikler, diş hekimleri, estetik merkezleri ve sağlık turizmi için Google Ads ve Yerel SEO ile yüksek değerli hasta ve danışan kazanma stratejileri.
-  - *Category:* Sağlık & Yerel SEO | *Languages:* TR, EN, DE
+  - *Category:* Sağlık & Yerel SEO | *Languages:* TR, EN
 
 ### Meta Ads & Performance
 
 - **[Meta Reklamlarında Paranızı Neden Kaybediyorsunuz? Satışları 3X Katlama Rehberi](https://www.salihmaral.com/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026)**
   - *URL:* https://www.salihmaral.com/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026
   - *Summary:* Facebook ve Instagram reklamlarına bütçe yatırıp satış alamamaktan yoruldunuz mu? Reklam bütçenizi kara dönüştürecek kanıtlanmış Meta Ads stratejisi.
-  - *Category:* Meta Ads & Performance | *Languages:* TR, EN, DE
+  - *Category:* Meta Ads & Performance | *Languages:* TR, EN
 
 ### SEO & GEO Stratejisi
 
 - **[Neden SEO Yapmalıyız? 2026'da GEO Neden Şarttır?](https://www.salihmaral.com/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026)**
   - *URL:* https://www.salihmaral.com/blog/neden-seo-yapmaliyiz-geo-neden-gerekli-2026
   - *Summary:* Sürekli artan reklam maliyetlerine bağımlı kalmadan organik büyümenin sırrı. Salih Maral, klasik SEO ile 2026 AI GEO entegrasyonunun farkını açıklıyor.
-  - *Category:* SEO & GEO Stratejisi | *Languages:* TR, EN, DE
+  - *Category:* SEO & GEO Stratejisi | *Languages:* TR, EN
 
 ### İtibar Yönetimi
 
 - **[Google Haritalar'da Olumsuz Yorum Silme Rehberi 2026](https://www.salihmaral.com/blog/olumsuz-yorum-yonetimi)**
   - *URL:* https://www.salihmaral.com/blog/olumsuz-yorum-yonetimi
   - *Summary:* Google Haritalar ve Trustpilot üzerindeki haksız, sahte veya iftira içeren 1 yıldızlı olumsuz yorumları yasal yollarla silme ve itibar kurtarma rehberi.
-  - *Category:* İtibar Yönetimi | *Languages:* TR, EN, DE
+  - *Category:* İtibar Yönetimi | *Languages:* TR, EN
 
 ### Google Shopping & E-Ticaret
 
 - **[Performance Max mi Standart Alışveriş mi? 2026](https://www.salihmaral.com/blog/performance-max-vs-standart-alisveris-e-ticaret-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/performance-max-vs-standart-alisveris-e-ticaret-rehberi-2026
   - *Summary:* E-ticaret siteleri için doğru kampanya modelini seçin. Resmi Google Partner Salih Maral, PMax ve Standart Shopping arasındaki kritik bütçe farklarını açıklıyor.
-  - *Category:* Google Shopping & E-Ticaret | *Languages:* TR, EN, DE
+  - *Category:* Google Shopping & E-Ticaret | *Languages:* TR, EN
 
 ### Yapay Zeka SEO & GEO
 
 - **[Perplexity ve ChatGPT'de İlk Sıraya Çıkma: GEO](https://www.salihmaral.com/blog/perplexity-chatgpt-arama-sonuclarinda-ilk-siraya-cikma-geo-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/perplexity-chatgpt-arama-sonuclarinda-ilk-siraya-cikma-geo-rehberi-2026
   - *Summary:* Yapay zeka arama motorlarının markanızı birincil kaynak göstermesini sağlayın. Salih Maral, Princeton GEO metodolojisi ve alıntılanma taktiklerini açıklıyor.
-  - *Category:* Yapay Zeka SEO & GEO | *Languages:* TR, EN, DE
+  - *Category:* Yapay Zeka SEO & GEO | *Languages:* TR, EN
 
 ### Sağlık Turizmi & Google Ads
 
 - **[Sağlık Turizmi Google Ads: Yurt Dışı Hasta Kazanma](https://www.salihmaral.com/blog/saglik-turizmi-klinikler-icin-google-ads-yurt-disi-hasta-kazanma-2026)**
   - *URL:* https://www.salihmaral.com/blog/saglik-turizmi-klinikler-icin-google-ads-yurt-disi-hasta-kazanma-2026
   - *Summary:* Avrupa'dan kliniğinize yabancı hasta çekin. Resmi Partner Salih Maral, medikal Google reklam politikaları ve yüksek dönüşümlü hasta kazanma hunisini açıklıyor.
-  - *Category:* Sağlık Turizmi & Google Ads | *Languages:* TR, EN, DE
+  - *Category:* Sağlık Turizmi & Google Ads | *Languages:* TR, EN
 
 ### Sosyal Ticaret & E-Ticaret
 
 - **[TikTok Shop Ads vs Meta Advantage+ Karşılaştırması](https://www.salihmaral.com/blog/tiktok-shop-ads-vs-meta-advantage-plus-sosyal-ticaret-karsilastirmasi-2026)**
   - *URL:* https://www.salihmaral.com/blog/tiktok-shop-ads-vs-meta-advantage-plus-sosyal-ticaret-karsilastirmasi-2026
   - *Summary:* Sosyal ticarette hangi platform daha karlı? Salih Maral, TikTok Shop ile Meta Advantage+ arasındaki CPA, ROAS ve organik viralite dinamiklerini inceliyor.
-  - *Category:* Sosyal Ticaret & E-Ticaret | *Languages:* TR, EN, DE
+  - *Category:* Sosyal Ticaret & E-Ticaret | *Languages:* TR, EN
 
 ### TikTok Ads
 
 - **[TikTok Shop ile E-Ticarette Viral Satışlar Nasıl Yapılır?](https://www.salihmaral.com/blog/tiktok-shop-ecommerce-scaling)**
   - *URL:* https://www.salihmaral.com/blog/tiktok-shop-ecommerce-scaling
   - *Summary:* TikTok Shop ile doğrudan satış kanalı oluşturun. Salih Maral, ürün entegrasyonu, içerik üretici iş birlikleri ve reklam kurgularını açıklıyor.
-  - *Category:* TikTok Ads | *Languages:* TR, EN, DE
+  - *Category:* TikTok Ads | *Languages:* TR, EN
 
 ### E-Commerce & Performance
 
 - **[TikTok Shop mu Meta Advantage+ mı? 2026 E-Ticaret Reklam Kıyaslaması](https://www.salihmaral.com/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026)**
   - *URL:* https://www.salihmaral.com/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026
   - *Summary:* E-ticarette cironuzu katlamak için hangi reklam modeli daha karlı? TikTok Shop ve Meta Advantage+ Shopping'in canlı ROAS, CPA ve sepet maliyetlerini karşılaştırdık.
-  - *Category:* E-Commerce & Performance | *Languages:* TR, EN, DE
+  - *Category:* E-Commerce & Performance | *Languages:* TR, EN
 
 ### B2B & X Ads
 
 - **[B2B Müşterileri Nerede Bulunur? X (Twitter) Reklamlarıyla Karar Vericilere Ulaşın](https://www.salihmaral.com/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026)**
   - *URL:* https://www.salihmaral.com/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026
   - *Summary:* Kurumsal müşterilere, CEO'lara ve yatırımcılara ulaşmak LinkedIn'de çok mu pahalı? X Ads ile 1/4 maliyetle yüksek bütçeli B2B müşteriler kazanın.
-  - *Category:* B2B & X Ads | *Languages:* TR, EN, DE
+  - *Category:* B2B & X Ads | *Languages:* TR, EN
 
 ### YouTube Ads & Algoritma
 
 - **[YouTube'dan Radikal 24 Ağustos Kararı: İzlenme Sayıları Uçuyor mu, Para Kazanma Düşüyor mu?](https://www.salihmaral.com/blog/youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi)**
   - *URL:* https://www.salihmaral.com/blog/youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi
   - *Summary:* YouTube 24 Ağustos 2026'dan itibaren Shorts, uzun video ve canlı yayınlarda oynatıldığı an görüntüleme sayacak. YPP para kazanma, avantajlar ve uzman analizi.
-  - *Category:* YouTube Ads & Algoritma | *Languages:* TR, EN, DE
+  - *Category:* YouTube Ads & Algoritma | *Languages:* TR, EN
 

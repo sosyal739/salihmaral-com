@@ -52,21 +52,21 @@ export default function MobileStickyBar({ lang: propLang }) {
       <a
         href="mailto:info@salihmaral.com"
         className="inline-flex items-center justify-center space-x-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold py-3 px-3.5 rounded-xl transition-colors border border-slate-300/70 cursor-pointer min-h-[44px]"
-        aria-label="E-Mail senden"
+        aria-label={isTr ? 'E-Posta Gönder' : 'Send E-Mail'}
       >
         <Mail className="w-4 h-4 text-[#4285F4]" />
         <span>{isTr ? 'E-Posta' : 'E-Mail'}</span>
       </a>
 
-      {/* Ücretsiz Teklif Alın */}
+      {/* İletişim Formu & 24 Saatte Dönüş */}
       <a
         href={contactHref}
         onClick={handleContactClick}
         className="flex-1 inline-flex items-center justify-center space-x-1.5 bg-[#4285F4] hover:bg-blue-700 text-white text-xs sm:text-sm font-bold py-3 px-3 sm:px-4 rounded-xl shadow-md transition-all cursor-pointer min-h-[44px] text-center"
-        aria-label={isTr ? 'Ücretsiz Teklif Alın' : isEn ? 'Get Free Proposal' : 'Kostenloses Angebot anfordern'}
+        aria-label={isTr ? 'İletişim Formu - 24 Saatte Dönüş' : 'Contact Form - 24h Response'}
       >
         <Sparkles className="w-3.5 h-3.5 text-amber-300 shrink-0" />
-        <span className="truncate">{isTr ? 'Ücretsiz Teklif Alın' : isEn ? 'Get Free Proposal' : 'Kostenloses Angebot'}</span>
+        <span className="truncate">{isTr ? 'Form ile Ulaşın (24s Dönüş)' : 'Contact Form (24h Reply)'}</span>
         <ArrowUpRight className="w-3.5 h-3.5 ml-0.5 shrink-0" />
       </a>
     </div>

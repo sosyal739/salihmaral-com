@@ -914,14 +914,14 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         {
           title: lang === 'en' ? 'Built for Google Ads & High Conversion' : 'Reklam & Satış Odaklı Dönüşüm Mimarisi',
           subtitle: 'Google Ads Quality Score 10/10',
-          desc: lang === 'en' ? 'Engineered by an Official Google Partner so every paid click turns into a qualified phone call, WhatsApp chat, or lead form.' : 'Resmi Google Partneri gözüyle tasarlandığı için Google Ads Kalite Puanınızı 10/10 yapar, tıklama maliyetlerinizi düşürür ve ziyaretçiyi doğrudan müşteriye dönüştürür.',
+          desc: lang === 'en' ? 'Engineered by an Official Google Partner so every paid click turns into a qualified form inquiry or direct email lead.' : 'Resmi Google Partneri gözüyle tasarlandığı için Google Ads Kalite Puanınızı 10/10 yapar, tıklama maliyetlerinizi düşürür ve ziyaretçiyi doğrudan müşteriye dönüştürür.',
           icon: Target,
-          items: lang === 'en' ? ['Interactive 3-step Lead Funnel Wizard', 'Sticky mobile WhatsApp & Call bar', 'Pre-installed GA4, GTM & Meta CAPI', 'High-converting landing page layouts'] : ['Akıllı 3 adımlı müşteri teklif sihirbazı', 'Tek tıkla WhatsApp ve telefon butonları', 'GA4, Google Ads ve Meta CAPI hazır kurulum', 'Yüksek dönüşümlü Landing Page kurgusu']
+          items: lang === 'en' ? ['Interactive 3-step Lead Funnel Wizard', 'Smart contact form & instant email notifications', 'Pre-installed GA4, GTM & Meta CAPI', 'High-converting landing page layouts'] : ['Akıllı 3 adımlı müşteri teklif sihirbazı', 'Hızlı iletişim formu ve anlık e-posta bildirimi', 'GA4, Google Ads ve Meta CAPI hazır kurulum', 'Yüksek dönüşümlü Landing Page kurgusu']
         },
         {
-          title: lang === 'en' ? 'Multilingual (TR / EN / DE) & Global Ready' : 'Çok Dilli (TR / EN / DE) & İhracat Uyumlu',
+          title: lang === 'en' ? 'Multilingual (TR / EN) & Global Ready' : 'Çok Dilli (TR / EN) & İhracat Uyumlu',
           subtitle: lang === 'en' ? 'International Expansion' : 'Yurt Dışı Müşteri Kazanımı',
-          desc: lang === 'en' ? 'Expand globally with native multilingual routing, automatic hreflang tags, and GDPR/KVKK compliant privacy modules.' : 'Sağlık turizmi, e-ihracat ve küresel B2B firmalar için Türkçe, İngilizce ve Almanca dil seçenekleri, otomatik hreflang etiketleri ve KVKK/GDPR uyumu.',
+          desc: lang === 'en' ? 'Expand globally with native multilingual routing, automatic hreflang tags, and GDPR/KVKK compliant privacy modules.' : 'Sağlık turizmi, e-ihracat ve küresel B2B firmalar için Türkçe ve İngilizce dil seçenekleri, otomatik hreflang etiketleri ve KVKK/GDPR uyumu.',
           icon: Globe,
           items: lang === 'en' ? ['Native multi-language URL structure', 'Automated Google hreflang SEO tags', 'GDPR / Consent Mode v2 integrated', '24/7 AI Assistant & Search widget'] : ['Çok dilli SEO uyumlu URL yapısı', 'Uluslararası Google hreflang entegrasyonu', 'Google Consent Mode v2 & KVKK uyumu', 'Site içi akıllı arama ve AI asistan modülü']
         }
@@ -941,7 +941,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
       faq: [
         { 
           q: lang === 'en' ? 'What is included in the Turnkey Website package?' : 'Anahtar teslim web sitesi paketine neler dahildir?',
-          a: lang === 'en' ? 'Everything your business needs: Custom Next.js 16 design, easy-to-use Admin Panel (CMS), 100/100 Technical SEO & GEO setup (sitemap, Schema, llms.txt), mobile optimization, WhatsApp & Lead Funnel integration, GA4/GTM tracking, and unlimited design revisions.' : 'İşletmenizin ihtiyacı olan her şey dahildir: Son model özel tasarım, kolay kullanımlı Admin Paneli, 100/100 Teknik SEO ve Yapay Zeka (GEO) altyapısı, mobil uyum, akıllı teklif formları, WhatsApp entegrasyonu, GA4/Reklam izleme kurulumu ve sınırsız revize hakkı.'
+          a: lang === 'en' ? 'Everything your business needs: Custom Next.js 16 design, easy-to-use Admin Panel (CMS), 100/100 Technical SEO & GEO setup (sitemap, Schema, llms.txt), mobile optimization, smart contact & lead funnel integration, GA4/GTM tracking, and unlimited design revisions.' : 'İşletmenizin ihtiyacı olan her şey dahildir: Son model özel tasarım, kolay kullanımlı Admin Paneli, 100/100 Teknik SEO ve Yapay Zeka (GEO) altyapısı, mobil uyum, akıllı teklif ve iletişim formları, GA4/Reklam izleme kurulumu ve sınırsız revize hakkı.'
         },
         { 
           q: lang === 'en' ? 'Can I update texts, blog posts, and images myself via the Admin Panel?' : 'Admin panelinden yazıları, blogları ve görselleri kendim güncelleyebilir miyim?',
@@ -970,12 +970,14 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
     "provider": {
       "@type": "Person",
       "name": "Salih Maral",
-      "url": "https://www.salihmaral.com"
+      "url": "https://www.salihmaral.com",
+      "email": "info@salihmaral.com"
     },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Germany"
-    },
+    "areaServed": [
+      { "@type": "Country", "name": "Turkey" },
+      { "@type": "Country", "name": "United Kingdom" },
+      { "@type": "Country", "name": "United States" }
+    ],
     "logo": "https://www.salihmaral.com/logo.png"
   }
 
@@ -1236,13 +1238,13 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
             </p>
 
             {/* CTA Action Buttons */}
-            <div className="flex flex-wrap justify-center items-center gap-4 mb-16">
+            <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
               <button
                 onClick={scrollToContact}
                 style={{ backgroundColor: data.primaryColor }}
                 className="text-white font-bold text-base px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
               >
-                <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Get Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
+                <span>{lang === 'en' ? 'Contact via Form (24h Reply)' : 'İletişim Formu ile Ulaşın (24 Saatte Dönüş)'}</span>
                 <ArrowUpRight className="h-5 w-5" />
               </button>
 
@@ -1251,9 +1253,13 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 className="bg-slate-100 text-slate-900 border border-slate-300 hover:bg-slate-200 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
               >
                 <Mail className="h-5 w-5 text-[#4285F4]" />
-                <span>{lang === 'de' ? 'E-Mail senden' : lang === 'en' ? 'Send E-Mail' : 'E-Posta Gönderin'}</span>
+                <span>info@salihmaral.com</span>
               </a>
             </div>
+            <p className="text-xs sm:text-sm font-semibold text-emerald-700 mb-14 flex items-center justify-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>{lang === 'en' ? 'Reach us via form or email — guaranteed response within 24 hours.' : 'Form veya e-posta üzerinden ulaşın — 24 saat içinde garantili geri dönüş sağlıyoruz.'}</span>
+            </p>
 
             {/* High-Contrast Stats Grid */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -2646,20 +2652,20 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                     <td className="py-4 px-6 font-bold flex items-center gap-3">
                       <span className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-xs">📍</span>
                       <div>
-                        <div>{lang === 'en' ? 'Local Businesses & Professional Services' : 'Yerel İşletmeler & Zanaat (Handwerk)'}</div>
-                        <span className="text-xs text-slate-400 font-normal">{lang === 'en' ? 'Emergency Services, Law Firms, Clinics, Artisans' : 'Oto Tamir, Tesisat, Hukuk Bürosu, Ustalar'}</span>
+                        <div>{lang === 'en' ? 'Local Businesses & Professional Services' : 'Yerel İşletmeler & Profesyonel Hizmetler'}</div>
+                        <span className="text-xs text-slate-400 font-normal">{lang === 'en' ? 'Law Firms, Clinics, Consulting, Regional Services' : 'Hukuk Bürosu, Klinik, Danışmanlık, Bölgesel Hizmet'}</span>
                       </div>
                     </td>
                     <td className="py-4 px-6 text-slate-300">
-                      {lang === 'en' ? 'Google Maps 3-Pack, Radius Geo-Targeting & Call Extensions' : 'Google Harita 3-Pack, Konum Yarıçapı & Telefon Çağrı Reklamları'}
+                      {lang === 'en' ? 'Google Maps 3-Pack, Radius Geo-Targeting & Lead Funnels' : 'Google Harita 3-Pack, Konum Yarıçapı & Talep Formu Hunisi'}
                     </td>
                     <td className="py-4 px-6">
                       <span className="inline-block bg-emerald-500/20 text-emerald-400 font-bold px-2.5 py-1 rounded text-xs">
-                        {lang === 'en' ? '€12 - €28 Cost Per Call' : '12$ - 28$ Doğrudan Telefon Araması'}
+                        {lang === 'en' ? '$12 - $28 Cost Per Lead' : '12$ - 28$ Nitelikli Müşteri Talebi'}
                       </span>
                     </td>
                     <td className="py-4 px-6 text-xs text-slate-300">
-                      {lang === 'en' ? 'Immediate high-intent phone ringing with click fraud protection' : 'Telefonları çaldıran anlık sıcak aramalar ve sahte tıklama koruması'}
+                      {lang === 'en' ? 'High-intent regional inquiries with click fraud protection' : 'Yüksek niyetli bölgesel müşteri talepleri ve sahte tıklama koruması'}
                     </td>
                   </tr>
                 </tbody>
@@ -3043,11 +3049,19 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
 
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="bg-slate-900/90 border border-slate-800/90 rounded-3xl md:rounded-4xl p-8 md:p-14 text-center shadow-2xl backdrop-blur-xl">
-            <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-400/30 rounded-full px-4 py-1.5 mb-6 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
-                {lang === 'de' ? 'Unverbindlich & Kostenlos' : lang === 'en' ? 'No Obligation & 100% Free' : 'Ücretsiz & Taahhütsüz'}
-              </span>
+            <div className="flex flex-wrap justify-center items-center gap-2 mb-6">
+              <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-400/30 rounded-full px-4 py-1.5 shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
+                  {lang === 'de' ? 'Unverbindlich & Kostenlos' : lang === 'en' ? 'No Obligation & 100% Free' : 'Ücretsiz & Taahhütsüz'}
+                </span>
+              </div>
+              <div className="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-400/30 rounded-full px-4 py-1.5 shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span className="text-xs font-bold uppercase tracking-wider text-emerald-300">
+                  {lang === 'en' ? '24-Hour Guaranteed Response (Form & E-Mail)' : '24 Saat İçinde Garantili Geri Dönüş (Form & E-Posta)'}
+                </span>
+              </div>
             </div>
 
             <h2 className="text-3xl md:text-5xl font-black text-white mb-5 tracking-tight leading-tight">
@@ -3055,8 +3069,8 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 ? (lang === 'de'
                     ? 'Kostenlose Google Ads Analyse — in 30 Minuten.'
                     : lang === 'en'
-                    ? 'Free Google Ads Analysis — in 30 Minutes.'
-                    : 'Ücretsiz Google Ads Analizi — 30 Dakikada.')
+                    ? 'Free Google Ads Analysis — Response Within 24 Hours.'
+                    : 'Ücretsiz Google Ads Analizi — 24 Saatte Geri Dönüş.')
                 : (lang === 'de' ? 'Bereit für planbares, profitables Wachstum?' : lang === 'en' ? 'Ready for Predictable, Profitable Growth?' : 'Planlı ve Karlı Büyümeye Hazır mısınız?')}
             </h2>
 
@@ -3065,9 +3079,9 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 ? (lang === 'de'
                     ? 'Wir prüfen Ihre Kampagnen kostenlos und zeigen Ihnen genau, wo Ihr Budget verloren geht — und wie Sie es zurückgewinnen. Kein Fachjargon. Keine Verkaufsgespräche. Nur echte Handlungsempfehlungen.'
                     : lang === 'en'
-                    ? 'We review your campaigns for free and show you exactly where your budget is being wasted — and how to win it back. No jargon. No sales pitch. Just real, actionable insights.'
-                    : 'Kampanyalarınızı ücretsiz inceliyor ve bütçenizin tam olarak nerede heba olduğunu gösteriyoruz — ve bunu nasıl geri kazanabileceğinizi. Teknik jargon yok. Satış konuşması yok. Yalnızca somut öneriler.')
-                : (lang === 'de' ? 'Wir analysieren Ihre aktuelle Situation und bieten Ihnen maßgeschneiderte Strategieempfehlungen. Keine Kosten, keine Verpflichtungen.' : lang === 'en' ? 'We analyze your current situation and offer you customized strategy recommendations. No costs, no commitments.' : 'Mevcut durumunuzu analiz ediyor, size özel strateji önerileri sunuyoruz. Hiçbir ücret veya taahhüt yok.')}
+                    ? 'Reach out via our contact form or email. We review your campaigns for free and reply within 24 hours with a custom written growth strategy — no phone calls required.'
+                    : 'İletişim formu veya e-posta üzerinden bize ulaşın. Kampanyalarınızı ücretsiz inceliyor ve 24 saat içinde size özel yazılı büyüme stratejisiyle geri dönüş yapıyoruz.')
+                : (lang === 'de' ? 'Wir analysieren Ihre aktuelle Situation und bieten Ihnen maßgeschneiderte Strategieempfehlungen. Keine Kosten, keine Verpflichtungen.' : lang === 'en' ? 'Reach out via our online form or email. We analyze your current setup and get back to you within 24 hours with tailored strategy recommendations.' : 'İletişim formu veya e-posta ile bize ulaşın; mevcut durumunuzu analiz edip 24 saat içinde size özel strateji önerileriyle geri dönüş yapalım.')}
             </p>
 
             <div className="max-w-2xl mx-auto mb-8 px-4 py-3 rounded-2xl bg-amber-500/10 border border-amber-400/30 text-xs sm:text-sm text-amber-200 leading-relaxed">
@@ -3084,7 +3098,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 style={{ backgroundColor: data.primaryColor }}
                 className="text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
               >
-                <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Get Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
+                <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Contact via Form (24h Reply)' : 'Form ile Ulaşın (24 Saatte Dönüş)'}</span>
                 <ArrowUpRight className="h-5 w-5" />
               </button>
 
@@ -3093,7 +3107,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 className="bg-slate-900 hover:bg-slate-800 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2.5 cursor-pointer border border-white/20"
               >
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span>{lang === 'de' ? 'E-Mail senden' : lang === 'en' ? 'Send E-Mail' : 'E-Posta Gönderin'}</span>
+                <span>info@salihmaral.com</span>
               </a>
             </div>
           </div>

@@ -57,12 +57,12 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
     tr: {
       badge: 'AKILLI BÜYÜME SİHİRBAZI',
       title: '3 Adımda Size Özel Dijital Pazarlama Stratejisi',
-      subtitle: '2 kısa soruyu yanıtlayın, Salih Maral\'dan şeffaf ve karlı büyüme teklifinizi hemen alın.',
+      subtitle: '2 kısa soruyu yanıtlayın, e-posta adresinize 24 saat içinde garantili büyüme planınızı ve teklifimizi iletelim.',
       step1Title: '1. İşletmenizin birincil büyüme hedefi nedir?',
       step2Title: '2. Aylık planlanan reklam bütçeniz ne kadar?',
-      step3Title: '3. Teklif ve analiz raporunu kime iletelim?',
+      step3Title: '3. Teklif ve analiz raporunu hangi e-posta adresine iletelim?',
       goals: [
-        { id: 'leads', icon: Phone, title: 'Daha Çok Telefon & Randevu', desc: 'Klinik, Hizmet, Hukuk, Usta & Restoran' },
+        { id: 'leads', icon: Mail, title: 'Daha Çok Müşteri Talebi & Form', desc: 'Klinik, Hizmet, Hukuk, Kurumsal & B2B' },
         { id: 'ecommerce', icon: ShoppingCart, title: 'E-Ticaret Satışlarını & ROAS Artırma', desc: 'Online Mağazalar & D2C Markalar' },
         { id: 'b2b', icon: Target, title: 'B2B Müşteri & Proje Talepleri', desc: 'Sanayi, İhracat, Yazılım & Kurumsal' },
         { id: 'maps', icon: MapPin, title: 'Anahtar Teslim Web Sitesi & SEO', desc: 'Next.js 16, 100/100 SEO, Admin Paneli & Sınırsız Revize' },
@@ -77,31 +77,30 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         website: 'Web Siteniz / Mağaza URL',
         websitePlaceholder: 'https://site-adresiniz.com',
         name: 'Adınız Soyadınız / Yetkili',
-        phone: 'Telefon Numaranız',
-        email: 'E-posta Adresiniz',
-        note: 'Mevcut reklam hesabınız var mı? (İsteğe bağlı)',
-        submitBtn: 'Ücretsiz Strateji & Teklif Alın',
+        email: 'Kurumsal E-posta Adresiniz',
+        note: 'Mevcut reklam hesabınız veya ek notunuz var mı? (İsteğe bağlı)',
+        submitBtn: 'Ücretsiz Strateji & Teklif Alın (24 Saatte Dönüş)',
         backBtn: 'Geri',
         nextBtn: 'Devam Et',
         successTitle: 'Talebiniz Başarıyla Alındı!',
-        successSub: 'Salih Maral verilerinizi inceleyecek ve 2-4 saat içinde işletmenize özel ciro büyüme planını iletecektir.',
+        successSub: 'Salih Maral verilerinizi inceleyecek ve en geç 24 saat içinde e-posta adresinize işletmenize özel ciro büyüme planını iletecektir.',
       }
     },
     en: {
       badge: 'INTERACTIVE STRATEGY FINDER',
       title: 'Your Custom Growth Strategy in 3 Simple Steps',
-      subtitle: 'Answer 2 quick questions to get a transparent, high-ROI proposal directly from Salih Maral.',
+      subtitle: 'Answer 2 quick questions to receive a transparent, high-ROI proposal via email within 24 hours.',
       step1Title: '1. What is your primary growth objective?',
       step2Title: '2. What is your planned monthly ad budget?',
-      step3Title: '3. Where should we send your strategy & proposal?',
+      step3Title: '3. Where should we email your strategy & proposal?',
       goals: [
-        { id: 'leads', icon: Phone, title: 'More Calls, Inquiries & Appointments', desc: 'Clinics, Legal, Contractors & Services' },
+        { id: 'leads', icon: Mail, title: 'More Qualified Client Inquiries & Leads', desc: 'Clinics, Legal, Corporate & Services' },
         { id: 'ecommerce', icon: ShoppingCart, title: 'Scale E-Commerce Sales & ROAS', desc: 'Online Stores, D2C Brands & Retail' },
         { id: 'b2b', icon: Target, title: 'B2B Client Leads & Enterprise Deals', desc: 'Tech, SaaS, Manufacturing & Consulting' },
         { id: 'maps', icon: MapPin, title: 'Turnkey Web Design & SEO', desc: 'Next.js 16, 100/100 SEO, Custom CMS & Unlimited Revisions' },
       ],
       budgets: [
-        { id: 'b1', title: '$1,000 – $3,000 / Month', desc: 'Ideal for local businesses & initial traction' },
+        { id: 'b1', title: '$1,000 – $3,000 / Month', desc: 'Minimum starting budget (B2B & Corporate)' },
         { id: 'b2', title: '$3,000 – $10,000 / Month', desc: 'Growth for scaling brands' },
         { id: 'b3', title: '$10,000 – $30,000 / Month', desc: 'Scaling for E-Commerce & B2B brands' },
         { id: 'b4', title: 'Over $30,000 / Month', desc: 'Market leadership & high-volume scale' },
@@ -110,14 +109,13 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         website: 'Website / Store URL',
         websitePlaceholder: 'https://your-website.com',
         name: 'Full Name / Contact Person',
-        phone: 'Phone Number',
         email: 'Business Email Address',
-        note: 'Do you have existing ad accounts? (Optional)',
-        submitBtn: 'Get Free Strategy & Quote',
+        note: 'Do you have existing ad accounts or notes? (Optional)',
+        submitBtn: 'Get Free Strategy & Quote (24h Reply Guarantee)',
         backBtn: 'Back',
         nextBtn: 'Continue',
         successTitle: 'Thank You! Your Request is Received.',
-        successSub: 'Salih Maral will review your business data and respond within 2–4 hours with a custom strategy.',
+        successSub: 'Salih Maral will review your business data and respond to your email within 24 hours with a custom strategy.',
       }
     }
   }
@@ -136,15 +134,15 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    if (!formData.name || !formData.email || !formData.phone) {
-      setError(lang === 'tr' ? 'Lütfen zorunlu alanları doldurun.' : lang === 'en' ? 'Please fill in all required fields.' : 'Bitte füllen Sie alle Pflichtfelder aus.')
+    if (!formData.name || !formData.email) {
+      setError(lang === 'tr' ? 'Lütfen zorunlu alanları doldurun.' : 'Please fill in all required fields.')
       return
     }
 
     setLoading(true)
     setError('')
 
-    const fullMessage = `[Funnel Wizard]\nHedef/Ziel: ${goal}\nBütçe/Budget: ${budget}\nWeb: ${formData.website}\nNot: ${formData.note || 'Yok'}`
+    const fullMessage = `[Funnel Wizard]\nHedef: ${goal}\nBütçe: ${budget}\nWeb: ${formData.website}\nNot: ${formData.note || 'Yok'}`
 
     try {
       const res = await fetch('/api/contact', {
@@ -153,7 +151,6 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          phone: formData.phone,
           message: fullMessage,
           language: lang,
           b_check: formData.b_check || ''
@@ -304,26 +301,6 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
               />
             </div>
             <div>
-              <label className="block text-xs font-bold text-gray-700 mb-1">{content.labels.website}</label>
-              <input
-                type="text"
-                placeholder={content.labels.websitePlaceholder}
-                value={formData.website}
-                onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-base sm:text-sm"
-              />
-            </div>
-            <div>
-              <label className="block text-xs font-bold text-gray-700 mb-1">{content.labels.phone} *</label>
-              <input
-                type="tel"
-                required
-                value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-base sm:text-sm"
-              />
-            </div>
-            <div>
               <label className="block text-xs font-bold text-gray-700 mb-1">{content.labels.email} *</label>
               <input
                 type="email"
@@ -335,14 +312,26 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
             </div>
           </div>
 
-          <div>
-            <label className="block text-xs font-bold text-gray-700 mb-1">{content.labels.note}</label>
-            <input
-              type="text"
-              value={formData.note}
-              onChange={(e) => setFormData({ ...formData, note: e.target.value })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-base sm:text-sm"
-            />
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-xs font-bold text-gray-700 mb-1">{content.labels.website}</label>
+              <input
+                type="text"
+                placeholder={content.labels.websitePlaceholder}
+                value={formData.website}
+                onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-base sm:text-sm"
+              />
+            </div>
+            <div>
+              <label className="block text-xs font-bold text-gray-700 mb-1">{content.labels.note}</label>
+              <input
+                type="text"
+                value={formData.note}
+                onChange={(e) => setFormData({ ...formData, note: e.target.value })}
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-base sm:text-sm"
+              />
+            </div>
           </div>
 
           {error && <div className="text-red-500 text-xs font-bold text-center">{error}</div>}
@@ -361,6 +350,11 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
               </>
             )}
           </button>
+          <p className="text-center text-xs text-slate-500 font-medium pt-1">
+            {lang === 'en'
+              ? '✉️ Guaranteed reply within 24 hours via email (info@salihmaral.com).'
+              : '✉️ E-posta (info@salihmaral.com) üzerinden 24 saat içinde garantili geri dönüş sağlıyoruz.'}
+          </p>
         </form>
       )}
 

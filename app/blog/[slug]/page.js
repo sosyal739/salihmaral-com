@@ -15,15 +15,15 @@ export async function generateMetadata({ params }) {
     if (!slug) {
       return {
         title: { absolute: 'Blog | Salih Maral' },
-        description: 'Aktuelle Leitfäden über Google Ads, Meta Ads, SEO und GEO.',
+        description: 'Google Ads, Meta Ads, SEO ve GEO hakkında güncel uzman rehberleri.',
       }
     }
 
-    let post = getPostBySlug(slug, 'tr') || getPostBySlug(slug, 'en') || getPostBySlug(slug, 'de')
+    let post = getPostBySlug(slug, 'tr') || getPostBySlug(slug, 'en')
     if (!post) {
       return {
         title: { absolute: 'Blog | Salih Maral' },
-        description: 'Aktuelle Leitfäden über Google Ads, Meta Ads, SEO und GEO.',
+        description: 'Google Ads, Meta Ads, SEO ve GEO hakkında güncel uzman rehberleri.',
       }
     }
 
@@ -34,13 +34,11 @@ export async function generateMetadata({ params }) {
       ? cleanTitle
       : cleanTitle.slice(0, 57).replace(/\s+\S*$/, '') + '...'
 
-    let description = post.excerpt || `${cleanTitle} - Salih Maral Digital Marketing Blog`
+    let description = post.excerpt || `${cleanTitle} - Salih Maral Dijital Pazarlama Blogu`
     if (description.length < 120) {
       const suffix = post.lang === 'tr' 
         ? ' Detaylı rehber ve stratejik analiz Salih Maral ile.'
-        : post.lang === 'en'
-        ? ' In-depth guide and strategic insights by Salih Maral.'
-        : ' Umfassender Leitfaden und strategische Best Practices von Salih Maral.'
+        : ' In-depth guide and strategic insights by Salih Maral.'
       description = (description + suffix).trim()
     }
     if (description.length > 158) {
@@ -89,7 +87,7 @@ export async function generateMetadata({ params }) {
   } catch (err) {
     return {
       title: { absolute: 'Blog | Salih Maral' },
-      description: 'Aktuelle Leitfäden über Google Ads, Meta Ads, SEO und GEO.',
+      description: 'Google Ads, Meta Ads, SEO ve GEO hakkında güncel uzman rehberleri.',
     }
   }
 }
@@ -102,18 +100,13 @@ export default async function BlogDetailPage({ params }) {
     notFound()
   }
 
-  // Try tr, then en, then de
+  // Try tr, then en
   let initialLang = 'tr'
   let post = getPostBySlug(slug, 'tr')
   
   if (!post) {
     post = getPostBySlug(slug, 'en')
     if (post) initialLang = 'en'
-  }
-  
-  if (!post) {
-    post = getPostBySlug(slug, 'de')
-    if (post) initialLang = 'de'
   }
 
   if (!post) {
@@ -128,9 +121,9 @@ export default async function BlogDetailPage({ params }) {
 
   const cleanTitle = post.title.replace(/\s*\|\s*Salih Maral.*$/i, '').trim()
   const canonicalUrl = `https://www.salihmaral.com/blog/${slug}`
-  const homeUrl = initialLang === 'de' ? 'https://www.salihmaral.com' : `https://www.salihmaral.com/${initialLang}`
-  const homeName = initialLang === 'de' ? 'Startseite' : initialLang === 'tr' ? 'Ana Sayfa' : 'Home'
-  const inLang = initialLang === 'de' ? 'de-DE' : initialLang === 'tr' ? 'tr-TR' : 'en-US'
+  const homeUrl = initialLang === 'tr' ? 'https://www.salihmaral.com' : `https://www.salihmaral.com/${initialLang}`
+  const homeName = initialLang === 'tr' ? 'Ana Sayfa' : 'Home'
+  const inLang = initialLang === 'tr' ? 'tr-TR' : 'en-US'
 
   const blogPostingSchema = {
     '@context': 'https://schema.org',
@@ -150,13 +143,13 @@ export default async function BlogDetailPage({ params }) {
           '@type': 'Person',
           '@id': 'https://www.salihmaral.com/#person',
           name: 'Salih Maral',
-          jobTitle: 'Offizieller Google Partner & Senior Digital Marketing Experte',
+          jobTitle: 'Resmi Google Partner & Kıdemli Dijital Pazarlama Danışmanı',
           url: 'https://www.salihmaral.com',
         },
         publisher: {
           '@type': 'Organization',
           '@id': 'https://www.salihmaral.com/#organization',
-          name: 'Salih Maral Digital Marketing',
+          name: 'Salih Maral Dijital Büyüme Ajansı',
           url: 'https://www.salihmaral.com',
           logo: {
             '@type': 'ImageObject',

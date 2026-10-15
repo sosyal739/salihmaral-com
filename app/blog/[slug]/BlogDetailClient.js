@@ -57,10 +57,10 @@ const translations = {
     save: 'Kaydet',
     loading: 'Yükleniyor...',
     cta: {
-      title: 'Profesyonel Dijital Pazarlama Hizmeti',
-      subtitle: 'İşletmenizi büyütmek için hemen iletişime geçin!',
-      button1: 'Ücretsiz Teklif Alın',
-      button2: 'E-Posta Gönderin'
+      title: 'Profesyonel Dijital Pazarlama & 24 Saatte Geri Dönüş Garantisi',
+      subtitle: 'İletişim formu veya e-posta üzerinden bize ulaşın — Salih Maral 24 saat içinde bizzat yazılı analizle geri dönüş yapar.',
+      button1: 'Form ile Ulaşın (24 Saatte Dönüş)',
+      button2: 'info@salihmaral.com'
     },
     footer: '© 2026 Salih Maral. Tüm hakları saklıdır.',
     nav: {
@@ -81,9 +81,9 @@ const translations = {
     loading: 'Laden...',
     cta: {
       title: 'Professioneller Digital Marketing Service',
-      subtitle: 'Kontaktieren Sie uns jetzt, um Ihr Unternehmen zu vergrößern!',
-      button1: 'Kostenloses Angebot',
-      button2: 'E-Mail senden'
+      subtitle: 'Kontaktieren Sie uns jetzt per Formular oder E-Mail — Antwort innerhalb von 24 Stunden!',
+      button1: 'Kostenloses Angebot (24h Antwort)',
+      button2: 'info@salihmaral.com'
     },
     footer: '© 2026 Salih Maral. Alle Rechte vorbehalten.',
     nav: {
@@ -103,10 +103,10 @@ const translations = {
     save: 'Save',
     loading: 'Loading...',
     cta: {
-      title: 'Professional Digital Marketing Service',
-      subtitle: 'Contact us now to grow your business!',
-      button1: 'Get Free Proposal',
-      button2: 'Send E-Mail'
+      title: 'Professional Digital Marketing & 24-Hour Response Guarantee',
+      subtitle: 'Reach out via our contact form or email — Salih Maral personally responds within 24 hours.',
+      button1: 'Contact via Form (24h Reply)',
+      button2: 'info@salihmaral.com'
     },
     footer: '© 2026 Salih Maral. All rights reserved.',
     nav: {
@@ -743,11 +743,11 @@ export default function BlogDetailClient({ initialPost, initialLang = 'tr', rela
                 <div className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                   <span className="text-[10px] font-extrabold uppercase tracking-wide text-emerald-300 truncate">
-                    {lang === 'en' ? 'Official Google Partner' : 'Resmi Google Partneri'}
+                    {lang === 'en' ? '24h Response Guarantee' : '24 Saatte Geri Dönüş Garantisi'}
                   </span>
                 </div>
                 <p className="text-xs font-bold text-slate-100 truncate">
-                  {lang === 'en' ? 'Free B2B & E-Commerce Audit' : 'B2B & E-Ticaret Büyüme Analizi'}
+                  {lang === 'en' ? 'Contact via Form or E-Mail' : 'Form veya E-Posta ile Ulaşın'}
                 </p>
               </div>
             </div>
@@ -756,7 +756,7 @@ export default function BlogDetailClient({ initialPost, initialLang = 'tr', rela
                 href={lang === 'en' ? '/en/#contact' : '/#contact'}
                 className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-[#4285F4] to-blue-600 hover:from-blue-500 hover:to-indigo-600 text-xs font-black text-white shadow-md hover:shadow-blue-500/30 transition-all cursor-pointer whitespace-nowrap inline-flex items-center gap-1"
               >
-                <span>{lang === 'en' ? 'Free Audit' : 'Ücretsiz Analiz'}</span>
+                <span>{lang === 'en' ? 'Form (24h)' : 'Form ile Ulaşın'}</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </a>
             </div>

@@ -154,16 +154,16 @@ const translations = {
       title: 'Çalışma nasıl yürür',
       steps: [
         { title: 'Hesap ve hedef kitle', desc: 'Mevcut reklam hesabını, arama terimlerini ve gerçek satın alma niyetlerini derinlemesine analiz ederiz.' },
-        { title: 'Ölçüm', desc: 'Aramalar, formlar ve satışlar sunucu tarafında (Server-Side) kaydedilir. Bu sayılar doğrulanmadan bütçe artırılmaz.' },
+        { title: 'Ölçüm', desc: 'Form talepleri, e-postalar ve satışlar sunucu tarafında (Server-Side) kaydedilir. Bu sayılar doğrulanmadan bütçe artırılmaz.' },
         { title: 'Sabit ücret', desc: 'Yönetim aylık sabit ücrettir. Reklam bütçeniz arttıkça ajans komisyonu artmaz.' },
         { title: '30 gün sonra rapor', desc: 'Arama terimlerini, engellenen gereksiz tıklamaları ve müşteri başına maliyeti şeffafça görürsünüz.' }
       ]
     },
     cta: {
       title: 'Dijital büyümeye hazır mısınız?',
-      desc: 'Ücretsiz ilk danışmanlık için bizimle iletişime geçin.',
-      btn1: 'Ücretsiz Teklif Alın',
-      btn2: 'E-Posta Gönderin'
+      desc: 'İletişim formu veya e-posta üzerinden bize ulaşın — 24 saat içinde garantili geri dönüş yapıyoruz.',
+      btn1: 'Form ile Ulaşın (24 Saatte Dönüş)',
+      btn2: 'info@salihmaral.com'
     },
     footer: { rights: 'Tüm hakları saklıdır.' },
     nav: {
@@ -180,7 +180,7 @@ const translations = {
     badge: 'Google Partner Agency',
     title: 'About Us',
     subtitle: 'Your trusted partner for digital growth',
-    intro: 'Salih Maral is a digital marketing specialist and official Google Partner. Since 2009, more than 17 years, he has run Google Ads, Meta Ads, YouTube Ads and SEO for e-commerce brands and growth-oriented businesses. The measure is not the click. It is the enquiry, the qualified appointment, or the profitable sale.',
+    intro: 'Salih Maral is a digital marketing specialist and official Google Partner. Since 2009, more than 17 years, he has run Google Ads, Meta Ads, YouTube Ads and SEO for e-commerce brands and growth-oriented businesses. The measure is not the click. It is the enquiry, the qualified lead, or the profitable sale.',
     mission: {
       title: 'Our Mission',
       text: 'We help businesses of all sizes succeed in the digital age. Our data-driven approach and deep expertise in Google Ads, Meta Ads, and SEO allow us to develop customized strategies that deliver real results — not just clicks, but paying customers.'
@@ -189,7 +189,7 @@ const translations = {
       title: 'Who We Are',
       items: [
         { title: 'Certified Google Partner', desc: 'Officially recognized by Google as a Partner Agency. We meet Google\'s strict requirements for competence, performance, and customer satisfaction.' },
-        { title: '17+ Years Experience', desc: 'In performance marketing since 2009. Campaigns for e-commerce, healthcare, B2B, and professional services in Turkish, English, and German.' },
+        { title: '17+ Years Experience', desc: 'In performance marketing since 2009. Campaigns for e-commerce, healthcare, B2B, and professional services in Turkish and English.' },
         { title: '300+ Brands Served', desc: 'More than 300 businesses and brands have entrusted us with their digital growth — from start-ups to international enterprises.' },
         { title: 'Transparent Flat Fee', desc: 'Monthly flat-fee management with zero commission on ad spend — 100% aligned with your profitability.' }
       ]
@@ -217,16 +217,16 @@ const translations = {
       title: 'How the work runs',
       steps: [
         { title: 'Account and audience', desc: 'We audit your existing ad accounts, search queries, and purchase funnels to identify profit leaks.' },
-        { title: 'Measurement', desc: 'Calls, forms and purchases are recorded server-side. The budget does not rise without verified data.' },
+        { title: 'Measurement', desc: 'Forms, leads and purchases are recorded server-side. The budget does not rise without verified data.' },
         { title: 'Flat fee', desc: 'Management is a monthly flat fee. It does not rise when your media budget rises.' },
         { title: 'Report after 30 days', desc: 'You see search terms, exclusions, cost per enquiry and return on ad spend with full clarity.' }
       ]
     },
     cta: {
       title: 'Ready for digital growth?',
-      desc: 'Contact us for a free initial consultation.',
-      btn1: 'Get Free Proposal',
-      btn2: 'Send E-Mail'
+      desc: 'Reach out via our contact form or email — guaranteed response within 24 hours.',
+      btn1: 'Contact via Form (24h Reply)',
+      btn2: 'info@salihmaral.com'
     },
     footer: { rights: 'All rights reserved.' },
     nav: {
@@ -606,7 +606,7 @@ export default function AboutPage() {
               href={lang === 'tr' ? '/#contact' : `/${lang}#contact`}
               className="inline-flex items-center gap-2 text-sm font-bold text-[#4285F4] hover:text-blue-700 bg-white border border-blue-200 px-5 py-2.5 rounded-xl shadow-xs hover:shadow transition-all"
             >
-              <span>{lang === 'en' ? 'Schedule a Free Strategy Call' : 'Hemen Ücretsiz Strateji Görüşmesi Planlayın'}</span>
+              <span>{lang === 'en' ? 'Contact via Form — Guaranteed Response Within 24 Hours' : 'İletişim Formu ile Ulaşın — 24 Saat İçinde Garantili Geri Dönüş'}</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>

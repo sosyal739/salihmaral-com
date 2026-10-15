@@ -308,26 +308,16 @@ export async function generateStaticParams() {
   const baseServices = ['google-ads', 'meta-ads', 'youtube-ads', 'server-side-tracking', 'tiktok-ads', 'x-ads', 'seo', 'islamic-charity-ngo-marketing', 'web-sitesi-tasarimi']
   const params = []
 
-  // German
-  baseServices.forEach(service => {
-    params.push({ lang: 'de', service })
-  })
-  params.push({ lang: 'de', service: 'bewertungsmanagement' })
-  params.push({ lang: 'de', service: 'yorum-yonetimi' })
-
   // English
   baseServices.forEach(service => {
     params.push({ lang: 'en', service })
   })
   params.push({ lang: 'en', service: 'web-design' })
-  params.push({ lang: 'en', service: 'review-management' })
-  params.push({ lang: 'en', service: 'yorum-yonetimi' })
 
   // Turkish
   baseServices.forEach(service => {
     params.push({ lang: 'tr', service })
   })
-  params.push({ lang: 'tr', service: 'yorum-yonetimi' })
 
   return params
 }
@@ -368,21 +358,28 @@ export default async function ServicePage({ params }) {
         provider: {
           '@type': 'ProfessionalService',
           '@id': 'https://www.salihmaral.com/#organization',
-          name: 'Salih Maral Digital Marketing',
+          name: 'Salih Maral Dijital Büyüme Ajansı',
           url: 'https://www.salihmaral.com',
-          telephone: '+49 176 8452 7954',
-          priceRange: '€€',
+          email: 'info@salihmaral.com',
+          priceRange: '₺₺ / ₺₺₺',
           image: 'https://www.salihmaral.com/logo.png',
           address: {
             '@type': 'PostalAddress',
-            addressCountry: 'DE',
+            addressLocality: 'İstanbul',
+            addressCountry: 'TR',
+          },
+          contactPoint: {
+            '@type': 'ContactPoint',
+            email: 'info@salihmaral.com',
+            url: 'https://www.salihmaral.com/#contact',
+            contactType: 'customer support',
+            availableLanguage: ['Turkish', 'English'],
           },
         },
         areaServed: [
-          { '@type': 'Country', name: 'Germany' },
-          { '@type': 'Country', name: 'Austria' },
-          { '@type': 'Country', name: 'Switzerland' },
           { '@type': 'Country', name: 'Turkey' },
+          { '@type': 'Country', name: 'United Kingdom' },
+          { '@type': 'Country', name: 'United States' },
         ],
         url: canonicalUrl,
       },
@@ -393,14 +390,14 @@ export default async function ServicePage({ params }) {
           {
             '@type': 'ListItem',
             position: 1,
-            name: currentLang === 'de' ? 'Startseite' : currentLang === 'en' ? 'Home' : 'Ana Sayfa',
-            item: currentLang === 'de' ? 'https://www.salihmaral.com' : `https://www.salihmaral.com/${currentLang}`,
+            name: currentLang === 'en' ? 'Home' : 'Ana Sayfa',
+            item: currentLang === 'en' ? 'https://www.salihmaral.com/en' : 'https://www.salihmaral.com/tr',
           },
           {
             '@type': 'ListItem',
             position: 2,
-            name: currentLang === 'de' ? 'Dienstleistungen' : currentLang === 'en' ? 'Services' : 'Hizmetler',
-            item: `https://www.salihmaral.com/${currentLang === 'de' ? 'de/dienstleistungen' : currentLang === 'en' ? 'en/services' : 'tr/hizmetler'}`,
+            name: currentLang === 'en' ? 'Services' : 'Hizmetler',
+            item: `https://www.salihmaral.com/${currentLang === 'en' ? 'en/#services' : 'tr/#services'}`,
           },
           {
             '@type': 'ListItem',

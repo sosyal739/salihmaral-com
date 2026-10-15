@@ -213,20 +213,20 @@ const translations = {
     },
     contact: {
       title: 'Dijital Pazarlama Uzmanı ile İletişime Geçin',
-      subtitle: 'İşletmenizin büyümesine nasıl yardımcı olabileceğimi keşfedin.',
+      subtitle: 'Formu doldurun veya info@salihmaral.com adresine e-posta gönderin; 24 saat içinde işletmenize özel büyüme analizi ile geri dönüş yapalım.',
       form: {
         name: 'Adınız Soyadınız',
         email: 'E-posta Adresiniz',
-        phone: 'Telefon Numaranız',
+        phone: 'Firma / Web Siteniz',
         message: 'Mesajınız',
-        submit: 'Mesajı Gönder',
-        success: 'Mesajınız başarıyla gönderildi!',
+        submit: 'Mesajı Gönder (24 Saat İçinde Geri Dönüş)',
+        success: 'Mesajınız başarıyla alındı! En geç 24 saat içinde e-posta adresinize detaylı geri dönüş yapılacaktır.',
         error: 'Bir hata oluştu. Lütfen tekrar deneyin.'
       },
       cta: {
-        title: 'Bir Dijital Pazarlama Uzmanıyla Konuşmaya Hazır Mısınız?',
-        description: 'Dijital dünyada kaybolmak yerine, doğru stratejilerle öne çıkın. Sorularınızı yanıtlamak ve size özel çözümler üretmek için buradayım.',
-        call: 'Beni Arayın'
+        title: 'Bir Dijital Pazarlama Uzmanıyla Çalışmaya Hazır Mısınız?',
+        description: 'Dijital dünyada bütçe kaybetmek yerine doğru stratejilerle öne çıkın. İletişim formu veya e-posta üzerinden ilettiğiniz tüm taleplere 24 saat içinde garantili geri dönüş sağlıyorum.',
+        call: 'Form & E-Posta ile Ulaşın (24 Saatte Dönüş)'
       }
     },
     faq: {
@@ -785,20 +785,20 @@ const translations = {
     },
     contact: {
       title: 'Get in Touch with the Digital Marketing Expert',
-      subtitle: 'Discover how we can help your business grow.',
+      subtitle: 'Fill out the contact form or send an email to info@salihmaral.com — we guarantee a tailored growth response within 24 hours.',
       form: {
         name: 'Your Name',
         email: 'Your Email Address',
-        phone: 'Your Phone Number',
+        phone: 'Company / Website',
         message: 'Your Message',
-        submit: 'Send Message',
-        success: 'Your message has been sent successfully!',
+        submit: 'Send Message (24-Hour Response Guarantee)',
+        success: 'Your message has been received! We will respond to your email within 24 hours.',
         error: 'An error occurred. Please try again.'
       },
       cta: {
-        title: 'Ready to Talk to a Digital Marketing Expert?',
-        description: 'Instead of getting lost in the digital world, stand out with the right strategies. I am here to answer your questions and create customized solutions for you.',
-        call: 'Call Me Directly'
+        title: 'Ready to Work with a Digital Marketing Expert?',
+        description: 'Stand out with data-driven strategies instead of wasting ad spend. Submit the contact form or email us directly — we guarantee a personal response within 24 hours.',
+        call: 'Contact via Form or Email (24h Response)'
       }
     },
     faq: {
@@ -2440,14 +2440,14 @@ export default function Home({ initialLang = 'tr' }) {
         <div className="container mx-auto px-4 max-w-5xl relative z-10">
           {/* Header */}
           <div className="text-center mb-14">
-            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
-              <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
-                {lang === 'de' ? 'Direkter Kontakt & Angebot' : lang === 'tr' ? 'Doğrudan İletişim & Teklif' : 'Direct Contact & Inquiries'}
+            <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">
+                {lang === 'tr' ? 'E-Posta & Form İletişimi • 24 Saat İçinde Garantili Dönüş' : 'Email & Form Contact • 24-Hour Guaranteed Response'}
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">{t.contact.title}</h2>
-            <p className="text-base md:text-lg text-slate-600 max-w-xl mx-auto leading-relaxed">{t.contact.subtitle}</p>
+            <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">{t.contact.subtitle}</p>
           </div>
           
           {/* Main contact card with luxury border */}
@@ -2463,14 +2463,12 @@ export default function Home({ initialLang = 'tr' }) {
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-2xl font-black mb-3 tracking-tight">
-                    {lang === 'de' ? 'Kontaktinformationen' : lang === 'en' ? 'Contact Information' : 'İletişim Bilgileri'}
+                    {lang === 'en' ? 'Contact Information' : 'İletişim Bilgileri'}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 mb-8 leading-relaxed">
-                    {lang === 'de' 
-                      ? 'Fundierte Beratung und ganzheitliche Betreuung auf höchstem Agentur-Niveau. Sprechen Sie direkt mit Salih Maral.' 
-                      : lang === 'tr' 
-                      ? 'Kurumsal ajans kalitesinde, şeffaf ve sonuç odaklı büyüme stratejisi için doğrudan iletişime geçin.' 
-                      : 'Comprehensive strategy and enterprise execution. Speak directly with Salih Maral.'}
+                    {lang === 'tr' 
+                      ? 'Kurumsal ajans kalitesinde, şeffaf ve sonuç odaklı büyüme stratejisi için e-posta veya iletişim formu üzerinden bize ulaşın. Tüm taleplere 24 saat içinde yazılı ve detaylı analizle dönüş yapıyoruz.' 
+                      : 'Reach out via our online form or direct email for a transparent, data-driven growth strategy. Every inquiry receives a comprehensive response within 24 hours.'}
                   </p>
                   
                   <div className="space-y-4">
@@ -2482,27 +2480,37 @@ export default function Home({ initialLang = 'tr' }) {
                         <Mail className="h-5 w-5 text-blue-400" />
                       </div>
                       <div>
-                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">E-Mail</p>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">{lang === 'en' ? 'Direct Email' : 'Doğrudan E-Posta'}</p>
                         <p className="font-bold text-sm text-white">info@salihmaral.com</p>
                       </div>
                     </a>
 
-                    <div className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                    <div className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-400/25">
                       <div className="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center shrink-0 text-emerald-400">
-                        <ShieldCheck className="h-5 w-5 text-emerald-400" />
+                        <Clock className="h-5 w-5 text-emerald-400" />
                       </div>
                       <div>
-                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">{lang === 'de' ? 'Transparenz' : lang === 'en' ? 'Pricing' : 'Fiyatlandırma'}</p>
-                        <p className="font-bold text-xs text-white">{lang === 'de' ? 'Fester Monats-Fixpreis (Keine Provision)' : lang === 'en' ? 'Transparent Flat-Fee (No Commission)' : 'Şeffaf Sabit Fiyat (Komisyonsuz)'}</p>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-emerald-300">{lang === 'en' ? 'Response SLA' : 'Geri Dönüş Vaadi'}</p>
+                        <p className="font-bold text-xs text-white">{lang === 'en' ? 'Guaranteed Reply Within 24 Hours' : '24 Saat İçinde Garantili Geri Dönüş'}</p>
                       </div>
                     </div>
 
                     <div className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
                       <div className="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center shrink-0 text-[#4285F4]">
-                        <Globe className="h-5 w-5 text-blue-400" />
+                        <ShieldCheck className="h-5 w-5 text-blue-400" />
                       </div>
                       <div>
-                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">{lang === 'de' ? 'Standort' : lang === 'en' ? 'Location' : 'Lokasyon'}</p>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">{lang === 'en' ? 'Pricing' : 'Fiyatlandırma'}</p>
+                        <p className="font-bold text-xs text-white">{lang === 'en' ? 'Transparent Flat-Fee (No Commission)' : 'Şeffaf Sabit Fiyat (Komisyonsuz)'}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                      <div className="w-10 h-10 bg-indigo-500/20 rounded-xl flex items-center justify-center shrink-0 text-indigo-400">
+                        <Globe className="h-5 w-5 text-indigo-400" />
+                      </div>
+                      <div>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">{lang === 'en' ? 'Location' : 'Lokasyon'}</p>
                         <p className="font-bold text-xs text-white">İstanbul / Türkiye • Global Remote</p>
                       </div>
                     </div>
@@ -2510,18 +2518,24 @@ export default function Home({ initialLang = 'tr' }) {
                 </div>
                 
                 <div className="mt-8 pt-6 border-t border-white/10 relative z-10">
-                  <div className="flex items-center gap-2 text-xs text-slate-400">
+                  <div className="flex items-center gap-2 text-xs text-emerald-300 font-semibold">
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span>{lang === 'de' ? 'Antwort garantiert innerhalb 24 Std.' : lang === 'en' ? 'Response within 24 hours guaranteed' : '24 saat içinde doğrudan geri dönüş'}</span>
+                    <span>{lang === 'en' ? 'All form & email requests answered within 24 hours' : 'Tüm form ve e-posta taleplerine 24 saat içinde dönüş yapılır'}</span>
                   </div>
                 </div>
               </div>
               
               {/* Right side - Form */}
               <div className="md:col-span-3 p-8 sm:p-10 bg-white">
-                <h3 className="text-xl font-black mb-4 text-gray-950 tracking-tight">
-                  {lang === 'de' ? 'Nachricht senden' : lang === 'en' ? 'Send Message' : 'Mesaj Gönder'}
-                </h3>
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                  <h3 className="text-xl font-black text-gray-950 tracking-tight">
+                    {lang === 'en' ? 'Send Message via Online Form' : 'İletişim Formu ile Ulaşın'}
+                  </h3>
+                  <span className="inline-flex items-center gap-1.5 text-[11px] font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
+                    <Clock className="w-3.5 h-3.5 text-emerald-600" />
+                    {lang === 'en' ? '24-Hour Response Promise' : '24 Saat İçinde Geri Dönüş Garantisi'}
+                  </span>
+                </div>
                 <div className="mb-5 p-3.5 rounded-2xl bg-amber-50/90 border border-amber-200/90 text-xs sm:text-[13px] text-amber-950 leading-relaxed flex items-start gap-2.5">
                   <span className="text-base shrink-0 mt-0.5">⚠️</span>
                   <span>
@@ -2550,7 +2564,7 @@ export default function Home({ initialLang = 'tr' }) {
                   {/* Service Selector Pills */}
                   <div>
                     <label className="block text-xs font-black uppercase tracking-wider text-slate-500 mb-2">
-                      {lang === 'de' ? 'Gewünschte Leistung' : lang === 'en' ? 'Service of Interest' : 'İlgilendiğiniz Hizmet'}
+                      {lang === 'en' ? 'Service of Interest' : 'İlgilendiğiniz Hizmet'}
                     </label>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                       {[
@@ -2560,7 +2574,7 @@ export default function Home({ initialLang = 'tr' }) {
                         { id: 'tiktok-ads', label: 'TikTok Ads' },
                         { id: 'server-side-tracking', label: 'Server-Side CAPI' },
                         { id: 'web-sitesi-tasarimi', label: lang === 'en' ? 'Turnkey Website' : 'Anahtar Teslim Web' },
-                        { id: 'all', label: '360° Tüm Kanallar' },
+                        { id: 'all', label: lang === 'en' ? '360° All Channels' : '360° Tüm Kanallar' },
                       ].map((opt) => (
                         <button
                           key={opt.id}
@@ -2599,30 +2613,18 @@ export default function Home({ initialLang = 'tr' }) {
                       />
                     </div>
                   </div>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <Input
-                        type="tel"
-                        placeholder={t.contact.form.phone}
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        required
-                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
-                      />
-                    </div>
-                    <div>
-                      <Input
-                        type="text"
-                        placeholder={lang === 'de' ? 'Unternehmen / Website (optional)' : lang === 'en' ? 'Company / Website (optional)' : 'Firma / Web Siteniz (opsiyonel)'}
-                        value={formData.company || ''}
-                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
-                      />
-                    </div>
+                  <div>
+                    <Input
+                      type="text"
+                      placeholder={lang === 'en' ? 'Company Name / Website URL (optional)' : 'Firma Adı / Web Siteniz (opsiyonel)'}
+                      value={formData.company || ''}
+                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
+                    />
                   </div>
                   <div>
                     <Textarea
-                      placeholder={lang === 'de' ? 'Beschreiben Sie Ihre Ziele, Werbebudget oder aktuelle Herausforderungen...' : lang === 'en' ? 'Describe your goals, advertising budget, or current challenges...' : 'Hedeflerinizi, aylık tahmini bütçenizi veya mevcut reklam/SEO zorluklarınızı belirtin...'}
+                      placeholder={lang === 'en' ? 'Describe your goals, monthly ad budget, or current challenges...' : 'Hedeflerinizi, aylık tahmini bütçenizi veya mevcut reklam/SEO zorluklarınızı belirtin...'}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       rows={4}
@@ -2641,8 +2643,13 @@ export default function Home({ initialLang = 'tr' }) {
                     className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-2xl shadow-xl shadow-blue-500/25 hover:shadow-2xl transition-all cursor-pointer text-sm"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? (lang === 'de' ? 'Wird gesendet...' : lang === 'en' ? 'Sending...' : 'Gönderiliyor...') : t.contact.form.submit}
+                    {isSubmitting ? (lang === 'en' ? 'Sending...' : 'Gönderiliyor...') : t.contact.form.submit}
                   </Button>
+                  <p className="text-center text-xs text-slate-500 font-medium pt-1">
+                    {lang === 'en'
+                      ? '✉️ Reach us via this form or info@salihmaral.com — guaranteed response within 24 hours.'
+                      : '✉️ Form veya info@salihmaral.com üzerinden ulaşabilirsiniz — 24 saat içinde garantili geri dönüş sağlıyoruz.'}
+                  </p>
                 </form>
               </div>
             </div>
@@ -2661,6 +2668,10 @@ export default function Home({ initialLang = 'tr' }) {
             <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-[#34A853]/20 rounded-full blur-3xl pointer-events-none"></div>
 
             <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-xs font-extrabold mb-5">
+                <Clock className="w-4 h-4 text-emerald-400" />
+                <span>{lang === 'en' ? '24-Hour Response Guarantee via Form & Email' : 'Form & E-Posta İletişimi • 24 Saat İçinde Geri Dönüş Garantisi'}</span>
+              </div>
               <h2 className="text-3xl md:text-4xl font-black mb-3 tracking-tight">{t.contact.cta.title}</h2>
               <p className="text-sm md:text-base mb-8 max-w-2xl mx-auto text-slate-300 leading-relaxed">{t.contact.cta.description}</p>
               
@@ -2670,7 +2681,7 @@ export default function Home({ initialLang = 'tr' }) {
                   className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-blue-500/25 transition-all duration-200 hover:scale-105 flex items-center gap-2 cursor-pointer text-sm sm:text-base"
                 >
                   <Mail className="h-5 w-5" />
-                  <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Get Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
+                  <span>{lang === 'en' ? 'Contact via Online Form (24h Reply)' : 'İletişim Formu ile Ulaşın (24 Saatte Dönüş)'}</span>
                   <ArrowRight className="h-5 w-5 ml-1" />
                 </button>
                 <a
