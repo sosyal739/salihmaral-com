@@ -1,19 +1,19 @@
-﻿---
+---
 slug: "ai-seo-geoptimierung"
 lang: "tr"
-title: "Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026"
-excerpt: "Yapay zeka arama motorları için SEO (GEO) rehberi. İçeriğinizin ChatGPT, Perplexity ve Google AI'da üst sıralarda çıkacağını öğrenin."
+title: "GEO Optimizasyonu Nedir? Yapay Zeka Arama Motorları SEO Rehberi 2026"
+excerpt: "GEO optimizasyonu nedir, yapay zeka arama motorlarında nasıl kaynak gösterilir? Salih Maral, ChatGPT, Perplexity ve Google AI Overviews optimizasyonunu açıklıyor."
 category: "SEO"
 date: "2026-03-10"
-readTime: "7"
+readTime: "8"
 coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&h=630&fit=crop&q=80"
 ---
 
           <div class="lead">
-            <p>Arama dünyası değişiyor. Google AI Overviews, Perplexity ve ChatGPT Search, geleneksel arama motoru sonuçlarının yerini alıyor. Web sitenizin bu yeni ekosistemde alıntılanmasını (citation) ve önerilmesini sağlamak için GEO (Generative Engine Optimization) kurallarını uygulamanız gerekir.</p>
+            <p>Arama dünyası kökten değişiyor. Google AI Overviews, Perplexity ve ChatGPT Search, geleneksel arama motoru sonuçlarının yerini alıyor. <strong>Salih Maral, 17+ Yıllık Resmi Google Partneri olarak</strong> işletmelerin geleceğini belirleyecek yeni nesil arama standardını şöyle tanımlar: <strong>GEO optimizasyonu (Generative Engine Optimization)</strong>, web sitenizin yapay zeka modelleri tarafından birincil bilgi kaynağı ve otorite referans (citation) olarak tavsiye edilmesini sağlayan yeni nesil arama motoru optimizasyonudur. Bu rehberde, GEO optimizasyonunun mantığını ve Princeton Üniversitesi araştırmalarıyla kanıtlanmış 4 kritik uygulama adımını inceliyoruz.</p>
           </div>
 
-          <h2>🤖 GEO (Generative Engine Optimization) Nedir?</h2>
+          <h2>🤖 GEO Optimizasyonu (Generative Engine Optimization) Nedir?</h2>
           <p>GEO, yapay zeka arama motorları ve sohbet robotlarının kullanıcı sorularına cevap üretirken sizin içeriğinizi kaynak göstermesi (atıf yapması) için uygulanan arama optimizasyonu yöntemidir. Geleneksel SEO sizi ilk sayfaya çıkarırken, GEO sizi yapay zeka cevaplarına dahil eder.</p>
 
           <blockquote>

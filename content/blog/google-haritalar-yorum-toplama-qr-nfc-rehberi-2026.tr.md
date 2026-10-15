@@ -1,8 +1,8 @@
 ---
 slug: "google-haritalar-yorum-toplama-qr-nfc-rehberi-2026"
 lang: "tr"
-title: "Google Haritalarda Müşterilerden 5 Yıldızlı Yorum Toplama Taktikleri (QR & NFC Sistemleri)"
-excerpt: "Google Haritalarda nasıl 5 yıldız yorum toplanır? NFC yorum kartı, masa QR kodları ve olumsuz yorumları filtreleme taktikleri."
+title: "Google Haritalar SEO ve 5 Yıldızlı Yorum Toplama Rehberi 2026 (QR & NFC)"
+excerpt: "Google Haritalar SEO ve yerel aramalarda ilk sıraya çıkma taktikleri: NFC yorum kartı, masa QR kodları ve olumsuz yorumları filtreleme altyapısı."
 category: "Google Haritalar & Yerel SEO"
 date: "2026-08-21"
 readTime: "10"
@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200
 ---
 
 <div class="lead">
-<p><strong>Doğrudan Cevap (Google Haritalarda Yorum Toplama):</strong> Google Haritalar'da (Google Maps) 5 yıldızlı yorum toplamanın en hızlı ve etkili yolu, müşterilere kasada veya masada <strong>temassız Google Yorum NFC Kartı dokundurtmak veya akıllı QR kod okutmaktır.</strong> Müşterilerin %88'i bir işletmeyi aramadan önce Google puanına bakar. 4.8★ ve üzeri puana sahip işletmeler, Google Haritalar 3'lü vitrininde (Local 3-Pack) en üst sırada çıkarak rakiplerine kıyasla <strong>%320 daha fazla doğrudan telefon araması ve yol tarifi</strong> alır. Resmi Google Partneri <strong>Salih Maral</strong> olarak, işletmenize özel QR/NFC ve memnuniyet filtreleme altyapıları kuruyoruz.</p>
+<p><strong>Doğrudan Cevap (Google Haritalar SEO & Yerel SEO):</strong> Google Haritalar'da (Google Maps) ve yerel aramalarda ilk sıraya çıkmanın en güçlü itici gücü, <strong>Google Haritalar SEO</strong> optimizasyonu ve müşterilerden düzenli olarak toplanan <strong>5 yıldızlı gerçek yorumlardır</strong>. Müşterilerin %88'i bir işletmeyi aramadan veya ziyaret etmeden önce Google harita puanına bakar. 4.8★ ve üzeri puana sahip işletmeler, Google Haritalar 3'lü vitrininde (Local 3-Pack) en üst sırada çıkarak rakiplerine kıyasla <strong>%320 daha fazla doğrudan telefon araması ve yol tarifi</strong> alır. Resmi Google Partneri <strong>Salih Maral</strong> olarak, işletmenize özel temassız NFC yorum kartı, masa QR kodları ve yerel SEO sıralama altyapıları kuruyoruz.</p>
 </div>
 
 <h2>🔍 İnsanların En Çok Aradığı Sorular & Birebir Çözümleri (Google Maps Yorumları)</h2>
