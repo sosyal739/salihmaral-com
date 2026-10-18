@@ -168,7 +168,7 @@ coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200
               <li><a href="/blog/first-party-data-marketing">Çerezsiz Reklamcılık: Birinci Taraf Veri (1st-Party Data) ile Geleceğe Hazırlanın</a></li>
               <li><a href="/tr/hizmetler/google-ads">Salih Maral Google Ads Reklam Yönetimi Hizmeti</a></li>
               <li><a href="/blog/google-ads-roi-tracking">Google Ads Dönüşüm Takibi ve ROI Optimizasyonu Rehberi</a></li>
-              <li><a href="/blog/ai-seo-geoptimierung">Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026</a></li>
+              <li><a href="/blog/geo-ai-seo-generative-engine-optimization-guide-2026">Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026</a></li>
               <li><a href="/blog/google-ads-pmax-optimization">PMax Optimizasyonu – ROAS'ınızı 3 Katına Çıkarın</a></li>
               <li><a href="/tr/hizmetler/seo">Salih Maral Profesyonel SEO Hizmetleri</a></li>
             </ul>

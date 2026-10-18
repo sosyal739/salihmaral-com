@@ -195,7 +195,7 @@ coverImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200&h=
             <li><a href="/en/services/google-ads">Google Ads Services by Salih Maral</a></li>
             <li><a href="/blog/google-ads-roi-tracking">ROI Tracking – Set Up Conversion Tracking Correctly</a></li>
             <li><a href="/blog/server-side-tracking-capi-guide">Server-Side Tracking – The Complete Guide to Conversions API</a></li>
-            <li><a href="/blog/google-ads-fehler-vermeiden">The 7 Most Common Google Ads Mistakes</a></li>
+            <li><a href="/blog/google-ads-butce-yakan-hatalar-ve-cozumleri-2026">The 7 Most Common Google Ads Mistakes</a></li>
           </ul>
         </div>
 

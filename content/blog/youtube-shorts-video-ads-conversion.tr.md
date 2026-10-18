@@ -153,7 +153,7 @@ Kanca Şablonu 4: "Neden tüm başarılı Google Ads hesapları bu gizli stratej
   </tbody>
 </table>
 
-<p>Bu istatistiksel verileri incelediğimizde dikkat çeken en önemli detay, Eğitim ve Online Akademi sektörünün %5,10 dönüşüm oranı ve %41 video tamamlama oranıyla (VTR) zirvede yer almasıdır. Bunun nedeni, bilgi içerikli dikey videoların Shorts izleyicisi tarafından daha uzun süre tüketilmesidir. B2B ve SaaS tarafında ise 450 TL civarındaki edinme maliyeti, bu alandaki yüksek müşteri ömür boyu değeri (CLTV) göz önüne olduğunda muazzam bir karlılık sunmaktadır. Performansınızı bu standartlarla karşılaştırmak ve hatalardan kaçınmak için <a href="/blog/google-ads-fehler-vermeiden">En Sık Yapılan 10 Google Ads Hatası</a> rehberimizdeki adımları takip edebilirsiniz.</p>
+<p>Bu istatistiksel verileri incelediğimizde dikkat çeken en önemli detay, Eğitim ve Online Akademi sektörünün %5,10 dönüşüm oranı ve %41 video tamamlama oranıyla (VTR) zirvede yer almasıdır. Bunun nedeni, bilgi içerikli dikey videoların Shorts izleyicisi tarafından daha uzun süre tüketilmesidir. B2B ve SaaS tarafında ise 450 TL civarındaki edinme maliyeti, bu alandaki yüksek müşteri ömür boyu değeri (CLTV) göz önüne olduğunda muazzam bir karlılık sunmaktadır. Performansınızı bu standartlarla karşılaştırmak ve hatalardan kaçınmak için <a href="/blog/google-ads-butce-yakan-hatalar-ve-cozumleri-2026">En Sık Yapılan 10 Google Ads Hatası</a> rehberimizdeki adımları takip edebilirsiniz.</p>
 
 <h2>⚙️ Dönüşüm Artırıcı İleri Düzey YouTube Ads Optimizasyonu</h2>
 <p>YouTube Shorts ve video reklamlarından sürdürülebilir bir performans almak, düzenli optimizasyon gerektirir. Kampanyalarınızı yayına aldıktan sonra performansı yukarılara taşımak için uygulamanız gereken 4 ileri düzey optimizasyon stratejisi şunlardır:</p>
@@ -192,7 +192,7 @@ Kanca Şablonu 4: "Neden tüm başarılı Google Ads hesapları bu gizli stratej
   <h3>📚 Devamını Okuyun</h3>
   <ul>
     <li><a href="/blog/google-ads-roi-tracking">Google Ads ROI İzleme ve Dönüşüm Kurulumu</a></li>
-    <li><a href="/blog/google-ads-fehler-vermeiden">En Sık Yapılan 10 Google Ads Hatası ve Çözümü</a></li>
+    <li><a href="/blog/google-ads-butce-yakan-hatalar-ve-cozumleri-2026">En Sık Yapılan 10 Google Ads Hatası ve Çözümü</a></li>
     <li><a href="/tr/hizmetler/google-ads">Salih Maral Google Ads Reklam Yönetimi ve Danışmanlığı</a></li>
   </ul>
 </div>

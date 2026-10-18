@@ -170,7 +170,7 @@ coverImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1200
           <div class="highlight-box">
             <h4>📚 Read More</h4>
             <ul>
-              <li><a href="/blog/ai-seo-geoptimierung">SEO for AI Search Engines (GEO) Guide 2026</a></li>
+              <li><a href="/blog/geo-ai-seo-generative-engine-optimization-guide-2026">SEO for AI Search Engines (GEO) Guide 2026</a></li>
               <li><a href="/blog/google-sge-search-ads-strategy">Google SGE Search Ads Strategy – Navigating the Future of PPC</a></li>
               <li><a href="/blog/local-seo-google-maps">Local SEO and Google Maps Optimization Guide</a></li>
               <li><a href="/blog/ai-content-marketing-scale">How to Scale Content Marketing with AI Without Losing SEO Quality</a></li>

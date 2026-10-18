@@ -1,10 +1,10 @@
 ---
-slug: "google-ads-agentur-kosten-preise-2026"
+slug: "google-ads-ajans-ucretleri-fiyatlari-2026"
 lang: "en"
 title: "Google Ads Agency Pricing & Costs 2026 Guide"
 excerpt: "How much does a Google Ads agency cost per month? Fixed retainer vs. % of ad spend, minimum budget thresholds, and transparent 2026 pricing models."
 category: "Pricing & Guide"
-date: "2026-08-28"
+date: "2026-10-17"
 readTime: "18"
 coverImage: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=1200&h=630&fit=crop&q=80"
 ---

@@ -4,7 +4,7 @@ lang: "en"
 title: "GEO AI SEO: Optimize for ChatGPT & AI Overviews"
 excerpt: "What is GEO AI SEO? How to optimize websites for generative AI search engines in 2026. Citation factors, llms.txt, Schema.org, and E-E-A-T guide."
 category: "SEO & AI Future"
-date: "2026-08-28"
+date: "2026-10-17"
 readTime: "15"
 coverImage: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&h=630&fit=crop&q=80"
 ---

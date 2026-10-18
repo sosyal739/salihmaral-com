@@ -4,7 +4,7 @@ lang: "en"
 title: "CRO Agency Guide 2026: Conversion Rate Optimization"
 excerpt: "What is a CRO agency and how does conversion rate optimization cut CPA by 50%? Salih Maral explains AI-driven CRO for B2B and e-commerce brands."
 category: "Conversion Optimization"
-date: "2026-10-16"
+date: "2026-10-17"
 readTime: "12"
 coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=630&fit=crop&q=80"
 ---

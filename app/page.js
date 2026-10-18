@@ -3012,7 +3012,7 @@ export default function Home({ initialLang = 'tr' }) {
             <div>
               <h4 className="font-semibold mb-4">{lang === 'de' ? 'Aktuelle Fachartikel' : lang === 'en' ? 'Strategy Guides' : 'Uzman Rehberleri'}</h4>
               <ul className="space-y-1.5 text-xs text-gray-400">
-                <li><a href="/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google Ads Fixpreis vs. %' : lang === 'en' ? 'Flat Fee vs. Commission' : 'Google Ads Sabit Fiyat vs Komisyon'}</a></li>
+                <li><a href="/blog/google-ads-sabit-fiyat-vs-komisyon-ajans-modeli-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google Ads Fixpreis vs. %' : lang === 'en' ? 'Flat Fee vs. Commission' : 'Google Ads Sabit Fiyat vs Komisyon'}</a></li>
                 <li><a href="/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Meta Ads ROAS Skalierung' : lang === 'en' ? 'Meta Ads ROAS Scaling' : 'Meta Ads ROAS Skalalama'}</a></li>
                 <li><a href="/blog/server-side-gtm-meta-capi-setup-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Server-Side GTM & CAPI' : lang === 'en' ? 'Server-Side GTM Setup' : 'Server-Side GTM & CAPI'}</a></li>
                 <li><a href="/blog/google-ai-overviews-geo-ranking-strategy" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google AI Overviews & GEO' : lang === 'en' ? 'AI Overviews & GEO Strategy' : 'AI Overviews ve GEO Stratejisi'}</a></li>

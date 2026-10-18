@@ -4,7 +4,7 @@ lang: "en"
 title: "Google Consent Mode v2 Setup & Guide (2026)"
 excerpt: "What is Google Consent Mode v2 and how do you set it up in GTM? Compare Basic vs. Advanced mode and recover 40% of lost conversion data with Salih Maral."
 category: "Server-Side Tracking & Veri"
-date: "2026-10-16"
+date: "2026-10-17"
 readTime: "12"
 coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&q=80"
 ---

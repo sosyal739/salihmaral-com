@@ -1,10 +1,10 @@
 ﻿---
-slug: "google-ads-fehler-vermeiden"
+slug: "google-ads-butce-yakan-hatalar-ve-cozumleri-2026"
 lang: "tr"
 title: "Google Ads'te Paranızı Çöpe Atan 7 Büyük Hata ve Çözümleri"
 excerpt: "Google Ads'de pahalı hatalardan kaçının. Salih Maral, reklam bütçenizi boşa harcayan en yaygın 10 hatayı ve bunları nasıl anında düzeltebileceğinizi gösteriyor."
 category: "Google Ads"
-date: "2026-07-14"
+date: "2026-10-17"
 readTime: "10"
 coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1200&h=630&fit=crop&q=80"
 ---
@@ -50,7 +50,7 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1200
 
 <h3>6. Bütçenin Yanlış Dağıtılması</h3>
 <p><strong>Problem:</strong> Tüm pazarlama bütçesi, kampanyaların gerçek performans metrikleri (ROAS veya EBM) dikkate alınmaksızın eşit olarak paylaştırılır.</p>
-<p><strong>Etki:</strong> Kötü performans gösteren kampanyalar, aksi takdirde yüksek kar getirebilecek başarılı kampanyalara ayrılabilecek bütçeyi yutar. Bu, büyüme potansiyelinizi ciddi şekilde kısıtlar. Bütçe planlaması hakkında daha fazla bilgi için <a href="/blog/google-ads-kosten-2026">Google Ads Maliyetleri 2026</a> makalemizi inceleyebilirsiniz.</p>
+<p><strong>Etki:</strong> Kötü performans gösteren kampanyalar, aksi takdirde yüksek kar getirebilecek başarılı kampanyalara ayrılabilecek bütçeyi yutar. Bu, büyüme potansiyelinizi ciddi şekilde kısıtlar. Bütçe planlaması hakkında daha fazla bilgi için <a href="/blog/google-ads-reklam-ucretleri-tiklama-maliyeti-2026">Google Ads Maliyetleri 2026</a> makalemizi inceleyebilirsiniz.</p>
 <p><strong>Çözüm:</strong> Her bir kampanyanın performansını analiz edin. Hedef değerinizin üzerinde bir EBM'ye sahip kampanyalardan bütçeyi çekin ve bu bütçeyi, karlı bir şekilde dönüşüm sağlayan ve hala gösterim payı potansiyeli olan kampanyalara kaydırın.</p>
 
 <h3>7. Yanlış Teklif Stratejilerinin Seçilmesi</h3>

@@ -1,10 +1,10 @@
 ﻿---
-slug: "google-ads-kosten-2026"
+slug: "google-ads-reklam-ucretleri-tiklama-maliyeti-2026"
 lang: "tr"
 title: "Google Ads Reklam Ücretleri 2026: Tıklama Başı Maliyet Ne Kadar?"
 excerpt: "Google Ads'in 2026'da ne kadar tuttuğunu öğrenin. Salih Maral, sektör bazında CPC oranlarını, bütçe önerilerini ve reklam maliyetlerinizi nasıl optimize edeceğinizi açıklıyor."
 category: "Google Ads"
-date: "2026-07-14"
+date: "2026-10-17"
 readTime: "9"
 coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop&q=80"
 ---

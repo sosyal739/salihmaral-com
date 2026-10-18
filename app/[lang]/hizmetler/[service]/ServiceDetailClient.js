@@ -3222,7 +3222,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                   </a>
                 </li>
                 <li>
-                  <a href="/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026" className="hover:text-white transition-colors">
+                  <a href="/blog/google-ads-sabit-fiyat-vs-komisyon-ajans-modeli-2026" className="hover:text-white transition-colors">
                     {lang === 'tr' ? 'Google Ads Sabit Fiyat vs Komisyon' : lang === 'en' ? 'Flat Fee vs Commission' : 'Google Ads Fixpreis vs. %'}
                   </a>
                 </li>

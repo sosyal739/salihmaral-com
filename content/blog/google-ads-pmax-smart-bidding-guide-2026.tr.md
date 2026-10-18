@@ -126,9 +126,9 @@ coverImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200
   <h3>📚 İlgili Google Ads Kılavuzları:</h3>
   <ul>
     <li><a href="/tr/hizmetler/google-ads">Google Ads Yönetimi ve Danışmanlık Hizmetleri — Salih Maral</a></li>
-    <li><a href="/blog/google-ads-kosten-2026">Google Ads TBM Maliyetleri ve Bütçe Planlaması 2026</a></li>
+    <li><a href="/blog/google-ads-reklam-ucretleri-tiklama-maliyeti-2026">Google Ads TBM Maliyetleri ve Bütçe Planlaması 2026</a></li>
     <li><a href="/blog/server-side-gtm-meta-capi-setup-2026">Server-Side Tracking ile Google Ads Gelişmiş Dönüşümler</a></li>
-    <li><a href="/blog/google-ads-fehler-vermeiden">En Sık Yapılan 10 Google Ads Hatası ve Çözümü</a></li>
+    <li><a href="/blog/google-ads-butce-yakan-hatalar-ve-cozumleri-2026">En Sık Yapılan 10 Google Ads Hatası ve Çözümü</a></li>
   </ul>
 </div>
 

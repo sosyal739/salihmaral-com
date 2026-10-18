@@ -259,7 +259,7 @@ Arama motorlarında sürdürülebilir başarı elde etmek ve markanızı gelece�
   <p>SEO ve dijital pazarlama stratejilerinizi geliştirmek için aşağıdaki rehberlerimizi de inceleyebilirsiniz:</p>
   <ul>
     <li><a href="/blog/programmatic-seo-ai-content-hubs">Programmatic SEO ve AI Destekli İçerik Merkezleri</a></li>
-    <li><a href="/blog/ai-seo-geoptimierung">Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026</a></li>
+    <li><a href="/blog/geo-ai-seo-generative-engine-optimization-guide-2026">Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026</a></li>
     <li><a href="/blog/local-seo-google-maps">Yerel SEO ve Google Haritalar Optimizasyonu ile Trafiğinizi Artırın</a></li>
   </ul>
 </div>

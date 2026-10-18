@@ -164,7 +164,7 @@ coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200
   <p>TikTok ve sosyal ticaret ekosistemindeki başarınızı katlamak için diğer rehberlerimizi inceleyin:</p>
   <ul>
     <li><a href="/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026">TikTok Shop vs. Meta Advantage+: E-Ticaret Karşılaştırması (2026)</a></li>
-    <li><a href="/blog/tiktok-shop-social-commerce">Sosyal Ticaret ve TikTok Shop Giriş Rehberi</a></li>
+    <li><a href="/blog/tiktok-shop-ecommerce-scaling">Sosyal Ticaret ve TikTok Shop Giriş Rehberi</a></li>
     <li><a href="/blog/server-side-tracking-capi-guide">Dönüşüm Kayıplarını Önlemek İçin Server-Side Tracking Kurulumu</a></li>
   </ul>
 </div>

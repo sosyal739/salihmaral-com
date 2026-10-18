@@ -1,10 +1,10 @@
 ﻿---
-slug: "google-ads-kosten-2026"
+slug: "google-ads-reklam-ucretleri-tiklama-maliyeti-2026"
 lang: "en"
 title: "Google Ads Costs in 2026: Actual Click Prices Guide"
 excerpt: "Find out what Google Ads really costs in 2026. Salih Maral explains CPC by industry, budget recommendations, and how to optimize your advertising costs."
 category: "Google Ads"
-date: "2026-07-14"
+date: "2026-10-17"
 readTime: "9"
 coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop&q=80"
 ---

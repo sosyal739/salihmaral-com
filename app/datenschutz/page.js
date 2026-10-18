@@ -308,7 +308,7 @@ export default function DatenschutzPage() {
                 <li><a href="/blog/b2b-google-ads-kurumsal-lead-ve-musteri-kazanma-rehberi-2026" className="hover:text-blue-400 transition-colors">B2B Google Ads & Kurumsal Lead</a></li>
                 <li><a href="/blog/e-ticaret-roas-artirma-ve-reklam-butcesi-olcekleme-2026" className="hover:text-blue-400 transition-colors">E-Ticaret ROAS & Bütçe Ölçekleme</a></li>
                 <li><a href="/blog/conversion-rate-optimization-ai-personalization" className="hover:text-blue-400 transition-colors">CRO & Dönüşüm Optimizasyonu</a></li>
-                <li><a href="/blog/ai-seo-geoptimierung" className="hover:text-blue-400 transition-colors">GEO & Yapay Zeka SEO</a></li>
+                <li><a href="/blog/geo-ai-seo-generative-engine-optimization-guide-2026" className="hover:text-blue-400 transition-colors">GEO & Yapay Zeka SEO</a></li>
               </ul>
             </div>
 

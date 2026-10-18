@@ -4,7 +4,7 @@ lang: "tr"
 title: "Google Reklam ROI & ROAS Hesaplama ve Takip Rehberi"
 excerpt: "Google reklam ROI ve ROAS nasıl hesaplanır? Başabaş ROAS formülü, gelişmiş dönüşüm takibi (GTM & sGTM) ve karlılığı katlayan 2026 optimizasyon rehberi."
 category: "Google Ads"
-date: "2026-10-15"
+date: "2026-10-17"
 readTime: "10"
 coverImage: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=630&fit=crop&q=80"
 ---

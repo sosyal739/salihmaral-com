@@ -215,10 +215,10 @@ coverImage: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1200
   <ul>
     <li><a href="/en/services/google-ads">Google Ads Services by Salih Maral</a> – Discover how we build and scale high-ROAS search campaigns.</li>
     <li><a href="/en/services/seo">SEO Services by Salih Maral</a> – Learn how we optimize your website's organic visibility for both traditional search and AI search engines.</li>
-    <li><a href="/blog/ai-seo-geoptimierung">SEO for AI Search Engines (GEO) Guide 2026</a> – Our deep dive into the Princeton GEO study and optimizing for Perplexity and ChatGPT.</li>
+    <li><a href="/blog/geo-ai-seo-generative-engine-optimization-guide-2026">SEO for AI Search Engines (GEO) Guide 2026</a> – Our deep dive into the Princeton GEO study and optimizing for Perplexity and ChatGPT.</li>
     <li><a href="/blog/google-ads-pmax-optimization">Performance Max Optimization Tactics</a> – Stop wasting budget and optimize your PMax campaigns.</li>
     <li><a href="/blog/server-side-tracking-capi-guide">The Complete Server-Side Tracking and Conversions API (CAPI) Guide</a> – Protect your conversion data and improve bidding accuracy.</li>
-    <li><a href="/blog/google-ads-kosten-2026">Google Ads Costs 2026</a> – How much does search advertising cost in the current digital landscape?</li>
+    <li><a href="/blog/google-ads-reklam-ucretleri-tiklama-maliyeti-2026">Google Ads Costs 2026</a> – How much does search advertising cost in the current digital landscape?</li>
   </ul>
 </div>
 

@@ -1,10 +1,10 @@
 ﻿---
-slug: "google-ads-fixpreis-vs-prozent-agentur-modell-2026"
+slug: "google-ads-sabit-fiyat-vs-komisyon-ajans-modeli-2026"
 lang: "en"
 title: "Google Ads Flat Fee vs Percentage: Best Model 2026"
 excerpt: "Is your agency charging a 15% commission on your ad spend? Discover why a transparent flat-fee management model yields significantly higher ROI in 2026."
 category: "Google Ads & PPC"
-date: "2026-08-25"
+date: "2026-10-17"
 readTime: "17"
 coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=630&fit=crop&q=80"
 ---

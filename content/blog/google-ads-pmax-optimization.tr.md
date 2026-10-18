@@ -67,9 +67,9 @@ coverImage: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&h=
           <ul>
             <li><a href="/blog/google-ads-nedir">Google Ads Rehberi – Google Ads Nedir?</a></li>
             <li><a href="/tr/hizmetler/google-ads">Salih Maral Google Ads Hizmetleri</a></li>
-            <li><a href="/blog/google-ads-kosten-2026">Google Ads Maliyetleri 2026</a></li>
+            <li><a href="/blog/google-ads-reklam-ucretleri-tiklama-maliyeti-2026">Google Ads Maliyetleri 2026</a></li>
             <li><a href="/blog/google-ads-roi-tracking">ROI Takibi – Dönüşüm Takibini Doğru Kurun</a></li>
-            <li><a href="/blog/google-ads-fehler-vermeiden">En Sık Yapılan 7 Google Ads Hatası</a></li>
+            <li><a href="/blog/google-ads-butce-yakan-hatalar-ve-cozumleri-2026">En Sık Yapılan 7 Google Ads Hatası</a></li>
           </ul>
         </div>
 

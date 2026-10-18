@@ -4,7 +4,7 @@ lang: "tr"
 title: "GEO AI SEO: ChatGPT & AI Arama Optimizasyonu 2026"
 excerpt: "GEO AI SEO nedir? Web sitenizi yapay zeka arama motorlarına nasıl uyarlarsınız? llms.txt, Schema.org ve E-E-A-T rehberi."
 category: "SEO & Yapay Zeka"
-date: "2026-08-28"
+date: "2026-10-17"
 readTime: "15"
 coverImage: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&h=630&fit=crop&q=80"
 ---

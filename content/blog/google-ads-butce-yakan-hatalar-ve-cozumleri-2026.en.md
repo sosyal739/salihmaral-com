@@ -1,10 +1,10 @@
 ﻿---
-slug: "google-ads-fehler-vermeiden"
+slug: "google-ads-butce-yakan-hatalar-ve-cozumleri-2026"
 lang: "en"
 title: "7 Costly Google Ads Mistakes Burning Your Budget"
 excerpt: "Avoid expensive mistakes in Google Ads. Salih Maral reveals the 10 most common errors that drain your advertising budget and how to fix them immediately."
 category: "Google Ads"
-date: "2026-07-14"
+date: "2026-10-17"
 readTime: "10"
 coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1200&h=630&fit=crop&q=80"
 ---
@@ -50,7 +50,7 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1200
 
 <h3>6. Poor Budget Allocation</h3>
 <p><strong>Problem:</strong> The entire marketing budget is distributed evenly across all campaigns, regardless of their actual performance metrics like ROAS or CPA.</p>
-<p><strong>Impact:</strong> Poorly performing campaigns consume budget that could otherwise be invested in highly profitable campaigns. This severely limits your growth potential. For more insights into budgeting, check out our article on <a href="/blog/google-ads-kosten-2026">Google Ads Costs 2026</a>.</p>
+<p><strong>Impact:</strong> Poorly performing campaigns consume budget that could otherwise be invested in highly profitable campaigns. This severely limits your growth potential. For more insights into budgeting, check out our article on <a href="/blog/google-ads-reklam-ucretleri-tiklama-maliyeti-2026">Google Ads Costs 2026</a>.</p>
 <p><strong>Solution:</strong> Analyze the performance of each campaign. Shift your budget away from campaigns with a CPA above your target value and reallocate it to campaigns that are converting profitably and still have potential Search Impression Share.</p>
 
 <h3>7. Incorrect Bidding Strategies</h3>

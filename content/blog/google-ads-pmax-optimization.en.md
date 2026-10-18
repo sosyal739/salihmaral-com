@@ -67,9 +67,9 @@ coverImage: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&h=
           <ul>
             <li><a href="/blog/google-ads-nedir">Google Ads Guide – What is Google Ads?</a></li>
             <li><a href="/en/services/google-ads">Google Ads Services by Salih Maral</a></li>
-            <li><a href="/blog/google-ads-kosten-2026">Google Ads Costs 2026 – How Much Does Google Ads Cost?</a></li>
+            <li><a href="/blog/google-ads-reklam-ucretleri-tiklama-maliyeti-2026">Google Ads Costs 2026 – How Much Does Google Ads Cost?</a></li>
             <li><a href="/blog/google-ads-roi-tracking">ROI Tracking – Set Up Conversion Tracking Correctly</a></li>
-            <li><a href="/blog/google-ads-fehler-vermeiden">The 7 Most Common Google Ads Mistakes</a></li>
+            <li><a href="/blog/google-ads-butce-yakan-hatalar-ve-cozumleri-2026">The 7 Most Common Google Ads Mistakes</a></li>
           </ul>
         </div>
 

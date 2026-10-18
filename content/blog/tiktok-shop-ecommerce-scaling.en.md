@@ -188,7 +188,7 @@ coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200
         <div class="highlight-box">
           <h4>📚 Read More</h4>
           <ul>
-            <li><a href="/blog/tiktok-shop-social-commerce">TikTok Shop Guide: Secrets to Direct Selling on Social Media</a></li>
+            <li><a href="/blog/tiktok-shop-ecommerce-scaling">TikTok Shop Guide: Secrets to Direct Selling on Social Media</a></li>
             <li><a href="/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026">TikTok Shop vs. Meta Advantage+: E-Commerce Comparison (2026)</a></li>
             <li><a href="/en/services/tiktok-ads">Professional TikTok Ads Services by Salih Maral</a></li>
             <li><a href="/en/services/meta-ads">Meta Ads (Facebook & Instagram) Management Services</a></li>

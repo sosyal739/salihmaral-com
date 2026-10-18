@@ -4,7 +4,7 @@ lang: "en"
 title: "Google Ads ROI & ROAS Calculation & Tracking 2026"
 excerpt: "How to calculate and track real Google Ads ROI and Break-Even ROAS. Complete 2026 guide to GTM Enhanced Conversions, sGTM, and Value-Based Bidding."
 category: "Google Ads"
-date: "2026-10-15"
+date: "2026-10-17"
 readTime: "10"
 coverImage: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=630&fit=crop&q=80"
 ---

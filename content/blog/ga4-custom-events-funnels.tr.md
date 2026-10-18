@@ -4,7 +4,7 @@ lang: "tr"
 title: "Google Tag Manager (GTM) & GA4 Funnel Kurulumu 2026"
 excerpt: "Google Tag Manager (GTM) ve GA4 ile özel dönüşüm hunisi (funnel) nasıl kurulur? DataLayer, custom event ve drop-off analiziyle dönüşüm oranlarınızı artırın."
 category: "Tracking"
-date: "2026-10-15"
+date: "2026-10-17"
 readTime: "12"
 coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&q=80"
 ---

@@ -126,9 +126,9 @@ coverImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200
   <h3>📚 Related Google Ads Guides:</h3>
   <ul>
     <li><a href="/en/services/google-ads">Google Ads Management & Strategy — Salih Maral</a></li>
-    <li><a href="/blog/google-ads-kosten-2026">Google Ads CPC & Budget Benchmarks 2026</a></li>
+    <li><a href="/blog/google-ads-reklam-ucretleri-tiklama-maliyeti-2026">Google Ads CPC & Budget Benchmarks 2026</a></li>
     <li><a href="/blog/server-side-gtm-meta-capi-setup-2026">Server-Side Tracking for Enhanced Conversions</a></li>
-    <li><a href="/blog/google-ads-fehler-vermeiden">10 Google Ads Mistakes to Avoid</a></li>
+    <li><a href="/blog/google-ads-butce-yakan-hatalar-ve-cozumleri-2026">10 Google Ads Mistakes to Avoid</a></li>
   </ul>
 </div>
 

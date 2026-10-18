@@ -4,7 +4,7 @@ lang: "tr"
 title: "Google Consent Mode v2 Nedir & Nasıl Kurulur? (2026)"
 excerpt: "Consent Mode nedir, Google Consent Mode v2 nasıl kurulur? GTM kurulum adımları, Basic vs Advanced farkı ve %40 kayıp dönüşüm verisini kurtarma rehberi."
 category: "Server-Side Tracking & Veri"
-date: "2026-10-16"
+date: "2026-10-17"
 readTime: "12"
 coverImage: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&h=630&fit=crop&q=80"
 ---

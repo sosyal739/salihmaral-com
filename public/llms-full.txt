@@ -67,8 +67,8 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
   - *URL:* https://www.salihmaral.com/blog/ai-content-marketing-scale
   - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
-- **[Ai Seo Geoptimierung](https://www.salihmaral.com/blog/ai-seo-geoptimierung)**
-  - *URL:* https://www.salihmaral.com/blog/ai-seo-geoptimierung
+- **[Ai Seo Geoptimierung](https://www.salihmaral.com/blog/geo-ai-seo-generative-engine-optimization-guide-2026)**
+  - *URL:* https://www.salihmaral.com/blog/geo-ai-seo-generative-engine-optimization-guide-2026
   - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Deepseek R1 Vs Openai O3 Seo Copywriting](https://www.salihmaral.com/blog/deepseek-r1-vs-openai-o3-seo-copywriting)**
@@ -91,8 +91,8 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
   - *URL:* https://www.salihmaral.com/blog/github-seo-skills-claude-code-guide-2026
   - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
-- **[Google Ads Fehler Vermeiden](https://www.salihmaral.com/blog/google-ads-fehler-vermeiden)**
-  - *URL:* https://www.salihmaral.com/blog/google-ads-fehler-vermeiden
+- **[Google Ads Fehler Vermeiden](https://www.salihmaral.com/blog/google-ads-butce-yakan-hatalar-ve-cozumleri-2026)**
+  - *URL:* https://www.salihmaral.com/blog/google-ads-butce-yakan-hatalar-ve-cozumleri-2026
   - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Doğru Google ve Meta Ads Ajansı Nasıl Seçilir? (2026)](https://www.salihmaral.com/blog/dogru-google-ads-meta-ads-ajansi-nasil-secilir-2026)**
@@ -100,8 +100,8 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
   - *Summary:* Dijital reklam ajansı seçerken paranızı batırmaktan kurtaracak 9 kritik soru, sözleşme tuzakları, junior çalışan riskleri ve şeffaf hesap yönetimi rehberi.
   - *Category:* Google Ads & PPC | *Languages:* TR, EN
 
-- **[Google Ads Kosten 2026](https://www.salihmaral.com/blog/google-ads-kosten-2026)**
-  - *URL:* https://www.salihmaral.com/blog/google-ads-kosten-2026
+- **[Google Ads Kosten 2026](https://www.salihmaral.com/blog/google-ads-reklam-ucretleri-tiklama-maliyeti-2026)**
+  - *URL:* https://www.salihmaral.com/blog/google-ads-reklam-ucretleri-tiklama-maliyeti-2026
   - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[Google Ads Nedir](https://www.salihmaral.com/blog/google-ads-nedir)**
@@ -156,8 +156,8 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
   - *URL:* https://www.salihmaral.com/blog/server-side-tracking-capi-guide
   - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
-- **[Tiktok Shop Social Commerce](https://www.salihmaral.com/blog/tiktok-shop-social-commerce)**
-  - *URL:* https://www.salihmaral.com/blog/tiktok-shop-social-commerce
+- **[Tiktok Shop Social Commerce](https://www.salihmaral.com/blog/tiktok-shop-ecommerce-scaling)**
+  - *URL:* https://www.salihmaral.com/blog/tiktok-shop-ecommerce-scaling
   - *Category:* Genel & Büyüme | *Languages:* TR, EN
 
 - **[X Live Studio Streaming Rewards](https://www.salihmaral.com/blog/x-live-studio-streaming-rewards)**
@@ -297,8 +297,8 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
 
 ### Google Ads & PPC
 
-- **[Google Ads Sabit Fiyat mı, Komisyon mu? 2026](https://www.salihmaral.com/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026)**
-  - *URL:* https://www.salihmaral.com/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026
+- **[Google Ads Sabit Fiyat mı, Komisyon mu? 2026](https://www.salihmaral.com/blog/google-ads-sabit-fiyat-vs-komisyon-ajans-modeli-2026)**
+  - *URL:* https://www.salihmaral.com/blog/google-ads-sabit-fiyat-vs-komisyon-ajans-modeli-2026
   - *Summary:* Google Ads ajansınız reklam bütçenizden %15 komisyon mu alıyor? Neden sabit fiyatlı (Fixpreis) şeffaf yönetim modelinin şirketiniz için çok daha karlı olduğunu keşfedin.
   - *Category:* Google Ads & PPC | *Languages:* TR, EN
 
@@ -361,8 +361,8 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
 
 ### Fiyatlar & Rehber
 
-- **[Google Ads Ajans Ücretleri ve Fiyatları 2026](https://www.salihmaral.com/blog/google-ads-agentur-kosten-preise-2026)**
-  - *URL:* https://www.salihmaral.com/blog/google-ads-agentur-kosten-preise-2026
+- **[Google Ads Ajans Ücretleri ve Fiyatları 2026](https://www.salihmaral.com/blog/google-ads-ajans-ucretleri-fiyatlari-2026)**
+  - *URL:* https://www.salihmaral.com/blog/google-ads-ajans-ucretleri-fiyatlari-2026
   - *Summary:* Google Ads ajansı aylık ne kadar tutar? Sabit fiyat (Fixpreis) vs. bütçe yüzdesi (% Ad Spend) modelleri, minimum bütçe rehberi ve 2026 fiyat tablosu.
   - *Category:* Fiyatlar & Rehber | *Languages:* TR, EN
 
@@ -382,8 +382,8 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
 
 ### Google Ads & Yapay Zeka
 
-- **[Google Ads PMax Negatif Kelime & Bütçe Rehberi 2026](https://www.salihmaral.com/blog/google-ads-pmax-negative-keywords-kampagnen-2026)**
-  - *URL:* https://www.salihmaral.com/blog/google-ads-pmax-negative-keywords-kampagnen-2026
+- **[Google Ads PMax Negatif Kelime & Bütçe Rehberi 2026](https://www.salihmaral.com/blog/google-ads-pmax-negatif-anahtar-kelime-rehberi-2026)**
+  - *URL:* https://www.salihmaral.com/blog/google-ads-pmax-negatif-anahtar-kelime-rehberi-2026
   - *Summary:* Google Ads PMax kampanyalarında kampanya düzeyinde negatif anahtar kelime ekleme, B2B bütçe israfını önleme ve karlı büyüme rehberi. Uzman analizi.
   - *Category:* Google Ads & Yapay Zeka | *Languages:* TR, EN
 

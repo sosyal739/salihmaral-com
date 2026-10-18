@@ -4,7 +4,7 @@ lang: "tr"
 title: "LinkedIn ABM Ads: B2B Hesap Tabanlı Reklam Rehberi"
 excerpt: "LinkedIn ABM Ads ile B2B karar vericileri hedefleyin. Şirket listesi (TAL) eşleştirme, LinkedIn CAPI ve çok katmanlı B2B huni kurulumu rehberi."
 category: "LinkedIn Ads"
-date: "2026-10-15"
+date: "2026-10-17"
 readTime: "11"
 coverImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&h=630&fit=crop&q=80"
 ---

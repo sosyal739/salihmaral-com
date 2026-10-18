@@ -4,7 +4,7 @@ lang: "tr"
 title: "CRO Ajansı & Dönüşüm Oranı Optimizasyonu Rehberi 2026"
 excerpt: "CRO ajansı nedir, dönüşüm oranı optimizasyonu ile reklam maliyetleri nasıl düşürülür? Salih Maral, B2B ve e-ticaret için yapay zeka CRO stratejilerini anlatıyor."
 category: "Dönüşüm Optimizasyonu"
-date: "2026-10-16"
+date: "2026-10-17"
 readTime: "12"
 coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=630&fit=crop&q=80"
 ---

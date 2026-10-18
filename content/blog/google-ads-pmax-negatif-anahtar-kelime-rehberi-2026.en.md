@@ -1,10 +1,10 @@
 ---
-slug: "google-ads-pmax-negative-keywords-kampagnen-2026"
+slug: "google-ads-pmax-negatif-anahtar-kelime-rehberi-2026"
 lang: "en"
 title: "Google Ads PMax Campaign Negative Keywords Guide 2026"
 excerpt: "How to optimize Google Ads Performance Max with campaign-level negative keywords, eliminate B2B budget waste and scale profitably. 2026 agency guide."
 category: "Google Ads & AI"
-date: "2026-09-17"
+date: "2026-10-17"
 readTime: "11"
 coverImage: "https://images.unsplash.com/photo-1557838923-2985c318be48?w=1200&h=630&fit=crop&q=80"
 ---
