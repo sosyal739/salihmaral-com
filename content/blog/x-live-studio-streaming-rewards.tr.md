@@ -1,10 +1,10 @@
-﻿---
+---
 slug: "x-live-studio-streaming-rewards"
 lang: "tr"
-title: "X Live Studio ile Canlı Yayında Gelir Elde Etme ve Marka Büyütme"
-excerpt: "X (Twitter), Twitch ve YouTube'a rakip olan Live Studio'yu duyurdu. 1 milyon dolarlık dev nakit havuzundan pay almak için bilmeniz gereken tüm şartlar."
+title: "X Live Studio ile Canlı Yayında Gelir Kazanma 2026"
+excerpt: "X (Twitter) Live Studio yayıncılık şartları, 1 milyon dolarlık ödül havuzundan pay alma ve B2B marka bilinirliği büyütme rehberi."
 category: "X Ads"
-date: "2026-07-03"
+date: "2026-10-18"
 readTime: "5"
 coverImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200&h=630&fit=crop&q=80"
 ---

@@ -80,7 +80,43 @@ coverImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200
             </tbody>
           </table>
 
-          <h3>Tablo 2: LinkedIn Reklam Formatlarının ABM Huni Aşamalarındaki Performansı</h3>
+          <h3>Tablo 2: 1:1 ABM, 1:Few ABM ve 1:Many ABM Karşılaştırması (Bütçe & CPL Dağılımı)</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ABM Modeli</th>
+                <th>Hedef Hesap Sayısı</th>
+                <th>Önerilen Aylık Reklam Bütçesi</th>
+                <th>Ortalama Nitelikli Talep Maliyeti (CPL)</th>
+                <th>İdeal Kullanım Senaryosu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1:1 ABM (Stratejik ABM)</strong></td>
+                <td>1 - 20 Çok Büyük Kurumsal Şirket</td>
+                <td>50.000 ₺ - 150.000 ₺+</td>
+                <td>1.500 ₺ - 4.500 ₺</td>
+                <td>Anlaşma boyutu (ACV) 1.000.000 TL üzeri olan dev holdingler ve kurumsal ihaleler için şirkete özel kreatiflerle birebir hedefleme.</td>
+              </tr>
+              <tr>
+                <td><strong>1:Few ABM (ABM Lite)</strong></td>
+                <td>20 - 100 Benzer Sektör Şirketi</td>
+                <td>25.000 ₺ - 75.000 ₺</td>
+                <td>800 ₺ - 2.000 ₺</td>
+                <td>Aynı sektördeki (örneğin sadece Özel Hastaneler veya Lojistik Firmaları) karar verici unvanlarına yönelik özelleştirilmiş vaka analizi reklamları.</td>
+              </tr>
+              <tr>
+                <td><strong>1:Many ABM (Programatik ABM)</strong></td>
+                <td>100 - 1000+ Hedef KOBİ / Şirket</td>
+                <td>25.000 ₺ - 50.000 ₺</td>
+                <td>400 ₺ - 1.200 ₺</td>
+                <td>Matched Audiences ve teknografi filtreleriyle geniş B2B kitlelere yönelik ölçeklenebilir demo ve rehber hunisi.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Tablo 3: LinkedIn Reklam Formatlarının ABM Huni Aşamalarındaki Performansı</h3>
           <table>
             <thead>
               <tr>

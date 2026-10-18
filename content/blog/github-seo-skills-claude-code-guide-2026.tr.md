@@ -1,10 +1,10 @@
-﻿---
+---
 slug: "github-seo-skills-claude-code-guide-2026"
 lang: "tr"
-title: "GitHub SEO Skills ve Claude Code ile 2026 SEO & GEO Rehberi"
-excerpt: "Claude Code, Cursor ve AI kodlama asistanları için GitHub SEO Skills kullanımı. Açık kaynak SEO eklentileriyle 100/100 teknik SEO, Schema ve GEO otomasyonu."
+title: "GitHub SEO Skills ve Claude Code ile 2026 SEO Rehberi"
+excerpt: "Claude Code ve Cursor ile 100/100 teknik SEO, Schema.org ve GEO otomasyonu. GitHub SEO eklentileriyle organik trafiği ve ciroyu katlama rehberi."
 category: "SEO & GEO"
-date: "2026-08-21"
+date: "2026-10-18"
 readTime: "16"
 coverImage: "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=1200&h=630&fit=crop&q=80"
 ---

@@ -1,10 +1,10 @@
 ---
 slug: "google-ads-reklamveren-dogrulamasi-rehberi-2026"
 lang: "en"
-title: "Google Ads Advertiser Verification Guide & Fix 2026"
-excerpt: "Resolve rejected business operations and identity verification requests in Google Ads. Official Partner Salih Maral provides the step-by-step approval playbook."
+title: "Google Ads Advertiser Verification 2026 Guide"
+excerpt: "Avoid account suspension. Step-by-step company documentation, identity verification, and Transparency Badge guidelines for advertisers."
 category: "Google Ads Stratejisi"
-date: "2026-10-11"
+date: "2026-10-18"
 readTime: "12"
 coverImage: "https://images.unsplash.com/photo-1590402494587-44b71d7772f6?w=1200&h=630&fit=crop&q=80"
 ---

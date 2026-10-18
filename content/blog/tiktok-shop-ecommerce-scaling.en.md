@@ -1,10 +1,10 @@
 ---
 slug: "tiktok-shop-ecommerce-scaling"
 lang: "en"
-title: "How to Scale E-Commerce Sales with TikTok Shop & Social Commerce"
-excerpt: "Build a direct sales channel using TikTok Shop. Salih Maral reveals product integration, creator partnerships, and ad setups."
+title: "TikTok Shop E-Commerce Scaling & Spark Ads Guide 2026"
+excerpt: "Scale direct store revenue using TikTok Shop integrations, creator partnerships, and high-ROAS Spark Ads campaigns in 2026."
 category: "TikTok Ads"
-date: "2026-07-16"
+date: "2026-10-18"
 readTime: "10"
 coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&h=630&fit=crop&q=80"
 ---

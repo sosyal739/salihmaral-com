@@ -59,6 +59,42 @@ coverImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200
   </tbody>
 </table>
 
+<h3>Table 2: 1:1 ABM vs. 1:Few ABM vs. 1:Many ABM Frameworks (Budget & CPL Benchmarks)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>ABM Methodology</th>
+      <th>Target Account Volume</th>
+      <th>Recommended Monthly Ad Spend</th>
+      <th>Average Cost Per Qualified Lead (CPL)</th>
+      <th>Primary Use Case &amp; Execution Strategy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1:1 ABM (Strategic ABM)</strong></td>
+      <td>1 – 20 Tier-1 Enterprise Accounts</td>
+      <td>$2,500 – $10,000+</td>
+      <td>$150 – $400</td>
+      <td>High ACV deals ($100k+ Annual Contract Value). Hyper-personalized creatives, customized landing pages, and direct buying committee alignment.</td>
+    </tr>
+    <tr>
+      <td><strong>1:Few ABM (ABM Lite)</strong></td>
+      <td>20 – 100 Clustered Accounts</td>
+      <td>$1,500 – $4,000</td>
+      <td>$80 – $180</td>
+      <td>Targeting specific vertical clusters (e.g., healthcare SaaS or supply chain enterprises) with tailored industry pain-point case studies.</td>
+    </tr>
+    <tr>
+      <td><strong>1:Many ABM (Programmatic ABM)</strong></td>
+      <td>100 – 1,000+ Qualified Accounts</td>
+      <td>$1,000 – $3,000</td>
+      <td>$40 – $100</td>
+      <td>Matched Audiences combined with firmographic filters (revenue, tech stack, job seniorities) for scalable lead acquisition and demo generation.</td>
+    </tr>
+  </tbody>
+</table>
+
 <p>By leveraging Target Account List (TAL) matching, B2B advertisers can ensure that not a single dollar of their budget is spent showing ads to companies outside their ICP. This precision is why ABM campaigns on LinkedIn deliver significantly higher pipeline value compared to broad interest-based campaigns.</p>
 
 <blockquote>

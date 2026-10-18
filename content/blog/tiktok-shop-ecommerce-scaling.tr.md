@@ -1,10 +1,10 @@
 ---
 slug: "tiktok-shop-ecommerce-scaling"
 lang: "tr"
-title: "TikTok Shop ile E-Ticarette Viral Satışlar Nasıl Yapılır?"
-excerpt: "TikTok Shop ile doğrudan satış kanalı oluşturun. Salih Maral, ürün entegrasyonu, içerik üretici iş birlikleri ve reklam kurgularını açıklıyor."
+title: "TikTok Shop ile E-Ticarette Satış Katlama Rehberi 2026"
+excerpt: "TikTok Shop doğrudan satış kanalı kurulumu, Spark Ads ve içerik üretici iş birlikleriyle düşük CPA ve yüksek ROAS elde etme taktikleri."
 category: "TikTok Ads"
-date: "2026-07-16"
+date: "2026-10-18"
 readTime: "10"
 coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&h=630&fit=crop&q=80"
 ---

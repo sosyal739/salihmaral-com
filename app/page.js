@@ -3012,6 +3012,8 @@ export default function Home({ initialLang = 'tr' }) {
             <div>
               <h4 className="font-semibold mb-4">{lang === 'de' ? 'Aktuelle Fachartikel' : lang === 'en' ? 'Strategy Guides' : 'Uzman Rehberleri'}</h4>
               <ul className="space-y-1.5 text-xs text-gray-400">
+                <li><a href="/blog/google-ads-ajans-ucretleri-fiyatlari-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'en' ? 'Google Ads Agency Pricing' : 'Google Ads Ajans Ücretleri & Fiyatları'}</a></li>
+                <li><a href="/blog/google-ads-pmax-negatif-anahtar-kelime-rehberi-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'en' ? 'PMax Negative Keywords Guide' : 'PMax Negatif Anahtar Kelime Rehberi'}</a></li>
                 <li><a href="/blog/google-ads-sabit-fiyat-vs-komisyon-ajans-modeli-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google Ads Fixpreis vs. %' : lang === 'en' ? 'Flat Fee vs. Commission' : 'Google Ads Sabit Fiyat vs Komisyon'}</a></li>
                 <li><a href="/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Meta Ads ROAS Skalierung' : lang === 'en' ? 'Meta Ads ROAS Scaling' : 'Meta Ads ROAS Skalalama'}</a></li>
                 <li><a href="/blog/server-side-gtm-meta-capi-setup-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Server-Side GTM & CAPI' : lang === 'en' ? 'Server-Side GTM Setup' : 'Server-Side GTM & CAPI'}</a></li>
