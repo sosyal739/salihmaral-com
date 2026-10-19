@@ -3012,12 +3012,13 @@ export default function Home({ initialLang = 'tr' }) {
             <div>
               <h4 className="font-semibold mb-4">{lang === 'de' ? 'Aktuelle Fachartikel' : lang === 'en' ? 'Strategy Guides' : 'Uzman Rehberleri'}</h4>
               <ul className="space-y-1.5 text-xs text-gray-400">
+                <li><a href="/blog/geo-ai-seo-generative-engine-optimization-guide-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'en' ? 'GEO AI SEO & Generative Search' : 'GEO AI SEO & Yapay Zeka Arama'}</a></li>
+                <li><a href="/blog/linkedin-ads-b2b-abm-strategy" className="hover:text-[#4285F4] transition-colors">{lang === 'en' ? 'LinkedIn 1:1 ABM & B2B Ads' : 'LinkedIn ABM & B2B Reklam Rehberi'}</a></li>
+                <li><a href="/blog/conversion-rate-optimization-ai-personalization" className="hover:text-[#4285F4] transition-colors">{lang === 'en' ? 'CRO Agency & Conversion Rate' : 'CRO Ajansı & Dönüşüm Optimizasyonu'}</a></li>
+                <li><a href="/blog/b2b-ihracat-yurt-disi-musteri-kazanma-google-ads-seo-rehberi-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'en' ? 'B2B Export & International Google Ads' : 'B2B İhracat & Yurt Dışı Google Ads'}</a></li>
+                <li><a href="/blog/google-maps-local-seo-ranking-factors-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'en' ? 'Google Maps Local SEO Guide' : 'Yerel SEO & Google Haritalar Rehberi'}</a></li>
                 <li><a href="/blog/google-ads-ajans-ucretleri-fiyatlari-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'en' ? 'Google Ads Agency Pricing' : 'Google Ads Ajans Ücretleri & Fiyatları'}</a></li>
                 <li><a href="/blog/google-ads-pmax-negatif-anahtar-kelime-rehberi-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'en' ? 'PMax Negative Keywords Guide' : 'PMax Negatif Anahtar Kelime Rehberi'}</a></li>
-                <li><a href="/blog/google-ads-sabit-fiyat-vs-komisyon-ajans-modeli-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google Ads Fixpreis vs. %' : lang === 'en' ? 'Flat Fee vs. Commission' : 'Google Ads Sabit Fiyat vs Komisyon'}</a></li>
-                <li><a href="/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Meta Ads ROAS Skalierung' : lang === 'en' ? 'Meta Ads ROAS Scaling' : 'Meta Ads ROAS Skalalama'}</a></li>
-                <li><a href="/blog/server-side-gtm-meta-capi-setup-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Server-Side GTM & CAPI' : lang === 'en' ? 'Server-Side GTM Setup' : 'Server-Side GTM & CAPI'}</a></li>
-                <li><a href="/blog/google-ai-overviews-geo-ranking-strategy" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google AI Overviews & GEO' : lang === 'en' ? 'AI Overviews & GEO Strategy' : 'AI Overviews ve GEO Stratejisi'}</a></li>
                 <li><a href="/blog/google-consent-mode-v2-cookieless-ai-tracking-2026" className="hover:text-[#4285F4] transition-colors">Consent Mode v2 Setup</a></li>
                 <li><a href="/blog" className="text-[#4285F4] font-bold hover:underline block pt-1">{lang === 'de' ? 'Zum Blog-Archiv →' : lang === 'en' ? 'All Strategy Guides →' : 'Tüm Blog Rehberleri →'}</a></li>
               </ul>

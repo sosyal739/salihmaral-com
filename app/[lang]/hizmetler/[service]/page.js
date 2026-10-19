@@ -8,12 +8,12 @@ const serviceMeta = {
       description: 'Zertifizierte Google Ads Betreuung zum fairen Fixpreis: 17+ Jahre Senior-Expertise, Performance Max & Search für maximalen ROAS ohne Streuverlust.',
     },
     en: {
-      title: 'Google Ads Agency | Flat Fee PPC Management | Salih Maral',
-      description: 'Scale your business with certified flat-fee Google Ads management. Search, Performance Max & Shopping campaigns optimized for maximum ROAS by a 17+ yr partner.',
+      title: 'Google Ads Agency & B2B PPC Consulting | Salih Maral',
+      description: 'Scale revenue with Official Google Partner Salih Maral (17+ yrs). Flat-fee Google Ads consulting for B2B & e-commerce (min. 25,000 TL budget). 24h response.',
     },
     tr: {
-      title: 'Google Ads Ajansı & Danışmanlığı | Salih Maral',
-      description: 'Resmi Google Partneri ile şeffaf sabit fiyatlı Google Ads yönetimi: Arama, PMax ve Alışveriş reklamları ile yüksek karlılık ve satış.',
+      title: 'Google Ads Danışmanlığı & Reklam Ajansı | Salih Maral',
+      description: 'Resmi Google Partneri Salih Maral ile kurumsal Google Ads danışmanlığı: B2B ve 25.000 TL+ bütçeli markalar için sabit ücretli PMax ve Arama yönetimi.',
     },
   },
   'meta-ads': {
@@ -92,12 +92,12 @@ const serviceMeta = {
       description: 'Top-Rankings bei Google und KI-Suchmaschinen (Perplexity, ChatGPT, Claude). Technisches SEO, Content-Hubs und Local SEO.',
     },
     en: {
-      title: 'SEO & Generative Engine Optimization (GEO) | Salih Maral',
-      description: 'Dominate Google and AI search engines (Perplexity, ChatGPT, Claude). Technical SEO, programmatic content hubs, and Local SEO.',
+      title: 'SEO, Local SEO & GEO AI Search Services | Salih Maral',
+      description: 'Dominate Google, Local Maps 3-Pack, and AI search engines (ChatGPT, Perplexity, AI Overviews). Technical SEO & GEO consulting with 24h response SLA.',
     },
     tr: {
-      title: 'SEO ve Generative Engine Optimization (GEO) | Salih Maral',
-      description: 'Google ilk sıra ve yapay zeka arama motorlarında (Perplexity, ChatGPT, Gemini) zirveye çıkın. Teknik SEO ve İçerik Motoru.',
+      title: 'Kurumsal SEO, Yerel SEO ve Yapay Zeka (GEO) Hizmeti',
+      description: 'Google 1. sayfa, Google Haritalar (Yerel SEO) ve yapay zeka arama motorlarında (ChatGPT, Perplexity, GEO) zirveye çıkın. 24 saatte garantili dönüş.',
     },
   },
   'islamic-charity-ngo-marketing': {
@@ -236,12 +236,34 @@ const serviceFaqs = {
     ],
     tr: [
       {
-        q: 'Google Ads Ajans Ücretleri: Nasıl çalışıyorsunuz (Sabit fiyat mı, bütçe komisyonu mu)?',
-        a: "Yönetilen bütçeden %10 - %15 komisyon kesmek yerine şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bütçenizi şişirmeden doğrudan maliyetlerinizi düşürmeye ve karlılığı artırmaya odaklanıyoruz."
+        q: 'Google Ads danışmanlığı ücretleri nasıl belirlenir (Sabit fiyat mı, bütçe komisyonu mu)?',
+        a: 'Yönetilen reklam bütçesinden %10 - %15 komisyon kesmek yerine şeffaf ve sabit aylık danışmanlık ücreti ile çalışıyoruz. Hizmetimiz B2B işletmeler ve aylık minimum 25.000 TL reklam bütçesine sahip markalar için kurgulanmıştır; tüm form ve e-posta taleplerine 24 saat içinde garantili dönüş sağlıyoruz.'
       },
       {
-        q: 'Google Ads reklamları ne kadar sürede sonuç verir?',
-        a: 'Arama ağı reklamları yayına girdiği ilk günden itibaren telefon ve teklif talebi getirmeye başlar. Negatif kelime optimizasyonu ve doğru takip ile 14-30 gün içinde en yüksek karlılık oranına ulaşılır.'
+        q: 'Kurumsal Google Ads yönetimi ne kadar sürede sonuç verir?',
+        a: 'Arama ağı ve Performance Max (PMax) kampanyaları yayına alındığı ilk günden itibaren nitelikli form ve sipariş talebi üretmeye başlar. Negatif anahtar kelime koruması ve Server-Side Tracking (sGTM) ile 14-30 gün içinde en yüksek ROAS ve karlılık seviyesine ulaşılır.'
+      }
+    ]
+  },
+  'seo': {
+    en: [
+      {
+        q: 'What is included in your SEO, Local SEO, and Generative Engine Optimization (GEO) service?',
+        a: 'We deliver full-stack Technical SEO (100/100 Core Web Vitals, SSR metadata, Schema.org JSON-LD), Google Maps Local 3-Pack optimization, and Princeton GEO optimization (llms.txt, entity citations) so your brand ranks #1 on both Google and AI search engines like ChatGPT and Perplexity.'
+      },
+      {
+        q: 'Who is eligible for your SEO & GEO consulting services and how fast do you respond?',
+        a: 'We partner exclusively with B2B enterprises, exporting manufacturers, and growing brands with a minimum monthly marketing budget of 25,000 TL. Every inquiry submitted via our online form or info@salihmaral.com receives a comprehensive response within 24 hours.'
+      }
+    ],
+    tr: [
+      {
+        q: 'Kurumsal SEO, Yerel SEO ve Yapay Zeka SEO (GEO) hizmetiniz neleri kapsar?',
+        a: '100/100 Google Lighthouse teknik SEO mimarisi, Schema.org JSON-LD yapılandırması, Google Haritalar (Yerel SEO İlk 3) optimizasyonu ve ChatGPT, Perplexity ile Google AI Overviews sonuçlarında birincil kaynak olarak önerilmenizi sağlayan Princeton GEO (llms.txt ve varlık otoritesi) çalışmalarını uçtan uca kapsar.'
+      },
+      {
+        q: 'SEO ve GEO danışmanlığı için çalışma kriterleriniz ve geri dönüş süreniz nedir?',
+        a: 'Danışmanlık hizmetimiz B2B firmalar, ihracatçılar ve aylık minimum 25.000 TL reklam/pazarlama bütçesine sahip işletmeler için sunulmaktadır. Online form veya info@salihmaral.com üzerinden ilettiğiniz tüm taleplere 24 saat içinde garantili analiz ve geri dönüş sağlıyoruz.'
       }
     ]
   }
