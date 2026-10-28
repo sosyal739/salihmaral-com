@@ -12,6 +12,7 @@ import { Mail, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sp
 import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
 import LeadFunnelWizard from '@/components/LeadFunnelWizard'
 import EcosystemMarquee from '@/components/EcosystemMarquee'
+import { MotionSection } from '@/components/Reveal'
 
 const translations = {
   tr: {
@@ -1839,7 +1840,7 @@ export default function Home({ initialLang = 'tr' }) {
       )}
 
       {/* Services Section (Ultra-Prestigious Interactive Showcase with Modern Visual Hierarchy) */}
-      <section id="services" className="py-24 bg-white relative overflow-hidden">
+      <MotionSection id="services" className="py-24 bg-white relative overflow-hidden">
         {/* Living Ambient Aura & Dot Matrix Background */}
         <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-purple-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
@@ -2132,10 +2133,10 @@ export default function Home({ initialLang = 'tr' }) {
               })}
           </div>
         </div>
-      </section>
+      </MotionSection>
 
       {/* Success & Verified Growth Section */}
-      <section id="success" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+      <MotionSection id="success" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
         <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[850px] h-[400px] bg-gradient-to-r from-emerald-400/10 via-blue-400/10 to-indigo-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
 
@@ -2262,7 +2263,7 @@ export default function Home({ initialLang = 'tr' }) {
             </div>
           )}
         </div>
-      </section>
+      </MotionSection>
 
       {/* Interactive ROAS & ROI Calculator Lead Magnet */}
       <section id="calculator" className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
@@ -2374,7 +2375,7 @@ export default function Home({ initialLang = 'tr' }) {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+      <MotionSection id="about" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
         <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-emerald-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
 
@@ -2419,7 +2420,7 @@ export default function Home({ initialLang = 'tr' }) {
             })}
           </div>
         </div>
-      </section>
+      </MotionSection>
 
       {/* Interactive Strategy & Lead Funnel Wizard */}
       <section className="py-16 bg-white relative overflow-hidden border-t border-slate-100">
@@ -2894,7 +2895,7 @@ export default function Home({ initialLang = 'tr' }) {
       </section>
 
       {/* High-Authority Interactive FAQ Section (Targeting GSC & Telemetry Search Queries) */}
-      <section id="faq" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+      <MotionSection id="faq" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
         <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-purple-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
 
@@ -2963,7 +2964,7 @@ export default function Home({ initialLang = 'tr' }) {
             </div>
           </div>
         </div>
-      </section>
+      </MotionSection>
 
       {/* Footer */}
       <footer className="py-12 bg-gray-900 text-white">
