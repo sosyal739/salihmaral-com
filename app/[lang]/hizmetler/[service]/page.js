@@ -265,47 +265,60 @@ const serviceMeta = {
 const serviceFaqs = {
 
   'youtube-ads': {
-
     tr: [
-
       {
-
-        q: 'YouTube Ads ile reklam izlenmesi ve abone kazanımı nasıl çalışır?',
-
-        a: 'Bot ve sahte izlenmelerin aksine, resmi Google Ads paneli üzerinden hedef kitlenize uygun (In-Feed, Atlanabilir In-Stream ve Shorts) video reklam kampanyaları kurguluyoruz. Böylece kanalınız ceza almadan gerçek, organik etkileşim gösteren izleyicilere ve potansiyel müşterilere ulaşır.'
-
+        q: 'YouTube reklam izlenme satın alma (Ads) nedir ve bot panellerden farkı nedir?',
+        a: 'YouTube reklam izlenme satın alma; SMM veya bot panellerinin sahte izlenmelerinin aksine, resmi Google Ads platformu (In-Feed, Atlanabilir In-Stream ve Shorts) üzerinden videonuzun gerçek kullanıcılara reklam olarak gösterilmesidir. Bot paneller kanalınızı spam filtresine sokar, para kazanmayı durdurur ve silinir. Google Ads üzerinden satın alınan reklam izlenmeleri ise %100 güvenlidir, YouTube Studio panelinde doğrudan "YouTube Reklamları" olarak listelenir, organik izlenme süresini artırır ve kanalınıza gerçek abone kazandırır.'
       },
-
       {
-
-        q: 'YouTube reklam danışmanlığı fiyatları ve bütçe yönetimi nasıldır?',
-
-        a: 'Şeffaf ve sabit aylık hizmet bedeli ile çalışıyoruz; reklam bütçenizden komisyon kesmiyoruz. B2B markalar, sanatçılar ve e-ticaret işletmeleri için izleme başına maliyeti (CPV) minimum seviyeye çekerek maksimum izlenme ve dönüşüm sağlıyoruz. 24 saat içinde garantili geri dönüş.'
-
+        q: 'YouTube reklam izlenme fiyatları ve CPV (İzleme Başı Maliyet) nasıl belirlenir?',
+        a: 'YouTube reklamlarında bütçeniz izleme başına maliyet (CPV - Cost Per View) modeliyle çalışır; yani videonuz atlandığında veya izlenmediğinde ücret ödemezsiniz. Türkiye hedefli video reklamlarında ortalama CPV 0,15 TL – 0,45 TL, Almanya ve Avrupa kampanyalarında 0,01 € – 0,03 € aralığındadır. Salih Maral olarak reklam harcamanızdan komisyon kesmez, şeffaf ve sabit aylık hizmet bedeli (Fixpreis) ile çalışırız.'
+      },
+      {
+        q: 'Satın alınan reklam izlenmeleri YouTube Analytics (Studio) ve sayaçta anında görünür mü?',
+        a: 'Evet. Tüm video izlenmeleri doğrudan Google Ads altyapısı ile sağlandığından YouTube Studio analizlerinizde trafik kaynağı "YouTube Reklamları (YouTube Advertising)" olarak %100 doğrulanmış şekilde anlık yansır. 24 Ağustos YouTube güncellemesiyle Shorts ve uzun videolarda oynatma başladığı ilk saniyeden itibaren sayaçlara resmi olarak işlenir.'
+      },
+      {
+        q: 'YouTube reklamları ile organik abone ve video beğenisi de kazanılır mı?',
+        a: 'Evet. Kampanyalarımız müzik türü, yaş, demografi ve benzer sanatçı/kanal kitlelerine göre hedefleme yaptığı için videonuzu izleyenler kanalınıza organik olarak abone olur, yorum yazar ve diğer içeriklerinizi keşfeder. Bu yüksek etkileşim sinyali, YouTube algoritmasının videonuzu "Önerilen Videolar" arasına taşımasını hızlandırır.'
       }
-
     ],
-
-    en: [
-
+    de: [
       {
-
-        q: 'How does real YouTube Ads video view and subscriber growth work?',
-
-        a: 'Unlike risky third-party bots, we run strictly verified campaigns through official Google Ads (In-Feed, Skippable In-Stream, and Shorts). This drives genuine viewer engagement, loyal subscribers, and measurable conversions while keeping your channel 100% compliant.'
-
+        q: 'Was ist der Unterschied zwischen echten YouTube Ads und gekauften Bot-Aufrufen?',
+        a: 'Gekaufte Bot-Aufrufe von SMM-Panels schaden Ihrem Kanal nachhaltig, gefährden die Monetarisierung (YPP) und werden von YouTube regelmäßig gelöscht. Bei Salih Maral nutzen wir ausschließlich die offizielle Google Ads Werbeplattform (In-Feed, überspringbare In-Stream & Shorts Ads). Alle Videoaufrufe stammen von 100% echten Menschen, erscheinen verifiziert in YouTube Studio unter "YouTube Werbung" und generieren organische Abonnenten.'
       },
-
       {
-
-        q: 'What are the pricing and management fees for YouTube advertising?',
-
-        a: 'We operate on a transparent monthly flat fee rather than percentage markups on ad spend. We optimize Cost-Per-View (CPV) and conversion actions with guaranteed 24-hour turnaround.'
-
+        q: 'Wie hoch sind die Kosten pro Videoaufruf (CPV) bei YouTube Werbung?',
+        a: 'Bei YouTube Video Ads zahlen Sie nach dem Cost-per-View (CPV) Modell — Sie zahlen nur, wenn Nutzer Ihr Video mindestens 30 Sekunden ansehen oder interagieren. In Deutschland und Europa liegt der optimale CPV zwischen 0,01 € und 0,03 €, in der Türkei zwischen 0,15 TL und 0,45 TL. Wir arbeiten mit einer transparenten monatlichen Betreuungspauschale (Fixpreis) ohne prozentuale Budgetprovision.'
+      },
+      {
+        q: 'Werden die Aufrufe in YouTube Studio und den öffentlichen Zählern gewertet?',
+        a: 'Ja, zu 100%. Da die Ausspielung direkt über Google Ads erfolgt, weist YouTube Analytics alle Aufrufe offiziell als Werbetraffic aus. Durch die YouTube-Aktualisierung werden Views bei Shorts und VODs ab der ersten Sekunde verlässlich und manipulationssicher im öffentlichen Zähler erfasst.'
+      },
+      {
+        q: 'Gewinnt mein Kanal durch Video Ads auch echte Abonnenten und Likes?',
+        a: 'Ja. Da wir Anzeigen gezielt vor musik- und themenrelevanten Zielgruppen ausspielen, konvertieren interessierte Zuschauer häufig in dauerhafte Abonnenten, hinterlassen Kommentare und liken Ihre Inhalte. Dies sendet starke Relevanzsignale an den YouTube-Empfehlungsalgorithmus.'
       }
-
+    ],
+    en: [
+      {
+        q: 'What is the difference between real YouTube Ads views and cheap bot panels?',
+        a: 'Third-party SMM panels use fake bots that flag your channel for spam, strip monetization, and get deleted during YouTube audits. In contrast, our service runs strictly through official Google Ads (In-Feed, Skippable In-Stream, and Shorts). Every view is from a 100% verified human, shows up transparently in YouTube Studio under "YouTube Advertising", and generates genuine subscribers and watch time.'
+      },
+      {
+        q: 'What are the average Cost-Per-View (CPV) and pricing models for YouTube video ads?',
+        a: 'YouTube Ads operates on a Cost-per-View (CPV) model: you only pay when a user watches at least 30 seconds or engages with your ad. In Europe and Germany, optimal CPVs range from €0.01 to €0.03, and in Turkey from 0.15 TL to 0.45 TL. We charge a transparent flat monthly management fee (Fixpreis) rather than taking a percentage of your ad budget.'
+      },
+      {
+        q: 'Do YouTube Ads views count in YouTube Studio analytics and public view counts?',
+        a: 'Yes, 100%. Because campaigns run through Google Ads, YouTube Studio immediately reports every view under "YouTube Advertising" traffic. Following YouTube\'s updated view-counting architecture, valid plays across Shorts and long-form videos are officially added to public counts from second zero.'
+      },
+      {
+        q: 'Can YouTube video advertising bring organic subscribers and engagement?',
+        a: 'Yes. By targeting users based on specific musical genres, demographics, and affinity channels, viewers naturally interact with your content, leave comments, and subscribe. This engagement flywheel signals high retention to YouTube\'s recommendation algorithm.'
+      }
     ]
-
   },
 
   'web-sitesi-tasarimi': {

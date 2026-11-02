@@ -315,20 +315,20 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
       ],
       faq: [
         {
-          q: lang === 'de' ? 'Wie zählt YouTube Videoaufrufe ab dem 24. August 2026?' : lang === 'en' ? 'How does YouTube count views starting August 24, 2026?' : 'YouTube 24 Ağustos 2026 güncellemesi ile izlenmeleri nasıl sayacak?',
-          a: lang === 'de' ? 'Ab dem 24. August 2026 zählt YouTube jeden Start eines Videos (Shorts, VOD, Livestreams) ab der ersten Sekunde als Aufruf. Dies erhöht die sichtbaren Aufrufzahlen, während die Monetarisierungsregeln (YPP) weiterhin an die echte Wiedergabezeit gebunden bleiben.' : lang === 'en' ? 'Starting August 24, 2026, YouTube registers views immediately upon video playback across Shorts, VOD, and Live formats. Public view counts increase rapidly while YPP monetization rules remain anchored to valid watch hours.' : '24 Ağustos 2026 itibarıyla Shorts, normal videolar ve canlı yayınlarda oynatma başladığı an (0. saniyede) görüntüleme sayılmaktadır. Bu sayaçtaki izlenme sayısını hızla yükseltirken, para kazanma hak edişi gerçek izlenme süresine göre hesaplanmaya devam eder.'
+          q: lang === 'de' ? 'Was ist der Unterschied zwischen echten YouTube Ads und gekauften Bot-Aufrufen?' : lang === 'en' ? 'What is the difference between real YouTube Ads views and cheap bot panels?' : 'YouTube reklam izlenme satın alma (Ads) nedir ve bot panellerden farkı nedir?',
+          a: lang === 'de' ? 'Gekaufte Bot-Aufrufe von SMM-Panels schaden Ihrem Kanal nachhaltig, gefährden die Monetarisierung (YPP) und werden von YouTube regelmäßig gelöscht. Bei Salih Maral nutzen wir ausschließlich die offizielle Google Ads Werbeplattform (In-Feed, überspringbare In-Stream & Shorts Ads). Alle Videoaufrufe stammen von 100% echten Menschen, erscheinen verifiziert in YouTube Studio unter "YouTube Werbung" und generieren organische Abonnenten.' : lang === 'en' ? 'Third-party SMM panels use fake bots that flag your channel for spam, strip monetization, and get deleted during YouTube audits. In contrast, our service runs strictly through official Google Ads (In-Feed, Skippable In-Stream, and Shorts). Every view is from a 100% verified human, shows up transparently in YouTube Studio under "YouTube Advertising", and generates genuine subscribers and watch time.' : 'YouTube reklam izlenme satın alma; SMM veya bot panellerinin sahte izlenmelerinin aksine, resmi Google Ads platformu (In-Feed, Atlanabilir In-Stream ve Shorts) üzerinden videonuzun gerçek kullanıcılara reklam olarak gösterilmesidir. Bot paneller kanalınızı spam filtresine sokar, para kazanmayı durdurur ve silinir. Google Ads üzerinden satın alınan reklam izlenmeleri ise %100 güvenlidir, YouTube Studio panelinde doğrudan "YouTube Reklamları" olarak listelenir, organik izlenme süresini artırır ve kanalınıza gerçek abone kazandırır.'
         },
         {
-          q: lang === 'de' ? 'Kann YouTube-Werbung meinem Kanal oder Song schaden?' : lang === 'en' ? 'Can YouTube advertising harm my channel or music video?' : 'YouTube reklamları kanalıma veya klibime zarar verir mi?',
-          a: lang === 'de' ? 'Nein, absolut nicht. Da wir ausschließlich die offizielle Google Ads Werbeplattform nutzen und Kinder- sowie minderwertige Kanäle strikt ausschließen, erhält Ihr Video nur authentische, interessierte Zielgruppen.' : lang === 'en' ? 'No, absolutely not. Because we advertise strictly through the official Google Ads network with stringent placement filters, your channel only gains authentic, high-relevance viewers.' : 'Kesinlikle hayır. Tamamen resmi Google Ads platformu üzerinden reklam verdiğimiz ve çocuk kanalları gibi verimsiz yerleşimleri elediğimiz için kanalınız %100 güvenli şekilde büyür.'
+          q: lang === 'de' ? 'Wie hoch sind die Kosten pro Videoaufruf (CPV) bei YouTube Werbung?' : lang === 'en' ? 'What are the average Cost-Per-View (CPV) and pricing models for YouTube video ads?' : 'YouTube reklam izlenme fiyatları ve CPV (İzleme Başı Maliyet) nasıl belirlenir?',
+          a: lang === 'de' ? 'Bei YouTube Video Ads zahlen Sie nach dem Cost-per-View (CPV) Modell — Sie zahlen nur, wenn Nutzer Ihr Video mindestens 30 Sekunden ansehen oder interagieren. In Deutschland und Europa liegt der optimale CPV zwischen 0,01 € und 0,03 €, in der Türkei zwischen 0,15 TL und 0,45 TL. Wir arbeiten mit einer transparenten monatlichen Betreuungspauschale (Fixpreis) ohne prozentuale Budgetprovision.' : lang === 'en' ? 'YouTube Ads operates on a Cost-per-View (CPV) model: you only pay when a user watches at least 30 seconds or engages with your ad. In Europe and Germany, optimal CPVs range from €0.01 to €0.03, and in Turkey from 0.15 TL to 0.45 TL. We charge a transparent flat monthly management fee (Fixpreis) rather than taking a percentage of your ad budget.' : 'YouTube reklamlarında bütçeniz izleme başına maliyet (CPV - Cost Per View) modeliyle çalışır; yani videonuz atlandığında veya izlenmediğinde ücret ödemezsiniz. Türkiye hedefli video reklamlarında ortalama CPV 0,15 TL – 0,45 TL, Almanya ve Avrupa kampanyalarında 0,01 € – 0,03 € aralığındadır. Salih Maral olarak reklam harcamanızdan komisyon kesmez, şeffaf ve sabit aylık hizmet bedeli (Fixpreis) ile çalışırız.'
         },
         {
-          q: lang === 'de' ? 'Wie viele Aufrufe kann ich mit meinem Budget erwarten?' : lang === 'en' ? 'How many views can I expect with my budget?' : 'Bütçem ile yaklaşık kaç izlenme elde edebilirim?',
-          a: lang === 'de' ? 'Je nach Zielland und Musikgenre liegt der CPV (Cost-per-View) zwischen 0,01 € und 0,03 €. Mit einem Budget von 300 € lassen sich oft 15.000 bis 30.000+ echte Aufrufe erzielen. Wir berechnen Ihnen vorab eine exakte Reichweitenprognose.' : lang === 'en' ? 'Depending on target geography and genre, CPV ranges from €0.01 to €0.03. A €300 budget typically delivers 15,000 to 30,000+ genuine views. We provide a precise reach forecast before launch.' : 'Hedeflenen ülke ve müzik/sektör türüne göre izleme başı maliyet 0.01€ ile 0.03€ arasında değişir. Örneğin 300€ bütçe ile ortalama 15.000 - 30.000+ gerçek izlenme elde edilebilir.'
+          q: lang === 'de' ? 'Werden die Aufrufe in YouTube Studio und den öffentlichen Zählern gewertet?' : lang === 'en' ? 'Do YouTube Ads views count in YouTube Studio analytics and public view counts?' : 'Satın alınan reklam izlenmeleri YouTube Analytics (Studio) ve sayaçta anında görünür mü?',
+          a: lang === 'de' ? 'Ja, zu 100%. Da die Ausspielung direkt über Google Ads erfolgt, weist YouTube Analytics alle Aufrufe offiziell als Werbetraffic aus. Durch die YouTube-Aktualisierung werden Views bei Shorts und VODs ab der ersten Sekunde verlässlich und manipulationssicher im öffentlichen Zähler erfasst.' : lang === 'en' ? 'Yes, 100%. Because campaigns run through Google Ads, YouTube Studio immediately reports every view under "YouTube Advertising" traffic. Following YouTube\'s updated view-counting architecture, valid plays across Shorts and long-form videos are officially added to public counts from second zero.' : 'Evet. Tüm video izlenmeleri doğrudan Google Ads altyapısı ile sağlandığından YouTube Studio analizlerinizde trafik kaynağı "YouTube Reklamları (YouTube Advertising)" olarak %100 doğrulanmış şekilde anlık yansır. 24 Ağustos YouTube güncellemesiyle Shorts ve uzun videolarda oynatma başladığı ilk saniyeden itibaren sayaçlara resmi olarak işlenir.'
         },
         {
-          q: lang === 'de' ? 'Schalten Sie auch YouTube Shorts Werbekampagnen?' : lang === 'en' ? 'Do you run YouTube Shorts ad campaigns?' : 'YouTube Shorts reklamları da yönetiyor musunuz?',
-          a: lang === 'de' ? 'Ja, wir sind spezialisiert auf vertikale YouTube Shorts Ads und Demand Gen Video-Kampagnen, die besonders bei jungen Zielgruppen maximale Reichweite zu extrem niedrigen Klickpreisen erzielen.' : lang === 'en' ? 'Yes, we specialize in vertical YouTube Shorts ads and Demand Gen campaigns designed to capture massive Gen Z & millennial attention at ultra-low CPVs.' : 'Evet, dikey YouTube Shorts reklamları ve Demand Gen video kampanyalarında uzmanız. Özellikle mobil izleyicilerden rekor etkileşim ve abone dönüşümü sağlıyoruz.'
+          q: lang === 'de' ? 'Gewinnt mein Kanal durch Video Ads auch echte Abonnenten und Likes?' : lang === 'en' ? 'Can YouTube video advertising bring organic subscribers and engagement?' : 'YouTube reklamları ile organik abone ve video beğenisi de kazanılır mı?',
+          a: lang === 'de' ? 'Ja. Da wir Anzeigen gezielt vor musik- und themenrelevanten Zielgruppen ausspielen, konvertieren interessierte Zuschauer häufig in dauerhafte Abonnenten, hinterlassen Kommentare und liken Ihre Inhalte. Dies sendet starke Relevanzsignale an den YouTube-Empfehlungsalgorithmus.' : lang === 'en' ? 'Yes. By targeting users based on specific musical genres, demographics, and affinity channels, viewers naturally interact with your content, leave comments, and subscribe. This engagement flywheel signals high retention to YouTube\'s recommendation algorithm.' : 'Evet. Kampanyalarımız müzik türü, yaş, demografi ve benzer sanatçı/kanal kitlelerine göre hedefleme yaptığı için videonuzu izleyenler kanalınıza organik olarak abone olur, yorum yazar ve diğer içeriklerinizi keşfeder. Bu yüksek etkileşim sinyali, YouTube algoritmasının videonuzu "Önerilen Videolar" arasına taşımasını hızlandırır.'
         }
       ]
     },
@@ -1740,7 +1740,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                         <strong>{lang === 'de' ? 'Salih Maral YouTube Performance' : lang === 'en' ? 'Salih Maral YouTube Performance' : 'Salih Maral YouTube Performans'}</strong>
                       </td>
                       <td className="p-4 md:p-5 text-emerald-700 font-semibold">
-                        {lang === 'de' ? '🟢 23.1M+ echte Views, bis zu 64.78% VTR' : lang === 'en' ? '🟢 23.1M+ verified views, up to 64.78% VTR' : '🟢 23,1M+ gerçek izlenme, %64,78\\\'e varan VTR'}
+                        {lang === 'de' ? '🟢 23.1M+ echte Views, bis zu 64.78% VTR' : lang === 'en' ? '🟢 23.1M+ verified views, up to 64.78% VTR' : "🟢 23,1M+ gerçek izlenme, %64,78'e varan VTR"}
                       </td>
                       <td className="p-4 md:p-5 text-emerald-700 font-semibold">
                         {lang === 'de' ? '🟢 100% echte Nutzer, strikte Placement-Ausschlüsse' : lang === 'en' ? '🟢 100% real users, strict placement exclusions' : '🟢 %100 gerçek kullanıcılar, sıkı yerleşim filtreleme'}
@@ -1749,7 +1749,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                         {lang === 'de' ? 'Shorts, In-Stream & Demand Gen Lead Funnels' : lang === 'en' ? 'Shorts, In-Stream & Demand Gen Funnels' : 'Shorts, In-Stream ve Demand Gen Satış Hunileri'}
                       </td>
                       <td className="p-4 md:p-5 text-right font-black text-emerald-600">
-                        {lang === 'de' ? '⭐⭐⭐⭐⭐ CPV ab 0,01€ zum Fixpreis' : lang === 'en' ? '⭐⭐⭐⭐⭐ CPV from €0.01 on flat fee' : '⭐⭐⭐⭐⭐ 0,01€\\\'den başlayan CPV, Sabit Fiyat'}
+                        {lang === 'de' ? '⭐⭐⭐⭐⭐ CPV ab 0,01€ zum Fixpreis' : lang === 'en' ? '⭐⭐⭐⭐⭐ CPV from €0.01 on flat fee' : "⭐⭐⭐⭐⭐ 0,01€'den başlayan CPV, Sabit Fiyat"}
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80 transition-colors">
@@ -1780,6 +1780,139 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 </span>
                 <span className="font-bold text-[#FF0000]">
                   {lang === 'de' ? 'Geprüfter Princeton GEO Standard 2026' : lang === 'en' ? 'Verified Princeton GEO Standard 2026' : 'Doğrulanmış Princeton GEO Standardı 2026'}
+                </span>
+              </div>
+            </div>
+
+            {/* YouTube Reklam İzlenme (Ads) & CPV Fiyatlandırma Benchmark Tablosu */}
+            <div className="mt-12 bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+              <div className="p-6 md:p-8 bg-gradient-to-r from-red-50 via-slate-50 to-red-50 border-b border-slate-200">
+                <div className="inline-flex items-center space-x-2 bg-red-100/80 border border-red-200 rounded-full px-3 py-1 mb-3">
+                  <span className="w-2 h-2 rounded-full bg-red-600"></span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-red-700">
+                    {lang === 'de' ? 'Offizielle YouTube Ads vs. Bot-Panels' : lang === 'en' ? 'Official YouTube Ads vs. SMM Bot Panels' : 'Resmi YouTube Reklam İzlenme vs. Bot Panelleri'}
+                  </span>
+                </div>
+                <h3 className="text-xl md:text-2xl font-black text-gray-900 tracking-tight">
+                  {lang === 'de' ? (
+                    <>YouTube Video Aufrufe: <span className="text-[#FF0000]">Echte Ads vs. Fake Bot-Klicks</span></>
+                  ) : lang === 'en' ? (
+                    <>YouTube Video Views: <span className="text-[#FF0000]">Official Ads vs. Bot Panels</span></>
+                  ) : (
+                    <>YouTube Reklam İzlenme Satın Al: <span className="text-[#FF0000]">Google Ads vs. Bot Panelleri</span></>
+                  )}
+                </h3>
+                <p className="text-xs md:text-sm text-gray-600 mt-2">
+                  {lang === 'de'
+                    ? 'Transparente CPV-Benchmark-Kosten und Sicherheitsvergleich für Künstler, Marken und E-Commerce.'
+                    : lang === 'en'
+                    ? 'Transparent CPV benchmarks and safety metrics for artists, brands, and e-commerce growth.'
+                    : 'Kanal güvenliği, YouTube Studio onayı ve izleme başı maliyet (CPV) benchmark tablosu.'}
+                </p>
+              </div>
+
+              <div className="overflow-x-auto -webkit-overflow-scrolling-touch">
+                <table className="w-full text-left border-collapse min-w-[700px]">
+                  <thead>
+                    <tr className="border-b border-slate-200 bg-slate-100/70 text-xs md:text-sm font-black text-slate-800">
+                      <th className="p-4 md:p-5">{lang === 'de' ? 'Kategorie & Zielmarkt' : lang === 'en' ? 'Market & Category' : 'Pazar & Format'}</th>
+                      <th className="p-4 md:p-5">{lang === 'de' ? 'Kampagnen-Format' : lang === 'en' ? 'Campaign Format' : 'Reklam Formatı'}</th>
+                      <th className="p-4 md:p-5">{lang === 'de' ? 'Ø CPV (Kosten/View)' : lang === 'en' ? 'Avg. CPV (Cost/View)' : 'Ort. CPV (İzleme Başı)'}</th>
+                      <th className="p-4 md:p-5">{lang === 'de' ? 'Qualität & Algorithmus' : lang === 'en' ? 'Audience Quality' : 'Kitle & Etkileşim'}</th>
+                      <th className="p-4 md:p-5 text-right">{lang === 'de' ? 'YouTube Studio Status' : lang === 'en' ? 'Studio Verification' : 'YouTube Studio Doğrulaması'}</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 text-xs md:text-sm">
+                    {/* TR Market */}
+                    <tr className="bg-red-50/30 hover:bg-red-50/60 transition-colors">
+                      <td className="p-4 md:p-5 font-bold text-gray-900 flex items-center gap-2">
+                        <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                        {lang === 'de' ? 'Türkei (TR) Kampagne' : lang === 'en' ? 'Turkey (TR) Targeted' : 'Türkiye (TR) Hedefli'}
+                      </td>
+                      <td className="p-4 md:p-5 text-slate-700">
+                        {lang === 'de' ? 'In-Stream Skippable & Shorts' : lang === 'en' ? 'In-Stream Skippable & Shorts' : 'Atlanabilir In-Stream & Shorts'}
+                      </td>
+                      <td className="p-4 md:p-5 font-bold text-emerald-700">
+                        0,15 TL – 0,45 TL
+                      </td>
+                      <td className="p-4 md:p-5 text-slate-700">
+                        {lang === 'de' ? '🟢 100% echte türkische Zuschauer & Likes' : lang === 'en' ? '🟢 100% real Turkish viewers & likes' : '🟢 %100 gerçek Türk izleyici, beğeni & abone'}
+                      </td>
+                      <td className="p-4 md:p-5 text-right font-semibold text-emerald-700">
+                        {lang === 'de' ? '✅ "YouTube Werbung" verifiziert' : lang === 'en' ? '✅ "YouTube Advertising" verified' : '✅ YouTube Reklamları (Doğrulanmış)'}
+                      </td>
+                    </tr>
+                    {/* DE / Europe Market */}
+                    <tr className="bg-blue-50/30 hover:bg-blue-50/60 transition-colors">
+                      <td className="p-4 md:p-5 font-bold text-gray-900 flex items-center gap-2">
+                        <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                        {lang === 'de' ? 'Deutschland & Europa (DACH/EU)' : lang === 'en' ? 'Germany & Europe (DACH/EU)' : 'Almanya & Avrupa (DACH/AB)'}
+                      </td>
+                      <td className="p-4 md:p-5 text-slate-700">
+                        {lang === 'de' ? 'Shorts Ads & In-Feed Discovery' : lang === 'en' ? 'Shorts Ads & In-Feed Discovery' : 'Shorts Ads & In-Feed Keşfet'}
+                      </td>
+                      <td className="p-4 md:p-5 font-bold text-emerald-700">
+                        0,01 € – 0,03 €
+                      </td>
+                      <td className="p-4 md:p-5 text-slate-700">
+                        {lang === 'de' ? '🟢 Kaufkraftstarke europäische Zielgruppe' : lang === 'en' ? '🟢 High-purchasing-power European audience' : '🟢 Alım gücü yüksek Avrupa & gurbetçi kitle'}
+                      </td>
+                      <td className="p-4 md:p-5 text-right font-semibold text-emerald-700">
+                        {lang === 'de' ? '✅ Offizielles Google Ads Reporting' : lang === 'en' ? '✅ Official Google Ads Reporting' : '✅ Google Ads Resmi Raporlama'}
+                      </td>
+                    </tr>
+                    {/* Global Market */}
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="p-4 md:p-5 font-bold text-gray-900 flex items-center gap-2">
+                        <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                        {lang === 'de' ? 'Global / Weltweite Reichweite' : lang === 'en' ? 'Global Multi-Territory' : 'Global / Uluslararası Hit'}
+                      </td>
+                      <td className="p-4 md:p-5 text-slate-700">
+                        {lang === 'de' ? 'Demand Gen & Video Action' : lang === 'en' ? 'Demand Gen & Video Action' : 'Demand Gen & Video Eylem'}
+                      </td>
+                      <td className="p-4 md:p-5 font-bold text-emerald-700">
+                        0,008 $ – 0,02 $
+                      </td>
+                      <td className="p-4 md:p-5 text-slate-700">
+                        {lang === 'de' ? '🟢 Weltweite Musik- & Markenfans' : lang === 'en' ? '🟢 Worldwide music fans & viral signals' : '🟢 Küresel müzik dinleyicileri & trend etkisi'}
+                      </td>
+                      <td className="p-4 md:p-5 text-right font-semibold text-emerald-700">
+                        {lang === 'de' ? '✅ 100% Monetarisierungskonform (YPP)' : lang === 'en' ? '✅ 100% YPP monetization compliant' : '✅ %100 Para Kazanma (YPP) Uyumlu'}
+                      </td>
+                    </tr>
+                    {/* Bot / SMM Panels Warning */}
+                    <tr className="bg-red-100/40 hover:bg-red-100/70 transition-colors">
+                      <td className="p-4 md:p-5 font-black text-rose-900 flex items-center gap-2">
+                        <span className="w-2.5 h-2.5 rounded-full bg-red-600"></span>
+                        {lang === 'de' ? '❌ SMM Bot-Panels (Gefahr)' : lang === 'en' ? '❌ SMM Bot Panels (High Risk)' : '❌ SMM Bot Panelleri (Yüksek Risk)'}
+                      </td>
+                      <td className="p-4 md:p-5 text-rose-800">
+                        {lang === 'de' ? 'Gefälschte Server-Pings' : lang === 'en' ? 'Fake Server Hits' : 'Sahte Sunucu İsteği (Datacenter)'}
+                      </td>
+                      <td className="p-4 md:p-5 font-bold text-rose-700">
+                        {lang === 'de' ? 'Scheinbar günstig' : lang === 'en' ? 'Deceptively cheap' : 'Göstermelik Ucuz Paketler'}
+                      </td>
+                      <td className="p-4 md:p-5 text-rose-800 font-semibold">
+                        {lang === 'de' ? '🔴 0% echte Menschen · Schadet dem Algorithmus' : lang === 'en' ? '🔴 0% human · Damages algorithmic trust' : '🔴 %0 İnsan · Algoritmayı bozar, önerileri keser'}
+                      </td>
+                      <td className="p-4 md:p-5 text-right font-black text-rose-700">
+                        {lang === 'de' ? '❌ YouTube löscht Aufrufe / Kanalsperre' : lang === 'en' ? '❌ Views wiped / Risk of channel ban' : '❌ YouTube Siler / Kanal Kapanma Riski'}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="p-4 md:p-5 bg-slate-50 border-t border-slate-200 text-xs text-slate-600 flex flex-wrap items-center justify-between gap-3">
+                <span>
+                  💡 <strong>{lang === 'de' ? 'Wichtiger Hinweis:' : lang === 'en' ? 'Important Notice:' : 'Önemli Hatırlatma:'}</strong>{' '}
+                  {lang === 'de'
+                    ? 'Wir vermitteln ausschließlich offizielle Google & YouTube Werbeplätze über zertifizierte Partner-Accounts.'
+                    : lang === 'en'
+                    ? 'We exclusively deploy campaigns through official Google & YouTube Ads infrastructure as a certified partner.'
+                    : 'Salih Maral olarak yalnızca resmi Google Ads partner altyapısı üzerinden şeffaf ve güvenli video reklamı yayınlıyoruz.'}
+                </span>
+                <span className="font-bold text-[#FF0000]">
+                  {lang === 'de' ? 'Google Partner Garantie 2026' : lang === 'en' ? 'Certified Google Partner 2026' : 'Resmi Google Partner Güvencesi 2026'}
                 </span>
               </div>
             </div>
