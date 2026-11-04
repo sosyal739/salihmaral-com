@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-ajans-ucretleri-fiyatlari-2026"
 lang: "tr"
-title: "Google Ads Ajans Ücretleri ve Fiyatları 2026"
-excerpt: "Google Ads ajansı aylık ne kadar tutar? Sabit fiyat vs. bütçe yüzdesi (% Ad Spend) modelleri, minimum bütçe rehberi ve 2026 fiyat tablosu."
+title: "Google Ads Ajans Ücretleri 2026: Sabit Fiyat vs Komisyon"
+excerpt: "Google Ads ajansı aylık ne kadar tutar? 2026 Google Ads danışmanlık fiyatları (15.000 ₺ – 45.000 ₺), sabit fiyat vs % komisyon tablosu ve bütçe rehberi."
 category: "Fiyatlar & Rehber"
 date: "2026-10-17"
 readTime: "18"
