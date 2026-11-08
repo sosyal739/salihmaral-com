@@ -319,8 +319,8 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
           a: lang === 'de' ? 'Gekaufte Bot-Aufrufe von SMM-Panels schaden Ihrem Kanal nachhaltig, gefährden die Monetarisierung (YPP) und werden von YouTube regelmäßig gelöscht. Bei Salih Maral nutzen wir ausschließlich die offizielle Google Ads Werbeplattform (In-Feed, überspringbare In-Stream & Shorts Ads). Alle Videoaufrufe stammen von 100% echten Menschen, erscheinen verifiziert in YouTube Studio unter "YouTube Werbung" und generieren organische Abonnenten.' : lang === 'en' ? 'Third-party SMM panels use fake bots that flag your channel for spam, strip monetization, and get deleted during YouTube audits. In contrast, our service runs strictly through official Google Ads (In-Feed, Skippable In-Stream, and Shorts). Every view is from a 100% verified human, shows up transparently in YouTube Studio under "YouTube Advertising", and generates genuine subscribers and watch time.' : 'YouTube reklam izlenme satın alma; SMM veya bot panellerinin sahte izlenmelerinin aksine, resmi Google Ads platformu (In-Feed, Atlanabilir In-Stream ve Shorts) üzerinden videonuzun gerçek kullanıcılara reklam olarak gösterilmesidir. Bot paneller kanalınızı spam filtresine sokar, para kazanmayı durdurur ve silinir. Google Ads üzerinden satın alınan reklam izlenmeleri ise %100 güvenlidir, YouTube Studio panelinde doğrudan "YouTube Reklamları" olarak listelenir, organik izlenme süresini artırır ve kanalınıza gerçek abone kazandırır.'
         },
         {
-          q: lang === 'de' ? 'Wie hoch sind die Kosten pro Videoaufruf (CPV) bei YouTube Werbung?' : lang === 'en' ? 'What are the average Cost-Per-View (CPV) and pricing models for YouTube video ads?' : 'YouTube reklam izlenme fiyatları ve CPV (İzleme Başı Maliyet) nasıl belirlenir?',
-          a: lang === 'de' ? 'Bei YouTube Video Ads zahlen Sie nach dem Cost-per-View (CPV) Modell — Sie zahlen nur, wenn Nutzer Ihr Video mindestens 30 Sekunden ansehen oder interagieren. In Deutschland und Europa liegt der optimale CPV zwischen 0,01 € und 0,03 €, in der Türkei zwischen 0,15 TL und 0,45 TL. Wir arbeiten mit einer transparenten monatlichen Betreuungspauschale (Fixpreis) ohne prozentuale Budgetprovision.' : lang === 'en' ? 'YouTube Ads operates on a Cost-per-View (CPV) model: you only pay when a user watches at least 30 seconds or engages with your ad. In Europe and Germany, optimal CPVs range from €0.01 to €0.03, and in Turkey from 0.15 TL to 0.45 TL. We charge a transparent flat monthly management fee (Fixpreis) rather than taking a percentage of your ad budget.' : 'YouTube reklamlarında bütçeniz izleme başına maliyet (CPV - Cost Per View) modeliyle çalışır; yani videonuz atlandığında veya izlenmediğinde ücret ödemezsiniz. Türkiye hedefli video reklamlarında ortalama CPV 0,15 TL – 0,45 TL, Almanya ve Avrupa kampanyalarında 0,01 € – 0,03 € aralığındadır. Salih Maral olarak reklam harcamanızdan komisyon kesmez, şeffaf ve sabit aylık hizmet bedeli (Fixpreis) ile çalışırız.'
+          q: lang === 'de' ? 'Wie hoch sind die Kosten pro Videoaufruf (CPV) und wo kann ich bestellen?' : lang === 'en' ? 'What are the average CPV costs and where can I order YouTube Ads view packages?' : 'YouTube reklam izlenme fiyatları nasıl belirlenir ve nereden sipariş verilir?',
+          a: lang === 'de' ? 'Bei YouTube Video Ads zahlen Sie nach dem Cost-per-View (CPV) Modell — Sie zahlen nur, wenn Nutzer Ihr Video mindestens 30 Sekunden ansehen oder interagieren. In Europa liegt der optimale CPV zwischen 0,01 € und 0,03 €, in der Türkei zwischen 0,15 TL und 0,45 TL. Alle offiziellen YouTube Ads Aufruf-Pakete (1.000 bis 1.000.000+ Views) können Sie direkt auf unserer Plattform medyapr.com berechnen und ohne Kanal-Passwort bestellen.' : lang === 'en' ? 'YouTube Ads operates on a Cost-per-View (CPV) model: you only pay when a user watches at least 30 seconds or engages with your ad. In Europe, optimal CPVs range from €0.01 to €0.03, and in Turkey from 0.15 TL to 0.45 TL. You can calculate and order official YouTube Ads view packages (1,000 to 1,000,000+ views) directly on our platform medyapr.com without sharing any channel password.' : 'YouTube reklamlarında bütçeniz izleme başına maliyet (CPV - Cost Per View) modeliyle çalışır; videonuz atlandığında ücret ödemezsiniz. Türkiye hedefli video reklamlarında ortalama CPV 0,15 TL – 0,45 TL, Avrupa ve global kampanyalarda 0,01 € – 0,03 € aralığındadır. 1.000 izlenmeden 1.000.000+ izlenmeye kadar tüm resmi YouTube Ads paketlerimizi özel platformumuz medyapr.com üzerinden canlı hesaplayabilir ve kanal şifresi paylaşmadan hemen sipariş oluşturabilirsiniz.'
         },
         {
           q: lang === 'de' ? 'Werden die Aufrufe in YouTube Studio und den öffentlichen Zählern gewertet?' : lang === 'en' ? 'Do YouTube Ads views count in YouTube Studio analytics and public view counts?' : 'Satın alınan reklam izlenmeleri YouTube Analytics (Studio) ve sayaçta anında görünür mü?',
@@ -1238,28 +1238,80 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
             </p>
 
             {/* CTA Action Buttons */}
-            <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
-              <button
-                onClick={scrollToContact}
-                style={{ backgroundColor: data.primaryColor }}
-                className="text-white font-bold text-base px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
-              >
-                <span>{lang === 'en' ? 'Contact via Form (24h Reply)' : 'İletişim Formu ile Ulaşın (24 Saatte Dönüş)'}</span>
-                <ArrowUpRight className="h-5 w-5" />
-              </button>
+            {service === 'youtube-ads' ? (
+              <>
+                <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
+                  <a
+                    href={lang === 'tr' ? 'https://medyapr.com/tr/order' : 'https://medyapr.com/en/order'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ backgroundColor: data.primaryColor }}
+                    className="text-white font-bold text-base px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
+                  >
+                    <span>
+                      {lang === 'de'
+                        ? 'Auf MedyaPR.com bestellen & Video prüfen'
+                        : lang === 'en'
+                        ? 'Order YouTube Views on MedyaPR.com'
+                        : 'MedyaPR.com Üzerinden Sipariş Oluşturun'}
+                    </span>
+                    <ArrowUpRight className="h-5 w-5" />
+                  </a>
 
-              <a
-                href="mailto:info@salihmaral.com"
-                className="bg-slate-100 text-slate-900 border border-slate-300 hover:bg-slate-200 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
-              >
-                <Mail className="h-5 w-5 text-[#4285F4]" />
-                <span>info@salihmaral.com</span>
-              </a>
-            </div>
-            <p className="text-xs sm:text-sm font-semibold text-emerald-700 mb-14 flex items-center justify-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>{lang === 'en' ? 'Reach us via form or email — guaranteed response within 24 hours.' : 'Form veya e-posta üzerinden ulaşın — 24 saat içinde garantili geri dönüş sağlıyoruz.'}</span>
-            </p>
+                  <a
+                    href={lang === 'tr' ? 'https://medyapr.com/tr/fiyatlandirma' : 'https://medyapr.com/en/fiyatlandirma'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-slate-900 text-white border border-slate-800 hover:bg-slate-800 font-bold text-base px-7 py-4 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
+                  >
+                    <Play className="h-4 w-4 text-[#FF0000] fill-[#FF0000]" />
+                    <span>
+                      {lang === 'de'
+                        ? 'Preise & Pakete (medyapr.com)'
+                        : lang === 'en'
+                        ? 'View Pricing & Packages (medyapr.com)'
+                        : 'Fiyatları & Paketleri İnceleyin (medyapr.com)'}
+                    </span>
+                    <ArrowUpRight className="h-4 w-4 text-slate-400" />
+                  </a>
+                </div>
+                <p className="text-xs sm:text-sm font-semibold text-red-700 bg-red-50/90 border border-red-200/80 rounded-xl px-4 py-2.5 max-w-2xl mx-auto mb-14 flex items-center justify-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#FF0000] animate-pulse shrink-0"></span>
+                  <span>
+                    {lang === 'de'
+                      ? 'Offizielle YouTube Ads Aufruf-Pakete & Musikvideo-PR bestellen Sie direkt über unsere Plattform MedyaPR.com (ohne Passwort, 100% Google Ads).'
+                      : lang === 'en'
+                      ? 'Official YouTube Ads view packages and music video PR orders are processed directly on our platform MedyaPR.com (100% Google Ads, no password required).'
+                      : 'YouTube reklam izlenme paketleri ve klip tanıtım siparişleriniz resmi platformumuz MedyaPR.com üzerinden şifresiz ve %100 Google Ads güvencesiyle alınmaktadır.'}
+                  </span>
+                </p>
+              </>
+            ) : (
+              <>
+                <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
+                  <button
+                    onClick={scrollToContact}
+                    style={{ backgroundColor: data.primaryColor }}
+                    className="text-white font-bold text-base px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
+                  >
+                    <span>{lang === 'en' ? 'Contact via Form (24h Reply)' : 'İletişim Formu ile Ulaşın (24 Saatte Dönüş)'}</span>
+                    <ArrowUpRight className="h-5 w-5" />
+                  </button>
+
+                  <a
+                    href="mailto:info@salihmaral.com"
+                    className="bg-slate-100 text-slate-900 border border-slate-300 hover:bg-slate-200 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
+                  >
+                    <Mail className="h-5 w-5 text-[#4285F4]" />
+                    <span>info@salihmaral.com</span>
+                  </a>
+                </div>
+                <p className="text-xs sm:text-sm font-semibold text-emerald-700 mb-14 flex items-center justify-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span>{lang === 'en' ? 'Reach us via form or email — guaranteed response within 24 hours.' : 'Form veya e-posta üzerinden ulaşın — 24 saat içinde garantili geri dönüş sağlıyoruz.'}</span>
+                </p>
+              </>
+            )}
 
             {/* High-Contrast Stats Grid */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -1442,9 +1494,20 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                   {/* Bottom Goal / Strategic Focus Tag */}
                   <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-gray-500 font-medium">
                     <span className="font-semibold text-slate-700">{theme.focusTag}</span>
-                    <span className="text-[#4285F4] font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                      {lang === 'de' ? 'Details' : lang === 'en' ? 'Details' : 'İncele'} ➔
-                    </span>
+                    {service === 'youtube-ads' ? (
+                      <a
+                        href={lang === 'tr' ? 'https://medyapr.com/tr/order' : 'https://medyapr.com/en/order'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#FF0000] hover:underline font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                      >
+                        {lang === 'de' ? 'Auf MedyaPR.com bestellen' : lang === 'en' ? 'Order on MedyaPR.com' : "MedyaPR.com'da Sipariş Ver"} ➔
+                      </a>
+                    ) : (
+                      <span className="text-[#4285F4] font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        {lang === 'de' ? 'Details' : lang === 'en' ? 'Details' : 'İncele'} ➔
+                      </span>
+                    )}
                   </div>
 
                 </div>
@@ -1911,9 +1974,84 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                     ? 'We exclusively deploy campaigns through official Google & YouTube Ads infrastructure as a certified partner.'
                     : 'Salih Maral olarak yalnızca resmi Google Ads partner altyapısı üzerinden şeffaf ve güvenli video reklamı yayınlıyoruz.'}
                 </span>
-                <span className="font-bold text-[#FF0000]">
-                  {lang === 'de' ? 'Google Partner Garantie 2026' : lang === 'en' ? 'Certified Google Partner 2026' : 'Resmi Google Partner Güvencesi 2026'}
-                </span>
+                <a
+                  href={lang === 'tr' ? 'https://medyapr.com/tr/order' : 'https://medyapr.com/en/order'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-[#FF0000] hover:underline flex items-center gap-1"
+                >
+                  <span>
+                    {lang === 'de'
+                      ? 'Jetzt auf MedyaPR.com bestellen ➔'
+                      : lang === 'en'
+                      ? 'Order Now on MedyaPR.com ➔'
+                      : "Sipariş İçin MedyaPR.com'a Git ➔"}
+                  </span>
+                </a>
+              </div>
+
+              {/* MedyaPR.com Doğrudan Sipariş & Paket Yönlendirme Kutusu */}
+              <div className="p-6 md:p-8 bg-gradient-to-br from-slate-950 via-slate-900 to-red-950 text-white border-t border-red-500/30 flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div className="max-w-2xl text-center lg:text-left">
+                  <div className="inline-flex items-center space-x-2 bg-red-500/20 border border-red-400/40 rounded-full px-3.5 py-1 mb-3">
+                    <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse"></span>
+                    <span className="text-[11px] font-extrabold uppercase tracking-wider text-red-200">
+                      {lang === 'de'
+                        ? 'Offizielle Bestellplattform · MedyaPR.com'
+                        : lang === 'en'
+                        ? 'Official Order Platform · MedyaPR.com'
+                        : 'Resmi Sipariş & Klip PR Platformumuz · MedyaPR.com'}
+                    </span>
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-black text-white mb-2 tracking-tight">
+                    {lang === 'de'
+                      ? 'YouTube Ads Aufrufe & Musikvideo-PR direkt auf MedyaPR.com bestellen'
+                      : lang === 'en'
+                      ? 'Order Official YouTube Ads Views & Music Video PR on MedyaPR.com'
+                      : 'YouTube Reklam İzlenme Siparişinizi MedyaPR.com Üzerinden Oluşturun'}
+                  </h4>
+                  <p className="text-xs md:text-sm text-slate-300 leading-relaxed">
+                    {lang === 'de'
+                      ? 'Berechnen Sie Ihr Wunschpaket (1.000 bis 1.000.000+ echte Aufrufe) live auf MedyaPR.com. Kein Kanal-Passwort erforderlich — einfach YouTube-Link einfügen und Kampagne starten.'
+                      : lang === 'en'
+                      ? 'Calculate your view package (1,000 to 1,000,000+ real views) live on MedyaPR.com. Zero channel passwords required — simply paste your YouTube video link to start.'
+                      : '1.000 izlenmeden 1.000.000+ gerçek izlenmeye kadar tüm YouTube Google Ads paketlerimizi özel platformumuz MedyaPR.com üzerinden canlı hesaplayabilir, kanal şifresi vermeden sadece video linkinizle hemen sipariş verebilirsiniz.'}
+                  </p>
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto justify-center">
+                  <a
+                    href={lang === 'tr' ? 'https://medyapr.com/tr/order' : 'https://medyapr.com/en/order'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto justify-center bg-[#FF0000] hover:bg-red-600 text-white font-black text-sm md:text-base px-7 py-4 rounded-2xl shadow-xl hover:shadow-red-600/30 transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
+                  >
+                    <span>
+                      {lang === 'de'
+                        ? 'Auf MedyaPR.com bestellen'
+                        : lang === 'en'
+                        ? 'Order Now on MedyaPR.com'
+                        : "MedyaPR.com'da Sipariş Ver"}
+                    </span>
+                    <ArrowUpRight className="w-5 h-5" />
+                  </a>
+
+                  <a
+                    href={lang === 'tr' ? 'https://medyapr.com/tr/fiyatlandirma' : 'https://medyapr.com/en/fiyatlandirma'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto justify-center bg-white/10 hover:bg-white/20 text-white border border-white/25 font-bold text-xs md:text-sm px-5 py-4 rounded-2xl transition-all duration-300 flex items-center gap-2 cursor-pointer"
+                  >
+                    <span>
+                      {lang === 'de'
+                        ? 'Live-Preisrechner (medyapr.com)'
+                        : lang === 'en'
+                        ? 'Live Price Calculator (medyapr.com)'
+                        : 'Canlı Fiyat Hesaplama (medyapr.com)'}
+                    </span>
+                    <ArrowUpRight className="w-4 h-4 text-red-300" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -3198,7 +3336,13 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
             </div>
 
             <h2 className="text-3xl md:text-5xl font-black text-white mb-5 tracking-tight leading-tight">
-              {service === 'google-ads'
+              {service === 'youtube-ads'
+                ? (lang === 'de'
+                    ? 'YouTube Ads Aufrufe & Klip-PR auf MedyaPR.com bestellen'
+                    : lang === 'en'
+                    ? 'Order Official YouTube Ad Views on MedyaPR.com'
+                    : "YouTube Reklam İzlenme Siparişi İçin MedyaPR.com'a Geçin")
+                : service === 'google-ads'
                 ? (lang === 'de'
                     ? 'Kostenlose Google Ads Analyse — in 30 Minuten.'
                     : lang === 'en'
@@ -3208,7 +3352,13 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
             </h2>
 
             <p className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-6 leading-relaxed">
-              {service === 'google-ads'
+              {service === 'youtube-ads'
+                ? (lang === 'de'
+                    ? 'Alle offiziellen Google Ads Video-Pakete (1.000 bis 1.000.000+ echte Aufrufe) und Musikvideo-Kampagnen wickeln wir direkt über unsere spezialisierte Plattform MedyaPR.com ab.'
+                    : lang === 'en'
+                    ? 'All official Google Ads video view packages (1,000 to 1,000,000+ real views) and music video PR campaigns are ordered directly through our specialized platform MedyaPR.com.'
+                    : '1.000 izlenmeden 1.000.000+ gerçek izlenmeye kadar tüm resmi Google Ads video reklam ve klip tanıtım siparişlerinizi özel platformumuz MedyaPR.com üzerinden anında oluşturabilirsiniz.')
+                : service === 'google-ads'
                 ? (lang === 'de'
                     ? 'Wir prüfen Ihre Kampagnen kostenlos und zeigen Ihnen genau, wo Ihr Budget verloren geht — und wie Sie es zurückgewinnen. Kein Fachjargon. Keine Verkaufsgespräche. Nur echte Handlungsempfehlungen.'
                     : lang === 'en'
@@ -3217,31 +3367,81 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 : (lang === 'de' ? 'Wir analysieren Ihre aktuelle Situation und bieten Ihnen maßgeschneiderte Strategieempfehlungen. Keine Kosten, keine Verpflichtungen.' : lang === 'en' ? 'Reach out via our online form or email. We analyze your current setup and get back to you within 24 hours with tailored strategy recommendations.' : 'İletişim formu veya e-posta ile bize ulaşın; mevcut durumunuzu analiz edip 24 saat içinde size özel strateji önerileriyle geri dönüş yapalım.')}
             </p>
 
-            <div className="max-w-2xl mx-auto mb-8 px-4 py-3 rounded-2xl bg-amber-500/10 border border-amber-400/30 text-xs sm:text-sm text-amber-200 leading-relaxed">
-              {lang === 'en' ? (
-                <>📌 <strong>Qualification Notice:</strong> Consulting services are provided exclusively to <strong>B2B businesses</strong> and clients with a <strong>minimum monthly ad spend of 25,000 TL</strong>. Effective ROI cannot be achieved with lower ad budgets.</>
-              ) : (
-                <>📌 <strong>Çalışma Kriteri:</strong> Danışmanlık hizmetimiz <strong>B2B işletmelere</strong> ve <strong>aylık minimum 25.000 TL reklam harcaması</strong> olan müşterilere verilmektedir. Daha düşük reklam harcamalarında etkili verim almak mümkün değildir.</>
-              )}
-            </div>
+            {service === 'youtube-ads' ? (
+              <div className="max-w-2xl mx-auto mb-8 px-4 py-3 rounded-2xl bg-red-500/10 border border-red-400/30 text-xs sm:text-sm text-red-200 leading-relaxed">
+                {lang === 'en' ? (
+                  <>🎵 <strong>Direct Order via MedyaPR.com:</strong> Paste your YouTube video link on <strong>medyapr.com</strong>, calculate your exact view package, and launch your official Google Partner campaign without sharing any channel password.</>
+                ) : (
+                  <>🎵 <strong>MedyaPR.com ile Hızlı Sipariş:</strong> Kanal şifresi veya yetki vermeden, yalnızca YouTube video linkinizi <strong>medyapr.com</strong> sipariş ekranına yapıştırarak paket seçimi ve ücretsiz klip analizi başlatabilirsiniz.</>
+                )}
+              </div>
+            ) : (
+              <div className="max-w-2xl mx-auto mb-8 px-4 py-3 rounded-2xl bg-amber-500/10 border border-amber-400/30 text-xs sm:text-sm text-amber-200 leading-relaxed">
+                {lang === 'en' ? (
+                  <>📌 <strong>Qualification Notice:</strong> Consulting services are provided exclusively to <strong>B2B businesses</strong> and clients with a <strong>minimum monthly ad spend of 25,000 TL</strong>. Effective ROI cannot be achieved with lower ad budgets.</>
+                ) : (
+                  <>📌 <strong>Çalışma Kriteri:</strong> Danışmanlık hizmetimiz <strong>B2B işletmelere</strong> ve <strong>aylık minimum 25.000 TL reklam harcaması</strong> olan müşterilere verilmektedir. Daha düşük reklam harcamalarında etkili verim almak mümkün değildir.</>
+                )}
+              </div>
+            )}
 
             <div className="flex flex-wrap justify-center items-center gap-4">
-              <button
-                onClick={scrollToContact}
-                style={{ backgroundColor: data.primaryColor }}
-                className="text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
-              >
-                <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Contact via Form (24h Reply)' : 'Form ile Ulaşın (24 Saatte Dönüş)'}</span>
-                <ArrowUpRight className="h-5 w-5" />
-              </button>
+              {service === 'youtube-ads' ? (
+                <>
+                  <a
+                    href={lang === 'tr' ? 'https://medyapr.com/tr/order' : 'https://medyapr.com/en/order'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ backgroundColor: data.primaryColor }}
+                    className="text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
+                  >
+                    <span>
+                      {lang === 'de'
+                        ? 'Jetzt auf MedyaPR.com bestellen'
+                        : lang === 'en'
+                        ? 'Order Now on MedyaPR.com'
+                        : 'MedyaPR.com Üzerinden Sipariş Oluşturun'}
+                    </span>
+                    <ArrowUpRight className="h-5 w-5" />
+                  </a>
 
-              <a
-                href="mailto:info@salihmaral.com"
-                className="bg-slate-900 hover:bg-slate-800 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2.5 cursor-pointer border border-white/20"
-              >
-                <Mail className="h-5 w-5 text-blue-400" />
-                <span>info@salihmaral.com</span>
-              </a>
+                  <a
+                    href={lang === 'tr' ? 'https://medyapr.com/tr/fiyatlandirma' : 'https://medyapr.com/en/fiyatlandirma'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-slate-900 hover:bg-slate-800 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2.5 cursor-pointer border border-white/20"
+                  >
+                    <Play className="h-4 w-4 text-[#FF0000] fill-[#FF0000]" />
+                    <span>
+                      {lang === 'de'
+                        ? 'Pakete & Preise (medyapr.com)'
+                        : lang === 'en'
+                        ? 'Packages & Pricing (medyapr.com)'
+                        : 'Paket & Fiyat Hesaplama (medyapr.com)'}
+                    </span>
+                    <ArrowUpRight className="h-4 w-4 text-slate-400" />
+                  </a>
+                </>
+              ) : (
+                <>
+                  <button
+                    onClick={scrollToContact}
+                    style={{ backgroundColor: data.primaryColor }}
+                    className="text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
+                  >
+                    <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Contact via Form (24h Reply)' : 'Form ile Ulaşın (24 Saatte Dönüş)'}</span>
+                    <ArrowUpRight className="h-5 w-5" />
+                  </button>
+
+                  <a
+                    href="mailto:info@salihmaral.com"
+                    className="bg-slate-900 hover:bg-slate-800 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2.5 cursor-pointer border border-white/20"
+                  >
+                    <Mail className="h-5 w-5 text-blue-400" />
+                    <span>info@salihmaral.com</span>
+                  </a>
+                </>
+              )}
             </div>
           </div>
         </div>

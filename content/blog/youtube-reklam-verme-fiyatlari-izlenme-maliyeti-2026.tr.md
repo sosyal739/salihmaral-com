@@ -112,8 +112,8 @@ coverImage: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=1200
     <a href="/tr/hizmetler/youtube-ads" style="display: inline-block; background: #ef4444; color: white; font-weight: 800; padding: 0.95rem 2rem; border-radius: 0.9rem; text-decoration: none; font-size: 1rem; box-shadow: 0 10px 25px -5px rgba(239, 68, 68, 0.5);">
       YouTube Ads Paketlerini &amp; Hizmetimizi İnceleyin ➔
     </a>
-    <a href="/#contact" style="display: inline-block; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.3); color: white; font-weight: 700; padding: 0.95rem 1.8rem; border-radius: 0.9rem; text-decoration: none; font-size: 0.98rem;">
-      Ücretsiz Bütçe &amp; Kanal Analizi Alın
+    <a href="https://medyapr.com/tr/order" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.35); color: white; font-weight: 800; padding: 0.95rem 1.8rem; border-radius: 0.9rem; text-decoration: none; font-size: 0.98rem;">
+      MedyaPR.com Üzerinden Sipariş Oluşturun ➔
     </a>
   </div>
 </div>

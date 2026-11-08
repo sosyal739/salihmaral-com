@@ -95,7 +95,7 @@ coverImage: "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?w=1200
 <div class="cta-box" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 1.5rem; padding: 2rem; margin-top: 2.5rem; text-align: center;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem;">YouTube Kanalınızı Doğru Kitleyle Birlikte Büyütelim</h3>
   <p style="color: #475569; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Resmi Google Partner güvencesiyle YouTube videolarınızı hedeflediğiniz ülkelerde gerçek izleyicilere ulaştırın.</p>
-  <a href="https://www.salihmaral.com/#contact" style="display: inline-block; background: #FF0000; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(255, 0, 0, 0.4);">Ücretsiz Ön Görüşme ve YouTube Analizi Alın ➔</a>
+  <a href="https://medyapr.com/tr/order" style="display: inline-block; background: #FF0000; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(255, 0, 0, 0.4);">MedyaPR.com Üzerinden Sipariş & Analiz Oluşturun ➔</a>
 </div>
 
 <div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">

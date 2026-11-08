@@ -87,7 +87,7 @@ coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1200
 <div class="cta-box" style="background: #0f172a; border: 2px solid #3b82f6; border-radius: 1.5rem; padding: 2.5rem; margin-top: 2.5rem; text-align: center; color: white;">
   <h3 style="font-size: 1.6rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">Sanatınızı ve Müziğinizi Milyonlara Birlikte Ulaştıralım</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.5rem auto;">Resmi Google Partner güvencesi ve 17+ yıllık sektör tecrübesiyle müzik kliplerinizi doğru dinleyici kitlesiyle buluşturun.</p>
-  <a href="https://www.salihmaral.com/#contact" style="display: inline-block; background: #3b82f6; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);">Ücretsiz Ön Görüşme ve YouTube Strateji Analizi Alın ➔</a>
+  <a href="https://medyapr.com/tr/order" style="display: inline-block; background: #3b82f6; color: white; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);">MedyaPR.com Üzerinden Klip PR Siparişi Oluşturun ➔</a>
 </div>
 
 <div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-blue-500/30">

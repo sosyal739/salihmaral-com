@@ -1074,6 +1074,11 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
   }
 
   const scrollToContact = (title) => {
+    if (serviceSlug === 'youtube-ads') {
+      const orderUrl = lang === 'tr' ? 'https://medyapr.com/tr/order' : 'https://medyapr.com/en/order'
+      window.open(orderUrl, '_blank', 'noopener,noreferrer')
+      return
+    }
     const contactEl = document.getElementById('contact-section')
     if (contactEl) {
       contactEl.scrollIntoView({ behavior: 'smooth' })
@@ -1268,7 +1273,11 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
                                   <div className="mt-5 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-bold text-slate-400 group-hover/item:text-amber-400 transition-colors">
                                     <span className="flex items-center gap-1.5">
                                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                                      <span>{lang === 'de' ? 'Setup anfragen' : lang === 'tr' ? 'Kurulum İste' : 'Inquire Setup'}</span>
+                                      <span>
+                                        {serviceSlug === 'youtube-ads'
+                                          ? (lang === 'de' ? 'Auf MedyaPR.com bestellen' : lang === 'tr' ? "MedyaPR.com'da Sipariş Ver" : 'Order on MedyaPR.com')
+                                          : (lang === 'de' ? 'Setup anfragen' : lang === 'tr' ? 'Kurulum İste' : 'Inquire Setup')}
+                                      </span>
                                     </span>
                                     <div className="w-7 h-7 rounded-lg bg-white/5 group-hover/item:bg-amber-500 group-hover/item:text-slate-950 flex items-center justify-center transition-all duration-200">
                                       <ArrowRight className="w-3.5 h-3.5 transform group-hover/item:translate-x-0.5 transition-transform" />

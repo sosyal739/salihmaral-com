@@ -271,8 +271,8 @@ const serviceFaqs = {
         a: 'YouTube reklam izlenme satın alma; SMM veya bot panellerinin sahte izlenmelerinin aksine, resmi Google Ads platformu (In-Feed, Atlanabilir In-Stream ve Shorts) üzerinden videonuzun gerçek kullanıcılara reklam olarak gösterilmesidir. Bot paneller kanalınızı spam filtresine sokar, para kazanmayı durdurur ve silinir. Google Ads üzerinden satın alınan reklam izlenmeleri ise %100 güvenlidir, YouTube Studio panelinde doğrudan "YouTube Reklamları" olarak listelenir, organik izlenme süresini artırır ve kanalınıza gerçek abone kazandırır.'
       },
       {
-        q: 'YouTube reklam izlenme fiyatları ve CPV (İzleme Başı Maliyet) nasıl belirlenir?',
-        a: 'YouTube reklamlarında bütçeniz izleme başına maliyet (CPV - Cost Per View) modeliyle çalışır; yani videonuz atlandığında veya izlenmediğinde ücret ödemezsiniz. Türkiye hedefli video reklamlarında ortalama CPV 0,15 TL – 0,45 TL, Almanya ve Avrupa kampanyalarında 0,01 € – 0,03 € aralığındadır. Salih Maral olarak reklam harcamanızdan komisyon kesmez, şeffaf ve sabit aylık hizmet bedeli (Fixpreis) ile çalışırız.'
+        q: 'YouTube reklam izlenme fiyatları nasıl belirlenir ve nereden sipariş verilir?',
+        a: 'YouTube reklamlarında bütçeniz izleme başına maliyet (CPV - Cost Per View) modeliyle çalışır; videonuz atlandığında ücret ödemezsiniz. Türkiye hedefli video reklamlarında ortalama CPV 0,15 TL – 0,45 TL, Avrupa ve global kampanyalarda 0,01 € – 0,03 € aralığındadır. 1.000 izlenmeden 1.000.000+ izlenmeye kadar tüm resmi YouTube Ads paketlerimizi özel platformumuz medyapr.com üzerinden canlı hesaplayabilir ve kanal şifresi paylaşmadan hemen sipariş oluşturabilirsiniz.'
       },
       {
         q: 'Satın alınan reklam izlenmeleri YouTube Analytics (Studio) ve sayaçta anında görünür mü?',
