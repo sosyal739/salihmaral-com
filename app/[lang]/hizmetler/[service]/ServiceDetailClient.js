@@ -213,17 +213,17 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
     },
 
     'youtube-ads': {
-      title: lang === 'de' ? 'YouTube Ads & Video-Wachstum' : lang === 'en' ? 'YouTube Ads & Video Growth' : 'YouTube Ads & Video Büyüme',
+      title: lang === 'de' ? 'YouTube Ads & Video-Wachstum' : lang === 'en' ? 'YouTube Ads & Video Growth' : 'YouTube Reklam (Ads) İzlenme & Video Büyüme',
       subtitle: lang === 'de'
         ? '23,1M+ verifizierte Aufrufe & 720+ Kampagnen — Maximale Video-Reichweite und echte Abonnenten.'
         : lang === 'en'
         ? '23.1M+ verified views & 720+ campaigns — Maximum video reach and real subscriber growth.'
-        : '23.1M+ doğrulanmış izlenme & 720+ kampanya — Maksimum video erişimi ve gerçek kanal büyümesi.',
+        : 'YouTube reklam izlenme satın al — 23,1M+ doğrulanmış gerçek reklam izlenmesi ve 720+ kampanya.',
       description: lang === 'de'
         ? 'Als zertifizierter Google & YouTube Ads Partner mit über 23,1 Millionen verwalteten TrueView-Aufrufen und 720+ erfolgreichen Kampagnen bringen wir Ihre Videos, Musikclips und Produkte vor kaufbereite und engagierte Zuschauer. Keine Bots, sondern 100% echte Zielgruppen.'
         : lang === 'en'
         ? 'As a certified Google & YouTube Ads Partner managing over 23.1 million TrueView views across 720+ campaigns, we put your music videos, brand stories, and products in front of engaged audiences. Zero bots, 100% genuine viewers.'
-        : '23.1 Milyon+ yönetilen YouTube TrueView izlenmesi ve 720+ başarılı kampanya ile müzik kliplerinizi, marka hikayelerinizi ve ürünlerinizi doğru kitleyle buluşturuyoruz. Sahte botlar değil; %100 gerçek, etkileşime geçen ve abone olan izleyiciler.',
+        : 'Resmi Google Partner güvencesiyle YouTube reklam (Ads) izlenme satın alın: 23.1 Milyon+ yönetilen YouTube TrueView gerçek reklam izlenmesi ve 720+ başarılı kampanya ile müzik kliplerinizi, marka hikayelerinizi ve ürünlerinizi doğru kitleyle buluşturuyoruz. Sahte botlar değil; %100 gerçek, etkileşime geçen ve abone olan izleyiciler.',
       badge: lang === 'de' ? '23.1M+ YouTube Aufrufe & Google Partner' : lang === 'en' ? '23.1M+ YouTube Views & Google Partner' : '23.1M+ YouTube İzlenmesi & Google Partner',
       primaryColor: '#FF0000',
       secondaryColor: '#282828',
@@ -329,6 +329,10 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         {
           q: lang === 'de' ? 'Gewinnt mein Kanal durch Video Ads auch echte Abonnenten und Likes?' : lang === 'en' ? 'Can YouTube video advertising bring organic subscribers and engagement?' : 'YouTube reklamları ile organik abone ve video beğenisi de kazanılır mı?',
           a: lang === 'de' ? 'Ja. Da wir Anzeigen gezielt vor musik- und themenrelevanten Zielgruppen ausspielen, konvertieren interessierte Zuschauer häufig in dauerhafte Abonnenten, hinterlassen Kommentare und liken Ihre Inhalte. Dies sendet starke Relevanzsignale an den YouTube-Empfehlungsalgorithmus.' : lang === 'en' ? 'Yes. By targeting users based on specific musical genres, demographics, and affinity channels, viewers naturally interact with your content, leave comments, and subscribe. This engagement flywheel signals high retention to YouTube\'s recommendation algorithm.' : 'Evet. Kampanyalarımız müzik türü, yaş, demografi ve benzer sanatçı/kanal kitlelerine göre hedefleme yaptığı için videonuzu izleyenler kanalınıza organik olarak abone olur, yorum yazar ve diğer içeriklerinizi keşfeder. Bu yüksek etkileşim sinyali, YouTube algoritmasının videonuzu "Önerilen Videolar" arasına taşımasını hızlandırır.'
+        },
+        {
+          q: lang === 'de' ? 'Ist YouTube AdWords Aufrufe kaufen dasselbe wie echte YouTube Ads Views?' : lang === 'en' ? 'Is buying YouTube AdWords views the same as official YouTube Ads views?' : 'YouTube AdWords izlenme satın al ile YouTube gerçek reklam izlenme aynı şey mi?',
+          a: lang === 'de' ? 'Ja. Google AdWords heißt heute offiziell Google Ads. Wenn Sie über uns YouTube AdWords Aufrufe buchen, wird Ihr Video direkt als offizielle YouTube-Werbung vor echten Nutzern ausgespielt – 100% sicher und verifiziert in YouTube Studio.' : lang === 'en' ? 'Yes. Google AdWords is now officially Google Ads. Ordering YouTube AdWords views means running official YouTube video advertising to real human viewers — 100% safe and verified in YouTube Studio.' : 'Evet. Google AdWords sisteminin güncel adı Google Ads olup, YouTube AdWords izlenme satın alma işlemi doğrudan resmi YouTube reklamlarıyla gerçek izlenme kazanmaktır. Bot veya sahte panellerin aksine, izlenmeler %100 gerçek kullanıcılardan gelir ve medyapr.com üzerinden şifresiz sipariş edilebilir.'
         }
       ]
     },
@@ -750,17 +754,17 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
     },
 
     'seo': {
-      title: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'en' ? 'SEO Services' : 'SEO Hizmetleri',
+      title: lang === 'de' ? 'SEO & GEO Dienstleistungen' : lang === 'en' ? 'SEO & GEO Services' : 'Kurumsal SEO, GEO Hizmeti & Danışmanlığı',
       subtitle: lang === 'de'
-        ? 'Organisch auf Platz 1 bei Google — nachhaltiger Traffic ohne Klickkosten.'
+        ? 'Organisch auf Platz 1 bei Google & KI-Suchmaschinen — nachhaltiger Traffic ohne Klickkosten.'
         : lang === 'en'
-        ? 'Rank #1 organically on Google — sustainable traffic without ad spend.'
-        : 'Google\'da organik olarak 1. sıraya yükselin — tıklama maliyeti olmadan kalıcı trafik.',
+        ? 'Rank #1 organically on Google & AI Search Engines — sustainable traffic without ad spend.'
+        : 'Google, ChatGPT ve Perplexity aramalarında 1. sıraya yükselin — GEO optimizasyonu ve kalıcı organik trafik.',
       description: lang === 'de'
         ? 'Mit modernem Technical SEO, Princeton GEO (Generative Engine Optimization für ChatGPT & Perplexity) und inhaltsstarkem E-E-A-T Linkaufbau bringen wir Ihr Unternehmen auf die begehrten Top-Positionen der Suchergebnisse.'
         : lang === 'en'
         ? 'With advanced technical SEO, Princeton GEO (Generative Engine Optimization for ChatGPT & Perplexity), and authoritative E-E-A-T content strategy, we position your business at the top of organic search results.'
-        : 'İleri düzey teknik SEO, Princeton GEO (ChatGPT ve Perplexity için AI Arama Optimizasyonu) ve güçlü E-E-A-T içerik stratejisiyle işletmenizi arama sonuçlarında zirveye taşıyoruz.',
+        : 'İleri düzey teknik SEO, kurumsal GEO hizmeti (ChatGPT, Perplexity ve Google AI Overviews için GEO optimizasyonu) ve profesyonel GEO danışmanlığı ile markanızı arama motorlarında ve yapay zeka yanıtlarında birincil kaynak haline getiriyoruz.',
       badge: lang === 'de' ? 'SEO Experte · 17+ Jahre' : lang === 'en' ? 'SEO Expert · 17+ Years' : 'SEO Uzmanı · 17+ Yıl',
       primaryColor: '#0F9D58',
       secondaryColor: '#4285F4',
@@ -836,21 +840,21 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         { title: lang === 'de' ? '24/7 Sichtbarkeit' : lang === 'en' ? '24/7 Visibility' : '7/24 Görünürlük', desc: lang === 'de' ? 'Traffic fließt weiter, auch wenn Anzeigen stoppen' : lang === 'en' ? 'Traffic continues even when ads stop' : 'Reklamlar dursa bile trafik devam eder' }
       ],
       faq: [
-        { 
-          q: lang === 'de' ? 'Wann werde ich Ergebnisse von SEO-Arbeiten sehen?' : lang === 'en' ? 'When will I see results from SEO work?' : 'SEO çalışmalarından ne zaman sonuç alırım?',
-          a: lang === 'de' ? 'SEO ist ein Marathon, kein Sprint. Je nach Wettbewerbssituation Ihrer Branche und der Geschichte Ihrer Website sehen Sie die ersten Auswirkungen technischer Verbesserungen in 1-3 Monaten. Nachhaltiges Verkehrswachstum gewinnt jedoch normalerweise ab dem 6. Monat an Dynamik.' : lang === 'en' ? 'SEO is a marathon, not a sprint. Depending on your industry\'s competition and your site\'s history, you\'ll start seeing the first effects of technical improvements in 1-3 months. However, sustainable traffic growth typically gains momentum from the 6th month onwards.' : 'SEO bir sprint değil, maratondur. Sektörünüzün rekabet durumuna ve sitenizin geçmişine bağlı olarak, ilk teknik iyileştirmelerin etkisini 1-3 ay içinde görmeye başlarsınız. Ancak kalıcı trafik artışı genellikle 6. aydan itibaren ivme kazanır.'
+        {
+          q: lang === 'de' ? 'Was ist GEO (Generative Engine Optimization) und wie werden wir in KI-Suchen zitiert?' : lang === 'en' ? 'What is GEO (Generative Engine Optimization) and how do we get cited in AI search?' : 'GEO (Generative Engine Optimization) hizmeti nedir ve yapay zeka aramalarında nasıl kaynak gösteriliriz?',
+          a: lang === 'de' ? 'GEO sorgt dafür, dass Ihre Marke in KI-Antwortmaschinen wie ChatGPT Search, Perplexity, Claude und Google AI Overviews als primäre Quelle empfohlen wird. Durch /llms.txt Architektur, strukturierte Vergleichstabellen, Entity-Autorität und Schema.org JSON-LD steigern wir Ihre Zitierwahrscheinlichkeit nachweislich.' : lang === 'en' ? 'GEO ensures your brand is cited and recommended as a primary source inside AI search engines like ChatGPT Search, Perplexity, Claude, and Google AI Overviews. Using Princeton GEO standards (/llms.txt, structured data tables, entity authority, and JSON-LD), we maximize your AI citation visibility.' : 'GEO, markanızın Perplexity, ChatGPT Search, Claude ve Google AI Overviews gibi yapay zeka motorlarında birincil tavsiye ve kaynak olarak gösterilmesini sağlayan yeni nesil optimizasyondur. Princeton GEO araştırması standartlarında /llms.txt kurulumu, varlık (entity) otoritesi, yapılandırılmış veri tabloları ve alıntı şemaları ile yapay zekanın ilk önerdiği marka olmanızı sağlıyoruz.'
+        },
+        {
+          q: lang === 'de' ? 'Was umfasst Ihre SEO-, Local-SEO- und GEO-Beratung?' : lang === 'en' ? 'What is included in your corporate SEO, Local SEO, and GEO consulting?' : 'Kurumsal SEO, Yerel SEO ve Yapay Zeka SEO (GEO) hizmetiniz neleri kapsar?',
+          a: lang === 'de' ? 'Unsere Betreuung umfasst 100/100 Google Lighthouse Technical SEO, Schema.org JSON-LD, Google Maps Local 3-Pack Optimierung sowie Princeton GEO Optimierung für KI-Suchmaschinen aus einer Hand.' : lang === 'en' ? 'We deliver full-stack Technical SEO (100/100 Core Web Vitals, SSR metadata, Schema.org JSON-LD), Google Maps Local 3-Pack optimization, and Princeton GEO optimization so your brand ranks #1 on both Google and AI search engines.' : '100/100 Google Lighthouse teknik SEO mimarisi, Schema.org JSON-LD yapılandırması, Google Haritalar (Yerel SEO İlk 3) optimizasyonu ve ChatGPT, Perplexity ile Google AI Overviews sonuçlarında birincil kaynak olarak önerilmenizi sağlayan Princeton GEO (llms.txt ve varlık otoritesi) çalışmalarını uçtan uca kapsar.'
+        },
+        {
+          q: lang === 'de' ? 'Für wen eignet sich Ihre SEO- & GEO-Beratung und wie schnell antworten Sie?' : lang === 'en' ? 'Who is eligible for your SEO & GEO consulting services and how fast do you respond?' : 'SEO ve GEO danışmanlığı için çalışma kriterleriniz ve geri dönüş süreniz nedir?',
+          a: lang === 'de' ? 'Wir betreuen B2B-Unternehmen, Exporteure und wachsende Marken. Jede Anfrage über unser Formular oder info@salihmaral.com wird innerhalb von 24 Stunden mit einer fundierten Erstanalyse beantwortet.' : lang === 'en' ? 'We partner with B2B enterprises, exporting manufacturers, and growing brands with a minimum monthly marketing budget of 25,000 TL. Every inquiry receives a comprehensive response within 24 hours.' : 'Danışmanlık hizmetimiz B2B firmalar, ihracatçılar ve aylık minimum 25.000 TL reklam/pazarlama bütçesine sahip işletmeler için sunulmaktadır. Online form veya info@salihmaral.com üzerinden ilettiğiniz tüm taleplere 24 saat içinde garantili analiz ve geri dönüş sağlıyoruz.'
         },
         { 
-          q: lang === 'de' ? 'Garantieren Sie den 1. Platz?' : lang === 'en' ? 'Do you guarantee 1st place ranking?' : '1. sıra garantisi veriyor musunuz?',
-          a: lang === 'de' ? 'Da sich die Algorithmen von Google ständig ändern und niemand ein Monopol hat, ist "garantierte SEO" nicht professionell oder ethisch. Allerdings garantieren wir mit bewährten Strategien und datengesteuerten Arbeiten, dass Ihre Sichtbarkeit und Ihr Traffic steigen werden.' : lang === 'en' ? 'Since Google\'s algorithms constantly change and no one has a monopoly, "guaranteed SEO" is not professional or ethical. However, with proven strategies and data-driven work, we guarantee that your visibility and traffic will increase.' : 'Google\'ın algoritmaları sürekli değiştiği ve kimsenin tekelinde olmadığı için "garantili SEO" profesyonel ve etik değildir. Ancak kanıtlanmış stratejiler ve veri odaklı çalışmalarla görünürlüğünüzü ve trafiğinizi artırma garantisi veriyoruz.'
-        },
-        { 
-          q: lang === 'de' ? 'Wie funktioniert Ihr Berichtsprozess?' : lang === 'en' ? 'How does your reporting process work?' : 'Raporlama süreciniz nasıl işliyor?',
-          a: lang === 'de' ? 'Transparenz ist für uns das wichtigste Prinzip. Am Ende jedes Monats präsentieren wir Ihnen einen speziellen, verständlichen Bericht. Dieser Bericht enthält die durchgeführten Arbeiten, den erhöhten Traffic, Änderungen in den Keyword-Rankings und die Planung für den nächsten Monat.' : lang === 'en' ? 'Transparency is the most important principle for us. At the end of each month, we present you with a special, understandable report. This report includes the work done, increased traffic, changes in keyword rankings, and planning for the next month.' : 'Şeffaflık bizim için en önemli ilkedir. Her ayın sonunda size özel, anlaşılır bir rapor sunuyoruz. Bu raporda yapılan işlemler, artan trafik, anahtar kelime sıralamalarındaki değişimler ve bir sonraki ayın planlaması yer alır.'
-        },
-        { 
-          q: lang === 'de' ? 'Machen Sie nur technische Arbeiten?' : lang === 'en' ? 'Do you only do technical work?' : 'Sadece teknik çalışma mı yapıyorsunuz?',
-          a: lang === 'de' ? 'Nein, wir verfolgen einen ganzheitlichen Ansatz. Technische Infrastrukturverbesserungen (Geschwindigkeit, mobile Kompatibilität), Content-Strategie (Blog, Kategorietexte) und Off-Site-Autoritätsarbeiten (Backlink, PR) werden gemeinsam durchgeführt. Erfolgreiche SEO erfordert die ausgewogene Verwaltung dieser drei Säulen.' : lang === 'en' ? 'No, we take a holistic approach. Technical infrastructure improvements (speed, mobile compatibility), content strategy (blog, category texts), and off-site authority work (backlink, PR) are conducted together. Successful SEO requires balanced management of these three pillars.' : 'Hayır, bütüncül bir yaklaşım benimsiyoruz. Teknik altyapı iyileştirmeleri (hız, mobil uyum), içerik stratejisi (blog, kategori yazıları) ve site dışı otorite çalışmaları (backlink, PR) bir arada yürütülür. Başarılı SEO bu üç ayağın dengeli yönetilmesini gerektirir.'
+          q: lang === 'de' ? 'Wann werde ich Ergebnisse von SEO- & GEO-Arbeiten sehen?' : lang === 'en' ? 'When will I see results from SEO & GEO work?' : 'SEO ve GEO optimizasyonu çalışmalarından ne zaman sonuç alırım?',
+          a: lang === 'de' ? 'Erste Indexierungs- und KI-Zitier-Effekte durch technische Korrekturen, Schema-Markup und llms.txt zeigen sich oft bereits innerhalb von 2–6 Wochen. Nachhaltige Top-3 Google-Rankings bauen sich kontinuierlich über 3 bis 6 Monate auf.' : lang === 'en' ? 'Initial indexing and AI citation gains from technical fixes, Schema markup, and llms.txt often appear within 2 to 6 weeks, while competitive Top-3 organic Google rankings compound steadily over 3 to 6 months.' : 'Teknik SEO düzeltmeleri, Schema.org ve /llms.txt kurulumu sonrasında yapay zeka arama motorlarında (Perplexity, ChatGPT, AI Overviews) kaynak gösterilme etkileri 2 ila 6 hafta içinde başlar. Rekabetçi Google kelimelerinde kalıcı ilk 3 sıralama ivmesi ise 3 ila 6 ay içinde güçlenerek büyür.'
         }
       ]
     },
@@ -962,80 +966,8 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
   // Servis verisini al
   const data = servicesData[service] || servicesData['google-ads']
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": data.title,
-    "description": data.description,
-    "provider": {
-      "@type": "Person",
-      "name": "Salih Maral",
-      "url": "https://www.salihmaral.com",
-      "email": "info@salihmaral.com"
-    },
-    "areaServed": [
-      { "@type": "Country", "name": "Turkey" },
-      { "@type": "Country", "name": "United Kingdom" },
-      { "@type": "Country", "name": "United States" }
-    ],
-    "logo": "https://www.salihmaral.com/logo.png"
-  }
-
-  const faqSchema = data.faq && data.faq.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": data.faq.map(item => ({
-      "@type": "Question",
-      "name": item.q,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.a
-      }
-    }))
-  } : null
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": lang === 'de' ? 'Startseite' : lang === 'en' ? 'Home' : 'Ana Sayfa',
-        "item": `https://www.salihmaral.com${lang === 'de' ? '' : '/' + lang}`
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": lang === 'de' ? 'Dienstleistungen' : lang === 'en' ? 'Services' : 'Hizmetler',
-        "item": `https://www.salihmaral.com${lang === 'de' ? '/dienstleistungen' : lang === 'en' ? '/en/services' : '/tr/hizmetler'}`
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": data.title,
-        "item": `https://www.salihmaral.com${getLocalizedServiceUrl(lang, service)}`
-      }
-    ]
-  }
-
   return (
     <div className="min-h-screen bg-white">
-      {/* Structured Data (JSON-LD) */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/80 shadow-xs">
         <div className="container mx-auto px-4 py-3.5">
@@ -2148,6 +2080,114 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                     : lang === 'en'
                     ? 'Without Server-Side Tracking, Smart Bidding optimizes on blind data. 1st-party CAPI is non-negotiable in 2026.'
                     : 'Server-Side takip olmadan yapay zeka körleme optimizasyon yapar. Birinci taraf CAPI 2026\\\'da zorunluluktur.'}
+                </span>
+                <span className="font-bold text-emerald-600">
+                  {lang === 'de' ? 'Geprüfter Princeton GEO Standard 2026' : lang === 'en' ? 'Verified Princeton GEO Standard 2026' : 'Doğrulanmış Princeton GEO Standardı 2026'}
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Princeton GEO Structured Comparison Table: SEO & GEO */}
+      {service === 'seo' && (
+        <section className="py-16 px-4 bg-slate-50/80 border-b border-slate-200/80">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs">
+                <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">
+                  {lang === 'de' ? 'Princeton GEO & SEO Benchmark 2026' : lang === 'en' ? 'Princeton GEO & SEO Benchmark 2026' : 'GEO Optimizasyonu & Kurumsal SEO Benchmark 2026'}
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-4xl font-black text-gray-900 mb-4 tracking-tight">
+                {lang === 'de' ? (
+                  <>GEO Optimierung & SEO: <span className="text-emerald-600">Princeton GEO vs. Klassisches SEO</span></>
+                ) : lang === 'en' ? (
+                  <>GEO Optimization & SEO: <span className="text-emerald-600">Princeton GEO vs. Traditional SEO</span></>
+                ) : (
+                  <>Kurumsal GEO Hizmeti & GEO Danışmanlığı: <span className="text-emerald-600">Yapay Zeka SEO vs. Klasik SEO</span></>
+                )}
+              </h2>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                {lang === 'de'
+                  ? 'Warum klassische Keyword-Texte 2026 nicht mehr ausreichen: Wie unsere GEO-Optimierung (Generative Engine Optimization) Ihre Marke bei Google, ChatGPT Search, Perplexity und Google AI Overviews als primäre Quelle etabliert.'
+                  : lang === 'en'
+                  ? 'Why traditional keyword stuffing fails in 2026: How our Princeton GEO optimization establishes your brand as the primary cited source across Google, ChatGPT Search, Perplexity, and AI Overviews.'
+                  : '2026 yılında sadece klasik anahtar kelime odaklı SEO yeterli değildir: Kurumsal GEO hizmeti ve GEO optimizasyonu ile markanızı Google, ChatGPT Search, Perplexity ve Google AI Overviews yanıtlarında birincil önerilen kaynak haline getiriyoruz.'}
+              </p>
+            </div>
+
+            <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+              <div className="md:hidden flex items-center justify-between px-4 py-2 bg-emerald-50/80 border-b border-emerald-100 text-[11px] font-semibold text-emerald-700">
+                <span>📊 {lang === 'de' ? 'Tippe & wische zum Vergleichen' : lang === 'en' ? 'Swipe horizontally to view full table' : 'Tabloyu kaydırarak karşılaştırın'}</span>
+                <span>👉</span>
+              </div>
+              <div className="overflow-x-auto -webkit-overflow-scrolling-touch">
+                <table className="w-full text-left border-collapse min-w-[640px]">
+                  <thead>
+                    <tr className="border-b border-slate-200 bg-slate-100/70 text-xs md:text-sm font-black text-slate-800">
+                      <th className="p-4 md:p-5">{lang === 'de' ? 'Kriterium & Architektur' : lang === 'en' ? 'Criterion & Architecture' : 'Kriter & Mimari'}</th>
+                      <th className="p-4 md:p-5">{lang === 'de' ? 'Salih Maral SEO & GEO Engine' : lang === 'en' ? 'Salih Maral SEO & GEO Engine' : 'Salih Maral Kurumsal SEO & GEO Hizmeti'}</th>
+                      <th className="p-4 md:p-5">{lang === 'de' ? 'Klassische SEO-Agentur' : lang === 'en' ? 'Traditional SEO Agency' : 'Klasik SEO Ajansı'}</th>
+                      <th className="p-4 md:p-5 text-right">{lang === 'de' ? 'Messbarer Impact' : lang === 'en' ? 'Measurable Impact' : 'Ölçülebilir Etki'}</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 text-xs md:text-sm">
+                    <tr className="bg-emerald-50/40 hover:bg-emerald-50/70 transition-colors">
+                      <td className="p-4 md:p-5 font-bold text-gray-900">
+                        {lang === 'de' ? 'KI-Sichtbarkeit (ChatGPT, Perplexity, AI Overviews)' : lang === 'en' ? 'AI Visibility (ChatGPT, Perplexity, AI Overviews)' : 'Yapay Zeka Görünürlüğü (GEO Optimizasyonu)'}
+                      </td>
+                      <td className="p-4 md:p-5 text-emerald-700 font-semibold">
+                        {lang === 'de' ? '🟢 /llms.txt, Entity-Graph & Princeton GEO Zitate' : lang === 'en' ? '🟢 /llms.txt, Entity Graph & Princeton GEO Citations' : '🟢 /llms.txt, Varlık (Entity) Grafiği & Princeton GEO Alıntı Mimarisi'}
+                      </td>
+                      <td className="p-4 md:p-5 text-rose-600">
+                        {lang === 'de' ? '🔴 Keine KI-Optimierung, unsichtbar in LLMs' : lang === 'en' ? '🔴 Zero AI optimization, invisible in LLMs' : '🔴 Yapay zeka motorlarında kaynak gösterilmez'}
+                      </td>
+                      <td className="p-4 md:p-5 text-right font-black text-emerald-600">
+                        {lang === 'de' ? '+40% KI-Zitierrate' : lang === 'en' ? '+40% AI Citation Rate' : '+%40 AI Kaynak Gösterilme'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/80 transition-colors">
+                      <td className="p-4 md:p-5 font-bold text-gray-900">
+                        {lang === 'de' ? 'Technical SEO & Core Web Vitals' : lang === 'en' ? 'Technical SEO & Core Web Vitals' : 'Teknik SEO & Core Web Vitals'}
+                      </td>
+                      <td className="p-4 md:p-5 text-emerald-700 font-semibold">
+                        {lang === 'de' ? '🟢 100/100 Lighthouse, SSR Metadata & @graph JSON-LD' : lang === 'en' ? '🟢 100/100 Lighthouse, SSR Metadata & @graph JSON-LD' : '🟢 100/100 Lighthouse, SSR Metadata & Schema.org @graph'}
+                      </td>
+                      <td className="p-4 md:p-5 text-amber-700">
+                        {lang === 'de' ? '🟡 Langsame Plugins & doppelte Schema-Tags' : lang === 'en' ? '🟡 Slow plugins & duplicate schema tags' : '🟡 Yavaş eklentiler ve eksik teknik şema'}
+                      </td>
+                      <td className="p-4 md:p-5 text-right font-bold text-slate-800">
+                        {lang === 'de' ? '< 0,8s Ladezeit' : lang === 'en' ? '< 0.8s Load Time' : '< 0,8 Sn Açılış Hızı'}
+                      </td>
+                    </tr>
+                    <tr className="bg-emerald-50/20 hover:bg-emerald-50/50 transition-colors">
+                      <td className="p-4 md:p-5 font-bold text-gray-900">
+                        {lang === 'de' ? 'Content-Qualität & Zero-Spam Schutz' : lang === 'en' ? 'Content Quality & Zero-Spam Protection' : 'İçerik Kalitesi & Kelime Yamyamlığı Koruması'}
+                      </td>
+                      <td className="p-4 md:p-5 text-emerald-700 font-semibold">
+                        {lang === 'de' ? '🟢 People-First Pillar Hubs ohne Keyword-Kannibalisierung' : lang === 'en' ? '🟢 People-First Pillar Hubs with zero cannibalization' : '🟢 Sıfır spam, sıfır kelime yamyamlığı ve E-E-A-T otorite rehberleri'}
+                      </td>
+                      <td className="p-4 md:p-5 text-rose-600">
+                        {lang === 'de' ? '🔴 Massenhafte KI-Texte & Abstrafungsrisiko' : lang === 'en' ? '🔴 Mass AI slop & core update penalty risk' : '🔴 Otomatik toplu blog üretimi ve Google spam riski'}
+                      </td>
+                      <td className="p-4 md:p-5 text-right font-black text-emerald-600">
+                        {lang === 'de' ? '100% Algorithmus-Sicher' : lang === 'en' ? '100% Algorithm Safe' : '%100 Algoritma Güvenliği'}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="p-4 md:p-5 bg-slate-50 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600">
+                <span>
+                  💡 <strong>{lang === 'de' ? 'Fazit:' : lang === 'en' ? 'Key Takeaway:' : 'Sonuç:'}</strong>{' '}
+                  {lang === 'de'
+                    ? 'Nachhaltige Top-Rankings erfordern die Kombination aus fehlerfreiem Technical SEO und verifizierter GEO-Autorität.'
+                    : lang === 'en'
+                    ? 'Sustainable Top-3 rankings require combining flawless Technical SEO with verified GEO entity authority.'
+                    : 'Kalıcı ilk 3 sıralama ve yapay zeka görünürlüğü, kusursuz teknik SEO ile doğrulanmış GEO danışmanlığının birleşimiyle sağlanır.'}
                 </span>
                 <span className="font-bold text-emerald-600">
                   {lang === 'de' ? 'Geprüfter Princeton GEO Standard 2026' : lang === 'en' ? 'Verified Princeton GEO Standard 2026' : 'Doğrulanmış Princeton GEO Standardı 2026'}

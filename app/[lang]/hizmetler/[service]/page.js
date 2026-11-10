@@ -194,9 +194,9 @@ const serviceMeta = {
 
     tr: {
 
-      title: 'GEO Hizmeti, Yapay Zeka SEO ve GEO Optimizasyonu | Salih Maral',
+      title: 'GEO Hizmeti, GEO Danışmanlığı & Kurumsal SEO | Salih Maral',
 
-      description: 'Kurumsal SEO, Google Haritalar ve yapay zeka arama motorları için GEO hizmeti ve optimizasyonu. Perplexity, ChatGPT ve Google AI Overviews danışmanlığı.',
+      description: 'Kurumsal SEO, Google Haritalar ve yapay zeka arama motorları için GEO hizmeti ve GEO optimizasyonu. Perplexity, ChatGPT ve Google AI Overviews danışmanlığı.',
 
     },
 
@@ -281,6 +281,10 @@ const serviceFaqs = {
       {
         q: 'YouTube reklamları ile organik abone ve video beğenisi de kazanılır mı?',
         a: 'Evet. Kampanyalarımız müzik türü, yaş, demografi ve benzer sanatçı/kanal kitlelerine göre hedefleme yaptığı için videonuzu izleyenler kanalınıza organik olarak abone olur, yorum yazar ve diğer içeriklerinizi keşfeder. Bu yüksek etkileşim sinyali, YouTube algoritmasının videonuzu "Önerilen Videolar" arasına taşımasını hızlandırır.'
+      },
+      {
+        q: 'YouTube AdWords izlenme satın al ile YouTube gerçek reklam izlenme aynı şey mi?',
+        a: 'Evet. Google AdWords sisteminin güncel adı Google Ads olup, YouTube AdWords izlenme satın alma işlemi doğrudan resmi YouTube reklamlarıyla gerçek izlenme kazanmaktır. Bot veya sahte panellerin aksine, izlenmeler %100 gerçek kullanıcılardan gelir ve medyapr.com üzerinden şifresiz sipariş edilebilir.'
       }
     ],
     de: [
