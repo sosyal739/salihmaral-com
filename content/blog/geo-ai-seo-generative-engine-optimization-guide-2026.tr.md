@@ -2,7 +2,7 @@
 slug: "geo-ai-seo-generative-engine-optimization-guide-2026"
 lang: "tr"
 title: "GEO AI SEO: ChatGPT & Yapay Zeka Arama Optimizasyonu 2026"
-excerpt: "GEO AI SEO ve yapay zeka SEO nedir? ChatGPT, Perplexity ve Google AI Overviews'ta ilk sırada kaynak gösterilme, Princeton KDD kriterleri ve 2026 rehberi."
+excerpt: "GEO AI SEO ve yapay zeka SEO nedir? ChatGPT, Perplexity ve Google AI Overviews sonuçlarında ilk sırada kaynak gösterilme, Princeton KDD 2026 rehberi."
 category: "SEO & Yapay Zeka"
 date: "2026-10-17"
 readTime: "16"
@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200
 ---
 
 <div class="lead">
-<p><strong>Doğrudan Yanıt (Princeton GEO Quick Fact & Hızlı Özet):</strong> <strong>GEO (Generative Engine Optimization)</strong> veya Türkçesiyle <strong>Yapay Zeka SEO</strong>; web sitenizin <strong>ChatGPT Search, Perplexity AI, Claude ve Google AI Overviews</strong> gibi üretken yapay zeka motorlarında arama yapan kullanıcılara doğrudan birincil tavsiye ve kaynak gösterilen referans (Citation) olarak sunulmasını sağlayan yeni nesil optimizasyon metodolojisidir. Princeton Üniversitesi KDD 2024 araştırmasına göre, doğrudan alıntılanabilir veri tabloları, teknik terim zenginliği ve doğrulanmış E-E-A-T künyesi kullanan web siteleri yapay zeka yanıtlarında alıntılanma oranını (Citation Share) <strong>%30 ila %41 oranında</strong> artırmaktadır.</p>
+<p><strong>Doğrudan Yanıt (Princeton GEO Quick Fact & Hızlı Özet):</strong> <strong>GEO (Generative Engine Optimization)</strong> veya Türkçesiyle <strong>Yapay Zeka SEO</strong>; web sitenizin <strong>ChatGPT Search, Perplexity AI, Claude ve Google AI Overviews</strong> gibi üretken yapay zeka motorlarında arama yapan kullanıcılara doğrudan birincil tavsiye ve kaynak gösterilen referans (Citation) olarak sunulmasını sağlayan yeni nesil optimizasyon metodolojisidir. Princeton Üniversitesi KDD 2024 araştırmasına göre, doğrudan alıntılanabilir veri tabloları, teknik terim zenginliği ve doğrulanmış E-E-A-T künyesi kullanan web siteleri yapay zeka yanıtlarında alıntılanma oranını (Citation Share) <strong>%30 ila %41 oranında</strong> artırmaktadır. Şirketinizin yapay zeka arama motorlarında birincil otorite olarak konumlanması için <a href="/tr/hizmetler/seo"><strong>Kurumsal GEO Hizmeti ve Yapay Zeka SEO Danışmanlığı</strong></a> sayfamızdan teknik yol haritamızı inceleyebilirsiniz.</p>
 </div>
 
 <blockquote>

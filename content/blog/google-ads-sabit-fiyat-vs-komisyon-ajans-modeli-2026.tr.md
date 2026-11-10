@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-sabit-fiyat-vs-komisyon-ajans-modeli-2026"
 lang: "tr"
-title: "Google Ads Sabit Fiyat mı, Komisyon mu? 2026"
-excerpt: "Google Ads ajansınız reklam bütçenizden %15 komisyon mu alıyor? Neden sabit fiyatlı (Fixpreis) şeffaf yönetim modelinin şirketiniz için çok daha karlı olduğunu keşfedin."
+title: "Google Ads: %15 Komisyon mu, Sabit Fiyat mı?"
+excerpt: "100.000 TL reklam bütçesinde %15 komisyonlu ajans ile sabit fiyat modeli arasındaki net ROAS ve maliyet farkı tablosu. 2026 şeffaf ajans rehberi."
 category: "Google Ads & PPC"
 date: "2026-10-17"
 readTime: "17"
@@ -48,6 +48,41 @@ coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=
       <td>Bütçeniz ne kadar artarsa artsın, her ay net ve sabit bir hizmet bedeli ödersiniz.</td>
       <td><strong>Sıfır sürpriz maliyet, %100 şeffaf bütçe kontrolü.</strong></td>
       <td>🟢 <strong>En Yüksek (Planlanabilir & Maksimum ROAS)</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>📊 100.000 TL ve 250.000 TL Bütçede Yıllık Maliyet Farkı Hesaplaması</h2>
+
+<p>Komisyon modeli ilk başta küçük bütçelerde masum görünse de işletmeniz büyüdükçe kar marjınızı eriten gizli bir vergiye dönüşür. Aşağıdaki gerçek maliyet simülasyonu, %15 komisyonlu geleneksel ajans ile sabit fiyatlı (Fixpreis) yönetim arasındaki yıllık net farkı göstermektedir:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aylık Google Ads Bütçesi</th>
+      <th>%15 Komisyonlu Ajans (Yıllık Hizmet Bedeli)</th>
+      <th>Sabit Fiyat Modeli (Yıllık Net Avantaj)</th>
+      <th>İşletmede Kalan Ek Reklam Sermayesi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>50.000 ₺ / Ay</strong></td>
+      <td>90.000 ₺ / Yıl</td>
+      <td>Sabit &amp; Öngörülebilir</td>
+      <td>🟢 Bütçe artışında ceza ödemezsiniz</td>
+    </tr>
+    <tr>
+      <td><strong>100.000 ₺ / Ay</strong></td>
+      <td>180.000 ₺ / Yıl</td>
+      <td>Sabit &amp; Şeffaf Fatura</td>
+      <td>🟢 <strong>+60.000 ₺ - 90.000 ₺ doğrudan reklama kalır</strong></td>
+    </tr>
+    <tr>
+      <td><strong>250.000 ₺ / Ay</strong></td>
+      <td>450.000 ₺ / Yıl</td>
+      <td>Sabit &amp; Çıkar Çatışmasız</td>
+      <td>🟢 <strong>+270.000 ₺ üzerinde net kar tasarrufu</strong></td>
     </tr>
   </tbody>
 </table>
