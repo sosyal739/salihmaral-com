@@ -831,7 +831,7 @@ export default async function ServicePage({ params }) {
 
           '@id': 'https://www.salihmaral.com/#organization',
 
-          name: 'Salih Maral Dijital Büyüme Ajansı',
+          name: 'Salih Maral',
 
           url: 'https://www.salihmaral.com',
 

@@ -422,7 +422,10 @@ export default function BlogDetailClient({ initialPost, initialLang = 'tr', rela
             <div className="flex items-center gap-5 text-xs text-slate-500">
               <div className="flex items-center space-x-1.5">
                 <Calendar className="h-4 w-4 text-[#4285F4]" />
-                <span>{post.date}</span>
+                <time dateTime={post.date}>{post.date}</time>
+                {post.updated && post.updated !== post.date && (
+                  <span className="text-slate-400"> · {lang === 'en' ? 'Updated' : 'Güncelleme'}: <time dateTime={post.updated}>{post.updated}</time></span>
+                )}
               </div>
               <div className="flex items-center space-x-1.5">
                 <Clock className="h-4 w-4 text-[#4285F4]" />

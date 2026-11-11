@@ -14,6 +14,9 @@ import LeadFunnelWizard from '@/components/LeadFunnelWizard'
 import EcosystemMarquee from '@/components/EcosystemMarquee'
 import { MotionSection } from '@/components/Reveal'
 
+// Sitede yapilan son icerik/yapi guncellemesi (schema dateModified + gorunur tarih)
+const SITE_LAST_UPDATED = '2026-11-11'
+
 const translations = {
   tr: {
     nav: {
@@ -1032,6 +1035,7 @@ export default function Home({ initialLang = 'tr' }) {
               isPartOf: { '@id': 'https://www.salihmaral.com/#website' },
               about: { '@id': 'https://www.salihmaral.com/#organization' },
               description: t.hero.description,
+              dateModified: SITE_LAST_UPDATED,
               inLanguage: lang === 'de' ? 'de-DE' : lang === 'tr' ? 'tr-TR' : 'en-US'
             },
             {
@@ -1105,7 +1109,7 @@ export default function Home({ initialLang = 'tr' }) {
             },
             {
               '@type': 'ProfessionalService',
-              name: 'Salih Maral Digital Marketing',
+              name: 'Salih Maral',
               description: lang === 'de' ? 'Professionelle Digital Marketing Dienstleistungen' : lang === 'tr' ? 'Profesyonel Dijital Pazarlama Hizmetleri' : 'Professional Digital Marketing Services',
               url: `https://www.salihmaral.com${lang === 'de' ? '/' : `/${lang}`}`,
               priceRange: '₺₺ / ₺₺₺',
@@ -3029,6 +3033,7 @@ export default function Home({ initialLang = 'tr' }) {
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
             <div className="flex items-center space-x-6">
               <p>© 2026 Salih Maral. {t.footer.rights}</p>
+              <p className="mt-1 text-xs text-gray-400">{lang === 'tr' ? 'Son güncelleme' : lang === 'de' ? 'Zuletzt aktualisiert' : 'Last updated'}: <time dateTime={SITE_LAST_UPDATED}>{SITE_LAST_UPDATED}</time></p>
               {/* Google Partners Badge in Footer */}
               <a
                 href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"

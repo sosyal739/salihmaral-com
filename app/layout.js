@@ -49,6 +49,9 @@ export const metadata = {
   },
   alternates: {
     canonical: 'https://www.salihmaral.com',
+    types: {
+      'application/rss+xml': 'https://www.salihmaral.com/feed.xml'
+    },
     languages: {
       'tr': 'https://www.salihmaral.com',
       'en': 'https://www.salihmaral.com/en',
@@ -59,7 +62,7 @@ export const metadata = {
     title: 'Salih Maral – Resmi Google Partner & Dijital Büyüme Ajansı',
     description: '17+ yıllık resmi Google Partner tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, SEO ve ihracat odaklı performans pazarlaması danışmanlığı.',
     url: 'https://www.salihmaral.com',
-    siteName: 'Salih Maral Dijital Büyüme Ajansı',
+    siteName: 'Salih Maral',
     images: [
       {
         url: '/logo-og.png',
@@ -109,7 +112,8 @@ const jsonLd = {
     {
       '@type': 'Organization',
       '@id': 'https://www.salihmaral.com/#organization',
-      name: 'Salih Maral Dijital Büyüme Ajansı',
+      name: 'Salih Maral',
+      alternateName: 'Salih Maral Dijital Büyüme Ajansı',
       url: 'https://www.salihmaral.com',
       logo: {
         '@type': 'ImageObject',
@@ -117,7 +121,7 @@ const jsonLd = {
         url: 'https://www.salihmaral.com/logo.png',
         width: 800,
         height: 800,
-        caption: 'Salih Maral Dijital Büyüme Ajansı'
+        caption: 'Salih Maral'
       },
       image: { '@id': 'https://www.salihmaral.com/#logo' },
       contactPoint: {
@@ -139,7 +143,7 @@ const jsonLd = {
       '@type': 'WebSite',
       '@id': 'https://www.salihmaral.com/#website',
       url: 'https://www.salihmaral.com',
-      name: 'Salih Maral Dijital Büyüme Ajansı',
+      name: 'Salih Maral',
       publisher: { '@id': 'https://www.salihmaral.com/#organization' },
       inLanguage: ['tr-TR', 'en-US']
     },
@@ -174,9 +178,19 @@ const jsonLd = {
     {
       '@type': ['LocalBusiness', 'ProfessionalService'],
       '@id': 'https://www.salihmaral.com/#localbusiness',
-      name: 'Salih Maral Dijital Büyüme Ajansı',
+      name: 'Salih Maral',
       url: 'https://www.salihmaral.com',
       email: 'info@salihmaral.com',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'İstanbul',
+        addressCountry: 'TR'
+      },
+      sameAs: [
+        'https://www.linkedin.com/in/salih-maral-78159a22a/',
+        'https://x.com/salihmaral',
+        'https://github.com/sosyal739'
+      ],
       image: 'https://www.salihmaral.com/logo.png',
       priceRange: '₺₺ / ₺₺₺',
       aggregateRating: {

@@ -178,7 +178,7 @@ export default async function BlogDetailPage({ params }) {
       publisher: {
         '@type': 'Organization',
         '@id': 'https://www.salihmaral.com/#organization',
-        name: 'Salih Maral Dijital Büyüme Ajansı',
+        name: 'Salih Maral',
         url: 'https://www.salihmaral.com',
         logo: {
           '@type': 'ImageObject',
@@ -186,7 +186,7 @@ export default async function BlogDetailPage({ params }) {
         },
       },
       datePublished: post.date,
-      dateModified: post.date,
+      dateModified: post.updated || post.date,
       inLanguage: inLang,
       articleSection: post.category || 'Digital Marketing',
       keywords: post.category ? `${post.category}, Digital Marketing, Salih Maral` : 'Digital Marketing, Salih Maral',

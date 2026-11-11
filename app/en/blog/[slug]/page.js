@@ -166,7 +166,7 @@ export default async function EnBlogDetailPage({ params }) {
       publisher: {
         '@type': 'Organization',
         '@id': 'https://www.salihmaral.com/#organization',
-        name: 'Salih Maral Digital Growth Agency',
+        name: 'Salih Maral',
         url: 'https://www.salihmaral.com/en',
         logo: {
           '@type': 'ImageObject',
