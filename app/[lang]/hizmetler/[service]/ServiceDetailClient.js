@@ -1210,11 +1210,31 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 <p className="text-xs sm:text-sm font-semibold text-red-700 bg-red-50/90 border border-red-200/80 rounded-xl px-4 py-2.5 max-w-2xl mx-auto mb-14 flex items-center justify-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#FF0000] animate-pulse shrink-0"></span>
                   <span>
-                    {lang === 'de'
-                      ? 'Offizielle YouTube Ads Aufruf-Pakete & Musikvideo-PR bestellen Sie direkt über unsere Plattform MedyaPR.com (ohne Passwort, 100% Google Ads).'
-                      : lang === 'en'
-                      ? 'Official YouTube Ads view packages and music video PR orders are processed directly on our platform MedyaPR.com (100% Google Ads, no password required).'
-                      : 'YouTube reklam izlenme paketleri ve klip tanıtım siparişleriniz resmi platformumuz MedyaPR.com üzerinden şifresiz ve %100 Google Ads güvencesiyle alınmaktadır.'}
+                    {lang === 'de' ? (
+                      <>
+                        Offizielle YouTube Ads Aufruf-Pakete & Musikvideo-PR bestellen Sie direkt über unsere Plattform{' '}
+                        <a href="https://medyapr.com/en" target="_blank" rel="noopener" className="underline decoration-red-400 hover:text-red-900 font-extrabold">
+                          MedyaPR.com
+                        </a>{' '}
+                        (ohne Passwort, 100% Google Ads).
+                      </>
+                    ) : lang === 'en' ? (
+                      <>
+                        Official YouTube Ads view packages and music video PR orders are processed directly on our platform{' '}
+                        <a href="https://medyapr.com/en" target="_blank" rel="noopener" className="underline decoration-red-400 hover:text-red-900 font-extrabold">
+                          MedyaPR.com
+                        </a>{' '}
+                        (100% Google Ads, no password required).
+                      </>
+                    ) : (
+                      <>
+                        YouTube reklam izlenme paketleri ve klip tanıtım siparişleriniz resmi platformumuz{' '}
+                        <a href="https://medyapr.com/tr" target="_blank" rel="noopener" className="underline decoration-red-400 hover:text-red-900 font-extrabold">
+                          MedyaPR.com
+                        </a>{' '}
+                        üzerinden şifresiz ve %100 Google Ads güvencesiyle alınmaktadır.
+                      </>
+                    )}
                   </span>
                 </p>
               </>
