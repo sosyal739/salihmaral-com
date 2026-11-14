@@ -129,6 +129,7 @@ Google Tag Manager Preview (Tag Assistant) modunda sitenizi açıp "Consent" sek
 <div class="highlight-box">
   <h4>📚 Devamını Okuyun &amp; İlgili Rehberler</h4>
   <ul>
+    <li><a href="/blog/google-tag-manager-consent-mode-v2-kurulum-rehberi-2026">GTM ile Google Consent Mode v2 (Gelişmiş Mod) Adım Adım Kurulum Rehberi 2026</a></li>
     <li><a href="/blog/server-side-gtm-meta-capi-setup-2026">Server-Side GTM ve Meta Conversions API (CAPI) Kurulum Rehberi 2026</a></li>
     <li><a href="/blog/ga4-custom-events-funnels">Google Tag Manager (GTM) &amp; GA4 Funnel Kurulumu 2026</a></li>
     <li><a href="/blog/google-ads-roi-tracking">Google Reklam ROI &amp; ROAS Hesaplama ve Takip Rehberi</a></li>

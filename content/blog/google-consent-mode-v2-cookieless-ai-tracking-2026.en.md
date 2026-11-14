@@ -81,6 +81,7 @@ Enable Consent Overview in GTM Admin, launch Tag Assistant Preview mode, and ins
 <div class="highlight-box">
   <h4>📚 Read More &amp; Related Guides</h4>
   <ul>
+    <li><a href="/en/blog/google-tag-manager-consent-mode-v2-kurulum-rehberi-2026">Google Consent Mode v2 GTM Setup Guide (Step-by-Step 2026)</a></li>
     <li><a href="/en/blog/server-side-gtm-meta-capi-setup-2026">Server-Side GTM and Meta Conversions API (CAPI) Setup Guide 2026</a></li>
     <li><a href="/en/blog/ga4-custom-events-funnels">Google Tag Manager (GTM) &amp; GA4 Funnel Setup Guide 2026</a></li>
     <li><a href="/en/blog/google-ads-roi-tracking">Google Ads ROI &amp; ROAS Calculation &amp; Tracking 2026</a></li>

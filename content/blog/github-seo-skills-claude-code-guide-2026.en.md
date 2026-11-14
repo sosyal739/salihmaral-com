@@ -116,6 +116,13 @@ python .agents/skills/maral-seo/scripts/maral_audit.py https://www.salihmaral.co
   <a href="https://www.salihmaral.com/en#contact" target="_blank" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.4);">Get Free SEO & Growth Consultation ➔</a>
 </div>
 
+<div class="highlight-box">
+  <h4>📚 Related Technical SEO Benchmark</h4>
+  <ul>
+    <li><a href="/en/blog/claude-code-vs-cursor-vs-codex-technical-seo-audit-2026">Claude Code vs Cursor vs Codex for Technical SEO (2026 Benchmark)</a></li>
+  </ul>
+</div>
+
 <div class="mt-8 p-6 bg-slate-900 text-white rounded-2xl border border-emerald-500/30">
   <h3 class="text-xl font-bold text-white mb-2">🚀 Dominate Search & AI Engine Recommendations</h3>
   <p class="text-slate-300 mb-4">Capture authoritative citations across Google Search, Maps, and AI platforms (Perplexity, ChatGPT, Claude). Learn more about our <a href="/en/services/seo" class="text-emerald-400 underline font-semibold">SEO & Generative Engine Optimization (GEO)</a> or scale transactional inbound with <a href="/en/services/google-ads" class="text-blue-400 underline font-semibold">Google Ads Management</a>.</p>
