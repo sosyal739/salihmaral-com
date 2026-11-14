@@ -82,9 +82,9 @@ const serviceMeta = {
 
     tr: {
 
-      title: 'YouTube Reklam İzlenme Satın Al (Ads) | Salih Maral',
+      title: 'YouTube Reklam (Ads) Gerçek İzlenme Satın Al | Salih Maral',
 
-      description: 'Resmi Google Partner ile YouTube reklam (Ads) izlenmesi satın alın. Bot paneller olmadan, YouTube Studio onaylı gerçek video reklam izlenme paketleri.',
+      description: 'Resmi Google Partner ile YouTube reklam (Ads) gerçek izlenme satın al. Bot panelsiz, YouTube Studio onaylı organik video reklam ve abone büyüme paketleri.',
 
     },
 

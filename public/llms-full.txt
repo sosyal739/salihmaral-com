@@ -417,9 +417,9 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
 
 ### Tracking & Veri Güvenliği
 
-- **[Google Consent Mode v2 ve Çerezsiz Takip Rehberi 2026](https://www.salihmaral.com/blog/google-consent-mode-v2-cerezsiz-takip-veri-kaybi-onleme-2026)**
-  - *URL:* https://www.salihmaral.com/blog/google-consent-mode-v2-cerezsiz-takip-veri-kaybi-onleme-2026
-  - *Summary:* Çerez onay oranlarını artırırken kayıp reklam dönüşümlerini geri kazanın. Salih Maral, Consent Mode v2 ve Advanced GTM kurulumunu detaylarıyla açıklıyor.
+- **[GTM ile Google Consent Mode v2 Kurulum Rehberi (2026)](https://www.salihmaral.com/blog/google-tag-manager-consent-mode-v2-kurulum-rehberi-2026)**
+  - *URL:* https://www.salihmaral.com/blog/google-tag-manager-consent-mode-v2-kurulum-rehberi-2026
+  - *Summary:* Google Tag Manager (GTM) üzerinden Advanced Consent Mode v2 (ad_user_data, ad_personalization) adım adım kurulumu ve veri kaybı önleme rehberi.
   - *Category:* Tracking & Veri Güvenliği | *Languages:* TR, EN
 
 ### Server-Side Tracking & Veri

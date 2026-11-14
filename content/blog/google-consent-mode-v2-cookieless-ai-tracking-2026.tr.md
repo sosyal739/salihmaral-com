@@ -1,8 +1,8 @@
 ---
 slug: "google-consent-mode-v2-cookieless-ai-tracking-2026"
 lang: "tr"
-title: "Google Consent Mode v2 Nedir & Nasıl Kurulur? (2026)"
-excerpt: "Consent Mode nedir, Google Consent Mode v2 nasıl kurulur? GTM kurulum adımları, Basic vs Advanced farkı ve %40 kayıp dönüşüm verisini kurtarma rehberi."
+title: "Google Consent Mode v2 Nedir? Çerezsiz AI Takip (2026)"
+excerpt: "Google Consent Mode v2 nedir, neden zorunludur? Basic vs Advanced farkı, çerezsiz yapay zeka modellemesi ve %40 kayıp dönüşüm verisini kurtarma rehberi."
 category: "Server-Side Tracking & Veri"
 date: "2026-10-17"
 readTime: "12"

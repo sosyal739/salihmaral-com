@@ -45,6 +45,9 @@ const nextConfig = {
       { source: '/blog/google-consent-mode-v2-cerezsiz-takip-veri-kaybi-onleme-2026', destination: '/blog/google-consent-mode-v2-cookieless-ai-tracking-2026', statusCode: 301 },
       { source: '/en/blog/google-consent-mode-v2-cerezsiz-takip-veri-kaybi-onleme-2026', destination: '/en/blog/google-consent-mode-v2-cookieless-ai-tracking-2026', statusCode: 301 },
       { source: '/tr/blog/google-consent-mode-v2-cerezsiz-takip-veri-kaybi-onleme-2026', destination: '/blog/google-consent-mode-v2-cookieless-ai-tracking-2026', statusCode: 301 },
+      { source: '/blog/google-consent-mode-v2-implementation', destination: '/blog/google-consent-mode-v2-cookieless-ai-tracking-2026', statusCode: 301 },
+      { source: '/en/blog/google-consent-mode-v2-implementation', destination: '/en/blog/google-consent-mode-v2-cookieless-ai-tracking-2026', statusCode: 301 },
+      { source: '/tr/blog/google-consent-mode-v2-implementation', destination: '/blog/google-consent-mode-v2-cookieless-ai-tracking-2026', statusCode: 301 },
       // 2. TikTok Shop vs Meta Advantage+
       { source: '/blog/tiktok-shop-ads-vs-meta-advantage-plus-sosyal-ticaret-karsilastirmasi-2026', destination: '/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
       { source: '/en/blog/tiktok-shop-ads-vs-meta-advantage-plus-sosyal-ticaret-karsilastirmasi-2026', destination: '/en/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
