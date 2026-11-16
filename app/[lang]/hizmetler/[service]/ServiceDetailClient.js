@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, ShieldCheck, Cpu, Database, Lock, Code, Activity, Star, ThumbsDown, AlertTriangle, Eye, Award, Flame, Menu, X, ChevronDown, ChevronRight, Mail, Sparkles } from 'lucide-react'
 import ServiceDetailModules from '@/components/ServiceDetailModules'
+import StepByStepServiceFlow from '@/components/StepByStepServiceFlow'
 
 // Translations for navbar
 const navTranslations = {
@@ -1296,6 +1297,11 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
           </div>
         </div>
       </section>
+
+      {/* Interactive Step-by-Step Service Blueprint & Direct Inquiry Form */}
+      {['meta-ads', 'google-ads', 'tiktok-ads', 'seo', 'server-side-tracking', 'web-sitesi-tasarimi'].includes(service) && (
+        <StepByStepServiceFlow lang={lang} initialService={service} singleServiceMode={true} />
+      )}
 
       {/* Services Grid (Redesigned Modern Glass & Badge UI) */}
       <section className="py-24 px-4 bg-gradient-to-b from-white via-slate-50/50 to-white relative overflow-hidden">

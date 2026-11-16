@@ -98,6 +98,8 @@ const nextConfig = {
       { source: '/blog/tiktok-shop-social-commerce', destination: '/blog/tiktok-shop-ecommerce-scaling', statusCode: 301 },
       { source: '/en/blog/tiktok-shop-social-commerce', destination: '/en/blog/tiktok-shop-ecommerce-scaling', statusCode: 301 },
       { source: '/tr/blog/tiktok-shop-social-commerce', destination: '/blog/tiktok-shop-ecommerce-scaling', statusCode: 301 },
+      // 10. Root /tr -> / Kanonik Konsolidasyon
+      { source: '/tr', destination: '/', statusCode: 301 },
     ];
   },
   async headers() {

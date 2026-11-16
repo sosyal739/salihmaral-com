@@ -1,3 +1,5 @@
+import HtmlShell from '@/components/HtmlShell'
+
 export const metadata = {
   title: {
     absolute: 'Hakkımda | Salih Maral – Resmi Google Partner Uzmanı',
@@ -14,6 +16,6 @@ export const metadata = {
 }
 
 export default function AboutLayout({ children }) {
-  return children
+  return <HtmlShell lang="tr">{children}</HtmlShell>
 }
 

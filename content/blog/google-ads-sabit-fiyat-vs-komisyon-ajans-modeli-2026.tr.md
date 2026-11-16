@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-sabit-fiyat-vs-komisyon-ajans-modeli-2026"
 lang: "tr"
-title: "Google Ads: %15 Komisyon mu, Sabit Fiyat mı?"
+title: "Google Ads Ajans Ücreti: %15 Komisyon vs Sabit"
 excerpt: "100.000 TL reklam bütçesinde %15 komisyonlu ajans ile sabit fiyat modeli arasındaki net ROAS ve maliyet farkı tablosu. 2026 şeffaf ajans rehberi."
 category: "Google Ads & PPC"
 date: "2026-10-17"

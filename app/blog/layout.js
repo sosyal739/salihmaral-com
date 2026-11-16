@@ -1,3 +1,5 @@
+import HtmlShell from '@/components/HtmlShell'
+
 export const metadata = {
   title: 'Blog & Rehberler | Salih Maral',
   description: 'Google Ads, Meta Ads, SEO, E-İhracat ve Server-Side Tracking hakkında güncel uzman makaleleri ve sektörel analizler.',
@@ -13,9 +15,10 @@ export const metadata = {
     title: 'Dijital Pazarlama & Büyüme Blogu | Salih Maral',
     description: 'Google Ads, Meta Ads, SEO, E-İhracat ve Server-Side Tracking rehberleri.',
     url: 'https://www.salihmaral.com/blog',
+    locale: 'tr_TR',
   },
 }
 
 export default function BlogLayout({ children }) {
-  return <>{children}</>
+  return <HtmlShell lang="tr">{children}</HtmlShell>
 }

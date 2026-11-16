@@ -21,26 +21,13 @@ export default async function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/tr`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.9,
-      alternates: {
-        languages: {
-          tr: `${baseUrl}/tr`,
-          en: `${baseUrl}/en`,
-          'x-default': `${baseUrl}`,
-        },
-      },
-    },
-    {
       url: `${baseUrl}/en`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.9,
       alternates: {
         languages: {
-          tr: `${baseUrl}/tr`,
+          tr: `${baseUrl}`,
           en: `${baseUrl}/en`,
           'x-default': `${baseUrl}`,
         },

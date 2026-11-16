@@ -1,3 +1,5 @@
+import HtmlShell from '@/components/HtmlShell'
+
 export const metadata = {
   title: {
     absolute: 'Gizlilik Politikası & KVKK | Salih Maral – Google Partner',
@@ -14,5 +16,5 @@ export const metadata = {
 }
 
 export default function DatenschutzLayout({ children }) {
-  return children
+  return <HtmlShell lang="tr">{children}</HtmlShell>
 }

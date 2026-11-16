@@ -685,6 +685,8 @@ export async function generateMetadata({ params }) {
 
       url: canonicalUrl,
 
+      locale: currentLang === 'en' ? 'en_US' : 'tr_TR',
+
       images: [
 
         {

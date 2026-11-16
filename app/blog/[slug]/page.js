@@ -64,6 +64,7 @@ export async function generateMetadata({ params }) {
         title: fullTitle,
         description: description,
         url: canonicalUrl,
+        locale: 'tr_TR',
         type: 'article',
         publishedTime: post.date,
         authors: ['Salih Maral'],

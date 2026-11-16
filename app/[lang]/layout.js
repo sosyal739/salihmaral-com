@@ -1,3 +1,5 @@
+import HtmlShell from '@/components/HtmlShell'
+
 const langMeta = {
   de: {
     title: 'Salih Maral – Google Ads, Meta Ads & SEO Experte',
@@ -30,7 +32,7 @@ export async function generateMetadata({ params }) {
       canonical: meta.canonical,
       languages: {
         en: 'https://www.salihmaral.com/en',
-        tr: 'https://www.salihmaral.com/tr',
+        tr: 'https://www.salihmaral.com',
         'x-default': 'https://www.salihmaral.com',
       },
     },
@@ -38,10 +40,13 @@ export async function generateMetadata({ params }) {
       title: meta.title,
       description: meta.description,
       url: meta.canonical,
+      locale: currentLang === 'en' ? 'en_US' : 'tr_TR',
     },
   }
 }
 
-export default function LangLayout({ children }) {
-  return <>{children}</>
+export default async function LangLayout({ children, params }) {
+  const { lang } = await params
+  const safeLang = ['en', 'tr'].includes(lang) ? lang : 'tr'
+  return <HtmlShell lang={safeLang}>{children}</HtmlShell>
 }

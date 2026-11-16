@@ -1,3 +1,5 @@
+import HtmlShell from '@/components/HtmlShell'
+
 export const metadata = {
   title: 'Blog & Strategic Guides | Salih Maral',
   description: 'Actionable expert guides on Google Ads, Meta Ads, SEO, GEO, and Server-Side Tracking for international business growth.',
@@ -19,5 +21,5 @@ export const metadata = {
 }
 
 export default function EnBlogLayout({ children }) {
-  return <>{children}</>
+  return <HtmlShell lang="en">{children}</HtmlShell>
 }

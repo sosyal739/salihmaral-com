@@ -1,3 +1,5 @@
+import HtmlShell from '@/components/HtmlShell'
+
 export const metadata = {
   title: {
     absolute: 'Yasal Künye & İletişim | Salih Maral – Google Partner',
@@ -14,5 +16,5 @@ export const metadata = {
 }
 
 export default function ImpressumLayout({ children }) {
-  return children
+  return <HtmlShell lang="tr">{children}</HtmlShell>
 }

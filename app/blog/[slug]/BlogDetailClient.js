@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ArrowLeft, Clock, Calendar, Menu, X, ChevronDown, MapPin, ArrowUpRight, Mail } from 'lucide-react'
 import { useState, useEffect } from 'react'
+import { AgencyCommissionCalculator, YouTubeViewsCalculator } from '@/components/BlogCalculators'
 
 const servicesList = {
   de: [
@@ -441,6 +442,14 @@ export default function BlogDetailClient({ initialPost, initialLang = 'tr', rela
         <div className="container mx-auto max-w-4xl">
           <article className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="p-8 md:p-12">
+              {post.slug === 'google-ads-sabit-fiyat-vs-komisyon-ajans-modeli-2026' && (
+                <AgencyCommissionCalculator lang={lang} />
+              )}
+              {[
+                'youtube-reklam-verme-fiyatlari-izlenme-maliyeti-2026',
+                'youtube-ads-video-views-channel-growth-2026',
+                'sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026',
+              ].includes(post.slug) && <YouTubeViewsCalculator lang={lang} />}
               <div
                 className="blog-content"
                 dangerouslySetInnerHTML={{ __html: post.content }}

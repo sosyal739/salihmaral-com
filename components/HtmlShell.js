@@ -1,0 +1,231 @@
+import { Manrope } from 'next/font/google'
+import MobileStickyBar from '@/components/MobileStickyBar'
+import CookieConsent from '@/components/CookieConsent'
+
+const manrope = Manrope({
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-manrope',
+  weight: ['300', '400', '500', '600', '700', '800'],
+})
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.salihmaral.com/#organization',
+      name: 'Salih Maral',
+      alternateName: 'Salih Maral Dijital Büyüme Ajansı',
+      url: 'https://www.salihmaral.com',
+      logo: {
+        '@type': 'ImageObject',
+        '@id': 'https://www.salihmaral.com/#logo',
+        url: 'https://www.salihmaral.com/logo.png',
+        width: 800,
+        height: 800,
+        caption: 'Salih Maral',
+      },
+      image: { '@id': 'https://www.salihmaral.com/#logo' },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: 'info@salihmaral.com',
+        url: 'https://www.salihmaral.com/#contact',
+        contactType: 'customer service',
+        availableLanguage: ['Turkish', 'English'],
+        areaServed: ['TR', 'GB', 'US', 'EU'],
+      },
+      sameAs: [
+        'https://www.salihmaral.com',
+        'https://www.linkedin.com/in/salih-maral-78159a22a/',
+        'https://x.com/salihmaral',
+        'https://github.com/sosyal739',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.salihmaral.com/#website',
+      url: 'https://www.salihmaral.com',
+      name: 'Salih Maral',
+      publisher: { '@id': 'https://www.salihmaral.com/#organization' },
+      inLanguage: ['tr-TR', 'en-US'],
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.salihmaral.com/#person',
+      name: 'Salih Maral',
+      jobTitle: 'Resmi Google Partner & Büyüme Danışmanı',
+      url: 'https://www.salihmaral.com',
+      image: 'https://www.salihmaral.com/logo.png',
+      description:
+        '17+ yıllık resmi Google Partner tecrübesiyle Türkiye ve küresel pazarlarda Google Ads, Meta Ads, TikTok Ads, SEO, Generative Engine Optimization (GEO) ve Server-Side Tracking uzmanı.',
+      worksFor: { '@id': 'https://www.salihmaral.com/#organization' },
+      knowsAbout: [
+        'Google Ads Yönetimi',
+        'Meta Ads (Facebook & Instagram)',
+        'E-İhracat Reklam Stratejileri',
+        'TikTok Ads',
+        'SEO ve İçerik Stratejileri',
+        'Generative Engine Optimization (GEO)',
+        'Server-Side Tracking (sGTM & Meta CAPI)',
+        'Dönüşüm Oranı Optimizasyonu (CRO)',
+        'Performans Pazarlaması',
+      ],
+      knowsLanguage: ['tr', 'en'],
+      sameAs: [
+        'https://www.salihmaral.com',
+        'https://www.linkedin.com/in/salih-maral-78159a22a/',
+        'https://x.com/salihmaral',
+        'https://github.com/sosyal739',
+      ],
+    },
+    {
+      '@type': ['LocalBusiness', 'ProfessionalService'],
+      '@id': 'https://www.salihmaral.com/#localbusiness',
+      name: 'Salih Maral',
+      url: 'https://www.salihmaral.com',
+      email: 'info@salihmaral.com',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'İstanbul',
+        addressCountry: 'TR',
+      },
+      sameAs: [
+        'https://www.linkedin.com/in/salih-maral-78159a22a/',
+        'https://x.com/salihmaral',
+        'https://github.com/sosyal739',
+      ],
+      image: 'https://www.salihmaral.com/logo.png',
+      priceRange: '₺₺ / ₺₺₺',
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5.0',
+        reviewCount: '312',
+        bestRating: '5',
+        worstRating: '1',
+      },
+      areaServed: [
+        { '@type': 'Country', name: 'Turkey' },
+        { '@type': 'Country', name: 'United Kingdom' },
+        { '@type': 'Country', name: 'United States' },
+      ],
+      serviceType: [
+        'Google Ads Yönetimi',
+        'Meta Ads Yönetimi',
+        'E-Ticaret ve Büyüme Pazarlaması',
+        'SEO Danışmanlığı',
+        'Server-Side Tracking (sGTM & CAPI)',
+        'Yapay Zeka Destekli Arama Optimizasyonu (GEO)',
+      ],
+      founder: { '@id': 'https://www.salihmaral.com/#person' },
+      parentOrganization: { '@id': 'https://www.salihmaral.com/#organization' },
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00',
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://www.salihmaral.com/#faq',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Google Ads reklam bütçesi ve ajans yönetimi nasıl çalışır?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Google Ads reklam harcamalarınız doğrudan kendi Google faturalandırma hesabınızdan çekilir. Yönetim hizmetimiz ise komisyonsuz, şeffaf ve sabit aylık paketlerle yürütülür.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'E-ticaret ve işletmeler için reklam ve büyüme stratejisi nasıl kurgulanır?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Hedef kitlenizin arama alışkanlıkları, sektörel CPC ve dönüşüm maliyetleri ile satın alma psikolojisine uygun Google Alışveriş, Arama Ağı ve Meta Ads kampanyaları veri odaklı kurgulanır.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Hangi reklam platformlarını yönetiyorsunuz?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Google Ads (Arama, Shopping, YouTube, PMax), Meta Ads (Facebook & Instagram), TikTok Ads ve X (Twitter) platformlarında uçtan uca kampanya kurulumu ve optimizasyonu sunuyoruz.',
+          },
+        },
+      ],
+    },
+    {
+      '@type': 'AggregateRating',
+      '@id': 'https://www.salihmaral.com/#rating',
+      itemReviewed: { '@id': 'https://www.salihmaral.com/#organization' },
+      ratingValue: '5',
+      bestRating: '5',
+      worstRating: '1',
+      ratingCount: '312',
+      reviewCount: '312',
+    },
+  ],
+}
+
+export default function HtmlShell({ lang = 'tr', children }) {
+  const safeLang = ['tr', 'en', 'de'].includes(lang) ? lang : 'tr'
+  return (
+    <html lang={safeLang}>
+      <head>
+        {/* Google Analytics 4 (GA4) with Google Consent Mode v2 */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('consent', 'default', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'wait_for_update': 500
+              });
+              gtag('js', new Date());
+              gtag('config', 'G-35H42D2JYL', {
+                'anonymize_ip': true,
+                'cookie_flags': 'SameSite=None;Secure',
+                'send_page_view': true
+              });
+            `,
+          }}
+        />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-35H42D2JYL" />
+
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <meta name="theme-color" content="#4285F4" />
+        <meta name="msapplication-TileColor" content="#4285F4" />
+
+        <link rel="preload" as="image" type="image/webp" href="/hero.webp" />
+        <link rel="preload" as="image" type="image/webp" href="/logo-sm.webp" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body
+        className={`${manrope.className} ${manrope.variable} font-sans antialiased text-gray-900 bg-white selection:bg-[#5138EE]/10 selection:text-[#5138EE] pb-20 md:pb-0`}
+      >
+        {children}
+        <MobileStickyBar />
+        <CookieConsent />
+      </body>
+    </html>
+  )
+}
