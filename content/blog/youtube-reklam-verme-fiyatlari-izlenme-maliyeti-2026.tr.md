@@ -13,6 +13,11 @@ coverImage: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=1200
   <strong>💡 Hızlı Yanıt (YouTube Reklam Fiyatları 2026 Özeti):</strong> Türkiye'de resmi Google Ads (YouTube Ads) üzerinden gerçek video izlenme başına maliyet (CPV) 2026 yılında ortalama <strong>0,12 ₺ ile 0,45 ₺</strong> arasında değişmektedir. Buna göre <strong>10.000 gerçek ve hedefli YouTube izlenmesi 1.500 ₺ – 4.000 ₺</strong>, <strong>50.000 gerçek izlenme 7.500 ₺ – 18.000 ₺</strong> ve <strong>100.000 gerçek izlenme 14.000 ₺ – 35.000 ₺</strong> bütçe aralığında tamamlanır. Resmi Google Partneri <strong>Salih Maral (17+ Yıl Tecrübe)</strong> ile yürütülen kampanyalarda bot veya panel kullanılmaz; izlenmelerin tamamı YouTube In-Feed (Keşif), Shorts ve In-Stream reklam yerleşimlerinden gelir.
 </blockquote>
 
+<div class="service-bridge-box" style="background: rgba(26, 115, 232, 0.08); border-left: 4px solid #1a73e8; border-radius: 0.5rem; padding: 1rem 1.25rem; margin-bottom: 1.5rem;">
+  <strong style="color: #1a73e8;">🎯 Doğrudan Resmi Kampanya Kurulumu &amp; Paket Fiyatları:</strong>
+  <p style="margin: 0.4rem 0 0 0; font-size: 0.95rem; color: #1f2937;">Videonuzu bot panelsiz, YouTube Studio onaylı organik kitlelere izletmek için resmi hizmet sayfamıza geçin: <a href="/tr/hizmetler/youtube-ads" style="font-weight: 700; color: #1a73e8; text-decoration: underline;">YouTube Reklam (Ads) Gerçek İzlenme Paketleri ve Fiyatları →</a></p>
+</div>
+
 <div class="lead">
   <p>Yeni bir müzik klibi, kurumsal tanıtım filmi, ürün incelemesi veya YouTube kanal videosu yayınladığınızda aklınızdaki ilk soru şudur: <strong>"YouTube'da gerçek insanlara videomu izletmek ne kadara mal olur?"</strong> İnternette "ucuz izlenme paketi" adı altında satılan sahte bot panelleri kanalınızın algoritmik önerilme gücünü (Suggested Videos) sıfırlarken; resmi <a href="/tr/hizmetler/youtube-ads" style="color: #1a73e8; font-weight: 700; text-decoration: underline;">YouTube Reklam (Google Ads) İzlenme Yönetimi</a> videonuzu yalnızca o içerikle ilgilenen gerçek izleyicilerin karşısına çıkarır. Bu kapsamlı 2026 rehberinde 10.000'den 1.000.000 izlenmeye kadar güncel maliyet tablolarını, CPV düşürme tekniklerini ve reklam formatlarını şeffafça paylaşıyoruz.</p>
 </div>

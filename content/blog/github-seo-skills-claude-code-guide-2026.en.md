@@ -1,8 +1,8 @@
 ﻿---
 slug: "github-seo-skills-claude-code-guide-2026"
 lang: "en"
-title: "GitHub SEO Skills & Claude Code: 2026 AI SEO Guide"
-excerpt: "Automate 100/100 technical SEO, Schema markup, and GEO citation optimization using Claude Code, Cursor, and open-source GitHub SEO Skills."
+title: "Claude Code SEO Skills: Top GitHub Plugins (2026)"
+excerpt: "Compare the best Claude Code SEO skills on GitHub (claude-seo, OpenSEO, LocalSEO) with copy-paste CLI install commands, Schema JSON-LD, and GEO workflows."
 category: "SEO & GEO"
 date: "2026-10-18"
 readTime: "16"
@@ -13,6 +13,35 @@ coverImage: "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=1200
 <p><strong>Direct Answer:</strong> GitHub SEO Skills are pre-configured instruction sets and automation plugins designed for modern AI coding assistants like Claude Code, Cursor, Windsurf, and Cline. Instead of bulky and expensive SaaS tools, these open-source plugins let you run instant 100/100 technical SEO audits, generate Schema.org JSON-LD structured data, and automate Generative Engine Optimization (GEO) for AI engines (ChatGPT Search, Perplexity, Google AI Overviews) directly inside your terminal or code editor. As <strong>Salih Maral (Official Google Partner & Senior Digital Marketing Specialist with 17+ years of experience)</strong>, we showcase how our unified <strong>MARAL SEO Engine</strong> methodology leverages these open-source tools to maximize organic revenue and search dominance.</p>
 </div>
 
+<h2>⚡ Quick Start: Copy-Paste CLI Commands for Claude Code SEO Skills</h2>
+<p>Install and run the leading open-source GitHub SEO skills inside Claude Code, Cursor, or Codex in under 60 seconds:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Skill Package</th>
+      <th>Copy-Paste Install / Run Command</th>
+      <th>Primary Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>claude-seo</strong> (AgriciDaniel)</td>
+      <td><code>npx skills add AgriciDaniel/claude-seo</code></td>
+      <td>100-point technical SEO, Schema JSON-LD &amp; GEO audit</td>
+    </tr>
+    <tr>
+      <td><strong>open-seo</strong> (every-app)</td>
+      <td><code>npx skills add every-app/open-seo</code></td>
+      <td>GSC striking-distance keywords, SERP clustering &amp; deslop</td>
+    </tr>
+    <tr>
+      <td><strong>localseoskills</strong> (garrettjsmith)</td>
+      <td><code>npx skills add garrettjsmith/localseoskills</code></td>
+      <td>Google Business Profile audit, LocalBusiness schema &amp; rank grid</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2>🚀 The Future of SEO in 2026: The Agentic SEO Revolution</h2>
 <p>Traditional SEO audits used to take weeks of exporting reports, emailing developers, and waiting for manual code changes. In 2026, <strong>Agentic SEO</strong> revolutionizes this workflow:</p>
 

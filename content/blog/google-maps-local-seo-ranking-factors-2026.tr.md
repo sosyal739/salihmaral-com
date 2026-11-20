@@ -1,7 +1,7 @@
 ---
 slug: "google-maps-local-seo-ranking-factors-2026"
 lang: "tr"
-title: "Yerel SEO ve Google Haritalar SEO Rehberi 2026"
+title: "Google Haritalar SEO & Yerel SEO Rehberi (2026 İlk 3)"
 excerpt: "Yerel SEO nedir ve Google Haritalar İlk 3 (Local 3-Pack) sıralamasına nasıl çıkılır? Kurumsal yerel SEO hizmeti, NAP tutarlılığı ve 2026 sıralama faktörleri."
 category: "SEO & GEO"
 date: "2026-10-19"
